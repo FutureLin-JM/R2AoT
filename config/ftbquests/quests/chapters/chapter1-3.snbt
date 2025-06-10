@@ -1,0 +1,548 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "chapter1-3"
+	group: "61A42EA15042ADCF"
+	icon: "botania:mana_diamond"
+	id: "200EC905A81FC562"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["78C45A8EFE42CA2C"]
+			id: "11A096C0D7EE7DA4"
+			tasks: [
+				{
+					id: "034502C990695195"
+					item: "botania:manasteel_ingot"
+					type: "item"
+				}
+				{
+					id: "465E8F8D10739E04"
+					item: "botania:mana_diamond"
+					type: "item"
+				}
+				{
+					id: "7716B402C1F2E7DB"
+					item: "botania:mana_powder"
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			id: "78C45A8EFE42CA2C"
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "0CBF20366F538884"
+				item: "botania:mana_pool"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["11A096C0D7EE7DA4"]
+			description: [
+				"{ftbq.r2aot.chapter1-3.mana_motor.desc_1}"
+				"{ftbq.r2aot.chapter1-3.mana_motor.desc_2}"
+			]
+			icon: "r2aot:mana_motor"
+			id: "4DB928F316E9D043"
+			rewards: [
+				{
+					count: 2
+					id: "3127F41FFCAB5255"
+					item: "botania:spark"
+					type: "item"
+				}
+				{
+					id: "5BFBDAFB49812ED0"
+					item: "botania:spark_upgrade_recessive"
+					type: "item"
+				}
+			]
+			subtitle: "{ftbq.r2aot.chapter1-3.mana_motor.subtitle}"
+			tasks: [
+				{
+					id: "77A17294AC75B6C6"
+					item: "r2aot:mana_motor"
+					type: "item"
+				}
+				{
+					id: "6B33CE6A9A775775"
+					item: "r2aot:spinerette"
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["11A096C0D7EE7DA4"]
+			icon: "r2aot:fluidedmana_bucket"
+			id: "736F1876CCC1CDB8"
+			tasks: [
+				{
+					id: "2D5B436A8B4647C5"
+					item: "r2aot:fluidedmana_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "7C101B9C97D40A4C"
+					type: "checkmark"
+				}
+			]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2855A631519B8637"]
+			icon: "r2aot:seed_oil_bucket"
+			id: "4645D454CE5C4071"
+			tasks: [
+				{
+					id: "0B29AC9E2116E83F"
+					item: "r2aot:seed_oil_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "2CCE1AC04EEC17A2"
+					type: "checkmark"
+				}
+			]
+			x: 4.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["4645D454CE5C4071"]
+			icon: "r2aot:bioethanol_bucket"
+			id: "57066D98B99414E0"
+			tasks: [
+				{
+					id: "00B43FCDAA0CE399"
+					item: "r2aot:bioethanol_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "35CE852D52A4F373"
+					type: "checkmark"
+				}
+			]
+			x: 6.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["48075033836FC5E9"]
+			id: "36CFD55D75E3E377"
+			tasks: [{
+				id: "3181F1F2B2781A44"
+				item: "create:spout"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["21A67F2D77B9F8CC"]
+			id: "48075033836FC5E9"
+			tasks: [{
+				id: "6982F4C7C5D803A4"
+				item: "create:copper_casing"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"736F1876CCC1CDB8"
+				"4645D454CE5C4071"
+				"57066D98B99414E0"
+				"36CFD55D75E3E377"
+			]
+			id: "38463458C755F342"
+			tasks: [{
+				id: "3800C33EF6EC3F73"
+				item: "create:sturdy_sheet"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["38463458C755F342"]
+			id: "0C91CD50BF78FF1E"
+			tasks: [{
+				id: "0FD9666F2E472E27"
+				item: "create:railway_casing"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0C91CD50BF78FF1E"]
+			id: "2DBB6AD2FD5F8C58"
+			tasks: [{
+				id: "7A95AE4C58B404A0"
+				item: "minecraft:vine"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"0C91CD50BF78FF1E"
+				"25AF6C6C9947839C"
+			]
+			id: "2C060B586230FA3F"
+			tasks: [{
+				id: "3C1F9BADACFED6EE"
+				item: "botanypotstiers:elite_terracotta_hopper_botany_pot"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["2DBB6AD2FD5F8C58"]
+			icon: "thermal:rubber"
+			id: "4224BB98DC684337"
+			tasks: [
+				{
+					id: "67EC019DE3C7B7CC"
+					item: "thermal:rubber"
+					type: "item"
+				}
+				{
+					id: "07437A0AD33479A6"
+					item: "thermal:latex_bucket"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 10.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["4224BB98DC684337"]
+			id: "1934014BC25522DA"
+			tasks: [{
+				id: "28FBF1F2D8B62D67"
+				item: "thermal:cured_rubber"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["1934014BC25522DA"]
+			id: "0E34F418C4446981"
+			tasks: [{
+				id: "2BDA0D8B067C51BB"
+				item: "industrialforegoing:plastic"
+				type: "item"
+			}]
+			x: 14.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["2DBB6AD2FD5F8C58"]
+			icon: "thermal:latex_bucket"
+			id: "68D80C713720BE4B"
+			tasks: [
+				{
+					id: "6C4EF235BB1CC285"
+					item: "thermal:latex_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "59B289DE90D3B6C3"
+					type: "checkmark"
+				}
+			]
+			x: 10.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["68D80C713720BE4B"]
+			icon: "industrialforegoing:latex_bucket"
+			id: "7E5985CA3C5C5DB2"
+			tasks: [
+				{
+					id: "1C6F1AC1BCD7BED5"
+					item: "industrialforegoing:latex_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "183C745E2BA26C3B"
+					type: "checkmark"
+				}
+			]
+			x: 12.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["21A67F2D77B9F8CC"]
+			id: "5169232D2299103C"
+			tasks: [{
+				id: "72AC4AFB279C090C"
+				item: "industrialforegoing:machine_frame_pity"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"5169232D2299103C"
+				"0E34F418C4446981"
+			]
+			id: "2F9B3FF63BE14508"
+			tasks: [{
+				id: "7D18E1D56A38D1BB"
+				item: "industrialforegoing:dissolution_chamber"
+				type: "item"
+			}]
+			x: 14.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0C91CD50BF78FF1E"]
+			description: ["{ftbq.r2aot.chapter1-3.stress_generator_core.desc_1}"]
+			id: "0639FF08FFE66ADE"
+			subtitle: "{\"translate\":\"ftbq.r2aot.capsule.text\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"3C0C8B7CEE576EC8\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"ftbq.r2aot.capsule.click\"}}}"
+			tasks: [{
+				id: "5EBEC8BA1A3A61F6"
+				item: "r2aot:stress_generator_core"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"7E5985CA3C5C5DB2"
+				"2F9B3FF63BE14508"
+			]
+			id: "65DEEF05DFEDBE24"
+			tasks: [{
+				id: "3ADAE95938C37253"
+				item: "industrialforegoing:machine_frame_simple"
+				type: "item"
+			}]
+			x: 14.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["0F46454819C392CA"]
+			id: "14F255138324622C"
+			tasks: [
+				{
+					id: "4A6DC399BF183095"
+					item: "botania:rune_water"
+					type: "item"
+				}
+				{
+					id: "3842FA9ED240D741"
+					item: "botania:rune_fire"
+					type: "item"
+				}
+				{
+					id: "7030343EFCC23FC5"
+					item: "botania:rune_earth"
+					type: "item"
+				}
+				{
+					id: "0A721DF7D2504870"
+					item: "botania:rune_air"
+					type: "item"
+				}
+			]
+			x: 20.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2F9B3FF63BE14508"]
+			id: "5F37E90FD47F1C50"
+			tasks: [{
+				id: "2A4F416686AE7A8E"
+				item: "mysticalagriculture:inferium_essence"
+				type: "item"
+			}]
+			x: 16.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["5F37E90FD47F1C50"]
+			id: "1897CF8D40F453AE"
+			tasks: [{
+				id: "6BBDC7BC2C785896"
+				item: "mysticalagriculture:inferium_seeds"
+				type: "item"
+			}]
+			x: 16.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["2F9B3FF63BE14508"]
+			description: ["{ftbq.r2aot.chapter1-3.element_seeds.desc_1}"]
+			id: "04AF37D0C5344397"
+			subtitle: "{ftbq.r2aot.chapter1-3.element_seeds.subtitle}"
+			tasks: [
+				{
+					id: "3C68E39D032D8BF7"
+					item: "mysticalagriculture:water_seeds"
+					type: "item"
+				}
+				{
+					id: "6E1FDF2C2F8F6E7C"
+					item: "mysticalagriculture:fire_seeds"
+					type: "item"
+				}
+				{
+					id: "3DD92E67C1C5A44C"
+					item: "mysticalagriculture:earth_seeds"
+					type: "item"
+				}
+				{
+					id: "45AEDA890E86A911"
+					item: "mysticalagriculture:air_seeds"
+					type: "item"
+				}
+			]
+			x: 16.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["04AF37D0C5344397"]
+			id: "0F46454819C392CA"
+			tasks: [
+				{
+					id: "44245742E04E5402"
+					item: "mysticalagriculture:water_essence"
+					type: "item"
+				}
+				{
+					id: "79B8B4705527A3FC"
+					item: "mysticalagriculture:fire_essence"
+					type: "item"
+				}
+				{
+					id: "77FA64E7437B4F9E"
+					item: "mysticalagriculture:earth_essence"
+					type: "item"
+				}
+				{
+					id: "68CB52A75F162332"
+					item: "mysticalagriculture:air_essence"
+					type: "item"
+				}
+			]
+			x: 18.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5F37E90FD47F1C50"]
+			id: "2591B0B0D8581227"
+			tasks: [{
+				id: "39A681ECE60B3C9E"
+				item: "mysticalagriculture:inferium_block"
+				type: "item"
+			}]
+			x: 18.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["14F255138324622C"]
+			id: "25ABBCAF9B1EF42C"
+			rewards: [
+				{
+					id: "29549BB487FF8909"
+					item: "botania:mana_spreader"
+					type: "item"
+				}
+				{
+					id: "11F1734112B373A4"
+					item: "botania:lens_speed"
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			size: 1.5d
+			subtitle: "{ftbq.r2aot.chapter1-3.mana_liquidizer.subtitle}"
+			tasks: [{
+				id: "3672586284A57110"
+				item: "r2aot:mana_liquidizer"
+				type: "item"
+			}]
+			x: 22.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["14F255138324622C"]
+			id: "26A4E583F7C050AB"
+			tasks: [{
+				id: "713BBA31FE39D36E"
+				item: "r2aot:modular_pure_daisy_core"
+				type: "item"
+			}]
+			x: 22.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["14F255138324622C"]
+			id: "03E6897A21426073"
+			tasks: [{
+				id: "177AB3BBEB1FDE01"
+				item: "r2aot:rune_elemental"
+				type: "item"
+			}]
+			x: 22.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["0639FF08FFE66ADE"]
+			id: "333797559FEB2341"
+			tasks: [{
+				id: "3357DE5DA8F7288A"
+				item: "ae2:mysterious_cube"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["65DEEF05DFEDBE24"]
+			id: "380DD78FB9B00B39"
+			tasks: [{
+				id: "6EF55BF7E5B83878"
+				item: "r2aot:atomic_reconstructor"
+				type: "item"
+			}]
+			x: 14.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["380DD78FB9B00B39"]
+			id: "5832BECA8476662A"
+			tasks: [{
+				id: "338F412E5B289930"
+				item: "fluxnetworks:flux_dust"
+				type: "item"
+			}]
+			x: 12.0d
+			y: -4.0d
+		}
+	]
+	title: "{ftbq.r2aot.chapter1-3.start.title}"
+}

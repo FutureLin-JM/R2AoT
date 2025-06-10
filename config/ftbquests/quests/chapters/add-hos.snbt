@@ -1,0 +1,741 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "add-hos"
+	group: "3707D0F2FC36575A"
+	icon: "hostilenetworks:sim_chamber"
+	id: "43E4EA814B98A53A"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["42DA31934CDF73A5"]
+			hide_dependent_lines: true
+			id: "5F238F0DB8D8BBB2"
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "425793EF78FA19F8"
+				item: "r2aot:data_model_base"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["5F238F0DB8D8BBB2"]
+			icon: {
+				Count: 1
+				id: "hostilenetworks:data_model"
+				tag: {
+					data_model: {
+						data: 1254
+						id: "hostilenetworks:blaze"
+					}
+				}
+			}
+			id: "63B4FBDC733FE9E4"
+			rewards: [{
+				id: "65D563FD4ADAC694"
+				item: {
+					Count: 1
+					id: "capsule:capsule"
+					tag: {
+						author: "FutureLin"
+						canRotate: 1b
+						color: 11184810
+						display: {
+							color: 16766248
+						}
+						isReward: 1b
+						label: "Data Model Blaze.nbt"
+						oneUse: 1b
+						size: 5
+						state: 5
+						structureName: "config/capsule/rewards/data_model_blaze.nbt"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					consume_items: true
+					count: 57L
+					id: "505E552921FE211D"
+					item: { Count: 57, id: "minecraft:orange_wool" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 37L
+					id: "0DABF6F723A1D716"
+					item: { Count: 37, id: "minecraft:yellow_wool" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 2L
+					id: "7F38826E6FAFF032"
+					item: "minecraft:white_wool"
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 2L
+					id: "48F85F6E329B339D"
+					item: "minecraft:black_wool"
+					type: "item"
+				}
+			]
+			title: "&6{entity.minecraft.blaze}"
+			x: -4.0d
+			y: 2.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["5F238F0DB8D8BBB2"]
+			icon: {
+				Count: 1
+				id: "hostilenetworks:data_model"
+				tag: {
+					data_model: {
+						data: 1254
+						id: "hostilenetworks:chicken"
+					}
+				}
+			}
+			id: "2AF303FDAEDD9DD1"
+			rewards: [{
+				id: "77A27F6BD9A021DC"
+				item: {
+					Count: 1
+					id: "capsule:capsule"
+					tag: {
+						author: "FutureLin"
+						canRotate: 1b
+						color: 11184810
+						display: {
+							color: 15788758
+						}
+						isReward: 1b
+						label: "Data Model Chicken.nbt"
+						oneUse: 1b
+						size: 5
+						state: 5
+						structureName: "config/capsule/rewards/data_model_chicken.nbt"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					consume_items: true
+					count: 92L
+					id: "1F41F720FCF5A70C"
+					item: { Count: 92, id: "minecraft:white_wool" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 3L
+					id: "1ADED2FE1C8CED46"
+					item: { Count: 3, id: "minecraft:orange_wool" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 2L
+					id: "093139D2388DE753"
+					item: { Count: 2, id: "minecraft:black_wool" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					id: "1FBB40FE31EB5B25"
+					item: "minecraft:red_wool"
+					type: "item"
+				}
+			]
+			title: "&f{entity.minecraft.chicken}"
+			x: -2.0d
+			y: 2.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["5F238F0DB8D8BBB2"]
+			icon: {
+				Count: 1
+				id: "hostilenetworks:data_model"
+				tag: {
+					data_model: {
+						data: 1254
+						id: "hostilenetworks:creeper"
+					}
+				}
+			}
+			id: "7055B8B80F5F62D5"
+			rewards: [{
+				id: "4AA4B2D0D11F19DC"
+				item: {
+					Count: 1
+					id: "capsule:capsule"
+					tag: {
+						author: "FutureLin"
+						canRotate: 1b
+						color: 699050
+						display: {
+							color: 7396445
+						}
+						isReward: 1b
+						label: "Data Model Creeper.nbt"
+						oneUse: 1b
+						size: 5
+						state: 5
+						structureName: "config/capsule/rewards/data_model_creeper.nbt"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					consume_items: true
+					count: 85L
+					id: "5AAD32348D03327C"
+					item: { Count: 85, id: "minecraft:green_wool" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 13L
+					id: "203842ECC10678C9"
+					item: { Count: 13, id: "minecraft:black_wool" }
+					type: "item"
+				}
+			]
+			title: "&a{entity.minecraft.creeper}"
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["5F238F0DB8D8BBB2"]
+			icon: {
+				Count: 1
+				id: "hostilenetworks:data_model"
+				tag: {
+					data_model: {
+						data: 1254
+						id: "hostilenetworks:enderman"
+					}
+				}
+			}
+			id: "19E5B1D94108806A"
+			rewards: [{
+				id: "6605341936DC0D9A"
+				item: {
+					Count: 1
+					id: "capsule:capsule"
+					tag: {
+						author: "FutureLin"
+						canRotate: 1b
+						color: 699050
+						display: {
+							color: 1447446
+						}
+						isReward: 1b
+						label: "Data Model Enderman.nbt"
+						oneUse: 1b
+						size: 5
+						state: 5
+						structureName: "config/capsule/rewards/data_model_enderman.nbt"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					consume_items: true
+					count: 94L
+					id: "0755E6FFF5232751"
+					item: { Count: 94, id: "minecraft:black_wool" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 4L
+					id: "165D5C2D18D57382"
+					item: { Count: 4, id: "minecraft:white_wool" }
+					type: "item"
+				}
+			]
+			title: "&0{entity.minecraft.enderman}"
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["5F238F0DB8D8BBB2"]
+			icon: {
+				Count: 1
+				id: "hostilenetworks:data_model"
+				tag: {
+					data_model: {
+						data: 1254
+						id: "hostilenetworks:ghast"
+					}
+				}
+			}
+			id: "5905DEA09CA41FF3"
+			rewards: [{
+				id: "48129F18E27ACFE3"
+				item: {
+					Count: 1
+					id: "capsule:capsule"
+					tag: {
+						author: "FutureLin"
+						canRotate: 1b
+						color: 699050
+						display: {
+							color: 15790320
+						}
+						isReward: 1b
+						label: "Data Model Ghast.nbt"
+						oneUse: 1b
+						size: 5
+						state: 5
+						structureName: "config/capsule/rewards/data_model_ghast.nbt"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					consume_items: true
+					count: 93L
+					id: "43FA87005F6BD0E8"
+					item: { Count: 93, id: "minecraft:black_wool" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 5L
+					id: "6ED9DCC3D91DE860"
+					item: { Count: 5, id: "minecraft:white_wool" }
+					type: "item"
+				}
+			]
+			title: "&7{entity.minecraft.ghast}"
+			x: -4.0d
+			y: 3.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["5F238F0DB8D8BBB2"]
+			icon: {
+				Count: 1
+				id: "hostilenetworks:data_model"
+				tag: {
+					data_model: {
+						data: 1254
+						id: "hostilenetworks:sheep"
+					}
+				}
+			}
+			id: "1D351F5D7EFCEB60"
+			rewards: [{
+				id: "255253E23B54CDB4"
+				item: {
+					Count: 1
+					id: "capsule:capsule"
+					tag: {
+						author: "FutureLin"
+						canRotate: 1b
+						color: 699050
+						display: {
+							color: 15790320
+						}
+						isReward: 1b
+						label: "Data Model Sheep.nbt"
+						oneUse: 1b
+						size: 5
+						state: 5
+						structureName: "config/capsule/rewards/data_model_sheep.nbt"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					consume_items: true
+					count: 82L
+					id: "13FD61B2222E7542"
+					item: { Count: 82, id: "minecraft:white_wool" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 13L
+					id: "62CA9FBD9BFE3746"
+					item: { Count: 13, id: "minecraft:orange_wool" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 2L
+					id: "3807217457F9FDAF"
+					item: { Count: 2, id: "minecraft:black_wool" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					id: "1CB2F857199D1447"
+					item: "minecraft:pink_wool"
+					type: "item"
+				}
+			]
+			title: "&f{entity.minecraft.sheep}"
+			x: -2.0d
+			y: 3.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["5F238F0DB8D8BBB2"]
+			icon: {
+				Count: 1
+				id: "hostilenetworks:data_model"
+				tag: {
+					data_model: {
+						data: 1254
+						id: "hostilenetworks:skeleton"
+					}
+				}
+			}
+			id: "01E39280D8435737"
+			rewards: [{
+				id: "356C3D0756D5E921"
+				item: {
+					Count: 1
+					id: "capsule:capsule"
+					tag: {
+						author: "FutureLin"
+						canRotate: 1b
+						color: 699050
+						display: {
+							color: 12369084
+						}
+						isReward: 1b
+						label: "Data Model Skeleton.nbt"
+						oneUse: 1b
+						size: 5
+						state: 5
+						structureName: "config/capsule/rewards/data_model_skeleton.nbt"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					consume_items: true
+					count: 91L
+					id: "1DC7964B99662875"
+					item: { Count: 91, id: "minecraft:white_wool" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 7L
+					id: "400AF366145803CA"
+					item: { Count: 7, id: "minecraft:black_wool" }
+					type: "item"
+				}
+			]
+			title: "&8{entity.minecraft.skeleton}"
+			x: 0.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["5F238F0DB8D8BBB2"]
+			icon: {
+				Count: 1
+				id: "hostilenetworks:data_model"
+				tag: {
+					data_model: {
+						data: 1254
+						id: "hostilenetworks:slime"
+					}
+				}
+			}
+			id: "740FFEB20DAF2C42"
+			rewards: [{
+				id: "276C18B33581FFB6"
+				item: {
+					Count: 1
+					id: "capsule:capsule"
+					tag: {
+						author: "FutureLin"
+						canRotate: 1b
+						color: 699050
+						display: {
+							color: 8112738
+						}
+						isReward: 1b
+						label: "Data Model Slime.nbt"
+						oneUse: 1b
+						size: 5
+						state: 5
+						structureName: "config/capsule/rewards/data_model_slime.nbt"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					consume_items: true
+					count: 95L
+					id: "5389EC3329E9A81D"
+					item: { Count: 95, id: "minecraft:lime_stained_glass" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 3L
+					id: "0DA248A0EAB84826"
+					item: { Count: 3, id: "minecraft:black_wool" }
+					type: "item"
+				}
+			]
+			title: "&a{entity.minecraft.slime}"
+			x: 2.0d
+			y: 3.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["5F238F0DB8D8BBB2"]
+			icon: {
+				Count: 1
+				id: "hostilenetworks:data_model"
+				tag: {
+					data_model: {
+						data: 1254
+						id: "hostilenetworks:spider"
+					}
+				}
+			}
+			id: "26627FC931C08D0A"
+			rewards: [{
+				id: "3D0AAE8BB7CD9CE0"
+				item: {
+					Count: 1
+					id: "capsule:capsule"
+					tag: {
+						author: "FutureLin"
+						canRotate: 1b
+						color: 699050
+						display: {
+							color: 3287846
+						}
+						isReward: 1b
+						label: "Data Model Spider.nbt"
+						oneUse: 1b
+						size: 5
+						state: 5
+						structureName: "config/capsule/rewards/data_model_spider.nbt"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					consume_items: true
+					count: 91L
+					id: "1EC9A656D9573975"
+					item: { Count: 91, id: "minecraft:black_wool" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 4L
+					id: "1E499F68FB049165"
+					item: { Count: 4, id: "minecraft:red_wool" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 3L
+					id: "21583BC31F3D0348"
+					item: { Count: 3, id: "minecraft:gray_wool" }
+					type: "item"
+				}
+			]
+			title: "&8{entity.minecraft.spider}"
+			x: 4.0d
+			y: 3.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["5F238F0DB8D8BBB2"]
+			icon: {
+				Count: 1
+				id: "hostilenetworks:data_model"
+				tag: {
+					data_model: {
+						data: 1254
+						id: "hostilenetworks:vindicator"
+					}
+				}
+			}
+			id: "289C548BBCA22D83"
+			rewards: [{
+				id: "2CEC70DF06531B06"
+				item: {
+					Count: 1
+					id: "capsule:capsule"
+					tag: {
+						author: "FutureLin"
+						canRotate: 1b
+						color: 699050
+						display: {
+							color: 3298662
+						}
+						isReward: 1b
+						label: "Data Model Vindicator.nbt"
+						oneUse: 1b
+						size: 5
+						state: 5
+						structureName: "config/capsule/rewards/data_model_vindicator.nbt"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					consume_items: true
+					count: 90L
+					id: "1CFED6A2902E0A25"
+					item: { Count: 90, id: "minecraft:light_gray_wool" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 4L
+					id: "48B8DC1F682F6D7F"
+					item: { Count: 4, id: "minecraft:black_wool" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 2L
+					id: "686A68547C73A3C4"
+					item: { Count: 2, id: "minecraft:gray_wool" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 2L
+					id: "091A0C998958F277"
+					item: { Count: 2, id: "minecraft:lime_wool" }
+					type: "item"
+				}
+			]
+			title: "&3{entity.minecraft.vindicator}"
+			x: 0.0d
+			y: 0.5d
+		}
+		{
+			can_repeat: true
+			dependencies: ["5F238F0DB8D8BBB2"]
+			icon: {
+				Count: 1
+				id: "hostilenetworks:data_model"
+				tag: {
+					data_model: {
+						data: 1254
+						id: "hostilenetworks:cow"
+					}
+				}
+			}
+			id: "523F64C0760D7702"
+			rewards: [{
+				id: "51488330CFC9DD88"
+				item: {
+					Count: 1
+					id: "capsule:capsule"
+					tag: {
+						author: "FutureLin"
+						canRotate: 1b
+						color: 699050
+						display: {
+							color: 3484191
+						}
+						isReward: 1b
+						label: "Data Model Cow.nbt"
+						oneUse: 1b
+						size: 5
+						state: 5
+						structureName: "config/capsule/rewards/data_model_cow.nbt"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					consume_items: true
+					count: 84L
+					id: "17041D3D55208267"
+					item: { Count: 84, id: "minecraft:brown_wool" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 6L
+					id: "1E8B07AFEC5FDFBF"
+					item: { Count: 6, id: "minecraft:white_wool" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 4L
+					id: "74D3551658354541"
+					item: { Count: 4, id: "minecraft:black_wool" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 4L
+					id: "50C3EA231FB1A3CE"
+					item: { Count: 4, id: "minecraft:white_wool" }
+					type: "item"
+				}
+			]
+			title: "&4{entity.minecraft.cow}"
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0412E6F433DFC1C0"]
+			id: "23F513F83AB19F9C"
+			size: 1.5d
+			tasks: [{
+				id: "59C3E92803C63642"
+				item: "hostilenetworks:sim_chamber"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["0412E6F433DFC1C0"]
+			id: "331E9FA11F5A2AB2"
+			size: 1.5d
+			tasks: [{
+				id: "39C53D1489732730"
+				item: "hostilenetworks:loot_fabricator"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 5.0d
+		}
+	]
+	title: "{ftbq.r2aot.additional-hostilenetworks.start.title}"
+}

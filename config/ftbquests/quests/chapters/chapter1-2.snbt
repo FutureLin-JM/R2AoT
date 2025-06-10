@@ -1,0 +1,699 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "chapter1-2"
+	group: "61A42EA15042ADCF"
+	icon: "botania:pure_daisy"
+	id: "5AFB088C3E9A2C9F"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			id: "5D00BC239D0E90A4"
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "55451D349D5EB4CB"
+				item: "botania:pure_daisy"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5D00BC239D0E90A4"]
+			id: "4FAD9C7EA9405090"
+			tasks: [{
+				id: "578000F71760170F"
+				item: "botania:livingrock"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["5D00BC239D0E90A4"]
+			id: "3E5300DBB722C4F6"
+			tasks: [{
+				id: "7F6F3B4795CF4317"
+				item: "botania:livingwood_log"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"4FAD9C7EA9405090"
+				"4F5DAA8DEA244F6F"
+			]
+			id: "403F97547E744B65"
+			tasks: [{
+				id: "385E9A6F74A8FBA0"
+				item: "create:millstone"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["5D00BC239D0E90A4"]
+			id: "4F5DAA8DEA244F6F"
+			tasks: [
+				{
+					id: "35EE863CCB551AEC"
+					item: "r2aot:petal_coal_ore"
+					type: "item"
+				}
+				{
+					id: "29D1A542B8811BD9"
+					item: "r2aot:petal_iron_ore"
+					type: "item"
+				}
+				{
+					id: "4ECC84593C64225A"
+					item: "r2aot:petal_copper_ore"
+					type: "item"
+				}
+				{
+					id: "7677214ED418A92F"
+					item: "r2aot:petal_lapis_ore"
+					type: "item"
+				}
+				{
+					id: "6571B9CD3F8AFFDD"
+					item: "r2aot:petal_gold_ore"
+					type: "item"
+				}
+				{
+					id: "41E475FB30297D0C"
+					item: "r2aot:petal_redstone_ore"
+					type: "item"
+				}
+				{
+					id: "5E0D82C8CE795099"
+					item: "r2aot:petal_diamond_ore"
+					type: "item"
+				}
+				{
+					id: "53BBD204991F8B22"
+					item: "r2aot:petal_emerald_ore"
+					type: "item"
+				}
+			]
+			title: "{ftbq.r2aot.chapter1-2.petal_ore.title}"
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["403F97547E744B65"]
+			id: "21A67F2D77B9F8CC"
+			subtitle: "{ftbq.r2aot.chapter1-2.milling_subtitle}"
+			tasks: [
+				{
+					id: "5CA5BF429462F4D5"
+					item: "minecraft:coal"
+					type: "item"
+				}
+				{
+					id: "750A430F87E9F2F1"
+					item: "minecraft:iron_ingot"
+					type: "item"
+				}
+				{
+					id: "035885D91645C9CC"
+					item: "minecraft:copper_ingot"
+					type: "item"
+				}
+				{
+					id: "233E643C311A0436"
+					item: "minecraft:lapis_lazuli"
+					type: "item"
+				}
+				{
+					id: "693BE073365CE0E4"
+					item: "minecraft:gold_ingot"
+					type: "item"
+				}
+				{
+					id: "2CA9F1621B66118E"
+					item: "minecraft:redstone"
+					type: "item"
+				}
+				{
+					id: "50DD30CED7D8CC67"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					id: "345EBBAE463CAA69"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+			]
+			title: "{ftbq.r2aot.chapter1-2.milling_title}"
+			x: 4.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["537EFE9D4D96731A"]
+			id: "678D1D69206E0368"
+			tasks: [{
+				id: "316E63C33BF573F0"
+				item: "create:powdered_obsidian"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"678D1D69206E0368"
+				"3E5300DBB722C4F6"
+			]
+			id: "2211A42B5A5386AB"
+			subtitle: "{ftbq.r2aot.chapter1-2.obsidian.subtitle}"
+			tasks: [{
+				id: "41FE303B94FC2419"
+				item: "minecraft:obsidian"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["2211A42B5A5386AB"]
+			id: "199E927DD359CCB6"
+			tasks: [{
+				dimension: "minecraft:the_nether"
+				id: "534DC09F8CA946BC"
+				type: "dimension"
+			}]
+			x: 6.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"678D1D69206E0368"
+				"199E927DD359CCB6"
+			]
+			id: "286BF14ADB91B020"
+			subtitle: "{ftbq.r2aot.chapter1-2.netherrack.subtitle}"
+			tasks: [{
+				id: "45538DF4626C6AA1"
+				item: "minecraft:netherrack"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"286BF14ADB91B020"
+				"70A744291B23067F"
+			]
+			id: "00981BFCD2F9A4D9"
+			tasks: [{
+				id: "620D5B135C634B83"
+				item: "create:empty_blaze_burner"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"00981BFCD2F9A4D9"
+				"199E927DD359CCB6"
+				"024F3D6F27404821"
+			]
+			description: [
+				"{ftbq.r2aot.chapter1-2.blaze_burner.desc_1}"
+				"{ftbq.r2aot.chapter1-2.blaze_burner.desc_2}"
+				"{ftbq.r2aot.chapter1-2.blaze_burner.desc_3}"
+			]
+			id: "1B1B5B08D1B6E9F1"
+			subtitle: "{ftbq.r2aot.chapter1-2.blaze_burner.subtitle}"
+			tasks: [{
+				id: "6F7DA622040ED815"
+				item: "create:blaze_burner"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"537EFE9D4D96731A"
+				"286BF14ADB91B020"
+			]
+			hide_dependency_lines: true
+			icon: "minecraft:lava_bucket"
+			id: "024F3D6F27404821"
+			subtitle: "{ftbq.r2aot.chapter1-2.lava.subtitle}"
+			tasks: [
+				{
+					id: "7E6927D2C6144732"
+					item: "minecraft:lava_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "36D004243DC482C5"
+					type: "checkmark"
+				}
+			]
+			x: 8.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["1B1B5B08D1B6E9F1"]
+			id: "105F5C89F5B33BF1"
+			tasks: [{
+				id: "4E2BE2BD33570B22"
+				item: "r2aot:petal_zinc_ore"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["105F5C89F5B33BF1"]
+			id: "12CC9B001BCFCB7E"
+			subtitle: "{ftbq.r2aot.chapter1-2.milling_subtitle}"
+			tasks: [{
+				id: "4E2941DDE4FFD1B2"
+				item: "create:zinc_ingot"
+				type: "item"
+			}]
+			x: 10.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"12CC9B001BCFCB7E"
+				"1B1B5B08D1B6E9F1"
+			]
+			id: "62FD89AFDFDFD135"
+			tasks: [{
+				id: "6A9F0FF4D4F7EE90"
+				item: "create:brass_ingot"
+				type: "item"
+			}]
+			x: 10.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"1B1B5B08D1B6E9F1"
+				"537EFE9D4D96731A"
+			]
+			id: "09BB9CE6F7B1E954"
+			tasks: [{
+				id: "4F68CABB2134663B"
+				item: "r2aot:petal_quartz_ore"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["09BB9CE6F7B1E954"]
+			id: "1A3D1819F56FB760"
+			tasks: [{
+				id: "7F7E4460A6C6B831"
+				item: "minecraft:quartz"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["1A3D1819F56FB760"]
+			id: "3B5FE75A9ADE5C19"
+			tasks: [{
+				id: "12B31F96031D4F0D"
+				item: "create:rose_quartz"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["2855A631519B8637"]
+			id: "675128B7A1D5D992"
+			tasks: [{
+				id: "58D782413DE95801"
+				item: {
+					Count: 1
+					id: "create:sand_paper"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 14.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"3B5FE75A9ADE5C19"
+				"675128B7A1D5D992"
+			]
+			id: "0B75C5CBE820D022"
+			tasks: [{
+				id: "14A6775789051EC5"
+				item: "create:polished_rose_quartz"
+				type: "item"
+			}]
+			x: 12.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"4F7FEBD34A537F49"
+				"21A67F2D77B9F8CC"
+			]
+			hide_dependency_lines: true
+			id: "31260A18E624D32A"
+			tasks: [{
+				id: "02E1925139FF8BF7"
+				item: "create:mechanical_press"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -7.0d
+		}
+		{
+			dependencies: [
+				"62FD89AFDFDFD135"
+				"0204F0BDF80E27E1"
+			]
+			id: "03E53DD92A9F7702"
+			tasks: [{
+				id: "35F712E7C0B8F4D1"
+				item: "create:brass_hand"
+				type: "item"
+			}]
+			x: 10.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["0B75C5CBE820D022"]
+			id: "061DF3C66439E534"
+			tasks: [{
+				id: "109EEC3ACAC90D7D"
+				item: "create:electron_tube"
+				type: "item"
+			}]
+			x: 12.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"03E53DD92A9F7702"
+				"061DF3C66439E534"
+			]
+			id: "528B4255246DF19C"
+			tasks: [{
+				id: "4717F861327944F8"
+				item: "create:deployer"
+				type: "item"
+			}]
+			x: 12.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["528B4255246DF19C"]
+			id: "09442CBFAE004D94"
+			tasks: [{
+				id: "127A1645EE5F23C6"
+				item: "create:brass_casing"
+				type: "item"
+			}]
+			x: 14.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["09442CBFAE004D94"]
+			id: "0A528935EB4B6641"
+			tasks: [{
+				id: "780EC94A7D4E6955"
+				item: "create:mechanical_crafter"
+				type: "item"
+			}]
+			x: 16.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["0A528935EB4B6641"]
+			id: "0412E6F433DFC1C0"
+			shape: "diamond"
+			size: 1.5d
+			subtitle: "{ftbq.r2aot.chapter1-2.mana_pool.subtitle}"
+			tasks: [{
+				id: "23C14967D317EBCE"
+				item: "botania:mana_pool"
+				type: "item"
+			}]
+			x: 20.0d
+			y: -5.0d
+		}
+		{
+			dependencies: [
+				"0A528935EB4B6641"
+				"144485046BF013D9"
+			]
+			dependency_requirement: "one_completed"
+			id: "135818E055D86867"
+			shape: "square"
+			subtitle: "{\"translate\":\"ftbq.r2aot.capsule.text\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"047B4DE06BE3F22F\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"ftbq.r2aot.capsule.click\"}}}"
+			tasks: [{
+				id: "46DCD9CA63D50BCC"
+				item: "r2aot:primary_mana_generator_core"
+				type: "item"
+			}]
+			x: 18.0d
+			y: -3.0d
+		}
+		{
+			id: "144485046BF013D9"
+			tasks: [{
+				id: "61686390711128CC"
+				item: "botania:hydroangeas"
+				type: "item"
+			}]
+			x: 18.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["43C208DE31ABACD1"]
+			dependency_requirement: "one_completed"
+			id: "4C0D8EF890D3BDAD"
+			shape: "square"
+			tasks: [{
+				id: "646F9810266D8499"
+				item: "r2aot:flower_ore_generator"
+				type: "item"
+			}]
+			x: 14.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["09442CBFAE004D94"]
+			id: "43C208DE31ABACD1"
+			tasks: [{
+				id: "767E57E91D15D691"
+				item: "create:crushing_wheel"
+				type: "item"
+			}]
+			x: 14.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["31260A18E624D32A"]
+			id: "0204F0BDF80E27E1"
+			tasks: [{
+				id: "7C5B276128C81398"
+				item: "create:brass_sheet"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["31260A18E624D32A"]
+			id: "4D93FDAC30AACC10"
+			tasks: [{
+				id: "0BF77FE1AABF6200"
+				item: "thermal:gold_plate"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -7.0d
+		}
+		{
+			dependencies: [
+				"4D93FDAC30AACC10"
+				"03E53DD92A9F7702"
+			]
+			id: "3406744FA850B181"
+			tasks: [{
+				id: "1298B3F57B844E8E"
+				item: "create:precision_mechanism"
+				type: "item"
+			}]
+			x: 10.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["3406744FA850B181"]
+			id: "3959501BE91105D1"
+			optional: true
+			tasks: [{
+				id: "14FAFD58D24794D4"
+				item: "create:rotation_speed_controller"
+				type: "item"
+			}]
+			x: 12.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["4C0D8EF890D3BDAD"]
+			id: "6D70F7C0A3B3675A"
+			ignore_reward_blocking: true
+			tasks: [{
+				id: "6660A17F2D9F7855"
+				item: "botania:orechid"
+				type: "item"
+			}]
+			x: 16.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["4C0D8EF890D3BDAD"]
+			id: "303F4CF8A59EF261"
+			tasks: [{
+				id: "5F0D0F0196B023F4"
+				item: "botania:pure_daisy"
+				type: "item"
+			}]
+			x: 16.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["303F4CF8A59EF261"]
+			id: "5F6D2382BB82D265"
+			tasks: [
+				{
+					id: "056A95882011706A"
+					item: "minecraft:coal"
+					type: "item"
+				}
+				{
+					id: "0FAE4576D160715C"
+					item: "minecraft:iron_ingot"
+					type: "item"
+				}
+				{
+					id: "4004C372B408471C"
+					item: "minecraft:copper_ingot"
+					type: "item"
+				}
+				{
+					id: "7517A1ABF75A5E0D"
+					item: "minecraft:lapis_lazuli"
+					type: "item"
+				}
+				{
+					id: "75336604422E4FEA"
+					item: "minecraft:gold_ingot"
+					type: "item"
+				}
+				{
+					id: "24B0A4051426686E"
+					item: "minecraft:redstone"
+					type: "item"
+				}
+				{
+					id: "1AB1B49DB3508DC6"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					id: "2A02569B3059CB24"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+			]
+			x: 18.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["6D70F7C0A3B3675A"]
+			id: "3A55C2BDCF58BC51"
+			tasks: [
+				{
+					id: "1BC55504697E0C8C"
+					item: "create:zinc_ingot"
+					type: "item"
+				}
+				{
+					id: "5BE07AB7EDDDEBE4"
+					item: "ae2:certus_quartz_crystal"
+					type: "item"
+				}
+				{
+					id: "1C42FFD52408A941"
+					item: "minecraft:quartz"
+					type: "item"
+				}
+				{
+					id: "7C9E61FF99966BEE"
+					item: "minecraft:glowstone_dust"
+					type: "item"
+				}
+			]
+			x: 18.0d
+			y: -7.0d
+		}
+		{
+			dependencies: [
+				"3406744FA850B181"
+				"11A096C0D7EE7DA4"
+			]
+			id: "7630CFACD9371243"
+			tasks: [{
+				id: "1118BBF7181A7CDB"
+				item: "createendertransmission:energy_transmitter"
+				type: "item"
+			}]
+			x: 12.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["4C0D8EF890D3BDAD"]
+			id: "43F7ACC33A745553"
+			tasks: [{
+				id: "38537492BE7FDBB9"
+				item: "botania:clayconia"
+				type: "item"
+			}]
+			x: 16.0d
+			y: -11.0d
+		}
+		{
+			dependencies: ["43F7ACC33A745553"]
+			id: "74CCEE93471AB3E3"
+			tasks: [{
+				id: "7CD28A7560C56B52"
+				item: "minecraft:clay_ball"
+				type: "item"
+			}]
+			x: 18.0d
+			y: -11.0d
+		}
+	]
+	title: "{ftbq.r2aot.chapter1-2.start.title}"
+}

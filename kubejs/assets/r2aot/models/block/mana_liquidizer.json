@@ -1,0 +1,6 @@
+{
+    "parent": "minecraft:block/cube_all",
+    "textures": {
+        "all": "r2aot:block/mana_liquidizer"
+    }
+}

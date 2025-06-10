@@ -1,0 +1,128 @@
+{
+	id: "2C2E7BA828E6B3F7"
+	loot_size: 2
+	order_index: 0
+	rewards: [
+		{
+			item: {
+				Count: 1
+				id: "expatternprovider:infinity_cell"
+				tag: {
+					record: {
+						"#c": "ae2:i"
+						id: "minecraft:white_concrete"
+					}
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "expatternprovider:infinity_cell"
+				tag: {
+					record: {
+						"#c": "ae2:i"
+						id: "minecraft:black_concrete"
+					}
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "expatternprovider:infinity_cell"
+				tag: {
+					record: {
+						"#c": "ae2:i"
+						id: "minecraft:orange_concrete"
+					}
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "expatternprovider:infinity_cell"
+				tag: {
+					record: {
+						"#c": "ae2:i"
+						id: "minecraft:yellow_concrete"
+					}
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "expatternprovider:infinity_cell"
+				tag: {
+					record: {
+						"#c": "ae2:i"
+						id: "minecraft:pink_concrete"
+					}
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "expatternprovider:infinity_cell"
+				tag: {
+					record: {
+						"#c": "ae2:i"
+						id: "minecraft:gray_concrete"
+					}
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "expatternprovider:infinity_cell"
+				tag: {
+					record: {
+						"#c": "ae2:i"
+						id: "minecraft:purple_concrete"
+					}
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "expatternprovider:infinity_cell"
+				tag: {
+					record: {
+						"#c": "ae2:i"
+						id: "minecraft:blue_concrete"
+					}
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "expatternprovider:infinity_cell"
+				tag: {
+					record: {
+						"#c": "ae2:i"
+						id: "minecraft:green_concrete"
+					}
+				}
+			}
+		}
+		{
+			item: {
+				Count: 1
+				id: "expatternprovider:infinity_cell"
+				tag: {
+					record: {
+						"#c": "ae2:i"
+						id: "minecraft:red_concrete"
+					}
+				}
+			}
+		}
+	]
+	title: "铺路方块"
+}

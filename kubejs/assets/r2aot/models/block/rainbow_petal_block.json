@@ -1,0 +1,31 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "minecraft:block/block",
+	"textures": {
+		"1": "r2aot:block/rainbow_petal_block",
+		"particle": "r2aot:block/rainbow_petal_block"
+	},
+	"elements": [
+		{
+			"name": "base",
+			"from": [0, 0, 0],
+			"to": [16, 16, 16],
+			"faces": {
+				"north": {"uv": [0, 0, 4.5, 4.5], "texture": "#1"},
+				"east": {"uv": [0, 4.5, 4.5, 9], "texture": "#1"},
+				"south": {"uv": [4.5, 0, 9, 4.5], "texture": "#1"},
+				"west": {"uv": [4.5, 4.5, 9, 9], "texture": "#1"},
+				"up": {"uv": [4.5, 13.5, 0, 9], "texture": "#1"},
+				"down": {"uv": [13.5, 0, 9, 4.5], "texture": "#1"}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "group",
+			"origin": [8, 8, 8],
+			"color": 0,
+			"children": [0]
+		}
+	]
+}

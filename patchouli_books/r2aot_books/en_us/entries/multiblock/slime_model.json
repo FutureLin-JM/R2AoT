@@ -1,0 +1,28 @@
+{
+    "name": "patchouli.gui.lexicon.slime_model",
+    "icon": "hostilenetworks:data_model{data_model:{data:1254,id:\"hostilenetworks:slime\"}}",
+    "category": "patchouli:multiblock",
+    "pages": [
+        {
+            "type": "patchouli:multiblock",
+            "name": "patchouli.gui.lexicon.slime_model",
+            "multiblock": {
+                "pattern": [
+                    ["_____", "_____", "__1__", "_____", "_____"],
+                    ["AAAAA", "AAAAA", "AAAAA", "AAAAA", "AAAAA"],
+                    ["AAAAA", "A___A", "A___A", "A___A", "ABABA"],
+                    ["AAAAA", "A___A", "A___A", "A___A", "AAAAA"],
+                    ["AAAAA", "A___A", "A___A", "A___A", "AAABA"],
+                    ["AAAAA", "AAAAA", "AA0AA", "AAAAA", "AAAAA"]
+                ],
+                "mapping": {
+                    "0": "minecraft:lime_stained_glass",
+                    "1": "r2aot:data_model_base",
+                    "A": "minecraft:lime_stained_glass",
+                    "B": "minecraft:black_wool"
+                }
+            },
+            "enable_visualize": true
+        }
+    ]
+}

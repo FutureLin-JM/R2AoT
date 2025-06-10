@@ -1,0 +1,44 @@
+**
+!.gitignore
+!LICENSE.txt
+!README.md
+
+# Config
+!config/
+!config/almostunified/unify.json
+!config/capsule/
+!config/capsule/**
+!config/capsule-common.toml
+!config/ftbquests/
+!config/ftbquests/**
+!config/hostilenetworks.cfg
+!config/industrialforegoing/
+!config/industrialforegoing/machine-resources-production.toml
+!config/jada/
+!config/jada/plugins.json
+!config/skyblockbuilder/
+!config/skyblockbuilder/**
+
+# DefaultConfigs
+!defaultconfigs/
+!defaultconfigs/create-server.toml
+
+# Hotai
+!hotai/
+!hotai/**
+
+# KubeJS
+!kubejs/
+!kubejs/**
+probe/
+probe/**
+kubejs/README.txt
+kubejs/jsconfig.json
+
+# Ldlib
+!ldlib/
+!ldlib/**
+
+# Patchouli_Books
+!patchouli_books/
+!patchouli_books/**

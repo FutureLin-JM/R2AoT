@@ -1,0 +1,130 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "chapter2-4"
+	group: "1483CABC0DC8D7C6"
+	icon: "thermal:machine_frame"
+	id: "740E26EABB596F08"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["03E6897A21426073"]
+			icon: "r2aot:elemental_altar_core"
+			id: "0181B226C2493004"
+			shape: "gear"
+			size: 1.5d
+			subtitle: "{\"translate\":\"ftbq.r2aot.capsule.text\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"0082EBA879F9F8B4\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"ftbq.r2aot.capsule.click\"}}}"
+			tasks: [
+				{
+					id: "7C80D1C6FF0E56A7"
+					item: "r2aot:elemental_altar_core"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "171AA01C8E63A10B"
+					observe_type: 0
+					timer: 0L
+					title: "{ftbq.r2aot.observe.title}{r2aot.elemental_altar_core}"
+					to_observe: "r2aot:elemental_altar_core"
+					type: "observation"
+				}
+			]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0181B226C2493004"]
+			description: [
+				"{ftbq.r2aot.chapter2-4.ore_laser_base.desc_1}"
+				"{ftbq.r2aot.chapter2-4.ore_laser_base.desc_2}"
+				"{ftbq.r2aot.chapter2-4.ore_laser_base.desc_3}"
+			]
+			icon: "industrialforegoing:ore_laser_base"
+			id: "0DAE925DF35111D0"
+			subtitle: "{ftbq.r2aot.chapter2-4.ore_laser_base.subtitle}"
+			tasks: [
+				{
+					id: "37EAA53BEE66ADE1"
+					item: "industrialforegoing:ore_laser_base"
+					type: "item"
+				}
+				{
+					id: "6F9A3B3B30182C19"
+					item: "industrialforegoing:laser_drill"
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["0DAE925DF35111D0"]
+			description: [
+				"{ftbq.r2aot.chapter2-4.thermal_ore.desc_1}"
+				"{ftbq.r2aot.chapter2-4.thermal_ore.desc_2}"
+				"{ftbq.r2aot.chapter2-4.thermal_ore.desc_3}"
+				"{ftbq.r2aot.chapter2-4.thermal_ore.desc_4}"
+			]
+			id: "13A10E6C9F7436DB"
+			tasks: [
+				{
+					id: "599AAC345E4908AC"
+					item: "thermal:tin_ore"
+					type: "item"
+				}
+				{
+					id: "1AEA8B4D699BA7F1"
+					item: "thermal:lead_ore"
+					type: "item"
+				}
+				{
+					id: "3C97F9A505D4FC0D"
+					item: "thermal:silver_ore"
+					type: "item"
+				}
+				{
+					id: "38DE2801547BEC50"
+					item: "thermal:nickel_ore"
+					type: "item"
+				}
+				{
+					id: "285E32494A4826C4"
+					item: "thermal:apatite_ore"
+					type: "item"
+				}
+				{
+					id: "2D938FA12005AD93"
+					item: "thermal:cinnabar_ore"
+					type: "item"
+				}
+				{
+					id: "04F2EDEC86BBA980"
+					item: "thermal:niter_ore"
+					type: "item"
+				}
+				{
+					id: "058188B6E1FDB754"
+					item: "thermal:sulfur_ore"
+					type: "item"
+				}
+			]
+			title: "{ftbq.r2aot.chapter2-4.thermal_ore.title}"
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["0181B226C2493004"]
+			id: "32F76E7433A970DC"
+			tasks: [{
+				id: "53A52FB7A584301F"
+				item: "thermal:machine_frame"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+	]
+	title: "{ftbq.r2aot.chapter2-4.start.title}"
+}

@@ -1,0 +1,201 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "add-ae2"
+	group: "3707D0F2FC36575A"
+	hide_quest_until_deps_complete: true
+	icon: "ae2:controller"
+	id: "18817D4981FD8FA0"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["333797559FEB2341"]
+			id: "162431C9B009FA35"
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "5D8E63AE8F1D00B7"
+				item: "ae2:mysterious_cube"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["162431C9B009FA35"]
+			id: "6CBC7C7E8AD21CB6"
+			tasks: [{
+				id: "131ACC50FB6A0A93"
+				item: "ae2:silicon_press"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["162431C9B009FA35"]
+			id: "48BAF070EFF2F20C"
+			tasks: [{
+				id: "4E8EA746FD6C8FF7"
+				item: "ae2:logic_processor_press"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["162431C9B009FA35"]
+			id: "4CE7006319D8A79E"
+			tasks: [{
+				id: "53AB84AFC67626EB"
+				item: "ae2:calculation_processor_press"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["162431C9B009FA35"]
+			id: "71AE5E9894BEE385"
+			tasks: [{
+				id: "33D717E9B0681675"
+				item: "ae2:engineering_processor_press"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["6CBC7C7E8AD21CB6"]
+			id: "3658497B3C4846CA"
+			tasks: [{
+				id: "5491201B68DA7FBA"
+				item: "ae2:printed_silicon"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["4CE7006319D8A79E"]
+			id: "0D09F565329165ED"
+			tasks: [{
+				id: "38E6F60CD527BC48"
+				item: "ae2:printed_calculation_processor"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["48BAF070EFF2F20C"]
+			id: "75AFCD66EC903477"
+			tasks: [{
+				id: "5889F1A2C3291355"
+				item: "ae2:printed_logic_processor"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["71AE5E9894BEE385"]
+			id: "2613335D4EE40779"
+			tasks: [{
+				id: "59E84E9A52E5DA5D"
+				item: "ae2:printed_engineering_processor"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"3658497B3C4846CA"
+				"0D09F565329165ED"
+			]
+			id: "76CD8E277018D393"
+			tasks: [{
+				id: "492B6169C278F994"
+				item: "ae2:calculation_processor"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"3658497B3C4846CA"
+				"75AFCD66EC903477"
+			]
+			id: "3F3C43EFF399A381"
+			tasks: [{
+				id: "690F789131CF44DE"
+				item: "ae2:logic_processor"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"3658497B3C4846CA"
+				"2613335D4EE40779"
+			]
+			id: "4133A325100D95E0"
+			tasks: [{
+				id: "144402CBBC904B78"
+				item: "ae2:engineering_processor"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"4133A325100D95E0"
+				"4BDD63ADEB6E06FC"
+			]
+			id: "2E250DD6C2A0053C"
+			tasks: [{
+				id: "1046A746BFBA1032"
+				item: "ae2:controller"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["516081B675942745"]
+			id: "4BDD63ADEB6E06FC"
+			subtitle: "{ftbq.r2aot.additional-AE2.sky_stone_block.subtitle}"
+			tasks: [{
+				id: "418F571104FF5514"
+				item: "ae2:sky_stone_block"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["2F9B3FF63BE14508"]
+			icon: "r2aot:molten_meteorite_bucket"
+			id: "516081B675942745"
+			tasks: [
+				{
+					id: "39396D90DF06CD91"
+					item: "r2aot:molten_meteorite_bucket"
+					type: "item"
+				}
+				{
+					id: "3E43C336924045DB"
+					type: "checkmark"
+				}
+			]
+			x: 0.0d
+			y: 9.5d
+		}
+	]
+	title: "{ftbq.r2aot.additional-AE2.start.title}"
+}

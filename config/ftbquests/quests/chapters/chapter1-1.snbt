@@ -1,0 +1,832 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "chapter1-1"
+	group: "61A42EA15042ADCF"
+	icon: "botania:fertilizer"
+	id: "3EC468D59597A98A"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			icon: "botania:fertilizer"
+			id: "7C4AAF902973163F"
+			shape: "gear"
+			size: 1.5d
+			subtitle: "{ftbq.r2aot.chapter1-1.fertilizer.subtitle}"
+			tasks: [{
+				id: "69ED934EC7910064"
+				item: "botania:fertilizer"
+				type: "item"
+			}]
+			title: "{ftbq.r2aot.chapter1-1.fertilizer.title}"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7C4AAF902973163F"]
+			icon: "botania:white_mystical_flower"
+			id: "30AB4EACFAEEAF18"
+			tasks: [{
+				icon: "botania:white_mystical_flower"
+				id: "20B24990757D0DB6"
+				title: "{tag.botania.mystical_flowers}"
+				type: "custom"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["30AB4EACFAEEAF18"]
+			id: "50EEDC1B8A1A8AF6"
+			tasks: [{
+				icon: "botania:white_petal"
+				id: "4F0FBB2AF010B1B2"
+				title: "{tag.botania.petals}"
+				type: "custom"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["50EEDC1B8A1A8AF6"]
+			id: "4C75E44519A27B6E"
+			tasks: [{
+				id: "1C1CA6C715D21DA8"
+				item: "minecraft:oak_sapling"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["50EEDC1B8A1A8AF6"]
+			id: "24627FDDD3333489"
+			tasks: [{
+				id: "50943D5AB26B5824"
+				item: "minecraft:cobblestone"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["24627FDDD3333489"]
+			id: "4F6827F84B380B7B"
+			tasks: [{
+				id: "372061DDAA81DAB3"
+				item: "minecraft:andesite"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["7A6C83722F2DA4A4"]
+			id: "5E4F8401AC620E1E"
+			tasks: [{
+				id: "03D8BE26D12871F2"
+				item: "minecraft:gravel"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["4C75E44519A27B6E"]
+			id: "754377E94AC1887F"
+			tasks: [{
+				id: "011FC1C5DA0E9417"
+				item: {
+					Count: 1
+					id: "r2aot:wooden_shears"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 8.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["754377E94AC1887F"]
+			id: "67E7EC9672D1893C"
+			tasks: [{
+				id: "368E115B28B305BE"
+				item: "minecraft:oak_leaves"
+				type: "item"
+			}]
+			x: 10.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["67E7EC9672D1893C"]
+			icon: "botania:white_petal_block"
+			id: "3ED1DF924EF5333B"
+			tasks: [
+				{
+					id: "7F50F10F54176E55"
+					item: "botania:white_petal_block"
+					type: "item"
+				}
+				{
+					id: "11AF50276CF6BAF0"
+					item: "botania:red_petal_block"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "0067E5D8DB033A92"
+					item: "botania:orange_petal_block"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "6B61D42D0ACA1F6E"
+					item: "botania:yellow_petal_block"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "42A9C6A6B11F1044"
+					item: "botania:green_petal_block"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "7CE4EA3E8597381E"
+					item: "botania:blue_petal_block"
+					type: "item"
+				}
+				{
+					id: "3DE2D04990155C08"
+					item: "botania:cyan_petal_block"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "77FF57B74B83EE78"
+					item: "botania:purple_petal_block"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "7063CA050F352B14"
+					item: "botania:black_petal_block"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 12.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["3ED1DF924EF5333B"]
+			dependency_requirement: "all_started"
+			id: "20C6EA3C8A6FBD5D"
+			tasks: [{
+				id: "1E4726DDBBDB981F"
+				item: "r2aot:rainbow_petal_block"
+				type: "item"
+			}]
+			x: 14.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"3ED1DF924EF5333B"
+				"16FD91DD169158BC"
+			]
+			icon: "minecraft:water_bucket"
+			id: "61DEFD15867ECB49"
+			subtitle: "{ftbq.r2aot.chapter1-1.water.subtitle}"
+			tasks: [
+				{
+					id: "393A5B3BD84E9A33"
+					item: "minecraft:water_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "5D0213A2613BE2E8"
+					type: "checkmark"
+				}
+			]
+			x: 12.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["50EEDC1B8A1A8AF6"]
+			hide_dependent_lines: true
+			id: "386F4E32DE27D28E"
+			tasks: [{
+				id: "6FD468CB53756CC7"
+				item: "minecraft:bucket"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["24D5523AC2C02D73"]
+			id: "69F00616605331C3"
+			tasks: [{
+				id: "576EC4A2DA26E50C"
+				item: "minecraft:sand"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["4C75E44519A27B6E"]
+			id: "16FD91DD169158BC"
+			tasks: [{
+				id: "2CE44AA37D7C5897"
+				item: {
+					Count: 1
+					id: "r2aot:wooden_hammer"
+					tag: {
+						Damage: 0
+					}
+				}
+				match_nbt: false
+				type: "item"
+			}]
+			x: 10.0d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"20C6EA3C8A6FBD5D"
+				"16FD91DD169158BC"
+			]
+			icon: "r2aot:petal_essence_bucket"
+			id: "0CF213F17B5888F8"
+			subtitle: "{ftbq.r2aot.chapter1-1.petal_essence.subtitle}"
+			tasks: [
+				{
+					id: "5D03CFF2E038AE06"
+					item: "r2aot:petal_essence_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "0025BAF48FD7F0C0"
+					type: "checkmark"
+				}
+			]
+			title: "{fluid.r2aot.petal_essence}"
+			x: 14.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"0CF213F17B5888F8"
+				"5E4F8401AC620E1E"
+			]
+			id: "1BEB2D872232C947"
+			tasks: [{
+				id: "47DCA64F2A665B03"
+				item: "r2aot:green_gravel_shard"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"4F6827F84B380B7B"
+				"1BEB2D872232C947"
+			]
+			id: "4F124DED71426495"
+			rewards: [
+				{
+					id: "044FF07E64159D6D"
+					item: "create:goggles"
+					type: "item"
+				}
+				{
+					id: "640ADCEA7CA88198"
+					item: "create:wrench"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "585C90ABD29F7E64"
+				item: "create:andesite_alloy"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["4F124DED71426495"]
+			id: "4F7FEBD34A537F49"
+			tasks: [{
+				id: "56BBA476DB5EF794"
+				item: "create:andesite_casing"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["4F124DED71426495"]
+			hide_dependency_lines: true
+			id: "2F875EF3EBD33D1F"
+			subtitle: "{ftbq.r2aot.chapter1-1.stress_value.subtitle}"
+			tasks: [
+				{
+					id: "79C401038E135235"
+					item: "create:water_wheel"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "3573D5D0CB689A9E"
+					item: "create:windmill_bearing"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "{ftbq.r2aot.chapter1-1.stress_value.title}"
+			x: 8.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["4F7FEBD34A537F49"]
+			description: [
+				"{ftbq.r2aot.chapter1-1.fertilizer_propagator_core.desc_1}"
+				"{ftbq.r2aot.chapter1-1.fertilizer_propagator_core.desc_2}"
+			]
+			id: "18A397003EE423C1"
+			rewards: [
+				{
+					id: "4E13683F905BBC43"
+					item: "modularrouters:modular_router"
+					type: "item"
+				}
+				{
+					id: "08E9F3933E4E0799"
+					item: "modularrouters:activator_module"
+					type: "item"
+				}
+			]
+			shape: "square"
+			subtitle: "{\"translate\":\"ftbq.r2aot.capsule.text\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"0561CE13B84A93FA\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"ftbq.r2aot.capsule.click\"}}}"
+			tasks: [{
+				id: "1ABB0D1221BA0FD1"
+				item: "r2aot:fertilizer_propagator_core"
+				type: "item"
+			}]
+			x: 10.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["3ED1DF924EF5333B"]
+			id: "1E4FE1067F81F5B3"
+			tasks: [{
+				id: "4EB97B455AA308E4"
+				item: "pipez:item_pipe"
+				type: "item"
+			}]
+			x: 11.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["3ED1DF924EF5333B"]
+			id: "1B8A1FDED739C823"
+			tasks: [{
+				id: "63065C9FD4CFFFDA"
+				item: "pipez:fluid_pipe"
+				type: "item"
+			}]
+			x: 13.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["20C6EA3C8A6FBD5D"]
+			hide_dependency_lines: true
+			id: "70A744291B23067F"
+			tasks: [{
+				id: "1747289C0E18429A"
+				item: "thermal:iron_plate"
+				type: "item"
+			}]
+			x: 14.5d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"4F7FEBD34A537F49"
+				"70A744291B23067F"
+			]
+			id: "537EFE9D4D96731A"
+			tasks: [{
+				id: "543C4502B0144D2A"
+				item: "create:mechanical_mixer"
+				type: "item"
+			}]
+			x: 13.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["537EFE9D4D96731A"]
+			icon: "create:andesite_alloy"
+			id: "4E217BF1D8622EC5"
+			tasks: [
+				{
+					id: "7328E227723FCD66"
+					item: "create:andesite_alloy"
+					type: "item"
+				}
+				{
+					id: "117DDA167310160E"
+					item: "r2aot:petal_essence_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "13F12139CED2C074"
+					item: "minecraft:andesite"
+					type: "item"
+				}
+			]
+			title: "{ftbq.r2aot.chapter1-1.andesite_alloy_2.title}"
+			x: 15.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["335B6352663ECA5D"]
+			icon: "r2aot:double_compressed_andesite"
+			id: "68C12114D2D999FE"
+			tasks: [{
+				id: "3C793FE0A959198D"
+				item: "r2aot:double_compressed_andesite"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["4F7FEBD34A537F49"]
+			id: "335B6352663ECA5D"
+			tasks: [{
+				id: "7156DA671FEB5637"
+				item: "create_mechanical_extruder:mechanical_extruder"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["4F7FEBD34A537F49"]
+			icon: "r2aot:andesite_casing_maker_core"
+			id: "163E9CB53D2B5C61"
+			shape: "square"
+			subtitle: "{\"translate\":\"ftbq.r2aot.capsule.text\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"0083AEA5B9A648B0\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"ftbq.r2aot.capsule.click\"}}}"
+			tasks: [
+				{
+					id: "57CB1DF14CFA4604"
+					observe_type: 0
+					timer: 0L
+					title: "{ftbq.r2aot.observe.title}{block.r2aot.andesite_casing_maker_core}"
+					to_observe: "r2aot:andesite_casing_maker_core"
+					type: "observation"
+				}
+				{
+					id: "2C9731C37B237AFF"
+					item: "r2aot:andesite_casing_maker_core"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 10.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["24627FDDD3333489"]
+			id: "7A6C83722F2DA4A4"
+			tasks: [{
+				id: "2A7652FEA598F4CC"
+				item: "r2aot:compressed_cobblestone"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["5E4F8401AC620E1E"]
+			id: "24D5523AC2C02D73"
+			tasks: [{
+				id: "597653BF0B6FD724"
+				item: "r2aot:compressed_gravel"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["68C12114D2D999FE"]
+			id: "473FDC4DAA2A9A91"
+			tasks: [{
+				id: "69F62D708AE97993"
+				item: "minecraft:andesite"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["335B6352663ECA5D"]
+			id: "59BD60C0C9E65A7F"
+			tasks: [{
+				id: "7B744B9C4A1ED36C"
+				item: "r2aot:double_compressed_cobblestone"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["335B6352663ECA5D"]
+			id: "2581F46A4FDC9388"
+			tasks: [{
+				id: "0F9C8E95C0C1E5C0"
+				item: "r2aot:double_compressed_gravel"
+				type: "item"
+			}]
+			x: 11.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["335B6352663ECA5D"]
+			id: "7E0E4BE8C829C775"
+			tasks: [{
+				id: "5AA54F34C3ACE58D"
+				item: "r2aot:double_compressed_sand"
+				type: "item"
+			}]
+			x: 13.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["59BD60C0C9E65A7F"]
+			id: "4A05332393C9A510"
+			tasks: [{
+				id: "6C46AADB2BB4E461"
+				item: "minecraft:cobblestone"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["2581F46A4FDC9388"]
+			id: "581D1007AD7C08ED"
+			tasks: [{
+				id: "5CBC68AD5FE62FF5"
+				item: "minecraft:gravel"
+				type: "item"
+			}]
+			x: 11.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["7E0E4BE8C829C775"]
+			id: "3469B3EBAE7A72BF"
+			tasks: [{
+				id: "5FD24865DB4E8F57"
+				item: "minecraft:sand"
+				type: "item"
+			}]
+			x: 13.0d
+			y: 10.0d
+		}
+		{
+			dependencies: [
+				"4F7FEBD34A537F49"
+				"70A744291B23067F"
+			]
+			id: "20DB34F9FE0159A8"
+			tasks: [{
+				id: "46969CEFB771757B"
+				item: "create:encased_fan"
+				type: "item"
+			}]
+			x: 13.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["20DB34F9FE0159A8"]
+			id: "70251D6CA0E3C757"
+			subtitle: "{ftbq.r2aot.chapter1-1.iron_nugget.subtitle}"
+			tasks: [{
+				id: "56B0BB8D7CEAF17A"
+				item: "minecraft:iron_nugget"
+				type: "item"
+			}]
+			x: 15.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["70251D6CA0E3C757"]
+			id: "63544CDBB3848F73"
+			tasks: [{
+				id: "5C5489853913BB0A"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
+			x: 17.5d
+			y: 5.5d
+		}
+		{
+			id: "46AE3E4143B59CC9"
+			tasks: [{
+				id: "086C171539698A07"
+				item: "botania:apothecary_default"
+				type: "item"
+			}]
+			x: 15.5d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"46AE3E4143B59CC9"
+				"63544CDBB3848F73"
+			]
+			id: "2C1A59E187BCCCC7"
+			shape: "diamond"
+			size: 1.5d
+			tasks: [{
+				id: "2046A257FCBBB416"
+				item: "botania:pure_daisy"
+				type: "item"
+			}]
+			x: 17.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["20DB34F9FE0159A8"]
+			id: "42DA31934CDF73A5"
+			subtitle: "{ftbq.r2aot.chapter1-1.clay_ball.subtitle}"
+			tasks: [{
+				id: "09601C655E83E3DC"
+				item: "minecraft:clay_ball"
+				type: "item"
+			}]
+			x: 15.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["42DA31934CDF73A5"]
+			id: "25AF6C6C9947839C"
+			tasks: [{
+				id: "262C483647496822"
+				item: "botanypots:terracotta_hopper_botany_pot"
+				type: "item"
+			}]
+			x: 17.5d
+			y: 7.0d
+		}
+		{
+			dependencies: [
+				"335B6352663ECA5D"
+				"286BF14ADB91B020"
+			]
+			id: "24EB6502341D21B3"
+			tasks: [{
+				id: "6A1F8842C5ECB925"
+				item: "r2aot:double_compressed_netherrack"
+				type: "item"
+			}]
+			x: 15.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["24EB6502341D21B3"]
+			id: "0D4E483145301213"
+			tasks: [{
+				id: "688FCF7DB6737672"
+				item: "minecraft:netherrack"
+				type: "item"
+			}]
+			x: 15.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["537EFE9D4D96731A"]
+			id: "2855A631519B8637"
+			tasks: [
+				{
+					id: "2E1F23F8894695F3"
+					item: "minecraft:sugar_cane"
+					type: "item"
+				}
+				{
+					id: "52426E33595BF7F3"
+					item: "minecraft:kelp"
+					type: "item"
+				}
+				{
+					id: "3AD01F8E4326D7D7"
+					item: "minecraft:wheat_seeds"
+					type: "item"
+				}
+			]
+			title: "{ftbq.r2aot.chapter1-1.crops.title}"
+			x: 14.5d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"335B6352663ECA5D"
+				"199E927DD359CCB6"
+			]
+			id: "2DF86291C1BAB8B1"
+			subtitle: "{ftbq.r2aot.chapter1-1.crying_obsidian.subtitle}"
+			tasks: [{
+				id: "44EEA118C4D1E8AD"
+				item: "minecraft:crying_obsidian"
+				type: "item"
+			}]
+			x: 17.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["2DF86291C1BAB8B1"]
+			id: "151548BB6843E327"
+			tasks: [{
+				id: "06A424EE6276E30A"
+				item: "minecraft:obsidian"
+				type: "item"
+			}]
+			x: 17.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["20C6EA3C8A6FBD5D"]
+			hide_dependency_lines: true
+			id: "7C3D010A90F2554F"
+			subtitle: "{ftbq.r2aot.chapter1-1.rainbow_furnace.subtitle}"
+			tasks: [{
+				id: "128A8AE72CB8FA58"
+				item: "r2aot:rainbow_furnace"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["7C3D010A90F2554F"]
+			id: "38F579784E1AA490"
+			tasks: [
+				{
+					id: "372FB2C0C2D87785"
+					item: "r2aot:iron_furnace_component"
+					type: "item"
+				}
+				{
+					id: "44408D57114EF428"
+					item: "r2aot:copper_furnace_component"
+					type: "item"
+				}
+				{
+					id: "24772E97D8AB289B"
+					item: "r2aot:gold_furnace_component"
+					type: "item"
+				}
+				{
+					id: "2269BF316ED48023"
+					item: "r2aot:diamond_furnace_component"
+					type: "item"
+				}
+				{
+					id: "6D229A99ECE5A4C4"
+					item: "r2aot:emerald_furnace_component"
+					type: "item"
+				}
+				{
+					id: "516FCACE83CBD82F"
+					item: "r2aot:crystal_furnace_component"
+					type: "item"
+				}
+				{
+					id: "533E7B26386FF6AD"
+					item: "r2aot:obsidian_furnace_component"
+					type: "item"
+				}
+				{
+					id: "0C72A8219ABE31A4"
+					item: "r2aot:netherite_furnace_component"
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 7.0d
+		}
+	]
+	title: "{ftbq.r2aot.chapter1-1.start.title}"
+}

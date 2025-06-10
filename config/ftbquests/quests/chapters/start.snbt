@@ -1,0 +1,116 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "start"
+	group: ""
+	id: "41F1B91BA5FACCFF"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			can_repeat: true
+			dependencies: ["69EF1BF481A8FFF9"]
+			id: "6A36F60835BE0077"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "3D0F750104EEFABB"
+				table_id: 3183617948768449527L
+				type: "choice"
+			}]
+			tasks: [{
+				id: "575B762CFFE19F7E"
+				title: "{ftbq.r2aot.start.island.title}"
+				type: "checkmark"
+			}]
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			id: "69EF1BF481A8FFF9"
+			rewards: [
+				{
+					id: "1C0F908347056BF3"
+					item: "ae2:creative_energy_cell"
+					type: "item"
+				}
+				{
+					id: "4A2FFB5C8D0DD686"
+					item: "ae2:drive"
+					type: "item"
+				}
+				{
+					count: 64
+					id: "15A82BC85054B61B"
+					item: "ae2:fluix_glass_cable"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "6E6ADBAD63A50FDC"
+					item: {
+						Count: 1
+						id: "ae2:item_storage_cell_4k"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "01DC2D62ABAFA66B"
+					item: {
+						Count: 1
+						id: "ae2wtlib:wireless_universal_terminal"
+						tag: {
+							crafting: 1b
+							internalCurrentPower: 4800000.0d
+							internalMaxPower: 4800000.0d
+							pattern_access: 1b
+							pattern_encoding: 1b
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "42E757CEC82E18A4"
+					item: "ae2:wireless_access_point"
+					type: "item"
+				}
+				{
+					id: "1A38787059E43FBF"
+					item: "aeinfinitybooster:dimension_card"
+					type: "item"
+				}
+				{
+					id: "5647788AA9E6C23F"
+					item: "ae2:crafting_terminal"
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 2.0d
+			subtitle: "{ftbq.r2aot.start.main.subtitle}"
+			tasks: [{
+				id: "37C405223614880B"
+				type: "checkmark"
+			}]
+			title: "{ftbq.r2aot.title}"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["69EF1BF481A8FFF9"]
+			description: [
+				"{ftbq.r2aot.start.alpha.desc_1}"
+				"{ftbq.r2aot.start.alpha.desc_2}"
+			]
+			id: "3F884034F97EC499"
+			tasks: [{
+				id: "0838F82D69A40007"
+				title: "{ftbq.r2aot.start.alpha.title}"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 2.5d
+		}
+	]
+	title: "{ftbq.r2aot.chapter_groups.start.title}"
+}

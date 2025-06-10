@@ -1,0 +1,6 @@
+{
+    "fluid": "r2aot:fluidedmana",
+    "burnTime": 20,
+    "superHeat": true,
+    "amountConsumedPerTick": 10
+}
