@@ -2,6 +2,8 @@
 !.gitignore
 !LICENSE.txt
 !README.md
+!modpack-update/
+!modpack-update/**
 
 # Config
 !config/
@@ -16,6 +18,8 @@
 !config/industrialforegoing/machine-resources-production.toml
 !config/jada/
 !config/jada/plugins.json
+!config/modpack-update-checker
+!config/modpack-update-checker/**
 !config/skyblockbuilder/
 !config/skyblockbuilder/**
 

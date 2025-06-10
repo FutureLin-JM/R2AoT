@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 9,
+  "currentVersion": "0.0.1",
+  "modpackName": "Return to the Age of Technology",
+  "modpackAuthor": "FutureLin",
+  "modpackReleaseType": "alpha",
+  "updateCheckerId": "https://gitee.com/FutureLin-JM/R2AoT-updater/main/",
+  "advanced": {
+    "bccEnabled": false,
+    "expandButton": false,
+    "updateCheckerType": 2,
+    "retroWarning": false,
+    "modpackMods": []
+  }
+}
