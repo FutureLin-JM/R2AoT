@@ -2,14 +2,14 @@
   "schemaVersion": 9,
   "currentVersion": "0.0.1",
   "modpackName": "Return to the Age of Technology",
-  "modpackAuthor": "FutureLin",
+  "modpackAuthor": "风和FutureLin",
   "modpackReleaseType": "alpha",
-  "updateCheckerId": "https://gitee.com/FutureLin-JM/R2AoT-updater/tree/main/modpack-update",
+  "updateCheckerId": "https://raw.gitcode.com/FutureLin-JM/R2AoT-update/raw/main/",
   "advanced": {
-    "bccEnabled": false,
-    "expandButton": false,
+    "expandButton": true,
     "updateCheckerType": 2,
-    "retroWarning": false,
-    "modpackMods": []
+    "buttonXOffset": 24,
+    "buttonYOffset": -24,
+    "forceModpackCompatible": true
   }
 }
