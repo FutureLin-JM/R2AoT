@@ -2,8 +2,6 @@
 !.gitignore
 !LICENSE.txt
 !README.md
-!modpack-update/
-!modpack-update/**
 
 # Config
 !config/

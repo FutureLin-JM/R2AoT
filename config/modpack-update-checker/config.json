@@ -4,7 +4,7 @@
   "modpackName": "Return to the Age of Technology",
   "modpackAuthor": "FutureLin",
   "modpackReleaseType": "alpha",
-  "updateCheckerId": "https://gitee.com/FutureLin-JM/R2AoT-updater/main/",
+  "updateCheckerId": "https://gitee.com/FutureLin-JM/R2AoT-updater/tree/main/modpack-update",
   "advanced": {
     "bccEnabled": false,
     "expandButton": false,
