@@ -14,6 +14,7 @@
 			id: "5F238F0DB8D8BBB2"
 			shape: "gear"
 			size: 1.5d
+			subtitle: "{\"translate\":\"ftbq.r2aot.ponder.text\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/ponder r2aot:data_model_base\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"ftbq.r2aot.capsule.click\"}}}"
 			tasks: [{
 				id: "425793EF78FA19F8"
 				item: "r2aot:data_model_base"
@@ -90,7 +91,7 @@
 			]
 			title: "&6{entity.minecraft.blaze}"
 			x: -4.0d
-			y: 2.0d
+			y: -1.5d
 		}
 		{
 			can_repeat: true
@@ -158,8 +159,8 @@
 				}
 			]
 			title: "&f{entity.minecraft.chicken}"
-			x: -2.0d
-			y: 2.0d
+			x: -2.5d
+			y: 0.0d
 		}
 		{
 			can_repeat: true
@@ -214,8 +215,8 @@
 				}
 			]
 			title: "&a{entity.minecraft.creeper}"
-			x: 2.0d
-			y: 2.0d
+			x: 2.5d
+			y: 0.0d
 		}
 		{
 			can_repeat: true
@@ -271,7 +272,7 @@
 			]
 			title: "&0{entity.minecraft.enderman}"
 			x: 4.0d
-			y: 2.0d
+			y: -1.5d
 		}
 		{
 			can_repeat: true
@@ -326,8 +327,8 @@
 				}
 			]
 			title: "&7{entity.minecraft.ghast}"
-			x: -4.0d
-			y: 3.5d
+			x: -5.5d
+			y: 0.5d
 		}
 		{
 			can_repeat: true
@@ -395,8 +396,8 @@
 				}
 			]
 			title: "&f{entity.minecraft.sheep}"
-			x: -2.0d
-			y: 3.5d
+			x: -3.0d
+			y: 2.5d
 		}
 		{
 			can_repeat: true
@@ -451,8 +452,8 @@
 				}
 			]
 			title: "&8{entity.minecraft.skeleton}"
-			x: 0.0d
-			y: 3.5d
+			x: 1.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["5F238F0DB8D8BBB2"]
@@ -506,8 +507,8 @@
 				}
 			]
 			title: "&a{entity.minecraft.slime}"
-			x: 2.0d
-			y: 3.5d
+			x: 3.5d
+			y: 2.5d
 		}
 		{
 			can_repeat: true
@@ -569,8 +570,8 @@
 				}
 			]
 			title: "&8{entity.minecraft.spider}"
-			x: 4.0d
-			y: 3.5d
+			x: 5.5d
+			y: 0.5d
 		}
 		{
 			can_repeat: true
@@ -640,7 +641,7 @@
 			]
 			title: "&3{entity.minecraft.vindicator}"
 			x: 0.0d
-			y: 0.5d
+			y: 0.0d
 		}
 		{
 			can_repeat: true
@@ -709,8 +710,8 @@
 				}
 			]
 			title: "&4{entity.minecraft.cow}"
-			x: 0.0d
-			y: 2.0d
+			x: -1.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["0412E6F433DFC1C0"]
@@ -721,11 +722,14 @@
 				item: "hostilenetworks:sim_chamber"
 				type: "item"
 			}]
-			x: -1.0d
-			y: 5.0d
+			x: 0.0d
+			y: 5.25d
 		}
 		{
-			dependencies: ["0412E6F433DFC1C0"]
+			dependencies: [
+				"0412E6F433DFC1C0"
+				"23F513F83AB19F9C"
+			]
 			id: "331E9FA11F5A2AB2"
 			size: 1.5d
 			tasks: [{
@@ -733,8 +737,8 @@
 				item: "hostilenetworks:loot_fabricator"
 				type: "item"
 			}]
-			x: 1.0d
-			y: 5.0d
+			x: 0.0d
+			y: 7.5d
 		}
 	]
 	title: "{ftbq.r2aot.additional-hostilenetworks.start.title}"

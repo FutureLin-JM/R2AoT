@@ -8,10 +8,10 @@ Ponder.registry(event => {
             scene.showBasePlate();
 
             scene.text(30, '部分数据模型可以由多方块结构获得\n下面用绵羊数据模型示范').attachKeyFrame();
-            scene.idle(40);
+            scene.idle(10);
 
             scene.world.showSection([2, 1, 2,  6, 5, 6], Direction.DOWN);
-            scene.idle(10);
+            scene.idle(30);
 
             scene.world.showSection([4, 6, 4], Direction.DOWN);
             scene.idle(10);
@@ -31,6 +31,6 @@ Ponder.registry(event => {
             scene.world.createItemEntity([3.5, 5.5, 3.5], Direction.DOWN, sheepDateModel)
 
             scene.idle(30);
-            scene.text(100, '可前往「敌对神经网络」章节获取胶囊来快速放置这个结构');
+            scene.text(100, '可前往「敌对神经网络」章节获取胶囊来快速放置相关结构');
         })
 })

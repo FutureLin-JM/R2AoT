@@ -8,8 +8,6 @@
   "generationFeatures": {
     "allow_list": true,
     "elements": [
-      "minecraft:end_spike",
-      "minecraft:end_gateway_return"
     ]
   },
   

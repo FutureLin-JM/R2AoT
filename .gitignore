@@ -19,8 +19,10 @@
 !config/modpack-update-checker
 !config/modpack-update-checker/**
 !config/skyblockbuilder/
-!config/skyblockbuilder/**
-config/skyblockbuilder/data/dimensions.txt
+!config/skyblockbuilder/dimensions.json5
+!config/skyblockbuilder/world.json5
+!config/skyblockbuilder/structures.json5
+!config/skyblockbuilder/templates.json5
 
 # DefaultConfigs
 !defaultconfigs/

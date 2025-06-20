@@ -58,7 +58,7 @@
   // Same format as flat world generation settings (blocks only)
   "surfaceSettings": {
     "minecraft:overworld": "minecraft:bedrock,2*minecraft:dirt,minecraft:grass_block",
-    "minecraft:the_nether": "",
-    "minecraft:the_end": ""
+    "minecraft:the_nether": "minecraft:bedrock,50*minecraft:lava",
+    "minecraft:the_end": "minecraft:bedrock,50*ifeu:liquid_dragon_breath"
   }
 }

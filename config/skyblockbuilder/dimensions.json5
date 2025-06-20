@@ -5,7 +5,7 @@
     "Default": false,
     
     // Should the main island be generated as normal? [default: true]
-    "mainIsland": true
+    "mainIsland": false
   },
   
   "Nether": {
