@@ -1,0 +1,48 @@
+{
+    "providers": [
+        {
+            "type": "bitmap",
+            "file": "r2aot:gui/petal_block/blue.png",
+            "ascent": 7,
+            "chars": [
+                "\u0001"
+            ]
+        },
+
+        {
+            "type": "bitmap",
+            "file": "r2aot:gui/petal_block/red.png",
+            "ascent": 7,
+            "chars": [
+                "\u0002"
+            ]
+        },
+
+        {
+            "type": "bitmap",
+            "file": "r2aot:gui/petal_block/green.png",
+            "ascent": 7,
+            "chars": [
+                "\u0003"
+            ]
+        },
+
+        {
+            "type": "bitmap",
+            "file": "r2aot:gui/petal_block/orange.png",
+            "ascent": 7,
+            "chars": [
+                "\u0004"
+            ]
+        },
+
+        {
+            "type": "bitmap",
+            "file": "r2aot:gui/font/fluidedmana.png",
+            "ascent": 7,
+            "chars": [
+                "\u100a"
+            ]
+        }
+    ]
+}

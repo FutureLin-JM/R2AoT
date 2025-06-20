@@ -45,10 +45,7 @@
 		}
 		{
 			dependencies: ["11A096C0D7EE7DA4"]
-			description: [
-				"{ftbq.r2aot.chapter1-3.mana_motor.desc_1}"
-				"{ftbq.r2aot.chapter1-3.mana_motor.desc_2}"
-			]
+			description: ["{ftbq.r2aot.chapter1-3.mana_motor.desc_1}"]
 			icon: "r2aot:mana_motor"
 			id: "4DB928F316E9D043"
 			rewards: [

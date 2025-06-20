@@ -48,7 +48,7 @@ ServerEvents.recipes(event => {
     let in_wa_se = 'kubejs:incomplete_water_seeds'
     sequenced_assembly(
         'mysticalagriculture:water_seeds',
-        'botania:blue_petal_block',
+        'kubejs:water_seeds_folder',
         [
             deploying(in_wa_se, [in_wa_se, Item.of('industrialforegoing:dissolution_chamber').enchant('r2aot:machine_processing', 1).strongNBT()]),
             deploying(in_wa_se, [in_wa_se, 'mysticalagriculture:inferium_essence']),
@@ -64,7 +64,7 @@ ServerEvents.recipes(event => {
     let in_fi_se = 'kubejs:incomplete_fire_seeds'
     sequenced_assembly(
         'mysticalagriculture:fire_seeds',
-        'botania:red_petal_block',
+        'kubejs:fire_seeds_folder',
         [
             deploying(in_fi_se, [in_fi_se, Item.of('industrialforegoing:dissolution_chamber').enchant('r2aot:machine_processing', 1).strongNBT()]),
             deploying(in_fi_se, [in_fi_se, 'mysticalagriculture:inferium_essence']),
@@ -80,7 +80,7 @@ ServerEvents.recipes(event => {
     let in_ea_se = 'kubejs:incomplete_earth_seeds'
     sequenced_assembly(
         'mysticalagriculture:earth_seeds',
-        'botania:green_petal_block',
+        'kubejs:earth_seeds_folder',
         [
             deploying(in_ea_se, [in_ea_se, Item.of('industrialforegoing:dissolution_chamber').enchant('r2aot:machine_processing', 1).strongNBT()]),
             deploying(in_ea_se, [in_ea_se, 'mysticalagriculture:inferium_essence']),
@@ -96,7 +96,7 @@ ServerEvents.recipes(event => {
     let in_air_se = 'kubejs:incomplete_air_seeds'
     sequenced_assembly(
         'mysticalagriculture:air_seeds',
-        'botania:orange_petal_block',
+        'kubejs:air_seeds_folder',
         [
             deploying(in_air_se, [in_air_se, Item.of('industrialforegoing:dissolution_chamber').enchant('r2aot:machine_processing', 1).strongNBT()]),
             deploying(in_air_se, [in_air_se, 'mysticalagriculture:inferium_essence']),

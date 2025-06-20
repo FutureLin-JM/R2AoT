@@ -1,0 +1,13 @@
+{
+    "item.kubejs.incomplete_water_seeds": "水之种子（未完成）",
+    "item.kubejs.incomplete_fire_seeds": "火之种子（未完成）",
+    "item.kubejs.incomplete_earth_seeds": "地之种子（未完成）",
+    "item.kubejs.incomplete_air_seeds": "风之种子（未完成）",
+
+    "item.kubejs.water_seeds_folder": "水之种子 材料包",
+    "item.kubejs.fire_seeds_folder": "火之种子 材料包",
+    "item.kubejs.earth_seeds_folder": "地之种子 材料包",
+    "item.kubejs.air_seeds_folder": "风之种子 材料包",
+
+    "tooltip.kubejs.machine_processing": "使用%s加工第一步"
+}

@@ -22,4 +22,16 @@ StartupEvents.registry("item", (event) => {
 	event.create("kubejs:incomplete_fire_seeds", "create:sequenced_assembly").texture('r2aot:item/mystical_seeds');
 	event.create("kubejs:incomplete_earth_seeds", "create:sequenced_assembly").texture('r2aot:item/mystical_seeds');
 	event.create("kubejs:incomplete_air_seeds", "create:sequenced_assembly").texture('r2aot:item/mystical_seeds');
+
+	let folderType = [
+		'mysticalagriculture:water_seeds',
+		'mysticalagriculture:fire_seeds',
+		'mysticalagriculture:earth_seeds',
+		'mysticalagriculture:air_seeds'
+	]
+	folderType.forEach(type => {
+		let itemName = type.split(':')[1]
+		event.create(`kubejs:${itemName}_folder`, "basic")
+			.texture('r2aot:item/material_folder')
+	})
 })

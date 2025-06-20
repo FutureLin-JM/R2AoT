@@ -16,11 +16,6 @@
     "item.r2aot.creative_casing_shard": "创造机壳碎片",
     "item.r2aot.rune_elemental": "元素符文",
 
-    "item.kubejs.incomplete_water_seeds": "水之种子（未完成）",
-    "item.kubejs.incomplete_fire_seeds": "火之种子（未完成）",
-    "item.kubejs.incomplete_earth_seeds": "地之种子（未完成）",
-    "item.kubejs.incomplete_air_seeds": "风之种子（未完成）",
-
     "block.r2aot.rainbow_petal_block": "彩虹花源块",
     "block.r2aot.compressed_andesite": "压缩安山岩",
     "block.r2aot.double_compressed_andesite": "二重压缩安山岩",
@@ -226,7 +221,6 @@
     "ftbq.r2aot.chapter1-3.start.title": "第三节",
     "ftbq.r2aot.chapter1-3.mana_motor.subtitle": "主推应力源",
     "ftbq.r2aot.chapter1-3.mana_motor.desc_1": "灵感来自Mechanical Botania",
-    "ftbq.r2aot.chapter1-3.mana_motor.desc_2": "可惜并未更新至Creat6.0，故使用MBD2实现其功能",
     "ftbq.r2aot.chapter1-3.stress_generator_core.desc_1": "产物槽满时会停止运转，请及时清理产物。",
     "ftbq.r2aot.chapter1-3.element_seeds.subtitle": "序列组装第一步请看溶解成形机JEI",
     "ftbq.r2aot.chapter1-3.element_seeds.desc_1": "第一步具体配方为：4x 花瓣块+500mb 液态魔力",
