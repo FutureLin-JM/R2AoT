@@ -392,7 +392,6 @@
 		}
 		{
 			dependencies: ["2F9B3FF63BE14508"]
-			description: ["{ftbq.r2aot.chapter1-3.element_seeds.desc_1}"]
 			id: "04AF37D0C5344397"
 			subtitle: "{ftbq.r2aot.chapter1-3.element_seeds.subtitle}"
 			tasks: [

@@ -9,5 +9,6 @@
     "item.kubejs.earth_seeds_folder": "地之种子 材料包",
     "item.kubejs.air_seeds_folder": "风之种子 材料包",
 
-    "tooltip.kubejs.machine_processing": "使用%s加工第一步"
+    "tooltip.kubejs.machine_processing_1": "使用",
+    "tooltip.kubejs.machine_processing_2": "加工第一步"
 }

@@ -13,7 +13,7 @@ JEIEvents.hideItems(event => {
     event.hide(itemId)
   })
 
-  // Ingredient.of(/^kubejs:incomplete/).itemIds.forEach(id => {
+  // Ingredient.of(/^kubejs:/).itemIds.forEach(id => {
   //   event.hide(id)
   // })
 

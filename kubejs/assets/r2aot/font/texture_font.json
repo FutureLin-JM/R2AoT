@@ -43,6 +43,15 @@
             "chars": [
                 "\u100a"
             ]
+        },
+
+        {
+            "type": "bitmap",
+            "file": "r2aot:gui/font/dissolution_chamber.png",
+            "ascent": 7,
+            "chars": [
+                "\u200a"
+            ]
         }
     ]
 }
