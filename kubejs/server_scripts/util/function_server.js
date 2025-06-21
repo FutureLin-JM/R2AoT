@@ -18,3 +18,18 @@ function setItemExtract(event) {
         }
     }
 }
+
+/**
+ * 检测玩家是否拥有时间瓶(Time in a Bottle)
+ * @param {Internal.ServerPlayer} player 要检测的玩家
+ * @returns {boolean} 是否拥有时间瓶
+ */
+function hasTimeInABottle(player) {
+    // 检查主物品栏
+    const foundInMainInventory = player.inventory.allItems.some(
+        item => item.id === 'tiab:time_in_a_bottle'
+    );
+    if (foundInMainInventory) return true;
+    
+    return false;
+}

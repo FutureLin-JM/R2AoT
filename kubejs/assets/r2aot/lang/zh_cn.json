@@ -15,6 +15,7 @@
     "item.r2aot.obsidian_furnace_component": "黑曜石熔炉组件",
     "item.r2aot.creative_casing_shard": "创造机壳碎片",
     "item.r2aot.rune_elemental": "元素符文",
+    "item.r2aot.time_voucher": "时间兑换券",
 
     "block.r2aot.rainbow_petal_block": "彩虹花源块",
     "block.r2aot.compressed_andesite": "压缩安山岩",
@@ -148,6 +149,11 @@
     "tooltip.r2aot.pedestal_1": "右键放入 空手Shift+右键取出",
     "tooltip.r2aot.loot_fabricator_1": "§c不耗电",
     "tooltip.r2aot.flux_dust": "由红石通过原子再构机转换获得",
+    "tooltip.r2aot.time_voucher_1": "右键使用可获得2h时间之瓶的时间",
+    "tooltip.r2aot.time_voucher_2": "§4由于模组本身的bug",
+    "tooltip.r2aot.time_voucher_3": "§4请确保在使用前没有使用/reload指令",
+    "tooltip.r2aot.time_voucher_4": "§4否则，请重进存档",
+
 
     "jei.information.r2aot.botania_fertilizer": "可以通过空手Shift+右键草方块获得（75%概率）",
     "jei.information.r2aot.blaze_burner": "§c一般燃烧§r:\n熔岩（每秒消耗1mb）\n\n§9超级燃烧§r:\n液态魔力（每秒消耗10mb）",
@@ -160,6 +166,7 @@
     "r2aot.version": "当前整合包版本：§a%s§r",
 
     "message.r2aot.multiblock.incorrect": "结构不正确",
+    "message.r2aot.tiab": "请先将时间瓶放入背包中！",
 
 
     "ftbq.r2aot.capsule.text": "§b点击查看胶囊",

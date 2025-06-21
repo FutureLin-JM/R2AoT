@@ -37,6 +37,20 @@ BlockEvents.rightClicked('r2aot:data_model_base', event => {
     })
 });
 
+ItemEvents.rightClicked('r2aot:time_voucher', event => {
+    const { hand, item, player } = event;
+    if (hand != 'MAIN_HAND') return;
+
+    if (hasTimeInABottle(player)) {
+        player.runCommand('tiab addTime 7200')
+        item.count--;
+        player.swing();
+    }
+    else {
+        player.tell(Text.translatable('message.r2aot.tiab'));
+    }
+})
+
 // BlockEvents.rightClicked('white_concrete', (event) => {
 //     const { hand, block, player, level } = event;
 

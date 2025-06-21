@@ -53,6 +53,7 @@ ItemEvents.tooltip((event) => {
         {id: 'r2aot:modular_pure_daisy_core', key: 'tooltip.r2aot.modular_pure_daisy_core', lines: 1},
         {id: 'r2aot:pedestal', key: 'tooltip.r2aot.pedestal', lines: 1},
         {id: 'hostilenetworks:loot_fabricator', key: 'tooltip.r2aot.loot_fabricator', lines: 1},
+        {id: 'r2aot:time_voucher', key: 'tooltip.r2aot.time_voucher', lines: 4}
         
     ]
     linesTooltip.forEach((item) => {

@@ -17,11 +17,14 @@ StartupEvents.registry("item", (event) => {
 
 	event.create("r2aot:creative_casing_shard", "basic");
 	event.create("r2aot:rune_elemental", "basic");
+	event.create("r2aot:time_voucher", "basic")
 
 	event.create("kubejs:incomplete_water_seeds", "create:sequenced_assembly").texture('r2aot:item/mystical_seeds');
 	event.create("kubejs:incomplete_fire_seeds", "create:sequenced_assembly").texture('r2aot:item/mystical_seeds');
 	event.create("kubejs:incomplete_earth_seeds", "create:sequenced_assembly").texture('r2aot:item/mystical_seeds');
 	event.create("kubejs:incomplete_air_seeds", "create:sequenced_assembly").texture('r2aot:item/mystical_seeds');
+	event.create("kubejs:incomplete_rf_coil", "create:sequenced_assembly");
+	event.create("kubejs:incomplete_redstone_servo", "create:sequenced_assembly");
 
 	let folderType = [
 		'mysticalagriculture:water_seeds',

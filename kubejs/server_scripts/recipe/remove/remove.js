@@ -28,6 +28,7 @@ ServerEvents.recipes(event => {
         'createendertransmission:energy_transmitter',
         'avaritia:botania_mana_tablet',
         'botania:diluted_pool',
+        'torcherino:torcherino',
     ]
     recipesToRemoveID.forEach((recipes) => {
         event.remove({id:recipes});

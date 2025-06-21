@@ -10,7 +10,6 @@
 	quests: [
 		{
 			dependencies: ["42DA31934CDF73A5"]
-			hide_dependent_lines: true
 			id: "5F238F0DB8D8BBB2"
 			shape: "gear"
 			size: 1.5d
@@ -714,7 +713,10 @@
 			y: 4.0d
 		}
 		{
-			dependencies: ["0412E6F433DFC1C0"]
+			dependencies: [
+				"0412E6F433DFC1C0"
+				"1542B92F5442760C"
+			]
 			id: "23F513F83AB19F9C"
 			size: 1.5d
 			tasks: [{
@@ -739,6 +741,226 @@
 			}]
 			x: 0.0d
 			y: 7.5d
+		}
+		{
+			dependencies: ["63B4FBDC733FE9E4"]
+			id: "1D0AD2DA4B18C5B9"
+			tasks: [{
+				id: "2A1B0FB3FB5DB3B2"
+				item: {
+					Count: 1
+					id: "hostilenetworks:prediction"
+					tag: {
+						data_model: {
+							id: "hostilenetworks:blaze"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -4.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["2AF303FDAEDD9DD1"]
+			id: "19DE3126B557BF27"
+			tasks: [{
+				id: "2E1620E5089FC609"
+				item: {
+					Count: 1
+					id: "hostilenetworks:prediction"
+					tag: {
+						data_model: {
+							id: "hostilenetworks:chicken"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -2.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["289C548BBCA22D83"]
+			id: "54A3F9BAE57ECA97"
+			tasks: [{
+				id: "5361D0795093BF9D"
+				item: {
+					Count: 1
+					id: "hostilenetworks:prediction"
+					tag: {
+						data_model: {
+							id: "hostilenetworks:vindicator"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["7055B8B80F5F62D5"]
+			id: "75644FB756CD390F"
+			tasks: [{
+				id: "4036674F7EC18C14"
+				item: {
+					Count: 1
+					id: "hostilenetworks:prediction"
+					tag: {
+						data_model: {
+							id: "hostilenetworks:creeper"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 2.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["19E5B1D94108806A"]
+			id: "56D7015E8F602AC9"
+			tasks: [{
+				id: "1AA31D48B9A6056F"
+				item: {
+					Count: 1
+					id: "hostilenetworks:prediction"
+					tag: {
+						data_model: {
+							id: "hostilenetworks:enderman"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 4.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["26627FC931C08D0A"]
+			id: "5622DC95D7F71647"
+			tasks: [{
+				id: "021C01BE6E4E8D52"
+				item: {
+					Count: 1
+					id: "hostilenetworks:prediction"
+					tag: {
+						data_model: {
+							id: "hostilenetworks:spider"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 5.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["5905DEA09CA41FF3"]
+			id: "462445A1E5CAF499"
+			tasks: [{
+				id: "1639251492EFEC6F"
+				item: {
+					Count: 1
+					id: "hostilenetworks:prediction"
+					tag: {
+						data_model: {
+							id: "hostilenetworks:ghast"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -5.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["1D351F5D7EFCEB60"]
+			id: "4699B9080AFC14D1"
+			tasks: [{
+				id: "7B56BFDA559BC34C"
+				item: {
+					Count: 1
+					id: "hostilenetworks:prediction"
+					tag: {
+						data_model: {
+							id: "hostilenetworks:sheep"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -3.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["523F64C0760D7702"]
+			id: "3BCDD2E23C0B4FA1"
+			tasks: [{
+				id: "0A39F5506CFDCA34"
+				item: {
+					Count: 1
+					id: "hostilenetworks:prediction"
+					tag: {
+						data_model: {
+							id: "hostilenetworks:cow"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -1.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["01E39280D8435737"]
+			id: "2F577C68EAD742A7"
+			tasks: [{
+				id: "36A278A66370692A"
+				item: {
+					Count: 1
+					id: "hostilenetworks:prediction"
+					tag: {
+						data_model: {
+							id: "hostilenetworks:skeleton"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 1.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["740FFEB20DAF2C42"]
+			id: "379ABB585B4CEA02"
+			tasks: [{
+				id: "26485DF628951341"
+				item: {
+					Count: 1
+					id: "hostilenetworks:prediction"
+					tag: {
+						data_model: {
+							id: "hostilenetworks:slime"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 3.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["54A3F9BAE57ECA97"]
+			id: "1542B92F5442760C"
+			tasks: [{
+				id: "0DB89087131C2B80"
+				item: "hostilenetworks:prediction_matrix"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.0d
 		}
 	]
 	title: "{ftbq.r2aot.additional-hostilenetworks.start.title}"
