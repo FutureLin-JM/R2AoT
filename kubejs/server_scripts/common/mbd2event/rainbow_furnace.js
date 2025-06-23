@@ -29,7 +29,12 @@ MBDMachineEvents.onBeforeRecipeModify('r2aot:rainbow_furnace', event => {
     let parallelRecipe = machine.applyParallel(recipe, parallelMultiplier);
     let copyRecipe = parallelRecipe.copy();
     let speedReduction = Math.max(1 - 0.09 * componentCount, 0.1);
-    copyRecipe.duration = Math.ceil(recipe.duration * speedReduction);
+
+    let extraSpeedBoost = 1.0;
+    if (componentCount === 8) {
+        extraSpeedBoost = 0.35; // 当组件数量达到8时进一步加速
+    }
+    copyRecipe.duration = Math.ceil(recipe.duration * speedReduction * extraSpeedBoost);
 
     mbdEvent.setRecipe(copyRecipe);
 });

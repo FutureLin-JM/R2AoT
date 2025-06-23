@@ -125,6 +125,163 @@
 			x: 2.0d
 			y: 0.0d
 		}
+		{
+			dependencies: ["380DD78FB9B00B39"]
+			hide_dependent_lines: true
+			id: "3C104ACFE745F265"
+			tasks: [
+				{
+					id: "3918029175584400"
+					item: "thermal:rf_coil"
+					type: "item"
+				}
+				{
+					id: "650802FEECBCDB3E"
+					item: "thermal:redstone_servo"
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"32F76E7433A970DC"
+				"3C104ACFE745F265"
+			]
+			id: "59F23C3D5935C257"
+			tasks: [{
+				id: "460FA1099C445D38"
+				item: "thermal:machine_crucible"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["59F23C3D5935C257"]
+			id: "368990328377F63B"
+			tasks: [
+				{
+					id: "0C6E2DA50523B456"
+					item: "thermal:bronze_ingot"
+					type: "item"
+				}
+				{
+					id: "56DF9702F67B9A64"
+					item: "thermal:electrum_ingot"
+					type: "item"
+				}
+				{
+					id: "513112C72B8701EE"
+					item: "thermal:invar_ingot"
+					type: "item"
+				}
+				{
+					id: "30A6DB55E7C4CF1E"
+					item: "thermal:constantan_ingot"
+					type: "item"
+				}
+			]
+			title: "{ftbq.r2aot.chapter2-4.thermal_alloy1_title}"
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["368990328377F63B"]
+			id: "6390FAD8CD2CCD9D"
+			tasks: [
+				{
+					id: "2A80A3C7C75CA8DF"
+					item: "mysticalagriculture:bronze_seeds"
+					type: "item"
+				}
+				{
+					id: "4BDF18F815FD14F3"
+					item: "mysticalagriculture:electrum_seeds"
+					type: "item"
+				}
+				{
+					id: "0FBD8CE20A01A5FE"
+					item: "mysticalagriculture:invar_seeds"
+					type: "item"
+				}
+				{
+					id: "6FA164FDC032D7FB"
+					item: "mysticalagriculture:constantan_seeds"
+					type: "item"
+				}
+			]
+			title: "{ftbq.r2aot.chapter2-4.thermal_alloy_seeds_title}"
+			x: 6.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["6390FAD8CD2CCD9D"]
+			id: "640E3BB6881A6144"
+			tasks: [
+				{
+					id: "026727F2055CA93B"
+					item: "mysticalagriculture:bronze_essence"
+					type: "item"
+				}
+				{
+					id: "42D51C16F1973158"
+					item: "mysticalagriculture:electrum_essence"
+					type: "item"
+				}
+				{
+					id: "18597685E1407BF2"
+					item: "mysticalagriculture:invar_essence"
+					type: "item"
+				}
+				{
+					id: "53BC8070E1BB14C6"
+					item: "mysticalagriculture:constantan_essence"
+					type: "item"
+				}
+			]
+			title: "{ftbq.r2aot.chapter2-4.thermal_alloy_essence_title}"
+			x: 8.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["640E3BB6881A6144"]
+			id: "0287B9A2D3DB420A"
+			tasks: [
+				{
+					id: "140EDBF4C0275B18"
+					item: "r2aot:molten_bronze_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "4F2854D40790E7CA"
+					item: "r2aot:molten_electrum_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "6AAF70EFECE67DFF"
+					item: "r2aot:molten_invar_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "4022FB6368E45A55"
+					item: "r2aot:molten_constantan_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "3E1DC182AA40DB5F"
+					type: "checkmark"
+				}
+			]
+			title: "{ftbq.r2aot.chapter2-4.thermal_molten_alloy_title}"
+			x: 10.0d
+			y: 2.0d
+		}
 	]
 	title: "{ftbq.r2aot.chapter2-4.start.title}"
 }

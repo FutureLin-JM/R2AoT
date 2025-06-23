@@ -25,7 +25,7 @@ function setItemExtract(event) {
  * @returns {boolean} 是否拥有时间瓶
  */
 function hasTimeInABottle(player) {
-    // 检查主物品栏
+    // 检查物品栏
     const foundInMainInventory = player.inventory.allItems.some(
         item => item.id === 'tiab:time_in_a_bottle'
     );

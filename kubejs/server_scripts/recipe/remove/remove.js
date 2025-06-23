@@ -29,6 +29,24 @@ ServerEvents.recipes(event => {
         'avaritia:botania_mana_tablet',
         'botania:diluted_pool',
         'torcherino:torcherino',
+        'thermal:redstone_servo',
+        'thermal:rf_coil',
+        'thermal:parts/bronze_gear',
+        'thermal:parts/electrum_gear',
+        'thermal:parts/invar_gear',
+        'thermal:parts/constantan_gear',
+        'thermal:parts/signalum_gear',
+        'thermal:parts/lumium_gear',
+        'thermal:parts/enderium_gear',
+        'thermalendergy:prismalium_gear',
+        'thermalendergy:melodium_gear',
+        'thermalendergy:stellarium_gear',
+        'thermal_extra:parts/soul_infused_gear',
+        'thermal_extra:parts/shellite_gear',
+        'thermal_extra:parts/twinite_gear',
+        'thermal_extra:parts/dragonsteel_gear',
+        'thermal_extra:parts/abyssal_gear',
+        'mekanism:processing/bronze/ingot/from_infusing'
     ]
     recipesToRemoveID.forEach((recipes) => {
         event.remove({id:recipes});
@@ -43,14 +61,14 @@ ServerEvents.recipes(event => {
     ]
     recipesToRemoveType.forEach((typeId) => {
         event.remove({type: typeId});
-    })
+    });
 
     let recipesToRemoveOutItem = [
         
     ]
     recipesToRemoveOutItem.forEach((itemId) => {
         event.remove({output: itemId});
-    })
+    });
 })
 
 

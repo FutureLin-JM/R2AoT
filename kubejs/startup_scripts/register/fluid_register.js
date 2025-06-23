@@ -4,6 +4,11 @@ StartupEvents.registry("fluid", (event) => {
     event.create("r2aot:bioethanol").noBlock();
     event.create("r2aot:fluidedmana");
     event.create("r2aot:molten_meteorite").noBlock();
+
+    event.create("r2aot:molten_bronze").noBlock();
+    event.create("r2aot:molten_electrum").noBlock();
+    event.create("r2aot:molten_invar").noBlock();
+    event.create("r2aot:molten_constantan").noBlock();
 })
 
 

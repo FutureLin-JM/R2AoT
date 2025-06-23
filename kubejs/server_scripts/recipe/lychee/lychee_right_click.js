@@ -87,7 +87,7 @@ ServerEvents.recipes((event) => {
                 predicate: {dimension: "the_nether",}
             }
         ]
-    })
+    });
 
     // 烈焰人燃烧室
     event.custom({
@@ -109,7 +109,7 @@ ServerEvents.recipes((event) => {
                 predicate: {dimension: "the_nether",}
             }
         ]
-    })
+    });
 
     // 哭泣黑曜石
     event.custom({
@@ -131,7 +131,7 @@ ServerEvents.recipes((event) => {
                 predicate: {dimension: "the_nether",}
             }
         ]
-    })
+    });
 
     // 藤蔓
     event.custom({
@@ -144,10 +144,29 @@ ServerEvents.recipes((event) => {
             {
                 type: 'drop_item',
                 item: 'minecraft:vine'
-            },
+            }
         ],
         contextual: {
             type: "is_sneaking"
         }
-    })
+    });
+
+    ['bronze', 'electrum', 'invar', 'constantan'].forEach(metalId => {
+        event.custom({
+            type: "lychee:block_interacting",
+            item_in: {
+                item: `thermal:${metalId}_block`
+            },
+            block_in: 'mysticalagriculture:prudentium_block',
+            post: [
+                {
+                    type: 'drop_item',
+                    item: `mysticalagriculture:${metalId}_seeds`
+                }
+            ],
+            contextual: {
+                type: "is_sneaking"
+            }
+        });
+    });
 })

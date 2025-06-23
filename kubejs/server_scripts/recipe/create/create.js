@@ -89,7 +89,10 @@ ServerEvents.recipes(event => {
     mixing(Fluid.of('thermal:latex', 100), 'minecraft:dandelion');
     mixing('thermal:rubber', [Fluid.of('minecraft:water', 1000), Item.of('minecraft:vine').withCount(8)]);
     mixing('thermal:rubber', [Fluid.of('minecraft:water', 1000), Item.of('minecraft:dandelion').withCount(8)]);
-    mixing(Fluid.of('industrialforegoing:latex', 200), [Fluid.of('thermal:latex', 100), Fluid.of('minecraft:water', 100)])
+    mixing(Fluid.of('industrialforegoing:latex', 200), [Fluid.of('thermal:latex', 100), Fluid.of('minecraft:water', 100)]);
+    ['bronze', 'electrum', 'invar', 'constantan'].forEach(metalId => {
+        mixing(Fluid.of(`r2aot:molten_${metalId}`, 200), `mysticalagriculture:${metalId}_essence`).superheated()
+    });
 
     splashing(
         [Item.of('minecraft:flint').withChance(0.25), Item.of('minecraft:iron_nugget').withChance(0.75)], 
@@ -190,6 +193,9 @@ ServerEvents.recipes(event => {
     compacting(Fluid.of('r2aot:seed_oil', 100), '#forge:seeds');
     compacting('thermal:rubber_block', Fluid.of('thermal:latex', 500));
     compacting('ae2:sky_stone_block', Fluid.of('r2aot:molten_meteorite', 1000));
+    ['bronze', 'electrum', 'invar', 'constantan'].forEach(metalId => {
+        compacting(`thermal:${metalId}_ingot`, Fluid.of(`r2aot:molten_${metalId}`, 1000)).superheated()
+    });
 
     filling('5x industrialforegoing:plastic', [Fluid.of('minecraft:water', 100), 'thermal:cured_rubber_block']);
 

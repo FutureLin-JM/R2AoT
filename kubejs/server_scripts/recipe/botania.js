@@ -97,8 +97,8 @@ ServerEvents.recipes(event => {
     /**
      * 白雏菊配方
      * @param {string} inputType - 输入物品的类型（如"tag"或"block"）
-     * @param {string} inputItem - 输入物品的ID
-     * @param {string} outputItem - 输出物品的ID
+     * @param {InputItem_} inputItem - 输入物品的ID
+     * @param {OutputItem_} outputItem - 输出物品的ID
      */
     function pureDaisyRecipes(event, inputType, inputItem, outputItem) {
         const setTime = 5;

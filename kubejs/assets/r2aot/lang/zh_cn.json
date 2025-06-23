@@ -91,6 +91,15 @@
     "item.r2aot.fluidedmana_bucket": "液态魔力 桶",
     "fluid.r2aot.molten_meteorite": "熔融陨石",
     "item.r2aot.molten_meteorite_bucket": "熔融陨石 桶",
+    "fluid.r2aot.molten_bronze": "熔融青铜",
+    "item.r2aot.molten_bronze_bucket": "熔融青铜 桶",
+    "fluid.r2aot.molten_electrum": "熔融琥珀金",
+    "item.r2aot.molten_electrum_bucket": "熔融琥珀金 桶",
+    "fluid.r2aot.molten_invar": "熔融殷钢",
+    "item.r2aot.molten_invar_bucket": "熔融殷钢 桶",
+    "fluid.r2aot.molten_constantan": "熔融康铜",
+    "item.r2aot.molten_constantan_bucket": "熔融康铜 桶",
+
 
     "enchantment.r2aot.machine_processing": "使用该机器加工",
 
@@ -244,6 +253,10 @@
     "ftbq.r2aot.chapter2-4.thermal_ore.desc_2": "深度65 铅、朱砂",
     "ftbq.r2aot.chapter2-4.thermal_ore.desc_3": "深度67 银、硝石",
     "ftbq.r2aot.chapter2-4.thermal_ore.desc_4": "深度69 镍、硫磺",
+    "ftbq.r2aot.chapter2-4.thermal_alloy1_title": "热力一级合金",
+    "ftbq.r2aot.chapter2-4.thermal_alloy_seeds_title": "合金种子",
+    "ftbq.r2aot.chapter2-4.thermal_alloy_essence_title": "合金精华",
+    "ftbq.r2aot.chapter2-4.thermal_molten_alloy_title": "熔融合金",
 
     "patchouli.gui.lexicon.r2aot_book": "R2AoT 书",
     "patchouli.gui.lexicon.r2aot_book.text": "这是R2AoT的书",
