@@ -6,7 +6,7 @@ ServerEvents.recipes(event => {
     ], {A:'r2aot:creative_casing_shard',
         B:'ae2:certus_quartz_crystal',
         C:'minecraft:iron_block'
-    });
+    }).id(kjs('ae2_mysterious_cube'));
 
     // event.custom({
     //     type: 'expatternprovider:circuit_cutter',

@@ -50,6 +50,10 @@ ServerEvents.recipes(event => {
         'mysticalagriculture:prudentium_essence',
         'mysticalagriculture:tertium_essence',
         'mysticalagriculture:imperium_essence',
+        'botania:spark_upgrade_dispersive',
+        'botania:spark_upgrade_dominant',
+        'botania:spark_upgrade_recessive',
+        'botania:spark_upgrade_isolated',
     ]
     recipesToRemoveID.forEach((recipes) => {
         event.remove({id:recipes});

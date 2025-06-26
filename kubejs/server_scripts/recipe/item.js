@@ -6,7 +6,7 @@ ServerEvents.recipes(event => {
 		' G '
     ], {
         G:'botania:green_petal'
-    });
+    }).id(kjs('botania', 'oak_sapling'));
     
     // 木剪刀
     event.shaped('r2aot:wooden_shears', [
@@ -16,7 +16,7 @@ ServerEvents.recipes(event => {
     ], {
         B:'botania:brown_petal',
         O:'minecraft:oak_planks'
-    });
+    }).id(kjs('r2aot_wooden_shears'));
 
     // 桶
     event.shaped('minecraft:bucket', [
@@ -25,7 +25,7 @@ ServerEvents.recipes(event => {
         '   '
     ], {
         W:'botania:white_petal'
-    });
+    }).id(kjs('botania', 'bucket'));
 
     // 锤子
     event.shaped('r2aot:wooden_hammer', [
@@ -35,7 +35,7 @@ ServerEvents.recipes(event => {
     ], {
         A:'minecraft:oak_log',
         B:'minecraft:stick'
-    });
+    }).id(kjs('wooden_hammer'));
     event.shaped('r2aot:stone_hammer', [
         '  A',
         ' B ',
@@ -44,7 +44,7 @@ ServerEvents.recipes(event => {
         A:'minecraft:cobblestone',
         B:'r2aot:wooden_hammer',
         C:'minecraft:stick'
-    });
+    }).id(kjs('stone_hammer'));
 
     // 压缩锤子
     event.shaped('r2aot:compressed_wooden_hammer', [
@@ -54,7 +54,7 @@ ServerEvents.recipes(event => {
     ], {
         A:'r2aot:wooden_hammer',
         B:'minecraft:stick'
-    });
+    }).id(kjs('compressed_wooden_hammer'));
     event.shaped('r2aot:compressed_stone_hammer', [
         ' AA',
         ' AA',
@@ -62,7 +62,7 @@ ServerEvents.recipes(event => {
     ], {
         A:'r2aot:stone_hammer',
         B:'minecraft:stick'
-    });
+    }).id(kjs('compressed_stone_hammer'));
 
     // 物品管道
     event.shaped('16x pipez:item_pipe', [
@@ -73,7 +73,7 @@ ServerEvents.recipes(event => {
         A:'botania:black_petal_block',
         B:'botania:orange_petal_block',
         C: 'minecraft:chest'
-    })
+    }).id(kjs('pipez_item_pipe'));
 
     // 流体管道
     event.shaped('16x pipez:fluid_pipe', [
@@ -84,7 +84,7 @@ ServerEvents.recipes(event => {
         A:'botania:black_petal_block',
         B:'botania:light_blue_petal_block',
         C:'minecraft:bucket'
-    })
+    }).id(kjs('pipez_fluid_pipe'));
 
     // 魔力池
     event.shaped('botania:mana_pool', [
@@ -105,7 +105,7 @@ ServerEvents.recipes(event => {
         A:'minecraft:iron_ingot',
         B:'minecraft:furnace',
         C:'minecraft:iron_block'
-    });
+    }).id(kjs('iron_furnace_component'));
     event.shaped('r2aot:copper_furnace_component', [
         'AAA',
         'ABA',
@@ -114,7 +114,7 @@ ServerEvents.recipes(event => {
         A:'minecraft:copper_ingot',
         B:'minecraft:furnace',
         C:'minecraft:copper_block'
-    });
+    }).id(kjs('copper_furnace_component'));
     event.shaped('r2aot:gold_furnace_component', [
         'AAA',
         'ABA',
@@ -123,11 +123,11 @@ ServerEvents.recipes(event => {
         A:'minecraft:gold_ingot',
         B:'minecraft:furnace',
         C:'minecraft:gold_block'
-    });
+    }).id(kjs('gold_furnace_component'));
 
     event.shapeless('r2aot:data_model_base', [
         'hostilenetworks:blank_data_model'
-    ]);
+    ]).id(kjs('hostilenetworks_data_model_base'));
 
     // 初级种子
     event.shaped('r2aot:prudentium_crop_seed', [
@@ -137,7 +137,7 @@ ServerEvents.recipes(event => {
     ], {
         A:'mysticalagriculture:prudentium_essence',
         B:'mysticalagriculture:inferium_seeds'
-    });
+    }).id(kjs('prudentium_crop_seed'));
 
 })
 

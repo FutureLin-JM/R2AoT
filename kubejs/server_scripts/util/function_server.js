@@ -33,3 +33,24 @@ function hasTimeInABottle(player) {
     
     return false;
 }
+
+/**
+ * 遵循原则：
+ * 1. type表示配方类型（可选）
+ * 2. name以(主要)输出物品为主，冲突时使用'XX_by_yy'/'XX_from_YY'等说明
+ * 3. 原版合成台配方：
+ *    - name: 'modid_item'（原版/Kubejs物品或无歧义物品）
+ *    - type: 输入物品明确指向某模组时使用模组ID
+ */
+/**
+ * 生成一个kubejs命名空间下的配方id
+ * @param {string} type - 配方类型（可选）
+ * @param {string} name - 配方名称
+ * @returns {string} 格式为'kubejs:type/name'或'kubejs:name'的配方标识符
+ */
+function kjs(type, name) {
+    if (name === undefined) {
+        return `kubejs:${type.toLowerCase()}`
+    }
+    return `kubejs:${type.toLowerCase()}/${name.toLowerCase()}`
+}

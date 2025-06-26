@@ -20,7 +20,7 @@ ServerEvents.recipes((event) => {
                 }
             },
         ],
-    }),
+    }).id(kjs('lychee', 'iron_plate')),
     // 铁板压缩合成（幽灵配方）
     event.custom({
         type: "lychee:block_crushing",
@@ -44,5 +44,5 @@ ServerEvents.recipes((event) => {
                 
             },
         ],
-    })
+    }).id(kjs('lychee', 'iron_plate_ghost'))
 })

@@ -7,7 +7,7 @@ ServerEvents.recipes(event => {
         A:'botania:white_petal_block',
         B:'botania:fertilizer',
         C:'create:andesite_casing'
-    });
+    }).id(kjs('fertilizer_propagator_core'));
 
     event.shaped('r2aot:stress_input', [
         ' A ',
@@ -16,7 +16,7 @@ ServerEvents.recipes(event => {
     ], {
         A:'create:andesite_casing',
         B:'create:shaft'
-    });
+    }).id(kjs('stress_input'));
 
     event.shaped('r2aot:create_input', [
         'ABA',
@@ -26,7 +26,7 @@ ServerEvents.recipes(event => {
         A:'create:andesite_alloy',
         B:'pipez:item_pipe',
         C:'botania:lime_petal_block'
-    });
+    }).id(kjs('create_input'));
     event.shaped('r2aot:create_output', [
         'ABA',
         'BCB',
@@ -35,7 +35,7 @@ ServerEvents.recipes(event => {
         A:'create:andesite_alloy',
         B:'pipez:item_pipe',
         C:'botania:red_petal_block'
-    });
+    }).id(kjs('create_output'));
     event.shaped('r2aot:rainbow_furnace', [
         'AAA',
         'ABA',
@@ -43,7 +43,7 @@ ServerEvents.recipes(event => {
     ], {
         A:'r2aot:rainbow_petal_block',
         B:'minecraft:furnace'
-    })
+    }).id(kjs('rainbow_furnace'));
 
     event.shaped('r2aot:mana_liquidizer', [
         'AmB',
@@ -58,7 +58,7 @@ ServerEvents.recipes(event => {
         t: Item.of('botania:mana_tablet', '{mana:500000}').strongNBT(),
         g: '#forge:glass',
         b: 'minecraft:bucket'
-    });
+    }).id(kjs('mana_liquidizer'));
 
     event.shaped('r2aot:modular_pure_daisy_core', [
         'AEB',
@@ -71,7 +71,7 @@ ServerEvents.recipes(event => {
         D:'botania:rune_air',
         E:'botania:mana_quartz',
         F:'botania:pure_daisy'
-    });
+    }).id(kjs('modular_pure_daisy_core'));
     
     event.shaped('r2aot:atomic_reconstructor', [
         'ABA',
@@ -81,7 +81,7 @@ ServerEvents.recipes(event => {
         A:'minecraft:iron_ingot',
         B:'minecraft:redstone',
         C:'industrialforegoing:machine_frame_simple'
-    });
+    }).id(kjs('atomic_reconstructor'));
 
     event.shaped('r2aot:energy_input', [
         'ADA',
@@ -92,7 +92,7 @@ ServerEvents.recipes(event => {
         B:'botania:lime_petal_block',
         C:'pipez:energy_pipe',
         D:'minecraft:redstone_block'
-    });
+    }).id(kjs('energy_input'));
 
     event.shaped('r2aot:energy_output', [
         'AAA',
@@ -103,7 +103,7 @@ ServerEvents.recipes(event => {
         B:'botania:red_petal_block',
         C:'pipez:energy_pipe',
         D:'minecraft:redstone_block'
-    });
+    }).id(kjs('energy_output'));
 
     event.shaped('r2aot:item_input_tank', [
         'ADA',
@@ -114,7 +114,7 @@ ServerEvents.recipes(event => {
         B:'botania:lime_petal_block',
         C:'pipez:item_pipe',
         D:'#forge:chests/wooden'
-    });
+    }).id(kjs('item_input_tank'));
 
     event.shaped('r2aot:item_output_tank', [
         'AAA',
@@ -125,7 +125,7 @@ ServerEvents.recipes(event => {
         B:'botania:red_petal_block',
         C:'pipez:item_pipe',
         D:'#forge:chests/wooden'
-    });
+    }).id(kjs('item_output_tank'));
 
     event.shaped('r2aot:fluid_input_tank', [
         'ADA',
@@ -136,7 +136,7 @@ ServerEvents.recipes(event => {
         B:'botania:lime_petal_block',
         C:'pipez:fluid_pipe',
         D:'minecraft:bucket'
-    });
+    }).id(kjs('fluid_input_tank'));
 
     event.shaped('r2aot:fluid_output_tank', [
         'AAA',
@@ -147,21 +147,21 @@ ServerEvents.recipes(event => {
         B:'botania:red_petal_block',
         C:'pipez:fluid_pipe',
         D:'minecraft:bucket'
-    });
+    }).id(kjs('fluid_output_tank'));
     
     event.shapeless('r2aot:fluid_input_tank', [
         'r2aot:fluid_input_port'
-    ]);
+    ]).id(kjs('fluid_input_tank_shapeless'));
 
     event.shapeless('r2aot:fluid_input_port', [
         'r2aot:fluid_input_tank'
-    ]);
+    ]).id(kjs('fluid_input_port_shapeless'));
 
     event.shapeless('r2aot:fluid_output_tank', [
         'r2aot:fluid_output_port'
-    ]);
+    ]).id(kjs('fluid_output_tank_shapeless'));
 
     event.shapeless('r2aot:fluid_output_port', [
         'r2aot:fluid_output_tank'
-    ]);
+    ]).id(kjs('fluid_output_port_shapeless'));
 })

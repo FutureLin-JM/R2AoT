@@ -18,6 +18,6 @@ ServerEvents.recipes((event) => {
                 }
             }
         ],
-    })
+    }).id(kjs('lychee', 'green_gravel_shard'))
 
 })

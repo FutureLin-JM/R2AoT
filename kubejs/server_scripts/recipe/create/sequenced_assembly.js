@@ -1,6 +1,5 @@
 /**
  * 为指定机器ID创建带有机器处理附魔的物品
- * 
  * @param {string} machineID - 要处理的机器ID，用于创建基础物品
  * @returns {Item} - 返回一个带有'r2aot:machine_processing'附魔标记的物品对象
  */

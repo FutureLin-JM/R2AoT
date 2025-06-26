@@ -36,7 +36,9 @@ ServerEvents.recipes(event => {
             'AA ',
             'AA ',
             '   '
-        ], {A:`botania:${color}_petal_block`})
+        ], {
+            A:`botania:${color}_petal_block`
+        }).id(kjs('botania', `${color}_wool`))
     })
 
     colors.forEach((color) => {
@@ -50,28 +52,26 @@ ServerEvents.recipes(event => {
                 count: 5,
                 item: `botania:${color}_petal`,
             },
-        });
+        }).id(kjs('custom_compacting', `${color}_petal`));
     });
 
     // 火花
     event.shapeless('botania:spark_upgrade_dispersive', [
         'botania:mana_powder', 'botania:manasteel_ingot', 'botania:blue_petal'
-    ]).id('botania:spark_upgrade_dispersive');
+    ]).id(kjs('spark_upgrade_dispersive'));
     event.shapeless('botania:spark_upgrade_dominant', [
         'botania:mana_powder', 'botania:manasteel_ingot', 'botania:orange_petal'
-    ]).id('botania:spark_upgrade_dominant');
+    ]).id(kjs('spark_upgrade_dominant'));
     event.shapeless('botania:spark_upgrade_recessive', [
         'botania:mana_powder', 'botania:manasteel_ingot', 'botania:lime_petal'
-    ]).id('botania:spark_upgrade_recessive');
+    ]).id(kjs('spark_upgrade_recessive'));
     event.shapeless('botania:spark_upgrade_isolated', [
         'botania:mana_powder', 'botania:manasteel_ingot', 'botania:light_blue_petal'
-    ]).id('botania:spark_upgrade_isolated');
+    ]).id(kjs('spark_upgrade_isolated'));
 })
 
 ServerEvents.recipes(event => {
     const { petal_apothecary, mana_infusion, runic_altar, elven_trade, } = event.recipes.botania;
-    const id_mana_infusion = 'botania:mana_infusion/kjs/'
-    const id_runic_altar = 'botania:runic_altar/kjs/'
 
     petal_apothecary(
         'botania:pure_daisy', 
@@ -96,16 +96,15 @@ ServerEvents.recipes(event => {
 
     /**
      * 白雏菊配方
-     * @param {string} inputType - 输入物品的类型（如"tag"或"block"）
-     * @param {InputItem_} inputItem - 输入物品的ID
+     * @param {InputItem_|InputTag_} input - 输入物品或标签
      * @param {OutputItem_} outputItem - 输出物品的ID
+     * @param {number} [time] - 运行时间（默认5）
      */
-    function pureDaisyRecipes(event, inputType, inputItem, outputItem) {
+    function pureDaisyRecipes(event, input, outputItem, time) {
         const setTime = 5;
-
-        const inputObj = {};
-        inputObj.type = inputType;
-        inputObj[inputType] = inputItem;
+        const inputObj = input.startsWith("#")
+            ? { type: "tag", tag: input.substring(1) }
+            : { type: "block", block: input };
 
         event.custom({
             type: "botania:pure_daisy",
@@ -113,14 +112,13 @@ ServerEvents.recipes(event => {
             output: {
                 name: outputItem
             },
-            time: setTime,
-        })
-    };
+            time: time ? time : setTime,
+        }).id(kjs('pure_daisy', outputItem.split(':')[1]));
+    }
 
-    pureDaisyRecipes(event, 'tag', 'forge:stone', 'botania:livingrock');
-    pureDaisyRecipes(event, 'tag', 'minecraft:logs', 'botania:livingwood_log');
-    pureDaisyRecipes(event, 'block', 'minecraft:water', 'minecraft:snow_block');
-    // pureDaisyRecipes(event, block, '')
+    pureDaisyRecipes(event, '#forge:stone', 'botania:livingrock');
+    pureDaisyRecipes(event, '#minecraft:logs', 'botania:livingwood_log');
+    pureDaisyRecipes(event, 'minecraft:water', 'minecraft:snow_block');
 
     const addPetalOreRecipe = {
         'botania:black_petal_block':'r2aot:petal_coal_ore',
@@ -133,11 +131,12 @@ ServerEvents.recipes(event => {
         'botania:lime_petal_block':'r2aot:petal_emerald_ore'
     }
     Object.entries(addPetalOreRecipe).forEach(([input, output]) => {
-        pureDaisyRecipes(event, 'block', input, output)
+        const oreName = output.split(':')[1];
+        pureDaisyRecipes(event, input, output)
     })
 
     mana_infusion('botania:mana_powder', 'minecraft:redstone', 500).id('botania:mana_infusion/mana_powder_dust');
-    mana_infusion('ae2:certus_quartz_crystal', 'botania:quartz_mana', 500).id(`${id_mana_infusion}certus_quartz_crystal`);
+    mana_infusion('ae2:certus_quartz_crystal', 'botania:quartz_mana', 500).id(kjs('mana_infusion', 'certus_quartz_crystal'));
 
     runic_altar('2x botania:rune_water',
         ['botania:mana_powder', '#botania:manasteel_ingots', 'mysticalagriculture:water_essence', 'minecraft:sugar_cane', 'minecraft:fishing_rod'],

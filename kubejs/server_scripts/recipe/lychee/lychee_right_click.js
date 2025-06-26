@@ -23,7 +23,7 @@ ServerEvents.recipes((event) => {
         contextual: {
                 type: "is_sneaking"
             }    
-    });
+    }).id(kjs('lychee', 'water_from_petal_block'));
 
     // 木棒+九色花源块=花瓣原液
     event.custom({    
@@ -49,7 +49,7 @@ ServerEvents.recipes((event) => {
         contextual: {
                 type: "is_sneaking"
             }    
-    });
+    }).id(kjs('lychee', 'petal_essence'));
 
     // 黑曜石
     event.custom({
@@ -65,7 +65,7 @@ ServerEvents.recipes((event) => {
         contextual: {
             type: "is_sneaking"
         }
-    });
+    }).id(kjs('lychee', 'obsidian'));
 
     // 下界岩
     event.custom({
@@ -87,7 +87,7 @@ ServerEvents.recipes((event) => {
                 predicate: {dimension: "the_nether",}
             }
         ]
-    });
+    }).id(kjs('lychee', 'netherrack'));
 
     // 烈焰人燃烧室
     event.custom({
@@ -109,7 +109,7 @@ ServerEvents.recipes((event) => {
                 predicate: {dimension: "the_nether",}
             }
         ]
-    });
+    }).id(kjs('lychee', 'blaze_burner'));
 
     // 哭泣黑曜石
     event.custom({
@@ -131,7 +131,7 @@ ServerEvents.recipes((event) => {
                 predicate: {dimension: "the_nether",}
             }
         ]
-    });
+    }).id(kjs('lychee', 'crying_obsidian'));
 
     // 藤蔓
     event.custom({
@@ -149,7 +149,7 @@ ServerEvents.recipes((event) => {
         contextual: {
             type: "is_sneaking"
         }
-    });
+    }).id(kjs('lychee', 'vine'));
 
     ['bronze', 'electrum', 'invar', 'constantan'].forEach(metalId => {
         event.custom({
@@ -167,6 +167,6 @@ ServerEvents.recipes((event) => {
             contextual: {
                 type: "is_sneaking"
             }
-        });
+        }).id(kjs('lychee', `${metalId}_seeds`));
     });
 })
