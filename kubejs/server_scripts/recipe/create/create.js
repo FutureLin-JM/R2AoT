@@ -66,6 +66,7 @@ ServerEvents.recipes(event => {
     // MechanicalExtruderExtruding 造石机
     const { mixing, splashing, milling, deploying, mechanical_crafting, compacting, pressing, filling} = event.recipes.create;
     const create = event.recipes
+    const id_kjs = (type, name) => "create:kubejs/" + type.toLowerCase() + name.toLowerCase();
 
     mixing(Fluid.of('r2aot:petal_essence', 500), '#botania:petals_block');
     mixing(
@@ -93,6 +94,8 @@ ServerEvents.recipes(event => {
     ['bronze', 'electrum', 'invar', 'constantan'].forEach(metalId => {
         mixing(Fluid.of(`r2aot:molten_${metalId}`, 200), `mysticalagriculture:${metalId}_essence`).superheated()
     });
+    mixing(Fluid.of('thermal:redstone', 100), 'minecraft:redstone').heated().id(id_kjs('mixing', 'thermal_redstone_from_redstone'));
+    mixing(Fluid.of('thermal:redstone', 900), 'minecraft:redstone_block').heated().id(id_kjs('mixing', 'thermal_redstone_from_block_block'));
 
     splashing(
         [Item.of('minecraft:flint').withChance(0.25), Item.of('minecraft:iron_nugget').withChance(0.75)], 

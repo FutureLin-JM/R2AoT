@@ -129,5 +129,15 @@ ServerEvents.recipes(event => {
         'hostilenetworks:blank_data_model'
     ]);
 
+    // 初级种子
+    event.shaped('r2aot:prudentium_crop_seed', [
+        'AAA',
+        'ABA',
+        'AAA'
+    ], {
+        A:'mysticalagriculture:prudentium_essence',
+        B:'mysticalagriculture:inferium_seeds'
+    });
+
 })
 

@@ -16,6 +16,10 @@
     "item.r2aot.creative_casing_shard": "创造机壳碎片",
     "item.r2aot.rune_elemental": "元素符文",
     "item.r2aot.time_voucher": "时间兑换券",
+    "item.r2aot.prudentium_crop_seed": "初级种子",
+    "item.r2aot.tertium_crop_seed": "中级种子",
+    "item.r2aot.imperium_crop_seed": "高级种子",
+
 
     "block.r2aot.rainbow_petal_block": "彩虹花源块",
     "block.r2aot.compressed_andesite": "压缩安山岩",
@@ -66,6 +70,9 @@
     "block.r2aot.elemental_altar_core": "元素祭坛",
     "block.r2aot.data_model_base": "数据模型基座",
     "block.r2aot.atomic_reconstructor": "原子再构机",
+    "block.r2aot.prudentium_crop": "初级种子",
+    "block.r2aot.tertium_crop": "中级种子",
+    "block.r2aot.imperium_crop": "高级种子",
 
     "r2aot.fertilizer_propagator_core": "花肥育瓣机",
     "r2aot.andesite_casing_maker_core": "安山机壳制造机",

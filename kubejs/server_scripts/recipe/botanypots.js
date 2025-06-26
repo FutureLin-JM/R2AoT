@@ -1,4 +1,5 @@
 ServerEvents.recipes(event => {
+    const id_kjs = (name) => "botanypots:kubejs/" + name.toLowerCase();
     const {crop, soil,} = event.recipes.botanypots
 
     soil(
@@ -68,6 +69,19 @@ ServerEvents.recipes(event => {
         ],
         1200,
         1
-    )
-
+    ).id(id_kjs('vine'));
+    
+    ['prudentium', 'tertium', 'imperium'].forEach(tier => {
+        crop(
+            `r2aot:${tier}_crop_seed`,
+            [tier],
+            {block: `r2aot:${tier}_crop`},
+            [
+                Item.of(`mysticalagriculture:${tier}_essence`).withChance(1).withCount(1),
+                Item.of(`r2aot:${tier}_crop_seed`).withChance(0.01).withCount(1),
+            ],
+            1800,
+            1
+        ).id(id_kjs(tier));
+    });
 })

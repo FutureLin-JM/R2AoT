@@ -141,7 +141,7 @@
 					type: "item"
 				}
 			]
-			x: 0.0d
+			x: 2.0d
 			y: 2.0d
 		}
 		{
@@ -274,13 +274,35 @@
 					type: "item"
 				}
 				{
-					id: "3E1DC182AA40DB5F"
+					id: "40D64C32453CCA5F"
 					type: "checkmark"
 				}
 			]
 			title: "{ftbq.r2aot.chapter2-4.thermal_molten_alloy_title}"
 			x: 10.0d
 			y: 2.0d
+		}
+		{
+			dependencies: ["0181B226C2493004"]
+			id: "4FDFFBE49550F636"
+			tasks: [{
+				id: "65109CD387127B08"
+				item: "mysticalagriculture:inferium_block"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["4FDFFBE49550F636"]
+			id: "708580C27D6462A5"
+			tasks: [{
+				id: "6F0ED767B0FD800F"
+				item: "r2aot:prudentium_crop_seed"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.0d
 		}
 	]
 	title: "{ftbq.r2aot.chapter2-4.start.title}"

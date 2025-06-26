@@ -104,21 +104,21 @@ ServerEvents.recipes(event => {
         })
     })
 
+    // let excludedEssenceCrops = [
+    //     'mysticalagriculture:inferium_essence',
+    //     'mysticalagriculture:bronze_essence',
+    //     'mysticalagriculture:electrum_essence',
+    //     'mysticalagriculture:invar_essence',
+    //     'mysticalagriculture:constantan_essence',
+
+    // ]
     let excludedEssenceCrops = [
-        'mysticalagriculture:inferium_essence',
-        'mysticalagriculture:prudentium_essence',
-        'mysticalagriculture:tertium_essence',
-        'mysticalagriculture:imperium_essence',
-        'mysticalagriculture:bronze_essence',
-        'mysticalagriculture:electrum_essence',
-        'mysticalagriculture:invar_essence',
-        'mysticalagriculture:constantan_essence',
-
+        'inferium', 'water', 'fire', 'earth', 'air',
+        'bronze', 'electrum', 'invar', 'constantan',
     ]
-
     Ingredient.of('#mysticalagriculture:essences').itemIds.forEach(id => {
-        if (!excludedEssenceCrops.includes(id)) {
-            const cropName = id.replace('mysticalagriculture:', '').replace('_essence', '');
+        const cropName = id.replace('mysticalagriculture:', '').replace('_essence', '');
+        if (!excludedEssenceCrops.includes(cropName)) {
             event.remove({id:`botanypots:mysticalagriculture/crop/${cropName}`})
         }
     })

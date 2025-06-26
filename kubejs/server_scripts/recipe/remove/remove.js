@@ -46,7 +46,10 @@ ServerEvents.recipes(event => {
         'thermal_extra:parts/twinite_gear',
         'thermal_extra:parts/dragonsteel_gear',
         'thermal_extra:parts/abyssal_gear',
-        'mekanism:processing/bronze/ingot/from_infusing'
+        'mekanism:processing/bronze/ingot/from_infusing',
+        'mysticalagriculture:prudentium_essence',
+        'mysticalagriculture:tertium_essence',
+        'mysticalagriculture:imperium_essence',
     ]
     recipesToRemoveID.forEach((recipes) => {
         event.remove({id:recipes});

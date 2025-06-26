@@ -27,4 +27,16 @@ StartupEvents.registry("block", (event) => {
     event.create("r2aot:creative_casing", "basic").hardness(3).soundType("netherite_block").requiresTool();
 
     event.create("r2aot:data_model_base", "basic").hardness(3).stoneSoundType().box(0, 0, 0, 16, 2, 16).fullBlock(false);
+
+    ["prudentium", "tertium", "imperium"].forEach(tier => {
+        event.create(`r2aot:${tier}_crop`, "crop")
+            .age(7, cbb => {
+                for (let i = 0; i <= 7; i++) {
+                    cbb.shape(i, 0, 0, 0, 16, 4, 16);
+                }
+            })
+            .crop(Item.of(`mysticalagriculture:${tier}_essence`))
+            .crop(Item.of(`r2aot:${tier}_crop_seed`), 0.01)
+    });
+
 })
