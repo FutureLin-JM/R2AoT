@@ -179,7 +179,8 @@
     "jade.tooltip.mana": "魔力: %s%s",
     "config.jade.plugin_r2aot.numerical_mana": "魔力定量统计",
 
-    "r2aot.version": "当前整合包版本：§a%s§r",
+    "r2aot.startup.version": "当前整合包版本：§a%s§r %s",
+    "r2aot.startup.new_version": "§c存在新版本 §c%s",
 
     "message.r2aot.multiblock.incorrect": "结构不正确",
     "message.r2aot.tiab": "请先将时间瓶放入背包中！",

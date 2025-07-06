@@ -13,6 +13,7 @@ if (Platform.isClientEnvironment()) {
         let currentVer = $MpucApi.getInstance().getCurrentModpackVersion();
         Client.setTitle(`Return to the Age of Technology v${currentVer}`);
 
+        // 获取品牌信息
         let brandingControl = new $BrandingControl();
         let brandingsField = $BrandingControl.__javaObject__.getDeclaredField('brandings');
         brandingsField.setAccessible(true);
@@ -25,8 +26,13 @@ if (Platform.isClientEnvironment()) {
         let newBrandings = new $ArrayList();
         newBrandings.addAll(brandings);
 
-        // 版本信息
-        newBrandings.add(Text.translate('r2aot.version', currentVer).getString());
+        // 检查更新
+        let lastestVer = $MpucApi.getInstance().getLatestModpackVersion() ?? currentVer;
+        let hasUpdate = currentVer != lastestVer;
+        let updateMessage = hasUpdate ? Text.translate('r2aot.startup.new_version', lastestVer).getString() : '';
+
+        // 添加版本信息
+        newBrandings.add(Text.translate('r2aot.startup.version', currentVer, updateMessage).getString());
 
         brandingsField.set(brandingControl, newBrandings);
 
