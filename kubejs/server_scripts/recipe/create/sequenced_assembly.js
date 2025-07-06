@@ -68,7 +68,7 @@ ServerEvents.recipes(event => {
     )
     .loops(1)
     .transitionalItem(in_wa_se)
-    .id('kubejs:sequenced_assembly/water_seeds')
+    .id(kjs('sequenced_assembly', 'water_seeds'))
 
     let in_fi_se = 'kubejs:incomplete_fire_seeds'
     sequenced_assembly(
@@ -84,7 +84,7 @@ ServerEvents.recipes(event => {
     )
     .loops(1)
     .transitionalItem(in_fi_se)
-    .id('kubejs:sequenced_assembly/fire_seeds')
+    .id(kjs('sequenced_assembly', 'fire_seeds'))
 
     let in_ea_se = 'kubejs:incomplete_earth_seeds'
     sequenced_assembly(
@@ -100,7 +100,7 @@ ServerEvents.recipes(event => {
     )
     .loops(1)
     .transitionalItem(in_ea_se)
-    .id('kubejs:sequenced_assembly/earth_seeds')
+    .id(kjs('sequenced_assembly', 'earth_seeds'))
 
     let in_air_se = 'kubejs:incomplete_air_seeds'
     sequenced_assembly(
@@ -116,7 +116,7 @@ ServerEvents.recipes(event => {
     )
     .loops(1)
     .transitionalItem(in_air_se)
-    .id('kubejs:sequenced_assembly/air_seeds')
+    .id(kjs('sequenced_assembly', 'air_seeds'))
 
     let in_rf_co = 'kubejs:incomplete_rf_coil'
     sequenced_assembly([
@@ -131,7 +131,7 @@ ServerEvents.recipes(event => {
     )
     .loops(1)
     .transitionalItem(in_rf_co)
-    .id('kubejs:sequenced_assembly/rf_coil')
+    .id(kjs('sequenced_assembly', 'rf_coil'))
 
     let in_red_ser = 'kubejs:incomplete_redstone_servo'
     sequenced_assembly([
@@ -147,5 +147,5 @@ ServerEvents.recipes(event => {
     )
     .loops(1)
     .transitionalItem(in_red_ser)
-    .id('kubejs:sequenced_assembly/redstone_servo')
+    .id(kjs('sequenced_assembly', 'redstone_servo'))
 })
