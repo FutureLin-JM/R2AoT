@@ -1,5 +1,4 @@
 ServerEvents.recipes(event => {
-    const id_kjs = (name) => "botanypots:kubejs/" + name.toLowerCase();
     const {crop, soil,} = event.recipes.botanypots
 
     soil(
@@ -69,7 +68,7 @@ ServerEvents.recipes(event => {
         ],
         1200,
         1
-    ).id(id_kjs('vine'));
+    ).id(kjs('botanypots', 'vine'));
     
     ['prudentium', 'tertium', 'imperium'].forEach(tier => {
         crop(
@@ -82,6 +81,6 @@ ServerEvents.recipes(event => {
             ],
             1800,
             1
-        ).id(id_kjs(tier));
+        ).id(kjs('botantpots', tier));
     });
 })

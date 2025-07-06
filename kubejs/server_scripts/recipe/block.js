@@ -106,20 +106,6 @@ ServerEvents.recipes(event => {
         C: 'minecraft:comparator'
     }).id('hostilenetworks:loot_fabricator');
 
-    // 感应炉
-    event.shaped(
-    'thermal:machine_smelter',[
-        ' X ',
-        'YCY',
-        'IPI'
-    ],{
-        X: 'minecraft:blast_furnace',
-        Y: '#forge:sand',
-        C: 'thermal:machine_frame',
-        I: '#forge:gears/diamond',
-        P: 'thermal:rf_coil'
-    }).id('thermal:machine_smelter')
-
     // 激光钻
     event.shaped('2x industrialforegoing:laser_drill',[
         'pfp',

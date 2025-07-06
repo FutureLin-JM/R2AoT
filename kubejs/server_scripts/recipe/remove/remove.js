@@ -66,6 +66,12 @@ ServerEvents.recipes(event => {
         'thermal:machines/smelter/smelter_alloy_electrum',
         'thermal:machines/smelter/smelter_alloy_invar',
         'thermal:machines/smelter/smelter_alloy_constantan',
+        'mysticalagriculture:prudentium_block_combine',
+        'mysticalagriculture:tertium_block_combine',
+        'mysticalagriculture:imperium_block_combine',
+        'mysticalagriculture:machine_frame',
+        'botania:runic_altar_alt',
+        'botania:runic_altar',
     ]
     recipesToRemoveID.forEach((recipes) => {
         event.remove({id:recipes});

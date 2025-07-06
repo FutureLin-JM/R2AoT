@@ -57,7 +57,7 @@
 				}
 			]
 			x: 0.0d
-			y: -2.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["0DAE925DF35111D0"]
@@ -111,8 +111,8 @@
 				}
 			]
 			title: "{ftbq.r2aot.chapter2-4.thermal_ore.title}"
-			x: 2.0d
-			y: -2.0d
+			x: 0.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["0181B226C2493004"]
@@ -127,7 +127,6 @@
 		}
 		{
 			dependencies: ["380DD78FB9B00B39"]
-			hide_dependent_lines: true
 			id: "3C104ACFE745F265"
 			tasks: [
 				{
@@ -185,7 +184,7 @@
 			]
 			title: "{ftbq.r2aot.chapter2-4.thermal_alloy1_title}"
 			x: 2.0d
-			y: 4.0d
+			y: 2.0d
 		}
 		{
 			dependencies: [
@@ -217,7 +216,7 @@
 			]
 			title: "{ftbq.r2aot.chapter2-4.thermal_alloy_seeds_title}"
 			x: 4.0d
-			y: 4.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["6390FAD8CD2CCD9D"]
@@ -245,7 +244,7 @@
 				}
 			]
 			title: "{ftbq.r2aot.chapter2-4.thermal_alloy_essence_title}"
-			x: 6.0d
+			x: 4.0d
 			y: 4.0d
 		}
 		{
@@ -282,44 +281,26 @@
 				}
 			]
 			title: "{ftbq.r2aot.chapter2-4.thermal_molten_alloy_title}"
-			x: 8.0d
+			x: 6.0d
 			y: 4.0d
 		}
 		{
 			dependencies: ["0181B226C2493004"]
-			id: "4FDFFBE49550F636"
-			tasks: [{
-				id: "65109CD387127B08"
-				item: "mysticalagriculture:inferium_block"
-				type: "item"
-			}]
-			x: 0.0d
-			y: 2.0d
-		}
-		{
-			dependencies: ["4FDFFBE49550F636"]
-			id: "708580C27D6462A5"
-			tasks: [{
-				id: "6F0ED767B0FD800F"
-				item: "r2aot:prudentium_crop_seed"
-				type: "item"
-			}]
-			x: 2.0d
-			y: 2.0d
-		}
-		{
-			dependencies: ["708580C27D6462A5"]
+			hide_dependent_lines: true
 			id: "2504DD936A01CB2C"
 			tasks: [{
 				id: "47BF49B4DBDD1530"
 				item: "mysticalagriculture:prudentium_block"
 				type: "item"
 			}]
-			x: 4.0d
-			y: 2.0d
+			x: -2.0d
+			y: 0.0d
 		}
 		{
-			dependencies: ["537EFE9D4D96731A"]
+			dependencies: [
+				"537EFE9D4D96731A"
+				"13A10E6C9F7436DB"
+			]
 			id: "3DF7C0A0B39A0F09"
 			tasks: [
 				{
@@ -343,7 +324,7 @@
 					type: "item"
 				}
 			]
-			x: 0.0d
+			x: 2.0d
 			y: 4.0d
 		}
 	]

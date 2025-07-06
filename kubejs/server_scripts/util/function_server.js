@@ -1,3 +1,5 @@
+// priority: 50
+
 /**
  * 为机器添加右键点击取出物品的功能
  */
@@ -53,4 +55,46 @@ function kjs(type, name) {
         return `kubejs:${type.toLowerCase()}`
     }
     return `kubejs:${type.toLowerCase()}/${name.toLowerCase()}`
+};
+
+/**
+ * 解析字符串并返回包含物品或标签及其数量的对象。
+ * @param {string} entity - 格式: "itemID"、"#tagID" 或 "Nx itemID"、"Nx #tagID"
+ * @returns {Object} 包含物品或标签及其数量的对象。
+ *         标签返回{tag: string, count: number}；
+ *         物品返回{item: string, count: number}。
+ */
+function parseEntry(entity) {
+    if (!entity.includes(' ')) {
+        if(entity.startsWith('#')) {
+            return { tag: entity.substring(1), count: 1 }
+        }
+        else {
+            return { item: entity, count: 1 }
+        }
+    }
+
+    const [countString, itemString] = entity.split(' ');
+    const count = parseInt(countString.replace('x', ''));
+
+    if(itemString.startsWith('#')) {
+        return { tag: itemString.substring(1), count: count }
+    }
+    else {
+        return { item: itemString, count: count }
+    }
+}
+
+/**
+ * 解析不包含数量的字符串
+ * @param {string} entity - 要解析的实体字符串，可以是标签或物品
+ * @returns {{tag?: string, item?: string}} - 返回包含tag属性或item属性的对象
+ */
+function parseEntryWithoutCount(entity) {
+    if(entity.startsWith('#')) {
+        return { tag: entity.substring(1) }
+    }
+    else {
+        return { item: entity }
+    }
 }
