@@ -141,8 +141,8 @@
 					type: "item"
 				}
 			]
-			x: 2.0d
-			y: 2.0d
+			x: 4.0d
+			y: -2.0d
 		}
 		{
 			dependencies: [
@@ -152,14 +152,14 @@
 			id: "59F23C3D5935C257"
 			tasks: [{
 				id: "460FA1099C445D38"
-				item: "thermal:machine_crucible"
+				item: "thermal:machine_smelter"
 				type: "item"
 			}]
 			x: 4.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["59F23C3D5935C257"]
+			dependencies: ["3DF7C0A0B39A0F09"]
 			id: "368990328377F63B"
 			tasks: [
 				{
@@ -184,11 +184,14 @@
 				}
 			]
 			title: "{ftbq.r2aot.chapter2-4.thermal_alloy1_title}"
-			x: 4.0d
-			y: 2.0d
+			x: 2.0d
+			y: 4.0d
 		}
 		{
-			dependencies: ["368990328377F63B"]
+			dependencies: [
+				"368990328377F63B"
+				"2504DD936A01CB2C"
+			]
 			id: "6390FAD8CD2CCD9D"
 			tasks: [
 				{
@@ -213,8 +216,8 @@
 				}
 			]
 			title: "{ftbq.r2aot.chapter2-4.thermal_alloy_seeds_title}"
-			x: 6.0d
-			y: 2.0d
+			x: 4.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["6390FAD8CD2CCD9D"]
@@ -242,8 +245,8 @@
 				}
 			]
 			title: "{ftbq.r2aot.chapter2-4.thermal_alloy_essence_title}"
-			x: 8.0d
-			y: 2.0d
+			x: 6.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["640E3BB6881A6144"]
@@ -279,8 +282,8 @@
 				}
 			]
 			title: "{ftbq.r2aot.chapter2-4.thermal_molten_alloy_title}"
-			x: 10.0d
-			y: 2.0d
+			x: 8.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["0181B226C2493004"]
@@ -301,6 +304,45 @@
 				item: "r2aot:prudentium_crop_seed"
 				type: "item"
 			}]
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["708580C27D6462A5"]
+			id: "2504DD936A01CB2C"
+			tasks: [{
+				id: "47BF49B4DBDD1530"
+				item: "mysticalagriculture:prudentium_block"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["537EFE9D4D96731A"]
+			id: "3DF7C0A0B39A0F09"
+			tasks: [
+				{
+					id: "1C68053F97AF3CD4"
+					item: "thermal:bronze_dust"
+					type: "item"
+				}
+				{
+					id: "63D6F54DC869F850"
+					item: "thermal:electrum_dust"
+					type: "item"
+				}
+				{
+					id: "1F3183DABEA5612D"
+					item: "thermal:invar_dust"
+					type: "item"
+				}
+				{
+					id: "3B63BF415435CEC6"
+					item: "thermal:constantan_dust"
+					type: "item"
+				}
+			]
 			x: 0.0d
 			y: 4.0d
 		}

@@ -54,6 +54,18 @@ ServerEvents.recipes(event => {
         'botania:spark_upgrade_dominant',
         'botania:spark_upgrade_recessive',
         'botania:spark_upgrade_isolated',
+        'thermal:bronze_dust_4',
+        'thermal:electrum_dust_2',
+        'thermal:invar_dust_3',
+        'thermal:constantan_dust_2',
+        'thermal:fire_charge/bronze_ingot_4',
+        'thermal:fire_charge/electrum_ingot_2',
+        'thermal:fire_charge/invar_ingot_3',
+        'thermal:fire_charge/constantan_ingot_2',
+        'thermal:machines/smelter/smelter_alloy_bronze',
+        'thermal:machines/smelter/smelter_alloy_electrum',
+        'thermal:machines/smelter/smelter_alloy_invar',
+        'thermal:machines/smelter/smelter_alloy_constantan',
     ]
     recipesToRemoveID.forEach((recipes) => {
         event.remove({id:recipes});

@@ -117,6 +117,34 @@ ServerEvents.recipes(event => {
     });
     mixing(Fluid.of('thermal:redstone', 100), 'minecraft:redstone').heated().id(kjs('mixing', 'thermal_redstone_from_redstone'));
     mixing(Fluid.of('thermal:redstone', 900), 'minecraft:redstone_block').heated().id(kjs('mixing', 'thermal_redstone_from_block_block'));
+    mixing(
+        Item.of('thermal:bronze_dust').withCount(2),
+        [
+            Ingredient.of('#forge:dusts/copper').or('#forge:ingots/copper').withCount(3), Ingredient.of('#forge:dusts/tin').or('#forge:ingots/tin'), 
+            Fluid.of('r2aot:fluidedmana', 400)
+        ]
+    ).id(kjs('mixing', 'thermal_bronze_dust'));
+    mixing(
+        'thermal:electrum_dust',
+        [
+            Ingredient.of('#forge:dusts/gold').or('#forge:ingots/gold'), Ingredient.of('#forge:dusts/silver').or('#forge:ingots/silver'), 
+            Fluid.of('r2aot:fluidedmana', 200)
+        ]
+    ).id(kjs('mixing', 'thermal_electrum_dust'));
+    mixing(
+        Item.of('thermal:invar_dust').withCount(3),
+        [
+            Ingredient.of('#forge:dusts/iron').or('#forge:ingots/iron').withCount(4), Ingredient.of('#forge:dusts/nickel').or('#forge:ingots/nickel').withCount(2), 
+            Fluid.of('r2aot:fluidedmana', 600)
+        ]
+    ).id(kjs('mixing', 'thermal_invar_dust'));
+    mixing(
+        'thermal:constantan_dust',
+        [
+            Ingredient.of('#forge:dusts/copper').or('#forge:ingots/copper'), Ingredient.of('#forge:dusts/nickel').or('#forge:ingots/nickel'), 
+            Fluid.of('r2aot:fluidedmana', 200)
+        ]
+    ).id(kjs('mixing', 'thermal_constantan_dust'));
 
     splashing(
         [Item.of('minecraft:flint').withChance(0.25), Item.of('minecraft:iron_nugget').withChance(0.75)], 
