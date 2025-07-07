@@ -7,7 +7,7 @@ ServerEvents.loaded(event => {
         event.server.gameRules.set('doMobSpawning', 'false');
         event.server.gameRules.set('doDaylightCycle', 'false');
 
-        server.getLevel('minecraft:overworld').setDayTime(6000);
+        server.getLevel('minecraft:overworld').setDayTime(1000);
 
         event.server.persistentData.putBoolean('first_loaded', true);
     }

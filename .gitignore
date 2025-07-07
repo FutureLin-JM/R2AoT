@@ -24,6 +24,7 @@
 !config/skyblockbuilder/structures.json5
 !config/skyblockbuilder/templates.json5
 !config/skyblockbuilder/permissions.json5
+!config/botania-client.toml
 
 # DefaultConfigs
 !defaultconfigs/
