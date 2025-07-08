@@ -204,11 +204,11 @@ ServerEvents.recipes(event => {
         'ABA',
         'AAA'
     ], {A:'botania:livingrock', B:'create:brass_ingot'}).id(kjs('mechanical_crafting', 'mana_pool'));
-    mechanical_crafting('r2aot:primary_mana_generator_core', [
+    mechanical_crafting('r2aot:mana_generator_core', [
         'AAA',
         'ABA',
         'AAA'
-    ], {A:'botania:livingrock', B:'minecraft:diamond'}).id(kjs('mechanical_crafting', 'primary_mana_generator_core'));
+    ], {A:'botania:livingrock', B:'minecraft:diamond'}).id(kjs('mechanical_crafting', 'mana_generator_core'));
     mechanical_crafting('r2aot:flower_ore_generator', [
         'AAA',
         'ABA',
