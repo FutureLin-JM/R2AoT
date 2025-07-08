@@ -76,49 +76,49 @@ ServerEvents.recipes(event => {
     petal_apothecary(
         'botania:pure_daisy', 
         Array(4).fill('botania:white_petal').concat('create:andesite_casing').concat('create:andesite_alloy'),
-        'minecraft:iron_ingot').id('botania:petal_apothecary/pure_daisy');
+        'minecraft:iron_ingot').id(kjs('petal_apothecary', 'pure_daisy'));
 
     petal_apothecary(
         'botania:hydroangeas',
         Array(2).fill('botania:blue_petal').concat(Array(2).fill('botania:cyan_petal')),
-        'minecraft:lapis_lazuli').id('botania:petal_apothecary/hydroangeas');
+        'minecraft:lapis_lazuli').id(kjs('petal_apothecary', 'hydroangeas'));
 
     petal_apothecary(
         'r2aot:spinerette',
         Array(2).fill('botania:yellow_petal').concat(Array(2).fill('botania:cyan_petal')).concat('botania:manasteel_ingot').concat('botania:mana_powder'),
-        'botania:mana_diamond').id('botania:petal_apothecary/spinerette');
+        'botania:mana_diamond').id(kjs('petal_apothecary', 'spinerette'));
     
     petal_apothecary(
         'botania:orechid',
         ['botania:gray_petal', 'botania:gray_petal', 'botania:yellow_petal', 'botania:green_petal', 'botania:red_petal', 'botania:redstone_root', 'botania:mana_powder'],
-        'minecraft:quartz').id('botania:petal_apothecary/orechid');
+        'minecraft:quartz').id(kjs('petal_apothecary', 'orechid'));
 
 
     /**
      * 白雏菊配方
+     * @param {OutputItem_} output - 输出物品的ID
      * @param {InputItem_|InputTag_} input - 输入物品或标签
-     * @param {OutputItem_} outputItem - 输出物品的ID
      * @param {number} [time] - 运行时间（默认5）
+     * @param {string} [id] - 自定义ID（可选）
      */
-    function pureDaisyRecipes(event, input, outputItem, time) {
+    function pureDaisyRecipes(output, input, time, id) {
         const setTime = 5;
-        const inputObj = input.startsWith("#")
-            ? { type: "tag", tag: input.substring(1) }
-            : { type: "block", block: input };
+        const inputObj = input.startsWith("#") ? { type: "tag", tag: input.substring(1) } : { type: "block", block: input };
+        const idName = id ? id : output.split(':')[1];
 
         event.custom({
             type: "botania:pure_daisy",
             input: inputObj,
             output: {
-                name: outputItem
+                name: output
             },
             time: time ? time : setTime,
-        }).id(kjs('pure_daisy', outputItem.split(':')[1]));
+        }).id(kjs('pure_daisy', idName));
     }
 
-    pureDaisyRecipes(event, '#forge:stone', 'botania:livingrock');
-    pureDaisyRecipes(event, '#minecraft:logs', 'botania:livingwood_log');
-    pureDaisyRecipes(event, 'minecraft:water', 'minecraft:snow_block');
+    pureDaisyRecipes('botania:livingrock', '#forge:stone');
+    pureDaisyRecipes('botania:livingwood_log', '#minecraft:logs');
+    pureDaisyRecipes('minecraft:snow_block', 'minecraft:water');
 
     const addPetalOreRecipe = {
         'botania:black_petal_block':'r2aot:petal_coal_ore',
@@ -131,8 +131,7 @@ ServerEvents.recipes(event => {
         'botania:lime_petal_block':'r2aot:petal_emerald_ore'
     }
     Object.entries(addPetalOreRecipe).forEach(([input, output]) => {
-        const oreName = output.split(':')[1];
-        pureDaisyRecipes(event, input, output)
+        pureDaisyRecipes(output, input)
     })
 
     mana_infusion('botania:mana_powder', 'minecraft:redstone', 500).id('botania:mana_infusion/mana_powder_dust');

@@ -72,6 +72,9 @@ ServerEvents.recipes(event => {
         'mysticalagriculture:machine_frame',
         'botania:runic_altar_alt',
         'botania:runic_altar',
+        'botania:petal_apothecary/pure_daisy',
+        'botania:petal_apothecary/hydroangeas',
+        'botania:petal_apothecary/orechid'
     ]
     recipesToRemoveID.forEach((recipes) => {
         event.remove({id:recipes});
