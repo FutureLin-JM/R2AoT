@@ -85,7 +85,7 @@ ServerEvents.recipes(event =>{
     })
     
     smelter(
-        '1x botania:runic_altar',
+        'botania:runic_altar',
         [
             '16x botania:livingrock',
             '4x botania:mana_diamond',

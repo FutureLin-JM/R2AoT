@@ -157,4 +157,5 @@ ServerEvents.recipes(event => {
         ['botania:rune_water', 'botania:rune_fire', 'botania:rune_earth', 'botania:rune_air'],
         8000
     ).id('kubejs:runic_altar/elemental');
+    runic_altar('minecraft:apple', ['r2aot:rune_elemental', '#botania:manasteel_ingots', 'botania:rune_water'], 8000)
 })

@@ -37,6 +37,10 @@ ServerEvents.tags("item", event => {
         'r2aot:obsidian_furnace_component',
         'r2aot:netherite_furnace_component'
     ])
+
+    event.add('botania:runes', [
+        'r2aot:rune_elemental'
+    ])
 })
 
 ServerEvents.tags('block', event => {

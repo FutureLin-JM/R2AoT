@@ -183,7 +183,7 @@
 				}
 			]
 			title: "{ftbq.r2aot.chapter2-4.thermal_alloy1_title}"
-			x: 2.0d
+			x: 4.0d
 			y: 2.0d
 		}
 		{
@@ -215,7 +215,7 @@
 				}
 			]
 			title: "{ftbq.r2aot.chapter2-4.thermal_alloy_seeds_title}"
-			x: 4.0d
+			x: 6.0d
 			y: 2.0d
 		}
 		{
@@ -244,8 +244,8 @@
 				}
 			]
 			title: "{ftbq.r2aot.chapter2-4.thermal_alloy_essence_title}"
-			x: 4.0d
-			y: 4.0d
+			x: 8.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["640E3BB6881A6144"]
@@ -281,8 +281,8 @@
 				}
 			]
 			title: "{ftbq.r2aot.chapter2-4.thermal_molten_alloy_title}"
-			x: 6.0d
-			y: 4.0d
+			x: 11.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["0181B226C2493004"]
@@ -325,7 +325,18 @@
 				}
 			]
 			x: 2.0d
-			y: 4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["59F23C3D5935C257"]
+			id: "3CE216603DF9A2AE"
+			tasks: [{
+				id: "18365BFB22D7DEC3"
+				item: "botania:runic_altar"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.0d
 		}
 	]
 	title: "{ftbq.r2aot.chapter2-4.start.title}"

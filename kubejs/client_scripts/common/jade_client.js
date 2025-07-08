@@ -1,8 +1,3 @@
-/**
- * 此代码基于 FalAut/Mierno
- * 原项目地址：https://github.com/FalAut/Mierno/blob/main/kubejs/client_scripts/common/jade_client.js
- * 原始版权归原作者所有，遵循 MIT License
- */
 JadeEvents.onClientRegistration((event) => {
     event.block('r2aot:numerical_mana', $Block).tooltip((tooltip, accessor) => {
         const { serverData } = accessor;
