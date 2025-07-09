@@ -471,7 +471,7 @@
 			subtitle: "{\"translate\":\"ftbq.r2aot.capsule.text\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"047B4DE06BE3F22F\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"ftbq.r2aot.capsule.click\"}}}"
 			tasks: [{
 				id: "46DCD9CA63D50BCC"
-				item: "r2aot:primary_mana_generator_core"
+				item: "r2aot:mana_generator_core"
 				type: "item"
 			}]
 			x: 18.0d

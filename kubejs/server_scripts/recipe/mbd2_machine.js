@@ -105,7 +105,7 @@ ServerEvents.recipes(event => {
         D:'minecraft:redstone_block'
     }).id(kjs('energy_output'));
 
-    event.shaped('r2aot:item_input_tank', [
+    event.shaped('r2aot:item_input', [
         'ADA',
         'BCB',
         'AAA'
@@ -114,9 +114,9 @@ ServerEvents.recipes(event => {
         B:'botania:lime_petal_block',
         C:'pipez:item_pipe',
         D:'#forge:chests/wooden'
-    }).id(kjs('item_input_tank'));
+    }).id(kjs('item_input'));
 
-    event.shaped('r2aot:item_output_tank', [
+    event.shaped('r2aot:item_output', [
         'AAA',
         'BCB',
         'ADA'
@@ -125,9 +125,9 @@ ServerEvents.recipes(event => {
         B:'botania:red_petal_block',
         C:'pipez:item_pipe',
         D:'#forge:chests/wooden'
-    }).id(kjs('item_output_tank'));
+    }).id(kjs('item_output'));
 
-    event.shaped('r2aot:fluid_input_tank', [
+    event.shaped('r2aot:fluid_input', [
         'ADA',
         'BCB',
         'AAA'
@@ -136,9 +136,9 @@ ServerEvents.recipes(event => {
         B:'botania:lime_petal_block',
         C:'pipez:fluid_pipe',
         D:'minecraft:bucket'
-    }).id(kjs('fluid_input_tank'));
+    }).id(kjs('fluid_input'));
 
-    event.shaped('r2aot:fluid_output_tank', [
+    event.shaped('r2aot:fluid_output', [
         'AAA',
         'BCB',
         'ADA'
@@ -147,21 +147,5 @@ ServerEvents.recipes(event => {
         B:'botania:red_petal_block',
         C:'pipez:fluid_pipe',
         D:'minecraft:bucket'
-    }).id(kjs('fluid_output_tank'));
-    
-    event.shapeless('r2aot:fluid_input_tank', [
-        'r2aot:fluid_input_port'
-    ]).id(kjs('fluid_input_tank_shapeless'));
-
-    event.shapeless('r2aot:fluid_input_port', [
-        'r2aot:fluid_input_tank'
-    ]).id(kjs('fluid_input_port_shapeless'));
-
-    event.shapeless('r2aot:fluid_output_tank', [
-        'r2aot:fluid_output_port'
-    ]).id(kjs('fluid_output_tank_shapeless'));
-
-    event.shapeless('r2aot:fluid_output_port', [
-        'r2aot:fluid_output_tank'
-    ]).id(kjs('fluid_output_port_shapeless'));
+    }).id(kjs('fluid_output'));
 })

@@ -190,7 +190,7 @@
 		{
 			can_repeat: true
 			disable_toast: true
-			icon: "r2aot:primary_mana_generator_core"
+			icon: "r2aot:mana_generator_core"
 			id: "047B4DE06BE3F22F"
 			rewards: [{
 				id: "43F8DD52C3E3EC3C"
@@ -209,80 +209,65 @@
 						oneUse: 1b
 						size: 7
 						state: 5
-						structureName: "config/capsule/rewards/primary_mana_generator.nbt"
+						structureName: "config/capsule/rewards/mana_generator.nbt"
 					}
 				}
 				type: "item"
 			}]
-			subtitle: "{\"translate\":\"ftbq.r2aot.ponder.text\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/ponder r2aot:primary_mana_generator_core\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"ftbq.r2aot.capsule.click\"}}}"
+			subtitle: "{\"translate\":\"ftbq.r2aot.ponder.text\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/ponder r2aot:mana_generator_core\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"ftbq.r2aot.capsule.click\"}}}"
 			tasks: [
 				{
 					consume_items: true
 					disable_toast: true
 					id: "27C637191FF0CCE2"
-					item: "r2aot:primary_mana_generator_core"
+					item: "r2aot:mana_generator_core"
 					type: "item"
 				}
 				{
 					consume_items: true
-					disable_toast: true
-					id: "4BAC0B76A9A83C35"
-					item: "r2aot:fluid_input_port"
+					id: "73ADD9C6E2A5297B"
+					item: "r2aot:fluid_input"
 					type: "item"
 				}
 				{
 					consume_items: true
-					count: 18L
-					disable_toast: true
-					id: "340CA1CAD7DC5383"
-					item: "create:framed_glass"
+					count: 7L
+					id: "2CA0D184A234B15F"
+					item: { Count: 7, id: "create:framed_glass" }
 					type: "item"
 				}
 				{
 					consume_items: true
 					count: 12L
-					disable_toast: true
-					id: "11944909EF41F79C"
+					id: "3E0EE758C41E0EDF"
+					item: { Count: 12, id: "botania:livingwood_wall" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 12L
+					id: "3F1FBD90B1A19CC7"
 					item: { Count: 12, id: "botania:polished_livingrock" }
 					type: "item"
 				}
 				{
 					consume_items: true
-					count: 24L
-					disable_toast: true
-					id: "0B4775F896B60AC0"
-					item: { Count: 24, id: "botania:livingrock_wall" }
+					count: 4L
+					id: "0F179623FB7D92C5"
+					item: { Count: 4, id: "botania:livingrock_slab" }
 					type: "item"
 				}
 				{
 					consume_items: true
-					count: 25L
-					disable_toast: true
-					id: "30BAF018AA632338"
-					item: "botania:livingrock_slab"
+					count: 28L
+					id: "7BD8C24B53E92C64"
+					item: { Count: 28, id: "botania:livingrock" }
 					type: "item"
 				}
 				{
 					consume_items: true
-					count: 48L
-					disable_toast: true
-					id: "7605B823EA7D3814"
-					item: "botania:livingrock"
-					type: "item"
-				}
-				{
-					consume_items: true
-					count: 9L
-					disable_toast: true
-					id: "1489384A98FD26FF"
-					item: { Count: 9, id: "minecraft:grass_block" }
-					type: "item"
-				}
-				{
-					consume_items: true
-					disable_toast: true
-					id: "05A1DCE89C55BE24"
-					item: "r2aot:mana_output"
+					id: "0AFDC9853D778BC2"
+					item: "minecraft:grass_block"
 					type: "item"
 				}
 			]

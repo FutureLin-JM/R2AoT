@@ -2,8 +2,8 @@
 	"credit": "Made with Blockbench",
 	"parent": "minecraft:block/block",
 	"textures": {
-		"0": "r2aot:block/fluid_output_tank",
-		"particle": "r2aot:block/fluid_output_tank"
+		"0": "r2aot:block/item_output",
+		"particle": "r2aot:block/item_output"
 	},
 	"elements": [
 		{

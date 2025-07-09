@@ -1,0 +1,54 @@
+{
+    "recipe.condition.light": "光照",
+    "recipe.condition.light.tooltip": "天空光照：[%d, %d]，方块光照：[%d, %d]，可见天空：%s",
+    "recipe.condition.pneumatic_pressure": "气动工艺 - 压力",
+    "recipe.condition.pneumatic_pressure.air.tooltip": "空气范围：[%d, %d]",
+    "recipe.condition.pneumatic_pressure.pressure.tooltip": "压力范围：[%d, %d]",
+    
+    "config.recipe.condition.light.min_sky_light": "最小天空光照",
+    "config.recipe.condition.light.max_sky_light": "最大天空光照",
+    "config.recipe.condition.light.min_block_light": "最小方块光照",
+    "config.recipe.condition.light.max_block_light": "最大方块光照",
+    "config.recipe.condition.is_air": "是空气",
+    "config.recipe.condition.light.can_see_sky": "可见天空",
+    "config.recipe.condition.light.can_see_sky.tooltip": "需要露天环境",
+    "config.recipe.condition.pressure.min": "最小压力/空气",
+    "config.recipe.condition.pressure.max": "最大压力/空气",
+    
+    "config.block_properties.collision_shape_full_block": "碰撞箱是否为完整方块",
+    "config.block_properties.collision_shape_full_block.tooltip": "影响相邻方块是否渲染连接面",
+    
+    "config.machine_sound.loop_with_shuffle": "随机循环",
+    "config.machine_sound.loop_with_shuffle.tooltip": "如果为true，音效将根据权重随机播放",
+    
+    "config.recipe_logic_settings.consume_inputs_after_working": "工作后消耗输入",
+    "config.recipe_logic_settings.consume_inputs_after_working.tooltip.0": "如果为false，输入将在配方处理前按常规消耗",
+    "config.recipe_logic_settings.consume_inputs_after_working.tooltip.1": "如果为true，输入将在工作后(输出前)消耗。在配方处理期间，如果输入不再匹配，当前配方进程将被丢弃",
+    "config.recipe_logic_settings.always_modify_recipe": "总是修改配方",
+    "config.recipe_logic_settings.always_modify_recipe.tooltip.0": "如果为false，机器在完成配方后会自动尝试再次执行上一个配方以提高性能",
+    "config.recipe_logic_settings.always_modify_recipe.tooltip.1": "如果为true，机器会尝试对上一个配方应用修改器，如果失败则重新搜索配方",
+    
+    "recipe_type.is_proxy_recipe_xei_visible": "代理配方在XEI中可见",
+    "recipe_type.is_proxy_recipe_xei_visible.tooltip": "传输时是否设置配方隐藏",
+    "recipe.xei_hidden": "XEI隐藏",
+    "recipe.xei_hidden.tooltip": "是否在配方查看器中显示该配方",
+    
+    "config.definition.trait.ae2_me_interface.name": "AE2 ME接口",
+    "config.definition.trait.ae2_me_interface.slot_size": "槽位大小",
+    
+    "config.block_pattern.predicate.allowOpenUI": "右键点击打开UI",
+    "config.block_pattern.predicate.allowOpenUI.tooltip.0": "如果'点击结构时显示UI'开启，此方块是否能够打开UI",
+    "config.block_pattern.predicate.allowOpenUI.tooltip.1": "如果此方块有点击交互，请禁用此项以防止打开UI替代原有交互",
+    
+    "MachineEvent.MachineCustomKeyframeEvent": "自定义关键帧事件",
+    "MachineEvent.MachineCustomKeyframeEvent.tips": "由Geckolib动画中的'Instruction'关键帧触发",
+    
+    "recipe_logic.status.idle": "空闲",
+    "recipe_logic.status.working": "§a工作中§r",
+    "recipe_logic.status.waiting": "§6等待中§r",
+    "recipe_logic.status.suspend": "§4暂停中§r",
+    "multiblock.unformed": "§6未成型§r",
+    "multiblock.catalyst": "§a需要催化剂§r",
+    "config.jade.plugin_mbd2.recipe_logic_provider": "Multiblock2配方逻辑提供者",
+    "config.jade.plugin_mbd2.multiblock_provider": "Multiblock2多方块提供者"
+}
