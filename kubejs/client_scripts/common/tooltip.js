@@ -44,6 +44,8 @@ ItemEvents.tooltip((event) => {
         {id: 'r2aot:create_input', key: 'tooltip.r2aot.create_input', lines: 1},
         {id: 'r2aot:create_output', key: 'tooltip.r2aot.create_output', lines: 1},
         {id: 'r2aot:stress_input', key: 'tooltip,r2aot.stress_input', lines: 1},
+        {id: 'r2aot:fluid_input', key: 'tooltip.r2aot.fluid_input', lines: 2},
+        {id: 'r2aot:fluid_output', key: 'tooltip.r2aot.fluid_output', lines: 3},
         {id: 'createendertransmission:energy_transmitter', key: 'tooltip.createendertransmission.energy_transmitter', lines: 2},
         {id: 'r2aot:modular_pure_daisy_core', key: 'tooltip.r2aot.modular_pure_daisy_core', lines: 1},
         {id: 'r2aot:pedestal', key: 'tooltip.r2aot.pedestal', lines: 1},
