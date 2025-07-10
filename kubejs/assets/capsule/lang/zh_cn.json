@@ -1,0 +1,20 @@
+{
+    "items.capsule.state_blueprint": "蓝图",
+    "items.capsule.state_uncharged": "未充能蓝图",
+    "capsule.tooltip.blueprint": "从连接的物品栏中获取物品来建造结构",
+    "capsule.tooltip.blueprintUseUncharged": "* 左键：从物品栏充能\n* 右键：撤销上次部署\n* 潜行+右键：连接物品栏",
+    "capsule.tooltip.blueprintUseCharged": "* 右键：立即部署\n* 潜行+右键：连接物品栏",
+    "capsule.tooltip.canRotate": "* 左键：旋转\n* 潜行+左键：镜像",
+    "capsule.tooltip.cannotRotate": "某些复杂方块无法旋转",
+    "capsule.tooltip.instant": "瞬间完成",
+    "capsule.feedback.linkedToInventory": "已连接到\"%s\"位于(x=%s, y=%s, z=%s)",
+    "capsule.error.blueprintCreationError": "创建蓝图模板时发生错误。此蓝图可能无法正常工作。",
+    "capsule.error.blueprintExcluded": "某些方块在蓝图中不受支持。已忽略：%s",
+    "capsule.error.blueprintDontMatch": "无法取消部署：你可以为蓝图胶囊充能（在空中左键），或确保你想取消部署的区域与蓝图结构匹配（没有移除或添加的方块，物品栏中没有物品）。",
+    "capsule.error.areaNotLoaded": "无法部署：目标区域未加载",
+    "capsule.error.cantDownload": "无法下载nbt模板：将胶囊拿在手中并确保它未部署且不为空。尝试预览部署（不实际部署）后重试此命令。",
+    "enchantment.capsule.recall.desc": "部署后，胶囊会立即返回玩家手中。",
+    "capsule.gui.capsuleName": "胶囊名称",
+    "capsule.gui.title": "胶囊重命名",
+    "jei.capsule.desc.blueprintCapsule": "可以通过使用连接的物品栏中的材料多次部署结构。\n结构是从用于制作的胶囊中复制的。\n* 左键点击充能\n* 潜行+右键点击物品栏进行连接\n* 与任何胶囊合成以更新结构\n* 如果连接的物品栏缺少材料，将使用玩家的物品栏\n* 可染色"
+}

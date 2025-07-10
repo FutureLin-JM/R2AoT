@@ -1,0 +1,16 @@
+{
+    "block.powah.deepslate_uraninite_ore": "深板岩晶质铀矿石",
+    "block.powah.deepslate_uraninite_ore_dense": "深板岩晶质铀矿石（致密）",
+    "block.powah.deepslate_uraninite_ore_poor": "深板岩晶质铀矿石（贫瘠）",
+    "item.powah.raw_uraninite": "天然晶质铀",
+    "item.powah.raw_uraninite_poor": "天然晶质铀（贫瘠）",
+    "item.powah.raw_uraninite_dense": "天然晶质铀（致密）",
+    "tag.item.c.raw_uraninite_ores": "天然晶质铀矿石",
+    "tag.item.c.uraninite_blocks": "晶质铀块",
+    "tag.item.c.uraninite_ores": "晶质铀矿石",
+    "tag.item.c.blue_ices": "蓝冰",
+    "tag.item.c.dry_ices": "干冰",
+    "tag.item.c.ices": "任意冰",
+    "tag.item.c.packed_ices": "浮冰",
+    "tag.item.c.regular_ices": "冰"
+}

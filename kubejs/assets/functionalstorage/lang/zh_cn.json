@@ -1,0 +1,23 @@
+{
+    "config.jade.plugin_functionalstorage.armory": "功能性存储军械库",
+    "configurationtool.configmode.indicator.mode_0": "隐藏",
+    "configurationtool.configmode.indicator.mode_1": "显示进度条",
+    "configurationtool.configmode.indicator.mode_2": "只在装满时显示进度条",
+    "configurationtool.configmode.indicator.mode_3": "只在装满时显示进度条，不含背景",
+    "configurationtool.configmode.swapped": "已切换模式至 ",
+    "drawer.block.contents": "内容：",
+    "gui.functionalstorage.empty": "空",
+    "item.functionalstorage.max_storage_upgrade": "最大存储升级",
+    "linkingtool.controller.configured": "控制器已配置到工具",
+    "linkingtool.drawer.clear": "已清除抽屉频率",
+    "linkingtool.ender.changed": "已更改抽屉频率",
+    "linkingtool.ender.stored": "频率已存储到工具",
+    "linkingtool.ender.warning": "无法更改频率，抽屉内有物品。再次潜行+右击可忽略此安全限制",
+    "linkingtool.linkingaction.swapped": "已切换操作至%s",
+    "linkingtool.linkingmode.swapped": "已切换模式至%s",
+    "linkingtool.multiple_drawer.linked": "已将多个抽屉链接到控制器",
+    "linkingtool.multiple_drawer.removed": "已从控制器移除多个抽屉",
+    "linkingtool.single_drawer.linked": "已将单个抽屉链接到控制器",
+    "linkingtool.single_drawer.removed": "已从控制器移除单个抽屉",
+    "frameddrawer.use": "如何更改纹理：\n在合成网格内，第一个槽位放置用于定义抽屉外部纹理的方块，第二个槽位放置用于定义抽屉内部纹理的方块，第三个槽位放置镶框抽屉。\n可以通过在第四个槽位添加方块来更改抽屉分隔物的纹理。"
+}

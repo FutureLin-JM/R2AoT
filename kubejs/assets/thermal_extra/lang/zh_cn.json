@@ -1,0 +1,21 @@
+{
+  "block.thermal_extra.device_harvester": "作物收割机",
+  "info.thermal_extra.advanced_refinery.0": "一个复杂的蒸馏设备，能将流体精炼成更独特的产品。",
+  "info.thermal_extra.advanced_refinery.1": "支持比分馏塔更多的物品和流体输出。",
+  "info.thermal_extra.advanced_refinery.2": "从你的油中获得更多。",
+  "info.thermal_extra.device_harvester.0": "在作物和其他植物成熟时收割它们。",
+  "info.thermal_extra.device_harvester.1": "注意该设备只会收割作物，你需要其他方式来收集掉落物。",
+  "info.thermal_extra.device_harvester.2": "并不能完全替代农民村民。",
+  "info.thermal_extra.dynamo_frost.0": "利用极寒产生红石通量(RF)。",
+  "info.thermal_extra.dynamo_frost.1": "可能是通往一个急需冰块的炎热干燥之地的门户。",
+  "info.thermal_extra.endothermic_dehydrator.1": "也可以浓缩流体，产出更高效的流体。",
+  "info.thermal_extra.endothermic_dehydrator.2": "自动晾晒架。",
+  "info.thermal_extra.lava_gen.1": "需要相邻的熔岩源才能工作。在下界工作效率更高。",
+  "info.thermal_extra.lava_gen.2": "不要在熔岩里游泳。",
+  "info.thermal_extra.machine_fluid_mixer.1": "可能会产生副产物流体。",
+  "info.thermal_extra.machine_fluid_mixer.2": "自动搅拌器。锅不包含在内。",
+  "info.thermal_extra.machine_metal_infuser.1": "有些配方可能会留下需要处理的废液。",
+  "info.thermal_extra.machine_metal_infuser.2": "绝对不是电路组装机。",
+  "info.thermal_extra.machine_nitratic_igniter.1": "可以将矿石粉碎成小块以便熔炼。",
+  "info.thermal_extra.machine_nitratic_igniter.2": "不建议使用核TNT！"
+}

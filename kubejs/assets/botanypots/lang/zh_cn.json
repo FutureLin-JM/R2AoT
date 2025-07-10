@@ -1,0 +1,11 @@
+{
+    "tooltip.botanypots.chance": "概率: %s",
+    "tooltip.botanypots.rolls": "掉落次数: %s",
+    "tooltip.botanypots.rollrange": "掉落次数: %s - %s",
+    "tooltip.botanypots.grow_time": "生长时间: %s",
+    "tooltip.botanypots.modifier": "速度: %sX",
+    "commands.botanypots.mod_message": "[§a植物盆栽§r] %s",
+    "commands.botanypots.dump.no_results": "未找到任何结果。",
+    "commands.botanypots.dump.missing_crops": "发现 %d 个可能缺失的作物。此列表仅供参考，可能包含误报或漏报。点击此消息可将列表复制到剪贴板。",
+    "gui.jei.category.botanypots.crop": "作物"
+}
