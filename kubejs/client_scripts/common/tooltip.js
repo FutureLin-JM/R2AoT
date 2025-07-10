@@ -60,6 +60,14 @@ ItemEvents.tooltip((event) => {
         text.add(2, Text.translate('tooltip.r2aot.flux_dust').white())
     })
 
+    event.addAdvancedToAll((item, advanced, text) => {
+        if (item == Item.of('minecraft:enchanted_book').enchant('r2aot:kylin_arm', 1).strongNBT()) {
+            text.add(2, Text.translate('tooltip.r2aot.kylin_arm_1').gold());
+            text.add(3, Text.translate('tooltip.r2aot.kylin_arm_2').gold());
+            text.add(4, Text.translate('tooltip.r2aot.kylin_arm_3').gold());
+        }
+    })
+
     const collbeInfo = [
         {tier: 1, countEveryTime: 1, onceSeconds: 12, maxCapacity: 128},
         {tier: 2, countEveryTime: 2, onceSeconds: 10, maxCapacity: 256},

@@ -111,7 +111,6 @@
     "fluid.r2aot.molten_constantan": "熔融康铜",
     "item.r2aot.molten_constantan_bucket": "熔融康铜 桶",
 
-
     "enchantment.r2aot.machine_processing": "使用该机器加工",
     "enchantment.r2aot.kylin_arm": "麒麟臂",
 
@@ -180,12 +179,11 @@
     "tooltip.r2aot.kylin_arm_2": "挖掘速度提升至原来的十倍",
     "tooltip.r2aot.kylin_arm_3": "无视空中与水下的挖掘减速影响",
 
-
     "jei.information.r2aot.botania_fertilizer": "可以通过空手Shift+右键草方块获得（75%概率）",
     "jei.information.r2aot.blaze_burner": "§c一般燃烧§r:\n熔岩（每秒消耗1mb）\n\n§9超级燃烧§r:\n液态魔力（每秒消耗10mb）",
-    "jei.information.andesite_casing_maker_core": "在结构中使用安山合金对淡灰色花瓣块催化转换，详情查看思索",
-    "jei.information.elemental_altar_core": "在结构中使用元素符文对基础机器框架催化转换，详情查看思索",
-    "jei.information.cobble_gen_tier_1": "首个通过多方块结构合成获得，详情查看思索",
+    "jei.information.r2aot.andesite_casing_maker_core": "在结构中使用安山合金对淡灰色花瓣块催化转换，详情查看思索",
+    "jei.information.r2aot.elemental_altar_core": "在结构中使用元素符文对基础机器框架催化转换，详情查看思索",
+    "jei.information.r2aot.cobble_gen_tier_1": "首个通过多方块结构合成获得，详情查看思索",
 
     "config.jade.plugin_r2aot.numerical_source": "魔源定量统计",
     "config.jade.plugin_r2aot.numerical_mana": "魔力定量统计",
@@ -197,7 +195,6 @@
 
     "message.r2aot.multiblock.incorrect": "结构不正确",
     "message.r2aot.tiab": "请先将时间瓶放入背包中！",
-
 
     "ftbq.r2aot.capsule.text": "§b点击查看胶囊",
     "ftbq.r2aot.capsule.click": "点击跳转",
