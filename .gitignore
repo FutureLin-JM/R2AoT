@@ -14,8 +14,8 @@
 !config/hostilenetworks.cfg
 !config/industrialforegoing/
 !config/industrialforegoing/machine-resources-production.toml
-!config/jada/
-!config/jada/plugins.json
+!config/jade/
+!config/jade/plugins.json
 !config/modpack-update-checker
 !config/modpack-update-checker/**
 !config/skyblockbuilder/

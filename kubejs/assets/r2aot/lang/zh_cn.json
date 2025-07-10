@@ -183,8 +183,10 @@
     "jei.information.elemental_altar_core": "在结构中使用元素符文对基础机器框架催化转换，详情查看思索",
     "jei.information.cobble_gen_tier_1": "首个通过多方块结构合成获得，详情查看思索",
 
-    "jade.tooltip.mana": "魔力: %s%s",
+    "config.jade.plugin_r2aot.numerical_source": "魔源定量统计",
     "config.jade.plugin_r2aot.numerical_mana": "魔力定量统计",
+    "jade.tooltip.source": "魔源: %s",
+    "jade.tooltip.mana": "魔力: %s%s",
 
     "r2aot.startup.version": "当前整合包版本：§a%s§r %s",
     "r2aot.startup.new_version": "§c存在新版本 §c%s",
