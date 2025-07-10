@@ -1,0 +1,6 @@
+{
+  "parent": "r2aot:block/cobble_gen_generator",
+  "textures": {
+    "material": "minecraft:block/gold_block"
+  }
+}

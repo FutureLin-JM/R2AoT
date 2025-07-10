@@ -148,4 +148,59 @@ ServerEvents.recipes(event => {
         C:'pipez:fluid_pipe',
         D:'minecraft:bucket'
     }).id(kjs('fluid_output'));
+
+    event.shaped('2x r2aot:cobble_gen_tier_1', [
+        'AAA',
+        'CBC',
+        'AAA'
+    ], {
+        A:'minecraft:oak_wood',
+        B:'r2aot:cobble_gen_tier_1',
+        C:'minecraft:glass'
+    }).id(kjs('cobble_gen_tier_1'));
+
+    event.shaped('r2aot:cobble_gen_tier_2', [
+        'AAA',
+        'ABA',
+        'AAA'
+    ], {
+        A:'minecraft:cobblestone',
+        B:'r2aot:cobble_gen_tier_1'
+    }).id(kjs('cobble_gen_tier_2'));
+
+    event.shaped('r2aot:cobble_gen_tier_3', [
+        'AAA',
+        'ABA',
+        'AAA'
+    ], {
+        A:'minecraft:iron_ingot',
+        B:'r2aot:cobble_gen_tier_2'
+    }).id(kjs('cobble_gen_tier_3'));
+
+    event.shaped('r2aot:cobble_gen_tier_4', [
+        'AAA',
+        'ABA',
+        'AAA'
+    ], {
+        A:'minecraft:gold_ingot',
+        B:'r2aot:cobble_gen_tier_3'
+    }).id(kjs('cobble_gen_tier_4'));
+
+    event.shaped('r2aot:cobble_gen_tier_5', [
+        'AAA',
+        'ABA',
+        'AAA'
+    ], {
+        A:'minecraft:diamond',
+        B:'r2aot:cobble_gen_tier_4'
+    }).id(kjs('cobble_gen_tier_5'));
+
+    event.shaped('r2aot:cobble_gen_tier_6', [
+        'AAA',
+        'ABA',
+        'AAA'
+    ], {
+        A:'minecraft:netherite_ingot',
+        B:'r2aot:cobble_gen_tier_5'
+    }).id(kjs('cobble_gen_tier_6'));
 })

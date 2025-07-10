@@ -43,7 +43,7 @@ ItemEvents.tooltip((event) => {
         {id: 'ae2:facade', key: 'tooltip.r2aot.ae2_facade', lines: 2},
         {id: 'r2aot:create_input', key: 'tooltip.r2aot.create_input', lines: 1},
         {id: 'r2aot:create_output', key: 'tooltip.r2aot.create_output', lines: 1},
-        {id: 'r2aot:stress_input', key: 'tooltip,r2aot.stress_input', lines: 1},
+        {id: 'r2aot:stress_input', key: 'tooltip.r2aot.stress_input', lines: 1},
         {id: 'r2aot:fluid_input', key: 'tooltip.r2aot.fluid_input', lines: 2},
         {id: 'r2aot:fluid_output', key: 'tooltip.r2aot.fluid_output', lines: 3},
         {id: 'createendertransmission:energy_transmitter', key: 'tooltip.createendertransmission.energy_transmitter', lines: 2},
@@ -59,6 +59,23 @@ ItemEvents.tooltip((event) => {
 
     event.addAdvanced('fluxnetworks:flux_dust', (item, advanced, text) => {
         text.add(2, Text.translate('tooltip.r2aot.flux_dust').white())
+    })
+
+    const collbeInfo = [
+        {tier: 1, countEveryTime: 1, onceSeconds: 12, maxCapacity: 128},
+        {tier: 2, countEveryTime: 2, onceSeconds: 10, maxCapacity: 256},
+        {tier: 3, countEveryTime: 4, onceSeconds: 8, maxCapacity: 384},
+        {tier: 4, countEveryTime: 8, onceSeconds: 6, maxCapacity: 512},
+        {tier: 5, countEveryTime: 32, onceSeconds: 2, maxCapacity: 768},
+        {tier: 6, countEveryTime: 64, onceSeconds: 1, maxCapacity: 1024}
+    ]
+    collbeInfo.forEach(tierData => {
+        event.addAdvanced(`r2aot:cobble_gen_tier_${tierData.tier}`, (item, advanced, text) => {
+            text.add(1, Text.translate('tooltip.r2aot.cobble_gen_1', Text.red(tierData.countEveryTime.toFixed(0))).aqua());
+            text.add(2, Text.translate('tooltip.r2aot.cobble_gen_2', Text.red(tierData.onceSeconds.toFixed(0))).aqua());
+            text.add(3, Text.translate('tooltip.r2aot.cobble_gen_3', Text.red(tierData.maxCapacity.toFixed(0))).aqua());
+            text.add(4, Text.translate('tooltip.r2aot.cobble_gen_4').aqua());
+        })
     })
 
     event.addAdvanced('kubejs:water_seeds_folder', (item, advanced, text) => {

@@ -49,3 +49,4 @@ kubejs/jsconfig.json
 # Patchouli_Books
 !patchouli_books/
 !patchouli_books/**
+patchouli_books/r2aot_books/en_us/entries/multiblock/text.json

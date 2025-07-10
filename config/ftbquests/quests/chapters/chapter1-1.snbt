@@ -415,7 +415,7 @@
 				item: "thermal:iron_plate"
 				type: "item"
 			}]
-			x: 14.5d
+			x: 15.0d
 			y: 4.5d
 		}
 		{
@@ -429,7 +429,7 @@
 				item: "create:mechanical_mixer"
 				type: "item"
 			}]
-			x: 13.5d
+			x: 14.0d
 			y: 3.5d
 		}
 		{
@@ -455,7 +455,7 @@
 				}
 			]
 			title: "{ftbq.r2aot.chapter1-1.andesite_alloy_2.title}"
-			x: 15.5d
+			x: 16.0d
 			y: 3.5d
 		}
 		{
@@ -616,7 +616,7 @@
 				item: "create:encased_fan"
 				type: "item"
 			}]
-			x: 13.5d
+			x: 14.0d
 			y: 5.5d
 		}
 		{
@@ -628,7 +628,7 @@
 				item: "minecraft:iron_nugget"
 				type: "item"
 			}]
-			x: 15.5d
+			x: 16.0d
 			y: 5.5d
 		}
 		{
@@ -639,7 +639,7 @@
 				item: "minecraft:iron_ingot"
 				type: "item"
 			}]
-			x: 17.5d
+			x: 18.0d
 			y: 5.5d
 		}
 		{
@@ -649,7 +649,7 @@
 				item: "botania:apothecary_default"
 				type: "item"
 			}]
-			x: 15.5d
+			x: 16.0d
 			y: -1.5d
 		}
 		{
@@ -665,7 +665,7 @@
 				item: "botania:pure_daisy"
 				type: "item"
 			}]
-			x: 17.5d
+			x: 18.0d
 			y: -1.5d
 		}
 		{
@@ -677,7 +677,7 @@
 				item: "minecraft:clay_ball"
 				type: "item"
 			}]
-			x: 15.5d
+			x: 16.0d
 			y: 7.0d
 		}
 		{
@@ -688,7 +688,7 @@
 				item: "botanypots:terracotta_hopper_botany_pot"
 				type: "item"
 			}]
-			x: 17.5d
+			x: 18.0d
 			y: 7.0d
 		}
 		{
@@ -737,7 +737,7 @@
 				}
 			]
 			title: "{ftbq.r2aot.chapter1-1.crops.title}"
-			x: 14.5d
+			x: 15.0d
 			y: 2.5d
 		}
 		{
@@ -826,6 +826,18 @@
 			]
 			x: 6.0d
 			y: 7.0d
+		}
+		{
+			dependencies: ["0CF213F17B5888F8"]
+			id: "3F432FB98FB2019D"
+			subtitle: "{\"translate\":\"ftbq.r2aot.capsule.text\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"1B6C81F244F8D331\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"ftbq.r2aot.capsule.click\"}}}"
+			tasks: [{
+				id: "46D42400EF1AB5E9"
+				item: "r2aot:cobble_gen_tier_1"
+				type: "item"
+			}]
+			x: 16.0d
+			y: 1.0d
 		}
 	]
 	title: "{ftbq.r2aot.chapter1-1.start.title}"

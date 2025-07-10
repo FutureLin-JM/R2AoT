@@ -98,7 +98,7 @@
 					type: "item"
 				}
 			]
-			x: -1.0d
+			x: 0.0d
 			y: -1.0d
 		}
 		{
@@ -184,7 +184,7 @@
 				}
 			]
 			title: "{block.r2aot.andesite_casing_maker_core}"
-			x: 1.0d
+			x: 2.0d
 			y: -1.0d
 		}
 		{
@@ -275,6 +275,7 @@
 			y: 0.5d
 		}
 		{
+			can_repeat: true
 			icon: "r2aot:stress_generator_core"
 			id: "3C0C8B7CEE576EC8"
 			rewards: [{
@@ -353,6 +354,7 @@
 			y: 2.0d
 		}
 		{
+			can_repeat: true
 			icon: "r2aot:elemental_altar_core"
 			id: "0082EBA879F9F8B4"
 			rewards: [{
@@ -431,6 +433,65 @@
 			title: "{block.r2aot.elemental_altar_core}"
 			x: 0.0d
 			y: 3.5d
+		}
+		{
+			can_repeat: true
+			icon: "r2aot:cobble_gen_tier_1"
+			id: "1B6C81F244F8D331"
+			rewards: [{
+				id: "4D58FF01189358F5"
+				item: {
+					Count: 1
+					id: "capsule:capsule"
+					tag: {
+						author: "FutureLin"
+						canRotate: 1b
+						color: 1295042
+						display: {
+							color: 4864547
+						}
+						isReward: 1b
+						label: "Cobble Gen Tier 1.nbt"
+						oneUse: 1b
+						size: 3
+						state: 5
+						structureName: "config/capsule/rewards/cobble_gen_tier_1.nbt"
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "{\"translate\":\"ftbq.r2aot.ponder.text\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/ponder r2aot:cobble_gen_tier_1\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"ftbq.r2aot.capsule.click\"}}}"
+			tasks: [
+				{
+					consume_items: true
+					count: 18L
+					id: "725F29043CD554A1"
+					item: { Count: 18, id: "minecraft:oak_wood" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 6L
+					id: "4C67254C756B9310"
+					item: { Count: 6, id: "minecraft:glass" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					id: "50A54C58B0DA3962"
+					item: "botania:red_petal_block"
+					type: "item"
+				}
+				{
+					consume_items: true
+					id: "5F6DEDEEF469FF01"
+					item: "r2aot:double_compressed_cobblestone"
+					type: "item"
+				}
+			]
+			title: "{block.r2aot.cobble_gen_tier_1}"
+			x: -2.0d
+			y: -1.0d
 		}
 	]
 	title: "{ftbq.r2aot.chapter_groups.capsule.title}"

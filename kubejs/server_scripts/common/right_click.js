@@ -22,9 +22,9 @@ BlockEvents.rightClicked('r2aot:data_model_base', event => {
     if (hand != 'MAIN_HAND' || !item.isEmpty()) return;
 
     biologyTypes.forEach((biology) => {
-        let dataModel = Item.of('hostilenetworks:data_model', `{data_model:{data:1254,id:"hostilenetworks:${biology}"}}`)
-        let modelMultiblock = $PatchouliAPI.getMultiblock(`r2aot:${biology}_model`);
-        let validRotation =modelMultiblock.validate(level, block.pos)
+        const dataModel = Item.of('hostilenetworks:data_model', `{data_model:{data:1254,id:"hostilenetworks:${biology}"}}`)
+        const modelMultiblock = $PatchouliAPI.getMultiblock(`r2aot:${biology}_model`);
+        const validRotation =modelMultiblock.validate(level, block.pos)
     
         if (validRotation !== null) {
             modelMultiblock.simulate(level, block.pos, validRotation, false).second.forEach((result) => {
@@ -34,15 +34,40 @@ BlockEvents.rightClicked('r2aot:data_model_base', event => {
             block.popItemFromFace(dataModel, 'down');
             player.swing();
         }
+        else {player.tell(Text.translate('message.r2aot.multiblock.incorrect').aqua())}
     })
 });
+
+BlockEvents.rightClicked('r2aot:double_compressed_cobblestone', event => {
+    const { hand, block, player, level, item } = event;
+
+    if (hand != 'MAIN_HAND'|| item.id != 'r2aot:petal_essence_bucket') return;
+
+    const genMultiblock = $PatchouliAPI.getMultiblock('r2aot:fisrt_cobble_gen');
+    const validRotation = genMultiblock.validate(level, block.pos)
+
+    if (validRotation !== null) {
+        genMultiblock.simulate(level, block.pos, validRotation, false).second.forEach((result) => {
+            if (result.stateMatcher == $PatchouliAPI.anyMatcher()) return;
+            level.destroyBlock(result.worldPosition, false);
+        });
+        block.popItemFromFace('r2aot:cobble_gen_tier_1', 'up');
+        item.count--;
+        player.give('minecraft:bucket');
+        player.swing();
+    }
+    else {
+        player.tell(Text.translate('message.r2aot.multiblock.incorrect').aqua());
+        event.cancel();
+    }
+})
 
 ItemEvents.rightClicked('r2aot:time_voucher', event => {
     const { hand, item, player } = event;
     if (hand != 'MAIN_HAND') return;
 
     if (hasTimeInABottle(player)) {
-        player.runCommand('tiab addTime 7200')
+        player.runCommand('tiab addTime 7200') // tiab指令在 /reload 后会失效，尝试使用API后无果放弃
         item.count--;
         player.swing();
     }

@@ -354,4 +354,25 @@ StartupEvents.postInit(event => {
             Block.getBlock('r2aot:create_input'),
         )
     )
+});
+
+StartupEvents.postInit(event => {
+    $PatchouliAPI.registerMultiblock(
+        'r2aot:fisrt_cobble_gen',
+        $PatchouliAPI.makeMultiblock(
+            [
+                ['AAA', 'AAA', 'AAA'],
+                ['CCC', '_0B', 'CCC'],
+                ['AAA', 'AAA', 'AAA']
+            ],
+            new $Character('0'),
+            Block.getBlock('r2aot:double_compressed_cobblestone'),
+            new $Character('A'),
+            Block.getBlock('minecraft:oak_wood'),
+            new $Character('B'),
+            Block.getBlock('botania:red_petal_block'),
+            new $Character('C'),
+            Block.getBlock('minecraft:glass')
+        )
+    )
 })
