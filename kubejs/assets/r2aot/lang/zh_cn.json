@@ -113,6 +113,7 @@
 
 
     "enchantment.r2aot.machine_processing": "使用该机器加工",
+    "enchantment.r2aot.kylin_arm": "麒麟臂",
 
     "tooltip.r2aot.hold_shift": "按住 [%s] 查看更多信息",
     "tooltip.r2aot.fertilizer_propagator_core_1": "§6多方块机器",
@@ -175,6 +176,9 @@
     "tooltip.r2aot.time_voucher_2": "§4由于模组本身的bug",
     "tooltip.r2aot.time_voucher_3": "§4请确保在使用前没有使用/reload指令",
     "tooltip.r2aot.time_voucher_4": "§4否则，请重进存档",
+    "tooltip.r2aot.kylin_arm_1": "装备带该附魔的胸甲后可徒手挖掉方块",
+    "tooltip.r2aot.kylin_arm_2": "挖掘速度提升至原来的十倍",
+    "tooltip.r2aot.kylin_arm_3": "无视空中与水下的挖掘减速影响",
 
 
     "jei.information.r2aot.botania_fertilizer": "可以通过空手Shift+右键草方块获得（75%概率）",

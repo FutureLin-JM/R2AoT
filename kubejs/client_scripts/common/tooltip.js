@@ -32,7 +32,7 @@ ItemEvents.tooltip((event) => {
         {id: 'r2aot:mana_motor', key: 'tooltip.r2aot.mana_motor', lines: 3},
         {id: 'r2aot:stress_generator_core', key: 'tooltip.r2aot.stress_generator_core', lines: 5},
         {id: 'r2aot:elemental_altar_core', key: 'tooltip.r2aot.elemental_altar_core', lines: 4},
-        {id: 'r2aot:atomic_reconstructor', key: 'tooltip.r2aot.atomic_reconstructor', lines: 3}
+        {id: 'r2aot:atomic_reconstructor', key: 'tooltip.r2aot.atomic_reconstructor', lines: 3},
     ];
     shiftTooltips.forEach((item) => {
         addShiftTooltip(event, item.id, item.key, item.lines);
@@ -50,8 +50,7 @@ ItemEvents.tooltip((event) => {
         {id: 'r2aot:modular_pure_daisy_core', key: 'tooltip.r2aot.modular_pure_daisy_core', lines: 1},
         {id: 'r2aot:pedestal', key: 'tooltip.r2aot.pedestal', lines: 1},
         {id: 'hostilenetworks:loot_fabricator', key: 'tooltip.r2aot.loot_fabricator', lines: 1},
-        {id: 'r2aot:time_voucher', key: 'tooltip.r2aot.time_voucher', lines: 4}
-        
+        {id: 'r2aot:time_voucher', key: 'tooltip.r2aot.time_voucher', lines: 4},
     ]
     linesTooltip.forEach((item) => {
         addLinesTooltip(event, item.id, item.key, item.lines);
