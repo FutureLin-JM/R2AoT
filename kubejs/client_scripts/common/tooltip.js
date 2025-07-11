@@ -85,6 +85,41 @@ ItemEvents.tooltip((event) => {
         })
     })
 
+    function getRainbowColor(index, time) {
+        const rainbowColors = [
+            '#FF0000', // 红
+            '#FF7F00', // 橙
+            '#FFFF00', // 黄
+            '#00FF00', // 绿
+            '#0000FF', // 蓝
+            '#8B00FF'  // 紫
+        ];
+
+        // 计算颜色索引（随时间变化）
+        const speed = 0.005; // 颜色变化速度
+        const colorCount = rainbowColors.length;
+        const baseIndex = Math.floor((time * speed) % colorCount);
+        const colorIndex = (baseIndex + index) % colorCount;
+        
+        return rainbowColors[colorIndex];
+    }
+
+    event.addAdvanced('r2aot:rainbow_furnace', (item, advanced, text) => {
+        let nameString = Text.translate('block.r2aot.rainbow_furnace_font').getString();
+        if (!nameString || nameString === 'block.r2aot.rainbow_furnace_font') {
+            nameString = 'Rainbow Furnace';
+        }
+        let rainbowName = Text.of('');
+        const time = Date.now();
+        
+        Array.from(nameString).forEach((char, index) => {
+            const color = getRainbowColor(index, time);
+            rainbowName = rainbowName.append(Text.of(char).color(color));
+        });
+
+        text.set(0, rainbowName);
+    });
+
     event.addAdvanced('kubejs:water_seeds_folder', (item, advanced, text) => {
         text.add(1, Text.translate('tooltip.kubejs.machine_processing_1').aqua()
                         .append(Text.white({text:'\u200a', font:'r2aot:texture_font'}))
