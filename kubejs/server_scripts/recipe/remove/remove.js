@@ -74,7 +74,8 @@ ServerEvents.recipes(event => {
         'botania:runic_altar',
         'botania:petal_apothecary/pure_daisy',
         'botania:petal_apothecary/hydroangeas',
-        'botania:petal_apothecary/orechid'
+        'botania:petal_apothecary/orechid',
+        'botania:petal_apothecary/orechid_ignem'
     ]
     recipesToRemoveID.forEach((recipes) => {
         event.remove({id:recipes});
@@ -85,7 +86,7 @@ ServerEvents.recipes(event => {
         'advanced_ae:reaction',
         'industrialforegoing:laser_drill_ore',
         'thermal_extra:component_assembly',
-        'thermal_extra:endothermic_dehydrator',
+        'botania:orechid_ignem'
     ]
     recipesToRemoveType.forEach((typeId) => {
         event.remove({type: typeId});

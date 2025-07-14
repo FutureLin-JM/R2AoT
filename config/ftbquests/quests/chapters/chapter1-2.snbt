@@ -498,7 +498,7 @@
 				type: "item"
 			}]
 			x: 14.0d
-			y: -9.0d
+			y: -10.0d
 		}
 		{
 			dependencies: ["09442CBFAE004D94"]
@@ -569,7 +569,7 @@
 				type: "item"
 			}]
 			x: 16.0d
-			y: -7.0d
+			y: -11.0d
 		}
 		{
 			dependencies: ["4C0D8EF890D3BDAD"]
@@ -580,7 +580,7 @@
 				type: "item"
 			}]
 			x: 16.0d
-			y: -9.0d
+			y: -7.0d
 		}
 		{
 			dependencies: ["303F4CF8A59EF261"]
@@ -628,7 +628,7 @@
 				}
 			]
 			x: 18.0d
-			y: -9.0d
+			y: -7.0d
 		}
 		{
 			dependencies: ["6D70F7C0A3B3675A"]
@@ -656,7 +656,7 @@
 				}
 			]
 			x: 18.0d
-			y: -7.0d
+			y: -11.0d
 		}
 		{
 			dependencies: [
@@ -681,7 +681,7 @@
 				type: "item"
 			}]
 			x: 16.0d
-			y: -11.0d
+			y: -9.0d
 		}
 		{
 			dependencies: ["43F7ACC33A745553"]
@@ -692,7 +692,33 @@
 				type: "item"
 			}]
 			x: 18.0d
-			y: -11.0d
+			y: -9.0d
+		}
+		{
+			dependencies: [
+				"4C0D8EF890D3BDAD"
+				"72EBA063A1692813"
+				"380DD78FB9B00B39"
+			]
+			id: "07444DCB9C511F53"
+			tasks: [{
+				id: "1BCBF58F7A4E1F6A"
+				item: "botania:orechid_ignem"
+				type: "item"
+			}]
+			x: 16.0d
+			y: -13.0d
+		}
+		{
+			dependencies: ["07444DCB9C511F53"]
+			id: "76520090DD24CD85"
+			tasks: [{
+				id: "4CC3707146133C64"
+				item: "minecraft:netherite_scrap"
+				type: "item"
+			}]
+			x: 18.0d
+			y: -13.0d
 		}
 	]
 	title: "{ftbq.r2aot.chapter1-2.start.title}"

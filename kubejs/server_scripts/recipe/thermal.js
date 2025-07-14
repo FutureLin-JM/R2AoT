@@ -92,6 +92,14 @@ ServerEvents.recipes(event =>{
             '4x botania:mana_pearl'
         ],
         12000
+    );
+
+    smelter(
+        'minecraft:gilded_blackstone',
+        [
+            'minecraft:blackstone',
+            '4x minecraft:gold_ingot'
+        ]
     )
     
 })

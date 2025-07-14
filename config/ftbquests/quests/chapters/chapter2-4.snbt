@@ -140,7 +140,7 @@
 					type: "item"
 				}
 			]
-			x: 4.0d
+			x: 2.0d
 			y: -2.0d
 		}
 		{
@@ -337,6 +337,31 @@
 			}]
 			x: 6.0d
 			y: 0.0d
+		}
+		{
+			dependencies: ["59F23C3D5935C257"]
+			id: "6FB81C0653A23341"
+			tasks: [{
+				id: "6FBEB4420D98106D"
+				item: "minecraft:gilded_blackstone"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"6FB81C0653A23341"
+				"380DD78FB9B00B39"
+			]
+			id: "72EBA063A1692813"
+			tasks: [{
+				id: "55D150FFE226BFB5"
+				item: "minecraft:ancient_debris"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -4.0d
 		}
 	]
 	title: "{ftbq.r2aot.chapter2-4.start.title}"

@@ -93,6 +93,11 @@ ServerEvents.recipes(event => {
         ['botania:gray_petal', 'botania:gray_petal', 'botania:yellow_petal', 'botania:green_petal', 'botania:red_petal', 'botania:redstone_root', 'botania:mana_powder'],
         'minecraft:quartz').id(kjs('petal_apothecary', 'orechid'));
 
+    petal_apothecary(
+        'botania:orechid_ignem',
+        Array(2).fill('botania:red_petal', 'botania:white_petal').concat('botania:pink_petal', 'botania:rune_pride', 'botania:rune_greed', 'botania:redstone_root'),
+        'minecraft:netherite_ingot').id(kjs('petal_apothecary', 'orechid_ignem'))
+
 
     /**
      * 白雏菊配方
