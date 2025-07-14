@@ -28,6 +28,19 @@ ServerEvents.loaded(event => {
 //     });
 
 //     JsonIO.write('kubejs/fuel_items.json', fuelItems);
+//     console.log('已生成kubejs/fuel_items.json');
 // });
 
+// ServerEvents.recipes((event) => {
+//     let fuelItems = [];
+    
+//     Ingredient.all.stacks.forEach((itemStack) => {
+//         if ($ForgeHooks.getBurnTime(itemStack, 'minecraft:smelting') > 0) {
+//             fuelItems.push(itemStack.id);
+//         }
+//     });
+    
+//     JsonIO.write('kubejs/fuel_items_name.json', { fuel_items: fuelItems });
+//     console.log('已生成 fuel_items_name.json，包含 ' + fuelItems.length + ' 种燃料物品');
+// });
 
