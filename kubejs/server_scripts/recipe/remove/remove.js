@@ -75,7 +75,12 @@ ServerEvents.recipes(event => {
         'botania:petal_apothecary/pure_daisy',
         'botania:petal_apothecary/hydroangeas',
         'botania:petal_apothecary/orechid',
-        'botania:petal_apothecary/orechid_ignem'
+        'botania:petal_apothecary/orechid_ignem',
+        'botania:runic_altar/water',
+        'botania:runic_altar/fire',
+        'botania:runic_altar/earth',
+        'botania:runic_altar/air',
+
     ]
     recipesToRemoveID.forEach((recipes) => {
         event.remove({id:recipes});

@@ -78,6 +78,7 @@
     "block.r2aot.cobble_gen_tier_4": "4级圆石制造机",
     "block.r2aot.cobble_gen_tier_5": "5级圆石制造机",
     "block.r2aot.cobble_gen_tier_6": "6级圆石制造机",
+    "block.r2aot.modular_runic_altar_core": "模块化符文祭坛",
 
     "r2aot.fertilizer_propagator_core": "花肥育瓣机",
     "r2aot.andesite_casing_maker_core": "安山机壳制造机",
@@ -90,6 +91,7 @@
     "r2aot.modular_pure_daisy_core": "模块化白雏菊制造机",
     "r2aot.elemental_altar_core": "元素祭坛",
     "r2aot.atomic_reconstructor": "原子再构",
+    "r2aot.modular_runic_altar_core": "模块化符文祭坛",
 
     "fluid.r2aot.petal_essence": "花瓣原液",
     "block.r2aot.petal_essence": "花瓣原液",

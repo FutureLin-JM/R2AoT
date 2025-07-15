@@ -167,6 +167,8 @@
   "betterboiler:boiler_pump",
   "betterboiler:boiler_pump",
 
+  "botania:mana_pylon",
+
   "r2aot:fertilizer_propagator_core",
   "r2aot:stress_input",
   "r2aot:create_input",
@@ -178,8 +180,11 @@
   "r2aot:fluid_output",
   "r2aot:item_input",
   "r2aot:item_output",
-  "r2aot:primary_mana_generator_core",
+  "r2aot:mana_generator_core",
   "r2aot:energy_input",
   "r2aot:energy_output",
-  "r2aot:stress_generator_core"
+  "r2aot:stress_generator_core",
+  "r2aot:pedestal",
+  "r2aot:elemental_altar_core",
+  "r2aot:modular_runic_altar_core"
 ]

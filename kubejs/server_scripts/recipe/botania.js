@@ -72,6 +72,7 @@ ServerEvents.recipes(event => {
 
 ServerEvents.recipes(event => {
     const { petal_apothecary, mana_infusion, runic_altar, elven_trade, } = event.recipes.botania;
+    const { r2aot } = event.recipes
 
     petal_apothecary(
         'botania:pure_daisy', 
@@ -95,7 +96,7 @@ ServerEvents.recipes(event => {
 
     petal_apothecary(
         'botania:orechid_ignem',
-        Array(2).fill('botania:red_petal', 'botania:white_petal').concat('botania:pink_petal', 'botania:rune_pride', 'botania:rune_greed', 'botania:redstone_root'),
+        Array(2).fill('botania:red_petal').concat(Array(2).fill('botania:white_petal')).concat('botania:pink_petal', 'botania:rune_pride', 'botania:rune_greed', 'botania:redstone_root'),
         'minecraft:netherite_ingot').id(kjs('petal_apothecary', 'orechid_ignem'))
 
 
@@ -142,25 +143,42 @@ ServerEvents.recipes(event => {
     mana_infusion('botania:mana_powder', 'minecraft:redstone', 500).id('botania:mana_infusion/mana_powder_dust');
     mana_infusion('ae2:certus_quartz_crystal', 'botania:quartz_mana', 500).id(kjs('mana_infusion', 'certus_quartz_crystal'));
 
-    runic_altar('2x botania:rune_water',
+    function runicAltarRecipes(output, input, mana) {
+        const outputList = Array.isArray(output) ? output : [output];
+
+        runic_altar(output, input, mana ? mana : 5200).id(kjs('runic_altar', outputList[0].split(':')[1]))
+
+        r2aot.modular_runic_altar_core()
+            .id(`r2aot:modular_runic_altar_core/${outputList[0].split(':')[1]}`)
+            .outputItems(output)
+            .inputItems(input)
+            .inputItems('botania:livingrock')
+            .inputMana(mana ? mana : 5200)
+            .duration(1);
+    }
+
+
+    runicAltarRecipes('2x botania:rune_water',
         ['botania:mana_powder', '#botania:manasteel_ingots', 'mysticalagriculture:water_essence', 'minecraft:sugar_cane', 'minecraft:fishing_rod'],
         5200
-    ).id('botania:runic_altar/water');
-    runic_altar('2x botania:rune_fire',
+    )
+    runicAltarRecipes('2x botania:rune_fire',
         ['botania:mana_powder', '#botania:manasteel_ingots', 'mysticalagriculture:fire_essence', 'minecraft:nether_brick', 'minecraft:glowstone_dust'],
         5200
-    ).id('botania:runic_altar/fire');
-    runic_altar('2x botania:rune_earth',
+    )
+    runicAltarRecipes('2x botania:rune_earth',
         ['botania:mana_powder', '#botania:manasteel_ingots', 'mysticalagriculture:earth_essence', 'minecraft:coal_block', 'minecraft:stone'],
         5200
-    ).id('botania:runic_altar/earth');
-    runic_altar('2x botania:rune_air',
+    )
+    runicAltarRecipes('2x botania:rune_air',
         ['botania:mana_powder', '#botania:manasteel_ingots', 'mysticalagriculture:air_essence', 'minecraft:string', '#minecraft:wool_carpets'],
         5200
-    ).id('botania:runic_altar/air');
-    runic_altar('r2aot:rune_elemental',
+    )
+    runicAltarRecipes('r2aot:rune_elemental',
         ['botania:rune_water', 'botania:rune_fire', 'botania:rune_earth', 'botania:rune_air'],
         8000
-    ).id('kubejs:runic_altar/elemental');
-    runic_altar('minecraft:apple', ['r2aot:rune_elemental', '#botania:manasteel_ingots', 'botania:rune_water'], 8000)
+    )
+    runicAltarRecipes('thermal:machine_frame', 
+        Array(4).fill('minecraft:iron_ingot').concat(Array(2).fill('#forge:glass')).concat('r2aot:rune_elemental')
+    )
 })

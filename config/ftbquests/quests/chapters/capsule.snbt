@@ -35,7 +35,7 @@
 					id: "capsule:capsule"
 					tag: {
 						author: "FutureLin"
-						canRotate: 0b
+						canRotate: 1b
 						color: 15461855
 						display: {
 							color: 12047154
@@ -129,7 +129,7 @@
 					id: "capsule:capsule"
 					tag: {
 						author: "FutureLin"
-						canRotate: 0b
+						canRotate: 1b
 						color: 5791322
 						display: {
 							color: 8606770
@@ -285,7 +285,7 @@
 					id: "capsule:capsule"
 					tag: {
 						author: "FutureLin"
-						canRotate: 0b
+						canRotate: 1b
 						color: 7105644
 						display: {
 							color: 16755200
@@ -364,7 +364,7 @@
 					id: "capsule:capsule"
 					tag: {
 						author: "FutureLin"
-						canRotate: 0b
+						canRotate: 1b
 						color: 5636095
 						display: {
 							color: 5592575
@@ -492,6 +492,97 @@
 			title: "{block.r2aot.cobble_gen_tier_1}"
 			x: -2.0d
 			y: -1.0d
+		}
+		{
+			can_repeat: true
+			icon: "r2aot:modular_runic_altar_core"
+			id: "51E09A781B1F0E20"
+			rewards: [{
+				id: "716471F0CBB3A49B"
+				item: {
+					Count: 1
+					id: "capsule:capsule"
+					tag: {
+						author: "FutureLin"
+						canRotate: 1b
+						color: 13288370
+						display: {
+							color: 12770277
+						}
+						isReward: 1b
+						label: "Modular Runic Altar.nbt"
+						oneUse: 1b
+						size: 7
+						state: 5
+						structureName: "config/capsule/rewards/modular_runic_altar.nbt"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					consume_items: true
+					id: "006B7CA8716F4AF4"
+					item: "r2aot:modular_runic_altar_core"
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 12L
+					id: "164E5E139D3F23F0"
+					item: { Count: 12, id: "botania:mana_quartz_slab" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 19L
+					id: "2C38D3903920586B"
+					item: { Count: 19, id: "botania:mana_quartz_pillar" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 4L
+					id: "5A29D788726870A8"
+					item: { Count: 4, id: "botania:chiseled_mana_quartz" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 16L
+					id: "2FC9F4C3790485EA"
+					item: { Count: 16, id: "botania:mana_quartz" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 24L
+					id: "22DC1A0E79C2991F"
+					item: { Count: 24, id: "botania:polished_livingrock_slab" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 2L
+					id: "003DADF974640E70"
+					item: { Count: 2, id: "botania:polished_livingrock" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					id: "3C0574F65779F4D4"
+					item: "r2aot:item_input"
+					type: "item"
+				}
+				{
+					consume_items: true
+					id: "250A6B4EB2EAF18C"
+					item: "r2aot:item_output"
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: 5.0d
 		}
 	]
 	title: "{ftbq.r2aot.chapter_groups.capsule.title}"
