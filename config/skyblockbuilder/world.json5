@@ -57,7 +57,6 @@
   // The block settings for generating the different dimensions surfaces.
   // Same format as flat world generation settings (blocks only)
   "surfaceSettings": {
-    "minecraft:overworld": "minecraft:bedrock,2*minecraft:dirt,minecraft:grass_block",
     "minecraft:the_nether": "minecraft:bedrock,50*minecraft:lava",
     "minecraft:the_end": "minecraft:bedrock,30*ifeu:liquid_dragon_breath"
   }

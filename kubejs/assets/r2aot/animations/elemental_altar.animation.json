@@ -158,23 +158,10 @@
 					},
 					"position": {
 						"0.0": {
-							"vector": [10, 0, -3]
-						},
-						"0.48": {
-							"vector": [10, -3, -3],
-							"easing": "easeInSine"
-						},
-						"0.96": {
-							"vector": [10, 0, -3],
-							"easing": "easeInOutSine"
-						},
-						"1.44": {
-							"vector": [10, 3, -3],
-							"easing": "easeOutSine"
+							"vector": [10, "-3 * math.sin(query.anim_time * 187.5)", -3]
 						},
 						"1.92": {
-							"vector": [10, 0, -3],
-							"easing": "easeInOutSine"
+							"vector": [10, "-3 * math.sin(query.anim_time * 187.5)", -3]
 						}
 					}
 				},
@@ -184,23 +171,10 @@
 					},
 					"position": {
 						"0.0": {
-							"vector": [-3, -3, -10]
-						},
-						"0.48": {
-							"vector": [-3, 0, -10],
-							"easing": "easeInSine"
-						},
-						"0.96": {
-							"vector": [-3, 3, -10],
-							"easing": "easeInOutSine"
-						},
-						"1.44": {
-							"vector": [-3, 0, -10],
-							"easing": "easeOutSine"
+							"vector": [-3, "-3 * math.cos(query.anim_time * 187.5)", -10]
 						},
 						"1.92": {
-							"vector": [-3, -3, -10],
-							"easing": "easeOutSine"
+							"vector": [-3, "-3 * math.cos(query.anim_time * 187.5)", -10]
 						}
 					}
 				},
@@ -210,23 +184,10 @@
 					},
 					"position": {
 						"0.0": {
-							"vector": [-10, 0, 3]
-						},
-						"0.48": {
-							"vector": [-10, 3, 3],
-							"easing": "easeInSine"
-						},
-						"0.96": {
-							"vector": [-10, 0, 3],
-							"easing": "easeInOutSine"
-						},
-						"1.44": {
-							"vector": [-10, -3, 3],
-							"easing": "easeOutSine"
+							"vector": [-10, "3 * math.sin(query.anim_time * 187.5)", 3]
 						},
 						"1.92": {
-							"vector": [-10, 0, 3],
-							"easing": "easeOutSine"
+							"vector": [-10, "3 * math.sin(query.anim_time * 187.5)", 3]
 						}
 					}
 				},
@@ -236,23 +197,10 @@
 					},
 					"position": {
 						"0.0": {
-							"vector": [3, 3, 10]
-						},
-						"0.48": {
-							"vector": [3, 0, 10],
-							"easing": "easeInSine"
-						},
-						"0.96": {
-							"vector": [3, -3, 10],
-							"easing": "easeInOutSine"
-						},
-						"1.44": {
-							"vector": [3, 0, 10],
-							"easing": "easeOutSine"
+							"vector": [3, "3 * math.cos(query.anim_time * 187.5)", 10]
 						},
 						"1.92": {
-							"vector": [3, 3, 10],
-							"easing": "easeOutSine"
+							"vector": [3, "3 * math.cos(query.anim_time * 187.5)", 10]
 						}
 					}
 				}
