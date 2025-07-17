@@ -183,8 +183,8 @@
 				}
 			]
 			title: "{ftbq.r2aot.chapter2-4.thermal_alloy1_title}"
-			x: 4.0d
-			y: 2.0d
+			x: 2.0d
+			y: 6.0d
 		}
 		{
 			dependencies: [
@@ -215,8 +215,8 @@
 				}
 			]
 			title: "{ftbq.r2aot.chapter2-4.thermal_alloy_seeds_title}"
-			x: 6.0d
-			y: 2.0d
+			x: 4.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["6390FAD8CD2CCD9D"]
@@ -244,8 +244,8 @@
 				}
 			]
 			title: "{ftbq.r2aot.chapter2-4.thermal_alloy_essence_title}"
-			x: 8.5d
-			y: 2.0d
+			x: 6.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["640E3BB6881A6144"]
@@ -281,8 +281,8 @@
 				}
 			]
 			title: "{ftbq.r2aot.chapter2-4.thermal_molten_alloy_title}"
-			x: 11.0d
-			y: 2.0d
+			x: 8.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["0181B226C2493004"]
@@ -324,8 +324,8 @@
 					type: "item"
 				}
 			]
-			x: 2.0d
-			y: 2.0d
+			x: 0.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["59F23C3D5935C257"]
@@ -336,7 +336,7 @@
 				type: "item"
 			}]
 			x: 6.0d
-			y: 0.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["59F23C3D5935C257"]
@@ -347,7 +347,7 @@
 				type: "item"
 			}]
 			x: 4.0d
-			y: -2.0d
+			y: -6.0d
 		}
 		{
 			dependencies: [
@@ -360,8 +360,263 @@
 				item: "minecraft:ancient_debris"
 				type: "item"
 			}]
-			x: 4.0d
+			x: 6.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["72EBA063A1692813"]
+			id: "6196D0D19F64E59A"
+			tasks: [{
+				id: "5191A6034AEA9023"
+				item: "minecraft:netherite_scrap"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -6.0d
+		}
+		{
+			id: "330A62A44B29C593"
+			tasks: [{
+				id: "79148B687764E185"
+				item: "ae2:matter_ball"
+				type: "item"
+			}]
+			x: 6.0d
 			y: -4.0d
+		}
+		{
+			dependencies: ["330A62A44B29C593"]
+			icon: "ae2:pink_paint_ball"
+			id: "0A3254C1EE48B154"
+			tasks: [
+				{
+					id: "759C9EB4E8671BAA"
+					item: "ae2:pink_paint_ball"
+					type: "item"
+				}
+				{
+					id: "26FD80B9163F6BF1"
+					item: "ae2:pink_lumen_paint_ball"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 8.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["0A3254C1EE48B154"]
+			icon: "industrialforegoing:pink_slime_bucket"
+			id: "12E92A009645972A"
+			tasks: [
+				{
+					id: "79994FBE606F05AB"
+					item: "industrialforegoing:pink_slime_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "1F0B6C026B910368"
+					type: "checkmark"
+				}
+			]
+			x: 10.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"6196D0D19F64E59A"
+				"12E92A009645972A"
+			]
+			id: "73DAC39394ED4682"
+			tasks: [{
+				id: "09F037D23866D527"
+				item: "industrialforegoing:machine_frame_advanced"
+				type: "item"
+			}]
+			x: 10.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["3CE216603DF9A2AE"]
+			id: "22F88CFCD674F5D1"
+			tasks: [{
+				id: "7DF2A9CA1C7D2D0D"
+				item: "r2aot:tertium_crop_seed"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["22F88CFCD674F5D1"]
+			hide_dependent_lines: true
+			id: "66F216CF0A97E4AB"
+			tasks: [{
+				id: "633DE42A379CED4E"
+				item: "mysticalagriculture:tertium_block"
+				type: "item"
+			}]
+			x: 10.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"72EBA063A1692813"
+				"6196D0D19F64E59A"
+			]
+			description: ["{ftbq.r2aot.chapter2-4.smithing_template_desc_1}"]
+			id: "0667E4CEDEC7C014"
+			tasks: [{
+				id: "7A08B650CFE177F2"
+				item: "minecraft:netherite_upgrade_smithing_template"
+				type: "item"
+			}]
+			x: 7.0d
+			y: -7.0d
+		}
+		{
+			dependencies: [
+				"32F76E7433A970DC"
+				"59F23C3D5935C257"
+			]
+			id: "354C3243984E8271"
+			subtitle: "{\"translate\":\"ftbq.r2aot.capsule.text\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"3C9AFE713187FCFD\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"ftbq.r2aot.capsule.click\"}}}"
+			tasks: [{
+				id: "1157CAA1766D574C"
+				item: "r2aot:processing_mixer_core"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["354C3243984E8271"]
+			id: "625E87C40C98A8FB"
+			tasks: [
+				{
+					id: "56C6D3A9E0C6C6A3"
+					item: "r2aot:molten_lumium_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "2F71A50BB1F5D6F4"
+					item: "r2aot:molten_signalum_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "0EF39A1504B9A6DC"
+					item: "r2aot:molten_enderium_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "6498B67AB4208797"
+					type: "checkmark"
+				}
+			]
+			title: "{ftbq.r2aot.chapter2-4.thermal_molten_alloy_title}"
+			x: 6.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["02447584B79566FC"]
+			id: "651742897FA96340"
+			tasks: [
+				{
+					id: "1D11F99C58F082D9"
+					item: "mysticalagriculture:lumium_essence"
+					type: "item"
+				}
+				{
+					id: "0D25AFD28D01C83D"
+					item: "mysticalagriculture:signalum_essence"
+					type: "item"
+				}
+				{
+					id: "225A3621451D4587"
+					item: "mysticalagriculture:enderium_essence"
+					type: "item"
+				}
+			]
+			title: "{ftbq.r2aot.chapter2-4.thermal_alloy_essence_title}"
+			x: 10.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["625E87C40C98A8FB"]
+			id: "107A11154BD17BA2"
+			tasks: [
+				{
+					id: "2EFB11FFE81B7423"
+					item: "thermal:lumium_ingot"
+					type: "item"
+				}
+				{
+					id: "02E7C17CFDC1AB67"
+					item: "thermal:signalum_ingot"
+					type: "item"
+				}
+				{
+					id: "7B0974ACD26D6709"
+					item: "thermal:enderium_ingot"
+					type: "item"
+				}
+			]
+			title: "{ftbq.r2aot.chapter2-4.thermal_alloy2_title}"
+			x: 8.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["107A11154BD17BA2"]
+			id: "0B4AFB1D497C2FF8"
+			tasks: [
+				{
+					id: "43AA538110D7D094"
+					item: "thermal:upgrade_augment_1"
+					type: "item"
+				}
+				{
+					id: "0FB6F8EEAEE027BC"
+					item: "thermal:upgrade_augment_2"
+					type: "item"
+				}
+				{
+					id: "21ABDE97DA9F909B"
+					item: "thermal:upgrade_augment_3"
+					type: "item"
+				}
+			]
+			x: 8.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"107A11154BD17BA2"
+				"66F216CF0A97E4AB"
+			]
+			id: "02447584B79566FC"
+			tasks: [
+				{
+					id: "5D927E0408339524"
+					item: "mysticalagriculture:lumium_seeds"
+					type: "item"
+				}
+				{
+					id: "71B227448A23E4CB"
+					item: "mysticalagriculture:signalum_seeds"
+					type: "item"
+				}
+				{
+					id: "3836955C9608003F"
+					item: "mysticalagriculture:enderium_seeds"
+					type: "item"
+				}
+			]
+			x: 10.0d
+			y: 2.0d
 		}
 	]
 	title: "{ftbq.r2aot.chapter2-4.start.title}"

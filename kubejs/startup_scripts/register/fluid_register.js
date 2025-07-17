@@ -9,6 +9,11 @@ StartupEvents.registry("fluid", (event) => {
     event.create("r2aot:molten_electrum").noBlock();
     event.create("r2aot:molten_invar").noBlock();
     event.create("r2aot:molten_constantan").noBlock();
+
+
+    event.create("r2aot:molten_lumium").noBlock();
+    event.create("r2aot:molten_signalum").noBlock();    
+    event.create("r2aot:molten_enderium").noBlock();
 })
 
 

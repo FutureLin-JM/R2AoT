@@ -82,7 +82,14 @@ ServerEvents.recipes(event =>{
     ['bronze', 'electrum', 'invar', 'constantan'].forEach(metalId => {
         crucible(`r2aot:molten_${metalId}`, 250, `mysticalagriculture:${metalId}_essence`);
         chiller(`thermal:${metalId}_ingot`, `r2aot:molten_${metalId}`);
+    });
+
+    ['lumium', 'signalum', 'enderium'].forEach(metalId => {
+        chiller(`thermal:${metalId}_ingot`, `r2aot:molten_${metalId}`)
     })
+
+    crucible('industrialforegoing:pink_slime', 100, 'ae2:pink_paint_ball', 2000, kjs('crucible', 'pink_slime_from_pink_paint_ball'));
+    crucible('industrialforegoing:pink_slime', 500, 'ae2:pink_lumen_paint_ball', 5000, kjs('crucible', 'pink_slime_from_pink_lumen_paint_ball'));
     
     smelter(
         'botania:runic_altar',
@@ -100,6 +107,15 @@ ServerEvents.recipes(event =>{
             'minecraft:blackstone',
             '4x minecraft:gold_ingot'
         ]
-    )
+    );
+
+    smelter(
+        'r2aot:processing_mixer_core',
+        [
+            '4x thermal:machine_frame',
+            '2x industrialforegoing:machine_frame_simple',
+            '4x ae2:calculation_processor'
+        ]
+    );
     
 })

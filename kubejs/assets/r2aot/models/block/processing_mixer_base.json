@@ -1,0 +1,12 @@
+{
+    "parent": "minecraft:block/cube_all",
+    "textures": {
+        "particle": "mekanism:block/block_steel",
+        "down": "#particle",
+        "up": "#particle",
+        "north": "#front",
+        "east": "#particle",
+        "south": "#particle",
+        "west": "#particle"
+    }
+}

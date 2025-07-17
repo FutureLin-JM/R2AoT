@@ -69,7 +69,6 @@ ServerEvents.recipes(event => {
         'mysticalagriculture:prudentium_block_combine',
         'mysticalagriculture:tertium_block_combine',
         'mysticalagriculture:imperium_block_combine',
-        'mysticalagriculture:machine_frame',
         'botania:runic_altar_alt',
         'botania:runic_altar',
         'botania:petal_apothecary/pure_daisy',
@@ -80,6 +79,17 @@ ServerEvents.recipes(event => {
         'botania:runic_altar/fire',
         'botania:runic_altar/earth',
         'botania:runic_altar/air',
+        'industrialforegoing:mob_slaughter_factory',
+        'mysticalagriculture:seed_reprocessor',
+        'thermal:machines/smelter/smelter_alloy_lumium',
+        'thermal:machines/smelter/smelter_alloy_signalum',
+        'thermal:machines/smelter/smelter_alloy_enderium',
+        'thermal:fire_charge/lumium_ingot_4',
+        'thermal:fire_charge/signalum_ingot_4',
+        'thermal:fire_charge/enderium_ingot_2',
+        'thermal:augments/upgrade_augment_1',
+        'thermal:augments/upgrade_augment_2',
+        'thermal:augments/upgrade_augment_3',
 
     ]
     recipesToRemoveID.forEach((recipes) => {
@@ -88,7 +98,6 @@ ServerEvents.recipes(event => {
 
     let recipesToRemoveType =[
         'botania:pure_daisy',
-        'advanced_ae:reaction',
         'industrialforegoing:laser_drill_ore',
         'thermal_extra:component_assembly',
         'botania:orechid_ignem'

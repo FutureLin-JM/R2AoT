@@ -139,5 +139,22 @@ ServerEvents.recipes(event => {
         B:'mysticalagriculture:inferium_seeds'
     }).id(kjs('prudentium_crop_seed'));
 
+    event.shaped('thermal:upgrade_augment_1', [
+        'IGI',
+        'RXR',
+        'IGI'
+    ],{
+        I: '#forge:ingots/invar',
+        G: '#forge:glass', 
+        R: '#forge:dusts/redstone',
+        X: '#forge:gears/signalum'
+    }).id(kjs('upgrade_augment_1'));
+
+    event.smithing('thermal:upgrade_augment_2',
+        'thermal_extra:augment_smithing_upgrade', 'thermal:upgrade_augment_1', '#forge:gears/lumium'
+    ).id(kjs('smithing', 'upgrade_augment_2'));
+    event.smithing('thermal:upgrade_augment_3',
+        'thermal_extra:augment_smithing_upgrade', 'thermal:upgrade_augment_2', '#forge:gears/enderium'
+    ).id(kjs('smithing', 'upgrade_augment_3'));
 })
 

@@ -114,7 +114,6 @@ ServerEvents.recipes(event => {
     // ]
     let excludedEssenceCrops = [
         'inferium', 'water', 'fire', 'earth', 'air',
-        'bronze', 'electrum', 'invar', 'constantan',
     ]
     Ingredient.of('#mysticalagriculture:essences').itemIds.forEach(id => {
         const cropName = id.replace('mysticalagriculture:', '').replace('_essence', '');

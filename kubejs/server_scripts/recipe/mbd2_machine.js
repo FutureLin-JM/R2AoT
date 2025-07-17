@@ -203,4 +203,14 @@ ServerEvents.recipes(event => {
         A:'minecraft:netherite_ingot',
         B:'r2aot:cobble_gen_tier_5'
     }).id(kjs('cobble_gen_tier_6'));
+
+    event.shaped('r2aot:controller_frame', [
+        'AAA',
+        'ABA',
+        'AAA'
+    ], {
+        A:'minecraft:iron_ingot',
+        B:'ae2:controller'
+    }).keepIngredient({ item: 'ae2:controller' }).id(kjs('controller_frame'))
+
 })

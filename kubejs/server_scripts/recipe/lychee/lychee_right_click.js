@@ -169,4 +169,40 @@ ServerEvents.recipes((event) => {
             }
         }).id(kjs('lychee', `${metalId}_seeds`));
     });
+
+    ['lumium', 'signalum', 'enderium'].forEach(metalId => {
+        event.custom({
+            type: "lychee:block_interacting",
+            item_in: {
+                item: `thermal:${metalId}_block`
+            },
+            block_in: 'mysticalagriculture:tertium_block',
+            post: [
+                {
+                    type: 'drop_item',
+                    item: `mysticalagriculture:${metalId}_seeds`
+                }
+            ],
+            contextual: {
+                type: "is_sneaking"
+            }
+        }).id(kjs('lychee', `${metalId}_seeds`));
+    });
+
+    event.custom({
+        type: "lychee:block_interacting",
+        item_in: {
+            item: 'minecraft:netherite_scrap'
+        },
+        block_in: 'minecraft:ancient_debris',
+        post: [
+            {
+                type: "drop_item",
+                item: 'minecraft:netherite_upgrade_smithing_template'
+            }
+        ],
+        contextual: {
+            type: 'is_sneaking'
+        }
+    }).id(kjs('lychee', 'netherite_upgrade_smithing_template'))
 })

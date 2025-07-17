@@ -79,6 +79,8 @@
     "block.r2aot.cobble_gen_tier_5": "5级圆石制造机",
     "block.r2aot.cobble_gen_tier_6": "6级圆石制造机",
     "block.r2aot.modular_runic_altar_core": "模块化符文祭坛",
+    "block.r2aot.controller_frame": "控制器框架",
+    "block.r2aot.processing_mixer_core": "处理混合机",
 
     "r2aot.fertilizer_propagator_core": "花肥育瓣机",
     "r2aot.andesite_casing_maker_core": "安山机壳制造机",
@@ -92,6 +94,7 @@
     "r2aot.elemental_altar_core": "元素祭坛",
     "r2aot.atomic_reconstructor": "原子再构",
     "r2aot.modular_runic_altar_core": "模块化符文祭坛",
+    "r2aot.processing_mixer_core": "处理混合机",
 
     "fluid.r2aot.petal_essence": "花瓣原液",
     "block.r2aot.petal_essence": "花瓣原液",
@@ -113,6 +116,12 @@
     "item.r2aot.molten_invar_bucket": "熔融殷钢 桶",
     "fluid.r2aot.molten_constantan": "熔融康铜",
     "item.r2aot.molten_constantan_bucket": "熔融康铜 桶",
+    "fluid.r2aot.molten_lumium": "熔融流明",
+    "item.r2aot.molten_lumium_bucket": "熔融流明 桶",
+    "fluid.r2aot.molten_signalum": "熔融信素",
+    "item.r2aot.molten_signalum_bucket": "熔融信素 桶",
+    "fluid.r2aot.molten_enderium": "熔融末影",
+    "item.r2aot.molten_enderium_bucket": "熔融末影 桶",
 
     "enchantment.r2aot.machine_processing": "使用该机器加工",
     "enchantment.r2aot.kylin_arm": "麒麟臂",
@@ -158,6 +167,8 @@
     "tooltip.r2aot.cobble_gen_2": "工作时间：%s 秒",
     "tooltip.r2aot.cobble_gen_3": "内部容量：%s",
     "tooltip.r2aot.cobble_gen_4": "可自动输出圆石到上方容器",
+    "tooltip.r2aot.processing_mixer_core_1": "§6多方块机器",
+    "tooltip.r2aot.processing_mixer_core_2": "结构中的聚能石英玻璃可替换成流体输出仓",
 
     "tooltip.r2aot.ae2_facade_1": "JEI隐藏了伪装板",
     "tooltip.r2aot.ae2_facade_2": "但依然可以合成",
@@ -181,6 +192,7 @@
     "tooltip.r2aot.kylin_arm_1": "装备带该附魔的胸甲后可徒手挖掉方块",
     "tooltip.r2aot.kylin_arm_2": "挖掘速度提升至原来的十倍",
     "tooltip.r2aot.kylin_arm_3": "无视空中与水下的挖掘减速影响",
+    "tooltip.r2aot.controller_frame_1": "合成时ME控制器不消耗",
 
     "jei.information.r2aot.botania_fertilizer": "可以通过空手Shift+右键草方块获得（75%概率）",
     "jei.information.r2aot.blaze_burner": "§c一般燃烧§r:\n熔岩（每秒消耗1mb）\n\n§9超级燃烧§r:\n液态魔力（每秒消耗10mb）",
@@ -218,6 +230,7 @@
     "ftbq.r2aot.capsule.precautions.desc_1": "1、按F3+T重载可能导致贴图错误，重启游戏即可修复",
     "ftbq.r2aot.capsule.precautions.desc_2": "2、结构放置显示未成型时，重新放置一个方块可刷新状态",
     "ftbq.r2aot.capsule.precautions.desc_3": "3、胶囊可以使用左键旋转，请勿使用Shift+左键翻转，会导致结构无法成型",
+    "ftbq.r2aot.capsule.precautions.desc_4": "4、部分胶囊无法旋转",
 
     "ftbq.r2aot.chapter_groups.additional.title": "额外章",
     "ftbq.r2aot.additional-AE2.start.title": "应用能源2",
@@ -225,7 +238,7 @@
 
     "ftbq.r2aot.additional-hostilenetworks.start.title": "敌对神经网络",
     
-    "ftbq.r2aot.chapter_groups.chapter1.title": "第一章 机械创世，魔力初生",
+    "ftbq.r2aot.chapter_groups.chapter1.title": "第一章 机械创世，魔力初开",
     "ftbq.r2aot.chapter1-1.start.title": "第一节",
     "ftbq.r2aot.chapter1-1.fertilizer.title": "旅途的开始",
     "ftbq.r2aot.chapter1-1.fertilizer.subtitle": "试试Shift+右键草方块，在这个充满魔法的世界",
@@ -263,7 +276,7 @@
     "ftbq.r2aot.chapter1-3.element_seeds.desc_1": "第一步具体配方为：4x 花瓣块+500mb 液态魔力",
     "ftbq.r2aot.chapter1-3.mana_liquidizer.subtitle": "转化比例§l10mana：1mb§r，需要魔力发射器",
 
-    "ftbq.r2aot.chapter_groups.chapter2.title": "第二章",
+    "ftbq.r2aot.chapter_groups.chapter2.title": "第二章 热能涌动，魔艺新生",
     "ftbq.r2aot.chapter2-4.start.title": "第四节",
     "ftbq.r2aot.chapter2-4.ore_laser_base.subtitle": "注意查看JEI中镭射钻的工作深度",
     "ftbq.r2aot.chapter2-4.ore_laser_base.desc_1": "深度可在镭射钻基座直接调节",
@@ -278,6 +291,8 @@
     "ftbq.r2aot.chapter2-4.thermal_alloy_seeds_title": "合金种子",
     "ftbq.r2aot.chapter2-4.thermal_alloy_essence_title": "合金精华",
     "ftbq.r2aot.chapter2-4.thermal_molten_alloy_title": "熔融合金",
+    "ftbq.r2aot.chapter2-4.smithing_template_desc_1": "自动化使用AE递归合成或量子合成器",
+    "ftbq.r2aot.chapter2-4.thermal_alloy2_title": "热力二级合金",
 
     "patchouli.gui.lexicon.r2aot_book": "R2AoT 书",
     "patchouli.gui.lexicon.r2aot_book.text": "这是R2AoT的书",

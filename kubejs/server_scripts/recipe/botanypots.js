@@ -81,6 +81,36 @@ ServerEvents.recipes(event => {
             ],
             1800,
             1
-        ).id(kjs('botantpots', tier));
+        ).id(kjs('botanypots', tier));
     });
+
+    ['bronze', 'electrum', 'invar', 'constantan'].forEach(metalId => {
+        crop(
+            `mysticalagriculture:${metalId}_seeds`,
+            ['prudentium'],
+            {block: `mysticalagriculture:${metalId}_crop`},
+            [
+                Item.of(`mysticalagriculture:${metalId}_essence`).withChance(1),
+                Item.of(`mysticalagriculture:${metalId}_seeds`).withChance(0.01),
+                Item.of('mysticalagriculture:fertilized_essence').withChance(0.01)
+            ],
+            3000,
+            1
+        ).id(kjs('botanypots', `${metalId}_essence`))
+    });
+
+    ['lumium', 'signalum', 'enderium'].forEach(metalId => {
+        crop(
+            `mysticalagriculture:${metalId}_seeds`,
+            ['tertium'],
+            {block: `mysticalagriculture:${metalId}_crop`},
+            [
+                Item.of(`mysticalagriculture:${metalId}_essence`).withChance(1),
+                Item.of(`mysticalagriculture:${metalId}_seeds`).withChance(0.01),
+                Item.of('mysticalagriculture:fertilized_essence').withChance(0.01)
+            ],
+            3600,
+            1
+        ).id(kjs('botanypots', `${metalId}_essence`))
+    })
 })

@@ -106,6 +106,7 @@
 				"{ftbq.r2aot.capsule.precautions.desc_1}"
 				"{ftbq.r2aot.capsule.precautions.desc_2}"
 				"{ftbq.r2aot.capsule.precautions.desc_3}"
+				"{ftbq.r2aot.capsule.precautions.desc_4}"
 			]
 			id: "7CCCCC3A702D1265"
 			shape: "rsquare"
@@ -431,7 +432,7 @@
 				}
 			]
 			title: "{block.r2aot.elemental_altar_core}"
-			x: 0.0d
+			x: -2.0d
 			y: 3.5d
 		}
 		{
@@ -581,8 +582,155 @@
 					type: "item"
 				}
 			]
+			x: 2.0d
+			y: 3.5d
+		}
+		{
+			can_repeat: true
+			icon: "r2aot:processing_mixer_core"
+			id: "3C9AFE713187FCFD"
+			rewards: [{
+				id: "750265BC3FB6F39B"
+				item: {
+					Count: 1
+					id: "capsule:capsule"
+					tag: {
+						author: "FutureLin"
+						canRotate: 0b
+						color: 4804695
+						display: {
+							color: 4804695
+						}
+						isReward: 1b
+						label: "Processing Mixer.nbt"
+						oneUse: 1b
+						size: 7
+						state: 5
+						structureName: "config/capsule/rewards/processing_mixer.nbt"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					consume_items: true
+					id: "39BC78135EB6E31A"
+					item: "r2aot:processing_mixer_core"
+					type: "item"
+				}
+				{
+					consume_items: true
+					id: "1D86E42117BFB9A5"
+					item: "ae2:1k_crafting_storage"
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 2L
+					id: "4A22CBC84226548A"
+					item: { Count: 2, id: "ae2:crafting_accelerator" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					id: "115F7745164FC18D"
+					item: "r2aot:energy_input"
+					type: "item"
+				}
+				{
+					consume_items: true
+					id: "4ADC0C03D7C02D69"
+					item: "r2aot:item_output"
+					type: "item"
+				}
+				{
+					consume_items: true
+					id: "6F58ADA85351A8AA"
+					item: "r2aot:fluid_output"
+					type: "item"
+				}
+				{
+					consume_items: true
+					id: "651E63B734DF36BA"
+					item: {
+						Count: 1
+						id: "thermal:fluid_cell"
+						tag: {
+							BlockEntityTag: {
+								AmountIn: 1000
+								AmountOut: 1000
+								RSControl: {
+									RSMode: 0b
+									RSThreshold: 0b
+								}
+								Sides: [B;
+									0b
+									0b
+									0b
+									0b
+									0b
+									0b
+								]
+								TankInv: [{
+									Amount: 0
+									Capacity: 32000
+									FluidName: "minecraft:empty"
+									Tank: 0b
+								}]
+								Xfer: {
+									XferIn: 0b
+									XferOut: 1b
+								}
+							}
+							Properties: { }
+						}
+					}
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 2L
+					id: "6E1913781138AEF5"
+					item: { Count: 2, id: "ae2:quartz_vibrant_glass" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 26L
+					id: "7A6597141748DEFF"
+					item: { Count: 26, id: "ae2:quartz_glass" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					id: "1E449CDC3D84BC3E"
+					item: "r2aot:controller_frame"
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 5L
+					id: "53D4D13CD309CF4F"
+					item: { Count: 5, id: "thermal:fluid_cell_frame" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 37L
+					id: "4B15D3CFBFFE8ED5"
+					item: { Count: 37, id: "mysticalagriculture:machine_frame" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 2L
+					id: "60AAF47F6388381D"
+					item: { Count: 2, id: "r2aot:fluid_output" }
+					type: "item"
+				}
+			]
 			x: 0.0d
-			y: 5.0d
+			y: 3.5d
 		}
 	]
 	title: "{ftbq.r2aot.chapter_groups.capsule.title}"

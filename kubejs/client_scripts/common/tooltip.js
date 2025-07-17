@@ -33,6 +33,7 @@ ItemEvents.tooltip((event) => {
         {id: 'r2aot:stress_generator_core', key: 'tooltip.r2aot.stress_generator_core', lines: 5},
         {id: 'r2aot:elemental_altar_core', key: 'tooltip.r2aot.elemental_altar_core', lines: 4},
         {id: 'r2aot:atomic_reconstructor', key: 'tooltip.r2aot.atomic_reconstructor', lines: 3},
+        {id: 'r2aot:processing_mixer_core', key: 'tooltip.r2aot.processing_mixer_core', lines: 2}
     ];
     shiftTooltips.forEach((item) => {
         addShiftTooltip(event, item.id, item.key, item.lines);
@@ -51,6 +52,7 @@ ItemEvents.tooltip((event) => {
         {id: 'r2aot:pedestal', key: 'tooltip.r2aot.pedestal', lines: 1},
         {id: 'hostilenetworks:loot_fabricator', key: 'tooltip.r2aot.loot_fabricator', lines: 1},
         {id: 'r2aot:time_voucher', key: 'tooltip.r2aot.time_voucher', lines: 4},
+        {id: 'r2aot:controller_frame', key: 'tooltip.r2aot.controller_frame', lines: 1},
     ]
     linesTooltip.forEach((item) => {
         addLinesTooltip(event, item.id, item.key, item.lines);

@@ -27,6 +27,7 @@ StartupEvents.registry("block", (event) => {
     event.create("r2aot:creative_casing", "basic").hardness(3).soundType("netherite_block").requiresTool();
 
     event.create("r2aot:data_model_base", "basic").hardness(3).stoneSoundType().box(0, 0, 0, 16, 2, 16).fullBlock(false);
+    event.create('r2aot:controller_frame').hardness(1).requiresTool().soundType('metal');
 
     ["prudentium", "tertium", "imperium"].forEach(tier => {
         event.create(`r2aot:${tier}_crop`, "crop")

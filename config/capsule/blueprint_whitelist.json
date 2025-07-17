@@ -186,5 +186,7 @@
   "r2aot:stress_generator_core",
   "r2aot:pedestal",
   "r2aot:elemental_altar_core",
-  "r2aot:modular_runic_altar_core"
+  "r2aot:modular_runic_altar_core",
+  "r2aot:processing_mixer_core",
+  "r2aot:controller_frame"
 ]

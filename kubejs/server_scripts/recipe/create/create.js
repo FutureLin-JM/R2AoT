@@ -115,8 +115,8 @@ ServerEvents.recipes(event => {
     ['bronze', 'electrum', 'invar', 'constantan'].forEach(metalId => {
         mixing(Fluid.of(`r2aot:molten_${metalId}`, 200), `mysticalagriculture:${metalId}_essence`).superheated().id(kjs('mixing', `molten_${metalId}`))
     });
-    mixing(Fluid.of('thermal:redstone', 100), 'minecraft:redstone').heated().id(kjs('mixing', 'thermal_redstone_from_redstone'));
-    mixing(Fluid.of('thermal:redstone', 900), 'minecraft:redstone_block').heated().id(kjs('mixing', 'thermal_redstone_from_block_block'));
+    mixing(Fluid.of('thermal:redstone', 50), 'minecraft:redstone').heated().id(kjs('mixing', 'thermal_redstone_from_dust'));
+    mixing(Fluid.of('thermal:redstone', 450), 'minecraft:redstone_block').heated().id(kjs('mixing', 'thermal_redstone_from_block'));
     mixing(
         Item.of('thermal:bronze_dust').withCount(2),
         [
@@ -145,6 +145,9 @@ ServerEvents.recipes(event => {
             Fluid.of('r2aot:fluidedmana', 200)
         ]
     ).id(kjs('mixing', 'thermal_constantan_dust'));
+    mixing(Fluid.of('thermal:glowstone', 125), 'minecraft:glowstone_dust').heated().id(kjs('mixing', 'thermal_glowstone_from_dust'));
+    mixing(Fluid.of('thermal:glowstone', 500), 'minecraft:glowstone').heated().id(kjs('mixing', 'thermal_glowstone_from_block'));
+    mixing(Fluid.of('thermal:ender', 125), 'minecraft:ender_pearl').superheated().id(kjs('mixing', 'thermal_ender_from_pearl'))
 
     splashing(
         [Item.of('minecraft:flint').withChance(0.25), Item.of('minecraft:iron_nugget').withChance(0.75)], 

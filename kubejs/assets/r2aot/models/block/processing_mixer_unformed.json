@@ -1,0 +1,6 @@
+{
+    "parent": "r2aot:block/processing_mixer_base",
+    "textures": {
+        "front": "r2aot:block/processing_mixer_front_unformed"
+    }
+}
