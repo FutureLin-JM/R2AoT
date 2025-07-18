@@ -32,6 +32,8 @@
 # Hotai
 !hotai/
 !hotai/**
+!hotai_sources/
+!hotai_sources/**
 
 # KubeJS
 !kubejs/
