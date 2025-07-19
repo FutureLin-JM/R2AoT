@@ -33,7 +33,8 @@ ItemEvents.tooltip((event) => {
         {id: 'r2aot:stress_generator_core', key: 'tooltip.r2aot.stress_generator_core', lines: 5},
         {id: 'r2aot:elemental_altar_core', key: 'tooltip.r2aot.elemental_altar_core', lines: 4},
         {id: 'r2aot:atomic_reconstructor', key: 'tooltip.r2aot.atomic_reconstructor', lines: 3},
-        {id: 'r2aot:processing_mixer_core', key: 'tooltip.r2aot.processing_mixer_core', lines: 2}
+        {id: 'r2aot:processing_mixer_core', key: 'tooltip.r2aot.processing_mixer_core', lines: 2},
+        {id: 'botania:terra_plate', key: 'tooltip.botania.terra_plate', lines: 2},
     ];
     shiftTooltips.forEach((item) => {
         addShiftTooltip(event, item.id, item.key, item.lines);

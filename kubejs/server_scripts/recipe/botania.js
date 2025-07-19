@@ -71,7 +71,7 @@ ServerEvents.recipes(event => {
 })
 
 ServerEvents.recipes(event => {
-    const { petal_apothecary, mana_infusion, runic_altar, elven_trade, } = event.recipes.botania;
+    const { petal_apothecary, mana_infusion, runic_altar, elven_trade, terra_plate } = event.recipes.botania;
     const { r2aot } = event.recipes
 
     petal_apothecary(
@@ -143,13 +143,17 @@ ServerEvents.recipes(event => {
     mana_infusion('botania:mana_powder', 'minecraft:redstone', 500).id('botania:mana_infusion/mana_powder_dust');
     mana_infusion('ae2:certus_quartz_crystal', 'botania:quartz_mana', 500).id(kjs('mana_infusion', 'certus_quartz_crystal'));
 
+    /**
+     * 符文祭坛
+     * @param {OutputItem_} output
+     * @param {InputItem_ | Array} input
+     * @param {number} mana
+     */
     function runicAltarRecipes(output, input, mana) {
-        const outputList = Array.isArray(output) ? output : [output];
-
-        runic_altar(output, input, mana ? mana : 5200).id(kjs('runic_altar', outputList[0].split(':')[1]))
+        runic_altar(output, input, mana ? mana : 5200).id(kjs('runic_altar', output.split(':')[1]))
 
         r2aot.modular_runic_altar_core()
-            .id(`r2aot:modular_runic_altar_core/${outputList[0].split(':')[1]}`)
+            .id(`r2aot:modular_runic_altar_core/${output.split(':')[1]}`)
             .outputItems(output)
             .inputItems(input)
             .inputItems('botania:livingrock')
@@ -186,4 +190,25 @@ ServerEvents.recipes(event => {
         'mysticalagriculture:prudentium_block', 'botania:mana_diamond_block', 'botania:manasteel_block'],
         8000
     );
+    runicAltarRecipes('r2aot:luxvoid_alloy',
+        ['thermal:lumium_ingot', 'thermal:signalum_ingot', 'thermal:enderium_ingot'],
+        250000
+    );
+
+    /**
+     * 泰拉凝聚
+     * @param {OutputItem_} output
+     * @param {InputItem_ | Array} input
+     * @param {number} mana
+     */
+    function terraPlateRecipes (output, input, mana) {
+        terra_plate(output, input, mana ? mana : 50000).id(kjs('terra_plate', output.split(':')[1]));
+
+
+    }
+
+    terraPlateRecipes('r2aot:luxvoid_alloy',
+        ['thermal:lumium_ingot', 'thermal:signalum_ingot', 'thermal:enderium_ingot'],
+        50000
+    )
 })

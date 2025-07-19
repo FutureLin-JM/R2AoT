@@ -4,7 +4,8 @@
 	"parent": "minecraft:block/block",
 	"texture_size": [64, 64],
 	"textures": {
-		"1": "r2aot:block/modular_runic_altar"
+		"1": "r2aot:block/modular_runic_altar",
+        "particle": "r2aot:block/modular_runic_altar"
 	},
 	"elements": [
 		{

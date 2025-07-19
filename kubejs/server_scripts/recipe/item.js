@@ -147,11 +147,11 @@ ServerEvents.recipes(event => {
         I: '#forge:ingots/invar',
         G: '#forge:glass', 
         R: '#forge:dusts/redstone',
-        X: '#forge:gears/signalum'
+        X: '#forge:gears/lumium'
     }).id(kjs('upgrade_augment_1'));
 
     event.smithing('thermal:upgrade_augment_2',
-        'thermal_extra:augment_smithing_upgrade', 'thermal:upgrade_augment_1', '#forge:gears/lumium'
+        'thermal_extra:augment_smithing_upgrade', 'thermal:upgrade_augment_1', '#forge:gears/signalum'
     ).id(kjs('smithing', 'upgrade_augment_2'));
     event.smithing('thermal:upgrade_augment_3',
         'thermal_extra:augment_smithing_upgrade', 'thermal:upgrade_augment_2', '#forge:gears/enderium'

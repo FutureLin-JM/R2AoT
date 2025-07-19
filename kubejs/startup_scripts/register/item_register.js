@@ -18,6 +18,7 @@ StartupEvents.registry("item", (event) => {
 	event.create("r2aot:creative_casing_shard", "basic");
 	event.create("r2aot:rune_elemental", "basic");
 	event.create("r2aot:time_voucher", "basic");
+    event.create("r2aot:luxvoid_alloy", "basic").rarity('uncommon');
 
 	event.create("kubejs:incomplete_water_seeds", "create:sequenced_assembly").texture('r2aot:item/mystical_seeds');
 	event.create("kubejs:incomplete_fire_seeds", "create:sequenced_assembly").texture('r2aot:item/mystical_seeds');

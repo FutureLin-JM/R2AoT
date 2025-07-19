@@ -19,6 +19,7 @@
     "item.r2aot.prudentium_crop_seed": "初级种子",
     "item.r2aot.tertium_crop_seed": "中级种子",
     "item.r2aot.imperium_crop_seed": "高级种子",
+    "item.r2aot.luxvoid_alloy": "辉界合金",
 
 
     "block.r2aot.rainbow_petal_block": "彩虹花源块",
@@ -169,6 +170,8 @@
     "tooltip.r2aot.cobble_gen_4": "可自动输出圆石到上方容器",
     "tooltip.r2aot.processing_mixer_core_1": "§6多方块机器",
     "tooltip.r2aot.processing_mixer_core_2": "结构中的聚能石英玻璃可替换成流体输出仓",
+    "tooltip.botania.terra_plate_1": "泰拉凝聚板需要一个新的结构才能工作",
+    "tooltip.botania.terra_plate_2": "合成时有§450%§r概率消耗结构中的一格液态魔力",
 
     "tooltip.r2aot.ae2_facade_1": "JEI隐藏了伪装板",
     "tooltip.r2aot.ae2_facade_2": "但依然可以合成",
@@ -293,6 +296,7 @@
     "ftbq.r2aot.chapter2-4.thermal_molten_alloy_title": "熔融合金",
     "ftbq.r2aot.chapter2-4.smithing_template_desc_1": "自动化使用AE递归合成或量子合成器",
     "ftbq.r2aot.chapter2-4.thermal_alloy2_title": "热力二级合金",
+    "ftbq.r2aot.chapter2-4.luxvoid_alloy_subtitle": "使用符文祭坛制作需1/4池魔力",
 
     "patchouli.gui.lexicon.r2aot_book": "R2AoT 书",
     "patchouli.gui.lexicon.r2aot_book.text": "这是R2AoT的书",

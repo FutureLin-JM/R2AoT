@@ -90,6 +90,7 @@ ServerEvents.recipes(event => {
         'thermal:augments/upgrade_augment_1',
         'thermal:augments/upgrade_augment_2',
         'thermal:augments/upgrade_augment_3',
+        'botania:terra_plate',
 
     ]
     recipesToRemoveID.forEach((recipes) => {

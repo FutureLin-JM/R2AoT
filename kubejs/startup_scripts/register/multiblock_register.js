@@ -375,4 +375,35 @@ StartupEvents.postInit(event => {
             Block.getBlock('minecraft:glass')
         )
     )
+});
+
+StartupEvents.postInit(event => {
+    $PatchouliAPI.registerMultiblock(
+        'r2aot:terrestrial_agglomeration_altar',
+        $PatchouliAPI.makeMultiblock(
+            [
+                ['___C___', '_______', '_______', 'C_____C', '_______', '_______', '___C___'],
+                ['___B___', '_______', '_______', 'B_____B', '_______', '_______', '___B___'],
+                ['___B___', '_______', '_______', 'B_____B', '_______', '_______', '___B___'],
+                ['___B___', '_______', '_______', 'B__P__B', '_______', '_______', '___B___'],
+                ['_AA_AA_', 'ALLALLA', 'ALDEDLA', '_AE0EA_', 'ALDEDLA', 'ALLALLA', '_AA_AA_']
+            ],
+            new $Character('0'),
+            Block.getBlock('botania:livingrock'),
+            new $Character('L'),
+            Block.getBlock('botania:livingrock'),
+            new $Character('P'),
+            Block.getBlock('botania:terra_plate'),
+            new $Character('A'),
+            Block.getBlock('botania:pattern_framed_livingwood'),
+            new $Character('B'),
+            Block.getBlock('botania:livingwood'),
+            new $Character('C'),
+            Block.getBlock('botania:mana_pylon'),
+            new $Character('D'),
+            Block.getBlock('r2aot:fluidedmana'),
+            new $Character('E'),
+            Block.getBlock('minecraft:lapis_block')
+        )
+    )
 })

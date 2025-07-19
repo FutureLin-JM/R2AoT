@@ -60,7 +60,20 @@ BlockEvents.rightClicked('r2aot:double_compressed_cobblestone', event => {
         player.tell(Text.translate('message.r2aot.multiblock.incorrect').aqua());
         event.cancel();
     }
-})
+});
+
+BlockEvents.rightClicked('botania:terra_plate', event => {
+    const { hand, block, item, player } = event;
+
+    if (hand !== 'MAIN_HAND') return;
+
+    const altarMultiblock = $PatchouliAPI.getMultiblock('r2aot:terrestrial_agglomeration_altar');
+    
+    if (!altarMultiblock.validate(block.level, block.pos.below(), 'none')) {
+        player.tell(Text.translate('message.r2aot.multiblock.incorrect').aqua());
+        event.cancel();
+    }
+});
 
 ItemEvents.rightClicked('r2aot:time_voucher', event => {
     const { hand, item, player } = event;
@@ -74,7 +87,7 @@ ItemEvents.rightClicked('r2aot:time_voucher', event => {
     else {
         player.tell(Text.translatable('message.r2aot.tiab'));
     }
-})
+});
 
 // BlockEvents.rightClicked('white_concrete', (event) => {
 //     const { hand, block, player, level } = event;

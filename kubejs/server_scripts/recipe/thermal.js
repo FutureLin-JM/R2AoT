@@ -3,7 +3,7 @@ ServerEvents.recipes(event =>{
      * 熔岩炉
      * @param {Fluid_} outputFluid - 输出的流体
      * @param {number} [amount=1000] - 流体量（默认1000）
-     * @param {InputItem_|InputTag_} input - 输入物品或标签
+     * @param {InputItem_ | InputTag_} input - 输入物品或标签
      * @param {number} [energy=20000] - 所需能量（默认20000)
      * @param {string} [id] - 自定义ID (可选)
      */
@@ -60,8 +60,8 @@ ServerEvents.recipes(event =>{
 
     /**
      * 感应炉
-     * @param {string|string[]} outputs - 输出物品，支持字符串或数组（格式："Nx itemID" 或 "Nx #tagID"）
-     * @param {string[]} inputs - 输入物品数组（格式同上）
+     * @param {OutputItem_ | Array} outputs - 输出物品，支持字符串或数组（格式："Nx itemID" 或 "Nx #tagID"）
+     * @param {InputItem_ | Array} inputs - 输入物品数组（格式同上）
      * @param {number} [energy=8000] - 所需能量，默认8000
      * @param {string} [id] - 自定义配方ID（可选）
      */
@@ -115,6 +115,15 @@ ServerEvents.recipes(event =>{
             '4x thermal:machine_frame',
             '2x industrialforegoing:machine_frame_simple',
             '4x ae2:calculation_processor'
+        ]
+    );
+
+    smelter(
+        'botania:terra_plate',
+        [
+            'r2aot:luxvoid_alloy',
+            '#botania:manasteel_blocks',
+            '3x minecraft:lapis_block'
         ]
     );
     

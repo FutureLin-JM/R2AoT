@@ -582,8 +582,8 @@
 					type: "item"
 				}
 			]
-			x: 2.0d
-			y: 3.5d
+			x: 0.0d
+			y: 5.0d
 		}
 		{
 			can_repeat: true
@@ -730,6 +730,93 @@
 				}
 			]
 			x: 0.0d
+			y: 3.5d
+		}
+		{
+			icon: "botania:terra_plate"
+			id: "5DBE62C3DE335D97"
+			rewards: [
+				{
+					id: "669BC31443B8EDB2"
+					item: {
+						Count: 1
+						id: "capsule:capsule"
+						tag: {
+							author: "FutureLin"
+							canRotate: 0b
+							color: 5544791
+							display: {
+								color: 5592575
+							}
+							isReward: 1b
+							label: "Terrestrial Agglomeration Altar.nbt"
+							oneUse: 1b
+							size: 7
+							state: 5
+							structureName: "config/capsule/rewards/terrestrial_agglomeration_altar.nbt"
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 4
+					id: "7C399B67ECEA0974"
+					item: "minecraft:bucket"
+					type: "item"
+				}
+			]
+			subtitle: "{\"translate\":\"ftbq.r2aot.ponder.text\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/ponder botania:terra_plate\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"ftbq.r2aot.capsule.click\"}}}"
+			tasks: [
+				{
+					consume_items: true
+					id: "7EF47B3CB2174CFF"
+					item: "botania:terra_plate"
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 20L
+					id: "430827FE55106FA2"
+					item: { Count: 20, id: "botania:pattern_framed_livingwood" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 13L
+					id: "667959831F420C94"
+					item: { Count: 13, id: "botania:livingrock" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 12L
+					id: "4A925D28DA2C933D"
+					item: { Count: 12, id: "botania:livingwood" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 4L
+					id: "378B6B229FF4F74E"
+					item: { Count: 4, id: "botania:mana_pylon" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 4L
+					id: "6535F0958025327E"
+					item: { Count: 4, id: "minecraft:lapis_block" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 4L
+					id: "1F95BB8A65FDD998"
+					item: { Count: 4, id: "r2aot:fluidedmana_bucket" }
+					type: "item"
+				}
+			]
+			x: 2.0d
 			y: 3.5d
 		}
 	]
