@@ -61,7 +61,10 @@ ItemEvents.tooltip((event) => {
 
     event.addAdvanced('fluxnetworks:flux_dust', (item, advanced, text) => {
         text.add(2, Text.translate('tooltip.r2aot.flux_dust').white())
-    })
+    });
+    event.addAdvanced('ars_nouveau:source_gem', (item, advanced, text) => {
+        text.set(1, Text.translate('tooltip.ars.source_gem').white())
+    });
 
     event.addAdvancedToAll((item, advanced, text) => {
         if (item == Item.of('minecraft:enchanted_book').enchant('r2aot:kylin_arm', 1).strongNBT()) {
@@ -126,12 +129,12 @@ ItemEvents.tooltip((event) => {
     event.addAdvanced('kubejs:water_seeds_folder', (item, advanced, text) => {
         text.add(1, Text.translate('tooltip.kubejs.machine_processing_1').aqua()
                         .append(Text.white({text:'\u200a', font:'r2aot:texture_font'}))
-                        .append(Text.translatable('block.industrialforegoing.dissolution_chamber').yellow())
-                        .append(Text.translatable('tooltip.kubejs.machine_processing_2')));
-        text.add(2, Text.translatable('block.botania.blue_petal_block')
+                        .append(Text.translate('block.industrialforegoing.dissolution_chamber').yellow())
+                        .append(Text.translate('tooltip.kubejs.machine_processing_2')));
+        text.add(2, Text.translate('block.botania.blue_petal_block')
                         .append(Text.white({text:'\u0001', font:'r2aot:texture_font'}))
                         .append(Text.yellow('x4')));
-        text.add(3, Text.translatable('fluid.r2aot.fluidedmana')
+        text.add(3, Text.translate('fluid.r2aot.fluidedmana')
                         .append(Text.white({text:'\u100a', font:'r2aot:texture_font'}))
                         .append(Text.yellow('500mb')));
     });
@@ -139,12 +142,12 @@ ItemEvents.tooltip((event) => {
     event.addAdvanced('kubejs:fire_seeds_folder', (item, advanced, text) => {
         text.add(1, Text.translate('tooltip.kubejs.machine_processing_1').aqua()
                         .append(Text.white({text:'\u200a', font:'r2aot:texture_font'}))
-                        .append(Text.translatable('block.industrialforegoing.dissolution_chamber').yellow())
-                        .append(Text.translatable('tooltip.kubejs.machine_processing_2')));
-        text.add(2, Text.translatable('block.botania.red_petal_block')
+                        .append(Text.translate('block.industrialforegoing.dissolution_chamber').yellow())
+                        .append(Text.translate('tooltip.kubejs.machine_processing_2')));
+        text.add(2, Text.translate('block.botania.red_petal_block')
                         .append(Text.white({text:'\u0002', font:'r2aot:texture_font'}))
                         .append(Text.yellow('x4')));
-        text.add(3, Text.translatable('fluid.r2aot.fluidedmana')
+        text.add(3, Text.translate('fluid.r2aot.fluidedmana')
                         .append(Text.white({text:'\u100a', font:'r2aot:texture_font'}))
                         .append(Text.yellow('500mb')));
     });
@@ -152,12 +155,12 @@ ItemEvents.tooltip((event) => {
     event.addAdvanced('kubejs:earth_seeds_folder', (item, advanced, text) => {
         text.add(1, Text.translate('tooltip.kubejs.machine_processing_1').aqua()
                         .append(Text.white({text:'\u200a', font:'r2aot:texture_font'}))
-                        .append(Text.translatable('block.industrialforegoing.dissolution_chamber').yellow())
-                        .append(Text.translatable('tooltip.kubejs.machine_processing_2')));
-        text.add(2, Text.translatable('block.botania.green_petal_block')
+                        .append(Text.translate('block.industrialforegoing.dissolution_chamber').yellow())
+                        .append(Text.translate('tooltip.kubejs.machine_processing_2')));
+        text.add(2, Text.translate('block.botania.green_petal_block')
                         .append(Text.white({text:'\u0003', font:'r2aot:texture_font'}))
                         .append(Text.yellow('x4')));
-        text.add(3, Text.translatable('fluid.r2aot.fluidedmana')
+        text.add(3, Text.translate('fluid.r2aot.fluidedmana')
                         .append(Text.white({text:'\u100a', font:'r2aot:texture_font'}))
                         .append(Text.yellow('500mb')));
     });
@@ -165,12 +168,12 @@ ItemEvents.tooltip((event) => {
     event.addAdvanced('kubejs:air_seeds_folder', (item, advanced, text) => {
         text.add(1, Text.translate('tooltip.kubejs.machine_processing_1').aqua()
                         .append(Text.white({text:'\u200a', font:'r2aot:texture_font'}))
-                        .append(Text.translatable('block.industrialforegoing.dissolution_chamber').yellow())
-                        .append(Text.translatable('tooltip.kubejs.machine_processing_2')));
-        text.add(2, Text.translatable('block.botania.orange_petal_block')
+                        .append(Text.translate('block.industrialforegoing.dissolution_chamber').yellow())
+                        .append(Text.translate('tooltip.kubejs.machine_processing_2')));
+        text.add(2, Text.translate('block.botania.orange_petal_block')
                         .append(Text.white({text:'\u0004', font:'r2aot:texture_font'}))
                         .append(Text.yellow('x4')));
-        text.add(3, Text.translatable('fluid.r2aot.fluidedmana')
+        text.add(3, Text.translate('fluid.r2aot.fluidedmana')
                         .append(Text.white({text:'\u100a', font:'r2aot:texture_font'}))
                         .append(Text.yellow('500mb')));
     })

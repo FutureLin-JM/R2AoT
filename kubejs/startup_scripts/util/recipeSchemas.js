@@ -47,4 +47,13 @@ StartupEvents.recipeSchemaRegistry(event => {
         )
     );
 
+    event.register(
+        'mysticalagriculture:infusion',
+        new $RecipeSchema(
+            components.get('outputItem')().key('result'),
+            components.get('inputItem')().key('input'),
+            components.get('inputItemArray')().key('ingredients')
+        )
+    );
+
 })

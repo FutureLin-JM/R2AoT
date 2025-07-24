@@ -28,8 +28,8 @@
 				item: "botania:livingrock"
 				type: "item"
 			}]
-			x: 2.0d
-			y: -1.0d
+			x: 0.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["5D00BC239D0E90A4"]
@@ -39,8 +39,8 @@
 				item: "botania:livingwood_log"
 				type: "item"
 			}]
-			x: 2.0d
-			y: 1.0d
+			x: 0.0d
+			y: 2.0d
 		}
 		{
 			dependencies: [
@@ -53,8 +53,8 @@
 				item: "create:millstone"
 				type: "item"
 			}]
-			x: 2.0d
-			y: -3.0d
+			x: 0.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["5D00BC239D0E90A4"]
@@ -102,8 +102,8 @@
 				}
 			]
 			title: "{ftbq.r2aot.chapter1-2.petal_ore.title}"
-			x: 0.0d
-			y: -3.0d
+			x: -2.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["403F97547E744B65"]
@@ -152,8 +152,8 @@
 				}
 			]
 			title: "{ftbq.r2aot.chapter1-2.milling_title}"
-			x: 4.0d
-			y: -3.0d
+			x: 2.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["537EFE9D4D96731A"]
@@ -163,8 +163,8 @@
 				item: "create:powdered_obsidian"
 				type: "item"
 			}]
-			x: 4.0d
-			y: 3.0d
+			x: 2.0d
+			y: 4.0d
 		}
 		{
 			dependencies: [
@@ -178,8 +178,8 @@
 				item: "minecraft:obsidian"
 				type: "item"
 			}]
-			x: 4.0d
-			y: 1.0d
+			x: 2.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["2211A42B5A5386AB"]
@@ -189,8 +189,8 @@
 				id: "534DC09F8CA946BC"
 				type: "dimension"
 			}]
-			x: 6.0d
-			y: 1.0d
+			x: 4.0d
+			y: 2.0d
 		}
 		{
 			dependencies: [
@@ -204,8 +204,8 @@
 				item: "minecraft:netherrack"
 				type: "item"
 			}]
-			x: 6.0d
-			y: 3.0d
+			x: 4.0d
+			y: 4.0d
 		}
 		{
 			dependencies: [
@@ -218,8 +218,8 @@
 				item: "create:empty_blaze_burner"
 				type: "item"
 			}]
-			x: 8.0d
-			y: 3.0d
+			x: 6.0d
+			y: 4.0d
 		}
 		{
 			dependencies: [
@@ -239,8 +239,8 @@
 				item: "create:blaze_burner"
 				type: "item"
 			}]
-			x: 8.0d
-			y: 1.0d
+			x: 6.0d
+			y: 2.0d
 		}
 		{
 			dependencies: [
@@ -263,8 +263,8 @@
 					type: "checkmark"
 				}
 			]
-			x: 8.0d
-			y: -1.0d
+			x: 6.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["1B1B5B08D1B6E9F1"]
@@ -274,8 +274,8 @@
 				item: "r2aot:petal_zinc_ore"
 				type: "item"
 			}]
-			x: 10.0d
-			y: 1.0d
+			x: 8.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["105F5C89F5B33BF1"]
@@ -286,8 +286,8 @@
 				item: "create:zinc_ingot"
 				type: "item"
 			}]
-			x: 10.0d
-			y: -1.0d
+			x: 8.0d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -300,8 +300,8 @@
 				item: "create:brass_ingot"
 				type: "item"
 			}]
-			x: 10.0d
-			y: -3.0d
+			x: 8.0d
+			y: -2.0d
 		}
 		{
 			dependencies: [
@@ -314,8 +314,8 @@
 				item: "r2aot:petal_quartz_ore"
 				type: "item"
 			}]
-			x: 10.0d
-			y: 3.0d
+			x: 8.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["09BB9CE6F7B1E954"]
@@ -325,8 +325,8 @@
 				item: "minecraft:quartz"
 				type: "item"
 			}]
-			x: 12.0d
-			y: 3.0d
+			x: 10.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["1A3D1819F56FB760"]
@@ -336,8 +336,8 @@
 				item: "create:rose_quartz"
 				type: "item"
 			}]
-			x: 12.0d
-			y: 1.0d
+			x: 10.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["2855A631519B8637"]
@@ -353,8 +353,8 @@
 				}
 				type: "item"
 			}]
-			x: 14.0d
-			y: 1.0d
+			x: 12.0d
+			y: 2.0d
 		}
 		{
 			dependencies: [
@@ -367,8 +367,8 @@
 				item: "create:polished_rose_quartz"
 				type: "item"
 			}]
-			x: 12.0d
-			y: -1.0d
+			x: 10.0d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -382,8 +382,8 @@
 				item: "create:mechanical_press"
 				type: "item"
 			}]
-			x: 6.0d
-			y: -7.0d
+			x: 4.0d
+			y: -6.0d
 		}
 		{
 			dependencies: [
@@ -396,8 +396,8 @@
 				item: "create:brass_hand"
 				type: "item"
 			}]
-			x: 10.0d
-			y: -5.0d
+			x: 8.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["0B75C5CBE820D022"]
@@ -407,8 +407,8 @@
 				item: "create:electron_tube"
 				type: "item"
 			}]
-			x: 12.0d
-			y: -3.0d
+			x: 10.0d
+			y: -2.0d
 		}
 		{
 			dependencies: [
@@ -421,8 +421,8 @@
 				item: "create:deployer"
 				type: "item"
 			}]
-			x: 12.0d
-			y: -5.0d
+			x: 10.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["528B4255246DF19C"]
@@ -432,8 +432,8 @@
 				item: "create:brass_casing"
 				type: "item"
 			}]
-			x: 14.0d
-			y: -5.0d
+			x: 12.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["09442CBFAE004D94"]
@@ -443,8 +443,8 @@
 				item: "create:mechanical_crafter"
 				type: "item"
 			}]
-			x: 16.0d
-			y: -5.0d
+			x: 14.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["0A528935EB4B6641"]
@@ -457,8 +457,8 @@
 				item: "botania:mana_pool"
 				type: "item"
 			}]
-			x: 20.0d
-			y: -5.0d
+			x: 18.0d
+			y: -4.0d
 		}
 		{
 			dependencies: [
@@ -474,8 +474,8 @@
 				item: "r2aot:mana_generator_core"
 				type: "item"
 			}]
-			x: 18.0d
-			y: -3.0d
+			x: 16.0d
+			y: -2.0d
 		}
 		{
 			id: "144485046BF013D9"
@@ -484,8 +484,8 @@
 				item: "botania:hydroangeas"
 				type: "item"
 			}]
-			x: 18.0d
-			y: -1.0d
+			x: 16.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["43C208DE31ABACD1"]
@@ -497,8 +497,8 @@
 				item: "r2aot:flower_ore_generator"
 				type: "item"
 			}]
-			x: 14.0d
-			y: -10.0d
+			x: 12.0d
+			y: -9.0d
 		}
 		{
 			dependencies: ["09442CBFAE004D94"]
@@ -508,8 +508,8 @@
 				item: "create:crushing_wheel"
 				type: "item"
 			}]
-			x: 14.0d
-			y: -7.0d
+			x: 12.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["31260A18E624D32A"]
@@ -519,8 +519,8 @@
 				item: "create:brass_sheet"
 				type: "item"
 			}]
-			x: 8.0d
-			y: -5.0d
+			x: 6.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["31260A18E624D32A"]
@@ -530,8 +530,8 @@
 				item: "thermal:gold_plate"
 				type: "item"
 			}]
-			x: 8.0d
-			y: -7.0d
+			x: 6.0d
+			y: -6.0d
 		}
 		{
 			dependencies: [
@@ -544,8 +544,8 @@
 				item: "create:precision_mechanism"
 				type: "item"
 			}]
-			x: 10.0d
-			y: -7.0d
+			x: 8.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["3406744FA850B181"]
@@ -556,8 +556,8 @@
 				item: "create:rotation_speed_controller"
 				type: "item"
 			}]
-			x: 12.0d
-			y: -7.0d
+			x: 10.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["4C0D8EF890D3BDAD"]
@@ -568,8 +568,8 @@
 				item: "botania:orechid"
 				type: "item"
 			}]
-			x: 16.0d
-			y: -11.0d
+			x: 14.0d
+			y: -10.0d
 		}
 		{
 			dependencies: ["4C0D8EF890D3BDAD"]
@@ -579,8 +579,8 @@
 				item: "botania:pure_daisy"
 				type: "item"
 			}]
-			x: 16.0d
-			y: -7.0d
+			x: 14.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["303F4CF8A59EF261"]
@@ -627,8 +627,8 @@
 					type: "item"
 				}
 			]
-			x: 18.0d
-			y: -7.0d
+			x: 16.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["6D70F7C0A3B3675A"]
@@ -655,8 +655,8 @@
 					type: "item"
 				}
 			]
-			x: 18.0d
-			y: -11.0d
+			x: 16.0d
+			y: -10.0d
 		}
 		{
 			dependencies: [
@@ -669,8 +669,8 @@
 				item: "createendertransmission:energy_transmitter"
 				type: "item"
 			}]
-			x: 12.0d
-			y: -9.0d
+			x: 10.0d
+			y: -8.0d
 		}
 		{
 			dependencies: ["4C0D8EF890D3BDAD"]
@@ -680,8 +680,8 @@
 				item: "botania:clayconia"
 				type: "item"
 			}]
-			x: 16.0d
-			y: -9.0d
+			x: 14.0d
+			y: -8.0d
 		}
 		{
 			dependencies: ["43F7ACC33A745553"]
@@ -691,8 +691,8 @@
 				item: "minecraft:clay_ball"
 				type: "item"
 			}]
-			x: 18.0d
-			y: -9.0d
+			x: 16.0d
+			y: -8.0d
 		}
 		{
 			dependencies: [
@@ -706,8 +706,8 @@
 				item: "botania:orechid_ignem"
 				type: "item"
 			}]
-			x: 16.0d
-			y: -13.0d
+			x: 14.0d
+			y: -12.0d
 		}
 		{
 			dependencies: ["07444DCB9C511F53"]
@@ -717,8 +717,8 @@
 				item: "minecraft:netherite_scrap"
 				type: "item"
 			}]
-			x: 18.0d
-			y: -13.0d
+			x: 16.0d
+			y: -12.0d
 		}
 	]
 	title: "{ftbq.r2aot.chapter1-2.start.title}"

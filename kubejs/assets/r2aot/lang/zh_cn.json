@@ -82,6 +82,7 @@
     "block.r2aot.modular_runic_altar_core": "模块化符文祭坛",
     "block.r2aot.controller_frame": "控制器框架",
     "block.r2aot.processing_mixer_core": "处理混合机",
+    "block.r2aot.fluid_sourcelink": "流体魔源通道",
 
     "r2aot.fertilizer_propagator_core": "花肥育瓣机",
     "r2aot.andesite_casing_maker_core": "安山机壳制造机",
@@ -196,12 +197,14 @@
     "tooltip.r2aot.kylin_arm_2": "挖掘速度提升至原来的十倍",
     "tooltip.r2aot.kylin_arm_3": "无视空中与水下的挖掘减速影响",
     "tooltip.r2aot.controller_frame_1": "合成时ME控制器不消耗",
+    "tooltip.ars.source_gem": "通过在灌注室灌注紫水晶获得。",
 
     "jei.information.r2aot.botania_fertilizer": "可以通过空手Shift+右键草方块获得（75%概率）",
     "jei.information.r2aot.blaze_burner": "§c一般燃烧§r:\n熔岩（每秒消耗1mb）\n\n§9超级燃烧§r:\n液态魔力（每秒消耗10mb）",
     "jei.information.r2aot.andesite_casing_maker_core": "在结构中使用安山合金对淡灰色花瓣块催化转换，详情查看思索",
     "jei.information.r2aot.elemental_altar_core": "在结构中使用元素符文对基础机器框架催化转换，详情查看思索",
     "jei.information.r2aot.cobble_gen_tier_1": "首个通过多方块结构合成获得，详情查看思索",
+    "jei.information.ars.glyph_lightning": "使用避雷针对抄写台右键十次引来闪电获得",
 
     "config.jade.plugin_r2aot.numerical_source": "魔源定量统计",
     "config.jade.plugin_r2aot.numerical_mana": "魔力定量统计",
@@ -213,6 +216,7 @@
 
     "message.r2aot.multiblock.incorrect": "结构不正确",
     "message.r2aot.tiab": "请先将时间瓶放入背包中！",
+    "message.r2aot.lightning_rod_clicks": "已点击 %s/10 次",
 
     "ftbq.r2aot.capsule.text": "§b点击查看胶囊",
     "ftbq.r2aot.capsule.click": "点击跳转",
@@ -297,6 +301,13 @@
     "ftbq.r2aot.chapter2-4.smithing_template_desc_1": "自动化使用AE递归合成或量子合成器",
     "ftbq.r2aot.chapter2-4.thermal_alloy2_title": "热力二级合金",
     "ftbq.r2aot.chapter2-4.luxvoid_alloy_subtitle": "使用符文祭坛制作需1/4池魔力",
+
+    "ftbq.r2aot.chapter2-5.start.title": "第五节",
+    "ftbq.r2aot.chapter2-5.novice_spell_book_1": "手持魔符&6右键&r以学习它",
+    "ftbq.r2aot.chapter2-5.novice_spell_book_2": "手持初学者法术书按 &bC&r 键打开法术页面",
+    "ftbq.r2aot.chapter2-5.novice_spell_book_3": "&6依次&r选择第一栏的&6弹射物&r和第三栏的&6闪电&r，点击右下角&6制作&r后退出页面",
+    "ftbq.r2aot.chapter2-5.novice_spell_book_4": "手持初学者法术书&6按住&r &bV&r 键选择刚刚制作的法术",
+    "ftbq.r2aot.chapter2-5.novice_spell_book_5": "右键地面，释放法术",
 
     "patchouli.gui.lexicon.r2aot_book": "R2AoT 书",
     "patchouli.gui.lexicon.r2aot_book.text": "这是R2AoT的书",

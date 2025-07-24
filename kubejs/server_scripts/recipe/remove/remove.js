@@ -91,7 +91,8 @@ ServerEvents.recipes(event => {
         'thermal:augments/upgrade_augment_2',
         'thermal:augments/upgrade_augment_3',
         'botania:terra_plate',
-
+        'ars_nouveau:glyph_lightning',
+        'ars_nouveau:imbuement_lapis',
     ]
     recipesToRemoveID.forEach((recipes) => {
         event.remove({id:recipes});

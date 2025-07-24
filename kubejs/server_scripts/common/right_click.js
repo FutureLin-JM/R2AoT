@@ -1,3 +1,4 @@
+// 花肥
 BlockEvents.rightClicked('minecraft:grass_block', (event) => {
     const { block, hand, player, item } = event;
     if (hand != "MAIN_HAND") return;
@@ -15,6 +16,7 @@ BlockEvents.rightClicked('minecraft:grass_block', (event) => {
     }
 });
 
+// 深度学习
 BlockEvents.rightClicked('r2aot:data_model_base', event => {
     const { hand, block, player, level, item } = event;
     const biologyTypes = ['sheep', 'vindicator', 'blaze', 'chicken', 'cow', 'creeper', 'enderman', 'ghast', 'skeleton', 'slime', 'spider'];
@@ -38,6 +40,7 @@ BlockEvents.rightClicked('r2aot:data_model_base', event => {
     })
 });
 
+// 圆石制造机
 BlockEvents.rightClicked('r2aot:double_compressed_cobblestone', event => {
     const { hand, block, player, level, item } = event;
 
@@ -62,6 +65,7 @@ BlockEvents.rightClicked('r2aot:double_compressed_cobblestone', event => {
     }
 });
 
+// 泰拉凝聚板检查
 BlockEvents.rightClicked('botania:terra_plate', event => {
     const { hand, block, item, player } = event;
 
@@ -75,6 +79,45 @@ BlockEvents.rightClicked('botania:terra_plate', event => {
     }
 });
 
+// 魔符：闪电
+BlockEvents.rightClicked('ars_nouveau:scribes_table', event => {
+    const { hand, block, item, player, level } = event;
+    const now = Date.now();
+    const MAX_INTERVAL = 5000;
+
+    if (hand != 'MAIN_HAND' || item.id != 'minecraft:lightning_rod') return;
+
+    const lastClickTime = player.persistentData.getLong('glyph_last_click_time') || 0;
+    const timeSinceLastClick = now - lastClickTime;
+
+    if (timeSinceLastClick > MAX_INTERVAL) {
+        player.persistentData.putInt('lightning_rod_clicks', 1);
+        player.statusMessage = Text.translate('message.r2aot.lightning_rod_clicks', '1');
+    } else {
+        let clickCount = player.persistentData.contains('lightning_rod_clicks') ? player.persistentData.getInt('lightning_rod_clicks') : 0;
+        clickCount++;
+        player.persistentData.putInt('lightning_rod_clicks', clickCount);
+        player.statusMessage = Text.translate('message.r2aot.lightning_rod_clicks', clickCount.toString());
+    }
+
+    player.persistentData.putLong('glyph_last_click_time', now);
+    player.swing();
+
+    if (player.persistentData.getInt('lightning_rod_clicks') >= 10) {
+        player.persistentData.putInt('lightning_rod_clicks', 0);
+        const lightning = level.createEntity('lightning_bolt');
+        lightning.setPos(block.pos.x, block.pos.y, block.pos.z);
+        lightning.spawn();
+
+        level.destroyBlock(block.pos, false);
+        player.give('ars_nouveau:glyph_lightning');
+        item.count--;
+    };
+
+    event.cancel();
+});
+
+// 时间兑换劵
 ItemEvents.rightClicked('r2aot:time_voucher', event => {
     const { hand, item, player } = event;
     if (hand != 'MAIN_HAND') return;
@@ -85,7 +128,7 @@ ItemEvents.rightClicked('r2aot:time_voucher', event => {
         player.swing();
     }
     else {
-        player.tell(Text.translatable('message.r2aot.tiab'));
+        player.tell(Text.translate('message.r2aot.tiab'));
     }
 });
 

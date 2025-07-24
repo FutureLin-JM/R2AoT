@@ -56,8 +56,8 @@
 					type: "item"
 				}
 			]
-			x: 0.0d
-			y: 2.0d
+			x: -2.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["0DAE925DF35111D0"]
@@ -111,8 +111,8 @@
 				}
 			]
 			title: "{ftbq.r2aot.chapter2-4.thermal_ore.title}"
-			x: 0.0d
-			y: 4.0d
+			x: -4.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["0181B226C2493004"]
@@ -183,8 +183,8 @@
 				}
 			]
 			title: "{ftbq.r2aot.chapter2-4.thermal_alloy1_title}"
-			x: 4.0d
-			y: 8.0d
+			x: -4.0d
+			y: 2.0d
 		}
 		{
 			dependencies: [
@@ -215,8 +215,8 @@
 				}
 			]
 			title: "{ftbq.r2aot.chapter2-4.thermal_alloy_seeds_title}"
-			x: 6.0d
-			y: 8.0d
+			x: -2.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["6390FAD8CD2CCD9D"]
@@ -244,8 +244,8 @@
 				}
 			]
 			title: "{ftbq.r2aot.chapter2-4.thermal_alloy_essence_title}"
-			x: 8.0d
-			y: 8.0d
+			x: 0.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["640E3BB6881A6144"]
@@ -281,8 +281,8 @@
 				}
 			]
 			title: "{ftbq.r2aot.chapter2-4.thermal_molten_alloy_title}"
-			x: 10.0d
-			y: 8.0d
+			x: 2.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["0181B226C2493004"]
@@ -324,8 +324,8 @@
 					type: "item"
 				}
 			]
-			x: 0.0d
-			y: 6.0d
+			x: -6.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["59F23C3D5935C257"]
@@ -540,7 +540,8 @@
 		{
 			dependencies: ["63B8C47EC8226BEC"]
 			id: "5D1E91FC23D1D31B"
-			subtitle: "{\"translate\":\"ftbq.r2aot.capsule.text\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"5DBE62C3DE335D97\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"ftbq.r2aot.capsule.click\"}}}"
+			shape: "diamond"
+			size: 1.5d
 			tasks: [{
 				id: "69BB69D5B56858AF"
 				item: "botania:terra_plate"

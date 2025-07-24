@@ -1,0 +1,150 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "chapter2-5"
+	group: "1483CABC0DC8D7C6"
+	icon: "botania:terra_plate"
+	id: "65D0FE6A912831D7"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			id: "60D28A21492EA6D6"
+			shape: "gear"
+			size: 1.5d
+			subtitle: "{\"translate\":\"ftbq.r2aot.capsule.text\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"5DBE62C3DE335D97\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"ftbq.r2aot.capsule.click\"}}}"
+			tasks: [{
+				id: "627718F6EACA5E12"
+				item: "botania:terra_plate"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["60D28A21492EA6D6"]
+			id: "5AA3B0A7A72A15AC"
+			tasks: [{
+				id: "50EC3CA90D3B7D32"
+				item: "botania:terrasteel_ingot"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5AA3B0A7A72A15AC"]
+			id: "2735966E0329E923"
+			tasks: [
+				{
+					id: "7953FE77BC5B51A4"
+					item: "ars_nouveau:blue_archwood_sapling"
+					type: "item"
+				}
+				{
+					id: "190AA6A594647F00"
+					item: "ars_nouveau:red_archwood_sapling"
+					type: "item"
+				}
+				{
+					id: "6FCA7E673A9CB2F3"
+					item: "ars_nouveau:purple_archwood_sapling"
+					type: "item"
+				}
+				{
+					id: "2E09D731A034049E"
+					item: "ars_nouveau:green_archwood_sapling"
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2735966E0329E923"]
+			id: "5CBD186871BCEEC9"
+			tasks: [{
+				id: "5271C76FB0A29A54"
+				item: "ars_nouveau:scribes_table"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["5CBD186871BCEEC9"]
+			description: [
+				"{ftbq.r2aot.chapter2-5.novice_spell_book_1}"
+				""
+				"{ftbq.r2aot.chapter2-5.novice_spell_book_2}"
+				"{ftbq.r2aot.chapter2-5.novice_spell_book_3}"
+				""
+				"{ftbq.r2aot.chapter2-5.novice_spell_book_4}"
+				"{ftbq.r2aot.chapter2-5.novice_spell_book_5}"
+			]
+			icon: "ars_nouveau:glyph_lightning"
+			id: "1E2FDC17F7379463"
+			rewards: [{
+				id: "1BD1D1DF38F3399D"
+				item: {
+					Count: 1
+					id: "ars_nouveau:novice_spell_book"
+					tag: { }
+				}
+				type: "item"
+			}]
+			subtitle: "{jei.information.ars.glyph_lightning}"
+			tasks: [
+				{
+					id: "0E02D1423FDF53D5"
+					item: "ars_nouveau:glyph_lightning"
+					type: "item"
+				}
+				{
+					id: "5F189B0F2B451C67"
+					item: { Count: 56, id: "minecraft:lightning_rod" }
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["1E2FDC17F7379463"]
+			id: "0F6C019EAEA0BAEB"
+			tasks: [{
+				id: "10312E3AB83DC969"
+				item: "minecraft:amethyst_shard"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["2735966E0329E923"]
+			id: "2D910ADB5A76D799"
+			tasks: [{
+				id: "658869484FF52CC7"
+				item: "ars_nouveau:imbuement_chamber"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"2D910ADB5A76D799"
+				"0F6C019EAEA0BAEB"
+			]
+			id: "77C927E295D0BA8E"
+			tasks: [{
+				id: "01F9BF061B99AE72"
+				item: "ars_nouveau:source_gem"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 0.0d
+		}
+	]
+	title: "{ftbq.r2aot.chapter2-5.start.title}"
+}

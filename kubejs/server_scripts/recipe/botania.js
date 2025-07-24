@@ -162,35 +162,43 @@ ServerEvents.recipes(event => {
     }
 
 
-    runicAltarRecipes('2x botania:rune_water',
+    runicAltarRecipes(
+        '2x botania:rune_water',
         ['botania:mana_powder', '#botania:manasteel_ingots', 'mysticalagriculture:water_essence', 'minecraft:sugar_cane', 'minecraft:fishing_rod'],
         5200
     );
-    runicAltarRecipes('2x botania:rune_fire',
+    runicAltarRecipes(
+        '2x botania:rune_fire',
         ['botania:mana_powder', '#botania:manasteel_ingots', 'mysticalagriculture:fire_essence', 'minecraft:nether_brick', 'minecraft:glowstone_dust'],
         5200
     );
-    runicAltarRecipes('2x botania:rune_earth',
+    runicAltarRecipes(
+        '2x botania:rune_earth',
         ['botania:mana_powder', '#botania:manasteel_ingots', 'mysticalagriculture:earth_essence', 'minecraft:coal_block', 'minecraft:stone'],
         5200
     );
-    runicAltarRecipes('2x botania:rune_air',
+    runicAltarRecipes(
+        '2x botania:rune_air',
         ['botania:mana_powder', '#botania:manasteel_ingots', 'mysticalagriculture:air_essence', 'minecraft:string', '#minecraft:wool_carpets'],
         5200
     );
-    runicAltarRecipes('r2aot:rune_elemental',
+    runicAltarRecipes(
+        'r2aot:rune_elemental',
         ['botania:rune_water', 'botania:rune_fire', 'botania:rune_earth', 'botania:rune_air'],
         8000
     );
-    runicAltarRecipes('thermal:machine_frame', 
+    runicAltarRecipes(
+        'thermal:machine_frame', 
         Array(4).fill('minecraft:iron_ingot').concat(Array(2).fill('#forge:glass')).concat('r2aot:rune_elemental')
     );
-    runicAltarRecipes('r2aot:tertium_crop_seed',
+    runicAltarRecipes(
+        'r2aot:tertium_crop_seed',
         ['mysticalagriculture:bronze_essence', 'mysticalagriculture:electrum_essence', 'mysticalagriculture:invar_essence','mysticalagriculture:constantan_essence', 
         'mysticalagriculture:prudentium_block', 'botania:mana_diamond_block', 'botania:manasteel_block'],
         8000
     );
-    runicAltarRecipes('r2aot:luxvoid_alloy',
+    runicAltarRecipes(
+        'r2aot:luxvoid_alloy',
         ['thermal:lumium_ingot', 'thermal:signalum_ingot', 'thermal:enderium_ingot'],
         250000
     );
@@ -207,7 +215,8 @@ ServerEvents.recipes(event => {
 
     }
 
-    terraPlateRecipes('r2aot:luxvoid_alloy',
+    terraPlateRecipes(
+        'r2aot:luxvoid_alloy',
         ['thermal:lumium_ingot', 'thermal:signalum_ingot', 'thermal:enderium_ingot'],
         50000
     )

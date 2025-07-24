@@ -24,6 +24,8 @@
 !config/skyblockbuilder/templates.json5
 !config/skyblockbuilder/permissions.json5
 !config/botania-client.toml
+!config/ars_nouveau/
+!config/ars_nouveau/glyph_lightning.toml
 
 # DefaultConfigs
 !defaultconfigs/
