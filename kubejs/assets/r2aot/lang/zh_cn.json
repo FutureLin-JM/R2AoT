@@ -206,6 +206,9 @@
     "jei.information.r2aot.cobble_gen_tier_1": "首个通过多方块结构合成获得，详情查看思索",
     "jei.information.ars.glyph_lightning": "使用避雷针对抄写台右键十次引来闪电获得",
 
+    "jei.r2aot.fluid_sourcelink": "流体魔源通道",
+    "jei.desc.r2aot.fluid_sourcelink.source": "%s 魔源",
+
     "config.jade.plugin_r2aot.numerical_source": "魔源定量统计",
     "config.jade.plugin_r2aot.numerical_mana": "魔力定量统计",
     "jade.tooltip.source": "魔源: %s",
