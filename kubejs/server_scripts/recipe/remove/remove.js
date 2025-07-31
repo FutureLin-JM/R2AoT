@@ -93,6 +93,7 @@ ServerEvents.recipes(event => {
         'botania:terra_plate',
         'ars_nouveau:glyph_lightning',
         'ars_nouveau:imbuement_lapis',
+        'avaritia:botania_creative_pool',
     ]
     recipesToRemoveID.forEach((recipes) => {
         event.remove({id:recipes});

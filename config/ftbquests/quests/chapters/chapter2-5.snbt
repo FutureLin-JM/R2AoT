@@ -62,12 +62,20 @@
 		}
 		{
 			dependencies: ["2735966E0329E923"]
+			icon: "ars_nouveau:scribes_table"
 			id: "5CBD186871BCEEC9"
-			tasks: [{
-				id: "5271C76FB0A29A54"
-				item: "ars_nouveau:scribes_table"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "5271C76FB0A29A54"
+					item: "ars_nouveau:scribes_table"
+					type: "item"
+				}
+				{
+					id: "3BD0696A64271B43"
+					item: "minecraft:lightning_rod"
+					type: "item"
+				}
+			]
 			x: 4.0d
 			y: 2.0d
 		}
@@ -94,18 +102,11 @@
 				type: "item"
 			}]
 			subtitle: "{jei.information.ars.glyph_lightning}"
-			tasks: [
-				{
-					id: "0E02D1423FDF53D5"
-					item: "ars_nouveau:glyph_lightning"
-					type: "item"
-				}
-				{
-					id: "5F189B0F2B451C67"
-					item: { Count: 56, id: "minecraft:lightning_rod" }
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "0E02D1423FDF53D5"
+				item: "ars_nouveau:glyph_lightning"
+				type: "item"
+			}]
 			x: 6.0d
 			y: 2.0d
 		}
@@ -143,6 +144,17 @@
 				type: "item"
 			}]
 			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["77C927E295D0BA8E"]
+			id: "258D87D56FC7EA92"
+			tasks: [{
+				id: "73233C7EC249AE6B"
+				item: "r2aot:fluid_sourcelink"
+				type: "item"
+			}]
+			x: 10.0d
 			y: 0.0d
 		}
 	]

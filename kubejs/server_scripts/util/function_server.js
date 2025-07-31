@@ -41,7 +41,7 @@ function hasTimeInABottle(player) {
  * 1. type表示配方类型（可选）
  * 2. name以(主要)输出物品为主，冲突时使用'XX_by_yy'/'XX_from_YY'等说明
  * 3. 原版合成台配方：
- *    - name: 'modid_item'（原版/Kubejs物品或无歧义物品）
+ *    - name: 'modid_item'（原版/Kubejs物品或无歧义物品无需modid）
  *    - type: 输入物品明确指向某模组时使用模组ID
  */
 /**

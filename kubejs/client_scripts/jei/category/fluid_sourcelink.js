@@ -16,7 +16,6 @@ JEIAddedEvents.registerCategories(event => {
             })
             .setDrawHandler((recipe, recipeSlotsView, guiGraphics, mouseX, mouseY) => {
                 let sourceText = Text.translate('jei.desc.r2aot.fluid_sourcelink.source', recipe.data.source.toFixed(0))
-                // let sourceText = Text.translate('%s Source', recipe.data.source.toFixed(0))
                 guiGraphics.drawWordWrap(Client.font, sourceText, 40, 16, 65, 0)
             })
     })
