@@ -1,6 +1,6 @@
 {
 	"parent": "r2aot:block/pedestal_base",
 	"textures": {
-		"pedestal": "r2aot:block/pedestal"
+		"pedestal": "r2aot:block/pedestal_botania"
 	}
 }

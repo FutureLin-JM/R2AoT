@@ -13,13 +13,13 @@ BlockEvents.rightClicked('r2aot:fluid_input', event => {
     if (!stack.isEmpty()) {
         stack.getCapability(ForgeCapabilities.FLUID_HANDLER_ITEM).ifPresent(iFluidHandlerItem => {
             player.getCapability(ForgeCapabilities.ITEM_HANDLER).ifPresent(itemHandler => {
-                const amount = player.isCrouching() ? 9000 : 1000
+                // const amount = player.isCrouching() ? 9000 : 1000
                 
                 const result = FluidUtil.tryEmptyContainerAndStow(
                     stack,
                     fluidCap,
                     itemHandler,
-                    amount,
+                    2147483647,
                     player,
                     true
                 )
@@ -50,13 +50,13 @@ BlockEvents.rightClicked('r2aot:fluid_input', event => {
         if (!stack.isEmpty()) {
             stack.getCapability(ForgeCapabilities.FLUID_HANDLER_ITEM).ifPresent(iFluidHandlerItem => {
                 player.getCapability(ForgeCapabilities.ITEM_HANDLER).ifPresent(itemHandler => {
-                    const amount = player.isCrouching() ? 9000 : 1000
+                    // const amount = player.isCrouching() ? 9000 : 1000
                     
                     const result = FluidUtil.tryFillContainerAndStow(
                         stack,
                         fluidCap,
                         itemHandler,
-                        amount,
+                        2147483647,
                         player,
                         true
                     )

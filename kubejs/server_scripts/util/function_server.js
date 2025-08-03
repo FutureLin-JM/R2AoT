@@ -1,7 +1,8 @@
 // priority: 50
 
 /**
- * 为机器添加右键点击取出物品的功能
+ * 为机器添加空手右键取出物品的功能
+ * @param {Internal.BlockRightClickedEventJS} event 
  */
 function setItemExtract(event) {
     const { hand, block, item, player } = event;

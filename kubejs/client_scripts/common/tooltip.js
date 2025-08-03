@@ -35,6 +35,7 @@ ItemEvents.tooltip((event) => {
         {id: 'r2aot:atomic_reconstructor', key: 'tooltip.r2aot.atomic_reconstructor', lines: 3},
         {id: 'r2aot:processing_mixer_core', key: 'tooltip.r2aot.processing_mixer_core', lines: 2},
         {id: 'botania:terra_plate', key: 'tooltip.botania.terra_plate', lines: 2},
+        {id: 'r2aot:fluid_sourcelink', key: 'tooltip.r2aot.fluid_sourcelink', lines: 3}
     ];
     shiftTooltips.forEach((item) => {
         addShiftTooltip(event, item.id, item.key, item.lines);
