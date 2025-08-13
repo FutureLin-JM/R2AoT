@@ -1,7 +1,7 @@
 Ponder.registry(event => {
     event
         .create('r2aot:elemental_altar_core')
-        .scene("r2aot:elemental_altar", "元素祭坛", "r2aot:elemental_altar", (scene, util) => {
+        .scene("elemental_altar", "元素祭坛", "r2aot:elemental_altar", (scene, util) => {
             scene.setSceneOffsetY(-1);
             scene.scaleSceneView(0.8);
             scene.showBasePlate();

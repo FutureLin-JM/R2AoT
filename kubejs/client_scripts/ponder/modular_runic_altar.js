@@ -26,11 +26,13 @@ Ponder.registry(event => {
 
             scene.text(45, '第一层磨制活石可以替换成物品输入/输出仓').attachKeyFrame();
             scene.overlay.showOutline("red", {}, [5, 1, 3], 30);
-            scene.overlay.showOutline("red", {}, [5, 1, 8], 30);
+            scene.overlay.showOutline("red", {}, [5, 1, 7], 30);
+            scene.overlay.showOutline("red", {}, [3, 1, 5], 30);
+            scene.overlay.showOutline("red", {}, [7, 1, 5], 30);
             scene.idle(5);
 
             scene.world.setBlocks([5, 1, 3], 'r2aot:item_input');
-            scene.world.setBlocks([5, 1, 8], 'r2aot:item_output');
+            scene.world.setBlocks([5, 1, 7], 'r2aot:item_output');
 
             scene.idle(45);
             scene.text(100, '可前往「胶囊」章节获取胶囊来快速放置这个结构'); 

@@ -2,7 +2,7 @@ Ponder.registry(event => {
     let sheepDateModel = Item.of('hostilenetworks:data_model', '{data_model:{data:1254,id:"hostilenetworks:sheep"}}');
     event
         .create('r2aot:data_model_base')
-        .scene("r2aot:data_model", "数据模型", "r2aot:data_model", (scene, util) => {
+        .scene("data_model", "数据模型", "r2aot:data_model", (scene, util) => {
             scene.setSceneOffsetY(-1);
             scene.scaleSceneView(0.8);
             scene.showBasePlate();

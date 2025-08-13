@@ -1,8 +1,9 @@
 ServerEvents.blockLootTables(event => {
     /**
      * 设置方块的战利品表，根据使用的工具决定掉落物品数量
-     * @param {string} blockId - 要修改的方块ID
-     * @param {string} lootId - 掉落的物品ID
+     * @param {Internal.BlockLootEventJS} event
+     * @param {BlockStatePredicate_} blockId - 要修改的方块ID
+     * @param {Internal.ItemStack_} lootId - 掉落的物品ID
      * @param {Object.<string, [number, number]>} toolRanges - 工具与掉落数量的映射表
      * @example
      * // 格式：
@@ -56,8 +57,9 @@ ServerEvents.blockLootTables(event => {
     
     /**
      * 设置方块的战利品表，根据工具决定概率掉落指定物品或自身
-     * @param {string} blockId - 要修改的方块ID
-     * @param {string} lootId - 概率掉落的物品ID
+     * @param {Internal.BlockLootEventJS} event
+     * @param {BlockStatePredicate_} blockId - 要修改的方块ID
+     * @param {Internal.ItemStack_} lootId - 掉落的物品ID
      * @param {Object.<string, [number, number]>} toolWeights - 工具与权重配置数组[掉落物品权重, 方块自身权重]
      * // 格式：
      * {
@@ -111,5 +113,13 @@ ServerEvents.blockLootTables(event => {
     setWeightBasedLoot(event, 'minecraft:gravel', 'minecraft:sand', {
         'r2aot:wooden_hammer': [6,4] ,
         'r2aot:stone_hammer': [9,1],
+    });
+
+    ['r2aot:pedestal_botania', 'r2aot:pedestal_ars'].forEach(machine => {
+        event.modifyBlock(machine, loot => {
+            loot.addPool(pool => {
+                pool.addItem('r2aot:pedestal')
+            })
+        })
     })
 })

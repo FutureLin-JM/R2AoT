@@ -83,6 +83,8 @@
     "block.r2aot.controller_frame": "控制器框架",
     "block.r2aot.processing_mixer_core": "处理混合机",
     "block.r2aot.fluid_sourcelink": "流体魔源通道",
+    "block.r2aot.pedestal_botania": "植物魔法基座",
+    "block.r2aot.pedestal_ars": "新生魔艺基座",
 
     "r2aot.fertilizer_propagator_core": "花肥育瓣机",
     "r2aot.andesite_casing_maker_core": "安山机壳制造机",
@@ -97,6 +99,8 @@
     "r2aot.atomic_reconstructor": "原子再构",
     "r2aot.modular_runic_altar_core": "模块化符文祭坛",
     "r2aot.processing_mixer_core": "处理混合机",
+    "r2aot.pedestal_botania": "植物魔法基座",
+    "r2aot.pedestal_ars": "新生魔艺基座",
 
     "fluid.r2aot.petal_essence": "花瓣原液",
     "block.r2aot.petal_essence": "花瓣原液",
@@ -176,6 +180,10 @@
     "tooltip.r2aot.fluid_sourcelink_1": "消耗流体以产生魔源,并传输至半径6格以内的魔源罐",
     "tooltip.r2aot.fluid_sourcelink_2": "可转化流体和转化比例查看JEI",
     "tooltip.r2aot.fluid_sourcelink_3": "底部可自动输入流体",
+    "tooltip.r2aot.pedestal_ars_1": "类似白雏菊，将石英块转化为魔源石",
+    "tooltip.r2aot.pedestal_ars_2": "将魔源宝石放入物品基座中，使用扳手右键物品基座激活",
+    "tooltip.r2aot.pedestal_botania_1": "类似白雏菊，将活石转化为微光石",
+    "tooltip.r2aot.pedestal_botania_2": "将彩虹桥法杖放入物品基座中，使用扳手右键物品基座激活",
 
     "tooltip.r2aot.ae2_facade_1": "JEI隐藏了伪装板",
     "tooltip.r2aot.ae2_facade_2": "但依然可以合成",

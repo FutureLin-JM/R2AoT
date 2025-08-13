@@ -492,14 +492,13 @@
 					id: "57CB1DF14CFA4604"
 					observe_type: 0
 					timer: 0L
-					title: "{ftbq.r2aot.observe.title}{block.r2aot.andesite_casing_maker_core}"
+					title: "{ftbq.r2aot.observe.title}&a{block.r2aot.andesite_casing_maker_core}"
 					to_observe: "r2aot:andesite_casing_maker_core"
 					type: "observation"
 				}
 				{
-					id: "2C9731C37B237AFF"
+					id: "56A8B768B39DD535"
 					item: "r2aot:andesite_casing_maker_core"
-					optional_task: true
 					type: "item"
 				}
 			]

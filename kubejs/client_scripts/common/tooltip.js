@@ -1,3 +1,9 @@
+/**
+ * @param {Internal.ItemTooltipEventJS} event
+ * @param {Internal.Ingredient_} itemId
+ * @param {string} tooltipKey
+ * @param {number} lines
+ */
 function addShiftTooltip(event, itemId, tooltipKey, lines) {
     event.addAdvanced(itemId, (item, advanced, text) => {
         if (!event.shift) {
@@ -13,6 +19,12 @@ function addShiftTooltip(event, itemId, tooltipKey, lines) {
     });
 }
 
+/**
+ * @param {Internal.ItemTooltipEventJS} event
+ * @param {Internal.Ingredient_} itemId
+ * @param {string} tooltipKey
+ * @param {number} lines
+ */
 function addLinesTooltip(event, itemId, tooltipKey, lines) {
     event.addAdvanced(itemId, (item, advanced, text) => {
         for (let i = 1; i <= lines; i++) {
@@ -35,7 +47,9 @@ ItemEvents.tooltip((event) => {
         {id: 'r2aot:atomic_reconstructor', key: 'tooltip.r2aot.atomic_reconstructor', lines: 3},
         {id: 'r2aot:processing_mixer_core', key: 'tooltip.r2aot.processing_mixer_core', lines: 2},
         {id: 'botania:terra_plate', key: 'tooltip.botania.terra_plate', lines: 2},
-        {id: 'r2aot:fluid_sourcelink', key: 'tooltip.r2aot.fluid_sourcelink', lines: 3}
+        {id: 'r2aot:fluid_sourcelink', key: 'tooltip.r2aot.fluid_sourcelink', lines: 3},
+        {id: 'r2aot:pedestal_ars', key: 'tooltip.r2aot.pedestal_ars', lines: 2},
+        {id: 'r2aot:pedestal_botania', key: 'tooltip.r2aot.pedestal_botania', lines: 2},
     ];
     shiftTooltips.forEach((item) => {
         addShiftTooltip(event, item.id, item.key, item.lines);

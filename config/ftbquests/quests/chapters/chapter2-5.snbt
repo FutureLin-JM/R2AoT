@@ -157,6 +157,29 @@
 			x: 10.0d
 			y: 0.0d
 		}
+		{
+			dependencies: ["77C927E295D0BA8E"]
+			icon: "r2aot:pedestal_ars"
+			id: "0F1849A58EC76B8E"
+			tasks: [
+				{
+					id: "18749ACAD8162F65"
+					observe_type: 1
+					timer: 0L
+					title: "{ftbq.r2aot.observe.title}&a{block.r2aot.pedestal_ars}"
+					to_observe: "r2aot:pedestal_ars"
+					type: "observation"
+				}
+				{
+					id: "450BE4C0C8C3FB78"
+					item: "r2aot:pedestal_ars"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 8.0d
+			y: -2.0d
+		}
 	]
 	title: "{ftbq.r2aot.chapter2-5.start.title}"
 }
