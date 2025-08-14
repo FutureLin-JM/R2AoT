@@ -167,6 +167,7 @@ ServerEvents.recipes(event => {
     milling(['create:zinc_ingot', Item.of('create:zinc_nugget').withChance(0.75)], 'r2aot:petal_zinc_ore').id(kjs('milling', 'petal_zinc_ore'));
     milling([Item.of('minecraft:quartz').withCount(2), Item.of('minecraft:quartz').withCount(2).withChance(0.75)], 'r2aot:petal_quartz_ore').id(kjs('milling', 'petal_quartz_ore'));
     milling(['2x ae2:sky_dust', Item.of('ae2:sky_dust').withChance(0.5)], 'ae2:sky_stone_block').id('create:milling/compat/ae2/sky_stone_block')
+    milling('4x minecraft:pointed_dripstone', 'minecraft:dripstone_block').id(kjs('milling', 'pointed_dripstone'))
 
     deploying('create:brass_casing', ['create:andesite_casing', 'create:brass_ingot']).id(kjs('deploying', 'brass_casing'));
     deploying('ae2:printed_silicon', ['ae2:silicon', 'ae2:silicon_press']).keepHeldItem().id(kjs('deploying', 'printed_silicon'));

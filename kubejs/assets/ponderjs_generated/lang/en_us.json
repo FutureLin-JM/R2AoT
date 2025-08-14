@@ -15,6 +15,10 @@
   "kubejs.ponder.cobble_gen.text_4": "第 3 层",
   "kubejs.ponder.cobble_gen.text_5": "使手持花瓣原液 桶对二重压缩圆石右键",
   "kubejs.ponder.cobble_gen.text_6": "可前往「胶囊」章节获取胶囊来快速放置这个结构",
+  "kubejs.ponder.data_model.header": "数据模型",
+  "kubejs.ponder.data_model.text_1": "部分数据模型可以由多方块结构获得\n下面用绵羊数据模型示范",
+  "kubejs.ponder.data_model.text_2": "空手右键数据模型基座",
+  "kubejs.ponder.data_model.text_3": "可前往「敌对神经网络」章节获取胶囊来快速放置相关结构",
   "kubejs.ponder.elemental_altar.header": "元素祭坛",
   "kubejs.ponder.elemental_altar.text_1": "这是一个多方块结构",
   "kubejs.ponder.elemental_altar.text_2": "第 1 层",
@@ -45,6 +49,11 @@
   "kubejs.ponder.pedestal_ars.text_2": "使用任意扳手右键物品基座激活",
   "kubejs.ponder.pedestal_ars.text_3": "在3x3的范围放置石英块",
   "kubejs.ponder.pedestal_ars.text_4": "类似白雏菊，石英块会被转化为魔源石",
+  "kubejs.ponder.pedestal_botania.header": "植物魔法基座转化",
+  "kubejs.ponder.pedestal_botania.text_1": "将彩虹桥法杖放入物品基座中",
+  "kubejs.ponder.pedestal_botania.text_2": "使用任意扳手右键物品基座激活",
+  "kubejs.ponder.pedestal_botania.text_3": "在3x3的范围放置活石",
+  "kubejs.ponder.pedestal_botania.text_4": "类似白雏菊，活石会被转化为微光石",
   "kubejs.ponder.stress_generator.header": "应力发电机",
   "kubejs.ponder.stress_generator.text_1": "这是一个多方块结构",
   "kubejs.ponder.stress_generator.text_2": "第 1 层",
@@ -63,9 +72,5 @@
   "kubejs.ponder.terrestrial_agglomeration_altar.text_5": "第 4 层",
   "kubejs.ponder.terrestrial_agglomeration_altar.text_6": "第 5 层",
   "kubejs.ponder.terrestrial_agglomeration_altar.text_7": "合成时有50%概率消耗一格液态魔力",
-  "kubejs.ponder.terrestrial_agglomeration_altar.text_8": "可前往「胶囊」章节获取胶囊来快速放置这个结构",
-  "kubejs.ponder.data_model.header": "数据模型",
-  "kubejs.ponder.data_model.text_1": "部分数据模型可以由多方块结构获得\n下面用绵羊数据模型示范",
-  "kubejs.ponder.data_model.text_2": "空手右键数据模型基座",
-  "kubejs.ponder.data_model.text_3": "可前往「敌对神经网络」章节获取胶囊来快速放置相关结构"
+  "kubejs.ponder.terrestrial_agglomeration_altar.text_8": "可前往「胶囊」章节获取胶囊来快速放置这个结构"
 }

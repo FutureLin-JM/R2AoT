@@ -154,8 +154,8 @@
 				item: "r2aot:fluid_sourcelink"
 				type: "item"
 			}]
-			x: 10.0d
-			y: 0.0d
+			x: 8.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["77C927E295D0BA8E"]
@@ -177,8 +177,48 @@
 					type: "item"
 				}
 			]
-			x: 8.0d
-			y: -2.0d
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0F1849A58EC76B8E"]
+			id: "4A268476F2831F0C"
+			tasks: [{
+				id: "1ED07B9420A8335B"
+				item: "ars_nouveau:sourcestone"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4A268476F2831F0C"]
+			id: "6A6A7638F93E2B31"
+			tasks: [
+				{
+					id: "240EAAE010B55E77"
+					item: "ars_nouveau:enchanting_apparatus"
+					type: "item"
+				}
+				{
+					id: "3759A57BDF5FBCDB"
+					item: "ars_nouveau:arcane_core"
+					type: "item"
+				}
+			]
+			x: 14.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6A6A7638F93E2B31"]
+			id: "6E6B9F55A49B24A1"
+			tasks: [{
+				id: "01B55AE0F62A431A"
+				item: "minecraft:dripstone_block"
+				type: "item"
+			}]
+			x: 14.0d
+			y: 2.0d
 		}
 	]
 	title: "{ftbq.r2aot.chapter2-5.start.title}"

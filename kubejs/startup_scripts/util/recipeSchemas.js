@@ -56,4 +56,14 @@ StartupEvents.recipeSchemaRegistry(event => {
         )
     );
 
+    event.register(
+        'ars_nouveau:enchanting_apparatus',
+        new $RecipeSchema(
+            components.get('inputItemArray')().key('pedestalItems'),
+            components.get('inputItemArray')().key('reagent'),
+            components.get('outputItem')().key('output'),
+            components.get('intNumber')().key('sourceCost').optional(0),
+            components.get('bool')().key('keepNbtOfReagent').optional(false)
+        )
+    );
 })

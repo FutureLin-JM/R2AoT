@@ -94,6 +94,9 @@ ServerEvents.recipes(event => {
         'ars_nouveau:glyph_lightning',
         'ars_nouveau:imbuement_lapis',
         'avaritia:botania_creative_pool',
+        'ars_nouveau:sourcestone',
+        'create:milling/dripstone_block',
+
     ]
     recipesToRemoveID.forEach((recipes) => {
         event.remove({id:recipes});
