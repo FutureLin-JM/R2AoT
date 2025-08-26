@@ -1,0 +1,38 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "utility"
+	group: ""
+	id: "0EA0300FF64A94AC"
+	order_index: 2
+	quest_links: [ ]
+	quests: [{
+		id: "6A88E4D1012A1644"
+		rewards: [
+			{
+				id: "576246DD51B2AE49"
+				item: "functionalstorage:configuration_tool"
+				type: "item"
+			}
+			{
+				id: "1E76C0AA7F5B66B1"
+				item: {
+					Count: 1
+					id: "functionalstorage:linking_tool"
+					tag: { }
+				}
+				type: "item"
+			}
+		]
+		tasks: [{
+			icon: "functionalstorage:oak_1"
+			id: "1AFCE515C651279A"
+			title: "{block.functionalstorage.oak_1}"
+			type: "custom"
+		}]
+		title: "{ftbq.r2aot.utility.drawer.title}"
+		x: 0.0d
+		y: 0.0d
+	}]
+	title: "{ftbq.raot.chapter_groups.utility.title}"
+}

@@ -8,14 +8,6 @@ ServerEvents.recipes((event) => {
             {
                 type: "drop_item",
                 item: 'r2aot:green_gravel_shard',
-            },
-            {
-                type: "place",
-                block: "*",
-                contextual: {
-                    "type": "chance",
-                    "chance": 0.05,
-                }
             }
         ],
     }).id(kjs('lychee', 'green_gravel_shard'))

@@ -65,9 +65,7 @@
     "entangled_block_component": true
   },
   "avaritia": {
-    "extreme_smithing": true,
-    "crafting_table": true,
-    "compressor": true
+    "machine": true
   },
   "jade": {
     "coordinates.rel": false,
@@ -140,6 +138,10 @@
   "pipez": {
     "pipe": true
   },
+  "r2aot": {
+    "numerical_source": true,
+    "numerical_mana": true
+  },
   "cookingforblockheads": {
     "fridge": true,
     "oven": true,
@@ -152,9 +154,5 @@
     "infused_farmland": true,
     "crop": true,
     "inferium_crop": true
-  },
-    "r2aot": {
-    "numerical_mana": true,
-    "numerical_source": true
   }
 }

@@ -1,15 +1,16 @@
 ServerEvents.loaded(event => {
-    if (!event.server.persistentData.getBoolean('first_loaded')) {
-        event.server.gameRules.set('keepInventory', 'true');
-        event.server.gameRules.set('doInsomnia', 'false');
-        event.server.gameRules.set('doTraderSpawning', 'false');
-        event.server.gameRules.set('doWeatherCycle', 'false');
-        event.server.gameRules.set('doMobSpawning', 'false');
-        event.server.gameRules.set('doDaylightCycle', 'false');
+    const { server } = event;
+    if (!server.persistentData.getBoolean('first_loaded')) {
+        server.gameRules.set('keepInventory', 'true');
+        server.gameRules.set('doInsomnia', 'false');
+        server.gameRules.set('doTraderSpawning', 'false');
+        server.gameRules.set('doWeatherCycle', 'false');
+        server.gameRules.set('doMobSpawning', 'false');
+        server.gameRules.set('doDaylightCycle', 'false');
 
         server.getLevel('minecraft:overworld').setDayTime(1000);
 
-        event.server.persistentData.putBoolean('first_loaded', true);
+        server.persistentData.putBoolean('first_loaded', true);
     }
 })
 

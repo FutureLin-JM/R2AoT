@@ -111,6 +111,34 @@
 			x: 0.0d
 			y: 2.5d
 		}
+		{
+			id: "27810B0F51C21E2F"
+			rewards: [
+				{
+					id: "45556DD68D5AB9B9"
+					item: {
+						Count: 1
+						id: "constructionwand:infinity_wand"
+						tag: {
+							wand_options: { }
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "333C7B43FA136CB7"
+					item: "kylin_arm:kylin_arm"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "5EC462FB85B2B620"
+				type: "checkmark"
+			}]
+			title: "大礼包pro"
+			x: 2.5d
+			y: 2.5d
+		}
 	]
 	title: "{ftbq.r2aot.chapter_groups.start.title}"
 }
