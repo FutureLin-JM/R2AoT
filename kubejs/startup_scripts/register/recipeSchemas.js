@@ -16,10 +16,10 @@ StartupEvents.recipeSchemaRegistry(event => {
         new $RecipeSchema(
             components.get('outputItem')().key('output'),
             components.get('inputItemArray')().key('input'),
-            components.get('intNumber')().key('mana').optional(500).alwaysWrite(),
+            components.get('intNumber')().key('mana').optional(500).alwaysWrite()
             // 催化剂部分放弃，真的不会写！！！
         )
-    )
+    );
 
     event.register(
         'botania:runic_altar',
@@ -66,4 +66,4 @@ StartupEvents.recipeSchemaRegistry(event => {
             components.get('bool')().key('keepNbtOfReagent').optional(false)
         )
     );
-})
+});

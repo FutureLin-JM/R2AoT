@@ -27,7 +27,7 @@ StartupEvents.postInit(event => {
         $PatchouliAPI.makeMultiblock(
             [
                 ['___A___', '_A_B_A_', '_______', 'AB_0_BA', '_______', '_A_B_A_', '___A___'],
-                ['___D___', '_DEFED_', '_EGEGE_', 'DFEFEFD', '_EGEGE_', '_DEFED_', '___D___']
+                ['___D___', '_DEFED_', '_EGEGE_', 'DFEFEFD', '_EGEGE_', '_DEFED_', '___D___'],
             ],
             new $Character('0'),
             Block.getBlock('industrialforegoing:machine_frame_simple'),
@@ -44,7 +44,7 @@ StartupEvents.postInit(event => {
             new $Character('G'),
             Block.getBlock('minecraft:glowstone')
         )
-    )
+    );
 });
 
 StartupEvents.postInit(event => {
@@ -57,7 +57,7 @@ StartupEvents.postInit(event => {
                 ['AAAAA', 'A___A', 'A___A', 'A___A', 'BBBBB'],
                 ['AAAAA', 'A___A', 'A___A', 'A___A', 'CABAC'],
                 ['AAAAA', 'A___A', 'A___A', 'A___A', 'BBBBB'],
-                ['AAAAA', 'AAAAA', 'AAAAA', 'AAAAA', 'ABDBA']
+                ['AAAAA', 'AAAAA', 'AAAAA', 'AAAAA', 'ABDBA'],
             ],
             new $Character('0'),
             Block.getBlock('r2aot:data_model_base'),
@@ -70,7 +70,7 @@ StartupEvents.postInit(event => {
             new $Character('D'),
             Block.getBlock('minecraft:pink_wool')
         )
-    )
+    );
 });
 
 StartupEvents.postInit(event => {
@@ -83,7 +83,7 @@ StartupEvents.postInit(event => {
                 ['AAAAA', 'A___A', 'A___A', 'A___A', 'AAAAA'],
                 ['AAAAA', 'A___A', 'A___A', 'A___A', 'CCACC'],
                 ['AAAAA', 'A___A', 'A___A', 'A___A', 'ABDBA'],
-                ['AAAAA', 'AAAAA', 'AAAAA', 'AAAAA', 'AADAA']
+                ['AAAAA', 'AAAAA', 'AAAAA', 'AAAAA', 'AADAA'],
             ],
             new $Character('0'),
             Block.getBlock('r2aot:data_model_base'),
@@ -96,7 +96,7 @@ StartupEvents.postInit(event => {
             new $Character('D'),
             Block.getBlock('minecraft:gray_wool')
         )
-    )
+    );
 });
 
 StartupEvents.postInit(event => {
@@ -109,7 +109,7 @@ StartupEvents.postInit(event => {
                 ['AAAAA', 'A___A', 'A___A', 'A___A', 'CDADC'],
                 ['BBBBB', 'B___B', 'B___B', 'B___B', 'BBBBB'],
                 ['BBBBB', 'B___B', 'B___B', 'B___B', 'BBBBB'],
-                ['BBBBB', 'BBBBB', 'BBBBB', 'BBBBB', 'BBBBB']
+                ['BBBBB', 'BBBBB', 'BBBBB', 'BBBBB', 'BBBBB'],
             ],
             new $Character('0'),
             Block.getBlock('r2aot:data_model_base'),
@@ -122,7 +122,7 @@ StartupEvents.postInit(event => {
             new $Character('D'),
             Block.getBlock('minecraft:black_wool')
         )
-    )
+    );
 });
 
 StartupEvents.postInit(event => {
@@ -135,7 +135,7 @@ StartupEvents.postInit(event => {
                 ['AAAAA', 'A___A', 'A___A', 'A___A', 'CAAAC'],
                 ['AAAAA', 'A___A', 'A___A', 'A___A', 'ADDDA'],
                 ['AAAAA', 'A___A', 'A___A', 'A___A', 'AABAA'],
-                ['AAAAA', 'AAAAA', 'AAAAA', 'AAAAA', 'AAAAA']
+                ['AAAAA', 'AAAAA', 'AAAAA', 'AAAAA', 'AAAAA'],
             ],
             new $Character('0'),
             Block.getBlock('r2aot:data_model_base'),
@@ -148,7 +148,7 @@ StartupEvents.postInit(event => {
             new $Character('D'),
             Block.getBlock('minecraft:orange_wool')
         )
-    )
+    );
 });
 
 StartupEvents.postInit(event => {
@@ -161,7 +161,7 @@ StartupEvents.postInit(event => {
                 ['AAAAA', 'A___A', 'A___A', 'A___A', 'CBABC'],
                 ['AAAAA', 'A___A', 'A___A', 'A___A', 'AAAAA'],
                 ['AAAAA', 'A___A', 'A___A', 'A___A', 'ACDCA'],
-                ['AAAAA', 'AAAAA', 'AAAAA', 'AAAAA', 'ADDDA']
+                ['AAAAA', 'AAAAA', 'AAAAA', 'AAAAA', 'ADDDA'],
             ],
             new $Character('0'),
             Block.getBlock('r2aot:data_model_base'),
@@ -174,7 +174,7 @@ StartupEvents.postInit(event => {
             new $Character('D'),
             Block.getBlock('minecraft:gray_wool')
         )
-    )
+    );
 });
 
 StartupEvents.postInit(event => {
@@ -187,16 +187,16 @@ StartupEvents.postInit(event => {
                 ['AAAAA', 'A___A', 'A___A', 'A___A', 'BBABB'],
                 ['AAAAA', 'A___A', 'A___A', 'A___A', 'AAAAA'],
                 ['AAAAA', 'A___A', 'A___A', 'A___A', 'ABBBA'],
-                ['AAAAA', 'AAAAA', 'AAAAA', 'AAAAA', 'ABABA']
+                ['AAAAA', 'AAAAA', 'AAAAA', 'AAAAA', 'ABABA'],
             ],
             new $Character('0'),
             Block.getBlock('r2aot:data_model_base'),
             new $Character('A'),
             Block.getBlock('minecraft:green_wool'),
             new $Character('B'),
-            Block.getBlock('minecraft:black_wool'),
+            Block.getBlock('minecraft:black_wool')
         )
-    )
+    );
 });
 
 StartupEvents.postInit(event => {
@@ -209,16 +209,16 @@ StartupEvents.postInit(event => {
                 ['AAAAA', 'A___A', 'A___A', 'A___A', 'AAAAA'],
                 ['AAAAA', 'A___A', 'A___A', 'A___A', 'BBABB'],
                 ['AAAAA', 'A___A', 'A___A', 'A___A', 'AAAAA'],
-                ['AAAAA', 'AAAAA', 'AAAAA', 'AAAAA', 'AAAAA']
+                ['AAAAA', 'AAAAA', 'AAAAA', 'AAAAA', 'AAAAA'],
             ],
             new $Character('0'),
             Block.getBlock('r2aot:data_model_base'),
             new $Character('A'),
             Block.getBlock('minecraft:black_wool'),
             new $Character('B'),
-            Block.getBlock('minecraft:white_wool'),
+            Block.getBlock('minecraft:white_wool')
         )
-    )
+    );
 });
 
 StartupEvents.postInit(event => {
@@ -231,16 +231,16 @@ StartupEvents.postInit(event => {
                 ['AAAAA', 'A___A', 'A___A', 'A___A', 'BBABB'],
                 ['AAAAA', 'A___A', 'A___A', 'A___A', 'AAAAA'],
                 ['AAAAA', 'A___A', 'A___A', 'A___A', 'AABAA'],
-                ['AAAAA', 'AAAAA', 'AAAAA', 'AAAAA', 'AAAAA']
+                ['AAAAA', 'AAAAA', 'AAAAA', 'AAAAA', 'AAAAA'],
             ],
             new $Character('0'),
             Block.getBlock('r2aot:data_model_base'),
             new $Character('A'),
             Block.getBlock('minecraft:white_wool'),
             new $Character('B'),
-            Block.getBlock('minecraft:black_wool'),
+            Block.getBlock('minecraft:black_wool')
         )
-    )
+    );
 });
 
 StartupEvents.postInit(event => {
@@ -253,16 +253,16 @@ StartupEvents.postInit(event => {
                 ['AAAAA', 'A___A', 'A___A', 'A___A', 'BBABB'],
                 ['AAAAA', 'A___A', 'A___A', 'A___A', 'AAAAA'],
                 ['AAAAA', 'A___A', 'A___A', 'A___A', 'ABBBA'],
-                ['AAAAA', 'AAAAA', 'AAAAA', 'AAAAA', 'AAAAA']
+                ['AAAAA', 'AAAAA', 'AAAAA', 'AAAAA', 'AAAAA'],
             ],
             new $Character('0'),
             Block.getBlock('r2aot:data_model_base'),
             new $Character('A'),
             Block.getBlock('minecraft:white_wool'),
             new $Character('B'),
-            Block.getBlock('minecraft:black_wool'),
+            Block.getBlock('minecraft:black_wool')
         )
-    )
+    );
 });
 
 StartupEvents.postInit(event => {
@@ -275,16 +275,16 @@ StartupEvents.postInit(event => {
                 ['AAAAA', 'A___A', 'A___A', 'A___A', 'ABABA'],
                 ['AAAAA', 'A___A', 'A___A', 'A___A', 'AAAAA'],
                 ['AAAAA', 'A___A', 'A___A', 'A___A', 'AAABA'],
-                ['AAAAA', 'AAAAA', 'AAAAA', 'AAAAA', 'AAAAA']
+                ['AAAAA', 'AAAAA', 'AAAAA', 'AAAAA', 'AAAAA'],
             ],
             new $Character('0'),
             Block.getBlock('r2aot:data_model_base'),
             new $Character('A'),
             Block.getBlock('minecraft:lime_stained_glass'),
             new $Character('B'),
-            Block.getBlock('minecraft:black_wool'),
+            Block.getBlock('minecraft:black_wool')
         )
-    )
+    );
 });
 
 StartupEvents.postInit(event => {
@@ -297,7 +297,7 @@ StartupEvents.postInit(event => {
                 ['AAAAA', 'A___A', 'A___A', 'A___A', 'BBABB'],
                 ['AAAAA', 'A___A', 'A___A', 'A___A', 'AAAAA'],
                 ['AAAAA', 'A___A', 'A___A', 'A___A', 'AAAAA'],
-                ['AAAAA', 'AAAAA', 'AAAAA', 'AAAAA', 'CACAC']
+                ['AAAAA', 'AAAAA', 'AAAAA', 'AAAAA', 'CACAC'],
             ],
             new $Character('0'),
             Block.getBlock('r2aot:data_model_base'),
@@ -308,7 +308,7 @@ StartupEvents.postInit(event => {
             new $Character('C'),
             Block.getBlock('minecraft:gray_wool')
         )
-    )
+    );
 });
 
 StartupEvents.postInit(event => {
@@ -321,16 +321,16 @@ StartupEvents.postInit(event => {
                 ['AAAAA', 'A___A', 'A___A', 'A___A', 'BBABB'],
                 ['AAAAA', 'A___A', 'A___A', 'A___A', 'AAAAA'],
                 ['AAAAA', 'A___A', 'A___A', 'A___A', 'ABBBA'],
-                ['AAAAA', 'AAAAA', 'AAAAA', 'AAAAA', 'AAAAA']
+                ['AAAAA', 'AAAAA', 'AAAAA', 'AAAAA', 'AAAAA'],
             ],
             new $Character('0'),
             Block.getBlock('r2aot:data_model_base'),
             new $Character('A'),
             Block.getBlock('minecraft:gray_wool'),
             new $Character('B'),
-            Block.getBlock('minecraft:black_wool'),
+            Block.getBlock('minecraft:black_wool')
         )
-    )
+    );
 });
 
 StartupEvents.postInit(event => {
@@ -340,7 +340,7 @@ StartupEvents.postInit(event => {
             [
                 ['AAA', 'AAA', 'AAA'],
                 ['ABA', 'C_D', 'A0A'],
-                ['AAA', 'AAA', 'AAA']
+                ['AAA', 'AAA', 'AAA'],
             ],
             new $Character('0'),
             Block.getBlock('botania:light_gray_petal_block'),
@@ -351,9 +351,9 @@ StartupEvents.postInit(event => {
             new $Character('C'),
             Block.getBlock('r2aot:create_output'),
             new $Character('D'),
-            Block.getBlock('r2aot:create_input'),
+            Block.getBlock('r2aot:create_input')
         )
-    )
+    );
 });
 
 StartupEvents.postInit(event => {
@@ -363,7 +363,7 @@ StartupEvents.postInit(event => {
             [
                 ['AAA', 'AAA', 'AAA'],
                 ['CCC', '_0B', 'CCC'],
-                ['AAA', 'AAA', 'AAA']
+                ['AAA', 'AAA', 'AAA'],
             ],
             new $Character('0'),
             Block.getBlock('r2aot:double_compressed_cobblestone'),
@@ -374,7 +374,7 @@ StartupEvents.postInit(event => {
             new $Character('C'),
             Block.getBlock('minecraft:glass')
         )
-    )
+    );
 });
 
 StartupEvents.postInit(event => {
@@ -386,7 +386,7 @@ StartupEvents.postInit(event => {
                 ['___B___', '_______', '_______', 'B_____B', '_______', '_______', '___B___'],
                 ['___B___', '_______', '_______', 'B_____B', '_______', '_______', '___B___'],
                 ['___B___', '_______', '_______', 'B__P__B', '_______', '_______', '___B___'],
-                ['_AA_AA_', 'ALLALLA', 'ALDEDLA', '_AE0EA_', 'ALDEDLA', 'ALLALLA', '_AA_AA_']
+                ['_AA_AA_', 'ALLALLA', 'ALDEDLA', '_AE0EA_', 'ALDEDLA', 'ALLALLA', '_AA_AA_'],
             ],
             new $Character('0'),
             Block.getBlock('botania:livingrock'),
@@ -405,5 +405,5 @@ StartupEvents.postInit(event => {
             new $Character('E'),
             Block.getBlock('minecraft:lapis_block')
         )
-    )
-})
+    );
+});

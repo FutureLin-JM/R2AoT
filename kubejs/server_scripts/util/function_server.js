@@ -2,13 +2,13 @@
 
 /**
  * 为机器添加空手右键取出物品的功能
- * @param {Internal.BlockRightClickedEventJS} event 
+ * @param {Internal.BlockRightClickedEventJS} event
  */
 function setItemExtract(event) {
     const { hand, block, item, player } = event;
-    
+
     if (hand !== 'MAIN_HAND') return;
-    
+
     const itemCap = block.entity.getCapability(ForgeCapabilities.ITEM_HANDLER).resolve().get();
 
     if (item.isEmpty() && player.isCrouching()) {
@@ -29,11 +29,9 @@ function setItemExtract(event) {
  */
 function hasTimeInABottle(player) {
     // 检查物品栏
-    const foundInMainInventory = player.inventory.allItems.some(
-        item => item.id === 'tiab:time_in_a_bottle'
-    );
+    const foundInMainInventory = player.inventory.allItems.some(item => item.id === 'tiab:time_in_a_bottle');
     if (foundInMainInventory) return true;
-    
+
     return false;
 }
 
@@ -53,10 +51,10 @@ function hasTimeInABottle(player) {
  */
 function kjs(type, name) {
     if (name === undefined) {
-        return `kubejs:${type.toLowerCase()}`
+        return `kubejs:${type.toLowerCase()}`;
     }
-    return `kubejs:${type.toLowerCase()}/${name.toLowerCase()}`
-};
+    return `kubejs:${type.toLowerCase()}/${name.toLowerCase()}`;
+}
 
 /**
  * 解析字符串并返回包含物品或标签及其数量的对象。
@@ -67,22 +65,20 @@ function kjs(type, name) {
  */
 function parseEntry(entity) {
     if (!entity.includes(' ')) {
-        if(entity.startsWith('#')) {
-            return { tag: entity.substring(1), count: 1 }
-        }
-        else {
-            return { item: entity, count: 1 }
+        if (entity.startsWith('#')) {
+            return { tag: entity.substring(1), count: 1 };
+        } else {
+            return { item: entity, count: 1 };
         }
     }
 
     const [countString, itemString] = entity.split(' ');
     const count = parseInt(countString.replace('x', ''));
 
-    if(itemString.startsWith('#')) {
-        return { tag: itemString.substring(1), count: count }
-    }
-    else {
-        return { item: itemString, count: count }
+    if (itemString.startsWith('#')) {
+        return { tag: itemString.substring(1), count: count };
+    } else {
+        return { item: itemString, count: count };
     }
 }
 
@@ -92,10 +88,9 @@ function parseEntry(entity) {
  * @returns {{tag?: string, item?: string}} - 返回包含tag属性或item属性的对象
  */
 function parseEntryWithoutCount(entity) {
-    if(entity.startsWith('#')) {
-        return { tag: entity.substring(1) }
-    }
-    else {
-        return { item: entity }
+    if (entity.startsWith('#')) {
+        return { tag: entity.substring(1) };
+    } else {
+        return { item: entity };
     }
 }

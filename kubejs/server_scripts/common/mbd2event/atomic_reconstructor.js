@@ -1,8 +1,8 @@
 // BlockEvents.rightClicked('r2aot:atomic_reconstructor', event => {
 //     const { hand, block, item, player } = event;
-    
+
 //     if (hand !== 'MAIN_HAND') return;
-    
+
 //     const itemCap = block.entity.getCapability(ForgeCapabilities.ITEM_HANDLER).resolve().get();
 
 //     if (item.isEmpty() && player.isCrouching()) {
@@ -15,5 +15,5 @@
 // });
 
 BlockEvents.rightClicked('r2aot:atomic_reconstructor', event => {
-    setItemExtract(event)
-})
+    setItemExtract(event);
+});

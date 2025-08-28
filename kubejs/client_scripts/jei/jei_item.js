@@ -7,24 +7,23 @@ JEIEvents.hideItems(event => {
         'createendertransmission:item_transmitter',
         'createendertransmission:fluid_transmitter',
         'createendertransmission:chunk_loader',
-    ]
+    ];
 
     hideItemsID.forEach(itemId => {
-        event.hide(itemId)
-    })
+        event.hide(itemId);
+    });
 
     // Ingredient.of(/^kubejs:/).itemIds.forEach(id => {
     //   event.hide(id)
     // })
-
 });
 
 JEIEvents.addItems(event => {
     event.add(Item.of('ae2:facade', '{item:"minecraft:oak_log"}'));
-})
+});
 
 // 清除多余植物盆
-JEIEvents.hideItems((event) => {
+JEIEvents.hideItems(event => {
     let excludedItems = [
         'botanypotstiers:creative_terracotta_hopper_botany_pot',
         'botanypotstiers:creative_terracotta_botany_pot',
@@ -37,7 +36,8 @@ JEIEvents.hideItems((event) => {
     ];
 
     Ingredient.of(/^(botanypotstiers:|botanypots:)/).itemIds.forEach(id => {
-        if (!excludedItems.includes(id))
-        event.hide(id)
+        if (!excludedItems.includes(id)) {
+            event.hide(id);
+        }
     });
 });

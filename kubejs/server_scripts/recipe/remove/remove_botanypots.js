@@ -9,27 +9,25 @@ ServerEvents.recipes(event => {
         'botanypotstiers:elite_terracotta_botany_pot',
         'botanypots:terracotta_hopper_botany_pot',
         'botanypots:terracotta_botany_pot',
-      ];
+    ];
     Ingredient.of(/^(botanypotstiers:|botanypots:)/).itemIds.forEach(id => {
-        if (!excludedPotsItems.includes(id))
-            event.remove({output:id})
+        if (!excludedPotsItems.includes(id)) {
+            event.remove({ output: id });
+        }
     });
 
-    const cropRemoveByTag =[
-        '#botania:petals',
-        '#minecraft:flowers',
-    ]
+    const cropRemoveByTag = ['#botania:petals', '#minecraft:flowers'];
     cropRemoveByTag.forEach(tag => {
         Ingredient.of(tag).itemIds.forEach(id => {
             const [modName, itemName] = id.split(':');
-            event.remove({id:`botanypots:${modName}/crop/${itemName}`})
-        })
-    })
+            event.remove({ id: `botanypots:${modName}/crop/${itemName}` });
+        });
+    });
 
     Ingredient.of(/^minecraft:\w+_coral(_\w+)?$/).itemIds.forEach(id => {
         const [modName, itemName] = id.split(':');
-        event.remove({id:`botanypots:${modName}/crop/${itemName}`})
-    })
+        event.remove({ id: `botanypots:${modName}/crop/${itemName}` });
+    });
 
     const cropRemoveByID = [
         'botanypots:minecraft/crop/glow_berry_bush',
@@ -75,11 +73,11 @@ ServerEvents.recipes(event => {
         'botanypots:minecraft/crop/pumpkin',
         'botanypots:minecraft/crop/potato',
         'botanytrees:naturesaura/ancient',
-    ]
+    ];
     cropRemoveByID.forEach(recipeID => {
-        event.remove({id: recipeID})
-    })
-    
+        event.remove({ id: recipeID });
+    });
+
     const soilRemove = [
         'minecraft:cod_bucket',
         'minecraft:salmon_bucket',
@@ -96,29 +94,19 @@ ServerEvents.recipes(event => {
         'mysticalagriculture:tertium_farmland',
         'mysticalagriculture:imperium_farmland',
         'mysticalagriculture:supremium_farmland',
-    ]
+    ];
     soilRemove.forEach(itemId => {
         event.remove({
-            type:"botanypots:soil",
-            input:{item:itemId},
-        })
-    })
+            type: 'botanypots:soil',
+            input: { item: itemId },
+        });
+    });
 
-    // let excludedEssenceCrops = [
-    //     'mysticalagriculture:inferium_essence',
-    //     'mysticalagriculture:bronze_essence',
-    //     'mysticalagriculture:electrum_essence',
-    //     'mysticalagriculture:invar_essence',
-    //     'mysticalagriculture:constantan_essence',
-
-    // ]
-    let excludedEssenceCrops = [
-        'inferium', 'water', 'fire', 'earth', 'air',
-    ]
+    const excludedEssenceCrops = ['inferium', 'water', 'fire', 'earth', 'air'];
     Ingredient.of('#mysticalagriculture:essences').itemIds.forEach(id => {
         const cropName = id.replace('mysticalagriculture:', '').replace('_essence', '');
         if (!excludedEssenceCrops.includes(cropName)) {
-            event.remove({id:`botanypots:mysticalagriculture/crop/${cropName}`})
+            event.remove({ id: `botanypots:mysticalagriculture/crop/${cropName}` });
         }
-    })
-})
+    });
+});

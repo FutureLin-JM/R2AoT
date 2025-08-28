@@ -1,7 +1,7 @@
 const fluidConversionRate = {
-        'minecraft:lava': 0.5,
-        'r2aot:fluidedmana': 1
-    }
+    'minecraft:lava': 0.5,
+    'r2aot:fluidedmana': 1,
+};
 
 MBDMachineEvents.onTick('r2aot:fluid_sourcelink', event => {
     const { machine } = event.getEvent();
@@ -13,9 +13,8 @@ MBDMachineEvents.onTick('r2aot:fluid_sourcelink', event => {
     const machineTank = machineCap.getFluidInTank(0);
 
     if (!machineTank.isEmpty()) {
-        
         const tankFluidType = machineTank.getFluid().arch$registryName().toString();
-        const conversionRate = fluidConversionRate[tankFluidType]
+        const conversionRate = fluidConversionRate[tankFluidType];
 
         const sourceProviders = $SourceUtil.canGiveSource(pos, level, 6);
         if (sourceProviders.length === 0) return;
@@ -28,8 +27,8 @@ MBDMachineEvents.onTick('r2aot:fluid_sourcelink', event => {
             if (distance < minDistance) {
                 minDistance = distance;
                 closestProvider = provider;
-            };
-        };
+            }
+        }
 
         const maxSourceToAdd = closestProvider.getSource().getMaxSource() - closestProvider.getSource().getSource();
         const maxFluidToDrain = Math.floor(maxSourceToAdd / conversionRate);
@@ -57,9 +56,9 @@ BlockEvents.rightClicked('r2aot:fluid_sourcelink', event => {
 
     if (hand !== 'MAIN_HAND') return;
 
-    const stack = player.getItemInHand('MAIN_HAND')
+    const stack = player.getItemInHand('MAIN_HAND');
     const fluidCap = block.entity.getCapability(ForgeCapabilities.FLUID_HANDLER).resolve().get();
-        
+
     const result = FluidUtil.interactWithFluidHandler(player, hand, fluidCap);
 
     if (result) {

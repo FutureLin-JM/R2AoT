@@ -6,5 +6,5 @@ ServerEvents.recipes(event => {
         'ars_nouveau:source_gem',
         'minecraft:dripstone_block',
         5000
-    ).id(kjs('enchanting_apparatus', 'dripstone_block'))
-})
+    ).id(kjs('enchanting_apparatus', 'dripstone_block'));
+});

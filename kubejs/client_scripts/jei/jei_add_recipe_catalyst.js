@@ -1,7 +1,6 @@
-JEIAddedEvents.registerRecipeCatalysts((event) => {
+JEIAddedEvents.registerRecipeCatalysts(event => {
     const catalysts = [
-        ['r2aot:fluid_sourcelink', 'r2aot:fluid_sourcelink'],
-
+        ['r2aot:fluid_sourcelink', 'r2aot:fluid_sourcelink']
     ];
 
     catalysts.forEach(([input, recipe]) => {

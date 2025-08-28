@@ -1,6 +1,6 @@
 JEIAddedEvents.registerCategories(event => {
     event.custom('r2aot:fluid_sourcelink', category => {
-        const { guiHelper } = category.jeiHelpers
+        const { guiHelper } = category.jeiHelpers;
 
         category
             .title(Text.translate('jei.r2aot.fluid_sourcelink'))
@@ -15,15 +15,15 @@ JEIAddedEvents.registerCategories(event => {
                 builder.addInvisibleIngredients('OUTPUT').addItemStack('r2aot:fluid_sourcelink');
             })
             .setDrawHandler((recipe, recipeSlotsView, guiGraphics, mouseX, mouseY) => {
-                let sourceText = Text.translate('jei.desc.r2aot.fluid_sourcelink.source', recipe.data.source.toFixed(0))
-                guiGraphics.drawWordWrap(Client.font, sourceText, 40, 16, 65, 0)
-            })
-    })
+                let sourceText = Text.translate('jei.desc.r2aot.fluid_sourcelink.source', recipe.data.source.toFixed(0));
+                guiGraphics.drawWordWrap(Client.font, sourceText, 40, 16, 65, 0);
+            });
+    });
 });
 
 JEIAddedEvents.registerRecipes(event => {
     event
         .custom('r2aot:fluid_sourcelink')
-        .add({input: 'minecraft:lava', source: 500})
-        .add({input: 'r2aot:fluidedmana', source: 1000})
-})
+        .add({ input: 'minecraft:lava', source: 500 })
+        .add({ input: 'r2aot:fluidedmana', source: 1000 });
+});

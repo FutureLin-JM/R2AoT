@@ -1,4 +1,4 @@
-ServerEvents.recipes((event) => {
+ServerEvents.recipes(event => {
     const { r2aot } = event.recipes;
     const DURATION = 1;
 

@@ -96,28 +96,23 @@ ServerEvents.recipes(event => {
         'avaritia:botania_creative_pool',
         'ars_nouveau:sourcestone',
         'create:milling/dripstone_block',
-
-    ]
-    recipesToRemoveID.forEach((recipes) => {
-        event.remove({id:recipes});
+    ];
+    recipesToRemoveID.forEach(recipes => {
+        event.remove({ id: recipes });
     });
 
-    let recipesToRemoveType =[
+    let recipesToRemoveType = [
         'botania:pure_daisy',
         'industrialforegoing:laser_drill_ore',
         'thermal_extra:component_assembly',
-        'botania:orechid_ignem'
-    ]
-    recipesToRemoveType.forEach((typeId) => {
-        event.remove({type: typeId});
+        'botania:orechid_ignem',
+    ];
+    recipesToRemoveType.forEach(typeId => {
+        event.remove({ type: typeId });
     });
 
-    let recipesToRemoveOutItem = [
-        
-    ]
-    recipesToRemoveOutItem.forEach((itemId) => {
-        event.remove({output: itemId});
+    let recipesToRemoveOutItem = [];
+    recipesToRemoveOutItem.forEach(itemId => {
+        event.remove({ output: itemId });
     });
-})
-
-
+});

@@ -43,5 +43,5 @@ if (Platform.isClientEnvironment()) {
         );
 
         isStartup = true;
-    })
+    });
 }

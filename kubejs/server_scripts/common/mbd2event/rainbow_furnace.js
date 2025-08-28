@@ -1,9 +1,9 @@
-ServerEvents.recipes((event) => {
+ServerEvents.recipes(event => {
     Object.entries(JsonIO.read('kubejs/fuel_items.json')).forEach(([itemId, burnTime]) => {
         let recipe = event.recipes.r2aot.rainbow_furnace();
 
         recipe.isFuel(true);
-        recipe.slotName('fuel_input', (builder) => {
+        recipe.slotName('fuel_input', builder => {
             builder.inputItems(itemId);
         });
         recipe.duration(burnTime);
@@ -16,10 +16,10 @@ MBDMachineEvents.onBeforeRecipeModify('r2aot:rainbow_furnace', event => {
 
     let componentCount = 0;
     for (let i = 0; i < 8; i++) {
-        let componentTrait = machine.getTraitByName(`component_slot_${i}`); 
+        let componentTrait = machine.getTraitByName(`component_slot_${i}`);
         if (componentTrait == null) continue;
         let storage = componentTrait.storage;
-        let componentStack = storage.getStackInSlot(0);  
+        let componentStack = storage.getStackInSlot(0);
         if (!componentStack.isEmpty()) {
             componentCount++;
         }

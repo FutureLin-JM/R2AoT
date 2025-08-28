@@ -1,7 +1,7 @@
 Ponder.registry(event => {
     event
         .create('r2aot:elemental_altar_core')
-        .scene("elemental_altar", "元素祭坛", "r2aot:elemental_altar", (scene, util) => {
+        .scene('elemental_altar', '元素祭坛', 'r2aot:elemental_altar', (scene, util) => {
             scene.setSceneOffsetY(-1);
             scene.scaleSceneView(0.8);
             scene.showBasePlate();
@@ -10,18 +10,19 @@ Ponder.registry(event => {
             scene.idle(10);
 
             for (let y = 1; y < 3; y++) {
-                scene.overlay.showText(20)
+                scene.overlay
+                    .showText(20)
                     .text(`第 ${y} 层`)
                     .pointAt([3.5, y + 0.5, 3.5])
                     .attachKeyFrame();
-                
+
                 for (let x = 1; x < 8; x++) {
                     for (let z = 1; z < 8; z++) {
                         scene.world.showSection([x, y, z], 'down');
                     }
                 }
-                scene.idle(20); 
-            };
+                scene.idle(20);
+            }
 
             scene.idle(10);
             scene.text(30, '使用元素符文对基础机器框架右键').attachKeyFrame();
@@ -43,5 +44,5 @@ Ponder.registry(event => {
 
             scene.idle(40);
             scene.text(100, '可前往「胶囊」章节获取胶囊来快速放置这个结构');
-        })
-})
+        });
+});

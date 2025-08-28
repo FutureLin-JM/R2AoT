@@ -19,22 +19,20 @@ ServerEvents.blockLootTables(event => {
             Object.entries(toolRanges).forEach(([tool, range]) => {
                 loot.addPool(pool => {
                     pool.addItem(lootId);
-                    
+
                     pool.addFunction({
-                        "function": "minecraft:set_count",
-                        "count": {
-                            "min": range[0],
-                            "max": range[1]
-                        }
+                        function: 'minecraft:set_count',
+                        count: {
+                            min: range[0],
+                            max: range[1],
+                        },
                     });
 
                     pool.addCondition({
-                        "condition": "minecraft:match_tool",
-                        "predicate": {
-                            "items": [
-                              tool
-                            ]
-                          }
+                        condition: 'minecraft:match_tool',
+                        predicate: {
+                            items: [tool],
+                        },
                     });
                 });
             });
@@ -42,19 +40,18 @@ ServerEvents.blockLootTables(event => {
             loot.addPool(pool => {
                 pool.addItem(blockId);
                 pool.addCondition({
-                    "condition": "minecraft:inverted",
-                    "term": {
-                        "condition": "minecraft:match_tool",
-                        "predicate": {
-                            "items": toolList
-                        }
-                    }
+                    condition: 'minecraft:inverted',
+                    term: {
+                        condition: 'minecraft:match_tool',
+                        predicate: {
+                            items: toolList,
+                        },
+                    },
                 });
             });
-        })
+        });
     }
 
-    
     /**
      * 设置方块的战利品表，根据工具决定概率掉落指定物品或自身
      * @param {Internal.BlockLootEventJS} event
@@ -70,56 +67,56 @@ ServerEvents.blockLootTables(event => {
     function setWeightBasedLoot(event, blockId, lootId, toolWeights) {
         event.addBlock(blockId, loot => {
             const toolList = Object.keys(toolWeights);
-    
+
             // 概率掉落池
             Object.entries(toolWeights).forEach(([tool, weight]) => {
                 loot.addPool(pool => {
                     pool.addItem(lootId, weight[0]);
                     pool.addItem(blockId, weight[1]);
                     pool.addCondition({
-                        condition: "minecraft:match_tool",
-                        predicate: { items: [tool] }
+                        condition: 'minecraft:match_tool',
+                        predicate: { items: [tool] },
                     });
                 });
             });
-    
+
             // 默认掉落池
             loot.addPool(pool => {
                 pool.addItem(blockId);
                 pool.addCondition({
-                    condition: "minecraft:inverted",
+                    condition: 'minecraft:inverted',
                     term: {
-                        condition: "minecraft:match_tool",
-                        predicate: { items: toolList }
-                    }
+                        condition: 'minecraft:match_tool',
+                        predicate: { items: toolList },
+                    },
                 });
             });
         });
     }
 
     setBlockLoot(event, 'r2aot:compressed_cobblestone', 'minecraft:gravel', {
-        'r2aot:compressed_wooden_hammer': [8,10],
-        'r2aot:compressed_stone_hammer': [11,13],
+        'r2aot:compressed_wooden_hammer': [8, 10],
+        'r2aot:compressed_stone_hammer': [11, 13],
     });
     setBlockLoot(event, 'r2aot:compressed_gravel', 'minecraft:sand', {
-        'r2aot:compressed_wooden_hammer': [8,10],
-        'r2aot:compressed_stone_hammer': [11,13],
+        'r2aot:compressed_wooden_hammer': [8, 10],
+        'r2aot:compressed_stone_hammer': [11, 13],
     });
 
     setWeightBasedLoot(event, 'minecraft:cobblestone', 'minecraft:gravel', {
-        'r2aot:wooden_hammer': [6,4] ,
-        'r2aot:stone_hammer': [9,1],
+        'r2aot:wooden_hammer': [6, 4],
+        'r2aot:stone_hammer': [9, 1],
     });
     setWeightBasedLoot(event, 'minecraft:gravel', 'minecraft:sand', {
-        'r2aot:wooden_hammer': [6,4] ,
-        'r2aot:stone_hammer': [9,1],
+        'r2aot:wooden_hammer': [6, 4],
+        'r2aot:stone_hammer': [9, 1],
     });
 
     ['r2aot:pedestal_botania', 'r2aot:pedestal_ars'].forEach(machine => {
         event.modifyBlock(machine, loot => {
             loot.addPool(pool => {
-                pool.addItem('r2aot:pedestal')
-            })
-        })
-    })
-})
+                pool.addItem('r2aot:pedestal');
+            });
+        });
+    });
+});

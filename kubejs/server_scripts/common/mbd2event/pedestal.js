@@ -12,26 +12,26 @@ const RECIPES = [
         catalyst: 'ars_nouveau:source_gem',
         input: 'minecraft:quartz_block',
         output: 'ars_nouveau:sourcestone',
-        consumeChance: 0.1
-    }
+        consumeChance: 0.1,
+    },
 ];
 BlockEvents.rightClicked(event => {
     const { hand, block, item, player, level } = event;
-    
+
     if (hand !== 'MAIN_HAND') return;
 
     const pedestals = ['r2aot:pedestal', 'r2aot:pedestal_botania', 'r2aot:pedestal_ars'];
     if (!pedestals.includes(block.id)) return;
-    
+
     const itemCap = block.entity.getCapability(ForgeCapabilities.ITEM_HANDLER).resolve().get();
     const stack = itemCap.getStackInSlot(0);
-    
+
     if (!item.isEmpty() && stack.isEmpty() && !player.isCrouching()) {
         itemCap.insertItem(item.withCount(1), false);
         item.count--;
         player.swing();
         event.cancel();
-    };
+    }
 
     if (item.isEmpty() && player.isCrouching()) {
         if (!stack.isEmpty()) {
@@ -40,15 +40,13 @@ BlockEvents.rightClicked(event => {
             player.swing();
             event.cancel();
         }
-    };
+    }
 
     if (block.id == 'r2aot:pedestal' && Ingredient.of('#forge:wrenches').testItem(item.getItem())) {
         let part = $IMultiPart.ofPart(level, block.pos).orElse(null);
         if (part.isFormed()) return;
 
-        let machineRecipe = RECIPES.find(recipe => 
-            recipe.catalyst === stack.id
-        );
+        let machineRecipe = RECIPES.find(recipe => recipe.catalyst === stack.id);
         if (machineRecipe !== undefined) {
             let stackCopy = stack.copy();
             level.setBlockAndUpdate(block.pos, Block.getBlock(machineRecipe.machine).defaultBlockState());
@@ -67,7 +65,7 @@ const POSITIONS = [
     [0, 0, -1],
     [0, 0, 1],
     [1, 0, 1],
-    [1, 0, 0]
+    [1, 0, 0],
 ];
 
 ['r2aot:pedestal_botania', 'r2aot:pedestal_ars'].forEach(pedestalMachine => {
@@ -104,13 +102,12 @@ const POSITIONS = [
                     conversionData.remove(posKey);
                     shouldConsume = true;
                 }
-            }
-            else if (conversionData.contains(posKey)) {
+            } else if (conversionData.contains(posKey)) {
                 conversionData.remove(posKey);
-            };
+            }
         });
 
-        if (shouldConsume && machineRecipe.consumeChance !== undefined) { 
+        if (shouldConsume && machineRecipe.consumeChance !== undefined) {
             if (Math.random() < machineRecipe.consumeChance) {
                 itemCap.extractItem(0, 1, false);
             }

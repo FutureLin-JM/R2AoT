@@ -10,15 +10,16 @@ Ponder.registry(event => {
             scene.idle(10);
 
             for (let y = 1; y < 4; y++) {
-                scene.overlay.showText(20)
+                scene.overlay
+                    .showText(20)
                     .text(`第 ${y} 层`)
                     .pointAt([3.5, y + 0.5, 3.5])
                     .attachKeyFrame();
-                
+
                 for (let x = 2; x < 5; x++) {
                     for (let z = 2; z < 5; z++) {
                         scene.world.showSection([x, y, z], 'down');
-                        scene.idle(3); 
+                        scene.idle(3);
                     }
                 }
                 scene.idle(10);
@@ -29,13 +30,13 @@ Ponder.registry(event => {
             scene.overlay.showOutline('red', {}, [3, 2, 3], 20);
             scene.idle(10);
 
-            scene.showControls(20, [3, 2, 3], "left").rightClick().withItem('r2aot:petal_essence_bucket');
+            scene.showControls(20, [3, 2, 3], 'left').rightClick().withItem('r2aot:petal_essence_bucket');
             scene.idle(5);
 
             for (let y = 1; y < 4; y++) {
                 for (let x = 2; x < 5; x++) {
                     for (let z = 2; z < 5; z++) {
-                        scene.world.destroyBlock([x, y, z])
+                        scene.world.destroyBlock([x, y, z]);
                     }
                 }
             }
@@ -43,5 +44,5 @@ Ponder.registry(event => {
 
             scene.idle(35);
             scene.text(100, '可前往「胶囊」章节获取胶囊来快速放置这个结构');
-        })       
-})
+        });
+});

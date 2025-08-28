@@ -1,4 +1,4 @@
-JadeEvents.onClientRegistration((event) => {
+JadeEvents.onClientRegistration(event => {
     event.block('r2aot:numerical_mana', $Block).tooltip((tooltip, accessor) => {
         const { serverData } = accessor;
         if (!serverData) return;
