@@ -48,8 +48,7 @@
     "block.r2aot.petal_emerald_ore": "花瓣绿宝石矿石",
     "block.r2aot.petal_zinc_ore": "花瓣锌矿石",
     "block.r2aot.petal_quartz_ore": "花瓣石英矿石",
-    "block.r2aot.rainbow_furnace": "§c彩§6虹§e熔§a炉",
-    "block.r2aot.rainbow_furnace_font": "彩虹熔炉",
+    "block.r2aot.rainbow_furnace": "<rainb>彩虹熔炉</rainb>",
     "block.r2aot.fluid_input": "流体输入仓",
     "block.r2aot.fluid_output": "流体输出仓", 
     "block.r2aot.mana_input": "魔力输入仓",
@@ -272,7 +271,7 @@
     "ftbq.r2aot.chapter1-1.iron_nugget.subtitle": "概率增加",
     "ftbq.r2aot.chapter1-1.clay_ball.subtitle": "概率增加",
     "ftbq.r2aot.chapter1-1.crying_obsidian.subtitle": "在下界手持黑曜石粉Shift+右键黑曜石",
-    "ftbq.r2aot.chapter1-1.rainbow_furnace.subtitle": "魔改版§c彩§6虹§e熔§a炉",
+    "ftbq.r2aot.chapter1-1.rainbow_furnace.subtitle": "魔改版<rainb>彩虹熔炉</rainb>",
     "ftbq.r2aot.chapter1-1.crops.title": "一些农作物",
 
     "ftbq.r2aot.chapter1-2.start.title": "第二节",
