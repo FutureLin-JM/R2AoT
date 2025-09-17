@@ -65,7 +65,9 @@
     "entangled_block_component": true
   },
   "avaritia": {
-    "machine": true
+    "extreme_smithing": true,
+    "crafting_table": true,
+    "compressor": true
   },
   "jade": {
     "coordinates.rel": false,

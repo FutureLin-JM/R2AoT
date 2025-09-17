@@ -93,7 +93,7 @@ ServerEvents.recipes(event => {
 
     let in_rf_co = 'kubejs:incomplete_rf_coil';
     sequenced_assembly(
-        [Item.of('thermal:rf_coil').withChance(0.99), Item.of('r2aot:time_voucher').withChance(0.01)],
+        [Item.of('thermal:rf_coil').withChance(0.95), Item.of('r2aot:time_voucher').withChance(0.05)],
         'minecraft:gold_ingot',
         [
             deploying(in_rf_co, [in_rf_co, processingMachine('r2aot:atomic_reconstructor')]),

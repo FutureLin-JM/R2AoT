@@ -7,7 +7,7 @@
     "item.r2aot.green_gravel_shard": "绿砾凝华",
     "item.r2aot.iron_furnace_component": "铁熔炉组件",
     "item.r2aot.copper_furnace_component": "铜熔炉组件",
-    "item.r2aot.crystal_furnace_component": "水晶熔炉组件", 
+    "item.r2aot.crystal_furnace_component": "水晶熔炉组件",
     "item.r2aot.diamond_furnace_component": "钻石熔炉组件",
     "item.r2aot.emerald_furnace_component": "绿宝石熔炉组件",
     "item.r2aot.gold_furnace_component": "金熔炉组件",
@@ -20,7 +20,6 @@
     "item.r2aot.tertium_crop_seed": "中级种子",
     "item.r2aot.imperium_crop_seed": "高级种子",
     "item.r2aot.luxvoid_alloy": "辉界合金",
-
 
     "block.r2aot.rainbow_petal_block": "彩虹花源块",
     "block.r2aot.compressed_andesite": "压缩安山岩",
@@ -50,13 +49,13 @@
     "block.r2aot.petal_quartz_ore": "花瓣石英矿石",
     "block.r2aot.rainbow_furnace": "<rainb>彩虹熔炉</rainb>",
     "block.r2aot.fluid_input": "流体输入仓",
-    "block.r2aot.fluid_output": "流体输出仓", 
+    "block.r2aot.fluid_output": "流体输出仓",
     "block.r2aot.mana_input": "魔力输入仓",
-    "block.r2aot.mana_output": "魔力输出仓", 
+    "block.r2aot.mana_output": "魔力输出仓",
     "block.r2aot.mana_generator_core": "魔力制造机",
     "block.r2aot.item_input": "物品输入仓",
-    "block.r2aot.item_output": "物品输出仓", 
-    "block.r2aot.flower_ore_generator": "花卉矿石生成机", 
+    "block.r2aot.item_output": "物品输出仓",
+    "block.r2aot.flower_ore_generator": "花卉矿石生成机",
     "block.r2aot.mana_motor": "魔力马达",
     "block.r2aot.spinerette": "纺织花",
     "block.r2aot.energy_input": "能量输入仓",
@@ -89,7 +88,7 @@
     "r2aot.andesite_casing_maker_core": "安山机壳制造机",
     "r2aot.hammer_crushing": "锤粉碎",
     "r2aot.mana_generator_core": "魔力制造机",
-    "r2aot.flower_ore_generator": "花卉矿石生成机", 
+    "r2aot.flower_ore_generator": "花卉矿石生成机",
     "r2aot.mana_motor": "魔力马达",
     "r2aot.stress_generator_core": "应力发电机",
     "r2aot.mana_liquidizer": "魔力液化器",
@@ -180,6 +179,7 @@
     "tooltip.r2aot.fluid_sourcelink_3": "底部可自动输入流体",
     "tooltip.r2aot.pedestal_ars_1": "类似白雏菊，将石英块转化为魔源石",
     "tooltip.r2aot.pedestal_ars_2": "将魔源宝石放入物品基座中，使用扳手右键物品基座激活",
+    "tooltip.r2aot.pedestal_ars_3": "魔源宝石有10%概率消耗",
     "tooltip.r2aot.pedestal_botania_1": "类似白雏菊，将活石转化为微光石",
     "tooltip.r2aot.pedestal_botania_2": "将彩虹桥法杖放入物品基座中，使用扳手右键物品基座激活",
 
@@ -198,10 +198,7 @@
     "tooltip.r2aot.pedestal_1": "右键放入 空手Shift+右键取出",
     "tooltip.r2aot.loot_fabricator_1": "§c不耗电",
     "tooltip.r2aot.flux_dust": "由红石通过原子再构机转换获得",
-    "tooltip.r2aot.time_voucher_1": "右键使用可获得2h时间之瓶的时间",
-    "tooltip.r2aot.time_voucher_2": "§4由于模组本身的bug",
-    "tooltip.r2aot.time_voucher_3": "§4请确保在使用前没有使用/reload指令",
-    "tooltip.r2aot.time_voucher_4": "§4否则，请重进存档",
+    "tooltip.r2aot.time_voucher_1": "右键使用可随机获得1~5h时间之瓶的时间",
     "tooltip.r2aot.controller_frame_1": "合成时ME控制器不消耗",
     "tooltip.ars.source_gem": "通过在灌注室灌注紫水晶获得。",
 
@@ -224,7 +221,10 @@
     "r2aot.startup.new_version": "§c存在新版本 §c%s",
 
     "message.r2aot.multiblock.incorrect": "结构不正确",
-    "message.r2aot.tiab": "请先将时间瓶放入背包中！",
+    "message.r2aot.tiab_void": "背包中没有时间之瓶",
+    "message.r2aot.time_add_success": "成功添加 %s 秒",
+    "message.r2aot.time_add_partial": "已添加 %s 秒（已达上限 %s 秒）",
+    "message.r2aot.time_already_max": "时间之瓶已满（%s 秒）",
     "message.r2aot.lightning_rod_clicks": "已点击 %s/10 次",
 
     "ftbq.r2aot.capsule.text": "§b点击查看胶囊",
@@ -256,7 +256,7 @@
     "ftbq.r2aot.additional-AE2.sky_stone_block.subtitle": "可以粉碎成陨石粉循环额外产出",
 
     "ftbq.r2aot.additional-hostilenetworks.start.title": "敌对神经网络",
-    
+
     "ftbq.r2aot.chapter_groups.chapter1.title": "第一章 机械创世，魔力初开",
     "ftbq.r2aot.chapter1-1.start.title": "第一节",
     "ftbq.r2aot.chapter1-1.fertilizer.title": "旅途的开始",
@@ -337,4 +337,3 @@
     "patchouli.gui.lexicon.slime_model": "§a史莱姆§r 数据模型",
     "patchouli.gui.lexicon.spider_model": "§8蜘蛛§r 数据模型"
 }
-

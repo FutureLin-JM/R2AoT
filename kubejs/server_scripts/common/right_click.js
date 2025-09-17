@@ -138,12 +138,13 @@ ItemEvents.rightClicked('r2aot:time_voucher', event => {
     const { hand, item, player } = event;
     if (hand != 'MAIN_HAND') return;
 
-    if (hasTimeInABottle(player)) {
-        player.runCommand('tiab addTime 7200'); // tiab指令在 /reload 后会失效，尝试使用API后无果放弃
+    // 随机添加1到5小时的整小时时间
+    const randomHours = Math.floor(Math.random() * 5) + 1;
+    const randomSeconds = randomHours * 3600;
+
+    if (addTimeToTIAB(player, randomSeconds)) {
         item.count--;
         player.swing();
-    } else {
-        player.tell(Text.translate('message.r2aot.tiab'));
     }
 });
 

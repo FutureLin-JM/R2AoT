@@ -47,7 +47,7 @@ ItemEvents.tooltip(event => {
         { id: 'r2aot:processing_mixer_core', key: 'tooltip.r2aot.processing_mixer_core', lines: 2 },
         { id: 'botania:terra_plate', key: 'tooltip.botania.terra_plate', lines: 2 },
         { id: 'r2aot:fluid_sourcelink', key: 'tooltip.r2aot.fluid_sourcelink', lines: 3 },
-        { id: 'r2aot:pedestal_ars', key: 'tooltip.r2aot.pedestal_ars', lines: 2 },
+        { id: 'r2aot:pedestal_ars', key: 'tooltip.r2aot.pedestal_ars', lines: 3 },
         { id: 'r2aot:pedestal_botania', key: 'tooltip.r2aot.pedestal_botania', lines: 2 },
     ];
     shiftTooltips.forEach(item => {
@@ -66,7 +66,7 @@ ItemEvents.tooltip(event => {
         { id: 'r2aot:modular_pure_daisy_core', key: 'tooltip.r2aot.modular_pure_daisy_core', lines: 1 },
         { id: 'r2aot:pedestal', key: 'tooltip.r2aot.pedestal', lines: 1 },
         { id: 'hostilenetworks:loot_fabricator', key: 'tooltip.r2aot.loot_fabricator', lines: 1 },
-        { id: 'r2aot:time_voucher', key: 'tooltip.r2aot.time_voucher', lines: 4 },
+        { id: 'r2aot:time_voucher', key: 'tooltip.r2aot.time_voucher', lines: 1 },
         { id: 'r2aot:controller_frame', key: 'tooltip.r2aot.controller_frame', lines: 1 },
     ];
     linesTooltip.forEach(item => {

@@ -23,18 +23,50 @@ function setItemExtract(event) {
 }
 
 /**
- * 检测玩家是否拥有时间瓶(Time in a Bottle)
- * @param {Internal.ServerPlayer} player 要检测的玩家
- * @returns {boolean} 是否拥有时间瓶
+ * 为时间之瓶添加时间
+ * @param {Internal.ServerPlayer} player
+ * @param {number} seconds 时间，单位秒
+ * @return {boolean} 是否成功添加时间
  */
-function hasTimeInABottle(player) {
-    // 检查物品栏
-    const foundInMainInventory = player.inventory.allItems.some(item => item.id === 'tiab:time_in_a_bottle');
-    if (foundInMainInventory) return true;
+function addTimeToTIAB(player, seconds) {
+    const MAX_STORED_TIME = 622080000;
+    const TICK_CONST = 20;
+    const MAX_STORED_SECONDS = MAX_STORED_TIME / TICK_CONST;
 
-    return false;
+    const result = player.inventory.allItems.find(item => item.id === 'tiab:time_in_a_bottle');
+    if (!result) {
+        player.tell(Text.translate('message.r2aot.tiab_void'));
+        return false;
+    }
+
+    const nbt = result?.nbt;
+    if (!nbt) return false;
+
+    let currentTime = nbt.getInt('storedTime');
+    const timeToAdd = seconds * TICK_CONST;
+
+    if (currentTime >= MAX_STORED_TIME) {
+        player.tell(Text.translate('message.r2aot.time_already_max', MAX_STORED_SECONDS.toString()));
+        return false;
+    }
+
+    if (currentTime + timeToAdd > MAX_STORED_TIME) {
+        let actualAddTime = MAX_STORED_TIME - currentTime;
+        let actualAddSeconds = actualAddTime / TICK_CONST;
+
+        nbt.putInt('storedTime', MAX_STORED_TIME);
+        result.nbt = nbt;
+        player.tell(
+            Text.translate('message.r2aot.time_add_partial', actualAddSeconds.toString(), MAX_STORED_SECONDS.toString())
+        );
+        return true;
+    } else {
+        nbt.putInt('storedTime', currentTime + timeToAdd);
+        result.nbt = nbt;
+        player.tell(Text.translate('message.r2aot.time_add_success', seconds.toString()));
+        return true;
+    }
 }
-
 /**
  * 遵循原则：
  * 1. type表示配方类型（可选）
