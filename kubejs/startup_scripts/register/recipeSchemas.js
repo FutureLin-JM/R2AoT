@@ -2,21 +2,30 @@
 StartupEvents.recipeSchemaRegistry(event => {
     const { components } = event;
 
+    const outputItem = components.get('outputItem')();
+    const outputItemArray = components.get('outputItemArray')();
+    const inputItem = components.get('inputItem')();
+    const inputItemArray = components.get('inputItemArray')();
+    const intNumber = components.get('intNumber')();
+    const bool = components.get('bool')();
+
+    const registryItemObject = components.get('registryObject')({ registry: 'item' });
+
     event.register(
         'botania:petal_apothecary',
         new $RecipeSchema(
-            components.get('outputItem')().key('output'),
-            components.get('inputItemArray')().key('ingredients'),
-            components.get('inputItem')().key('reagent').optional('#botania:seed_apothecary_reagent').alwaysWrite()
+            outputItem.key('output'),
+            inputItemArray.key('ingredients'),
+            inputItem.key('reagent').optional('#botania:seed_apothecary_reagent').alwaysWrite()
         )
     );
 
     event.register(
         'botania:mana_infusion',
         new $RecipeSchema(
-            components.get('outputItem')().key('output'),
-            components.get('inputItemArray')().key('input'),
-            components.get('intNumber')().key('mana').optional(500).alwaysWrite()
+            outputItem.key('output'),
+            inputItemArray.key('input'),
+            intNumber.key('mana').optional(500).alwaysWrite()
             // 催化剂部分放弃，真的不会写！！！
         )
     );
@@ -24,46 +33,61 @@ StartupEvents.recipeSchemaRegistry(event => {
     event.register(
         'botania:runic_altar',
         new $RecipeSchema(
-            components.get('outputItem')().key('output'),
-            components.get('inputItemArray')().key('ingredients'),
-            components.get('intNumber')().key('mana').optional(5200).alwaysWrite()
+            outputItem.key('output'),
+            inputItemArray.key('ingredients'),
+            intNumber.key('mana').optional(5200).alwaysWrite()
         )
     );
 
     event.register(
         'botania:elven_trade',
-        new $RecipeSchema(
-            components.get('outputItemArray')().key('output'),
-            components.get('inputItemArray')().key('ingredients')
-        )
+        new $RecipeSchema(outputItemArray.key('output'), inputItemArray.key('ingredients'))
     );
 
     event.register(
         'botania:terra_plate',
         new $RecipeSchema(
-            components.get('outputItem')().key('result'),
-            components.get('inputItemArray')().key('ingredients'),
-            components.get('intNumber')().key('mana').optional(500000).alwaysWrite()
+            outputItem.key('result'),
+            inputItemArray.key('ingredients'),
+            intNumber.key('mana').optional(500000).alwaysWrite()
         )
     );
 
     event.register(
         'mysticalagriculture:infusion',
-        new $RecipeSchema(
-            components.get('outputItem')().key('result'),
-            components.get('inputItem')().key('input'),
-            components.get('inputItemArray')().key('ingredients')
-        )
+        new $RecipeSchema(outputItem.key('result'), inputItem.key('input'), inputItemArray.key('ingredients'))
     );
 
     event.register(
         'ars_nouveau:enchanting_apparatus',
         new $RecipeSchema(
-            components.get('inputItemArray')().key('pedestalItems'),
-            components.get('inputItemArray')().key('reagent'),
-            components.get('outputItem')().key('output'),
-            components.get('intNumber')().key('sourceCost').optional(0),
-            components.get('bool')().key('keepNbtOfReagent').optional(false)
+            outputItem.key('output'),
+            inputItemArray.key('pedestalItems'),
+            inputItemArray.key('reagent'),
+            intNumber.key('sourceCost').optional(0),
+            bool.key('keepNbtOfReagent').optional(false)
+        )
+    );
+
+    let pedestalComponent = new $RecipeComponentBuilder(1)
+        .add(inputItem.key('item'))
+        .mapIn(original => {
+            if (original instanceof $JsonObject) return original;
+            if (original && original.item != null) {
+                return original;
+            }
+            return { item: original };
+        })
+        .asArray();
+
+    event.register(
+        'ars_nouveau:imbuement',
+        new $RecipeSchema(
+            registryItemObject.key('output'),
+            inputItem.key('input'),
+            intNumber.key('source').optional(0),
+            pedestalComponent.key('pedestalItems').optional([]).alwaysWrite(),
+            intNumber.key('count').optional(1).alwaysWrite()
         )
     );
 });
