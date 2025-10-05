@@ -39,6 +39,8 @@ ItemEvents.tooltip(event => {
         { id: 'r2aot:andesite_casing_maker_core', key: 'tooltip.r2aot.andesite_casing_maker_core', lines: 3 },
         { id: 'r2aot:rainbow_furnace', key: 'tooltip.r2aot.rainbow_furnace', lines: 5 },
         { id: 'r2aot:mana_generator_core', key: 'tooltip.r2aot.mana_generator_core', lines: 3 },
+        { id: 'r2aot:fluid_input', key: 'tooltip.r2aot.fluid_input', lines: 2 },
+        { id: 'r2aot:fluid_output', key: 'tooltip.r2aot.fluid_output', lines: 3 },
         { id: 'r2aot:flower_ore_generator', key: 'tooltip.r2aot.flower_ore_generator', lines: 5 },
         { id: 'r2aot:mana_motor', key: 'tooltip.r2aot.mana_motor', lines: 3 },
         { id: 'r2aot:stress_generator_core', key: 'tooltip.r2aot.stress_generator_core', lines: 5 },
@@ -49,6 +51,7 @@ ItemEvents.tooltip(event => {
         { id: 'r2aot:fluid_sourcelink', key: 'tooltip.r2aot.fluid_sourcelink', lines: 3 },
         { id: 'r2aot:pedestal_ars', key: 'tooltip.r2aot.pedestal_ars', lines: 3 },
         { id: 'r2aot:pedestal_botania', key: 'tooltip.r2aot.pedestal_botania', lines: 2 },
+        { id: 'r2aot:modular_runic_altar_core', key: 'tooltip.r2aot.modular_runic_altar_core', lines: 2 },
     ];
     shiftTooltips.forEach(item => {
         addShiftTooltip(event, item.id, item.key, item.lines);
@@ -60,8 +63,6 @@ ItemEvents.tooltip(event => {
         { id: 'r2aot:create_input', key: 'tooltip.r2aot.create_input', lines: 1 },
         { id: 'r2aot:create_output', key: 'tooltip.r2aot.create_output', lines: 1 },
         { id: 'r2aot:stress_input', key: 'tooltip.r2aot.stress_input', lines: 1 },
-        { id: 'r2aot:fluid_input', key: 'tooltip.r2aot.fluid_input', lines: 2 },
-        { id: 'r2aot:fluid_output', key: 'tooltip.r2aot.fluid_output', lines: 3 },
         { id: 'createendertransmission:energy_transmitter', key: 'tooltip.createendertransmission.energy_transmitter', lines: 2, },
         { id: 'r2aot:modular_pure_daisy_core', key: 'tooltip.r2aot.modular_pure_daisy_core', lines: 1 },
         { id: 'r2aot:pedestal', key: 'tooltip.r2aot.pedestal', lines: 1 },

@@ -8,6 +8,22 @@ ServerEvents.recipes(event => {
         5000
     ).id(kjs('enchanting_apparatus', 'dripstone_block'));
 
+    enchanting_apparatus(
+        'r2aot:modular_runic_altar_core',
+        [
+            'ars_nouveau:water_essence',
+            'ars_nouveau:fire_essence',
+            'ars_nouveau:earth_essence',
+            'ars_nouveau:air_essence',
+            'botania:rune_water',
+            'botania:rune_fire',
+            'botania:rune_earth',
+            'botania:rune_air',
+        ],
+        'botania:livingrock',
+        10000
+    ).id(kjs('enchanting_apparatus', 'modular_runic_altar_core'));
+
     imbuement('ars_nouveau:water_essence', 'ars_nouveau:source_gem', 2000, [
         'ars_nouveau:frostaya_pod',
         'botania:rune_water',

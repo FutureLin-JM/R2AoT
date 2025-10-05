@@ -183,8 +183,8 @@
 				}
 			]
 			title: "{ftbq.r2aot.chapter2-4.thermal_alloy1_title}"
-			x: -4.0d
-			y: 2.0d
+			x: -2.0d
+			y: 4.0d
 		}
 		{
 			dependencies: [
@@ -214,9 +214,9 @@
 					type: "item"
 				}
 			]
-			title: "{ftbq.r2aot.chapter2-4.thermal_alloy_seeds_title}"
-			x: -2.0d
-			y: 2.0d
+			title: "{ftbq.r2aot.chapter2-4.thermal_alloy_seeds.title}"
+			x: 0.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["6390FAD8CD2CCD9D"]
@@ -243,9 +243,9 @@
 					type: "item"
 				}
 			]
-			title: "{ftbq.r2aot.chapter2-4.thermal_alloy_essence_title}"
-			x: 0.0d
-			y: 2.0d
+			title: "{ftbq.r2aot.chapter2-4.thermal_alloy_essence.title}"
+			x: 2.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["640E3BB6881A6144"]
@@ -280,13 +280,12 @@
 					type: "checkmark"
 				}
 			]
-			title: "{ftbq.r2aot.chapter2-4.thermal_molten_alloy_title}"
+			title: "{ftbq.r2aot.chapter2-4.thermal_molten_alloy.title}"
 			x: 2.0d
 			y: 2.0d
 		}
 		{
 			dependencies: ["0181B226C2493004"]
-			hide_dependent_lines: true
 			id: "2504DD936A01CB2C"
 			tasks: [{
 				id: "47BF49B4DBDD1530"
@@ -294,7 +293,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: -2.0d
+			y: 2.0d
 		}
 		{
 			dependencies: [
@@ -324,8 +323,8 @@
 					type: "item"
 				}
 			]
-			x: -6.0d
-			y: 2.0d
+			x: -4.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["59F23C3D5935C257"]
@@ -464,7 +463,7 @@
 				"72EBA063A1692813"
 				"6196D0D19F64E59A"
 			]
-			description: ["{ftbq.r2aot.chapter2-4.smithing_template_desc_1}"]
+			description: ["{ftbq.r2aot.chapter2-4.smithing_template.desc_1}"]
 			id: "0667E4CEDEC7C014"
 			tasks: [{
 				id: "7A08B650CFE177F2"
@@ -505,7 +504,6 @@
 					type: "checkmark"
 				}
 			]
-			title: "{ftbq.r2aot.chapter2-4.thermal_molten_alloy_title}"
 			x: 6.0d
 			y: 2.0d
 		}
@@ -528,7 +526,7 @@
 				"1646280910772ED0"
 			]
 			id: "63B8C47EC8226BEC"
-			subtitle: "{ftbq.r2aot.chapter2-4.luxvoid_alloy_subtitle}"
+			subtitle: "{ftbq.r2aot.chapter2-4.luxvoid_alloy.subtitle}"
 			tasks: [{
 				id: "5B2340625EDCF472"
 				item: "r2aot:luxvoid_alloy"
@@ -675,6 +673,7 @@
 					type: "item"
 				}
 			]
+			title: "{ftbq.r2aot.chapter2-4.thermal_alloy_seeds.title}"
 			x: 12.0d
 			y: 3.0d
 		}
@@ -698,8 +697,27 @@
 					type: "item"
 				}
 			]
+			title: "{ftbq.r2aot.chapter2-4.thermal_alloy_essence.title}"
 			x: 12.0d
 			y: 5.0d
+		}
+		{
+			dependencies: ["0181B226C2493004"]
+			id: "235A8B4A41B4419C"
+			tasks: [{
+				id: "2E3FB3572DB6DA28"
+				item: {
+					Count: 1
+					id: "botania:mana_tablet"
+					tag: {
+						creative: 1b
+						mana: 500000
+					}
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.0d
 		}
 	]
 	title: "{ftbq.r2aot.chapter2-4.start.title}"

@@ -57,6 +57,14 @@ ServerEvents.recipes(event => {
         20
     );
 
+    soil(
+        'ars_nouveau:sourcestone',
+        { block: 'ars_nouveau:sourcestone' },
+        ['red_archwood', 'green_archwood', 'purple_archwood', 'blue_archwood'],
+        0,
+        5
+    );
+
     crop(
         'minecraft:vine',
         ['r2aot_level_0'],

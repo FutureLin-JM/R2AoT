@@ -186,10 +186,11 @@ ServerEvents.recipes(event => {
         })
         .id(kjs('pipez_fluid_pipe'));
 
-    kubejs.shaped('4x minecraft:chest', ['AAA', 'A A', 'AAA'], {
-        A: '#minecraft:logs'
-    })
-    .id(kjs('chest_from_logs'));
+    kubejs
+        .shaped('4x minecraft:chest', ['AAA', 'A A', 'AAA'], {
+            A: '#minecraft:logs',
+        })
+        .id(kjs('chest_from_logs'));
 
     // 魔力池
     kubejs
@@ -225,6 +226,50 @@ ServerEvents.recipes(event => {
     kubejs
         .shapeless('r2aot:data_model_base', ['hostilenetworks:blank_data_model'])
         .id(kjs('hostilenetworks_data_model_base'));
+
+    // 安山合金
+    kubejs
+        .shaped('2x create:andesite_alloy', ['AB ', 'BA ', '   '], {
+            A: 'minecraft:andesite',
+            B: 'r2aot:green_gravel_shard',
+        })
+        .id(kjs('andesite_alloy'));
+
+    // 安山机壳
+    kubejs
+        .shaped('create:andesite_casing', ['ABA', 'BCB', 'ABA'], {
+            A: 'botania:light_gray_petal',
+            B: 'create:andesite_alloy',
+            C: 'minecraft:stripped_oak_log',
+        })
+        .id(kjs('andesite_casing'));
+
+    // 风帆框架
+    kubejs
+        .shaped('16x create:sail_frame', ['AAA', 'ABA', 'AAA'], {
+            A: '#forge:rods/wooden',
+            B: 'create:andesite_alloy',
+        })
+        .id(kjs('sail_frame'));
+
+    // 石磨
+    kubejs
+        .shaped('create:millstone', [' A ', ' B ', ' C '], {
+            A: 'create:cogwheel',
+            B: 'create:andesite_casing',
+            C: 'botania:livingrock',
+        })
+        .id('create:crafting/kinetics/millstone');
+
+    // 应力传输器
+    kubejs
+        .shaped('createendertransmission:energy_transmitter', ['ABA', 'ACA', 'ADA'], {
+            A: 'minecraft:obsidian',
+            B: 'create:shaft',
+            C: 'create:precision_mechanism',
+            D: 'minecraft:ender_pearl',
+        })
+        .id(kjs('energy_transmitter'));
 
     // 初级种子
     kubejs

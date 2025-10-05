@@ -47,6 +47,7 @@
 				"4FAD9C7EA9405090"
 				"4F5DAA8DEA244F6F"
 			]
+			dependency_requirement: "one_completed"
 			id: "403F97547E744B65"
 			tasks: [{
 				id: "385E9A6F74A8FBA0"
@@ -108,7 +109,7 @@
 		{
 			dependencies: ["403F97547E744B65"]
 			id: "21A67F2D77B9F8CC"
-			subtitle: "{ftbq.r2aot.chapter1-2.milling_subtitle}"
+			subtitle: "{ftbq.r2aot.chapter1-2.milling.subtitle}"
 			tasks: [
 				{
 					id: "5CA5BF429462F4D5"

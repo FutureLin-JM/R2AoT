@@ -47,78 +47,47 @@
 					type: "item"
 				}
 				{
-					id: "6FCA7E673A9CB2F3"
-					item: "ars_nouveau:purple_archwood_sapling"
-					type: "item"
-				}
-				{
 					id: "2E09D731A034049E"
 					item: "ars_nouveau:green_archwood_sapling"
 					type: "item"
 				}
+				{
+					id: "1BDCFC800F60075F"
+					item: "ars_nouveau:purple_archwood_sapling"
+					type: "item"
+				}
 			]
+			title: "{ftbq.r2aot.chapter2-5.archwood_sapling.title}"
 			x: 4.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["2735966E0329E923"]
-			icon: "ars_nouveau:scribes_table"
-			id: "5CBD186871BCEEC9"
-			tasks: [
-				{
-					id: "5271C76FB0A29A54"
-					item: "ars_nouveau:scribes_table"
-					type: "item"
-				}
-				{
-					id: "3BD0696A64271B43"
-					item: "minecraft:lightning_rod"
-					type: "item"
-				}
-			]
-			x: 4.0d
-			y: 2.0d
-		}
-		{
-			dependencies: ["5CBD186871BCEEC9"]
+			dependencies: ["01A1450599085811"]
 			description: [
-				"{ftbq.r2aot.chapter2-5.novice_spell_book_1}"
-				""
-				"{ftbq.r2aot.chapter2-5.novice_spell_book_2}"
-				"{ftbq.r2aot.chapter2-5.novice_spell_book_3}"
-				""
-				"{ftbq.r2aot.chapter2-5.novice_spell_book_4}"
-				"{ftbq.r2aot.chapter2-5.novice_spell_book_5}"
+				"{ftbq.r2aot.chapter2-5.novice_spell_book.desc_1}"
+				"{ftbq.r2aot.chapter2-5.novice_spell_book.desc_2}"
 			]
 			icon: "ars_nouveau:glyph_lightning"
 			id: "1E2FDC17F7379463"
-			rewards: [{
-				id: "1BD1D1DF38F3399D"
-				item: {
-					Count: 1
-					id: "ars_nouveau:novice_spell_book"
-					tag: { }
-				}
-				type: "item"
-			}]
 			subtitle: "{jei.information.ars.glyph_lightning}"
-			tasks: [{
-				id: "0E02D1423FDF53D5"
-				item: "ars_nouveau:glyph_lightning"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "0E02D1423FDF53D5"
+					item: "ars_nouveau:glyph_lightning"
+					type: "item"
+				}
+				{
+					id: "527B6A46090D0559"
+					item: "minecraft:lightning_rod"
+					type: "item"
+				}
+				{
+					id: "7567040AADFF8469"
+					item: "minecraft:amethyst_shard"
+					type: "item"
+				}
+			]
 			x: 6.0d
-			y: 2.0d
-		}
-		{
-			dependencies: ["1E2FDC17F7379463"]
-			id: "0F6C019EAEA0BAEB"
-			tasks: [{
-				id: "10312E3AB83DC969"
-				item: "minecraft:amethyst_shard"
-				type: "item"
-			}]
-			x: 8.0d
 			y: 2.0d
 		}
 		{
@@ -135,7 +104,7 @@
 		{
 			dependencies: [
 				"2D910ADB5A76D799"
-				"0F6C019EAEA0BAEB"
+				"1E2FDC17F7379463"
 			]
 			id: "77C927E295D0BA8E"
 			tasks: [{
@@ -155,7 +124,7 @@
 				type: "item"
 			}]
 			x: 8.0d
-			y: -2.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["77C927E295D0BA8E"]
@@ -178,17 +147,20 @@
 				}
 			]
 			x: 10.0d
-			y: 0.0d
+			y: 2.0d
 		}
 		{
-			dependencies: ["0F1849A58EC76B8E"]
+			dependencies: [
+				"0F1849A58EC76B8E"
+				"77C927E295D0BA8E"
+			]
 			id: "4A268476F2831F0C"
 			tasks: [{
 				id: "1ED07B9420A8335B"
 				item: "ars_nouveau:sourcestone"
 				type: "item"
 			}]
-			x: 12.0d
+			x: 10.0d
 			y: 0.0d
 		}
 		{
@@ -206,7 +178,7 @@
 					type: "item"
 				}
 			]
-			x: 14.0d
+			x: 12.0d
 			y: 0.0d
 		}
 		{
@@ -217,8 +189,116 @@
 				item: "minecraft:dripstone_block"
 				type: "item"
 			}]
-			x: 14.0d
+			x: 12.0d
 			y: 2.0d
+		}
+		{
+			dependencies: [
+				"5AA3B0A7A72A15AC"
+				"235A8B4A41B4419C"
+			]
+			id: "224E1D137C68B4C4"
+			tasks: [{
+				id: "03722A3C255476EB"
+				item: "botania:creative_pool"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"2D910ADB5A76D799"
+				"370C0B84B096D7CB"
+			]
+			id: "653533B0110A77EE"
+			tasks: [
+				{
+					id: "6EAD350E2CCA7526"
+					item: "ars_nouveau:water_essence"
+					type: "item"
+				}
+				{
+					id: "266B3A8E34D67BEF"
+					item: "ars_nouveau:fire_essence"
+					type: "item"
+				}
+				{
+					id: "0DB88D4B3FF47637"
+					item: "ars_nouveau:earth_essence"
+					type: "item"
+				}
+				{
+					id: "14BCEEBB1B28B3F0"
+					item: "ars_nouveau:air_essence"
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["2735966E0329E923"]
+			id: "370C0B84B096D7CB"
+			tasks: [
+				{
+					id: "6072E35EFDEADB58"
+					item: "ars_nouveau:frostaya_pod"
+					type: "item"
+				}
+				{
+					id: "07689002659FDAAA"
+					item: "ars_nouveau:bombegranate_pod"
+					type: "item"
+				}
+				{
+					id: "33A2AAF37B62BAFE"
+					item: "ars_nouveau:mendosteen_pod"
+					type: "item"
+				}
+				{
+					id: "41AD4AE58FBD73E9"
+					item: "ars_nouveau:bastion_pod"
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["2735966E0329E923"]
+			id: "01A1450599085811"
+			rewards: [{
+				id: "722191DD76356ABA"
+				item: "ars_nouveau:archmage_spell_book"
+				type: "item"
+			}]
+			tasks: [{
+				id: "29CAB527D4D3AD4D"
+				item: "ars_nouveau:scribes_table"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["01A1450599085811"]
+			id: "6F64686DF6EEDF77"
+			subtitle: "{ftbq.r2aot.chapter2-5.crush.subtitle}"
+			tasks: [
+				{
+					id: "7DEECD30F97C130E"
+					item: "ars_nouveau:glyph_crush"
+					type: "item"
+				}
+				{
+					id: "403E0BB69265B096"
+					item: "ars_nouveau:glyph_sensitive"
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 4.0d
 		}
 	]
 	title: "{ftbq.r2aot.chapter2-5.start.title}"

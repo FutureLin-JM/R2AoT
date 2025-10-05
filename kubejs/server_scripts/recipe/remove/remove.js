@@ -92,10 +92,17 @@ ServerEvents.recipes(event => {
         'thermal:augments/upgrade_augment_3',
         'botania:terra_plate',
         'ars_nouveau:glyph_lightning',
+        'ars_nouveau:glyph_crush',
         'ars_nouveau:imbuement_lapis',
+        'ars_nouveau:glyph_sensitive',
         'avaritia:botania_creative_pool',
         'ars_nouveau:sourcestone',
         'create:milling/dripstone_block',
+        'botania:shimmerrock',
+        'ars_nouveau:imbuement_water_essence',
+        'ars_nouveau:imbuement_fire_essence',
+        'ars_nouveau:imbuement_earth_essence',
+        'ars_nouveau:imbuement_air_essence',
     ];
     recipesToRemoveID.forEach(recipes => {
         event.remove({ id: recipes });
