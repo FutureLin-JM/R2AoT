@@ -1,0 +1,35 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"idel": {},
+		"formed": {
+			"loop": true,
+			"animation_length": 10.4,
+			"bones": {
+				"gem": {
+					"rotation": {
+						"vector": [
+							"math.sin(query.anim_time * 360 / 10.4) * 50",
+							"math.cos(query.anim_time * 360 / 10.4) * 50",
+							"math.sin(query.anim_time * 360 / 10.4) * 50"
+						]
+					},
+					"position": {
+						"vector": [0, "math.sin(query.anim_time*360 / 10.4)*.50", 0]
+					}
+				},
+				"framework": {
+					"rotation": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"10.4": {
+							"vector": [0, 360, 0]
+						}
+					}
+				}
+			}
+		}
+	},
+	"geckolib_format_version": 2
+}

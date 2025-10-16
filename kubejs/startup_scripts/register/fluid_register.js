@@ -13,4 +13,10 @@ StartupEvents.registry('fluid', event => {
     event.create('r2aot:molten_lumium').noBlock();
     event.create('r2aot:molten_signalum').noBlock();
     event.create('r2aot:molten_enderium').noBlock();
+
+    event
+        .create('r2aot:fluidedsource')
+        .stillTexture('r2aot:block/source_still')
+        .flowingTexture('r2aot:block/source_flow')
+        .color(0x9b13fb);
 });

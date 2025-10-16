@@ -52,6 +52,7 @@ ItemEvents.tooltip(event => {
         { id: 'r2aot:pedestal_ars', key: 'tooltip.r2aot.pedestal_ars', lines: 3 },
         { id: 'r2aot:pedestal_botania', key: 'tooltip.r2aot.pedestal_botania', lines: 2 },
         { id: 'r2aot:modular_runic_altar_core', key: 'tooltip.r2aot.modular_runic_altar_core', lines: 2 },
+        { id: 'r2aot:animatic_wellspring_core', key: 'tooltip.r2aot.animatic_wellspring_core', lines: 3 },
     ];
     shiftTooltips.forEach(item => {
         addShiftTooltip(event, item.id, item.key, item.lines);

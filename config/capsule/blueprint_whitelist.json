@@ -189,5 +189,6 @@
   "r2aot:modular_runic_altar_core",
   "r2aot:processing_mixer_core",
   "r2aot:controller_frame",
-  "r2aot:fluidedmana"
+  "r2aot:fluidedmana",
+  "r2aot:animatic_wellspring_core"
 ]

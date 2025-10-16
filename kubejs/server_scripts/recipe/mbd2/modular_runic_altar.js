@@ -1,6 +1,6 @@
 ServerEvents.recipes(event => {
     const { r2aot } = event.recipes;
-    const DURATION = 1;
+    const DURATION = 10;
 
     r2aot
         .modular_runic_altar_core()
@@ -11,7 +11,8 @@ ServerEvents.recipes(event => {
         .inputItems('botania:livingrock')
         .inputItems('botania:rune_autumn')
         .inputItems('botania:rune_air')
-        .duration(DURATION);
+        .duration(DURATION)
+        .id('r2aot:modular_runic_altar_core/rune_sloth');
 
     r2aot
         .modular_runic_altar_core()
@@ -22,7 +23,8 @@ ServerEvents.recipes(event => {
         .inputItems('botania:livingrock')
         .inputItems('botania:rune_winter')
         .inputItems('botania:rune_fire')
-        .duration(DURATION);
+        .duration(DURATION)
+        .id('r2aot:modular_runic_altar_core/rune_gluttony');
 
     r2aot
         .modular_runic_altar_core()
@@ -33,7 +35,8 @@ ServerEvents.recipes(event => {
         .inputItems('botania:livingrock')
         .inputItems('botania:rune_summer')
         .inputItems('botania:rune_air')
-        .duration(DURATION);
+        .duration(DURATION)
+        .id('r2aot:modular_runic_altar_core/rune_lust');
 
     r2aot
         .modular_runic_altar_core()
@@ -44,7 +47,8 @@ ServerEvents.recipes(event => {
         .inputItems('botania:livingrock')
         .inputItems('botania:rune_winter')
         .inputItems('botania:rune_water')
-        .duration(DURATION);
+        .duration(DURATION)
+        .id('r2aot:modular_runic_altar_core/rune_envy');
 
     r2aot
         .modular_runic_altar_core()
@@ -55,7 +59,8 @@ ServerEvents.recipes(event => {
         .inputItems('botania:livingrock')
         .inputItems('botania:rune_summer')
         .inputItems('botania:rune_fire')
-        .duration(DURATION);
+        .duration(DURATION)
+        .id('r2aot:modular_runic_altar_core/rune_pride');
 
     r2aot
         .modular_runic_altar_core()
@@ -66,7 +71,8 @@ ServerEvents.recipes(event => {
         .inputItems('botania:livingrock')
         .inputItems('botania:rune_winter')
         .inputItems('botania:rune_earth')
-        .duration(DURATION);
+        .duration(DURATION)
+        .id('r2aot:modular_runic_altar_core/rune_wrath');
 
     r2aot
         .modular_runic_altar_core()
@@ -77,7 +83,8 @@ ServerEvents.recipes(event => {
         .inputItems('botania:livingrock')
         .inputItems('botania:rune_spring')
         .inputItems('botania:rune_water')
-        .duration(DURATION);
+        .duration(DURATION)
+        .id('r2aot:modular_runic_altar_core/rune_greed');
 
     r2aot
         .modular_runic_altar_core()
@@ -90,7 +97,8 @@ ServerEvents.recipes(event => {
         .inputItems('botania:livingrock')
         .inputItems('botania:rune_water')
         .inputItems('botania:rune_fire')
-        .duration(DURATION);
+        .duration(DURATION)
+        .id('r2aot:modular_runic_altar_core/rune_spring');
 
     r2aot
         .modular_runic_altar_core()
@@ -103,7 +111,8 @@ ServerEvents.recipes(event => {
         .inputItems('botania:livingrock')
         .inputItems('botania:rune_earth')
         .inputItems('botania:rune_air')
-        .duration(DURATION);
+        .duration(DURATION)
+        .id('r2aot:modular_runic_altar_core/rune_summer');
 
     r2aot
         .modular_runic_altar_core()
@@ -116,7 +125,8 @@ ServerEvents.recipes(event => {
         .inputItems('botania:livingrock')
         .inputItems('botania:rune_fire')
         .inputItems('botania:rune_air')
-        .duration(DURATION);
+        .duration(DURATION)
+        .id('r2aot:modular_runic_altar_core/rune_autumn');
 
     r2aot
         .modular_runic_altar_core()
@@ -129,5 +139,6 @@ ServerEvents.recipes(event => {
         .inputItems('botania:livingrock')
         .inputItems('botania:rune_water')
         .inputItems('botania:rune_earth')
-        .duration(DURATION);
+        .duration(DURATION)
+        .id('r2aot:modular_runic_altar_core/rune_winter');
 });

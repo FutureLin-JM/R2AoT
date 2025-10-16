@@ -33,7 +33,7 @@ MBDMachineEvents.onTick('r2aot:fluid_sourcelink', event => {
         const maxSourceToAdd = closestProvider.getSource().getMaxSource() - closestProvider.getSource().getSource();
         const maxFluidToDrain = Math.floor(maxSourceToAdd / conversionRate);
 
-        const transferFluidAmount = Math.min(1000, maxFluidToDrain);
+        const transferFluidAmount = Math.min(1000, maxFluidToDrain, machineTank.getAmount());
         if (transferFluidAmount <= 0) return;
 
         const sourceToAdd = transferFluidAmount * conversionRate;

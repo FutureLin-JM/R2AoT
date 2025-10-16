@@ -48,6 +48,7 @@ probe/
 probe/**
 kubejs/README.txt
 kubejs/jsconfig.json
+kubejs/server_scripts/dev_tool.js
 
 # Ldlib
 !ldlib/

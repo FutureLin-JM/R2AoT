@@ -208,12 +208,12 @@ ServerEvents.recipes(event => {
 
         r2aot
             .modular_runic_altar_core()
-            .id(`r2aot:modular_runic_altar_core/${output.split(':')[1]}`)
             .outputItems(output)
             .inputItems(input)
             .inputItems('botania:livingrock')
             .inputMana(mana ? mana : 5200)
-            .duration(1);
+            .duration(1)
+            .id(`r2aot:modular_runic_altar_core/${output.split(':')[1]}`);
     }
 
     runicAltarRecipes(
@@ -295,7 +295,16 @@ ServerEvents.recipes(event => {
      * @param {number} mana
      */
     function terraPlateRecipes(output, input, mana) {
-        terra_plate(output, input, mana ? mana : 50000).id(kjs('terra_plate', output.split(':')[1]));
+        terra_plate(output, input, mana ? mana : 100000).id(kjs('terra_plate', output.split(':')[1]));
+
+        r2aot
+            .modular_terrestrial_agglomeration_core()
+            .outputItems(output)
+            .inputItems(input)
+            .inputMana(mana ? mana : 100000)
+            .chance(0.5, builder => builder.inputFluids(Fluid.of('r2aot:fluidedmana', 1000)))
+            .duration(20)
+            .id(`r2aot:modular_terrestrial_agglomeration_core/${output.split(':')[1]}`);
     }
 
     terraPlateRecipes(
