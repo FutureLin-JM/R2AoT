@@ -50,7 +50,7 @@ BlockEvents.rightClicked('r2aot:data_model_base', event => {
             block.popItemFromFace(dataModel, 'down');
             player.swing();
         } else {
-            player.tell(Text.translate('message.r2aot.multiblock.incorrect').aqua());
+            player.statusMessage = Text.translate('message.r2aot.multiblock.incorrect').red();
         }
     });
 });
@@ -74,7 +74,7 @@ BlockEvents.rightClicked('r2aot:double_compressed_cobblestone', event => {
         player.give('minecraft:bucket');
         player.swing();
     } else {
-        player.tell(Text.translate('message.r2aot.multiblock.incorrect').aqua());
+        player.statusMessage = Text.translate('message.r2aot.multiblock.incorrect').red();
         event.cancel();
     }
 });
@@ -88,7 +88,7 @@ BlockEvents.rightClicked('botania:terra_plate', event => {
     const altarMultiblock = $PatchouliAPI.getMultiblock('r2aot:terrestrial_agglomeration_altar');
 
     if (!altarMultiblock.validate(block.level, block.pos.below(), 'none')) {
-        player.tell(Text.translate('message.r2aot.multiblock.incorrect').aqua());
+        player.statusMessage = Text.translate('message.r2aot.multiblock.incorrect').red();
         event.cancel();
     }
 });

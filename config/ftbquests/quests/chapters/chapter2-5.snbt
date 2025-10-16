@@ -12,7 +12,7 @@
 			id: "60D28A21492EA6D6"
 			shape: "gear"
 			size: 1.5d
-			subtitle: "{\"translate\":\"ftbq.r2aot.capsule.text\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"5DBE62C3DE335D97\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"ftbq.r2aot.capsule.click\"}}}"
+			subtitle: "{\"translate\":\"ftbq.r2aot.ponder.text\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/ponder botania:terra_plate\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"ftbq.r2aot.capsule.click\"}}}"
 			tasks: [{
 				id: "627718F6EACA5E12"
 				item: "botania:terra_plate"

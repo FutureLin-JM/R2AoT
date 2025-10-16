@@ -14,7 +14,7 @@
 			id: "0181B226C2493004"
 			shape: "gear"
 			size: 1.5d
-			subtitle: "{\"translate\":\"ftbq.r2aot.capsule.text\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"0082EBA879F9F8B4\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"ftbq.r2aot.capsule.click\"}}}"
+			subtitle: "{\"translate\":\"ftbq.r2aot.ponder.text\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/ponder r2aot:elemental_altar_core\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"ftbq.r2aot.capsule.click\"}}}"
 			tasks: [
 				{
 					id: "7C80D1C6FF0E56A7"

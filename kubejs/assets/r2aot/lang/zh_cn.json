@@ -240,7 +240,6 @@
     "message.r2aot.time_already_max": "时间之瓶已满（%s 秒）",
     "message.r2aot.lightning_rod_clicks": "已点击 %s/10 次",
 
-    "ftbq.r2aot.capsule.text": "§b点击查看胶囊",
     "ftbq.r2aot.capsule.click": "点击跳转",
     "ftbq.r2aot.ponder.text": "§b点击查看相关思索",
     "ftbq.r2aot.observe.title": "观察：",
@@ -256,13 +255,8 @@
 
     "ftbq.raot.chapter_groups.utility.title": "实用",
     "ftbq.r2aot.utility.drawer.title": "功能性存储——抽屉",
-
-    "ftbq.r2aot.chapter_groups.capsule.title": "胶囊",
-    "ftbq.r2aot.capsule.precautions.title": "注意事项",
-    "ftbq.r2aot.capsule.precautions.desc_1": "1、按F3+T重载可能导致贴图错误，重启游戏即可修复",
-    "ftbq.r2aot.capsule.precautions.desc_2": "2、结构放置显示未成型时，重新放置一个方块可刷新状态",
-    "ftbq.r2aot.capsule.precautions.desc_3": "3、胶囊可以使用左键旋转，请勿使用Shift+左键翻转，会导致结构无法成型",
-    "ftbq.r2aot.capsule.precautions.desc_4": "4、部分胶囊无法旋转",
+    "ftbq.r2aot.utility.mbtool.desc_1": "SHIFT+右键 打开 GUI",
+    "ftbq.r2aot.utility.mbtool.desc_2": "SHIFT+滚轮 在放置前旋转结构",
 
     "ftbq.r2aot.chapter_groups.additional.title": "额外章",
     "ftbq.r2aot.additional-AE2.start.title": "应用能源2",

@@ -10,9 +10,6 @@
 !config/ars_nouveau/
 !config/ars_nouveau/glyph_lightning.toml
 !config/botania-client.toml
-!config/capsule/
-!config/capsule/**
-!config/capsule-common.toml
 !config/defaultworldtype/
 !config/defaultworldtype/client-config.toml
 !config/ftbquests/
@@ -22,6 +19,7 @@
 !config/industrialforegoing/machine-resources-production.toml
 !config/jade/
 !config/jade/plugins.json
+!config/mbtool-common.toml
 !config/modpack-update-checker
 !config/modpack-update-checker/**
 !config/skyblockbuilder/

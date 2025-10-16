@@ -317,7 +317,7 @@
 			dependencies: ["0C91CD50BF78FF1E"]
 			description: ["{ftbq.r2aot.chapter1-3.stress_generator_core.desc_1}"]
 			id: "0639FF08FFE66ADE"
-			subtitle: "{\"translate\":\"ftbq.r2aot.capsule.text\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"3C0C8B7CEE576EC8\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"ftbq.r2aot.capsule.click\"}}}"
+			subtitle: "{\"translate\":\"ftbq.r2aot.ponder.text\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/ponder r2aot:stress_generator_core\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"ftbq.r2aot.capsule.click\"}}}"
 			tasks: [{
 				id: "5EBEC8BA1A3A61F6"
 				item: "r2aot:stress_generator_core"
