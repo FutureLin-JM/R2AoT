@@ -3,7 +3,7 @@
 	"minecraft:geometry": [
 		{
 			"description": {
-				"identifier": "geometry.animatic_wellspring_core",
+				"identifier": "geometry.animal_wellspring_core",
 				"texture_width": 32,
 				"texture_height": 32,
 				"visible_bounds_width": 2,

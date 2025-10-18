@@ -83,7 +83,7 @@
     "block.r2aot.fluid_sourcelink": "流体魔源通道",
     "block.r2aot.pedestal_botania": "植物魔法基座",
     "block.r2aot.pedestal_ars": "新生魔艺基座",
-    "block.r2aot.animatic_wellspring_core": "万灵源井",
+    "block.r2aot.animal_wellspring_core": "万灵源井",
     "block.r2aot.modular_terrestrial_agglomeration_core": "模块化泰拉凝聚",
 
     "r2aot.fertilizer_propagator_core": "花肥育瓣机",
@@ -101,7 +101,7 @@
     "r2aot.processing_mixer_core": "处理混合机",
     "r2aot.pedestal_botania": "植物魔法基座",
     "r2aot.pedestal_ars": "新生魔艺基座",
-    "r2aot.animatic_wellspring_core": "万灵源井",
+    "r2aot.animal_wellspring_core": "万灵源井",
     "r2aot.modular_terrestrial_agglomeration_core": "模块化泰拉凝聚",
 
     "fluid.r2aot.petal_essence": "花瓣原液",
@@ -191,9 +191,9 @@
     "tooltip.r2aot.pedestal_botania_2": "将彩虹桥法杖放入物品基座中，使用扳手右键物品基座激活",
     "tooltip.r2aot.modular_runic_altar_core_1": "§6多方块机器",
     "tooltip.r2aot.modular_runic_altar_core_2": "结构中的磨制活石可替换为物品输入/输出仓",
-    "tooltip.r2aot.animatic_wellspring_core_1": "§6多方块机器",
-    "tooltip.r2aot.animatic_wellspring_core_2": "从4格范围内获取魔源，将其转化为液态魔源并在下方生成其流体方块",
-    "tooltip.r2aot.animatic_wellspring_core_3": "结构中收容罐对应生物及其位置请查看任务界面",
+    "tooltip.r2aot.animal_wellspring_core_1": "§6多方块机器",
+    "tooltip.r2aot.animal_wellspring_core_2": "从4格范围内获取魔源，将其转化为液态魔源并在下方生成其流体方块",
+    "tooltip.r2aot.animal_wellspring_core_3": "结构中收容罐对应生物及其位置请查看任务界面",
 
     "tooltip.r2aot.ae2_facade_1": "JEI隐藏了伪装板",
     "tooltip.r2aot.ae2_facade_2": "但依然可以合成",
@@ -223,7 +223,7 @@
 
     "jei.r2aot.fluid_sourcelink": "流体魔源通道",
     "jei.desc.r2aot.fluid_sourcelink.source": "%s 魔源",
-    "jei.desc.r2aot.animatic_wellspring_core": "10000 魔源",
+    "jei.desc.r2aot.animal_wellspring_core": "10000 魔源",
 
     "config.jade.plugin_r2aot.numerical_source": "魔源定量统计",
     "config.jade.plugin_r2aot.numerical_mana": "魔力定量统计",
@@ -325,7 +325,7 @@
     "ftbq.r2aot.chapter2-5.novice_spell_book.desc_1": "手持魔符&6右键&r以学习它",
     "ftbq.r2aot.chapter2-5.novice_spell_book.desc_2": "&6依次&r选择&6弹射物&r和&6闪电",
     "ftbq.r2aot.chapter2-5.crush.subtitle": "粉碎掉落物：弹射物=>粉碎=>敏感",
-    "ftbq.r2aot.chapter2-5.animatic_wellspring.desc_1": "结构中收容罐对应生物及其位置如下图",
+    "ftbq.r2aot.chapter2-5.animal_wellspring.desc_1": "结构中收容罐对应生物及其位置如下图",
 
     "patchouli.gui.lexicon.r2aot_book": "R2AoT 书",
     "patchouli.gui.lexicon.r2aot_book.text": "这是R2AoT的书",

@@ -18,15 +18,15 @@ const LEAVES_POSITIONS = [
 ];
 
 const LEAVES_TYPE = {
-    'ars_nouveau:blue_archwood_leaves': [0, 0, 255],
-    'ars_nouveau:red_archwood_leaves': [255, 0, 0],
-    'ars_nouveau:green_archwood_leaves': [0, 128, 0],
-    'ars_nouveau:purple_archwood_leaves': [128, 0, 128],
+    'ars_nouveau:blue_archwood_leaves': [50, 50, 255],
+    'ars_nouveau:red_archwood_leaves': [255, 50, 50],
+    'ars_nouveau:green_archwood_leaves': [50, 255, 50],
+    'ars_nouveau:purple_archwood_leaves': [255, 50, 255],
 };
 
 const numArray = [0, 1, 2, 3, 4, 5, 6, 7, 8];
 
-MBDMachineEvents.onRecipeWorking('r2aot:animatic_wellspring_core', event => {
+MBDMachineEvents.onRecipeWorking('r2aot:animal_wellspring_core', event => {
     const { machine, progress } = event.getEvent();
     const { level, pos, recipeLogic } = machine;
 
@@ -53,7 +53,7 @@ MBDMachineEvents.onRecipeWorking('r2aot:animatic_wellspring_core', event => {
     }
 });
 
-MBDMachineEvents.onTick('r2aot:animatic_wellspring_core', event => {
+MBDMachineEvents.onTick('r2aot:animal_wellspring_core', event => {
     const { machine } = event.getEvent();
     const { level, pos, recipeLogic } = machine;
 

@@ -4,8 +4,8 @@
     "parent": "minecraft:block/block",
     "texture_size": [32, 32],
     "textures": {
-        "0": "r2aot:block/animatic_wellspring_core",
-        "particle": "r2aot:block/animatic_wellspring_core"
+        "0": "r2aot:block/animal_wellspring_core",
+        "particle": "r2aot:block/animal_wellspring_core"
     },
     "elements": [
         {
