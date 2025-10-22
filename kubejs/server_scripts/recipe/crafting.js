@@ -285,7 +285,7 @@ ServerEvents.recipes(event => {
             I: '#forge:ingots/invar',
             G: '#forge:glass',
             R: '#forge:dusts/redstone',
-            X: '#forge:gears/lumium',
+            X: '#forge:gears/signalum',
         })
         .id(kjs('upgrade_augment_1'));
     minecraft
@@ -293,7 +293,7 @@ ServerEvents.recipes(event => {
             'thermal:upgrade_augment_2',
             'thermal_extra:augment_smithing_upgrade',
             'thermal:upgrade_augment_1',
-            '#forge:gears/signalum'
+            '#forge:gears/lumium'
         )
         .id(kjs('smithing', 'upgrade_augment_2'));
     minecraft
