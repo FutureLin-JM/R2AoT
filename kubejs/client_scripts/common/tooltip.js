@@ -81,10 +81,36 @@ ItemEvents.tooltip(event => {
                 1,
                 Text.translate('tooltip.r2aot.cobble_gen_1', Text.red(tierData.countEveryTime.toFixed(0))).yellow()
             );
-            text.add(2, Text.translate('tooltip.r2aot.cobble_gen_2', Text.red(tierData.onceSeconds.toFixed(0))).yellow());
-            text.add(3, Text.translate('tooltip.r2aot.cobble_gen_3', Text.red(tierData.maxCapacity.toFixed(0))).yellow());
+            text.add(
+                2,
+                Text.translate('tooltip.r2aot.cobble_gen_2', Text.red(tierData.onceSeconds.toFixed(0))).yellow()
+            );
+            text.add(
+                3,
+                Text.translate('tooltip.r2aot.cobble_gen_3', Text.red(tierData.maxCapacity.toFixed(0))).yellow()
+            );
             text.add(4, Text.translate('tooltip.r2aot.cobble_gen_4').yellow());
         });
+    });
+
+    const dataModelList = [
+        'hostilenetworks:blaze',
+        'hostilenetworks:ghast',
+        'hostilenetworks:chicken',
+        'hostilenetworks:sheep',
+        'hostilenetworks:cow',
+        'hostilenetworks:vindicator',
+        'hostilenetworks:creeper',
+        'hostilenetworks:skeleton',
+        'hostilenetworks:slime',
+        'hostilenetworks:enderman',
+        'hostilenetworks:spider',
+    ];
+    event.addAdvanced('hostilenetworks:data_model', (item, advanced, text) => {
+        let itemId = item.nbt?.data_model?.id;
+        if (itemId && dataModelList.includes(itemId)) {
+            text.add(1, Text.translate('tooltip.r2aot.data_model_1').yellow());
+        }
     });
 
     // function getRainbowColor(index, time) {

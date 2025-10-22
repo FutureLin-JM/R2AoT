@@ -226,8 +226,9 @@
     "tooltip.r2aot.flux_dust": "由红石通过原子再构机转换获得",
     "tooltip.r2aot.time_voucher_1": "右键使用可随机获得1~5h时间之瓶的时间",
     "tooltip.r2aot.controller_frame_1": "合成时ME控制器不消耗",
-    "tooltip.ars.source_gem": "通过在灌注室灌注紫水晶获得。",
+    "tooltip.r2aot.data_model_1": "该数据模型可通过多方块合成获得",
 
+    "tooltip.ars.source_gem": "通过在灌注室灌注紫水晶获得。",
     "tooltip.ars_nouveau.bookwyrm_charm_1": "对讲台使用可召唤出书龙",
     "tooltip.ars_nouveau.starbuncle_charm_1": "对着地面使用可召唤出星宝石兽",
     "tooltip.ars_nouveau.whirlisprig_charm_1": "对任意花朵使用可召唤出风转草",
@@ -285,6 +286,7 @@
     "ftbq.r2aot.additional-AE2.sky_stone_block.subtitle": "可以粉碎成陨石粉循环额外产出",
 
     "ftbq.r2aot.additional-hostilenetworks.start.title": "敌对神经网络",
+    "ftbq.r2aot.additional-hostilenetworks.data_model.subtitle": "通过多方块建造工具可获取相关结构并建造",
 
     "ftbq.r2aot.chapter_groups.chapter1.title": "第一章 机械创世，魔力初开",
     "ftbq.r2aot.chapter1-1.start.title": "第一节",
