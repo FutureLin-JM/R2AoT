@@ -1,9 +1,21 @@
 ServerEvents.tags('item', event => {
     let colors = [
-        'white','orange','magenta','light_blue',
-        'yellow','lime','pink','gray',
-        'light_gray','cyan','purple','blue',
-        'brown','green','red','black'
+        'white',
+        'orange',
+        'magenta',
+        'light_blue',
+        'yellow',
+        'lime',
+        'pink',
+        'gray',
+        'light_gray',
+        'cyan',
+        'purple',
+        'blue',
+        'brown',
+        'green',
+        'red',
+        'black',
     ];
     colors.forEach(color => {
         event.add('botania:petals_block', `botania:${color}_petal_block`);
@@ -37,6 +49,15 @@ ServerEvents.tags('item', event => {
         'r2aot:obsidian_furnace_component',
         'r2aot:netherite_furnace_component',
     ]);
+
+    event.add('forge:saplings/archwood', [
+        'ars_nouveau:purple_archwood_sapling',
+        'ars_nouveau:blue_archwood_sapling',
+        'ars_nouveau:green_archwood_sapling',
+        'ars_nouveau:red_archwood_sapling',
+    ]);
+
+    event.add('ars_nouveau:magic_shards', ['r2aot:bookwyrm_shards', 'r2aot:amethyst_golem_shards']);
 });
 
 ServerEvents.tags('block', event => {

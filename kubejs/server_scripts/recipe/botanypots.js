@@ -117,4 +117,13 @@ ServerEvents.recipes(event => {
             1
         ).id(kjs('botanypots', `${metalId}_essence`));
     });
+
+    crop(
+        'minecraft:nether_wart',
+        ['imperium'],
+        { block: 'minecraft:nether_wart' },
+        [Item.of('minecraft:nether_wart').withChance(1).withRolls(1, 2)],
+        1200,
+        1
+    ).id(kjs('botanypots', 'nether_wart'));
 });

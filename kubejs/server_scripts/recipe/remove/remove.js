@@ -103,6 +103,12 @@ ServerEvents.recipes(event => {
         'ars_nouveau:imbuement_fire_essence',
         'ars_nouveau:imbuement_earth_essence',
         'ars_nouveau:imbuement_air_essence',
+        'ars_nouveau:ritual_awakening',
+        'ars_nouveau:starbuncle_charm',
+        'ars_nouveau:whirlisprig_charm',
+        'ars_nouveau:wixie_charm',
+        'ars_nouveau:drygmy_charm',
+        
     ];
     recipesToRemoveID.forEach(recipes => {
         event.remove({ id: recipes });

@@ -20,12 +20,29 @@ StartupEvents.registry('item', event => {
     event.create('r2aot:time_voucher', 'basic');
     event.create('r2aot:luxvoid_alloy', 'basic').rarity('uncommon');
 
+    event.create('r2aot:mbd_builder', 'basic').maxStackSize(1);
+    event.create('r2aot:bookwyrm_shards', 'basic');
+    event.create('r2aot:amethyst_golem_shards', 'basic');
+
     event.create('kubejs:incomplete_water_seeds', 'create:sequenced_assembly').texture('r2aot:item/mystical_seeds');
     event.create('kubejs:incomplete_fire_seeds', 'create:sequenced_assembly').texture('r2aot:item/mystical_seeds');
     event.create('kubejs:incomplete_earth_seeds', 'create:sequenced_assembly').texture('r2aot:item/mystical_seeds');
     event.create('kubejs:incomplete_air_seeds', 'create:sequenced_assembly').texture('r2aot:item/mystical_seeds');
-    event.create('kubejs:incomplete_rf_coil', 'create:sequenced_assembly');
-    event.create('kubejs:incomplete_redstone_servo', 'create:sequenced_assembly');
+
+    let incompleteItem = [
+        'thermal:rf_coil',
+        'thermal:redstone_servo',
+        'ars_nouveau:bookwyrm_charm',
+        'ars_nouveau:starbuncle_charm',
+        'ars_nouveau:whirlisprig_charm',
+        'ars_nouveau:wixie_charm',
+        'ars_nouveau:drygmy_charm',
+        'ars_nouveau:amethyst_golem_charm',
+    ];
+    incompleteItem.forEach(item => {
+        let itemName = item.split(':')[1];
+        event.create(`kubejs:incomplete_${itemName}`, 'create:sequenced_assembly');
+    });
 
     let folderType = [
         'mysticalagriculture:water_seeds',

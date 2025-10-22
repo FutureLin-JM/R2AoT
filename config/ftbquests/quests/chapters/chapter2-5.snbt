@@ -301,18 +301,415 @@
 			y: 4.0d
 		}
 		{
+			dependencies: ["6B91CC3AC276D5AD"]
 			description: [
-				"{ftbq.r2aot.chapter2-5.animatic_wellspring.desc_1}"
-				"{image:r2aot:textures/image/animatic_wellspring_structure.png width:100 height:100 align:center fit:true}"
+				"{ftbq.r2aot.chapter2-5.animal_wellspring.desc_1}"
+				"{image:r2aot:textures/image/animal_wellspring_structure.png width:100 height:100 align:center fit:true}"
 			]
 			id: "75A51CE85B9A6E0B"
 			tasks: [{
 				id: "512C6AC51939551B"
-				item: "r2aot:animatic_wellspring_core"
+				item: "r2aot:animal_wellspring_core"
 				type: "item"
 			}]
-			x: 15.5d
+			x: 20.0d
 			y: 0.0d
+		}
+		{
+			dependencies: ["6A6A7638F93E2B31"]
+			id: "065CE1CB1331D5C7"
+			tasks: [{
+				id: "238D187F1495E312"
+				item: "ars_nouveau:whirlisprig_shards"
+				type: "item"
+			}]
+			x: 14.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["6A6A7638F93E2B31"]
+			id: "1E62389DDA623F90"
+			tasks: [{
+				id: "0D755FEC05F8E3E4"
+				item: "ars_nouveau:wixie_shards"
+				type: "item"
+			}]
+			x: 14.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["6A6A7638F93E2B31"]
+			id: "53B0EEA9F8A003CD"
+			tasks: [{
+				id: "5FCDF3E31669FDB5"
+				item: "ars_nouveau:starbuncle_shards"
+				type: "item"
+			}]
+			x: 14.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["6A6A7638F93E2B31"]
+			id: "417B805F61EFE0BE"
+			tasks: [{
+				id: "7C32510A85CE9C8E"
+				item: "r2aot:bookwyrm_shards"
+				type: "item"
+			}]
+			x: 14.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["6A6A7638F93E2B31"]
+			id: "16B9E03A4B271BE7"
+			tasks: [{
+				id: "2A4CF19A5F6D2892"
+				item: "ars_nouveau:drygmy_shard"
+				type: "item"
+			}]
+			x: 14.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["6A6A7638F93E2B31"]
+			id: "6D73E69160D5D04C"
+			tasks: [{
+				id: "7E1E8DAEF1E6C796"
+				item: "r2aot:amethyst_golem_shards"
+				type: "item"
+			}]
+			x: 14.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["3530148290FE202B"]
+			hide_dependent_lines: true
+			id: "03E9998456D07977"
+			tasks: [
+				{
+					id: "443EC9B2058F6237"
+					item: "r2aot:bookwyrm_flux_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "3AD215F70F007E0B"
+					item: "r2aot:stargem_fluid_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "317829BDBCC8E07B"
+					item: "r2aot:whirlisprig_extract_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "2116554E93723182"
+					item: "r2aot:wixie_elixir_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "49BA5BAF2E81F467"
+					item: "r2aot:drygmy_essence_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "340D045A3097E64B"
+					item: "r2aot:amethyst_sap_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "1EA19CE05EDF7DC6"
+					type: "checkmark"
+				}
+			]
+			x: 14.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"417B805F61EFE0BE"
+				"03E9998456D07977"
+			]
+			dependency_requirement: "one_completed"
+			id: "75E2D9C8C93C3270"
+			tasks: [{
+				id: "793BF0FC03AEC0A4"
+				item: "ars_nouveau:bookwyrm_charm"
+				type: "item"
+			}]
+			x: 16.0d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"53B0EEA9F8A003CD"
+				"03E9998456D07977"
+			]
+			dependency_requirement: "one_completed"
+			id: "229362E9C219BAC5"
+			tasks: [{
+				id: "48D7C3194953E429"
+				item: {
+					Count: 1
+					id: "ars_nouveau:starbuncle_charm"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 16.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"065CE1CB1331D5C7"
+				"03E9998456D07977"
+			]
+			dependency_requirement: "one_completed"
+			id: "601A4F0F0F623EBB"
+			tasks: [{
+				id: "5109DD2CE1952E7F"
+				item: "ars_nouveau:whirlisprig_charm"
+				type: "item"
+			}]
+			x: 16.0d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"1E62389DDA623F90"
+				"03E9998456D07977"
+			]
+			dependency_requirement: "one_completed"
+			id: "4452D0C1EE3F3E98"
+			tasks: [{
+				id: "359DB21331EB0109"
+				item: "ars_nouveau:wixie_charm"
+				type: "item"
+			}]
+			x: 16.0d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"16B9E03A4B271BE7"
+				"03E9998456D07977"
+			]
+			dependency_requirement: "one_completed"
+			id: "703E2F937F1D13ED"
+			tasks: [{
+				id: "6019DE63B63FAB4A"
+				item: "ars_nouveau:drygmy_charm"
+				type: "item"
+			}]
+			x: 16.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"6D73E69160D5D04C"
+				"03E9998456D07977"
+			]
+			dependency_requirement: "one_completed"
+			id: "4FC2DA31CC92F9F3"
+			tasks: [{
+				id: "32FC9909CA41D997"
+				item: "ars_nouveau:amethyst_golem_charm"
+				type: "item"
+			}]
+			x: 16.0d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"4FC2DA31CC92F9F3"
+				"4452D0C1EE3F3E98"
+				"75E2D9C8C93C3270"
+				"229362E9C219BAC5"
+				"601A4F0F0F623EBB"
+				"703E2F937F1D13ED"
+			]
+			dependency_requirement: "one_completed"
+			description: ["{ars_nouveau.ritual_desc.ritual_containment}"]
+			icon: "ars_nouveau:mob_jar"
+			id: "6B91CC3AC276D5AD"
+			tasks: [
+				{
+					id: "71A8E51D7361D2BE"
+					item: "ars_nouveau:mob_jar"
+					type: "item"
+				}
+				{
+					id: "6D9B7F5E7DB80903"
+					item: "ars_nouveau:ritual_containment"
+					type: "item"
+				}
+				{
+					id: "1C27A816DD664A45"
+					item: "ars_nouveau:ritual_brazier"
+					type: "item"
+				}
+			]
+			x: 18.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6E6B9F55A49B24A1"]
+			icon: "minecraft:pointed_dripstone"
+			id: "1DA5455B1916FDE0"
+			subtitle: "{ftbq.r2aot.chapter2-5.pointed_dripstone_subtitle}"
+			tasks: [
+				{
+					id: "27BE4AE3507DC565"
+					item: "minecraft:pointed_dripstone"
+					type: "item"
+				}
+				{
+					id: "4AC1098A1F525AEC"
+					item: "ars_nouveau:source_gem_block"
+					type: "item"
+				}
+				{
+					id: "297BF75A44D0FE96"
+					item: "minecraft:diorite"
+					type: "item"
+				}
+			]
+			x: 12.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"370C0B84B096D7CB"
+				"2860016B24AB5A36"
+				"279A8A4E72E53199"
+			]
+			dependency_requirement: "one_completed"
+			id: "3530148290FE202B"
+			tasks: [
+				{
+					id: "0C5B5F714CDE39DD"
+					item: {
+						Count: 1
+						id: "minecraft:potion"
+						tag: {
+							Potion: "ars_nouveau:blasting_potion"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "70E62518432B286F"
+					item: {
+						Count: 1
+						id: "minecraft:potion"
+						tag: {
+							Potion: "ars_nouveau:freezing_potion"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "14EFACC24C7EE637"
+					item: {
+						Count: 1
+						id: "minecraft:potion"
+						tag: {
+							Potion: "ars_nouveau:mana_regen_potion"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "1355AF24D714E986"
+					item: {
+						Count: 1
+						id: "minecraft:potion"
+						tag: {
+							Potion: "ars_nouveau:recovery_potion"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "597A2D8A5D166184"
+					item: {
+						Count: 1
+						id: "minecraft:potion"
+						tag: {
+							Potion: "ars_nouveau:shielding_potion"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "09FE3DEE2B5413EE"
+					item: {
+						Count: 1
+						id: "minecraft:potion"
+						tag: {
+							Potion: "ars_nouveau:spell_damage_potion"
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "16D63FA2135BEBB8"
+					type: "checkmark"
+				}
+			]
+			x: 4.0d
+			y: -4.0d
+		}
+		{
+			id: "2860016B24AB5A36"
+			tasks: [
+				{
+					id: "7539D42D40AEC254"
+					item: "ars_nouveau:sourceberry_bush"
+					type: "item"
+				}
+				{
+					id: "1D8BE2727590DF9D"
+					item: "ars_nouveau:magebloom"
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			id: "279A8A4E72E53199"
+			tasks: [
+				{
+					id: "7BAA587E07C403D1"
+					item: "minecraft:nether_wart"
+					type: "item"
+				}
+				{
+					id: "671F663A2C8D20F8"
+					item: {
+						Count: 1
+						id: "minecraft:potion"
+						tag: {
+							Potion: "minecraft:awkward"
+						}
+					}
+					type: "item"
+				}
+			]
+			x: 2.0d
+			y: -4.0d
 		}
 	]
 	title: "{ftbq.r2aot.chapter2-5.start.title}"

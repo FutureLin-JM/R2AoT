@@ -17,7 +17,7 @@
 		passive: 4000
 	}
 	pause_game: false
-	progression_mode: "linear"
+	progression_mode: "flexible"
 	show_lock_icons: true
 	title: "{ftbq.r2aot.title}"
 	version: 13

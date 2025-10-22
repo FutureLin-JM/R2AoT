@@ -342,4 +342,8 @@ ServerEvents.recipes(event => {
             C: 'minecraft:iron_block',
         })
         .id(kjs('ae2_mysterious_cube'));
+
+    kubejs
+        .shapeless('4x minecraft:nether_wart', ['hostilenetworks:nether_prediction', '#forge:seeds'])
+        .id(kjs('nether_wart_from_prediction'));
 });

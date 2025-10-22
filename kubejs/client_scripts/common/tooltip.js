@@ -1,37 +1,3 @@
-/**
- * @param {Internal.ItemTooltipEventJS} event
- * @param {Internal.Ingredient_} itemId
- * @param {string} tooltipKey
- * @param {number} lines
- */
-function addShiftTooltip(event, itemId, tooltipKey, lines) {
-    event.addAdvanced(itemId, (item, advanced, text) => {
-        if (!event.shift) {
-            text.add(1, Text.translate('tooltip.r2aot.hold_shift', Text.yellow('Shift')).aqua());
-        } else {
-            text.add(1, Text.translate('tooltip.r2aot.hold_shift', Text.white('Shift')).darkGray());
-
-            for (let i = 1; i <= lines; i++) {
-                text.add(i + 1, Text.translate(`${tooltipKey}_${i}`).aqua());
-            }
-        }
-    });
-}
-
-/**
- * @param {Internal.ItemTooltipEventJS} event
- * @param {Internal.Ingredient_} itemId
- * @param {string} tooltipKey
- * @param {number} lines
- */
-function addLinesTooltip(event, itemId, tooltipKey, lines) {
-    event.addAdvanced(itemId, (item, advanced, text) => {
-        for (let i = 1; i <= lines; i++) {
-            text.add(Text.translate(`${tooltipKey}_${i}`).aqua());
-        }
-    });
-}
-
 ItemEvents.tooltip(event => {
     // addShitfTooltip
     const shiftTooltips = [
@@ -52,7 +18,7 @@ ItemEvents.tooltip(event => {
         { id: 'r2aot:pedestal_ars', key: 'tooltip.r2aot.pedestal_ars', lines: 3 },
         { id: 'r2aot:pedestal_botania', key: 'tooltip.r2aot.pedestal_botania', lines: 2 },
         { id: 'r2aot:modular_runic_altar_core', key: 'tooltip.r2aot.modular_runic_altar_core', lines: 2 },
-        { id: 'r2aot:animatic_wellspring_core', key: 'tooltip.r2aot.animatic_wellspring_core', lines: 3 },
+        { id: 'r2aot:animal_wellspring_core', key: 'tooltip.r2aot.animal_wellspring_core', lines: 3 },
     ];
     shiftTooltips.forEach(item => {
         addShiftTooltip(event, item.id, item.key, item.lines);
@@ -64,15 +30,34 @@ ItemEvents.tooltip(event => {
         { id: 'r2aot:create_input', key: 'tooltip.r2aot.create_input', lines: 1 },
         { id: 'r2aot:create_output', key: 'tooltip.r2aot.create_output', lines: 1 },
         { id: 'r2aot:stress_input', key: 'tooltip.r2aot.stress_input', lines: 1 },
+        // prettier-ignore
         { id: 'createendertransmission:energy_transmitter', key: 'tooltip.createendertransmission.energy_transmitter', lines: 2, },
         { id: 'r2aot:modular_pure_daisy_core', key: 'tooltip.r2aot.modular_pure_daisy_core', lines: 1 },
         { id: 'r2aot:pedestal', key: 'tooltip.r2aot.pedestal', lines: 1 },
-        { id: 'hostilenetworks:loot_fabricator', key: 'tooltip.r2aot.loot_fabricator', lines: 1 },
+        { id: 'hostilenetworks:loot_fabricator', key: 'tooltip.hostilenetworks.loot_fabricator', lines: 1 },
         { id: 'r2aot:time_voucher', key: 'tooltip.r2aot.time_voucher', lines: 1 },
         { id: 'r2aot:controller_frame', key: 'tooltip.r2aot.controller_frame', lines: 1 },
+        { id: 'ars_nouveau:bookwyrm_charm', key: 'tooltip.ars_nouveau.bookwyrm_charm', lines: 1 },
+        { id: 'ars_nouveau:starbuncle_charm', key: 'tooltip.ars_nouveau.starbuncle_charm', lines: 1 },
+        { id: 'ars_nouveau:whirlisprig_charm', key: 'tooltip.ars_nouveau.whirlisprig_charm', lines: 1 },
+        { id: 'ars_nouveau:wixie_charm', key: 'tooltip.ars_nouveau.wixie_charm', lines: 1 },
+        { id: 'ars_nouveau:drygmy_charm', key: 'tooltip.ars_nouveau.drygmy_charm', lines: 1 },
+        { id: 'ars_nouveau:amethyst_golem_charm', key: 'tooltip.ars_nouveau.amethyst_golem_charm', lines: 1 },
     ];
     linesTooltip.forEach(item => {
         addLinesTooltip(event, item.id, item.key, item.lines);
+    });
+
+    const removeTooltip = [
+        { id: 'ars_nouveau:bookwyrm_charm', lines: [1] },
+        { id: 'ars_nouveau:amethyst_golem_charm', lines: [1] },
+        { id: 'ars_nouveau:starbuncle_shards', lines: [1] },
+        { id: 'ars_nouveau:whirlisprig_shards', lines: [1] },
+        { id: 'ars_nouveau:wixie_shards', lines: [1] },
+        { id: 'ars_nouveau:drygmy_shard', lines: [1] },
+    ];
+    removeTooltip.forEach(item => {
+        removeLinesTooltip(event, item.id, item.lines);
     });
 
     event.addAdvanced('fluxnetworks:flux_dust', (item, advanced, text) => {
@@ -94,26 +79,11 @@ ItemEvents.tooltip(event => {
         event.addAdvanced(`r2aot:cobble_gen_tier_${tierData.tier}`, (item, advanced, text) => {
             text.add(
                 1,
-                Text.translate(
-                    'tooltip.r2aot.cobble_gen_1',
-                    Text.red(tierData.countEveryTime.toFixed(0))
-                ).aqua()
+                Text.translate('tooltip.r2aot.cobble_gen_1', Text.red(tierData.countEveryTime.toFixed(0))).yellow()
             );
-            text.add(
-                2,
-                Text.translate(
-                    'tooltip.r2aot.cobble_gen_2',
-                    Text.red(tierData.onceSeconds.toFixed(0))
-                ).aqua()
-            );
-            text.add(
-                3,
-                Text.translate(
-                    'tooltip.r2aot.cobble_gen_3',
-                    Text.red(tierData.maxCapacity.toFixed(0))
-                ).aqua()
-            );
-            text.add(4, Text.translate('tooltip.r2aot.cobble_gen_4').aqua());
+            text.add(2, Text.translate('tooltip.r2aot.cobble_gen_2', Text.red(tierData.onceSeconds.toFixed(0))).yellow());
+            text.add(3, Text.translate('tooltip.r2aot.cobble_gen_3', Text.red(tierData.maxCapacity.toFixed(0))).yellow());
+            text.add(4, Text.translate('tooltip.r2aot.cobble_gen_4').yellow());
         });
     });
 
@@ -156,7 +126,7 @@ ItemEvents.tooltip(event => {
         text.add(
             1,
             Text.translate('tooltip.kubejs.machine_processing_1')
-                .aqua()
+                .yellow()
                 .append(Text.white({ text: '\u200a', font: 'r2aot:texture_font' }))
                 .append(Text.translate('block.industrialforegoing.dissolution_chamber').yellow())
                 .append(Text.translate('tooltip.kubejs.machine_processing_2'))
@@ -179,7 +149,7 @@ ItemEvents.tooltip(event => {
         text.add(
             1,
             Text.translate('tooltip.kubejs.machine_processing_1')
-                .aqua()
+                .yellow()
                 .append(Text.white({ text: '\u200a', font: 'r2aot:texture_font' }))
                 .append(Text.translate('block.industrialforegoing.dissolution_chamber').yellow())
                 .append(Text.translate('tooltip.kubejs.machine_processing_2'))
@@ -202,7 +172,7 @@ ItemEvents.tooltip(event => {
         text.add(
             1,
             Text.translate('tooltip.kubejs.machine_processing_1')
-                .aqua()
+                .yellow()
                 .append(Text.white({ text: '\u200a', font: 'r2aot:texture_font' }))
                 .append(Text.translate('block.industrialforegoing.dissolution_chamber').yellow())
                 .append(Text.translate('tooltip.kubejs.machine_processing_2'))
@@ -225,7 +195,7 @@ ItemEvents.tooltip(event => {
         text.add(
             1,
             Text.translate('tooltip.kubejs.machine_processing_1')
-                .aqua()
+                .yellow()
                 .append(Text.white({ text: '\u200a', font: 'r2aot:texture_font' }))
                 .append(Text.translate('block.industrialforegoing.dissolution_chamber').yellow())
                 .append(Text.translate('tooltip.kubejs.machine_processing_2'))
@@ -244,3 +214,50 @@ ItemEvents.tooltip(event => {
         );
     });
 });
+
+/**
+ * @param {Internal.ItemTooltipEventJS} event
+ * @param {Internal.Ingredient_} itemId
+ * @param {string} tooltipKey
+ * @param {number} lines
+ */
+function addShiftTooltip(event, itemId, tooltipKey, lines) {
+    event.addAdvanced(itemId, (item, advanced, text) => {
+        if (!event.shift) {
+            text.add(1, Text.translate('tooltip.r2aot.hold_shift', Text.yellow('Shift')).yellow());
+        } else {
+            text.add(1, Text.translate('tooltip.r2aot.hold_shift', Text.white('Shift')).darkGray());
+
+            for (let i = 1; i <= lines; i++) {
+                text.add(i + 1, Text.translate(`${tooltipKey}_${i}`).yellow());
+            }
+        }
+    });
+}
+
+/**
+ * @param {Internal.ItemTooltipEventJS} event
+ * @param {Internal.Ingredient_} itemId
+ * @param {string} tooltipKey
+ * @param {number} lines
+ */
+function addLinesTooltip(event, itemId, tooltipKey, lines) {
+    event.addAdvanced(itemId, (item, advanced, text) => {
+        for (let i = 1; i <= lines; i++) {
+            text.add(Text.translate(`${tooltipKey}_${i}`).yellow());
+        }
+    });
+}
+
+/**
+ * @param {Internal.ItemTooltipEventJS} event
+ * @param {Internal.Ingredient_} itemId
+ * @param {number[]} lines
+ */
+function removeLinesTooltip(event, itemId, lines) {
+    event.addAdvanced(itemId, (item, advanced, text) => {
+        for (let i of lines) {
+            text.remove(i);
+        }
+    });
+}

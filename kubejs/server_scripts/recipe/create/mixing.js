@@ -127,4 +127,25 @@ ServerEvents.recipes(event => {
     mixing(Fluid.of('thermal:ender', 125), 'minecraft:ender_pearl')
         .superheated()
         .id(kjs('mixing', 'thermal_ender_from_pearl'));
+
+    mixing('4x ars_nouveau:sourceberry_bush', ['4x minecraft:glow_berries', 'ars_nouveau:source_gem'])
+        .heated()
+        .id(kjs('mixing', 'sourceberry_bush'));
+
+    [
+        { output: 'amethyst_sap', input_1: 'mana_regen', input_2: 'freezing' },
+        { output: 'bookwyrm_flux', input_1: 'shielding', input_2: 'spell_damage' },
+        { output: 'drygmy_essence', input_1: 'blasting', input_2: 'recovery' },
+        { output: 'stargem_fluid', input_1: 'spell_damage', input_2: 'blasting' },
+        { output: 'whirlisprig_extract', input_1: 'recovery', input_2: 'freezing' },
+        { output: 'wixie_elixir', input_1: 'shielding', input_2: 'mana_regen' },
+    ].forEach(potion => {
+        mixing(Fluid.of(`r2aot:${potion.output}`, 250), [
+            Fluid.of('create:potion', 250, { Potion: `ars_nouveau:${potion.input_1}_potion` }),
+            Fluid.of('create:potion', 250, { Potion: `ars_nouveau:${potion.input_2}_potion` }),
+            'ars_nouveau:source_gem',
+        ])
+            .heated()
+            .id(kjs('mixing', `${potion.output}`));
+    });
 });

@@ -43,53 +43,20 @@ ServerEvents.recipes(event => {
             .id(kjs('sequenced_assembly', `${form}_processor`));
     });
 
-    let in_wa_se = 'kubejs:incomplete_water_seeds';
-    sequenced_assembly('mysticalagriculture:water_seeds', 'kubejs:water_seeds_folder', [
-        deploying(in_wa_se, [in_wa_se, processingMachine('industrialforegoing:dissolution_chamber')]),
-        deploying(in_wa_se, [in_wa_se, 'mysticalagriculture:inferium_essence']),
-        filling(in_wa_se, [Fluid.of('water', 500), in_wa_se]),
-        deploying(in_wa_se, [in_wa_se, 'minecraft:wheat_seeds']),
-        pressing(in_wa_se, in_wa_se),
-    ])
-        .loops(1)
-        .transitionalItem(in_wa_se)
-        .id(kjs('sequenced_assembly', 'water_seeds'));
+    ['water', 'fire', 'earth', 'air'].forEach(element => {
+        let in_element_se = `kubejs:incomplete_${element}_seeds`;
 
-    let in_fi_se = 'kubejs:incomplete_fire_seeds';
-    sequenced_assembly('mysticalagriculture:fire_seeds', 'kubejs:fire_seeds_folder', [
-        deploying(in_fi_se, [in_fi_se, processingMachine('industrialforegoing:dissolution_chamber')]),
-        deploying(in_fi_se, [in_fi_se, 'mysticalagriculture:inferium_essence']),
-        filling(in_fi_se, [Fluid.of('water', 500), in_fi_se]),
-        deploying(in_fi_se, [in_fi_se, 'minecraft:wheat_seeds']),
-        pressing(in_fi_se, in_fi_se),
-    ])
-        .loops(1)
-        .transitionalItem(in_fi_se)
-        .id(kjs('sequenced_assembly', 'fire_seeds'));
-
-    let in_ea_se = 'kubejs:incomplete_earth_seeds';
-    sequenced_assembly('mysticalagriculture:earth_seeds', 'kubejs:earth_seeds_folder', [
-        deploying(in_ea_se, [in_ea_se, processingMachine('industrialforegoing:dissolution_chamber')]),
-        deploying(in_ea_se, [in_ea_se, 'mysticalagriculture:inferium_essence']),
-        filling(in_ea_se, [Fluid.of('water', 500), in_ea_se]),
-        deploying(in_ea_se, [in_ea_se, 'minecraft:wheat_seeds']),
-        pressing(in_ea_se, in_ea_se),
-    ])
-        .loops(1)
-        .transitionalItem(in_ea_se)
-        .id(kjs('sequenced_assembly', 'earth_seeds'));
-
-    let in_air_se = 'kubejs:incomplete_air_seeds';
-    sequenced_assembly('mysticalagriculture:air_seeds', 'kubejs:air_seeds_folder', [
-        deploying(in_air_se, [in_air_se, processingMachine('industrialforegoing:dissolution_chamber')]),
-        deploying(in_air_se, [in_air_se, 'mysticalagriculture:inferium_essence']),
-        filling(in_air_se, [Fluid.of('water', 500), in_air_se]),
-        deploying(in_air_se, [in_air_se, 'minecraft:wheat_seeds']),
-        pressing(in_air_se, in_air_se),
-    ])
-        .loops(1)
-        .transitionalItem(in_air_se)
-        .id(kjs('sequenced_assembly', 'air_seeds'));
+        sequenced_assembly(`mysticalagriculture:${element}_seeds`, `kubejs:${element}_seeds_folder`, [
+            deploying(in_element_se, [in_element_se, processingMachine('industrialforegoing:dissolution_chamber')]),
+            deploying(in_element_se, [in_element_se, 'mysticalagriculture:inferium_essence']),
+            filling(in_element_se, [Fluid.of('water', 500), in_element_se]),
+            deploying(in_element_se, [in_element_se, 'minecraft:wheat_seeds']),
+            pressing(in_element_se, in_element_se),
+        ])
+            .loops(1)
+            .transitionalItem(in_element_se)
+            .id(kjs('sequenced_assembly', `${element}_seeds`));
+    });
 
     let in_rf_co = 'kubejs:incomplete_rf_coil';
     sequenced_assembly(
@@ -122,4 +89,37 @@ ServerEvents.recipes(event => {
         .loops(1)
         .transitionalItem(in_red_ser)
         .id(kjs('sequenced_assembly', 'redstone_servo'));
+
+    [
+        { charm: 'amethyst_golem', fluid: 'amethyst_sap', shards: true },
+        { charm: 'bookwyrm', fluid: 'bookwyrm_flux', shards: true },
+        { charm: 'starbuncle', fluid: 'stargem_fluid', shards: false },
+        { charm: 'whirlisprig', fluid: 'whirlisprig_extract', shards: false },
+        { charm: 'wixie', fluid: 'wixie_elixir', shards: false },
+    ].forEach(ars => {
+        let inputShards = ars.shards ? `r2aot:${ars.charm}_shards` : `ars_nouveau:${ars.charm}_shards`;
+        let in_xx_charm = `kubejs:incomplete_${ars.charm}_charm`;
+        sequenced_assembly(`ars_nouveau:${ars.charm}_charm`, inputShards, [
+            deploying(in_xx_charm, [in_xx_charm, 'ars_nouveau:source_gem']),
+            filling(in_xx_charm, [Fluid.of(`r2aot:${ars.fluid}`, 250), in_xx_charm]),
+            deploying(in_xx_charm, [in_xx_charm, 'botania:terrasteel_ingot']),
+            filling(in_xx_charm, [Fluid.of('r2aot:fluidedmana', 500), in_xx_charm]),
+            pressing(in_xx_charm, in_xx_charm),
+        ])
+            .loops(16)
+            .transitionalItem(in_xx_charm)
+            .id(kjs('sequenced_assembly', `${ars.charm}_charm`));
+    });
+
+    let in_dr_charm = 'kubejs:incomplete_drygmy_charm';
+    sequenced_assembly('ars_nouveau:drygmy_charm', 'ars_nouveau:drygmy_shard', [
+        deploying(in_dr_charm, [in_dr_charm, 'ars_nouveau:source_gem']),
+        filling(in_dr_charm, [Fluid.of('r2aot:drygmy_essence', 250), in_dr_charm]),
+        deploying(in_dr_charm, [in_dr_charm, 'botania:terrasteel_ingot']),
+        filling(in_dr_charm, [Fluid.of('r2aot:fluidedmana', 500), in_dr_charm]),
+        pressing(in_dr_charm, in_dr_charm),
+    ])
+        .loops(16)
+        .transitionalItem(in_dr_charm)
+        .id(kjs('sequenced_assembly', `drygmy_charm`));
 });

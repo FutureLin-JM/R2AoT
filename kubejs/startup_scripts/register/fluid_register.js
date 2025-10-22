@@ -19,4 +19,20 @@ StartupEvents.registry('fluid', event => {
         .stillTexture('r2aot:block/source_still')
         .flowingTexture('r2aot:block/source_flow')
         .color(0x9b13fb);
+
+    [
+        { id: 'amethyst_sap', color: 0x4b0082 },
+        { id: 'bookwyrm_flux', color: 0x800080 },
+        { id: 'drygmy_essence', color: 0xff4500 },
+        { id: 'stargem_fluid', color: 0xffa500 },
+        { id: 'whirlisprig_extract', color: 0x00ff00 },
+        { id: 'wixie_elixir', color: 0xc43bcb },
+    ].forEach(fluidType => {
+        event
+            .create(`r2aot:${fluidType.id}`)
+            .noBlock()
+            .stillTexture('r2aot:block/ars_animal_fluid')
+            .flowingTexture('r2aot:block/ars_animal_fluid')
+            .color(fluidType.color);
+    });
 });

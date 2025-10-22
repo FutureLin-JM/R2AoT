@@ -7,8 +7,6 @@
 # Config
 !config/
 !config/almostunified/unify.json
-!config/ars_nouveau/
-!config/ars_nouveau/glyph_lightning.toml
 !config/botania-client.toml
 !config/defaultworldtype/
 !config/defaultworldtype/client-config.toml
