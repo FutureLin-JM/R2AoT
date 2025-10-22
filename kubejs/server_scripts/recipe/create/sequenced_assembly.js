@@ -122,4 +122,18 @@ ServerEvents.recipes(event => {
         .loops(16)
         .transitionalItem(in_dr_charm)
         .id(kjs('sequenced_assembly', `drygmy_charm`));
+
+    let in_al_po = 'kubejs:incomplete_alfheim_portal';
+    sequenced_assembly('botania:alfheim_portal', 'ars_nouveau:source_gem_block', [
+        deploying(in_al_po, [in_al_po, '#botania:livingwood_logs']),
+        filling(in_al_po, [Fluid.of('r2aot:fluidedsource', 1000), in_al_po]),
+        deploying(in_al_po, [in_al_po, 'botania:terrasteel_nugget']),
+        filling(in_al_po, [Fluid.of('r2aot:fluidedsource', 1000), in_al_po]),
+        deploying(in_al_po, [in_al_po, '#botania:livingwood_logs']),
+        filling(in_al_po, [Fluid.of('r2aot:fluidedsource', 1000), in_al_po]),
+        pressing(in_al_po, in_al_po),
+    ])
+        .loops(3)
+        .transitionalItem(in_al_po)
+        .id(kjs('sequenced_assembly', 'alfheim_portal'));
 });

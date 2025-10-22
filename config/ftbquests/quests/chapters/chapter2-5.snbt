@@ -561,7 +561,7 @@
 			dependencies: ["6E6B9F55A49B24A1"]
 			icon: "minecraft:pointed_dripstone"
 			id: "1DA5455B1916FDE0"
-			subtitle: "{ftbq.r2aot.chapter2-5.pointed_dripstone_subtitle}"
+			subtitle: "{ftbq.r2aot.chapter2-5.pointed_dripstone.subtitle}"
 			tasks: [
 				{
 					id: "27BE4AE3507DC565"
@@ -710,6 +710,59 @@
 			]
 			x: 2.0d
 			y: -4.0d
+		}
+		{
+			dependencies: ["6F64686DF6EEDF77"]
+			description: [
+				"{ftbq.r2aot.chapter2-5.automation.desc_1}"
+				"{ftbq.r2aot.chapter2-5.automation.desc_2}"
+				"{ftbq.r2aot.chapter2-5.automation.desc_3}"
+				"{ftbq.r2aot.chapter2-5.automation.desc_4}"
+			]
+			hide_until_deps_complete: true
+			id: "5F55B6E4A9306E64"
+			optional: true
+			tasks: [{
+				id: "686591DAF12F041A"
+				type: "checkmark"
+			}]
+			title: "{ftbq.r2aot.chapter2-5.automation.title}"
+			x: 8.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["75A51CE85B9A6E0B"]
+			icon: "r2aot:fluidedsource_bucket"
+			id: "02479827A3EA9959"
+			tasks: [
+				{
+					id: "364DE1B7979F8A3D"
+					item: "r2aot:fluidedsource_bucket"
+					type: "item"
+				}
+				{
+					id: "2C2BD1A0086A102F"
+					type: "checkmark"
+				}
+			]
+			x: 22.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"0A528935EB4B6641"
+				"02479827A3EA9959"
+			]
+			id: "091EB88B8D028789"
+			shape: "diamond"
+			size: 1.5d
+			tasks: [{
+				id: "694A22A0B8CE0CA9"
+				item: "botania:alfheim_portal"
+				type: "item"
+			}]
+			x: 22.0d
+			y: -2.0d
 		}
 	]
 	title: "{ftbq.r2aot.chapter2-5.start.title}"

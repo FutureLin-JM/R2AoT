@@ -38,6 +38,7 @@ StartupEvents.registry('item', event => {
         'ars_nouveau:wixie_charm',
         'ars_nouveau:drygmy_charm',
         'ars_nouveau:amethyst_golem_charm',
+        'botania:alfheim_portal',
     ];
     incompleteItem.forEach(item => {
         let itemName = item.split(':')[1];

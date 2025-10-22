@@ -108,6 +108,7 @@ ServerEvents.recipes(event => {
         'ars_nouveau:whirlisprig_charm',
         'ars_nouveau:wixie_charm',
         'ars_nouveau:drygmy_charm',
+        'botania:alfheim_portal',
         
     ];
     recipesToRemoveID.forEach(recipes => {
