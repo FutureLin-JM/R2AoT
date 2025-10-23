@@ -220,8 +220,8 @@
     "tooltip.r2aot.fluid_output_1": "手持容器，左键取出流体",
     "tooltip.r2aot.fluid_output_2": "按Shift可以最大限度取出流体",
     "tooltip.r2aot.fluid_output_3": "支持自动输出",
-    "tooltip.createendertransmission.energy_transmitter_1": "§7应力影响：§c███8x RPM",
-    "tooltip.createendertransmission.energy_transmitter_2": "右键可设置频道",
+    "tooltip.cet.energy_transmitter_1": "§7应力影响：§c███8x RPM",
+    "tooltip.cet.energy_transmitter_2": "右键可设置频道",
     "tooltip.r2aot.pedestal_1": "右键放入 空手Shift+右键取出",
     "tooltip.r2aot.flux_dust": "由红石通过原子再构机转换获得",
     "tooltip.r2aot.time_voucher_1": "右键使用可随机获得1~5h时间之瓶的时间",
@@ -234,6 +234,7 @@
     "tooltip.ars_nouveau.whirlisprig_charm_1": "对任意花朵使用可召唤出风转草",
     "tooltip.ars_nouveau.wixie_charm_1": "对炼药锅使用可召唤出薇克精",
     "tooltip.ars_nouveau.drygmy_charm_1": "对苔石使用可召唤出德格米",
+    "tooltip.ars_nouveau.imbuement_chamber_1": "灌注室在完成灌注后会消耗掉基座上的物品",
     "tooltip.ars_nouveau.amethyst_golem_charm_1": "对着地面使用可召唤出紫晶傀儡",
     "tooltip.hostilenetworks.loot_fabricator_1": "§c不耗电",
 

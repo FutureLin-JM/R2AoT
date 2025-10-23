@@ -30,8 +30,7 @@ ItemEvents.tooltip(event => {
         { id: 'r2aot:create_input', key: 'tooltip.r2aot.create_input', lines: 1 },
         { id: 'r2aot:create_output', key: 'tooltip.r2aot.create_output', lines: 1 },
         { id: 'r2aot:stress_input', key: 'tooltip.r2aot.stress_input', lines: 1 },
-        // prettier-ignore
-        { id: 'createendertransmission:energy_transmitter', key: 'tooltip.createendertransmission.energy_transmitter', lines: 2, },
+        { id: 'createendertransmission:energy_transmitter', key: 'tooltip.cet.energy_transmitter', lines: 2 },
         { id: 'r2aot:modular_pure_daisy_core', key: 'tooltip.r2aot.modular_pure_daisy_core', lines: 1 },
         { id: 'r2aot:pedestal', key: 'tooltip.r2aot.pedestal', lines: 1 },
         { id: 'hostilenetworks:loot_fabricator', key: 'tooltip.hostilenetworks.loot_fabricator', lines: 1 },
@@ -43,6 +42,7 @@ ItemEvents.tooltip(event => {
         { id: 'ars_nouveau:wixie_charm', key: 'tooltip.ars_nouveau.wixie_charm', lines: 1 },
         { id: 'ars_nouveau:drygmy_charm', key: 'tooltip.ars_nouveau.drygmy_charm', lines: 1 },
         { id: 'ars_nouveau:amethyst_golem_charm', key: 'tooltip.ars_nouveau.amethyst_golem_charm', lines: 1 },
+        { id: 'ars_nouveau:imbuement_chamber', key: 'tooltip.ars_nouveau.imbuement_chamber', lines: 1 },
     ];
     linesTooltip.forEach(item => {
         addLinesTooltip(event, item.id, item.key, item.lines);
