@@ -92,27 +92,5 @@
     "message.mbtool.dismantle_protected": "无法在受保护区域拆除结构",
     "message.mbtool.block_not_part_of_structure": "此方块不是该结构的一部分",
     "message.mbtool.hold_f_to_dismantle": "按住 F 键拆除",
-    "message.mbtool.insufficient_inventory_space": "多方块建造工具物品栏中没有足够的空间存放结构物品",
-
-    "mbtool.structure.andesite_casing_maker": "安山机壳制造机",
-    "mbtool.structure.animal_wellspring": "万灵源井",
-    "mbtool.structure.cobble_gen_tier_1": "1级方块制造机",
-    "mbtool.structure.data_model_blaze": "烈焰人 数据模型",
-    "mbtool.structure.data_model_chicken": "鸡 数据模型",
-    "mbtool.structure.data_model_cow": "牛 数据模型",
-    "mbtool.structure.data_model_creeper": "苦力怕 数据模型",
-    "mbtool.structure.data_model_enderman": "末影人 数据模型",
-    "mbtool.structure.data_model_ghast": "恶魂 数据模型",
-    "mbtool.structure.data_model_sheep": "绵羊 数据模型",
-    "mbtool.structure.data_model_skeleton": "骷髅 数据模型",
-    "mbtool.structure.data_model_slime": "史莱姆 数据模型",
-    "mbtool.structure.data_model_spider": "蜘蛛 数据模型",
-    "mbtool.structure.data_model_vindicator": "卫道士 数据模型",
-    "mbtool.structure.element_altar": "元素祭坛",
-    "mbtool.structure.fertilizer_propagator": "花肥育瓣机",
-    "mbtool.structure.mana_generator": "魔力制造机",
-    "mbtool.structure.modular_runic_altar": "模块化符文祭坛",
-    "mbtool.structure.processing_mixer": "处理混合机",
-    "mbtool.structure.stress_generator": "应力发电机",
-    "mbtool.structure.terrestrial_agglomeration_altar": "泰拉凝聚板"
+    "message.mbtool.insufficient_inventory_space": "多方块建造工具物品栏中没有足够的空间存放结构物品"
 }

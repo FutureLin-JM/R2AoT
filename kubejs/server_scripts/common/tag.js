@@ -157,8 +157,8 @@ ServerEvents.tags('block', event => {
 
     const addPetalOre = ['minecraft:mineable/pickaxe', 'r2aot:petal_ore'];
     addPetalOre.forEach(tag => {
-        Ingredient.of(/^r2aot:petal_\w+_ore$/).itemIds.forEach(id => {
-            event.add(tag, id);
-        });
+        event.add(tag, /^r2aot:petal_\w+_ore$/);
     });
+
+    event.add('powah:thermo_generator', [/powah:thermo_generator_.*/]);
 });

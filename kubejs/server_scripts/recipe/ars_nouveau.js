@@ -125,4 +125,9 @@ ServerEvents.recipes(event => {
         'botania:rune_air',
         'mysticalagriculture:air_essence',
     ]).id(kjs('imbuement', 'air_essence'));
+
+    global.imbuementChargeRecipes.forEach(recipe => {
+        const id = recipe.id ?? kjs('imbuement_charge', recipe.output.split(':')[1]);
+        imbuement(recipe.output, recipe.input, recipe.source, recipe.pedestalItems).id(id);
+    });
 });

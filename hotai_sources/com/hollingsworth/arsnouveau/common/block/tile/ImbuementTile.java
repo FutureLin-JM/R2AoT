@@ -54,6 +54,7 @@ public class ImbuementTile extends AbstractSourceMachine implements Container, I
     public ItemStack stack = ItemStack.EMPTY;
     public ItemEntity entity;
     public boolean draining;
+    private boolean isCraftTicksLocked = false; // 添加字段
     IImbuementRecipe recipe;
     int backoff;
     public float frames;
@@ -107,10 +108,25 @@ public class ImbuementTile extends AbstractSourceMachine implements Container, I
             return;
         }
         if (stack.isEmpty()) {
+            // 如果物品为空，自动解除锁定
+            if (isCraftTicksLocked) {
+                unlockCraftTicks();
+            }
             return;
         }
-        if (craftTicks > 0)
+        if (isCraftTicksLocked) {
+            // 如果没有配方或配方不匹配，自动解除锁定
+            if (recipe == null || !recipe.isMatch(this)) {
+                unlockCraftTicks();
+            }
+        }
+        if (craftTicks > 0 && !isCraftTicksLocked) {
             craftTicks--;
+        }
+        // 如果被锁定，强制保持craftTicks为100
+        if (isCraftTicksLocked) {
+            craftTicks = 100; // 强制设置为100，防止被减少
+        }
 
         // Restore the recipe on world restart
         if (recipe == null) {
@@ -177,6 +193,7 @@ public class ImbuementTile extends AbstractSourceMachine implements Container, I
         draining = tag.getBoolean("draining");
         this.hasRecipe = tag.getBoolean("hasRecipe");
         this.craftTicks = tag.getInt("craftTicks");
+        this.isCraftTicksLocked = tag.getBoolean("isCraftTicksLocked"); // 读取锁定状态
         super.load(tag);
     }
 
@@ -191,6 +208,7 @@ public class ImbuementTile extends AbstractSourceMachine implements Container, I
         tag.putBoolean("draining", draining);
         tag.putBoolean("hasRecipe", hasRecipe);
         tag.putInt("craftTicks", craftTicks);
+        tag.putBoolean("isCraftTicksLocked", isCraftTicksLocked); // 保存锁定状态
     }
 
     @Override
@@ -327,6 +345,10 @@ public class ImbuementTile extends AbstractSourceMachine implements Container, I
                 int progress = Math.min(100, (getSource() * 100 / cost));
                 tooltip.add(recipe.getCraftingProgressText(this, progress));
             }
+            // 添加craftTicks锁定提示
+            if (isCraftTicksLocked) {
+                tooltip.add(Component.translatable("tooltip.ars_nouveau.crafting_locked").withStyle(ChatFormatting.RED));
+            }
         }
     }
 
@@ -342,5 +364,31 @@ public class ImbuementTile extends AbstractSourceMachine implements Container, I
                 pedestalTile.updateBlock();
             }
         }
+    }
+
+    // 供KubeJS使用的锁定方法
+    /**
+     * 锁定craftTicks为100
+     */
+    public void lockCraftTicks() {
+        this.isCraftTicksLocked = true;
+        this.craftTicks = 100; // 强制设置为100
+        this.updateBlock();
+    }
+
+    /**
+     * 解锁craftTicks
+     */
+    public void unlockCraftTicks() {
+        this.isCraftTicksLocked = false;
+        this.updateBlock();
+    }
+
+    /**
+     * 检查craftTicks是否被锁定
+     * @return 是否被锁定
+     */
+    public boolean isCraftTicksLocked() {
+        return this.isCraftTicksLocked;
     }
 }
