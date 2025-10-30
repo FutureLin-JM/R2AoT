@@ -36,6 +36,6 @@ Ponder.registry(event => {
             scene.world.setBlocks([5, 1, 7], 'r2aot:item_output');
 
             scene.idle(45);
-            scene.text(100, '可前往「胶囊」章节获取胶囊来快速放置这个结构');
+            scene.text(100, '使用多方块搭建工具来快速放置这个结构');
         });
 });

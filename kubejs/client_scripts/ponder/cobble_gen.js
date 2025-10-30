@@ -43,6 +43,6 @@ Ponder.registry(event => {
             scene.world.createItemEntity([3.5, 2.5, 3.5], Direction.DOWN, 'r2aot:cobble_gen_tier_1');
 
             scene.idle(35);
-            scene.text(100, '可前往「胶囊」章节获取胶囊来快速放置这个结构');
+            scene.text(100, '使用多方块搭建工具来快速放置这个结构');
         });
 });

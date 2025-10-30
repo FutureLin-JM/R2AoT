@@ -42,6 +42,6 @@ Ponder.registry(event => {
 
             scene.world.showSection([2, 3, 2, 6, 4, 6], Direction.DOWN);
             scene.idle(30);
-            scene.text(100, '可前往「胶囊」章节获取胶囊来快速放置这个结构');
+            scene.text(100, '使用多方块搭建工具来快速放置这个结构');
         });
 });

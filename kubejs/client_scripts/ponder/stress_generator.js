@@ -40,6 +40,6 @@ Ponder.registry(event => {
             scene.overlay.showText(30).text('右键结构可直接打开机器GUI').pointAt([2.5, 3.5, 5.5]).attachKeyFrame();
 
             scene.idle(45);
-            scene.text(100, '可前往「胶囊」章节获取胶囊来快速放置这个结构');
+            scene.text(100, '使用多方块搭建工具来快速放置这个结构');
         });
 });

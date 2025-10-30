@@ -34,6 +34,6 @@ Ponder.registry(event => {
             scene.world.modifyBlock([2, 2, 3], state => state.with('facing', 'west'), false);
 
             scene.idle(30);
-            scene.text(100, '可前往「胶囊」章节获取胶囊来快速放置这个结构');
+            scene.text(100, '使用多方块搭建工具来快速放置这个结构');
         });
 });
