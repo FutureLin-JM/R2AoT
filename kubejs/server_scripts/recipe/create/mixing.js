@@ -144,8 +144,11 @@ ServerEvents.recipes(event => {
             Fluid.of('create:potion', 250, { Potion: `ars_nouveau:${potion.input_1}_potion` }),
             Fluid.of('create:potion', 250, { Potion: `ars_nouveau:${potion.input_2}_potion` }),
             'ars_nouveau:source_gem',
+            'ars_nouveau:wilden_horn',
+            'ars_nouveau:wilden_spike',
+            'ars_nouveau:wilden_wing',
         ])
-            .heated()
+            .superheated()
             .id(kjs('mixing', `${potion.output}`));
     });
 });

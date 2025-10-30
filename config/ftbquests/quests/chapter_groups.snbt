@@ -2,6 +2,7 @@
 	chapter_groups: [
 		{ id: "61A42EA15042ADCF", title: "{ftbq.r2aot.chapter_groups.chapter1.title}" }
 		{ id: "1483CABC0DC8D7C6", title: "{ftbq.r2aot.chapter_groups.chapter2.title}" }
+		{ id: "716CFD1393429EFE", title: "{ftbq.r2aot.chapter_groups.chapter3.title}" }
 		{ id: "3707D0F2FC36575A", title: "{ftbq.r2aot.chapter_groups.additional.title}" }
 	]
 }

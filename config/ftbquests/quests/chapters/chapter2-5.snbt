@@ -9,10 +9,11 @@
 	quest_links: [ ]
 	quests: [
 		{
+			description: ["{\"translate\":\"ftbq.r2aot.ponder.text\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/ponder botania:terra_plate\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"ftbq.r2aot.capsule.click\"}}}"]
 			id: "60D28A21492EA6D6"
 			shape: "gear"
 			size: 1.5d
-			subtitle: "{\"translate\":\"ftbq.r2aot.ponder.text\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/ponder botania:terra_plate\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"ftbq.r2aot.capsule.click\"}}}"
+			subtitle: "{tooltip.botania.terra_plate_1}"
 			tasks: [{
 				id: "627718F6EACA5E12"
 				item: "botania:terra_plate"
@@ -382,7 +383,10 @@
 			y: 2.5d
 		}
 		{
-			dependencies: ["3530148290FE202B"]
+			dependencies: [
+				"3530148290FE202B"
+				"4316FE68FE88D303"
+			]
 			hide_dependent_lines: true
 			id: "03E9998456D07977"
 			tasks: [
@@ -749,10 +753,7 @@
 			y: 0.0d
 		}
 		{
-			dependencies: [
-				"0A528935EB4B6641"
-				"02479827A3EA9959"
-			]
+			dependencies: ["02479827A3EA9959"]
 			id: "091EB88B8D028789"
 			shape: "diamond"
 			size: 1.5d
@@ -762,6 +763,68 @@
 				type: "item"
 			}]
 			x: 22.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["79304FF63CF1EB67"]
+			id: "4316FE68FE88D303"
+			tasks: [
+				{
+					id: "18C981ED9E828860"
+					item: "ars_nouveau:wilden_horn"
+					type: "item"
+				}
+				{
+					id: "3F1109AAEB5731F3"
+					item: "ars_nouveau:wilden_spike"
+					type: "item"
+				}
+				{
+					id: "49331CA0ACD372C4"
+					item: "ars_nouveau:wilden_wing"
+					type: "item"
+				}
+			]
+			x: 12.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["1DFB08BC8184C098"]
+			id: "79304FF63CF1EB67"
+			tasks: [{
+				id: "2C3DA175C18DADC8"
+				item: {
+					Count: 1
+					id: "hostilenetworks:data_model"
+					tag: {
+						data_model: {
+							data: 1254
+							id: "hostilenetworks:ars_nouveau/wilden_mobs"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 10.0d
+			y: -2.0d
+		}
+		{
+			description: ["{ftbe.r2aot.ars_nouveau.ritual_wilden_summon.desc_1}"]
+			icon: "ars_nouveau:ritual_wilden_summon"
+			id: "1DFB08BC8184C098"
+			tasks: [
+				{
+					id: "032B88FDF40D7BAD"
+					item: "ars_nouveau:ritual_wilden_summon"
+					type: "item"
+				}
+				{
+					id: "1D529D3B89786737"
+					item: "ars_nouveau:ritual_brazier"
+					type: "item"
+				}
+			]
+			x: 8.0d
 			y: -2.0d
 		}
 	]

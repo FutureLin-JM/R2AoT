@@ -160,7 +160,7 @@ ServerEvents.recipes(event => {
         const inputObj = input.startsWith('#')
             ? { type: 'tag', tag: input.substring(1) }
             : { type: 'block', block: input };
-        const idName = id ? id : output.split(':')[1];
+        id = id ?? kjs('pure_daisy', output.split(':')[1])
 
         event
             .custom({
@@ -171,7 +171,7 @@ ServerEvents.recipes(event => {
                 },
                 time: time ? time : setTime,
             })
-            .id(kjs('pure_daisy', idName));
+            .id(id);
     }
 
     pureDaisyRecipes('botania:livingrock', '#forge:stone');
@@ -200,7 +200,7 @@ ServerEvents.recipes(event => {
     /**
      * 符文祭坛
      * @param {OutputItem_} output
-     * @param {InputItem_ | Array} input
+     * @param {InputItem_ | InputItem_[]} input
      * @param {number} mana
      */
     function runicAltarRecipes(output, input, mana) {
@@ -288,10 +288,16 @@ ServerEvents.recipes(event => {
         250000
     );
 
+    function elvenTradeRecipes(output, input) {
+        elven_trade(output, input).id(kjs('elven_trade', output.split(':')[1]));
+    }
+
+    elvenTradeRecipes('8x powah:dielectric_paste', ['#minecraft:coals', 'minecraft:clay_ball']);
+
     /**
      * 泰拉凝聚
      * @param {OutputItem_} output
-     * @param {InputItem_ | Array} input
+     * @param {InputItem_ | InputItem_[]} input
      * @param {number} mana
      */
     function terraPlateRecipes(output, input, mana) {

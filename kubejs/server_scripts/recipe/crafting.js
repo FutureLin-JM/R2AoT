@@ -59,6 +59,20 @@ ServerEvents.recipes(event => {
             .id(kjs('custom_compacting', outputName));
     });
 
+    event
+        .custom({
+            type: 'functionalstorage:custom_compacting',
+            higher_input: {
+                count: 1,
+                item: 'minecraft:snow_block',
+            },
+            lower_input: {
+                count: 4,
+                item: 'minecraft:snowball',
+            },
+        })
+        .id(kjs('custom_compacting', 'snow_block'));
+
     // 彩虹花源块
     kubejs
         .shapeless('r2aot:rainbow_petal_block', [
@@ -346,4 +360,17 @@ ServerEvents.recipes(event => {
     kubejs
         .shapeless('4x minecraft:nether_wart', ['hostilenetworks:nether_prediction', '#forge:seeds'])
         .id(kjs('nether_wart_from_prediction'));
+
+    kubejs
+        .shapeless(
+            Item.of(
+                'hostilenetworks:data_model',
+                '{data_model:{data:1254,id:"hostilenetworks:ars_nouveau/wilden_mobs"}}'
+            ).strongNBT(),
+            Item.of(
+                'hostilenetworks:data_model',
+                '{data_model:{id:"hostilenetworks:ars_nouveau/wilden_mobs"}}'
+            ).weakNBT()
+        )
+        .id(kjs('data_model_wilden_mobs'));
 });

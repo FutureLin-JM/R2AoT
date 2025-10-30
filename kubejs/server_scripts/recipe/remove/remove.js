@@ -109,6 +109,16 @@ ServerEvents.recipes(event => {
         'ars_nouveau:wixie_charm',
         'ars_nouveau:drygmy_charm',
         'botania:alfheim_portal',
+        'powah:crafting/dielectric_paste',
+        'powah:crafting/dielectric_paste_2',
+        'powah:energizing/charged_snowball',
+        'powah:energizing/uraninite_from_ore_poor',
+        'powah:energizing/uraninite_from_ore_dense',
+        'powah:energizing/uraninite_from_ore',
+        'powah:energizing/uraninite_from_raw',
+        'powah:smelting/uraninite_from_raw',
+        'powah:smelting/uraninite_from_raw_blasting',
+        'botania:shimmerrock',
         
     ];
     recipesToRemoveID.forEach(recipes => {

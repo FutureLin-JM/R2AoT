@@ -1,0 +1,123 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "chapter3-6"
+	group: "716CFD1393429EFE"
+	icon: "botania:alfheim_portal"
+	id: "140CF8064223D6AD"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			id: "4187233F4FA549B1"
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "786294A7DDCC03CB"
+				item: "botania:alfheim_portal"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"02479827A3EA9959"
+				"4187233F4FA549B1"
+			]
+			id: "1DD53885FCCA5F0C"
+			tasks: [{
+				id: "778D43B0568C6DC7"
+				item: "powah:dielectric_paste"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1DD53885FCCA5F0C"]
+			id: "09E1DFFB09FDE645"
+			tasks: [
+				{
+					id: "700ADC2D0CCCE2E4"
+					item: "powah:energizing_orb"
+					type: "item"
+				}
+				{
+					id: "1E51070414CFD5D3"
+					item: "powah:energizing_rod_starter"
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["09E1DFFB09FDE645"]
+			id: "5071DFBD11A19D01"
+			tasks: [{
+				id: "5EA346AE3C57122D"
+				item: "powah:charged_snowball"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"5071DFBD11A19D01"
+				"348EF135954A0E7A"
+			]
+			id: "47B2C92BA46FA6AD"
+			tasks: [{
+				id: "461F67A003F43191"
+				item: "powah:steel_energized"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"62872D4BA3D823FB"
+				"09E1DFFB09FDE645"
+			]
+			id: "21D2D26A235F8009"
+			tasks: [{
+				id: "77D2B2767A4BF1DB"
+				item: "powah:uraninite"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 2.0d
+		}
+		{
+			id: "62872D4BA3D823FB"
+			tasks: [
+				{
+					id: "0CFE91B230058059"
+					item: "r2aot:broken_mana"
+					type: "item"
+				}
+				{
+					id: "0EDDA0C85553DCE2"
+					item: "r2aot:broken_source"
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			id: "348EF135954A0E7A"
+			tasks: [{
+				id: "37FEEBE933C4B59F"
+				item: "powah:thermo_generator_basic"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -2.0d
+		}
+	]
+	title: "{ftbq.r2aot.chapter3-6.start.title}"
+}

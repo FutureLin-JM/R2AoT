@@ -19,10 +19,11 @@ StartupEvents.registry('item', event => {
     event.create('r2aot:rune_elemental', 'basic');
     event.create('r2aot:time_voucher', 'basic');
     event.create('r2aot:luxvoid_alloy', 'basic').rarity('uncommon');
-
     event.create('r2aot:mbd_builder', 'basic').maxStackSize(1);
     event.create('r2aot:bookwyrm_shards', 'basic');
     event.create('r2aot:amethyst_golem_shards', 'basic');
+    event.create('r2aot:broken_mana', 'basic').rarity('uncommon');
+    event.create('r2aot:broken_source', 'basic').rarity('uncommon');
 
     event.create('kubejs:incomplete_water_seeds', 'create:sequenced_assembly').texture('r2aot:item/mystical_seeds');
     event.create('kubejs:incomplete_fire_seeds', 'create:sequenced_assembly').texture('r2aot:item/mystical_seeds');

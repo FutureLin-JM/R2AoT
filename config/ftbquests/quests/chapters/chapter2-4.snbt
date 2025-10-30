@@ -719,6 +719,17 @@
 			x: 0.0d
 			y: -2.0d
 		}
+		{
+			dependencies: ["73DAC39394ED4682"]
+			id: "2F03C13340450AB6"
+			tasks: [{
+				id: "08F9AE2AD8D74FBB"
+				item: "ifeu:fluid_crafting_table"
+				type: "item"
+			}]
+			x: 12.0d
+			y: -6.0d
+		}
 	]
 	title: "{ftbq.r2aot.chapter2-4.start.title}"
 }

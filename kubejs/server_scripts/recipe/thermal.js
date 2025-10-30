@@ -8,7 +8,7 @@ ServerEvents.recipes(event => {
      * @param {string} [id] - 自定义ID (可选)
      */
     function crucible(outputFluid, amount, input, energy, id) {
-        const idName = id ? id : kjs('chiller', outputFluid.split(':')[1]);
+        id = id ?? kjs('chiller', outputFluid.split(':')[1]);
         const ingredient = input.startsWith('#') ? { tag: input.substring(1) } : { item: input };
 
         event
@@ -23,7 +23,7 @@ ServerEvents.recipes(event => {
                 ],
                 energy: energy ? energy : 20000,
             })
-            .id(idName);
+            .id(id);
     }
 
     /**
@@ -36,7 +36,7 @@ ServerEvents.recipes(event => {
      * @param {string} [id] - 自定义ID (可选)
      */
     function chiller(output, inputFluid, amount, inputCast, energy, id) {
-        const idName = id ? id : kjs('chiller', output.split(':')[1]);
+        id = id ?? kjs('chiller', output.split(':')[1]);
         event
             .custom({
                 type: 'thermal:chiller',
@@ -57,7 +57,7 @@ ServerEvents.recipes(event => {
                 ],
                 energy: energy ? energy : 20000,
             })
-            .id(idName);
+            .id(id);
     }
 
     /**
@@ -70,7 +70,7 @@ ServerEvents.recipes(event => {
     function smelter(outputs, inputs, energy, id) {
         const outputList = Array.isArray(outputs) ? outputs : [outputs];
 
-        const idName = id ? id : kjs('smelter', outputList[0].split(':')[1]);
+        id = id ?? kjs('smelter', outputList[0].split(':')[1]);
         const ingredients = inputs.map(parseEntry);
         const result = outputList.map(parseEntry);
         event
@@ -80,7 +80,7 @@ ServerEvents.recipes(event => {
                 result: result,
                 energy: energy ? energy : 8000,
             })
-            .id(idName);
+            .id(id);
     }
 
     ['bronze', 'electrum', 'invar', 'constantan'].forEach(metalId => {

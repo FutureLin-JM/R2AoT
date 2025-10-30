@@ -130,4 +130,72 @@ ServerEvents.recipes(event => {
         const id = recipe.id ?? kjs('imbuement_charge', recipe.output.split(':')[1]);
         imbuement(recipe.output, recipe.input, recipe.source, recipe.pedestalItems).id(id);
     });
+
+    event
+        .custom({
+            type: 'ars_nouveau:crush',
+            input: {
+                item: 'botania:mana_diamond',
+            },
+            output: [
+                {
+                    chance: 1.0,
+                    count: 10,
+                    item: 'r2aot:broken_mana',
+                    maxRange: 1,
+                },
+            ],
+        })
+        .id(kjs('ars_crush', 'broken_mana_from_diamond'));
+
+    event
+        .custom({
+            type: 'ars_nouveau:crush',
+            input: {
+                item: 'botania:manasteel_ingot',
+            },
+            output: [
+                {
+                    chance: 1.0,
+                    count: 3,
+                    item: 'r2aot:broken_mana',
+                    maxRange: 1,
+                },
+            ],
+        })
+        .id(kjs('ars_crush', 'broken_mana_from_manasteel'));
+
+    event
+        .custom({
+            type: 'ars_nouveau:crush',
+            input: {
+                item: 'botania:mana_pearl',
+            },
+            output: [
+                {
+                    chance: 1.0,
+                    count: 6,
+                    item: 'r2aot:broken_mana',
+                    maxRange: 1,
+                },
+            ],
+        })
+        .id(kjs('ars_crush', 'broken_mana_from_pearl'));
+
+    event
+        .custom({
+            type: 'ars_nouveau:crush',
+            input: {
+                item: 'ars_nouveau:source_gem',
+            },
+            output: [
+                {
+                    chance: 1.0,
+                    count: 1,
+                    item: 'r2aot:broken_source',
+                    maxRange: 1,
+                },
+            ],
+        })
+        .id(kjs('ars_crush', 'broken_source'));
 });
