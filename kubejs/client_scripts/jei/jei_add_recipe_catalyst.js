@@ -18,4 +18,11 @@ JEIAddedEvents.registerRecipeCatalysts(event => {
             'r2aot:imbuement_charge'
         );
     });
+
+    for (let i = 1; i < 7; i++) {
+        event.data['addRecipeCatalyst(net.minecraft.world.item.ItemStack,mezz.jei.api.recipe.RecipeType[])'](
+            `r2aot:cobble_gen_tier_${i}`,
+            'r2aot:cobble_gen_jei'
+        )
+    }
 });
