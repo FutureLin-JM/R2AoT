@@ -1,0 +1,41 @@
+{
+	"format_version": "1.9.0",
+	"credit": "Made with Blockbench",
+	"parent": "minecraft:block/block",
+	"textures": {
+		"particle": "r2aot:block/power_planting_station_bottmo",
+		"bottmo": "r2aot:block/power_planting_station_bottmo",
+		"side1": "r2aot:block/power_planting_station_side_1",
+		"side2": "r2aot:block/power_planting_station_side_2",
+		"top": "r2aot:block/power_planting_station_top",
+		"fluid": "r2aot:block/power_essence_still"
+	},
+	"elements": [
+		{
+			"name": "fluid",
+			"from": [7, 16, 7],
+			"to": [9, 16, 9],
+			"rotation": {"angle": 0, "axis": "y", "origin": [7, 14, 7]},
+			"faces": {
+				"north": {"uv": [0, 0, 2, 0], "texture": "#missing"},
+				"east": {"uv": [0, 0, 2, 0], "texture": "#missing"},
+				"south": {"uv": [0, 0, 2, 0], "texture": "#missing"},
+				"west": {"uv": [0, 0, 2, 0], "texture": "#missing"},
+				"up": {"uv": [0, 0, 8, 8], "texture": "#fluid"},
+				"down": {"uv": [0, 0, 2, 2], "texture": "#missing"}
+			}
+		},
+		{
+			"from": [0, 0, 0],
+			"to": [16, 16, 16],
+			"faces": {
+				"north": {"uv": [0, 0, 16, 16], "texture": "#side1"},
+				"east": {"uv": [0, 0, 16, 16], "texture": "#side2"},
+				"south": {"uv": [0, 0, 16, 16], "texture": "#side1"},
+				"west": {"uv": [0, 0, 16, 16], "texture": "#side2"},
+				"up": {"uv": [0, 0, 16, 16], "texture": "#top"},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#bottmo"}
+			}
+		}
+	]
+}

@@ -1,5 +1,6 @@
 ServerEvents.recipes(event => {
     event.remove({ type: 'mysticalagriculture:infusion' });
+    event.remove({ type: 'mysticalagriculture:reprocessor' });
 
     let excludedEssenceItems = [];
 

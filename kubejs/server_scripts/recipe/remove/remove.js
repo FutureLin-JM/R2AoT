@@ -119,6 +119,12 @@ ServerEvents.recipes(event => {
         'powah:smelting/uraninite_from_raw',
         'powah:smelting/uraninite_from_raw_blasting',
         'botania:shimmerrock',
+        'powah:energizing/energized_steel',
+        'powah:energizing/blazing_crystal',
+        'powah:energizing/blazing_crystal_2',
+        'powah:energizing/niotic_crystal',
+        'powah:energizing/spirited_crystal',
+        'powah:energizing/nitro_crystal',
         
     ];
     recipesToRemoveID.forEach(recipes => {

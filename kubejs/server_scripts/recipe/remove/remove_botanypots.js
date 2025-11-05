@@ -107,6 +107,7 @@ ServerEvents.recipes(event => {
         const cropName = id.replace('mysticalagriculture:', '').replace('_essence', '');
         if (!excludedEssenceCrops.includes(cropName)) {
             event.remove({ id: `botanypots:mysticalagriculture/crop/${cropName}` });
+            event.remove({ id: `botanypots:mysticalagradditions/crop/${cropName}`})
         }
     });
 });

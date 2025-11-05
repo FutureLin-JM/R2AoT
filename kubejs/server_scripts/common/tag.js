@@ -62,6 +62,14 @@ ServerEvents.tags('item', event => {
     ]);
 
     event.add('ars_nouveau:magic_shards', ['r2aot:bookwyrm_shards', 'r2aot:amethyst_golem_shards']);
+
+    event.add('mysticalagriculture:seeds/powah', [
+        'mysticalagriculture:energized_steel_seeds',
+        'mysticalagriculture:blazing_crystal_seeds',
+        'mysticalagriculture:niotic_crystal_seeds',
+        'mysticalagriculture:spirited_crystal_seeds',
+        'mysticalagriculture:nitro_crystal_seeds',
+    ]);
 });
 
 ServerEvents.tags('block', event => {

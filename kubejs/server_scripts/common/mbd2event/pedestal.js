@@ -57,7 +57,7 @@ BlockEvents.rightClicked(event => {
     }
 });
 
-const POSITIONS = [
+const PEDESTAL_POSITIONS = [
     [-1, 0, -1],
     [-1, 0, 0],
     [-1, 0, 1],
@@ -85,7 +85,7 @@ const POSITIONS = [
         const conversionData = customData.getCompound('conversion_data');
         let shouldConsume = false;
 
-        POSITIONS.forEach(([dx, dy, dz]) => {
+        PEDESTAL_POSITIONS.forEach(([dx, dy, dz]) => {
             const targetPos = pos.offset(dx, dy, dz);
             if (level.getBlockState(targetPos).isAir()) return;
 

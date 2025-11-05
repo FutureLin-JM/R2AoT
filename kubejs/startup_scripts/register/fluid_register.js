@@ -35,4 +35,6 @@ StartupEvents.registry('fluid', event => {
             .flowingTexture('r2aot:block/ars_animal_fluid')
             .color(fluidType.color);
     });
+
+    event.create('r2aot:power_essence').noBlock();
 });
