@@ -137,6 +137,9 @@
     "energy": true,
     "tooltip_renderer": true
   },
+  "mysticalagradditions": {
+    "infused_farmland": true
+  },
   "pipez": {
     "pipe": true
   },
