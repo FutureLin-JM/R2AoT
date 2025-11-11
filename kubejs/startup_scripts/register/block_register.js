@@ -32,7 +32,7 @@ StartupEvents.registry('block', event => {
         .stoneSoundType()
         .box(0, 0, 0, 16, 2, 16)
         .fullBlock(false);
-    event.create('r2aot:controller_frame').hardness(1).requiresTool().soundType('metal');
+    event.create('r2aot:controller_frame', 'basic').hardness(1.5).soundType('metal');
 
     ['prudentium', 'tertium', 'imperium'].forEach(tier => {
         event
