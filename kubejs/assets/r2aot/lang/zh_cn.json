@@ -261,7 +261,9 @@
 
     "config.jade.plugin_r2aot.numerical_source": "魔源定量统计",
     "config.jade.plugin_r2aot.numerical_mana": "魔力定量统计",
+    "config.jade.plugin_r2aot.snowman_cooler": "雪傀儡冷却室",
     "jade.tooltip.source": "魔源: %s",
+    "jade.tooltip.snowman_cooler": "%s秒",
     "jade.tooltip.mana": "魔力: %s%s",
 
     "r2aot.startup.version": "当前整合包版本：§a%s§r %s",

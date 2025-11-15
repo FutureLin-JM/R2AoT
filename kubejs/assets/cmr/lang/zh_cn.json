@@ -1,0 +1,40 @@
+{
+  "itemGroup.cmr": "机械动力：更多配方",
+
+  "create.recipe.fan_custom.fan": "在方块后放置鼓风机",
+  "create.recipe.fan_custom": "自定义方块鼓风机处理",
+  "create.recipe.block_spout": "方块浇注",
+  "create.recipe.heat_requirement.cooled": "冷却",
+  "create.recipe.heat_requirement.frozen": "冷冻",
+
+  "block.cmr.snowman_cooler": "雪傀儡冷却室",
+  "block.cmr.empty_snowman_cooler": "空雪傀儡冷却室",
+  "block.cmr.block_spout": "方块浇注器",
+  "block.cmr.smithing_press": "锻造冲压机",
+
+  "item.cmr.frozen_cake": "冷冻蛋糕",
+  "item.cmr.frozen_cake_base": "冷冻蛋糕底座",
+
+  "cmr.ponder.empty_snowman_cooler.header": "空雪傀儡冷却室的使用",
+  "cmr.ponder.empty_snowman_cooler.text_1": "对雪傀儡使用空冷却器即可捕获它",
+  "cmr.ponder.empty_snowman_cooler.text_2": "或者，也可以直接从雪傀儡刷怪笼中收集雪傀儡",
+  "cmr.ponder.empty_snowman_cooler.text_3": "现在你有了为各种机器提供冷源的理想设备",
+
+  "cmr.ponder.snowman_cooler.header": "投喂雪傀儡冷却室",
+  "cmr.ponder.snowman_cooler.text_1": "雪傀儡冷却室可为处理槽中的物品提供冷量",
+  "cmr.ponder.snowman_cooler.text_2": "为此，需要给雪傀儡投喂冷冻物品",
+  "cmr.ponder.snowman_cooler.text_3": "使用雪蛋糕可以让冷却器达到更强的制冷效果",
+  "cmr.ponder.snowman_cooler.text_4": "可通过机械手或者动力臂实现自动补充",
+
+  "cmr.ponder.smithing.header": "使用锻造冲压机处理物品",
+  "cmr.ponder.smithing.text_1": "锻造冲压机可处理其下方提供的物品",
+  "cmr.ponder.smithing.text_2": "输入物品可放置在冲压机下方的置物台上",
+  "cmr.ponder.smithing.text_3": "可通过右键点击冲压机顶部或底部来放置模板",
+  "cmr.ponder.smithing.text_4": "可通过右键点击冲压机侧面来放置附加材料",
+
+  "cmr.ponder.block_spout.header": "使用方块浇注器填充方块",
+  "cmr.ponder.block_spout.text_1": "方块浇注器可用流体修饰其下方的方块",
+  "cmr.ponder.block_spout.text_2": "无法手动存取方块浇注器的内容物",
+  "cmr.ponder.block_spout.text_3": "但可使用管道为其输送流体",
+  "cmr.ponder.block_spout.text_4": "输入方块可放置在方块浇注器下方"
+}

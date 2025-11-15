@@ -145,7 +145,8 @@
   },
   "r2aot": {
     "numerical_source": true,
-    "numerical_mana": true
+    "numerical_mana": true,
+    "snowman_cooler": true
   },
   "cookingforblockheads": {
     "fridge": true,
