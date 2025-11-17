@@ -146,6 +146,7 @@
   "r2aot": {
     "numerical_source": true,
     "numerical_mana": true,
+    "ember": true,
     "snowman_cooler": true
   },
   "cookingforblockheads": {

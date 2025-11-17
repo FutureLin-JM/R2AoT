@@ -6,3 +6,4 @@ const $RecipeSchema = Java.loadClass('dev.latvian.mods.kubejs.recipe.schema.Reci
 const $RecipeComponentBuilder = Java.loadClass('dev.latvian.mods.kubejs.recipe.component.RecipeComponentBuilder');
 const $EnchantmentHelper = Java.loadClass('net.minecraft.world.item.enchantment.EnchantmentHelper');
 const $JsonObject = Java.loadClass('com.google.gson.JsonObject');
+const EmbersCapabilities = Java.loadClass('com.rekindled.embers.api.capabilities.EmbersCapabilities');

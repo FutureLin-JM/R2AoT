@@ -28,9 +28,18 @@ JadeEvents.onCommonRegistration(event => {
 
         if (blockEntity.isCreative()) {
             tag.putBoolean('isCreative', true);
-        } else if(blockEntity.activeFuel && blockEntity.remainingBurnTime) {
+        } else if (blockEntity.activeFuel && blockEntity.remainingBurnTime) {
             tag.putInt('activeFuel', blockEntity.activeFuel.ordinal());
             tag.putInt('remainingBurnTime', blockEntity.remainingBurnTime);
+        }
+    });
+
+    event.blockDataProvider('r2aot:ember', $BlockEntity).setCallback((tag, accessor) => {
+        const { blockEntity } = accessor;
+        let capabilities = blockEntity.getCapability(EmbersCapabilities.EMBER_CAPABILITY).orElse(null);
+        if (capabilities != null) {
+            tag.putInt('ember', capabilities.getEmber());
+            tag.putInt('maxEmber', capabilities.getEmberCapacity());
         }
     });
 });
