@@ -29,3 +29,12 @@ ServerEvents.recipes(event => {
         ).id(kjs('energizing', `${recipe.material}_${recipe.type}`));
     });
 });
+
+PowahEvents.coolants(event => {
+    event.addFluid('r2aot:fluidedsource', -32);
+});
+
+PowahEvents.heatSource(event => {
+    event.remove('minecraft:lava');
+    event.add('botania:blaze_block', 1000);
+})

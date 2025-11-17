@@ -93,7 +93,7 @@ ItemEvents.tooltip(event => {
         });
     });
 
-    const dataModelList = [
+    const dataModelMultiblockList = [
         'hostilenetworks:blaze',
         'hostilenetworks:ghast',
         'hostilenetworks:chicken',
@@ -108,8 +108,27 @@ ItemEvents.tooltip(event => {
     ];
     event.addAdvanced('hostilenetworks:data_model', (item, advanced, text) => {
         let itemId = item.nbt?.data_model?.id;
-        if (itemId && dataModelList.includes(itemId)) {
-            text.add(1, Text.translate('tooltip.r2aot.data_model_1').yellow());
+        if (itemId && dataModelMultiblockList.includes(itemId)) {
+            text.add(1, Text.translate('tooltip.r2aot.data_model_multiblock').yellow());
+        }
+    });
+
+    const dataModelCraftingList = [
+        'hostilenetworks:thermal/blitz',
+        'hostilenetworks:thermal/blizz',
+        'hostilenetworks:thermal/basalz',
+    ];
+    event.addAdvanced('hostilenetworks:data_model', (item, advanced, text) => {
+        let itemId = item.nbt?.data_model?.id;
+        if (itemId && dataModelCraftingList.includes(itemId)) {
+            text.add(1, Text.translate('tooltip.r2aot.data_model_crafting').yellow());
+            let data = item.nbt?.data_model?.data;
+            let iterations = item.nbt?.data_model?.iterations;
+            if (iterations && iterations > 0) {
+                text.add(2, Text.translatable('tooltip.r2aot.data_model_crafting.error').yellow());
+            } else if (data && data < 1254 && data !== 6 && data !== 54 && data !== 354) {
+                text.add(2, Text.translatable('tooltip.r2aot.data_model_crafting.error').yellow());
+            }
         }
     });
 
@@ -147,98 +166,6 @@ ItemEvents.tooltip(event => {
 
     //     text.set(0, rainbowName);
     // });
-
-    event.addAdvanced('kubejs:water_seeds_folder', (item, advanced, text) => {
-        text.add(
-            1,
-            Text.translate('tooltip.kubejs.machine_processing_1')
-                .yellow()
-                .append(Text.white({ text: '\u200a', font: 'r2aot:texture_font' }))
-                .append(Text.translate('block.industrialforegoing.dissolution_chamber').yellow())
-                .append(Text.translate('tooltip.kubejs.machine_processing_2'))
-        );
-        text.add(
-            2,
-            Text.translate('block.botania.blue_petal_block')
-                .append(Text.white({ text: '\u0001', font: 'r2aot:texture_font' }))
-                .append(Text.yellow('x4'))
-        );
-        text.add(
-            3,
-            Text.translate('fluid.r2aot.fluidedmana')
-                .append(Text.white({ text: '\u100a', font: 'r2aot:texture_font' }))
-                .append(Text.yellow('500mb'))
-        );
-    });
-
-    event.addAdvanced('kubejs:fire_seeds_folder', (item, advanced, text) => {
-        text.add(
-            1,
-            Text.translate('tooltip.kubejs.machine_processing_1')
-                .yellow()
-                .append(Text.white({ text: '\u200a', font: 'r2aot:texture_font' }))
-                .append(Text.translate('block.industrialforegoing.dissolution_chamber').yellow())
-                .append(Text.translate('tooltip.kubejs.machine_processing_2'))
-        );
-        text.add(
-            2,
-            Text.translate('block.botania.red_petal_block')
-                .append(Text.white({ text: '\u0002', font: 'r2aot:texture_font' }))
-                .append(Text.yellow('x4'))
-        );
-        text.add(
-            3,
-            Text.translate('fluid.r2aot.fluidedmana')
-                .append(Text.white({ text: '\u100a', font: 'r2aot:texture_font' }))
-                .append(Text.yellow('500mb'))
-        );
-    });
-
-    event.addAdvanced('kubejs:earth_seeds_folder', (item, advanced, text) => {
-        text.add(
-            1,
-            Text.translate('tooltip.kubejs.machine_processing_1')
-                .yellow()
-                .append(Text.white({ text: '\u200a', font: 'r2aot:texture_font' }))
-                .append(Text.translate('block.industrialforegoing.dissolution_chamber').yellow())
-                .append(Text.translate('tooltip.kubejs.machine_processing_2'))
-        );
-        text.add(
-            2,
-            Text.translate('block.botania.green_petal_block')
-                .append(Text.white({ text: '\u0003', font: 'r2aot:texture_font' }))
-                .append(Text.yellow('x4'))
-        );
-        text.add(
-            3,
-            Text.translate('fluid.r2aot.fluidedmana')
-                .append(Text.white({ text: '\u100a', font: 'r2aot:texture_font' }))
-                .append(Text.yellow('500mb'))
-        );
-    });
-
-    event.addAdvanced('kubejs:air_seeds_folder', (item, advanced, text) => {
-        text.add(
-            1,
-            Text.translate('tooltip.kubejs.machine_processing_1')
-                .yellow()
-                .append(Text.white({ text: '\u200a', font: 'r2aot:texture_font' }))
-                .append(Text.translate('block.industrialforegoing.dissolution_chamber').yellow())
-                .append(Text.translate('tooltip.kubejs.machine_processing_2'))
-        );
-        text.add(
-            2,
-            Text.translate('block.botania.orange_petal_block')
-                .append(Text.white({ text: '\u0004', font: 'r2aot:texture_font' }))
-                .append(Text.yellow('x4'))
-        );
-        text.add(
-            3,
-            Text.translate('fluid.r2aot.fluidedmana')
-                .append(Text.white({ text: '\u100a', font: 'r2aot:texture_font' }))
-                .append(Text.yellow('500mb'))
-        );
-    });
 });
 
 /**

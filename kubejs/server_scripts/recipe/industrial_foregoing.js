@@ -74,7 +74,7 @@ ServerEvents.recipes(event => {
         Array(4).fill('botania:blue_petal_block'),
         Fluid.of('r2aot:fluidedmana', 500),
         100
-    ).id('kubejs:dissolution_chamber/incomplete_water_seeds');
+    ).id('kubejs:dissolution_chamber/incomplete_water_seeds_step_1');
 
     dissolution_chamber(
         Item.of(
@@ -84,7 +84,7 @@ ServerEvents.recipes(event => {
         Array(4).fill('botania:red_petal_block'),
         Fluid.of('r2aot:fluidedmana', 500),
         100
-    ).id('kubejs:dissolution_chamber/incomplete_fire_seeds');
+    ).id('kubejs:dissolution_chamber/incomplete_fire_seeds_step_1');
 
     dissolution_chamber(
         Item.of(
@@ -94,7 +94,7 @@ ServerEvents.recipes(event => {
         Array(4).fill('botania:green_petal_block'),
         Fluid.of('r2aot:fluidedmana', 500),
         100
-    ).id('kubejs:dissolution_chamber/incomplete_earth_seeds');
+    ).id('kubejs:dissolution_chamber/incomplete_earth_seeds_step_1');
 
     dissolution_chamber(
         Item.of(
@@ -104,7 +104,7 @@ ServerEvents.recipes(event => {
         Array(4).fill('botania:orange_petal_block'),
         Fluid.of('r2aot:fluidedmana', 500),
         100
-    ).id('kubejs:dissolution_chamber/incomplete_air_seeds');
+    ).id('kubejs:dissolution_chamber/incomplete_air_seeds_step_1');
 
     dissolution_chamber(
         'r2aot:rune_elemental',

@@ -1,0 +1,5 @@
+{
+    "parent": "r2aot:item/inverted_bucket",
+    "loader": "forge:fluid_container",
+    "fluid": "r2aot:fluid_petrotheum"
+}

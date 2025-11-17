@@ -70,6 +70,10 @@ ServerEvents.tags('item', event => {
         'mysticalagriculture:spirited_crystal_seeds',
         'mysticalagriculture:nitro_crystal_seeds',
     ]);
+
+    ['energized_steel', 'blazing_crystal', 'niotic_crystal', 'spirited_crystal'].forEach(material => {
+        event.add(`forge:gears/${material}`, `r2aot:${material}_gear`);
+    });
 });
 
 ServerEvents.tags('block', event => {

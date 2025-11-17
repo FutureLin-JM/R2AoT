@@ -102,6 +102,22 @@ ServerEvents.recipes(event => {
         5000
     ).id(kjs('enchanting_apparatus', 'amethyst_golem_shards'));
 
+    enchanting_apparatus(
+        'r2aot:animal_wellspring_core',
+        [
+            'ars_nouveau:source_gem',
+            'minecraft:gold_ingot',
+            'ars_nouveau:source_gem',
+            'minecraft:gold_ingot',
+            'ars_nouveau:source_gem',
+            'minecraft:gold_ingot',
+            'ars_nouveau:source_gem',
+            'minecraft:gold_ingot',
+        ],
+        'ars_nouveau:mob_jar',
+        5000
+    ).id(kjs('enchanting_apparatus', 'animal_wellspring_core'));
+
     imbuement('ars_nouveau:water_essence', 'ars_nouveau:source_gem', 2000, [
         'ars_nouveau:frostaya_pod',
         'botania:rune_water',
@@ -198,4 +214,23 @@ ServerEvents.recipes(event => {
             ],
         })
         .id(kjs('ars_crush', 'broken_source'));
+
+    ['blitz', 'blizz', 'basalz'].forEach(material => {
+        event
+            .custom({
+                type: 'ars_nouveau:crush',
+                input: {
+                    item: `thermal:${material}_rod`,
+                },
+                output: [
+                    {
+                        chance: 1.0,
+                        count: 2,
+                        item: `thermal:${material}_powder`,
+                        maxRange: 2,
+                    },
+                ],
+            })
+            .id(kjs('ars_crush', `${material}_powder`));
+    });
 });

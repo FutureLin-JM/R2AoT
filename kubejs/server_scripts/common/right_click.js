@@ -34,7 +34,7 @@ BlockEvents.rightClicked('r2aot:data_model_base', event => {
 
     if (hand != 'MAIN_HAND' || !item.isEmpty()) return;
 
-    biologyTypes.forEach(biology => {
+    const foundValidStructure = biologyTypes.some(biology => {
         const dataModel = Item.of(
             'hostilenetworks:data_model',
             `{data_model:{data:1254,id:"hostilenetworks:${biology}"}}`
@@ -49,10 +49,15 @@ BlockEvents.rightClicked('r2aot:data_model_base', event => {
             });
             block.popItemFromFace(dataModel, 'down');
             player.swing();
-        } else {
-            player.statusMessage = Text.translate('message.r2aot.multiblock.incorrect').red();
+            event.cancel();
+            return true;
         }
+        return false;
     });
+
+    if (!foundValidStructure) {
+        player.statusMessage = Text.translate('message.r2aot.multiblock.incorrect').red();
+    }
 });
 
 // 圆石制造机
@@ -148,6 +153,7 @@ ItemEvents.rightClicked('r2aot:time_voucher', event => {
     }
 });
 
+// From Mierno
 // BlockEvents.rightClicked('white_concrete', (event) => {
 //     const { hand, block, player, level } = event;
 

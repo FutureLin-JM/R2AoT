@@ -24,6 +24,15 @@
     "item.r2aot.bookwyrm_shards": "书龙碎片",
     "item.r2aot.broken_mana": "破碎魔力",
     "item.r2aot.broken_source": "破碎魔源",
+    "item.r2aot.dust_cryotheum": "凛冰粉",
+    "item.r2aot.dust_pyrotheum": "炽焱粉",
+    "item.r2aot.dust_petrotheum": "地岩粉",
+    "item.r2aot.dust_aerotheum": "清风粉",
+    "item.r2aot.energized_steel_gear": "充能钢齿轮",
+    "item.r2aot.blazing_crystal_gear": "烈焰水晶齿轮",
+    "item.r2aot.niotic_crystal_gear": "钻石水晶齿轮",
+    "item.r2aot.spirited_crystal_gear": "富生水晶齿轮",
+    "item.r2aot.nitro_crystal_gear": "下界水晶齿轮",
 
     "block.r2aot.rainbow_petal_block": "彩虹花源块",
     "block.r2aot.compressed_andesite": "压缩安山岩",
@@ -90,6 +99,7 @@
     "block.r2aot.animal_wellspring_core": "万灵源井",
     "block.r2aot.modular_terrestrial_agglomeration_core": "模块化泰拉凝聚",
     "block.r2aot.power_planting_station": "高能种植站",
+    "block.r2aot.bifrost_prism": "彩虹桥棱镜",
 
     "r2aot.fertilizer_propagator_core": "花肥育瓣机",
     "r2aot.andesite_casing_maker_core": "安山机壳制造机",
@@ -153,6 +163,14 @@
     "item.r2aot.wixie_elixir_bucket": "薇光流剂 桶",
     "fluid.r2aot.power_essence": "能量精华",
     "item.r2aot.power_essence_bucket": "能量精华 桶",
+    "fluid.r2aot.fluid_aerotheum": "飞扬之清风",
+    "item.r2aot.fluid_aerotheum_bucket": "飞扬之清风 桶",
+    "fluid.r2aot.fluid_cryotheum": "极寒之凛冰",
+    "item.r2aot.fluid_cryotheum_bucket": "极寒之凛冰 桶",
+    "fluid.r2aot.fluid_petrotheum": "板块之层岩",
+    "item.r2aot.fluid_petrotheum_bucket": "板块之层岩 桶",
+    "fluid.r2aot.fluid_pyrotheum": "烈焰之炽焱",
+    "item.r2aot.fluid_pyrotheum_bucket": "烈焰之炽焱 桶",
 
     "enchantment.r2aot.machine_processing": "使用该机器加工",
 
@@ -230,7 +248,9 @@
     "tooltip.r2aot.flux_dust": "由红石通过原子再构机转换获得",
     "tooltip.r2aot.time_voucher_1": "右键使用可随机获得1~5h时间之瓶的时间",
     "tooltip.r2aot.controller_frame_1": "合成时ME控制器不消耗",
-    "tooltip.r2aot.data_model_1": "该数据模型可通过多方块合成获得",
+    "tooltip.r2aot.data_model_multiblock": "该数据模型可通过多方块合成获得",
+    "tooltip.r2aot.data_model_crafting": "该数据模型可通过动力合成获得",
+    "tooltip.r2aot.data_model_crafting.error": "该数据模型已无法通过序列组装升级",
 
     "tooltip.ars.source_gem": "通过在灌注室灌注紫水晶获得。",
     "tooltip.ars_nouveau.bookwyrm_charm_1": "对讲台使用可召唤出书龙",
@@ -248,13 +268,13 @@
     "jei.information.r2aot.elemental_altar_core": "在结构中使用元素符文对基础机器框架催化转换，详情查看思索",
     "jei.information.r2aot.cobble_gen_tier_1": "首个通过多方块结构合成获得，详情查看思索",
     "jei.information.ars.glyph_lightning": "使用避雷针对抄写台右键十次引来闪电获得",
-    "jei.information.ars.imbuement_chamber": "灌注室存在特殊的合成配方——灌注充能\n灌注充能的配方合成时会从下方的热力发电机中抽取能量",
+    "jei.information.ars.imbuement_chamber": "灌注室存在特殊的合成配方——灌注充能\n灌注充能的配方合成时需要从下方的热力发电机中抽取能量",
 
     "jei.r2aot.fluid_sourcelink": "流体魔源通道",
     "jei.desc.r2aot.fluid_sourcelink.source": "%s 魔源",
     "jei.desc.r2aot.animal_wellspring_core": "10000 魔源",
     "jei.r2aot.imbuement_charge": "灌注充能",
-    "jei.desc.r2aot.imbuement_charge.energy": "能量消耗：%s",
+    "jei.desc.r2aot.imbuement_charge.energy": "能量消耗：%sFE",
     "jei.r2aot.cobble_gen": "方块制造",
 
     "tooltip.ars_nouveau.crafting_locked": "条件不足，合成锁定",
@@ -263,8 +283,8 @@
     "config.jade.plugin_r2aot.numerical_mana": "魔力定量统计",
     "config.jade.plugin_r2aot.snowman_cooler": "雪傀儡冷却室",
     "jade.tooltip.source": "魔源: %s",
-    "jade.tooltip.snowman_cooler": "%s秒",
     "jade.tooltip.mana": "魔力: %s%s",
+    "jade.tooltip.snowman_cooler": "%s秒",
 
     "r2aot.startup.version": "当前整合包版本：§a%s§r %s",
     "r2aot.startup.new_version": "§c存在新版本 §c%s",
@@ -373,6 +393,9 @@
 
     "ftbq.r2aot.chapter_groups.chapter3.title": "第三章",
     "ftbq.r2aot.chapter3-6.start.title": "第六节",
+    "ftbq.r2aot.chapter3-6.fluidedsource_fan.subtitle": "在鼓风机前放置液态魔源",
+    "ftbq.r2aot.chapter3-6.data_model.subtitle": "已通过其他方式获得数据的数据模型无法通过序列组装升级",
+    "ftbq.r2aot.chapter3-6.power_essence_subtitle": "能源精华配方优先级为最低的",
 
     "patchouli.gui.lexicon.r2aot_book": "R2AoT 书",
     "patchouli.gui.lexicon.r2aot_book.text": "这是R2AoT的书",

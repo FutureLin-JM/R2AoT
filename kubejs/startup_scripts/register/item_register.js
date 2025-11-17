@@ -25,10 +25,31 @@ StartupEvents.registry('item', event => {
     event.create('r2aot:broken_mana', 'basic').rarity('uncommon');
     event.create('r2aot:broken_source', 'basic').rarity('uncommon');
 
-    event.create('kubejs:incomplete_water_seeds', 'create:sequenced_assembly').texture('r2aot:item/mystical_seeds');
-    event.create('kubejs:incomplete_fire_seeds', 'create:sequenced_assembly').texture('r2aot:item/mystical_seeds');
-    event.create('kubejs:incomplete_earth_seeds', 'create:sequenced_assembly').texture('r2aot:item/mystical_seeds');
-    event.create('kubejs:incomplete_air_seeds', 'create:sequenced_assembly').texture('r2aot:item/mystical_seeds');
+    event.create('r2aot:dust_aerotheum', 'basic');
+    event.create('r2aot:dust_cryotheum', 'basic');
+    event.create('r2aot:dust_petrotheum', 'basic');
+    event.create('r2aot:dust_pyrotheum', 'basic');
+
+    ['energized_steel', 'blazing_crystal', 'niotic_crystal', 'spirited_crystal', 'nitro_crystal'].forEach(material => {
+        event.create(`r2aot:${material}_gear`, 'basic');
+    });
+
+    let incompleteSeeds = [
+        'mysticalagriculture:water_seeds',
+        'mysticalagriculture:fire_seeds',
+        'mysticalagriculture:earth_seeds',
+        'mysticalagriculture:air_seeds',
+        'mysticalagriculture:energized_steel_seeds',
+        'mysticalagriculture:blazing_crystal_seeds',
+        'mysticalagriculture:niotic_crystal_seeds',
+        'mysticalagriculture:spirited_crystal_seeds',
+    ];
+    incompleteSeeds.forEach(seeds => {
+        let seedsName = seeds.split(':')[1];
+        event
+            .create(`kubejs:incomplete_${seedsName}`, 'create:sequenced_assembly')
+            .texture('r2aot:item/mystical_seeds');
+    });
 
     let incompleteItem = [
         'thermal:rf_coil',
@@ -51,6 +72,10 @@ StartupEvents.registry('item', event => {
         'mysticalagriculture:fire_seeds',
         'mysticalagriculture:earth_seeds',
         'mysticalagriculture:air_seeds',
+        'mysticalagriculture:energized_steel_seeds',
+        'mysticalagriculture:blazing_crystal_seeds',
+        'mysticalagriculture:niotic_crystal_seeds',
+        'mysticalagriculture:spirited_crystal_seeds',
     ];
     folderType.forEach(type => {
         let itemName = type.split(':')[1];

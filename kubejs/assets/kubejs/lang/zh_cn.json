@@ -3,6 +3,11 @@
     "item.kubejs.incomplete_fire_seeds": "火之种子（未完成）",
     "item.kubejs.incomplete_earth_seeds": "地之种子（未完成）",
     "item.kubejs.incomplete_air_seeds": "风之种子（未完成）",
+    "item.kubejs.incomplete_energized_steel_seeds": "充能钢种子（未完成）",
+    "item.kubejs.incomplete_blazing_crystal_seeds": "烈焰水晶种子（未完成）",
+    "item.kubejs.incomplete_niotic_crystal_seeds": "钻石水晶种子（未完成）",
+    "item.kubejs.incomplete_spirited_crystal_seeds": "富生水晶种子（未完成）",
+
     "item.kubejs.incomplete_rf_coil": "红石通量线圈（未完成）",
     "item.kubejs.incomplete_redstone_servo": "红石伺服器（未完成）",
     "item.kubejs.incomplete_bookwyrm_charm": "书龙护符（未完成）",
@@ -13,12 +18,14 @@
     "item.kubejs.incomplete_amethyst_golem_charm": "紫晶傀儡护符（未完成）",
     "item.kubejs.incomplete_alfheim_portal": "精灵门核心（未完成）",
 
+    "item.kubejs.water_seeds_folder": "水之种子 合成指引",
+    "item.kubejs.fire_seeds_folder": "火之种子 合成指引",
+    "item.kubejs.earth_seeds_folder": "地之种子 合成指引",
+    "item.kubejs.air_seeds_folder": "风之种子 合成指引",
+    "item.kubejs.energized_steel_seeds_folder": "充能钢种子 合成指引",
+    "item.kubejs.blazing_crystal_seeds_folder": "烈焰水晶种子 合成指引",
+    "item.kubejs.niotic_crystal_seeds_folder": "钻石水晶种子 合成指引",
+    "item.kubejs.spirited_crystal_seeds_folder": "富生水晶种子 合成指引",
 
-    "item.kubejs.water_seeds_folder": "水之种子 材料包",
-    "item.kubejs.fire_seeds_folder": "火之种子 材料包",
-    "item.kubejs.earth_seeds_folder": "地之种子 材料包",
-    "item.kubejs.air_seeds_folder": "风之种子 材料包",
-
-    "tooltip.kubejs.machine_processing_1": "使用",
-    "tooltip.kubejs.machine_processing_2": "加工第一步"
+    "tooltip.kubejs.machine_processing": "使用%s加工步骤%s"
 }

@@ -357,10 +357,12 @@ ServerEvents.recipes(event => {
         })
         .id(kjs('ae2_mysterious_cube'));
 
+    // 下界疣
     kubejs
         .shapeless('4x minecraft:nether_wart', ['hostilenetworks:nether_prediction', '#forge:seeds'])
         .id(kjs('nether_wart_from_prediction'));
 
+    // Wilden生物数据模型
     kubejs
         .shapeless(
             Item.of(
@@ -373,4 +375,75 @@ ServerEvents.recipes(event => {
             ).weakNBT()
         )
         .id(kjs('data_model_wilden_mobs'));
+
+    // 流体灌装机
+    kubejs
+        .shaped('thermal:machine_bottler', [' X ', 'YCY', 'IPI'], {
+            X: 'minecraft:bucket',
+            Y: '#thermal:glass/hardened',
+            C: 'thermal:machine_frame',
+            I: '#forge:gears/energized_steel',
+            P: 'thermal:rf_coil',
+        })
+        .id(kjs('thermal_machine_bottler'));
+
+    // 结晶器
+    kubejs
+        .shaped('thermal:machine_crystallizer', [' X ', 'YCY', 'IPI'], {
+            X: '#thermal:glass/hardened',
+            Y: '#forge:plates/signalum',
+            C: 'thermal:machine_frame',
+            I: '#forge:gears/energized_steel',
+            P: 'thermal:rf_coil',
+        })
+        .id(kjs('thermal_machine_crystallizer'));
+
+    // 热力拓展组件
+    kubejs
+        .shaped('thermal_extra:upgrade_augment', ['IAI', 'GXG', 'IAI'], {
+            A: '#forge:gears/blazing_crystal',
+            G: '#forge:gears/dragonsteel',
+            I: 'thermal_extra:ancient_dust',
+            X: 'thermal:upgrade_augment_3',
+        })
+        .id(kjs('dragonsteel_integral_component'));
+
+    kubejs
+        .shaped('thermal_extra:abyssal_upgrade_augment', ['IAI', 'GXG', 'IAI'], {
+            A: '#forge:gears/niotic_crystal',
+            G: '#forge:gears/abyssal',
+            I: 'thermal_extra:ancient_dust',
+            X: 'thermal_extra:upgrade_augment',
+        })
+        .id(kjs('abyssal_integral_component'));
+
+    kubejs
+        .shaped('thermalendergy:endergy_upgrade_2', ['IXI', 'GCG', 'IXI'], {
+            C: 'thermalendergy:endergy_upgrade_1',
+            G: '#forge:gears/prismalium',
+            I: '#forge:ingots/melodium',
+            X: '#forge:gears/spirited_crystal',
+        })
+        .id(kjs('endergy_upgrade_2'));
+
+    kubejs
+        .shaped('thermalendergy:endergy_upgrade_2', ['IXI', 'GCG', 'IXI'], {
+            C: 'thermal_extra:abyssal_upgrade_augment',
+            G: '#forge:gears/prismalium',
+            I: '#forge:ingots/melodium',
+            X: '#forge:gears/spirited_crystal',
+        })
+        .id(kjs('endergy_upgrade_2_2'));
+
+    kubejs
+        .shapeless('thermalendergy:endergy_upgrade_1', 'thermal_extra:abyssal_upgrade_augment')
+        .id(kjs('endergy_upgrade_1'));
+
+    kubejs
+        .shaped('r2aot:bifrost_prism', ['GPG', 'GSG', 'GPG'], {
+            G: 'botania:bifrost_perm',
+            P: '#forge:dusts/glowstone',
+            S: 'botania:pixie_dust',
+        })
+        .id(kjs('bifrost_prism'));
 });

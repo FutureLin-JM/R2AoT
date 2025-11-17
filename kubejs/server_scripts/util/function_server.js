@@ -90,21 +90,21 @@ function kjs(type, name) {
 
 /**
  * 解析字符串并返回包含物品或标签及其数量的对象。
- * @param {string} entity - 格式: "itemID"、"#tagID" 或 "Nx itemID"、"Nx #tagID"
+ * @param {string} item - 格式: "itemID"、"#tagID" 或 "Nx itemID"、"Nx #tagID"
  * @returns {Object} 包含物品或标签及其数量的对象。
  *         标签返回{tag: string, count: number}；
  *         物品返回{item: string, count: number}。
  */
-function parseEntry(entity) {
-    if (!entity.includes(' ')) {
-        if (entity.startsWith('#')) {
-            return { tag: entity.substring(1), count: 1 };
+function parseItem(item) {
+    if (!item.includes(' ')) {
+        if (item.startsWith('#')) {
+            return { tag: item.substring(1), count: 1 };
         } else {
-            return { item: entity, count: 1 };
+            return { item: item, count: 1 };
         }
     }
 
-    const [countString, itemString] = entity.split(' ');
+    const [countString, itemString] = item.split(' ');
     const count = parseInt(countString.replace('x', ''));
 
     if (itemString.startsWith('#')) {
@@ -116,13 +116,13 @@ function parseEntry(entity) {
 
 /**
  * 解析不包含数量的字符串
- * @param {string} entity - 要解析的实体字符串，可以是标签或物品
+ * @param {string} item - 要解析的实体字符串，可以是标签或物品
  * @returns {{tag?: string, item?: string}} - 返回包含tag属性或item属性的对象
  */
-function parseEntryWithoutCount(entity) {
-    if (entity.startsWith('#')) {
-        return { tag: entity.substring(1) };
+function parseItemWithoutCount(item) {
+    if (item.startsWith('#')) {
+        return { tag: item.substring(1) };
     } else {
-        return { item: entity };
+        return { item: item };
     }
 }

@@ -1,7 +1,7 @@
 /**
  * 为指定机器ID创建带有机器处理附魔的物品
- * @param {string} machineID - 要处理的机器ID，用于创建基础物品
- * @returns {Item} - 返回一个带有'r2aot:machine_processing'附魔标记的物品对象
+ * @param {string} machineID - 要处理的机器ID
+ * @returns {Item} - 返回一个带有'r2aot:machine_processing'附魔的物品对象
  */
 function processingMachine(machineID) {
     return Item.of(machineID).enchant('r2aot:machine_processing', 1).strongNBT();
@@ -136,4 +136,53 @@ ServerEvents.recipes(event => {
         .loops(3)
         .transitionalItem(in_al_po)
         .id(kjs('sequenced_assembly', 'alfheim_portal'));
+
+    [
+        { seeds: 'energized_steel_seeds', essence: 'imperium_essence' },
+        { seeds: 'blazing_crystal_seeds', essence: 'imperium_essence' },
+        { seeds: 'niotic_crystal_seeds', essence: 'supremium_essence' },
+        { seeds: 'spirited_crystal_seeds', essence: 'supremium_essence' },
+    ].forEach(recipe => {
+        let in_powah_se = `kubejs:incomplete_${recipe.seeds}`;
+        sequenced_assembly(`mysticalagriculture:${recipe.seeds}`, `kubejs:${recipe.seeds}_folder`, [
+            deploying(in_powah_se, [in_powah_se, processingMachine('thermal:machine_bottler')]),
+            deploying(in_powah_se, [in_powah_se, `mysticalagriculture:${recipe.essence}`]),
+            pressing(in_powah_se, in_powah_se),
+            deploying(in_powah_se, [in_powah_se, processingMachine('ars_nouveau:imbuement_chamber')]),
+        ])
+            .loops(1)
+            .transitionalItem(in_powah_se)
+            .id(kjs('sequenced_assembly', recipe.seeds));
+    });
+
+    const dataModelRecipes = [
+        { data: 6, loops: 16 },
+        { data: 54, loops: 64 },
+        { data: 354, loops: 128 },
+        { data: 1254, loops: 256 },
+    ];
+    const createDataModel = (modelId, data) => {
+        const nbt = data ? `{data_model:{data:${data},id:"${modelId}"}}` : `{data_model:{id:"${modelId}"}}`;
+        return Item.of('hostilenetworks:data_model', nbt).strongNBT();
+    };
+    const createPrediction = modelId => {
+        return Item.of('hostilenetworks:prediction', `{data_model:{id:"${modelId}"}}`).strongNBT();
+    };
+
+    ['blitz', 'blizz', 'basalz'].forEach(type => {
+        const modelId = `hostilenetworks:thermal/${type}`;
+
+        dataModelRecipes.forEach((recipe, index) => {
+            const previousData = index === 0 ? null : dataModelRecipes[index - 1].data;
+            const inputItem = createDataModel(modelId, previousData);
+            const outputItem = createDataModel(modelId, recipe.data);
+            const transitionalItem = createDataModel(modelId, previousData);
+            const deployingItem = createPrediction(modelId);
+
+            sequenced_assembly(outputItem, inputItem, [deploying(transitionalItem, [transitionalItem, deployingItem])])
+                .loops(recipe.loops)
+                .transitionalItem(transitionalItem)
+                .id(kjs('sequenced_assembly', `data_model_${type}_${index + 1}`));
+        });
+    });
 });

@@ -1,24 +1,32 @@
 StartupEvents.registry('fluid', event => {
     event.create('r2aot:petal_essence').thinTexture(0x13c2c2);
-    event.create('r2aot:seed_oil').noBlock();
-    event.create('r2aot:bioethanol').noBlock();
     event.create('r2aot:fluidedmana').thinTexture(0x0091cf);
-    event.create('r2aot:molten_meteorite').noBlock();
-
-    event.create('r2aot:molten_bronze').noBlock();
-    event.create('r2aot:molten_electrum').noBlock();
-    event.create('r2aot:molten_invar').noBlock();
-    event.create('r2aot:molten_constantan').noBlock();
-
-    event.create('r2aot:molten_lumium').noBlock();
-    event.create('r2aot:molten_signalum').noBlock();
-    event.create('r2aot:molten_enderium').noBlock();
 
     event
         .create('r2aot:fluidedsource')
         .stillTexture('r2aot:block/source_still')
         .flowingTexture('r2aot:block/source_flow')
         .color(0x9b13fb);
+
+    const noBlockFluids = [
+        'r2aot:seed_oil',
+        'r2aot:bioethanol',
+        'r2aot:molten_meteorite',
+        'r2aot:molten_bronze',
+        'r2aot:molten_electrum',
+        'r2aot:molten_invar',
+        'r2aot:molten_constantan',
+        'r2aot:molten_lumium',
+        'r2aot:molten_signalum',
+        'r2aot:molten_enderium',
+        'r2aot:power_essence',
+        'r2aot:fluid_cryotheum',
+        'r2aot:fluid_petrotheum',
+        'r2aot:fluid_pyrotheum',
+    ];
+    noBlockFluids.forEach(fluid => {
+        event.create(fluid).noBlock();
+    });
 
     [
         { id: 'amethyst_sap', color: 0x4b0082 },
@@ -36,5 +44,5 @@ StartupEvents.registry('fluid', event => {
             .color(fluidType.color);
     });
 
-    event.create('r2aot:power_essence').noBlock();
+    event.create('r2aot:fluid_aerotheum').density(-500).noBlock().gaseous();
 });

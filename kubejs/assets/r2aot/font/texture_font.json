@@ -4,54 +4,126 @@
             "type": "bitmap",
             "file": "r2aot:gui/petal_block/blue.png",
             "ascent": 7,
-            "chars": [
-                "\u0001"
-            ]
+            "chars": ["\u0001"]
         },
 
         {
             "type": "bitmap",
             "file": "r2aot:gui/petal_block/red.png",
             "ascent": 7,
-            "chars": [
-                "\u0002"
-            ]
+            "chars": ["\u0002"]
         },
 
         {
             "type": "bitmap",
             "file": "r2aot:gui/petal_block/green.png",
             "ascent": 7,
-            "chars": [
-                "\u0003"
-            ]
+            "chars": ["\u0003"]
         },
 
         {
             "type": "bitmap",
             "file": "r2aot:gui/petal_block/orange.png",
             "ascent": 7,
-            "chars": [
-                "\u0004"
-            ]
+            "chars": ["\u0004"]
+        },
+
+        {
+            "type": "bitmap",
+            "file": "mysticalagriculture:item/prosperity_seed_base.png",
+            "ascent": 7,
+            "chars": ["\u0005"]
+        },
+
+        {
+            "type": "bitmap",
+            "file": "r2aot:gui/font/iron_block.png",
+            "ascent": 7,
+            "chars": ["\u0006"]
+        },
+
+        {
+            "type": "bitmap",
+            "file": "r2aot:gui/font/gold_block.png",
+            "ascent": 7,
+            "chars": ["\u0007"]
+        },
+
+        {
+            "type": "bitmap",
+            "file": "r2aot:gui/font/blaze_block.png",
+            "ascent": 7,
+            "chars": ["\u0008"]
+        },
+
+        {
+            "type": "bitmap",
+            "file": "r2aot:gui/font/diamond_block.png",
+            "ascent": 7,
+            "chars": ["\u0009"]
+        },
+
+        {
+            "type": "bitmap",
+            "file": "r2aot:gui/font/emerald_block.png",
+            "ascent": 7,
+            "chars": ["\u0010"]
         },
 
         {
             "type": "bitmap",
             "file": "r2aot:gui/font/fluidedmana.png",
             "ascent": 7,
-            "chars": [
-                "\u100a"
-            ]
+            "chars": ["\u100a"]
+        },
+
+        {
+            "type": "bitmap",
+            "file": "r2aot:gui/font/fluid_aerotheum.png",
+            "ascent": 7,
+            "chars": ["\u100b"]
+        },
+
+        {
+            "type": "bitmap",
+            "file": "r2aot:gui/font/fluid_pyrotheum.png",
+            "ascent": 7,
+            "chars": ["\u100c"]
+        },
+
+        {
+            "type": "bitmap",
+            "file": "r2aot:gui/font/fluid_cryotheum.png",
+            "ascent": 7,
+            "chars": ["\u100d"]
+        },
+
+        {
+            "type": "bitmap",
+            "file": "r2aot:gui/font/fluid_petrotheum.png",
+            "ascent": 7,
+            "chars": ["\u100e"]
         },
 
         {
             "type": "bitmap",
             "file": "r2aot:gui/font/dissolution_chamber.png",
             "ascent": 7,
-            "chars": [
-                "\u200a"
-            ]
+            "chars": ["\u200a"]
+        },
+
+        {
+            "type": "bitmap",
+            "file": "r2aot:gui/font/machine_bottler.png",
+            "ascent": 7,
+            "chars": ["\u200b"]
+        },
+
+        {
+            "type": "bitmap",
+            "file": "r2aot:gui/font/imbuement_chamber.png",
+            "ascent": 7,
+            "chars": ["\u200c"]
         }
     ]
 }

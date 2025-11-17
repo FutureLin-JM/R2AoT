@@ -67,6 +67,8 @@
 			dependencies: [
 				"5071DFBD11A19D01"
 				"348EF135954A0E7A"
+				"15CADD02D17504F1"
+				"2D910ADB5A76D799"
 			]
 			id: "47B2C92BA46FA6AD"
 			tasks: [{
@@ -74,8 +76,8 @@
 				item: "powah:steel_energized"
 				type: "item"
 			}]
-			x: 8.0d
-			y: 0.0d
+			x: 6.0d
+			y: -4.0d
 		}
 		{
 			dependencies: [
@@ -88,10 +90,11 @@
 				item: "powah:uraninite"
 				type: "item"
 			}]
-			x: 6.0d
+			x: 4.0d
 			y: 2.0d
 		}
 		{
+			dependencies: ["6F64686DF6EEDF77"]
 			id: "62872D4BA3D823FB"
 			tasks: [
 				{
@@ -105,7 +108,7 @@
 					type: "item"
 				}
 			]
-			x: 4.0d
+			x: 2.0d
 			y: 2.0d
 		}
 		{
@@ -117,6 +120,588 @@
 			}]
 			x: 4.0d
 			y: -2.0d
+		}
+		{
+			dependencies: ["4187233F4FA549B1"]
+			id: "37D5378D8523E48B"
+			tasks: [{
+				id: "4F78920410F9B035"
+				item: "thermal:obsidian_glass"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["37D5378D8523E48B"]
+			id: "74AC481609EFB4B3"
+			tasks: [{
+				id: "085D16593EEC5927"
+				item: "thermal:machine_crystallizer"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"74AC481609EFB4B3"
+				"34EF304D1607BE0F"
+			]
+			id: "60816B65F1CD68CD"
+			tasks: [{
+				id: "3DB3C5AEC187C6FB"
+				item: "r2aot:dust_aerotheum"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["3BE19AF591CFD8C5"]
+			id: "3B058107239F681F"
+			tasks: [{
+				id: "4EDFF480BDB73DEA"
+				item: "powah:crystal_blazing"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["6B0FD6826B38F8C7"]
+			id: "1103B5D276772BD2"
+			tasks: [{
+				id: "5BDCDCEB34AC5393"
+				item: "powah:crystal_niotic"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["69E889F5655BBD41"]
+			id: "19A8AE0FBFC9CE46"
+			tasks: [{
+				id: "7D6EA3FFFD5CE235"
+				item: "powah:crystal_spirited"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["74AC481609EFB4B3"]
+			id: "21B5C1BC65D8E328"
+			tasks: [{
+				id: "348531810B60EA96"
+				item: "r2aot:dust_pyrotheum"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"74AC481609EFB4B3"
+				"6AA1203EF2780DF1"
+			]
+			id: "7BBE27580420C38E"
+			tasks: [{
+				id: "0423DEC0BE15E3AC"
+				item: "r2aot:dust_cryotheum"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -8.0d
+		}
+		{
+			dependencies: [
+				"74AC481609EFB4B3"
+				"10B07A36B499915D"
+			]
+			id: "6F285D5A24FB532C"
+			tasks: [{
+				id: "41344E34F3DA1CAA"
+				item: "r2aot:dust_petrotheum"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -10.0d
+		}
+		{
+			dependencies: [
+				"60816B65F1CD68CD"
+				"2D910ADB5A76D799"
+				"712FAB762F86F391"
+				"526E80BF3ED9A48D"
+			]
+			id: "483D7DF6ABBE1BF5"
+			tasks: [{
+				id: "5FF6549F1E0FEDCF"
+				item: "mysticalagriculture:energized_steel_seeds"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"21B5C1BC65D8E328"
+				"2D910ADB5A76D799"
+				"712FAB762F86F391"
+				"47B2C92BA46FA6AD"
+			]
+			id: "2AF4B2B870826941"
+			tasks: [{
+				id: "12021E664661C4E1"
+				item: "mysticalagriculture:blazing_crystal_seeds"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"7BBE27580420C38E"
+				"2D910ADB5A76D799"
+				"712FAB762F86F391"
+				"3B058107239F681F"
+			]
+			id: "359BFAFDE1DF69C4"
+			tasks: [{
+				id: "795C501C864F22C5"
+				item: "mysticalagriculture:niotic_crystal_seeds"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -8.0d
+		}
+		{
+			dependencies: [
+				"6F285D5A24FB532C"
+				"2D910ADB5A76D799"
+				"712FAB762F86F391"
+				"1103B5D276772BD2"
+			]
+			id: "550A66426AA72F68"
+			tasks: [{
+				id: "59D01A6EA92A95C7"
+				item: "mysticalagriculture:spirited_crystal_seeds"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -10.0d
+		}
+		{
+			dependencies: [
+				"483D7DF6ABBE1BF5"
+				"72B8B26B2E2FE9BE"
+			]
+			id: "15CADD02D17504F1"
+			tasks: [{
+				id: "568ADDE19DACA609"
+				item: "mysticalagriculture:energized_steel_essence"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"2AF4B2B870826941"
+				"72B8B26B2E2FE9BE"
+			]
+			id: "3BE19AF591CFD8C5"
+			tasks: [{
+				id: "1F18A6CD0BFF511E"
+				item: "mysticalagriculture:blazing_crystal_essence"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"359BFAFDE1DF69C4"
+				"72B8B26B2E2FE9BE"
+			]
+			id: "6B0FD6826B38F8C7"
+			tasks: [{
+				id: "46E992CA53920D14"
+				item: "mysticalagriculture:niotic_crystal_essence"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -8.0d
+		}
+		{
+			dependencies: [
+				"550A66426AA72F68"
+				"72B8B26B2E2FE9BE"
+			]
+			id: "69E889F5655BBD41"
+			tasks: [{
+				id: "690903B2448FC31B"
+				item: "mysticalagriculture:spirited_crystal_essence"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -10.0d
+		}
+		{
+			dependencies: [
+				"37D5378D8523E48B"
+				"7E167520DB622D88"
+			]
+			hide_dependent_lines: true
+			id: "712FAB762F86F391"
+			tasks: [{
+				id: "1A28FF768DFF7CF0"
+				item: "thermal:machine_bottler"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"6F64686DF6EEDF77"
+				"2D630B8DAF15EF0F"
+			]
+			id: "34EF304D1607BE0F"
+			tasks: [{
+				id: "6580F511310F8B62"
+				item: "thermal:blitz_powder"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"6F64686DF6EEDF77"
+				"6D37905A27D460D0"
+			]
+			id: "6AA1203EF2780DF1"
+			tasks: [{
+				id: "587E1BF48C027200"
+				item: "thermal:blizz_powder"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -8.0d
+		}
+		{
+			dependencies: [
+				"6F64686DF6EEDF77"
+				"216AA8DBA12D6F0D"
+			]
+			id: "10B07A36B499915D"
+			tasks: [{
+				id: "693E7B46BDE44858"
+				item: "thermal:basalz_powder"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["76E7F6BE3D58BBD9"]
+			id: "2D630B8DAF15EF0F"
+			tasks: [{
+				id: "245C574730E6A61F"
+				item: "thermal:blitz_rod"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["560FCC7EA683879C"]
+			id: "6D37905A27D460D0"
+			tasks: [{
+				id: "33D5D90AA02A86D4"
+				item: "thermal:blizz_rod"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["5A61776EFADDD38A"]
+			id: "216AA8DBA12D6F0D"
+			tasks: [{
+				id: "35E9C5ADB846F21D"
+				item: "thermal:basalz_rod"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -10.0d
+		}
+		{
+			dependencies: [
+				"0942BE6A0E95F2BC"
+				"158C8708597896BF"
+			]
+			id: "560FCC7EA683879C"
+			tasks: [{
+				id: "5809046C4CFED319"
+				item: {
+					Count: 1
+					id: "hostilenetworks:prediction"
+					tag: {
+						data_model: {
+							id: "hostilenetworks:thermal/blizz"
+						}
+					}
+				}
+				match_nbt: true
+				type: "item"
+			}]
+			x: -6.0d
+			y: -8.0d
+		}
+		{
+			dependencies: [
+				"7C5E945B551CF0B6"
+				"158C8708597896BF"
+			]
+			id: "5A61776EFADDD38A"
+			tasks: [{
+				id: "56E836E17F18707D"
+				item: {
+					Count: 1
+					id: "hostilenetworks:prediction"
+					tag: {
+						data_model: {
+							id: "hostilenetworks:thermal/basalz"
+						}
+					}
+				}
+				match_nbt: true
+				type: "item"
+			}]
+			x: -6.0d
+			y: -10.0d
+		}
+		{
+			dependencies: [
+				"79964001F3E33133"
+				"158C8708597896BF"
+			]
+			id: "76E7F6BE3D58BBD9"
+			tasks: [{
+				id: "049AA9A3B21B31DE"
+				item: {
+					Count: 1
+					id: "hostilenetworks:prediction"
+					tag: {
+						data_model: {
+							id: "hostilenetworks:thermal/blitz"
+						}
+					}
+				}
+				match_nbt: true
+				type: "item"
+			}]
+			x: -6.0d
+			y: -4.0d
+		}
+		{
+			id: "158C8708597896BF"
+			subtitle: "{ftbq.r2aot.chapter3-6.fluidedsource_fan.subtitle}"
+			tasks: [
+				{
+					id: "4717FF6BF3534058"
+					item: "create:encased_fan"
+					type: "item"
+				}
+				{
+					id: "1EAA33C09E88AA79"
+					item: "r2aot:fluidedsource_bucket"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: -6.0d
+			y: -12.0d
+		}
+		{
+			dependencies: [
+				"60816B65F1CD68CD"
+				"6F285D5A24FB532C"
+				"7BBE27580420C38E"
+				"21B5C1BC65D8E328"
+			]
+			id: "7E167520DB622D88"
+			tasks: [
+				{
+					id: "62F25BCA8AF641DD"
+					item: "r2aot:fluid_aerotheum_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "4186243D82EFAA11"
+					item: "r2aot:fluid_pyrotheum_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "5B0CB353984B099F"
+					item: "r2aot:fluid_cryotheum_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "0F3AD22741B91137"
+					item: "r2aot:fluid_petrotheum_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "5EB95F58C52AFF56"
+					type: "checkmark"
+				}
+			]
+			x: -2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["4187233F4FA549B1"]
+			id: "526E80BF3ED9A48D"
+			tasks: [{
+				id: "1230B8A3E614A5F0"
+				item: "botania:dragonstone_block"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["354C3243984E8271"]
+			icon: "r2aot:power_essence_bucket"
+			id: "72B8B26B2E2FE9BE"
+			subtitle: "{ftbq.r2aot.chapter3-6.power_essence_subtitle}"
+			tasks: [
+				{
+					id: "6EF68D562FE700E4"
+					item: "r2aot:power_essence_bucket"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "58313201AAE7C678"
+					type: "checkmark"
+				}
+			]
+			x: 4.0d
+			y: -12.0d
+		}
+		{
+			dependencies: ["47B2C92BA46FA6AD"]
+			id: "286D6AC2A9FA632C"
+			tasks: [{
+				id: "209C176302708C9F"
+				item: "r2aot:energized_steel_gear"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["3B058107239F681F"]
+			id: "7A975471F6D36537"
+			tasks: [{
+				id: "0A5816AE251F0E3C"
+				item: "r2aot:blazing_crystal_gear"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["1103B5D276772BD2"]
+			id: "4A008BF1B8D58CB7"
+			tasks: [{
+				id: "7B44FECD6B6B6E20"
+				item: "r2aot:niotic_crystal_gear"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -8.0d
+		}
+		{
+			dependencies: [
+				"19A8AE0FBFC9CE46"
+				"354C3243984E8271"
+			]
+			id: "01229433DA3F5F27"
+			tasks: [{
+				id: "2E0F4A4C68925F30"
+				item: "r2aot:spirited_crystal_gear"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -10.0d
+		}
+		{
+			dependencies: [
+				"7A975471F6D36537"
+				"3FA4704736B89DF1"
+			]
+			id: "27D65E12803E0B9F"
+			tasks: [{
+				id: "0D1ECB1748137743"
+				item: "thermal_extra:upgrade_augment"
+				type: "item"
+			}]
+			x: 10.0d
+			y: -6.0d
+		}
+		{
+			dependencies: [
+				"4A008BF1B8D58CB7"
+				"27D65E12803E0B9F"
+			]
+			id: "2B78255B2C9D3A57"
+			tasks: [{
+				id: "1E1CB5B92339DE48"
+				item: "thermal_extra:abyssal_upgrade_augment"
+				type: "item"
+			}]
+			x: 10.0d
+			y: -8.0d
+		}
+		{
+			dependencies: [
+				"01229433DA3F5F27"
+				"2B78255B2C9D3A57"
+			]
+			id: "574D6610D9F05FC2"
+			tasks: [{
+				id: "677E20FE1DEA6FA4"
+				item: "thermalendergy:endergy_upgrade_2"
+				type: "item"
+			}]
+			x: 10.0d
+			y: -10.0d
+		}
+		{
+			dependencies: [
+				"354C3243984E8271"
+				"02479827A3EA9959"
+				"25ABBCAF9B1EF42C"
+			]
+			id: "3FA4704736B89DF1"
+			tasks: [{
+				id: "5627D6DCE38A246C"
+				item: "thermal_extra:ancient_dust"
+				type: "item"
+			}]
+			x: 10.0d
+			y: -4.0d
 		}
 	]
 	title: "{ftbq.r2aot.chapter3-6.start.title}"

@@ -125,6 +125,21 @@ ServerEvents.recipes(event => {
         'powah:energizing/niotic_crystal',
         'powah:energizing/spirited_crystal',
         'powah:energizing/nitro_crystal',
+        'thermal:machines/smelter/smelter_glass_obsidian',
+        'thermal:fire_charge/obsidian_glass_2',
+        'thermal:machine_bottler',
+        'thermal:machine_crystallizer',
+        'thermal:machines/pulverizer/pulverizer_blitz_rod',
+        'thermal:machines/pulverizer/pulverizer_blizz_rod',
+        'thermal:machines/pulverizer/pulverizer_basalz_rod',
+        'thermal:blitz_powder',
+        'thermal:blizz_powder',
+        'thermal:basalz_powder',
+        'thermal_extra:crafting/dragonsteel_integral_component',
+        'thermal_extra:crafting/abyssal_integral_component',
+        'thermalendergy:endergy_upgrade_1',
+        'thermalendergy:endergy_upgrade_2',
+        'thermalendergy:machine/smelter/melodium_ingot',
         
     ];
     recipesToRemoveID.forEach(recipes => {

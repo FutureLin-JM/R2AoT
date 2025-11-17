@@ -288,11 +288,18 @@ ServerEvents.recipes(event => {
         250000
     );
 
+    /**
+     * 精灵门
+     * @param {OutputItem_} output 
+     * @param {InputItem_ | InputItem_[]} input 
+     */
     function elvenTradeRecipes(output, input) {
         elven_trade(output, input).id(kjs('elven_trade', output.split(':')[1]));
     }
 
     elvenTradeRecipes('8x powah:dielectric_paste', ['#minecraft:coals', 'minecraft:clay_ball']);
+
+    elvenTradeRecipes('2x thermal:obsidian_glass', ['#forge:dusts/obsidian', '#forge:glass']);
 
     /**
      * 泰拉凝聚

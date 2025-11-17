@@ -20,12 +20,13 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 0.0d
+			y: 4.0d
 		}
 		{
 			dependencies: [
 				"0412E6F433DFC1C0"
 				"5F238F0DB8D8BBB2"
+				"5D820019340277BB"
 			]
 			id: "23F513F83AB19F9C"
 			size: 1.5d
@@ -35,7 +36,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: -2.25d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -49,8 +50,8 @@
 				item: "hostilenetworks:loot_fabricator"
 				type: "item"
 			}]
-			x: 0.0d
-			y: -4.5d
+			x: -3.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["7AFED40A39D02B9E"]
@@ -66,10 +67,11 @@
 						}
 					}
 				}
+				match_nbt: true
 				type: "item"
 			}]
 			x: -3.0d
-			y: -1.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["3B223FDBB7EC3FFB"]
@@ -85,10 +87,11 @@
 						}
 					}
 				}
+				match_nbt: true
 				type: "item"
 			}]
 			x: -3.0d
-			y: 1.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["2313F111558604E3"]
@@ -104,10 +107,11 @@
 						}
 					}
 				}
+				match_nbt: true
 				type: "item"
 			}]
 			x: 0.0d
-			y: 3.0d
+			y: 7.0d
 		}
 		{
 			dependencies: ["38A8B4B8B9B734FD"]
@@ -123,10 +127,11 @@
 						}
 					}
 				}
+				match_nbt: true
 				type: "item"
 			}]
 			x: 3.0d
-			y: -1.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["3476B8E0285259B3"]
@@ -142,10 +147,11 @@
 						}
 					}
 				}
+				match_nbt: true
 				type: "item"
 			}]
 			x: 3.0d
-			y: 1.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["28B419D3DAEAAD17"]
@@ -161,10 +167,11 @@
 						}
 					}
 				}
+				match_nbt: true
 				type: "item"
 			}]
 			x: 3.0d
-			y: 2.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["03C14866093B01D0"]
@@ -180,10 +187,11 @@
 						}
 					}
 				}
+				match_nbt: true
 				type: "item"
 			}]
 			x: -3.0d
-			y: -2.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["3DB8AE32D046637C"]
@@ -199,10 +207,11 @@
 						}
 					}
 				}
+				match_nbt: true
 				type: "item"
 			}]
 			x: -3.0d
-			y: 0.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["55BEAABBF128CF3E"]
@@ -218,10 +227,11 @@
 						}
 					}
 				}
+				match_nbt: true
 				type: "item"
 			}]
 			x: -3.0d
-			y: 2.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["1CF9A3611380A4BB"]
@@ -237,10 +247,11 @@
 						}
 					}
 				}
+				match_nbt: true
 				type: "item"
 			}]
 			x: 3.0d
-			y: -2.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["15215B1C8CEB5900"]
@@ -256,10 +267,11 @@
 						}
 					}
 				}
+				match_nbt: true
 				type: "item"
 			}]
 			x: 3.0d
-			y: 0.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["54A3F9BAE57ECA97"]
@@ -270,7 +282,7 @@
 				type: "item"
 			}]
 			x: 0.0d
-			y: 4.0d
+			y: 8.0d
 		}
 		{
 			dependencies: ["5F238F0DB8D8BBB2"]
@@ -288,10 +300,11 @@
 						}
 					}
 				}
+				match_nbt: true
 				type: "item"
 			}]
 			x: -2.0d
-			y: -2.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["5F238F0DB8D8BBB2"]
@@ -309,10 +322,11 @@
 						}
 					}
 				}
+				match_nbt: true
 				type: "item"
 			}]
 			x: -2.0d
-			y: 1.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["5F238F0DB8D8BBB2"]
@@ -330,10 +344,11 @@
 						}
 					}
 				}
+				match_nbt: true
 				type: "item"
 			}]
 			x: -2.0d
-			y: 0.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["5F238F0DB8D8BBB2"]
@@ -351,10 +366,11 @@
 						}
 					}
 				}
+				match_nbt: true
 				type: "item"
 			}]
 			x: -2.0d
-			y: 2.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["5F238F0DB8D8BBB2"]
@@ -371,10 +387,11 @@
 						}
 					}
 				}
+				match_nbt: true
 				type: "item"
 			}]
 			x: 0.0d
-			y: 2.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["5F238F0DB8D8BBB2"]
@@ -392,10 +409,11 @@
 						}
 					}
 				}
+				match_nbt: true
 				type: "item"
 			}]
 			x: 2.0d
-			y: -2.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["5F238F0DB8D8BBB2"]
@@ -413,10 +431,11 @@
 						}
 					}
 				}
+				match_nbt: true
 				type: "item"
 			}]
 			x: 2.0d
-			y: -1.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["5F238F0DB8D8BBB2"]
@@ -434,10 +453,11 @@
 						}
 					}
 				}
+				match_nbt: true
 				type: "item"
 			}]
 			x: 2.0d
-			y: 0.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["5F238F0DB8D8BBB2"]
@@ -455,10 +475,11 @@
 						}
 					}
 				}
+				match_nbt: true
 				type: "item"
 			}]
 			x: 2.0d
-			y: 1.0d
+			y: 5.0d
 		}
 		{
 			dependencies: ["5F238F0DB8D8BBB2"]
@@ -476,10 +497,11 @@
 						}
 					}
 				}
+				match_nbt: true
 				type: "item"
 			}]
 			x: 2.0d
-			y: 2.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["5F238F0DB8D8BBB2"]
@@ -497,10 +519,191 @@
 						}
 					}
 				}
+				match_nbt: true
 				type: "item"
 			}]
 			x: -2.0d
-			y: -1.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["5D820019340277BB"]
+			id: "58DABCC21DFC14F9"
+			tasks: [{
+				id: "06A2AA2BA5ABD660"
+				item: {
+					Count: 1
+					id: "hostilenetworks:data_model"
+					tag: {
+						data_model: {
+							id: "hostilenetworks:ars_nouveau/wilden_mobs"
+						}
+					}
+				}
+				match_nbt: true
+				type: "item"
+				weak_nbt_match: true
+			}]
+			x: 2.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["58DABCC21DFC14F9"]
+			id: "49F5A91B1735066E"
+			tasks: [{
+				id: "26669FB80C2966B2"
+				item: {
+					Count: 1
+					id: "hostilenetworks:prediction"
+					tag: {
+						data_model: {
+							id: "hostilenetworks:ars_nouveau/wilden_mobs"
+						}
+					}
+				}
+				match_nbt: true
+				type: "item"
+			}]
+			x: 3.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["42DA31934CDF73A5"]
+			id: "5D820019340277BB"
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "54B7BC63BABA7821"
+				item: "hostilenetworks:blank_data_model"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["5D820019340277BB"]
+			id: "79964001F3E33133"
+			subtitle: "{ftbq.r2aot.chapter3-6.data_model.subtitle}"
+			tasks: [{
+				id: "7920886C470EDABB"
+				item: {
+					Count: 1
+					id: "hostilenetworks:data_model"
+					tag: {
+						data_model: {
+							data: 1254
+							id: "hostilenetworks:thermal/blitz"
+						}
+					}
+				}
+				match_nbt: true
+				type: "item"
+			}]
+			x: -2.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["5D820019340277BB"]
+			id: "0942BE6A0E95F2BC"
+			subtitle: "{ftbq.r2aot.chapter3-6.data_model.subtitle}"
+			tasks: [{
+				id: "6758254E73D0B28E"
+				item: {
+					Count: 1
+					id: "hostilenetworks:data_model"
+					tag: {
+						data_model: {
+							data: 1254
+							id: "hostilenetworks:thermal/blizz"
+						}
+					}
+				}
+				match_nbt: true
+				type: "item"
+			}]
+			x: -2.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["5D820019340277BB"]
+			id: "7C5E945B551CF0B6"
+			subtitle: "{ftbq.r2aot.chapter3-6.data_model.subtitle}"
+			tasks: [{
+				id: "3D3F58C9BC055932"
+				item: {
+					Count: 1
+					id: "hostilenetworks:data_model"
+					tag: {
+						data_model: {
+							data: 1254
+							id: "hostilenetworks:thermal/basalz"
+						}
+					}
+				}
+				match_nbt: true
+				type: "item"
+			}]
+			x: -2.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["79964001F3E33133"]
+			id: "543511F251187945"
+			tasks: [{
+				id: "534E944B777B68E3"
+				item: {
+					Count: 1
+					id: "hostilenetworks:prediction"
+					tag: {
+						data_model: {
+							id: "hostilenetworks:thermal/blitz"
+						}
+					}
+				}
+				match_nbt: true
+				type: "item"
+			}]
+			x: -3.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["0942BE6A0E95F2BC"]
+			id: "51DFEF1D90A82692"
+			tasks: [{
+				id: "0C09AE22A25F6CA9"
+				item: {
+					Count: 1
+					id: "hostilenetworks:prediction"
+					tag: {
+						data_model: {
+							id: "hostilenetworks:thermal/blizz"
+						}
+					}
+				}
+				match_nbt: true
+				type: "item"
+			}]
+			x: -3.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["7C5E945B551CF0B6"]
+			id: "3C321BFB07F0DD02"
+			tasks: [{
+				id: "7201B244BD5D93CE"
+				item: {
+					Count: 1
+					id: "hostilenetworks:prediction"
+					tag: {
+						data_model: {
+							id: "hostilenetworks:thermal/basalz"
+						}
+					}
+				}
+				match_nbt: true
+				type: "item"
+			}]
+			x: -3.0d
+			y: -3.0d
 		}
 	]
 	title: "{ftbq.r2aot.additional-hostilenetworks.start.title}"
