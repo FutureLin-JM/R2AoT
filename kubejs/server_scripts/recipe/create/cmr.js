@@ -39,7 +39,7 @@ ServerEvents.recipes(event => {
                         item: recipe.input,
                     },
                     {
-                        item: 'r2aot:bifrost_prism',
+                        item: 'r2aot:bifrost_prism', //Kubejs方块存在JEI渲染问题，保留待定
                     },
                 ],
                 results: [

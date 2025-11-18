@@ -51,10 +51,10 @@ JadeEvents.onClientRegistration(event => {
         let activeFuelItem = activeFuel == $FuelType.SPECIAL ? Items.ICE : Items.SNOWBALL;
         tooltip['add(snownee.jade.api.ui.IElement)']($IElementHelper.get().smallItem(activeFuelItem));
         if (isCreative) {
-            tooltip.append(Text.translatable('jade.infinity'));
+            tooltip.append(Text.translate('jade.infinity'));
         } else {
             let seconds = Math.floor(remainingBurnTime / 20);
-            tooltip.append(Text.translatable('jade.tooltip.snowman_cooler', seconds.toFixed(0)).white());
+            tooltip.append(Text.translate('jade.tooltip.snowman_cooler', seconds.toFixed(0)).white());
         }
     });
 
@@ -68,7 +68,7 @@ JadeEvents.onClientRegistration(event => {
         if (ember && maxEmber > 0) {
             let emberIcon = $IElementHelper.get().smallItem(Item.of('embers:ember_crystal'));
             tooltip['add(snownee.jade.api.ui.IElement)'](emberIcon);
-            tooltip.append(Text.translatable('jade.tooltip.ember', ember, maxEmber).white());
+            tooltip.append(Text.translate('jade.tooltip.ember', ember, maxEmber).white());
         }
     });
 });

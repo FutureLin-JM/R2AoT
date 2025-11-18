@@ -97,4 +97,18 @@ global.imbuementChargeRecipes = [
         energy: 1000000,
         id: 'kubejs:imbuement/incomplete_spirited_crystal_seeds_step_4',
     },
+    {
+        output: 'r2aot:imperium_crop_seed',
+        input: 'r2aot:imperium_crop_seed',
+        pedestalItems: [
+            "r2aot:broken_mana",
+            'ars_nouveau:water_essence',
+            'ars_nouveau:fire_essence',
+            "r2aot:broken_source",
+            'ars_nouveau:earth_essence',
+            'ars_nouveau:air_essence',
+        ],
+        source: 5000,
+        energy: 100000,
+    }
 ];

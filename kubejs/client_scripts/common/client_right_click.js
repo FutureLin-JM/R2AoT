@@ -14,3 +14,12 @@ BlockEvents.rightClicked('r2aot:fluid_sourcelink', event => {
         });
     }
 });
+
+BlockEvents.rightClicked(event => {
+    const { block, player, item } = event;
+
+    if (block.hasTag('forge:farmland') && item.hasTag('mysticalagriculture:seeds')) {
+        player.statusMessage = Text.translate('message.r2aot.prevent');
+        event.cancel();
+    }
+});

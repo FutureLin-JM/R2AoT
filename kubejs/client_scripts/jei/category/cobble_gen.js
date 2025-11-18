@@ -3,7 +3,7 @@ JEIAddedEvents.registerCategories(event => {
         const { guiHelper } = category.jeiHelpers;
 
         category
-            .title(Text.translatable('jei.r2aot.cobble_gen'))
+            .title(Text.translate('jei.r2aot.cobble_gen'))
             .background(null)
             .setWidth(80)
             .setHeight(50)

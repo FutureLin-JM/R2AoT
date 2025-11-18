@@ -599,7 +599,7 @@
 				type: "item"
 			}]
 			x: -2.0d
-			y: -5.0d
+			y: -6.5d
 		}
 		{
 			dependencies: ["5D820019340277BB"]
@@ -621,7 +621,7 @@
 				type: "item"
 			}]
 			x: -2.0d
-			y: -4.0d
+			y: -5.5d
 		}
 		{
 			dependencies: ["5D820019340277BB"]
@@ -643,7 +643,7 @@
 				type: "item"
 			}]
 			x: -2.0d
-			y: -3.0d
+			y: -4.5d
 		}
 		{
 			dependencies: ["79964001F3E33133"]
@@ -663,7 +663,7 @@
 				type: "item"
 			}]
 			x: -3.0d
-			y: -5.0d
+			y: -6.5d
 		}
 		{
 			dependencies: ["0942BE6A0E95F2BC"]
@@ -683,7 +683,7 @@
 				type: "item"
 			}]
 			x: -3.0d
-			y: -4.0d
+			y: -5.5d
 		}
 		{
 			dependencies: ["7C5E945B551CF0B6"]
@@ -703,7 +703,127 @@
 				type: "item"
 			}]
 			x: -3.0d
-			y: -3.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["5FB868C8197BAF5A"]
+			id: "347A072D62AC9B14"
+			tasks: [{
+				id: "2633493B68DC465E"
+				item: {
+					Count: 1
+					id: "hostilenetworks:prediction"
+					tag: {
+						data_model: {
+							id: "hostilenetworks:warden"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -3.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["5C3F8E639188BF1C"]
+			id: "48FFDEE4B6C7C670"
+			tasks: [{
+				id: "15E228180FB69585"
+				item: {
+					Count: 1
+					id: "hostilenetworks:prediction"
+					tag: {
+						data_model: {
+							id: "hostilenetworks:guardian"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -3.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["365149BE759643EB"]
+			id: "77A2A607DC0DF873"
+			tasks: [{
+				id: "1748195B166A4FA3"
+				item: {
+					Count: 1
+					id: "hostilenetworks:prediction"
+					tag: {
+						data_model: {
+							id: "hostilenetworks:shulker"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["5D820019340277BB"]
+			id: "5FB868C8197BAF5A"
+			subtitle: "{ftbq.r2aot.chapter3-6.data_model.subtitle}"
+			tasks: [{
+				id: "387527617A2476FE"
+				item: {
+					Count: 1
+					id: "hostilenetworks:data_model"
+					tag: {
+						data_model: {
+							data: 1254
+							id: "hostilenetworks:warden"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -2.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["5D820019340277BB"]
+			id: "5C3F8E639188BF1C"
+			subtitle: "{ftbq.r2aot.chapter3-6.data_model.subtitle}"
+			tasks: [{
+				id: "086FF76CC91682DF"
+				item: {
+					Count: 1
+					id: "hostilenetworks:data_model"
+					tag: {
+						data_model: {
+							data: 1254
+							id: "hostilenetworks:guardian"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -2.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["5D820019340277BB"]
+			id: "365149BE759643EB"
+			subtitle: "{ftbq.r2aot.chapter3-6.data_model.subtitle}"
+			tasks: [{
+				id: "6A768115F8F919FD"
+				item: {
+					Count: 1
+					id: "hostilenetworks:data_model"
+					tag: {
+						data_model: {
+							data: 1254
+							id: "hostilenetworks:shulker"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -2.0d
+			y: -1.5d
 		}
 	]
 	title: "{ftbq.r2aot.additional-hostilenetworks.start.title}"

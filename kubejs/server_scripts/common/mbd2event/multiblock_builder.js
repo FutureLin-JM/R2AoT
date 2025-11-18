@@ -12,7 +12,7 @@ BlockEvents.rightClicked(event => {
 
     if (player.isCrouching()) {
         if (controller.isFormed()) {
-            player.tell(Text.translatable('item.mbd2.mbd_gadgets.multiblock_debugger.is_formed'));
+            player.tell(Text.translate('item.mbd2.mbd_gadgets.multiblock_debugger.is_formed'));
         } // 源码此处还包含一部分关于需催化剂的结构信息显示，此处省略
         else {
             let error = controller.getMultiblockState().error;
@@ -20,13 +20,13 @@ BlockEvents.rightClicked(event => {
                 console.log('error info');
                 $MBD2Network.NETWORK.sendToPlayer(new $SPatternErrorPosPacket(error.getPos()), player);
                 player.tell(
-                    Text.translatable(
+                    Text.translate(
                         'item.mbd2.mbd_gadgets.multiblock_debugger.failure.error.info',
                         error.getErrorInfo()
                     )
                 );
             } else {
-                player.tell(Text.translatable('item.mbd2.mbd_gadgets.multiblock_debugger.failure.no_error'));
+                player.tell(Text.translate('item.mbd2.mbd_gadgets.multiblock_debugger.failure.no_error'));
             }
         }
     } else {

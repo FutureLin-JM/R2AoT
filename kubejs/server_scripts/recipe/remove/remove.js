@@ -140,7 +140,11 @@ ServerEvents.recipes(event => {
         'thermalendergy:endergy_upgrade_1',
         'thermalendergy:endergy_upgrade_2',
         'thermalendergy:machine/smelter/melodium_ingot',
-        
+        'thermal_extra:machine/pulverizer/soul_sand_dust',
+        'thermal_extra:machine/smelter/soul_infused_ingot',
+        'thermal_extra:machine/smelter/twinite_ingot',
+        'thermal_extra:machine/smelter/shellite_ingot',
+        'mysticalagriculture:watering_can',
     ];
     recipesToRemoveID.forEach(recipes => {
         event.remove({ id: recipes });

@@ -127,8 +127,9 @@ ServerEvents.recipes(event => {
         C: 'create:railway_casing',
     }).id(kjs('mechanical_crafting', 'stress_generator_core'));
 
-    ['blitz', 'blizz', 'basalz'].forEach(type => {
-        const modelId = `hostilenetworks:thermal/${type}`;
+    ['thermal/blitz', 'thermal/blizz', 'thermal/basalz', 'guardian', 'shulker', 'warden'].forEach(type => {
+        const modelId = `hostilenetworks:${type}`;
+        const typeName = type.includes('/') ? type.split('/')[1] : type;
         const dataModel = Item.of('hostilenetworks:data_model', `{data_model:{id:"${modelId}"}}`).strongNBT();
         const prediction = Item.of('hostilenetworks:prediction', `{data_model:{id:"${modelId}"}}`).strongNBT();
         mechanical_crafting(
@@ -142,6 +143,6 @@ ServerEvents.recipes(event => {
             ], {
                 A: prediction,
                 B: 'hostilenetworks:blank_data_model',
-            }).id(kjs('mechanical_crafting', `data_model_${type}`));
+            }).id(kjs('mechanical_crafting', `data_model_${typeName}`));
     });
 });

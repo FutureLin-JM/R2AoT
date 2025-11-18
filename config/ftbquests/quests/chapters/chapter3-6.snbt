@@ -113,13 +113,21 @@
 		}
 		{
 			id: "348EF135954A0E7A"
-			tasks: [{
-				id: "37FEEBE933C4B59F"
-				item: "powah:thermo_generator_basic"
-				type: "item"
-			}]
-			x: 4.0d
-			y: -2.0d
+			tasks: [
+				{
+					id: "37FEEBE933C4B59F"
+					item: "powah:thermo_generator_basic"
+					type: "item"
+				}
+				{
+					id: "4F4C0D97BDD5B4C3"
+					item: "ars_nouveau:imbuement_chamber"
+					type: "item"
+				}
+			]
+			title: "{jei.r2aot.imbuement_charge}"
+			x: 8.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["4187233F4FA549B1"]
@@ -597,7 +605,7 @@
 				}
 			]
 			x: 4.0d
-			y: -12.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["47B2C92BA46FA6AD"]
@@ -664,6 +672,7 @@
 			dependencies: [
 				"4A008BF1B8D58CB7"
 				"27D65E12803E0B9F"
+				"4A4AC9498BB33665"
 			]
 			id: "2B78255B2C9D3A57"
 			tasks: [{
@@ -678,6 +687,8 @@
 			dependencies: [
 				"01229433DA3F5F27"
 				"2B78255B2C9D3A57"
+				"5EEECF5DCA7D952E"
+				"220DC48BD186115A"
 			]
 			id: "574D6610D9F05FC2"
 			tasks: [{
@@ -702,6 +713,274 @@
 			}]
 			x: 10.0d
 			y: -4.0d
+		}
+		{
+			dependencies: ["1C54ED2D56610418"]
+			id: "4A4AC9498BB33665"
+			tasks: [{
+				id: "65C0DB0F78C430E3"
+				item: "minecraft:echo_shard"
+				type: "item"
+			}]
+			x: 12.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["090151A62BC31FFC"]
+			id: "220DC48BD186115A"
+			tasks: [
+				{
+					id: "50B3FE0C061F6B1A"
+					item: "minecraft:prismarine_shard"
+					type: "item"
+				}
+				{
+					id: "62E51AAAAA9877A5"
+					item: "minecraft:prismarine_crystals"
+					type: "item"
+				}
+			]
+			x: 12.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["3709917EE5ECB6F2"]
+			id: "5EEECF5DCA7D952E"
+			tasks: [{
+				id: "61B008BCFEF69B07"
+				item: "minecraft:shulker_shell"
+				type: "item"
+			}]
+			x: 12.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["465896F7D9A84FC5"]
+			id: "3709917EE5ECB6F2"
+			tasks: [{
+				id: "16C7EC2086D8EEEB"
+				item: {
+					Count: 1
+					id: "hostilenetworks:prediction"
+					tag: {
+						data_model: {
+							id: "hostilenetworks:shulker"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 14.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["465896F7D9A84FC5"]
+			id: "090151A62BC31FFC"
+			tasks: [{
+				id: "380627A8FCAFD4E0"
+				item: {
+					Count: 1
+					id: "hostilenetworks:prediction"
+					tag: {
+						data_model: {
+							id: "hostilenetworks:guardian"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 14.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["465896F7D9A84FC5"]
+			id: "1C54ED2D56610418"
+			tasks: [{
+				id: "3FCF447BFDD21435"
+				item: {
+					Count: 1
+					id: "hostilenetworks:prediction"
+					tag: {
+						data_model: {
+							id: "hostilenetworks:warden"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 14.0d
+			y: -6.0d
+		}
+		{
+			id: "465896F7D9A84FC5"
+			subtitle: "{ftbq.r2aot.chapter3-6.bifrost_prism_fan.subtitle}"
+			tasks: [
+				{
+					id: "2785DB5E3E45601E"
+					item: "create:encased_fan"
+					type: "item"
+				}
+				{
+					id: "27E2CF81B06F5D93"
+					item: "r2aot:bifrost_prism"
+					type: "item"
+				}
+			]
+			x: 14.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["4187233F4FA549B1"]
+			id: "4C048B95AA2C8D26"
+			tasks: [{
+				id: "39D81CB0BF8B15B9"
+				item: "thermal_extra:twinite_ingot"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["4187233F4FA549B1"]
+			id: "69512D4CBF695403"
+			tasks: [{
+				id: "7420A98F681D510B"
+				item: "thermal_extra:shellite_ingot"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"4187233F4FA549B1"
+				"6F64686DF6EEDF77"
+			]
+			id: "19EB8172A5857423"
+			tasks: [{
+				id: "47C21EA7CE75792C"
+				item: "thermal_extra:soul_infused_ingot"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["19EB8172A5857423"]
+			id: "2D5ED02F0C06C9B0"
+			tasks: [{
+				id: "18671A624F72AAE8"
+				item: "thermal_extra:soul_infused_machine_speed_augment"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"2D5ED02F0C06C9B0"
+				"4C048B95AA2C8D26"
+			]
+			id: "42527F90A66EA669"
+			tasks: [{
+				id: "503D3C5C8161D92A"
+				item: "thermal_extra:twinite_machine_speed_augment"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"42527F90A66EA669"
+				"69512D4CBF695403"
+			]
+			id: "1094E86CD57BC8AB"
+			tasks: [{
+				id: "64C66675A224B25A"
+				item: "thermal_extra:shellite_machine_speed_augment"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["1094E86CD57BC8AB"]
+			id: "5946571F155512C5"
+			tasks: [{
+				id: "24117F6242BB40EB"
+				item: "thermal_extra:dragonsteel_machine_speed_augment"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["5946571F155512C5"]
+			id: "1729F236F9E44DDA"
+			tasks: [{
+				id: "248B7A89AA996B7F"
+				item: "thermal_extra:abyssal_machine_speed_augment"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["348EF135954A0E7A"]
+			id: "6200B59147353212"
+			tasks: [
+				{
+					id: "7D49C4AC5D6DB65D"
+					item: "mysticalagriculture:imperium_essence"
+					type: "item"
+				}
+				{
+					id: "395F8F73F207CBC2"
+					item: "r2aot:imperium_crop_seed"
+					type: "item"
+				}
+			]
+			x: 8.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["09E1DFFB09FDE645"]
+			id: "7E83C68359270897"
+			tasks: [{
+				id: "427246BC5DDB75C3"
+				item: "mysticalagriculture:prosperity_shard"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"550A66426AA72F68"
+				"19A8AE0FBFC9CE46"
+			]
+			id: "7A603293C8D41F1F"
+			tasks: [{
+				id: "7ACD0F56B4759D6D"
+				item: "mysticalagriculture:nitro_crystal_seeds"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -12.0d
+		}
+		{
+			dependencies: ["7A603293C8D41F1F"]
+			id: "6755F20A2FDD3390"
+			shape: "diamond"
+			size: 1.5d
+			tasks: [{
+				id: "1955FCA52F70D51A"
+				item: "powah:nitro_crystal_block"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -14.0d
 		}
 	]
 	title: "{ftbq.r2aot.chapter3-6.start.title}"

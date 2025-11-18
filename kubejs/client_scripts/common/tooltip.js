@@ -117,6 +117,9 @@ ItemEvents.tooltip(event => {
         'hostilenetworks:thermal/blitz',
         'hostilenetworks:thermal/blizz',
         'hostilenetworks:thermal/basalz',
+        'hostilenetworks:guardian',
+        'hostilenetworks:shulker',
+        'hostilenetworks:warden',
     ];
     event.addAdvanced('hostilenetworks:data_model', (item, advanced, text) => {
         let itemId = item.nbt?.data_model?.id;
@@ -125,9 +128,9 @@ ItemEvents.tooltip(event => {
             let data = item.nbt?.data_model?.data;
             let iterations = item.nbt?.data_model?.iterations;
             if (iterations && iterations > 0) {
-                text.add(2, Text.translatable('tooltip.r2aot.data_model_crafting.error').yellow());
+                text.add(2, Text.translate('tooltip.r2aot.data_model_crafting.error').yellow());
             } else if (data && data < 1254 && data !== 6 && data !== 54 && data !== 354) {
-                text.add(2, Text.translatable('tooltip.r2aot.data_model_crafting.error').yellow());
+                text.add(2, Text.translate('tooltip.r2aot.data_model_crafting.error').yellow());
             }
         }
     });

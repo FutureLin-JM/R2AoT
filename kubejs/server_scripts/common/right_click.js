@@ -138,6 +138,15 @@ BlockEvents.rightClicked('ars_nouveau:scribes_table', event => {
     event.cancel();
 });
 
+BlockEvents.rightClicked(event => {
+    const { block, player, item } = event;
+
+    if (block.hasTag('forge:farmland') && item.hasTag('mysticalagriculture:seeds')) {
+        player.statusMessage = Text.translate('message.r2aot.prevent');
+        event.cancel();
+    }
+});
+
 // 时间兑换劵
 ItemEvents.rightClicked('r2aot:time_voucher', event => {
     const { hand, item, player } = event;

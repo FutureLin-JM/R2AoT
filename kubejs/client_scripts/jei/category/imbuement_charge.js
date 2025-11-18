@@ -2,7 +2,7 @@ JEIAddedEvents.registerCategories(event => {
     event.custom('r2aot:imbuement_charge', category => {
         const { guiHelper } = category.jeiHelpers;
         category
-            .title(Text.translatable('jei.r2aot.imbuement_charge'))
+            .title(Text.translate('jei.r2aot.imbuement_charge'))
             .background(null)
             .setWidth(114)
             .setHeight(108)

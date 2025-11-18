@@ -160,7 +160,7 @@ ServerEvents.recipes(event => {
         const inputObj = input.startsWith('#')
             ? { type: 'tag', tag: input.substring(1) }
             : { type: 'block', block: input };
-        id = id ?? kjs('pure_daisy', output.split(':')[1])
+        id = id ?? kjs('pure_daisy', output.split(':')[1]);
 
         event
             .custom({
@@ -290,8 +290,8 @@ ServerEvents.recipes(event => {
 
     /**
      * 精灵门
-     * @param {OutputItem_} output 
-     * @param {InputItem_ | InputItem_[]} input 
+     * @param {OutputItem_} output
+     * @param {InputItem_ | InputItem_[]} input
      */
     function elvenTradeRecipes(output, input) {
         elven_trade(output, input).id(kjs('elven_trade', output.split(':')[1]));
@@ -300,6 +300,26 @@ ServerEvents.recipes(event => {
     elvenTradeRecipes('8x powah:dielectric_paste', ['#minecraft:coals', 'minecraft:clay_ball']);
 
     elvenTradeRecipes('2x thermal:obsidian_glass', ['#forge:dusts/obsidian', '#forge:glass']);
+
+    elvenTradeRecipes('thermal_extra:soul_infused_ingot', [
+        'r2aot:luxvoid_alloy',
+        'thermal_extra:soul_sand_dust',
+        'thermal_extra:soul_sand_dust',
+        'r2aot:luxvoid_alloy',
+    ]);
+
+    elvenTradeRecipes('thermal_extra:twinite_ingot', [
+        'r2aot:broken_mana',
+        'r2aot:broken_mana',
+        'r2aot:broken_source',
+        'r2aot:broken_source',
+    ]);
+
+    elvenTradeRecipes('thermal_extra:shellite_ingot', [
+        'botania:elementium_ingot',
+        'minecraft:shulker_shell',
+        'botania:elementium_ingot',
+    ]);
 
     /**
      * 泰拉凝聚

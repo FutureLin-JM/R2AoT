@@ -276,6 +276,8 @@
     "jei.r2aot.imbuement_charge": "灌注充能",
     "jei.desc.r2aot.imbuement_charge.energy": "能量消耗：%sFE",
     "jei.r2aot.cobble_gen": "方块制造",
+    "jei.r2aot.elemental_altar_core.mana": "魔力消耗：%S",
+    "jei.r2aot.elemental_altar_core.source": "魔源消耗：%S",
 
     "tooltip.ars_nouveau.crafting_locked": "条件不足，合成锁定",
 
@@ -297,6 +299,7 @@
     "message.r2aot.time_add_partial": "已添加 %s 秒（已达上限 %s 秒）",
     "message.r2aot.time_already_max": "时间之瓶已满（%s 秒）",
     "message.r2aot.lightning_rod_clicks": "已点击 %s/10 次",
+    "message.r2aot.prevent": "被神秘力量阻止了",
 
     "ftbq.r2aot.capsule.click": "点击跳转",
     "ftbq.r2aot.ponder.text": "§b点击查看相关思索",
@@ -398,6 +401,7 @@
     "ftbq.r2aot.chapter3-6.fluidedsource_fan.subtitle": "在鼓风机前放置液态魔源",
     "ftbq.r2aot.chapter3-6.data_model.subtitle": "已通过其他方式获得数据的数据模型无法通过序列组装升级",
     "ftbq.r2aot.chapter3-6.power_essence_subtitle": "能源精华配方优先级为最低的",
+    "ftbq.r2aot.chapter3-6.bifrost_prism_fan.subtitle": "在鼓风机前放置彩虹桥棱镜",
 
     "patchouli.gui.lexicon.r2aot_book": "R2AoT 书",
     "patchouli.gui.lexicon.r2aot_book.text": "这是R2AoT的书",

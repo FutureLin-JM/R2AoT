@@ -26,6 +26,7 @@
 !config/skyblockbuilder/structures.json5
 !config/skyblockbuilder/templates.json5
 !config/skyblockbuilder/world.json5
+!config/squatgrow-common.yaml
 
 # DefaultConfigs
 !defaultconfigs/

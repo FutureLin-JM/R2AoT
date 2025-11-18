@@ -61,6 +61,12 @@ ServerEvents.tags('item', event => {
         'ars_nouveau:red_archwood_sapling',
     ]);
 
+    event.add('mysticalagriculture:seeds', [
+        'r2aot:tertium_crop_seed',
+        'r2aot:imperium_crop_seed',
+        'r2aot:prudentium_crop_seed',
+    ]);
+
     event.add('ars_nouveau:magic_shards', ['r2aot:bookwyrm_shards', 'r2aot:amethyst_golem_shards']);
 
     event.add('mysticalagriculture:seeds/powah', [
@@ -173,4 +179,10 @@ ServerEvents.tags('block', event => {
     });
 
     event.add('powah:thermo_generator', [/powah:thermo_generator_.*/]);
+
+    event.add('mysticalagriculture:crops', ['r2aot:tertium_crop', 'r2aot:imperium_crop', 'r2aot:prudentium_crop']);
+
+    Ingredient.of(/.*farmland$/).itemIds.forEach(id => {
+        event.add('forge:farmland', id);
+    });
 });

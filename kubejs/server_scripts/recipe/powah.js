@@ -28,6 +28,17 @@ ServerEvents.recipes(event => {
             recipe.energy
         ).id(kjs('energizing', `${recipe.material}_${recipe.type}`));
     });
+
+    energizing(
+        'minecraft:amethyst_shard',
+        '3x mysticalagriculture:prosperity_shard',
+        1000
+    ).id(kjs('energizing', 'prosperity_shard'))
+    energizing(
+        'minecraft:amethyst_block',
+        '15x mysticalagriculture:prosperity_shard',
+        5000)
+    .id(kjs('energizing', 'prosperity_shard_from_block'))
 });
 
 PowahEvents.coolants(event => {

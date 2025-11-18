@@ -169,8 +169,9 @@ ServerEvents.recipes(event => {
         return Item.of('hostilenetworks:prediction', `{data_model:{id:"${modelId}"}}`).strongNBT();
     };
 
-    ['blitz', 'blizz', 'basalz'].forEach(type => {
-        const modelId = `hostilenetworks:thermal/${type}`;
+    ['thermal/blitz', 'thermal/blizz', 'thermal/basalz', 'guardian', 'shulker', 'warden'].forEach(type => {
+        const modelId = `hostilenetworks:${type}`;
+        const typeName = type.includes('/') ? type.split('/')[1] : type;
 
         dataModelRecipes.forEach((recipe, index) => {
             const previousData = index === 0 ? null : dataModelRecipes[index - 1].data;
@@ -182,7 +183,7 @@ ServerEvents.recipes(event => {
             sequenced_assembly(outputItem, inputItem, [deploying(transitionalItem, [transitionalItem, deployingItem])])
                 .loops(recipe.loops)
                 .transitionalItem(transitionalItem)
-                .id(kjs('sequenced_assembly', `data_model_${type}_${index + 1}`));
+                .id(kjs('sequenced_assembly', `data_model_${typeName}_${index + 1}`));
         });
     });
 });

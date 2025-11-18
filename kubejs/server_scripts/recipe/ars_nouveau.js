@@ -233,4 +233,20 @@ ServerEvents.recipes(event => {
             })
             .id(kjs('ars_crush', `${material}_powder`));
     });
+    event
+        .custom({
+            type: 'ars_nouveau:crush',
+            input: {
+                tag: 'minecraft:soul_fire_base_blocks',
+            },
+            output: [
+                {
+                    chance: 1.0,
+                    count: 1,
+                    item: 'thermal_extra:soul_sand_dust',
+                    maxRange: 1,
+                },
+            ],
+        })
+        .id(kjs('ars_crush', 'soul_sand_dust'));
 });
