@@ -185,4 +185,6 @@ ServerEvents.tags('block', event => {
     Ingredient.of(/.*farmland$/).itemIds.forEach(id => {
         event.add('forge:farmland', id);
     });
+
+    event.add('r2aot:ember_blocktag', 'powah:nitro_crystal_block')
 });

@@ -145,6 +145,13 @@ ServerEvents.recipes(event => {
         'thermal_extra:machine/smelter/twinite_ingot',
         'thermal_extra:machine/smelter/shellite_ingot',
         'mysticalagriculture:watering_can',
+        'embers:boring/ember_crystal',
+        'embers:boring/ember_shard',
+        'embers:boring/ember_grit',
+        'embers:boring/nether/ember_shard',
+        'embers:boring/nether/ember_crystal',
+        'embers:boring/nether/ember_grit',
+        
     ];
     recipesToRemoveID.forEach(recipes => {
         event.remove({ id: recipes });

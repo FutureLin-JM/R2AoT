@@ -1,0 +1,22 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "chapter3-7"
+	group: "716CFD1393429EFE"
+	id: "2D1FE5E189A14EEE"
+	order_index: 1
+	quest_links: [ ]
+	quests: [{
+		id: "5A0A7E09CB711DEE"
+		shape: "gear"
+		size: 1.5d
+		tasks: [{
+			id: "25EB062D4ADFD2A4"
+			item: "embers:ember_crystal"
+			type: "item"
+		}]
+		x: 0.0d
+		y: 0.0d
+	}]
+	title: "{ftbq.r2aot.chapter3-7.start.title}"
+}

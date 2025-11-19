@@ -276,8 +276,8 @@
     "jei.r2aot.imbuement_charge": "灌注充能",
     "jei.desc.r2aot.imbuement_charge.energy": "能量消耗：%sFE",
     "jei.r2aot.cobble_gen": "方块制造",
-    "jei.r2aot.elemental_altar_core.mana": "魔力消耗：%S",
-    "jei.r2aot.elemental_altar_core.source": "魔源消耗：%S",
+    "jei.r2aot.elemental_altar_core.mana": "魔力消耗：%s",
+    "jei.r2aot.elemental_altar_core.source": "魔源消耗：%s",
 
     "tooltip.ars_nouveau.crafting_locked": "条件不足，合成锁定",
 
@@ -400,8 +400,13 @@
     "ftbq.r2aot.chapter3-6.start.title": "第六节",
     "ftbq.r2aot.chapter3-6.fluidedsource_fan.subtitle": "在鼓风机前放置液态魔源",
     "ftbq.r2aot.chapter3-6.data_model.subtitle": "已通过其他方式获得数据的数据模型无法通过序列组装升级",
-    "ftbq.r2aot.chapter3-6.power_essence_subtitle": "能源精华配方优先级为最低的",
+    "ftbq.r2aot.chapter3-6.power_essence.subtitle": "能源精华配方优先级为最低的",
     "ftbq.r2aot.chapter3-6.bifrost_prism_fan.subtitle": "在鼓风机前放置彩虹桥棱镜",
+    "ftbq.r2aot.chapter3-6.nitro_crystal_seeds.subtitle": "配方需要在下界进行合成",
+    "ftbq.r2aot.chapter3-6.nitro_crystal_seeds.desc_1": "元素祭坛可以从相邻魔力池抽取魔力",
+    "ftbq.r2aot.chapter3-6.nitro_crystal_seeds.desc_2": "合成下界水晶种子需要抽取一整罐魔源",
+
+    "ftbq.r2aot.chapter3-7.start.title": "第七节",
 
     "patchouli.gui.lexicon.r2aot_book": "R2AoT 书",
     "patchouli.gui.lexicon.r2aot_book.text": "这是R2AoT的书",

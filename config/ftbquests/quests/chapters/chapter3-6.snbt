@@ -591,7 +591,7 @@
 			dependencies: ["354C3243984E8271"]
 			icon: "r2aot:power_essence_bucket"
 			id: "72B8B26B2E2FE9BE"
-			subtitle: "{ftbq.r2aot.chapter3-6.power_essence_subtitle}"
+			subtitle: "{ftbq.r2aot.chapter3-6.power_essence.subtitle}"
 			tasks: [
 				{
 					id: "6EF68D562FE700E4"
@@ -960,6 +960,10 @@
 				"550A66426AA72F68"
 				"19A8AE0FBFC9CE46"
 			]
+			description: [
+				"{ftbq.r2aot.chapter3-6.nitro_crystal_seeds.desc_1}"
+				"{ftbq.r2aot.chapter3-6.nitro_crystal_seeds.desc_2}"
+			]
 			id: "7A603293C8D41F1F"
 			tasks: [{
 				id: "7ACD0F56B4759D6D"
@@ -970,12 +974,23 @@
 			y: -12.0d
 		}
 		{
-			dependencies: ["7A603293C8D41F1F"]
+			dependencies: ["6FC984254DB3A535"]
 			id: "6755F20A2FDD3390"
 			shape: "diamond"
 			size: 1.5d
 			tasks: [{
-				id: "1955FCA52F70D51A"
+				id: "78C1AB62A60BDAAC"
+				item: "embers:ember_crystal"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -14.0d
+		}
+		{
+			dependencies: ["7A603293C8D41F1F"]
+			id: "6FC984254DB3A535"
+			tasks: [{
+				id: "2DDE4B75F2189257"
 				item: "powah:nitro_crystal_block"
 				type: "item"
 			}]

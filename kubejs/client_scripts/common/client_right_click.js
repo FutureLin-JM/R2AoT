@@ -23,3 +23,33 @@ BlockEvents.rightClicked(event => {
         event.cancel();
     }
 });
+
+const rightClickedExtract = [
+    'r2aot:elemental_altar_core',
+    'r2aot:atomic_reconstructor',
+    'r2aot:pedestal',
+    'r2aot:pedestal_botania',
+    'r2aot:pedestal_ars',
+];
+const rightClickedInsert = ['r2aot:pedestal', 'r2aot:pedestal_botania', 'r2aot:pedestal_ars'];
+
+BlockEvents.rightClicked(event => {
+    const { hand, block, item, player } = event;
+    if (hand !== 'MAIN_HAND') return;
+    const itemCap = block.entity.getCapability(ForgeCapabilities.ITEM_HANDLER).resolve().get();
+    const stack = itemCap.getStackInSlot(0);
+
+    if (rightClickedExtract.includes(block.id)) {
+        if (item.isEmpty() && player.isCrouching()) {
+            if (!stack.isEmpty()) {
+                event.cancel();
+            }
+        }
+    }
+
+    if (rightClickedInsert.includes(block.id)) {
+        if (!item.isEmpty() && stack.isEmpty() && !player.isCrouching()) {
+            event.cancel();
+        }
+    }
+});
