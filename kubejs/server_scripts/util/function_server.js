@@ -126,3 +126,21 @@ function parseItemWithoutCount(item) {
         return { item: item };
     }
 }
+
+/**
+ * 将输入项数组合并重复物品（例如，将 ['a', 'a', 'b'] 转换为 ['2x a', 'b']）
+ * @param {InputItem_ | InputItem_[]} rawInput - 原始输入项，可以是单个物品/标签或数组
+ * @returns {InputItem_ | InputItem_[]} 处理后的输入项，重复物品已被合并
+ */
+function mergeDuplicateItems(rawInput) {
+    if (!Array.isArray(rawInput)) {
+        return rawInput;
+    }
+
+    const itemCountMap = {};
+    rawInput.forEach(item => {
+        itemCountMap[item] = (itemCountMap[item] || 0) + 1;
+    });
+
+    return Object.entries(itemCountMap).map(([item, count]) => (count > 1 ? `${count}x ${item}` : item));
+}

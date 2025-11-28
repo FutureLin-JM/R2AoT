@@ -101,7 +101,7 @@ ServerEvents.recipes(event => {
 
 ServerEvents.recipes(event => {
     const { petal_apothecary, mana_infusion, runic_altar, elven_trade, terra_plate } = event.recipes.botania;
-    const { r2aot } = event.recipes;
+    const { modular_runic_altar_core, terrestrial_agglomeration_crystal, alfheim_trade_station } = event.recipes.r2aot;
 
     petal_apothecary(
         'botania:pure_daisy',
@@ -206,10 +206,9 @@ ServerEvents.recipes(event => {
     function runicAltarRecipes(output, input, mana) {
         runic_altar(output, input, mana ? mana : 5200).id(kjs('runic_altar', output.split(':')[1]));
 
-        r2aot
-            .modular_runic_altar_core()
+        modular_runic_altar_core()
             .outputItems(output)
-            .inputItems(input)
+            .inputItems(mergeDuplicateItems(input))
             .inputItems('botania:livingrock')
             .inputMana(mana ? mana : 5200)
             .duration(1)
@@ -294,7 +293,15 @@ ServerEvents.recipes(event => {
      * @param {InputItem_ | InputItem_[]} input
      */
     function elvenTradeRecipes(output, input) {
+        const inputNum = Array.isArray(input) ? input.length : 1;
         elven_trade(output, input).id(kjs('elven_trade', output.split(':')[1]));
+
+        alfheim_trade_station()
+            .outputItems(output)
+            .inputItems(mergeDuplicateItems(input))
+            .inputMana(inputNum * 1000)
+            .duration(1)
+            .id(`r2aot:alfheim_trade_station/${output.split(':')[1]}`);
     }
 
     elvenTradeRecipes('8x powah:dielectric_paste', ['#minecraft:coals', 'minecraft:clay_ball']);
@@ -321,28 +328,43 @@ ServerEvents.recipes(event => {
         'botania:elementium_ingot',
     ]);
 
+    elvenTradeRecipes('8x embers:caminite_blend', [
+        'minecraft:clay_ball',
+        'minecraft:clay_ball',
+        'minecraft:clay_ball',
+        '#forge:sand',
+    ]);
+
     /**
      * 泰拉凝聚
      * @param {OutputItem_} output
      * @param {InputItem_ | InputItem_[]} input
      * @param {number} mana
+     * @param {number} chance
      */
-    function terraPlateRecipes(output, input, mana) {
+    function terraPlateRecipes(output, input, mana, chance) {
         terra_plate(output, input, mana ? mana : 100000).id(kjs('terra_plate', output.split(':')[1]));
 
-        r2aot
-            .modular_terrestrial_agglomeration_core()
+        chance = chance ? chance : 0.5;
+        terrestrial_agglomeration_crystal()
             .outputItems(output)
             .inputItems(input)
             .inputMana(mana ? mana : 100000)
-            .chance(0.5, builder => builder.inputFluids(Fluid.of('r2aot:fluidedmana', 1000)))
+            .chance(chance, builder => builder.inputFluids(Fluid.of('r2aot:fluidedmana', 1000)))
             .duration(20)
-            .id(`r2aot:modular_terrestrial_agglomeration_core/${output.split(':')[1]}`);
+            .id(`r2aot:terrestrial_agglomeration_crystal/${output.split(':')[1]}`);
     }
 
     terraPlateRecipes(
         'r2aot:luxvoid_alloy',
         ['thermal:lumium_ingot', 'thermal:signalum_ingot', 'thermal:enderium_ingot'],
         50000
+    );
+
+    terraPlateRecipes(
+        'extendedcrafting:luminessence',
+        ['#forge:dusts/glowstone', '#forge:dusts/redstone', '#forge:gunpowder'],
+        5000,
+        0.01
     );
 });
