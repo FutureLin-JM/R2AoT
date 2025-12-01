@@ -1,7 +1,7 @@
 const $ImbuementTile = Java.loadClass('com.hollingsworth.arsnouveau.common.block.tile.ImbuementTile');
 const $ThermoTile = Java.loadClass('owmii.powah.block.thermo.ThermoTile');
 
-const recipes = global.imbuementChargeRecipes.map(recipe => {
+const imbuementchargerecipes = global.imbuementChargeRecipes.map(recipe => {
     if (recipe.id) {
         return {
             id: recipe.id,
@@ -30,7 +30,7 @@ LevelEvents.tick(event => {
 
             if (currentRecipe != null) {
                 let recipeId = currentRecipe.getId();
-                let recipe = recipes.find(r => r.id == recipeId.toString());
+                let recipe = imbuementchargerecipes.find(r => r.id == recipeId.toString());
 
                 if (recipe == null) {
                     imbuementData.remove('energyConsumed');

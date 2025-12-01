@@ -3,6 +3,7 @@ JEIAddedEvents.registerRecipeCatalysts(event => {
         ['r2aot:fluid_sourcelink', 'r2aot:fluid_sourcelink'],
         ['ars_nouveau:imbuement_chamber', 'r2aot:imbuement_charge'],
         ['r2aot:rainbow_furnace', $RecipeTypes.SMELTING],
+        ['r2aot:buddycard_anvil', 'r2aot:buddycard_anvil_fake']
     ];
 
     catalysts.forEach(([input, recipe]) => {

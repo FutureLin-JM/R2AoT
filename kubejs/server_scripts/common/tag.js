@@ -80,6 +80,21 @@ ServerEvents.tags('item', event => {
     ['energized_steel', 'blazing_crystal', 'niotic_crystal', 'spirited_crystal'].forEach(material => {
         event.add(`forge:gears/${material}`, `r2aot:${material}_gear`);
     });
+
+    const cardTypes = ['base', 'nether', 'end'];
+
+    buddycardConfig.forEach(config => {
+        const { rarity, ranges } = config;
+        ranges.forEach(range => {
+            const { start, end } = range;
+            for (let i = start; i <= end; i++) {
+                cardTypes.forEach(type => {
+                    event.add(`buddycards:${rarity}_cards/${type}`, `buddycards:buddycard_${type}${i}`);
+                    event.add(`buddycards:${rarity}_cards`, `buddycards:buddycard_${type}${i}`);
+                });
+            }
+        });
+    });
 });
 
 ServerEvents.tags('block', event => {
@@ -186,5 +201,5 @@ ServerEvents.tags('block', event => {
         event.add('forge:farmland', id);
     });
 
-    event.add('r2aot:ember_blocktag', 'powah:nitro_crystal_block')
+    event.add('r2aot:ember_blocktag', 'powah:nitro_crystal_block');
 });

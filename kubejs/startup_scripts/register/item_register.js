@@ -34,6 +34,9 @@ StartupEvents.registry('item', event => {
         event.create(`r2aot:${material}_gear`, 'basic');
     });
 
+    event.create('r2aot:shredded_buddycard', 'basic');
+    event.create('r2aot:recycled_buddycard', 'basic');
+
     let incompleteSeeds = [
         'mysticalagriculture:water_seeds',
         'mysticalagriculture:fire_seeds',
