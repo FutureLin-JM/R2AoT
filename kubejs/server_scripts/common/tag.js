@@ -100,14 +100,6 @@ ServerEvents.tags('item', event => {
 ServerEvents.tags('block', event => {
     // 镐子
     event.add('minecraft:mineable/pickaxe', [
-        'r2aot:compressed_cobblestone',
-        'r2aot:double_compressed_cobblestone',
-        'r2aot:compressed_andesite',
-        'r2aot:double_compressed_andesite',
-        'r2aot:compressed_gravel',
-        'r2aot:double_compressed_gravel',
-        'r2aot:compressed_sand',
-        'r2aot:double_compressed_sand',
         'r2aot:stress_input',
         'r2aot:create_input',
         'r2aot:create_output',
@@ -136,22 +128,9 @@ ServerEvents.tags('block', event => {
         'r2aot:andesite_casing_maker',
     ]);
 
-    // 铲子
-    event.add('minecraft:mineable/shovel', [
-        'r2aot:compressed_gravel',
-        'r2aot:double_compressed_gravel',
-        'r2aot:compressed_sand',
-        'r2aot:double_compressed_sand',
-    ]);
 
     // 石质工具
     event.add('minecraft:needs_stone_tool', [
-        'r2aot:compressed_cobblestone',
-        'r2aot:compressed_andesite',
-        'r2aot:double_compressed_cobblestone',
-        'r2aot:double_compressed_andesite',
-        'r2aot:double_compressed_gravel',
-        'r2aot:double_compressed_sand',
         'r2aot:petal_coal_ore',
         'r2aot:petal_iron_ore',
         'r2aot:petal_copper_ore',

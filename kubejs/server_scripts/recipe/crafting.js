@@ -2,61 +2,11 @@ ServerEvents.recipes(event => {
     const { kubejs, minecraft } = event.recipes;
     const add3x3Recipes = {
         'minecraft:grass_block': 'minecraft:oak_leaves',
-        'r2aot:compressed_cobblestone': 'minecraft:cobblestone',
-        'r2aot:double_compressed_cobblestone': 'r2aot:compressed_cobblestone',
-        'r2aot:compressed_andesite': 'minecraft:andesite',
-        'r2aot:double_compressed_andesite': 'r2aot:compressed_andesite',
-        'r2aot:compressed_gravel': 'minecraft:gravel',
-        'r2aot:double_compressed_gravel': 'r2aot:compressed_gravel',
-        'r2aot:compressed_sand': 'minecraft:sand',
-        'r2aot:double_compressed_sand': 'r2aot:compressed_sand',
         'r2aot:creative_casing': 'r2aot:creative_casing_shard',
     };
     Object.entries(add3x3Recipes).forEach(([output, input]) => {
         const outputName = output.split(':')[1];
         kubejs.shaped(output, ['AAA', 'AAA', 'AAA'], { A: input }).id(kjs(`${outputName}_3x3`));
-    });
-
-    const reverse3x3Recipes = {
-        'minecraft:cobblestone': 'r2aot:compressed_cobblestone',
-        'r2aot:compressed_cobblestone': 'r2aot:double_compressed_cobblestone',
-        'minecraft:andesite': 'r2aot:compressed_andesite',
-        'r2aot:compressed_andesite': 'r2aot:double_compressed_andesite',
-        'minecraft:gravel': 'r2aot:compressed_gravel',
-        'r2aot:compressed_gravel': 'r2aot:double_compressed_gravel',
-        'minecraft:sand': 'r2aot:compressed_sand',
-        'r2aot:compressed_sand': 'r2aot:double_compressed_sand',
-    };
-    Object.entries(reverse3x3Recipes).forEach(([output, input]) => {
-        const outputName = output.split(':')[1];
-        kubejs.shaped(`9x ${output}`, ['   ', ' A ', '   '], { A: input }).id(kjs(`${outputName}_3x3_reverse`));
-    });
-
-    const add9Functionalstorage = {
-        'r2aot:compressed_cobblestone': 'minecraft:cobblestone',
-        'r2aot:double_compressed_cobblestone': 'r2aot:compressed_cobblestone',
-        'r2aot:compressed_andesite': 'minecraft:andesite',
-        'r2aot:double_compressed_andesite': 'r2aot:compressed_andesite',
-        'r2aot:compressed_gravel': 'minecraft:gravel',
-        'r2aot:double_compressed_gravel': 'r2aot:compressed_gravel',
-        'r2aot:compressed_sand': 'minecraft:sand',
-        'r2aot:double_compressed_sand': 'r2aot:compressed_sand',
-    };
-    Object.entries(add9Functionalstorage).forEach(([higherItem, lowerItem]) => {
-        const outputName = higherItem.split(':')[1];
-        event
-            .custom({
-                type: 'functionalstorage:custom_compacting',
-                higher_input: {
-                    count: 1,
-                    item: higherItem,
-                },
-                lower_input: {
-                    count: 9,
-                    item: lowerItem,
-                },
-            })
-            .id(kjs('custom_compacting', outputName));
     });
 
     event

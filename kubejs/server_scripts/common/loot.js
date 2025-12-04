@@ -94,11 +94,11 @@ ServerEvents.blockLootTables(event => {
         });
     }
 
-    setBlockLoot(event, 'r2aot:compressed_cobblestone', 'minecraft:gravel', {
+    setBlockLoot(event, 'allthecompressed:cobblestone_1x', 'minecraft:gravel', {
         'r2aot:compressed_wooden_hammer': [8, 10],
         'r2aot:compressed_stone_hammer': [11, 13],
     });
-    setBlockLoot(event, 'r2aot:compressed_gravel', 'minecraft:sand', {
+    setBlockLoot(event, 'allthecompressed:gravel_1x', 'minecraft:sand', {
         'r2aot:compressed_wooden_hammer': [8, 10],
         'r2aot:compressed_stone_hammer': [11, 13],
     });

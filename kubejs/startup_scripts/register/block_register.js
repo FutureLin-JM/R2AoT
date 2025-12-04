@@ -1,17 +1,6 @@
 StartupEvents.registry('block', event => {
     event.create('r2aot:rainbow_petal_block', 'falling').soundType('moss');
 
-    event.create('r2aot:compressed_andesite', 'basic').hardness(3).stoneSoundType().requiresTool();
-    event.create('r2aot:double_compressed_andesite', 'basic').hardness(3).stoneSoundType().requiresTool();
-    event.create('r2aot:compressed_cobblestone', 'basic').hardness(3).stoneSoundType().requiresTool();
-    event.create('r2aot:double_compressed_cobblestone', 'basic').hardness(3).stoneSoundType().requiresTool();
-    event.create('r2aot:compressed_gravel', 'basic').hardness(1.5).gravelSoundType().requiresTool();
-    event.create('r2aot:double_compressed_gravel', 'basic').hardness(1.5).gravelSoundType().requiresTool();
-    event.create('r2aot:compressed_sand').hardness(1.5).sandSoundType().requiresTool();
-    event.create('r2aot:double_compressed_sand').hardness(1.5).sandSoundType().requiresTool();
-    event.create('r2aot:compressed_netherrack').hardness(3).soundType('netherrack').requiresTool();
-    event.create('r2aot:double_compressed_netherrack').hardness(3).soundType('netherrack').requiresTool();
-
     event.create('r2aot:petal_coal_ore', 'basic').hardness(3).stoneSoundType().requiresTool();
     event.create('r2aot:petal_iron_ore', 'basic').hardness(3).stoneSoundType().requiresTool();
     event.create('r2aot:petal_copper_ore', 'basic').hardness(3).stoneSoundType().requiresTool();
