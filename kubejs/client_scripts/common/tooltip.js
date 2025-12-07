@@ -135,6 +135,37 @@ ItemEvents.tooltip(event => {
         }
     });
 
+    const buddyCardBaseOre = [
+        'coal',
+        'copper',
+        'diamond',
+        'emerald',
+        'gold',
+        'iron',
+        'lapis',
+        'netherite',
+        'quartz',
+        'redstone',
+        'zinc',
+    ];
+    event.addAdvanced('buddycards:buddycard_base27', (item, advanced, text) => {
+        if (item.hasNBT()) {
+            buddyCardBaseOre.forEach(ore => {
+                if (item.getNbt().contains(ore)) {
+                    const value = item.getNbt().getInt(ore);
+                    text.add(
+                        1,
+                        Text.translate(
+                            'tooltip.r2aot.buddycard.ore_chance',
+                            Text.translate(`item.r2aot.buddycard_ore_${ore}`),
+                            Text.red(`${value.toFixed(0)}%`)
+                        ).yellow()
+                    );
+                }
+            });
+        }
+    });
+
     // function getRainbowColor(index, time) {
     //     const rainbowColors = [
     //         '#FF0000', // 红

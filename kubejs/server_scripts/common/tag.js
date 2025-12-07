@@ -95,6 +95,27 @@ ServerEvents.tags('item', event => {
             }
         });
     });
+
+    const buddycardOres = [
+        'coal',
+        'copper',
+        'diamond',
+        'emerald',
+        'gold',
+        'iron',
+        'lapis',
+        'netherite',
+        'quartz',
+        'redstone',
+        'zinc',
+    ];
+
+    buddycardOres.forEach(ore => {
+        event.add('r2aot:buddycard_ore_block_3x', `allthecompressed:${ore}_block_3x`);
+        event.add('r2aot:buddycard_ore_block_4x', `allthecompressed:${ore}_block_4x`);
+        event.add('r2aot:buddycard_ore_block_5x', `allthecompressed:${ore}_block_5x`);
+        event.add('r2aot:buddycard_ore', `r2aot:buddycard_ore_${ore}`);
+    });
 });
 
 ServerEvents.tags('block', event => {
@@ -127,7 +148,6 @@ ServerEvents.tags('block', event => {
         'r2aot:create_output',
         'r2aot:andesite_casing_maker',
     ]);
-
 
     // 石质工具
     event.add('minecraft:needs_stone_tool', [

@@ -396,4 +396,23 @@ ServerEvents.recipes(event => {
             S: 'botania:pixie_dust',
         })
         .id(kjs('bifrost_prism'));
+
+    const oreCompression = [
+        { type: 'buddycard_ore_block_4x', value: 50 },
+        { type: 'buddycard_ore_block_5x', value: 100 },
+    ];
+    oreCompression.forEach(tag => {
+        kubejs
+            .shapeless('buddycards:buddycard_base27', [
+                Item.of('buddycards:buddycard_base27').strongNBT(),
+                `#r2aot:${tag.type}`,
+            ])
+            .modifyResult((inventory, itemStack) => {
+                let inputOre = inventory.find(Ingredient.of(`#r2aot:${tag.type}`));
+                let oreType = inputOre.id.split(':')[1].split('_')[0];
+                itemStack.setNbt(`{ ${oreType}: ${tag.value} }`);
+                return itemStack;
+            })
+            .id(kjs(`buddycard_base27_${tag.type}`));
+    });
 });

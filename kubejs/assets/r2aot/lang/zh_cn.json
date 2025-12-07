@@ -35,6 +35,17 @@
     "item.r2aot.nitro_crystal_gear": "下界水晶齿轮",
     "item.r2aot.shredded_buddycard": "粉碎巴迪卡牌",
     "item.r2aot.recycled_buddycard": "可回收巴迪卡牌",
+    "item.r2aot.buddycard_ore_coal": "矿物卡—煤炭",
+    "item.r2aot.buddycard_ore_copper": "矿物卡—铜",
+    "item.r2aot.buddycard_ore_diamond": "矿物卡—钻石",
+    "item.r2aot.buddycard_ore_emerald": "矿物卡—绿宝石",
+    "item.r2aot.buddycard_ore_gold": "矿物卡—金",
+    "item.r2aot.buddycard_ore_iron": "矿物卡—铁",
+    "item.r2aot.buddycard_ore_lapis": "矿物卡—青金石",
+    "item.r2aot.buddycard_ore_netherite": "矿物卡—下界合金",
+    "item.r2aot.buddycard_ore_quartz": "矿物卡—石英",
+    "item.r2aot.buddycard_ore_redstone": "矿物卡—红石",
+    "item.r2aot.buddycard_ore_zinc": "矿物卡—锌",
 
     "block.r2aot.rainbow_petal_block": "彩虹花源块",
     "block.r2aot.compressed_andesite": "压缩安山岩",
@@ -245,8 +256,8 @@
 
     "tooltip.r2aot.ae2_facade_1": "JEI隐藏了伪装板",
     "tooltip.r2aot.ae2_facade_2": "但依然可以合成",
-    "tooltip.r2aot.create_input_1": "无GUI，支持自动输入",
-    "tooltip.r2aot.create_output_1": "无GUI，支持自动输出",
+    "tooltip.r2aot.create_input_1": "无GUI，自动输入",
+    "tooltip.r2aot.create_output_1": "无GUI，自动输出",
     "tooltip.r2aot.stress_input_1": "§7应力影响：§6█▒▒4x RPM",
     "tooltip.r2aot.fluid_input_1": "手持容器，左键取出流体，右键放入流体",
     "tooltip.r2aot.fluid_output_1": "手持容器，左键取出流体",
@@ -292,9 +303,6 @@
     "gui.r2aot.buddycard_anvil.component": "组件",
     "gui.r2aot.buddycard_anvil.crafting": "合成模式",
     "gui.r2aot.buddycard_anvil.conversion": "转化模式",
-    "gui.r2aot.buddycard_anvil.hover_tooltip.close": "$s不可用",
-    "gui.r2aot.buddycard_anvil.hover_tooltip.bule": "当前模式：%s",
-    "gui.r2aot.buddycard_anvil.hover_tooltip.red": "点击切换%s",
 
     "tooltip.ars_nouveau.crafting_locked": "条件不足，合成锁定",
 
@@ -317,6 +325,7 @@
     "message.r2aot.time_already_max": "时间之瓶已满（%s 秒）",
     "message.r2aot.lightning_rod_clicks": "已点击 %s/10 次",
     "message.r2aot.prevent": "被神秘力量阻止了",
+    "message.r2aot.buddycard_ore.cooldown": "冷却中： %s 秒",
 
     "ftbq.r2aot.capsule.click": "点击跳转",
     "ftbq.r2aot.ponder.text": "§b点击查看相关思索",

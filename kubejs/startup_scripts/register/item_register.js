@@ -36,6 +36,22 @@ StartupEvents.registry('item', event => {
     event.create('r2aot:shredded_buddycard', 'basic');
     event.create('r2aot:recycled_buddycard', 'basic');
 
+    [
+        'coal',
+        'copper',
+        'diamond',
+        'emerald',
+        'gold',
+        'iron',
+        'lapis',
+        'netherite',
+        'quartz',
+        'redstone',
+        'zinc',
+    ].forEach(ore => {
+        event.create(`r2aot:buddycard_ore_${ore}`, 'basic').rarity('legend').maxStackSize(1);
+    });
+
     let incompleteSeeds = [
         'mysticalagriculture:water_seeds',
         'mysticalagriculture:fire_seeds',

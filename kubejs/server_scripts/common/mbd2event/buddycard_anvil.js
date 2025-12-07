@@ -18,6 +18,19 @@ const buddycardAnvilModeConfig = [
         },
     },
 ];
+const buddyCardBaseOre = [
+    'coal',
+    'copper',
+    'diamond',
+    'emerald',
+    'gold',
+    'iron',
+    'lapis',
+    'netherite',
+    'quartz',
+    'redstone',
+    'zinc',
+];
 
 const lightMode = {
     close: new ResourceTexture['(java.lang.String)']('r2aot:textures/gui/light_close.png'),
@@ -84,6 +97,72 @@ MBDMachineEvents.onUI('r2aot:buddycard_anvil', event => {
 
     setupModeButton(machine, root);
     setupModeLight(machine, root);
+});
+
+MBDMachineEvents.onBeforeRecipeModify('r2aot:buddycard_anvil', event => {
+    const mbdEvent = event.getEvent();
+    const { machine, recipe } = mbdEvent;
+
+    const recipeId = recipe.id;
+    if (recipeId != 'kubejs:buddycards_anvil/base27_to_ore') {
+        console.log('[BuddyCardAnvil] id不匹配');
+        return;
+    } else {
+        console.log('[BuddyCardAnvil] id匹配');
+    }
+
+    const itemTrait = machine.getTraitByName('item_input');
+    if (itemTrait == null) return;
+
+    let oreType;
+    let value;
+    let found = false;
+
+    for (let i = 0; i < 9 && !found; i++) {
+        /**@type {Internal.ItemStack} */
+        let inputStack = itemTrait.storage.getStackInSlot(i);
+        if (!inputStack || inputStack.isEmpty() && !inputStack.hasNBT()) continue;
+        found = buddyCardBaseOre.some(ore => {
+            console.log(`[BuddyCardAnvil] 检查NBT标签: ${ore}`);
+
+            if (inputStack.getNbt().contains(ore)) {
+                console.log(`[BuddyCardAnvil] 找到匹配标签 ${ore}, 值: ${inputStack.getNbt().getInt(ore)}`);
+
+                oreType = ore;
+                value = inputStack.getNbt().getInt(ore);
+                return true;
+            } else {
+                console.log(`[BuddyCardAnvil] 标签 ${ore} 不匹配`);
+                return false;
+            }
+        });
+    }
+    if (!found) {
+        console.log('[BuddyCardAnvil] 未找到匹配到带相关NBT标签物品');
+        return;
+    }
+    console.log('[BuddyCardAnvil] 找到匹配的NBT标签，oreType:', oreType, 'value:', value);
+    let outputArray = [];
+
+    if (value == 50) {
+        const addOreArray = Array(9).fill(`r2aot:buddycard_ore_${ore}`);
+        const baseArray = Ingredient.of('#r2aot:buddycard_ore').itemIds.toArray();
+        outputArray = addOreArray.concat(baseArray);
+    } else if (value == 100) {
+        outputArray = Ingredient.of('#r2aot:buddycard_ore').itemIds.toArray();
+    }
+
+    if (outputArray.length > 0) {
+        console.log(`[BuddyCardAnvil] ${oreType} ${value}`);
+        console.log(outputArray.toString());
+        /**@type {Internal.MBDRecipeSchema$MBDRecipeJS} */
+        let builder = recipe.toBuilder();
+        let itemCap = MBDRegistries.RECIPE_CAPABILITIES.get('item');
+        builder.removeOutputs(itemCap);
+        builder.outputItems(createWeightedIngredient(outputArray));
+        let newRecipe = builder.buildMBDRecipe();
+        mbdEvent.setRecipe(newRecipe);
+    }
 });
 
 /**

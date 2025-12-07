@@ -162,6 +162,47 @@ ItemEvents.rightClicked('r2aot:time_voucher', event => {
     }
 });
 
+buddyCardBaseOre.forEach(ore => {
+    ItemEvents.rightClicked(`r2aot:buddycard_ore_${ore}`, event => {
+        const { item, player } = event;
+
+        if (item.hasNBT() && item.getNbt().contains('last_use_time')) {
+            let lastUseTime = item.getNbt().getLong('last_use_time');
+            let remainingCooldown = Math.max(0, 600000 - (Date.now() - lastUseTime));
+            if (remainingCooldown > 0) {
+                player.statusMessage = Text.translate(
+                    'message.r2aot.buddycard_ore.cooldown',
+                    Text.gold((remainingCooldown / 1000).toFixed(1))
+                );
+                return;
+            }
+        }
+        /**
+         * 根据权重随机选择一个索引值
+         * @returns {number} 随机选择的索引值（1-4）
+         */
+        const getWeightedRandom = () => {
+            const weights = [0.5, 0.25, 0.15, 0.1];
+            let randomValue = Math.random();
+
+            for (let i = 0; i < weights.length; i++) {
+                if (randomValue < weights[i]) {
+                    return i + 1;
+                }
+                randomValue -= weights[i];
+            }
+            return 1;
+        };
+
+        const randomIndex = getWeightedRandom();
+        const oreBlock = `allthecompressed:${ore}_block_${randomIndex}x`;
+
+        player.give(oreBlock);
+        item.setNbt({ last_use_time: Date.now() });
+        player.swing();
+    });
+});
+
 // From Mierno
 // BlockEvents.rightClicked('white_concrete', (event) => {
 //     const { hand, block, player, level } = event;
