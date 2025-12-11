@@ -1,6 +1,9 @@
 ServerEvents.tags('item', event => {
-    Object.entries(JsonIO.read('kubejs/fuel_items.json')).forEach(([itemId, burnTime]) => {
-        event.add('minecraft:fuel_items', itemId);
+    Ingredient.all.stacks.forEach(itemStack => {
+        let burnTime = $ForgeHooks.getBurnTime(itemStack, 'minecraft:smelting');
+        if (burnTime > 0) {
+            event.add('minecraft:fuel_items', itemStack.id);
+        }
     });
 
     let colors = [

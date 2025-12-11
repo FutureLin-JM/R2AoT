@@ -1,13 +1,39 @@
 ServerEvents.recipes(event => {
-    Object.entries(JsonIO.read('kubejs/fuel_items.json')).forEach(([itemId, burnTime]) => {
-        let recipe = event.recipes.r2aot.rainbow_furnace();
+    Ingredient.all.stacks.forEach(itemStack => {
+        let burnTime = $ForgeHooks.getBurnTime(itemStack, 'minecraft:smelting');
 
-        recipe.isFuel(true);
-        recipe.slotName('fuel_input', builder => {
-            builder.inputItems(itemId);
-        });
-        recipe.duration(burnTime);
+        if (burnTime > 0) {
+            let recipe = event.recipes.r2aot.rainbow_furnace();
+            recipe.isFuel(true);
+            recipe.slotName('fuel_input', builder => {
+                builder.inputItems(itemStack);
+            });
+            recipe.duration(burnTime);
+        }
     });
+});
+
+MBDRecipeTypeEvents.onTransferProxyRecipe('r2aot:rainbow_furnace', event => {
+    const mbdEvent = event.getEvent();
+    const { recipeType, proxyTypeId, proxyType, proxyRecipeId, proxyRecipe } = mbdEvent;
+
+    if (proxyTypeId === 'minecraft:smelting') {
+        let input = proxyRecipe.getIngredients()[0];
+        let output = proxyRecipe.getResultItem(null);
+        let cookingTime = proxyRecipe.cookingTime;
+
+        var recipe = recipeType
+            .recipeBuilder()
+            .slotName('input_slot', builder => {
+                builder.inputItems(input);
+            })
+            .duration(cookingTime)
+            .outputItems(output)
+            .id(proxyRecipeId + '_mbd2')
+            .buildMBDRecipe();
+
+        mbdEvent.mbdRecipe = recipe;
+    }
 });
 
 MBDMachineEvents.onBeforeRecipeModify('r2aot:rainbow_furnace', event => {
