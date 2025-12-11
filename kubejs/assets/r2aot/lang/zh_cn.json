@@ -271,6 +271,7 @@
     "tooltip.r2aot.data_model_multiblock": "该数据模型可通过多方块合成获得",
     "tooltip.r2aot.data_model_crafting": "该数据模型可通过动力合成获得",
     "tooltip.r2aot.data_model_crafting.error": "该数据模型已无法通过序列组装升级",
+    "tooltip.r2aot.buddycard.ore_chance": "%s : %s几率",
 
     "tooltip.ars.source_gem": "通过在灌注室灌注紫水晶获得。",
     "tooltip.ars_nouveau.bookwyrm_charm_1": "对讲台使用可召唤出书龙",
