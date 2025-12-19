@@ -13,10 +13,9 @@
 			id: "5F238F0DB8D8BBB2"
 			shape: "gear"
 			size: 1.5d
-			subtitle: "{\"translate\":\"ftbq.r2aot.ponder.text\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/ponder r2aot:data_model_base\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"ftbq.r2aot.capsule.click\"}}}"
 			tasks: [{
 				id: "425793EF78FA19F8"
-				item: "r2aot:data_model_base"
+				item: "compactcrafting:field_projector"
 				type: "item"
 			}]
 			x: 0.0d
@@ -375,6 +374,7 @@
 		{
 			dependencies: ["5F238F0DB8D8BBB2"]
 			id: "2313F111558604E3"
+			subtitle: "{ftbq.r2aot.additional-hostilenetworks.data_model.subtitle}"
 			tasks: [{
 				id: "4591E4EC2ACBB932"
 				item: {
@@ -535,6 +535,7 @@
 					id: "hostilenetworks:data_model"
 					tag: {
 						data_model: {
+							data: 1254
 							id: "hostilenetworks:ars_nouveau/wilden_mobs"
 						}
 					}

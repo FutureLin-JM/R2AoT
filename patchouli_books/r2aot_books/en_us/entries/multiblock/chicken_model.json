@@ -8,7 +8,6 @@
             "name": "patchouli.gui.lexicon.chicken_model",
             "multiblock": {
                 "pattern": [
-                    ["_____", "_____", "__1__", "_____", "_____"],
                     ["AAAAA", "AAAAA", "AAAAA", "AAAAA", "AAAAA"],
                     ["AAAAA", "A___A", "A___A", "A___A", "CAAAC"],
                     ["AAAAA", "A___A", "A___A", "A___A", "ADDDA"],
@@ -17,7 +16,6 @@
                 ],
                 "mapping": {
                     "0": "minecraft:white_wool",
-                    "1": "r2aot:data_model_base",
                     "A": "minecraft:white_wool",
                     "B": "minecraft:red_wool",
                     "C": "minecraft:black_wool",

@@ -14,13 +14,6 @@ StartupEvents.registry('block', event => {
 
     event.create('r2aot:spinerette', 'basic').hardness(0).defaultCutout().noCollision().grassSoundType();
     event.create('r2aot:creative_casing', 'basic').hardness(3).soundType('netherite_block').requiresTool();
-
-    event
-        .create('r2aot:data_model_base', 'basic')
-        .hardness(3)
-        .stoneSoundType()
-        .box(0, 0, 0, 16, 2, 16)
-        .fullBlock(false);
     event.create('r2aot:controller_frame', 'basic').hardness(1.5).soundType('metal');
 
     event
@@ -42,4 +35,7 @@ StartupEvents.registry('block', event => {
             .crop(Item.of(`mysticalagriculture:${tier}_essence`))
             .crop(Item.of(`r2aot:${tier}_crop_seed`), 0.01);
     });
+
+    event.create('r2aot:entro_block', 'basic').hardness(3).resistance(8).material('stone');
+    event.create('r2aot:ex_machine_frame', 'basic').material('metal');
 });

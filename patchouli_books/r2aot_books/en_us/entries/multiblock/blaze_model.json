@@ -8,7 +8,6 @@
             "name": "patchouli.gui.lexicon.blaze_model",
             "multiblock": {
                 "pattern": [
-                    ["_____", "_____", "__1__", "_____", "_____"],
                     ["AAAAA", "AAAAA", "AAAAA", "AAAAA", "AAAAA"],
                     ["AAAAA", "A___A", "A___A", "A___A", "CDADC"],
                     ["BBBBB", "B___B", "B___B", "B___B", "BBBBB"],
@@ -17,7 +16,6 @@
                 ],
                 "mapping": {
                     "0": "minecraft:orange_wool",
-                    "1": "r2aot:data_model_base",
                     "A": "minecraft:yellow_wool",
                     "B": "minecraft:orange_wool",
                     "C": "minecraft:white_wool",

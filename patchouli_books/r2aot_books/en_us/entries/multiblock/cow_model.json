@@ -8,7 +8,6 @@
             "name": "patchouli.gui.lexicon.cow_model",
             "multiblock": {
                 "pattern": [
-                    ["_____", "_____", "__1__", "_____", "_____"],
                     ["AAAAA", "AAAAA", "AAAAA", "AAAAA", "BBABB"],
                     ["AAAAA", "A___A", "A___A", "A___A", "CBABC"],
                     ["AAAAA", "A___A", "A___A", "A___A", "AAAAA"],
@@ -17,7 +16,6 @@
                 ],
                 "mapping": {
                     "0": "minecraft:brown_wool",
-                    "1": "r2aot:data_model_base",
                     "A": "minecraft:brown_wool",
                     "B": "minecraft:white_wool",
                     "C": "minecraft:black_wool",

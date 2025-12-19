@@ -187,10 +187,6 @@ ServerEvents.recipes(event => {
         })
         .id(kjs('gold_furnace_component'));
 
-    kubejs
-        .shapeless('r2aot:data_model_base', ['hostilenetworks:blank_data_model'])
-        .id(kjs('hostilenetworks_data_model_base'));
-
     // 安山合金
     kubejs
         .shaped('2x create:andesite_alloy', ['AB ', 'BA ', '   '], {
