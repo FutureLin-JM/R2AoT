@@ -51,4 +51,11 @@ ServerEvents.recipes(event => {
 
     // 粉碎轮
     crushing('ars_nouveau:glyph_crush', 'ars_nouveau:scribes_table').id(kjs('crushing', 'glyph_crush'));
+
+    global.allCrushingItems.forEach(recipe => {
+        if (!recipe.create) return;
+        let id = recipe.id ? kjs('crushing', recipe.id) : kjs('crushing', recipe.output.split(':')[1]);
+
+        crushing(recipe.output, recipe.input).id(id);
+    });
 });

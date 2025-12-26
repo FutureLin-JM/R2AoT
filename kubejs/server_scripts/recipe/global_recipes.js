@@ -101,14 +101,40 @@ global.imbuementChargeRecipes = [
         output: 'r2aot:imperium_crop_seed',
         input: 'r2aot:imperium_crop_seed',
         pedestalItems: [
-            "r2aot:broken_mana",
+            'r2aot:broken_mana',
             'ars_nouveau:water_essence',
             'ars_nouveau:fire_essence',
-            "r2aot:broken_source",
+            'r2aot:broken_source',
             'ars_nouveau:earth_essence',
             'ars_nouveau:air_essence',
         ],
         source: 5000,
         energy: 100000,
-    }
+    },
+];
+
+global.allCrushingItems = [
+    {
+        output: '2x r2aot:shredded_buddycard',
+        input: '#buddycards:buddycards',
+        create: false,
+        thermal: true,
+        mek: true,
+        id: 'shredded_buddycard',
+    },
+    {
+        output: '5x r2aot:shredded_buddycard',
+        input: '#buddycards:buddycard_packs',
+        create: false,
+        thermal: true,
+        mek: true,
+        id: 'shredded_buddycard_pack',
+    },
+    {
+        output: 'r2aot:entro_dust',
+        input: 'r2aot:entro_crystal',
+        create: false,
+        thermal: true,
+        mek: true,
+    },
 ];

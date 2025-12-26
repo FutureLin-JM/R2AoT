@@ -47,6 +47,17 @@
     "item.r2aot.buddycard_ore_redstone": "矿物卡—红石",
     "item.r2aot.buddycard_ore_zinc": "矿物卡—锌",
 
+    "item.r2aot.entro_crystal": "恩特罗水晶",
+    "item.r2aot.entro_seed": "恩特罗种子",
+    "item.r2aot.entro_dust": "恩特罗粉",
+    "item.r2aot.entro_ingot": "恩特罗注入锭",
+    "item.r2aot.entro_shard": "恩特罗碎片",
+    "item.r2aot.concurrent_processor": "并发处理器",
+    "item.r2aot.concurrent_processor_press": "并发压印模板",
+    "item.r2aot.concurrent_processor_print": "并发电路板",
+
+    "infinities_cell.r2aot.base_ore": "基础矿物",
+
     "block.r2aot.rainbow_petal_block": "彩虹花源块",
     "block.r2aot.compressed_andesite": "压缩安山岩",
     "block.r2aot.double_compressed_andesite": "二重压缩安山岩",
@@ -76,6 +87,14 @@
     "block.r2aot.imperium_crop": "高级种子",
     "block.r2aot.controller_frame": "控制器框架",
     "block.r2aot.bifrost_prism": "彩虹桥棱镜",
+
+    "block.r2aot.entro_cluster_small": "小型恩特罗芽",
+    "block.r2aot.entro_cluster_medium": "中型恩特罗芽",
+    "block.r2aot.entro_cluster_large": "大型恩特罗芽",
+    "block.r2aot.entro_cluster": "恩特罗簇",
+    "block.r2aot.entro_budding": "恩特罗母岩",
+    "block.r2aot.entro_block": "恩特罗块",
+    "block.r2aot.ex_machine_frame": "扩展机器框架",
 
     "block.r2aot.stress_input": "应力输入口",
     "block.r2aot.create_input": "动力输入仓",
@@ -298,6 +317,10 @@
     "jei.r2aot.cobble_gen": "方块制造",
     "jei.r2aot.elemental_altar_core.mana": "魔力消耗：%s",
     "jei.r2aot.elemental_altar_core.source": "魔源消耗：%s",
+    "jei.r2aot.entro_growth": "培育恩特罗水晶",
+    "jei.desc.r2aot.entro_growth.bud_growth": "恩特罗芽生长在恩特罗母岩上",
+    "jei.desc.r2aot.entro_growth.bud_loot": "未长成的恩特罗芽掉落恩特罗碎片",
+    "jei.desc.r2aot.entro_growth.cluster_loot": "完全长成的恩特罗簇掉落恩特罗水晶",
 
     "gui.r2aot.buddycard_anvil.mode": "模式",
     "gui.r2aot.buddycard_anvil.component": "组件",

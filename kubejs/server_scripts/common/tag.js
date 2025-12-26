@@ -204,4 +204,6 @@ ServerEvents.tags('block', event => {
     });
 
     event.add('r2aot:ember_blocktag', 'powah:nitro_crystal_block');
+
+    event.add('ae2:growth_acceleratable', 'r2aot:entro_budding');
 });

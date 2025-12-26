@@ -223,4 +223,25 @@ ServerEvents.recipes(event => {
             },
         })
         .id(kjs('lychee', 'netherite_upgrade_smithing_template'));
+
+    event
+        .custom({
+            type: 'lychee:block_interacting',
+            item_in: {
+                item: 'r2aot:entro_seed',
+            },
+            block_in: 'ae2:fluix_block',
+            post: [
+                {
+                    type: 'place',
+                    block: 'r2aot:entro_budding',
+                },
+                {
+                    type: 'execute',
+                    command: 'playsound minecraft:block.amethyst_block.place block @p',
+                    hide: true,
+                },
+            ],
+        })
+        .id(kjs('lychee', 'entro_budding'));
 });

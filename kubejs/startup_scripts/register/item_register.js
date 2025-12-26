@@ -52,6 +52,15 @@ StartupEvents.registry('item', event => {
         event.create(`r2aot:buddycard_ore_${ore}`, 'basic').rarity('legend').maxStackSize(1);
     });
 
+    event.create('r2aot:entro_seed', 'basic');
+    event.create('r2aot:entro_crystal', 'basic');
+    event.create('r2aot:entro_dust', 'basic');
+    event.create('r2aot:entro_ingot', 'basic');
+    event.create('r2aot:entro_shard', 'basic');
+    event.create('r2aot:concurrent_processor', 'basic');
+    event.create('r2aot:concurrent_processor_press', 'basic');
+    event.create('r2aot:concurrent_processor_print', 'basic');
+
     let incompleteSeeds = [
         'mysticalagriculture:water_seeds',
         'mysticalagriculture:fire_seeds',
