@@ -1,4 +1,5 @@
 const $SnowmanCoolerBlockEntity = Java.loadClass('fr.iglee42.cmr.cooler.SnowmanCoolerBlockEntity');
+const $EmbersCapabilities = Java.loadClass('com.rekindled.embers.api.capabilities.EmbersCapabilities');
 
 JadeEvents.onCommonRegistration(event => {
     const manaMethods = ['currentMana', 'maxMana', 'mana', 'manaToGet'];
@@ -36,7 +37,7 @@ JadeEvents.onCommonRegistration(event => {
 
     event.blockDataProvider('r2aot:ember', $BlockEntity).setCallback((tag, accessor) => {
         const { blockEntity } = accessor;
-        let capabilities = blockEntity.getCapability(EmbersCapabilities.EMBER_CAPABILITY).orElse(null);
+        let capabilities = blockEntity.getCapability($EmbersCapabilities.EMBER_CAPABILITY).orElse(null);
         if (capabilities != null) {
             tag.putInt('ember', capabilities.getEmber());
             tag.putInt('maxEmber', capabilities.getEmberCapacity());

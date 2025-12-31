@@ -157,7 +157,6 @@
     "r2aot.buddycard_anvil": "巴迪卡牌锻台",
     "r2aot.buddycard_anvil_fake": "巴迪卡牌锻台",
 
-
     "fluid.r2aot.petal_essence": "花瓣原液",
     "block.r2aot.petal_essence": "花瓣原液",
     "item.r2aot.petal_essence_bucket": "花瓣原液 桶",
@@ -286,7 +285,7 @@
     "tooltip.r2aot.flux_dust": "由红石通过原子再构机转换获得",
     "tooltip.r2aot.time_voucher_1": "右键使用可随机获得1~5h时间之瓶的时间",
     "tooltip.r2aot.controller_frame_1": "合成时ME控制器不消耗",
-    "tooltip.r2aot.data_model_multiblock": "该数据模型可通过多方块合成获得",
+    "tooltip.r2aot.data_model_multiblock": "该数据模型可通过多方块微缩合成获得",
     "tooltip.r2aot.data_model_crafting": "该数据模型可通过动力合成获得",
     "tooltip.r2aot.data_model_crafting.error": "该数据模型已无法通过序列组装升级",
     "tooltip.r2aot.buddycard.ore_chance": "%s : %s几率",
@@ -340,6 +339,8 @@
 
     "r2aot.startup.version": "当前整合包版本：§a%s§r %s",
     "r2aot.startup.new_version": "§c存在新版本 §c%s",
+
+    "pack.ae_modern_textures.pack_description": "为AE2及其拓展模组提供现代化材质",
 
     "message.r2aot.multiblock.incorrect": "结构不正确",
     "message.r2aot.tiab_void": "背包中没有时间之瓶",

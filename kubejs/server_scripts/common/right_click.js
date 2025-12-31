@@ -15,51 +15,6 @@ BlockEvents.rightClicked('minecraft:grass_block', event => {
     }
 });
 
-// 深度学习
-BlockEvents.rightClicked('r2aot:data_model_base', event => {
-    const { hand, block, player, level, item } = event;
-    const biologyTypes = [
-        'sheep',
-        'vindicator',
-        'blaze',
-        'chicken',
-        'cow',
-        'creeper',
-        'enderman',
-        'ghast',
-        'skeleton',
-        'slime',
-        'spider',
-    ];
-
-    if (hand != 'MAIN_HAND' || !item.isEmpty()) return;
-
-    const foundValidStructure = biologyTypes.some(biology => {
-        const dataModel = Item.of(
-            'hostilenetworks:data_model',
-            `{data_model:{data:1254,id:"hostilenetworks:${biology}"}}`
-        );
-        const modelMultiblock = $PatchouliAPI.getMultiblock(`r2aot:${biology}_model`);
-        const validRotation = modelMultiblock.validate(level, block.pos);
-
-        if (validRotation !== null) {
-            modelMultiblock.simulate(level, block.pos, validRotation, false).second.forEach(result => {
-                if (result.stateMatcher == $PatchouliAPI.anyMatcher()) return;
-                level.destroyBlock(result.worldPosition, false);
-            });
-            block.popItemFromFace(dataModel, 'down');
-            player.swing();
-            event.cancel();
-            return true;
-        }
-        return false;
-    });
-
-    if (!foundValidStructure) {
-        player.statusMessage = Text.translate('message.r2aot.multiblock.incorrect').red();
-    }
-});
-
 // 圆石制造机
 BlockEvents.rightClicked('r2aot:double_compressed_cobblestone', event => {
     const { hand, block, player, level, item } = event;

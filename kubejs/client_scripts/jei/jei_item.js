@@ -16,15 +16,9 @@ JEIEvents.hideItems(event => {
     // Ingredient.of(/^kubejs:/).itemIds.forEach(id => {
     //   event.hide(id)
     // })
-});
 
-JEIEvents.addItems(event => {
-    event.add(Item.of('ae2:facade', '{item:"minecraft:oak_log"}'));
-});
-
-// 清除多余植物盆
-JEIEvents.hideItems(event => {
-    let excludedItems = [
+    // 清除多余植物盆
+    let excludedBotanyPotItems = [
         'botanypotstiers:creative_terracotta_hopper_botany_pot',
         'botanypotstiers:creative_terracotta_botany_pot',
         'botanypotstiers:ultra_terracotta_hopper_botany_pot',
@@ -36,8 +30,12 @@ JEIEvents.hideItems(event => {
     ];
 
     Ingredient.of(/^(botanypotstiers:|botanypots:)/).itemIds.forEach(id => {
-        if (!excludedItems.includes(id)) {
+        if (!excludedBotanyPotItems.includes(id)) {
             event.hide(id);
         }
     });
+});
+
+JEIEvents.addItems(event => {
+    event.add(Item.of('ae2:facade', '{item:"minecraft:oak_log"}'));
 });

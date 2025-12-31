@@ -36,6 +36,7 @@ const rightClickedInsert = ['r2aot:pedestal', 'r2aot:pedestal_botania', 'r2aot:p
 BlockEvents.rightClicked(event => {
     const { hand, block, item, player } = event;
     if (hand !== 'MAIN_HAND') return;
+    if (!rightClickedExtract.includes(block.id) && !rightClickedInsert.includes(block.id)) return;
     const itemCap = block.entity.getCapability(ForgeCapabilities.ITEM_HANDLER).resolve().get();
     const stack = itemCap.getStackInSlot(0);
 

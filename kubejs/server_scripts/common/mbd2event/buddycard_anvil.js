@@ -104,12 +104,7 @@ MBDMachineEvents.onBeforeRecipeModify('r2aot:buddycard_anvil', event => {
     const { machine, recipe } = mbdEvent;
 
     const recipeId = recipe.id;
-    if (recipeId != 'kubejs:buddycards_anvil/base27_to_ore') {
-        console.log('[BuddyCardAnvil] id不匹配');
-        return;
-    } else {
-        console.log('[BuddyCardAnvil] id匹配');
-    }
+    if (recipeId != 'kubejs:buddycards_anvil/base27_to_ore') return;
 
     const itemTrait = machine.getTraitByName('item_input');
     if (itemTrait == null) return;
@@ -123,25 +118,18 @@ MBDMachineEvents.onBeforeRecipeModify('r2aot:buddycard_anvil', event => {
         let inputStack = itemTrait.storage.getStackInSlot(i);
         if (!inputStack || inputStack.isEmpty() && !inputStack.hasNBT()) continue;
         found = buddyCardBaseOre.some(ore => {
-            console.log(`[BuddyCardAnvil] 检查NBT标签: ${ore}`);
-
             if (inputStack.getNbt().contains(ore)) {
-                console.log(`[BuddyCardAnvil] 找到匹配标签 ${ore}, 值: ${inputStack.getNbt().getInt(ore)}`);
-
                 oreType = ore;
                 value = inputStack.getNbt().getInt(ore);
                 return true;
             } else {
-                console.log(`[BuddyCardAnvil] 标签 ${ore} 不匹配`);
                 return false;
             }
         });
     }
     if (!found) {
-        console.log('[BuddyCardAnvil] 未找到匹配到带相关NBT标签物品');
         return;
     }
-    console.log('[BuddyCardAnvil] 找到匹配的NBT标签，oreType:', oreType, 'value:', value);
     let outputArray = [];
 
     if (value == 50) {
@@ -153,8 +141,6 @@ MBDMachineEvents.onBeforeRecipeModify('r2aot:buddycard_anvil', event => {
     }
 
     if (outputArray.length > 0) {
-        console.log(`[BuddyCardAnvil] ${oreType} ${value}`);
-        console.log(outputArray.toString());
         /**@type {Internal.MBDRecipeSchema$MBDRecipeJS} */
         let builder = recipe.toBuilder();
         let itemCap = MBDRegistries.RECIPE_CAPABILITIES.get('item');
