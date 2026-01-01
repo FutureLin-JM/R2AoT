@@ -151,6 +151,8 @@ ServerEvents.recipes(event => {
         'embers:boring/nether/ember_shard',
         'embers:boring/nether/ember_crystal',
         'embers:boring/nether/ember_grit',
+        'mechanicalbotania:floating_spinerette',
+        'mechanicalbotania:manamotor',
         
     ];
     recipesToRemoveID.forEach(recipes => {

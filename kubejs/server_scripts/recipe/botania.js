@@ -116,7 +116,7 @@ ServerEvents.recipes(event => {
     ).id(kjs('petal_apothecary', 'hydroangeas'));
 
     petal_apothecary(
-        'r2aot:spinerette',
+        'mechanicalbotania:spinerette',
         Array(2)
             .fill('botania:yellow_petal')
             .concat(Array(2).fill('botania:cyan_petal'))

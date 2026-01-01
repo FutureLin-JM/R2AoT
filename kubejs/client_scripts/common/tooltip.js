@@ -8,7 +8,6 @@ ItemEvents.tooltip(event => {
         { id: 'r2aot:fluid_input', key: 'tooltip.r2aot.fluid_input', lines: 1 },
         { id: 'r2aot:fluid_output', key: 'tooltip.r2aot.fluid_output', lines: 2 },
         { id: 'r2aot:flower_ore_generator', key: 'tooltip.r2aot.flower_ore_generator', lines: 5 },
-        { id: 'r2aot:mana_motor', key: 'tooltip.r2aot.mana_motor', lines: 3 },
         { id: 'r2aot:stress_generator_core', key: 'tooltip.r2aot.stress_generator_core', lines: 5 },
         { id: 'r2aot:elemental_altar_core', key: 'tooltip.r2aot.elemental_altar_core', lines: 4 },
         { id: 'r2aot:atomic_reconstructor', key: 'tooltip.r2aot.atomic_reconstructor', lines: 3 },
@@ -29,8 +28,7 @@ ItemEvents.tooltip(event => {
         { id: 'ae2:facade', key: 'tooltip.r2aot.ae2_facade', lines: 2 },
         { id: 'r2aot:create_input', key: 'tooltip.r2aot.create_input', lines: 1 },
         { id: 'r2aot:create_output', key: 'tooltip.r2aot.create_output', lines: 1 },
-        { id: 'r2aot:stress_input', key: 'tooltip.r2aot.stress_input', lines: 1 },
-        { id: 'createendertransmission:energy_transmitter', key: 'tooltip.cet.energy_transmitter', lines: 2 },
+        { id: 'createendertransmission:energy_transmitter', key: 'tooltip.cet.energy_transmitter', lines: 1 },
         { id: 'r2aot:modular_pure_daisy_core', key: 'tooltip.r2aot.modular_pure_daisy_core', lines: 1 },
         { id: 'r2aot:pedestal', key: 'tooltip.r2aot.pedestal', lines: 1 },
         { id: 'hostilenetworks:loot_fabricator', key: 'tooltip.hostilenetworks.loot_fabricator', lines: 1 },
@@ -164,6 +162,31 @@ ItemEvents.tooltip(event => {
                 }
             });
         }
+    });
+
+    event.addAdvanced('mechanicalbotania:mana_motor', (item, advanced, text) => {
+        text.add('');
+        text.add(Text.translate('create.tooltip.capacityProvided').gray());
+        text.add(Text.gold(' ██▒ 256x RPM')); // 模组目前对应rpmvalues的配置存在bug，先这样写死
+        text.add(Text.darkGray(' -> ').append(Text.translate('create.tooltip.up_to', '16,384su')));
+    });
+
+    event.addAdvanced('createendertransmission:energy_transmitter', (item, advanced, text) => {
+        text.add('');
+        text.add(Text.translate('create.tooltip.stressImpact').gray());
+        text.add(Text.red(' ███ 8x RPM'));
+    });
+
+    event.addAdvanced('r2aot:stress_input', (item, advanced, text) => {
+        text.add('');
+        text.add(Text.translate('create.tooltip.stressImpact').gray());
+        text.add(Text.gold(' █▒▒ 4x RPM'));
+    });
+
+    event.addAdvanced('r2aot:flower_ore_generator', (item, advanced, text) => {
+        text.add('');
+        text.add(Text.translate('create.tooltip.stressImpact').gray());
+        text.add(Text.yellow(' █▒▒ 2x RPM'));
     });
 
     // function getRainbowColor(index, time) {

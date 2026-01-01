@@ -411,4 +411,13 @@ ServerEvents.recipes(event => {
             })
             .id(kjs(`buddycard_base27_${tag.type}`));
     });
+
+    kubejs
+        .shaped('mechanicalbotania:mana_motor', ['AAA', 'TXT', 'TRT'], {
+            A: 'create:andesite_alloy',
+            R: 'botania:mana_powder',
+            T: 'botania:manasteel_block',
+            X: 'create:shaft',
+        })
+        .id(kjs('mana_motor'));
 });

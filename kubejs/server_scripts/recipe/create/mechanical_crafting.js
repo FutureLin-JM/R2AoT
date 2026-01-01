@@ -93,19 +93,6 @@ ServerEvents.recipes(event => {
         S: '#forge:stone',
     }).id('create:mechanical_crafting/crushing_wheel');
 
-    mechanical_crafting('r2aot:mana_motor', [
-        ' AAA ',
-        'ABCBA',
-        'ACDCA',
-        'ABCBA',
-        ' AAA '
-    ], {
-        A: 'botania:mana_diamond',
-        B: 'botania:manasteel_block',
-        C: 'botania:mana_powder',
-        D: 'create:shaft',
-    }).id(kjs('mechanical_crafting', 'mana_motor'));
-
     mechanical_crafting('create:creative_motor', [
         ' AAA ',
         'AAAAA',

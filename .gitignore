@@ -18,6 +18,7 @@
 !config/jade/
 !config/jade/plugins.json
 !config/mbtool-common.toml
+!config/mechanicalbotania-common.toml
 !config/modpack-update-checker
 !config/modpack-update-checker/**
 !config/skyblockbuilder/

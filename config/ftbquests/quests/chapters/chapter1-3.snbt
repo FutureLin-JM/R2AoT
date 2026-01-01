@@ -45,8 +45,12 @@
 		}
 		{
 			dependencies: ["11A096C0D7EE7DA4"]
-			description: ["{ftbq.r2aot.chapter1-3.mana_motor.desc_1}"]
-			icon: "r2aot:mana_motor"
+			description: [
+				"{ftbq.r2aot.chapter1-3.mana_motor.desc_1}"
+				"{ftbq.r2aot.chapter1-3.mana_motor.desc_2}"
+				"{ftbq.r2aot.chapter1-3.mana_motor.desc_3}"
+			]
+			icon: "mechanicalbotania:mana_motor"
 			id: "4DB928F316E9D043"
 			rewards: [
 				{
@@ -64,13 +68,13 @@
 			subtitle: "{ftbq.r2aot.chapter1-3.mana_motor.subtitle}"
 			tasks: [
 				{
-					id: "77A17294AC75B6C6"
-					item: "r2aot:mana_motor"
+					id: "72B8E6968CCA68B4"
+					item: "mechanicalbotania:mana_motor"
 					type: "item"
 				}
 				{
-					id: "6B33CE6A9A775775"
-					item: "r2aot:spinerette"
+					id: "45CB893A594FA903"
+					item: "mechanicalbotania:spinerette"
 					type: "item"
 				}
 			]

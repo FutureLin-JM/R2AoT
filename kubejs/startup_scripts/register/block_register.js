@@ -12,7 +12,6 @@ StartupEvents.registry('block', event => {
     event.create('r2aot:petal_zinc_ore', 'basic').hardness(3).stoneSoundType().requiresTool();
     event.create('r2aot:petal_quartz_ore', 'basic').hardness(3).soundType('nether_ore').requiresTool();
 
-    event.create('r2aot:spinerette', 'basic').hardness(0).defaultCutout().noCollision().grassSoundType();
     event.create('r2aot:creative_casing', 'basic').hardness(3).soundType('netherite_block').requiresTool();
     event.create('r2aot:controller_frame', 'basic').hardness(1.5).soundType('metal');
 

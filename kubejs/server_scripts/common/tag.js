@@ -137,7 +137,6 @@ ServerEvents.tags('block', event => {
         'r2aot:item_input',
         'r2aot:item_output',
         'r2aot:flower_ore_generator',
-        'r2aot:mana_motor',
         'r2aot:energy_input',
         'r2aot:energy_output',
         'r2aot:stress_generator_core',
@@ -177,7 +176,6 @@ ServerEvents.tags('block', event => {
         'r2aot:petal_redstone_ore',
         'r2aot:petal_diamond_ore',
         'r2aot:petal_emerald_ore',
-        'r2aot:mana_motor',
     ]);
 
     // create扳手
@@ -185,7 +183,6 @@ ServerEvents.tags('block', event => {
         'r2aot:stress_input',
         'r2aot:create_input',
         'r2aot:create_output',
-        'r2aot:mana_motor',
         'r2aot:stress_generator_core',
         'r2aot:creative_casing',
     ]);
