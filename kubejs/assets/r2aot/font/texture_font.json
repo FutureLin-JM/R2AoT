@@ -37,91 +37,119 @@
 
         {
             "type": "bitmap",
-            "file": "r2aot:gui/font/iron_block.png",
+            "file": "r2aot:font/iron_block.png",
             "ascent": 7,
             "chars": ["\u0006"]
         },
 
         {
             "type": "bitmap",
-            "file": "r2aot:gui/font/gold_block.png",
+            "file": "r2aot:font/gold_block.png",
             "ascent": 7,
             "chars": ["\u0007"]
         },
 
         {
             "type": "bitmap",
-            "file": "r2aot:gui/font/blaze_block.png",
+            "file": "r2aot:font/blaze_block.png",
             "ascent": 7,
             "chars": ["\u0008"]
         },
 
         {
             "type": "bitmap",
-            "file": "r2aot:gui/font/diamond_block.png",
+            "file": "r2aot:font/diamond_block.png",
             "ascent": 7,
             "chars": ["\u0009"]
         },
 
         {
             "type": "bitmap",
-            "file": "r2aot:gui/font/emerald_block.png",
+            "file": "r2aot:font/emerald_block.png",
             "ascent": 7,
             "chars": ["\u0010"]
         },
 
         {
             "type": "bitmap",
-            "file": "r2aot:gui/font/fluidedmana.png",
+            "file": "r2aot:font/dragonstone_block.png",
+            "ascent": 7,
+            "chars": ["\u0011"]
+        },
+
+        {
+            "type": "bitmap",
+            "file": "r2aot:font/energized_steel_block.png",
+            "ascent": 7,
+            "chars": ["\u0012"]
+        },
+
+        {
+            "type": "bitmap",
+            "file": "r2aot:font/blazing_crystal_block.png",
+            "ascent": 7,
+            "chars": ["\u0013"]
+        },
+
+        {
+            "type": "bitmap",
+            "file": "r2aot:font/niotic_crystal_block.png",
+            "ascent": 7,
+            "chars": ["\u0014"]
+        },
+
+        {
+            "type": "bitmap",
+            "file": "r2aot:font/fluidedmana.png",
             "ascent": 7,
             "chars": ["\u100a"]
         },
 
         {
             "type": "bitmap",
-            "file": "r2aot:gui/font/fluid_aerotheum.png",
+            "file": "r2aot:font/fluid_aerotheum.png",
             "ascent": 7,
             "chars": ["\u100b"]
         },
 
         {
             "type": "bitmap",
-            "file": "r2aot:gui/font/fluid_pyrotheum.png",
+            "file": "r2aot:font/fluid_pyrotheum.png",
             "ascent": 7,
             "chars": ["\u100c"]
         },
 
         {
             "type": "bitmap",
-            "file": "r2aot:gui/font/fluid_cryotheum.png",
+            "file": "r2aot:font/fluid_cryotheum.png",
             "ascent": 7,
             "chars": ["\u100d"]
         },
 
         {
             "type": "bitmap",
-            "file": "r2aot:gui/font/fluid_petrotheum.png",
+            "file": "r2aot:font/fluid_petrotheum.png",
             "ascent": 7,
             "chars": ["\u100e"]
         },
 
         {
             "type": "bitmap",
-            "file": "r2aot:gui/font/dissolution_chamber.png",
+            "file": "r2aot:font/dissolution_chamber.png",
             "ascent": 7,
             "chars": ["\u200a"]
         },
 
         {
             "type": "bitmap",
-            "file": "r2aot:gui/font/machine_bottler.png",
+            "file": "r2aot:font/machine_bottler.png",
             "ascent": 7,
             "chars": ["\u200b"]
         },
 
         {
             "type": "bitmap",
-            "file": "r2aot:gui/font/imbuement_chamber.png",
+            "file": "r2aot:font/imbuement_chamber.png",
             "ascent": 7,
             "chars": ["\u200c"]
         }

@@ -99,7 +99,7 @@ global.imbuementChargeRecipes = [
     },
     {
         output: 'r2aot:imperium_crop_seed',
-        input: 'r2aot:imperium_crop_seed',
+        input: 'r2aot:tertium_crop_seed',
         pedestalItems: [
             'r2aot:broken_mana',
             'ars_nouveau:water_essence',
