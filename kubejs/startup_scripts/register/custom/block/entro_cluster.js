@@ -1,7 +1,5 @@
 const $CertusQuartzClusterBlock = Java.loadClass('appeng.decorative.solid.CertusQuartzClusterBlock');
 const $BlockBehaviour$Properties = Java.loadClass('net.minecraft.world.level.block.state.BlockBehaviour$Properties');
-const $BlockItem = Java.loadClass('net.minecraft.world.item.BlockItem');
-const $Item$Properties = Java.loadClass('net.minecraft.world.item.Item$Properties');
 
 const entroClusters = [
     {

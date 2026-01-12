@@ -1,5 +1,11 @@
 ItemEvents.tooltip(event => {
-    // addShitfTooltip
+    // addCtrlTooltip
+    const ctrlTooltips = [{ id: 'r2aot:chalk_black', key: 'tooltip.r2aot.chalk_black_ctrl', lines: 3 }];
+    ctrlTooltips.forEach(item => {
+        addCtrlTooltip(event, item.id, item.key, item.lines);
+    });
+
+    // addShiftTooltip
     const shiftTooltips = [
         { id: 'r2aot:fertilizer_propagator_core', key: 'tooltip.r2aot.fertilizer_propagator_core', lines: 4 },
         { id: 'r2aot:andesite_casing_maker_core', key: 'tooltip.r2aot.andesite_casing_maker_core', lines: 3 },
@@ -18,6 +24,7 @@ ItemEvents.tooltip(event => {
         { id: 'r2aot:pedestal_botania', key: 'tooltip.r2aot.pedestal_botania', lines: 2 },
         { id: 'r2aot:modular_runic_altar_core', key: 'tooltip.r2aot.modular_runic_altar_core', lines: 2 },
         { id: 'r2aot:animal_wellspring_core', key: 'tooltip.r2aot.animal_wellspring_core', lines: 3 },
+        { id: 'r2aot:chalk_black', key: 'tooltip.r2aot.chalk_black_shift', lines: 2 },
     ];
     shiftTooltips.forEach(item => {
         addShiftTooltip(event, item.id, item.key, item.lines);
@@ -41,6 +48,7 @@ ItemEvents.tooltip(event => {
         { id: 'ars_nouveau:drygmy_charm', key: 'tooltip.ars_nouveau.drygmy_charm', lines: 1 },
         { id: 'ars_nouveau:amethyst_golem_charm', key: 'tooltip.ars_nouveau.amethyst_golem_charm', lines: 1 },
         { id: 'ars_nouveau:imbuement_chamber', key: 'tooltip.ars_nouveau.imbuement_chamber', lines: 1 },
+        { id: 'botania:black_lotus', key: 'tooltip.botania.black_lotus', lines: 1 },
     ];
     linesTooltip.forEach(item => {
         addLinesTooltip(event, item.id, item.key, item.lines);
@@ -234,9 +242,29 @@ ItemEvents.tooltip(event => {
 function addShiftTooltip(event, itemId, tooltipKey, lines) {
     event.addAdvanced(itemId, (item, advanced, text) => {
         if (!event.shift) {
-            text.add(1, Text.translate('tooltip.r2aot.hold_shift', Text.yellow('Shift')).yellow());
+            text.add(1, Text.translate('tooltip.r2aot.hold_shift', Text.yellow('Shift')).gold());
         } else {
             text.add(1, Text.translate('tooltip.r2aot.hold_shift', Text.white('Shift')).darkGray());
+
+            for (let i = 1; i <= lines; i++) {
+                text.add(i + 1, Text.translate(`${tooltipKey}_${i}`).yellow());
+            }
+        }
+    });
+}
+
+/**
+ * @param {Internal.ItemTooltipEventJS} event
+ * @param {Internal.Ingredient_} itemId
+ * @param {string} tooltipKey
+ * @param {number} lines
+ */
+function addCtrlTooltip(event, itemId, tooltipKey, lines) {
+    event.addAdvanced(itemId, (item, advanced, text) => {
+        if (!event.ctrl) {
+            text.add(1, Text.translate('tooltip.r2aot.hold_ctrl', Text.yellow('Ctrl')).gold());
+        } else {
+            text.add(1, Text.translate('tooltip.r2aot.hold_ctrl', Text.white('Ctrl')).darkGray());
 
             for (let i = 1; i <= lines; i++) {
                 text.add(i + 1, Text.translate(`${tooltipKey}_${i}`).yellow());

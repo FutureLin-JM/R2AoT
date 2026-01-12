@@ -448,7 +448,12 @@
 			y: -4.0d
 		}
 		{
-			dependencies: ["0A528935EB4B6641"]
+			dependencies: [
+				"0A528935EB4B6641"
+				"135818E055D86867"
+				"53C834EBC9220BC9"
+			]
+			dependency_requirement: "one_completed"
 			id: "0412E6F433DFC1C0"
 			shape: "diamond"
 			size: 1.5d
@@ -720,6 +725,27 @@
 			}]
 			x: 16.0d
 			y: -12.0d
+		}
+		{
+			dependencies: ["121D614725C37102"]
+			id: "53C834EBC9220BC9"
+			tasks: [{
+				id: "10A8D190F4E533EF"
+				item: "botania:blacker_lotus"
+				type: "item"
+			}]
+			x: 18.0d
+			y: -2.0d
+		}
+		{
+			id: "121D614725C37102"
+			tasks: [{
+				id: "1677A73EEA0A85E2"
+				item: "botania:black_lotus"
+				type: "item"
+			}]
+			x: 18.0d
+			y: 0.0d
 		}
 	]
 	title: "{ftbq.r2aot.chapter1-2.start.title}"

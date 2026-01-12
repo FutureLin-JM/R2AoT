@@ -148,6 +148,12 @@ ServerEvents.recipes(event => {
         'minecraft:netherite_ingot'
     ).id(kjs('petal_apothecary', 'orechid_ignem'));
 
+    petal_apothecary(
+        'r2aot:chalk_black',
+        Array(2).fill('botania:black_petal').concat(Array(2).fill('minecraft:bone_meal')),
+        'minecraft:clay_ball'
+    ).id(kjs('petal_apothecary', 'chalk_black'));
+
     /**
      * 白雏菊配方
      * @param {OutputItem_} output - 输出物品的ID
@@ -193,9 +199,7 @@ ServerEvents.recipes(event => {
     });
 
     mana_infusion('botania:mana_powder', 'minecraft:redstone', 500).id('botania:mana_infusion/mana_powder_dust');
-    mana_infusion('ae2:certus_quartz_crystal', 'botania:quartz_mana', 500).id(
-        kjs('mana_infusion', 'certus_quartz_crystal')
-    );
+    mana_infusion('ae2:certus_quartz_crystal', 'botania:quartz_mana', 500).id(kjs('mana_infusion', 'certus_crystal'));
 
     /**
      * 符文祭坛

@@ -497,11 +497,11 @@
 		}
 		{
 			dependencies: ["335B6352663ECA5D"]
-			icon: "r2aot:double_compressed_andesite"
+			icon: "allthecompressed:andesite_1x"
 			id: "68C12114D2D999FE"
 			tasks: [{
-				id: "3C793FE0A959198D"
-				item: "r2aot:double_compressed_andesite"
+				id: "24CE8A766F30C6C6"
+				item: "allthecompressed:andesite_1x"
 				type: "item"
 			}]
 			x: 5.0d
@@ -558,8 +558,8 @@
 			dependencies: ["335B6352663ECA5D"]
 			id: "59BD60C0C9E65A7F"
 			tasks: [{
-				id: "7B744B9C4A1ED36C"
-				item: "r2aot:double_compressed_cobblestone"
+				id: "4ECE877826416A9C"
+				item: "allthecompressed:cobblestone_1x"
 				type: "item"
 			}]
 			x: 7.0d
@@ -569,8 +569,8 @@
 			dependencies: ["335B6352663ECA5D"]
 			id: "2581F46A4FDC9388"
 			tasks: [{
-				id: "0F9C8E95C0C1E5C0"
-				item: "r2aot:double_compressed_gravel"
+				id: "55473467EE177864"
+				item: "allthecompressed:gravel_1x"
 				type: "item"
 			}]
 			x: 9.0d
@@ -580,8 +580,8 @@
 			dependencies: ["335B6352663ECA5D"]
 			id: "7E0E4BE8C829C775"
 			tasks: [{
-				id: "5AA54F34C3ACE58D"
-				item: "r2aot:double_compressed_sand"
+				id: "4DBBA6A185BB073E"
+				item: "allthecompressed:sand_1x"
 				type: "item"
 			}]
 			x: 11.0d
@@ -713,8 +713,8 @@
 			]
 			id: "24EB6502341D21B3"
 			tasks: [{
-				id: "6A1F8842C5ECB925"
-				item: "r2aot:double_compressed_netherrack"
+				id: "026A38AE36C74D4B"
+				item: "allthecompressed:netherrack_1x"
 				type: "item"
 			}]
 			x: 13.0d

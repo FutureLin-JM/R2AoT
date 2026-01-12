@@ -144,3 +144,14 @@ function mergeDuplicateItems(rawInput) {
 
     return Object.entries(itemCountMap).map(([item, count]) => (count > 1 ? `${count}x ${item}` : item));
 }
+
+global.eightNeighborhoodOffsets = [
+    [-1, -1], // 左上
+    [-1, 0], // 左
+    [-1, 1], // 左下
+    [0, -1], // 上
+    [0, 1], // 下
+    [1, -1], // 右上
+    [1, 0], // 右
+    [1, 1], // 右下
+];
