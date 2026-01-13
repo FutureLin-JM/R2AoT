@@ -118,59 +118,76 @@ ServerEvents.recipes(event => {
         .duration(DURATION)
         .id('r2aot:modular_runic_altar_core/rune_winter');
 
+    modular_runic_altar_core()
+        .outputItems('botania:rune_mana')
+        .inputMana(8000)
+        .inputItems(['5x #botania:manasteel_ingots', 'botania:mana_pearl'])
+        .inputItems('botania:livingrock')
+        .duration(DURATION)
+        .id('r2aot:modular_runic_altar_core/rune_mana');
+
     alfheim_trade_station()
         .inputItems('2x botania:mana_diamond_block')
         .inputMana(2000)
         .outputItems('botania:dragonstone_block')
-        .duration(DURATION);
+        .duration(DURATION)
+        .id('r2aot:alfheim_trade_station/dragonstone_block');
 
     alfheim_trade_station()
         .inputItems('botania:livingwood')
         .inputMana(1000)
         .outputItems('botania:dreamwood')
-        .duration(DURATION);
+        .duration(DURATION)
+        .id('r2aot:alfheim_trade_station/dreamwood');
 
     alfheim_trade_station()
         .inputItems('botania:livingwood_log')
         .inputMana(1000)
         .outputItems('botania:dreamwood_log')
-        .duration(DURATION);
+        .duration(DURATION)
+        .id('r2aot:alfheim_trade_station/dreamwood_log');
 
     alfheim_trade_station()
         .inputItems('2x botania:manasteel_ingot')
         .inputMana(2000)
         .outputItems('botania:elementium_ingot')
-        .duration(DURATION);
+        .duration(DURATION)
+        .id('r2aot:alfheim_trade_station/elementium_ingot');
 
     alfheim_trade_station()
         .inputItems('2x botania:manasteel_block')
         .inputMana(2000)
         .outputItems('botania:elementium_block')
-        .duration(DURATION);
+        .duration(DURATION)
+        .id('r2aot:alfheim_trade_station/elementium_block');
 
     alfheim_trade_station()
         .inputItems('botania:mana_glass')
         .inputMana(1000)
         .outputItems('botania:elf_glass')
-        .duration(DURATION);
+        .duration(DURATION)
+        .id('r2aot:alfheim_trade_station/elf_glass');
 
     alfheim_trade_station()
         .inputItems('minecraft:quartz')
         .inputMana(1000)
         .outputItems('botania:quartz_elven')
-        .duration(DURATION);
+        .duration(DURATION)
+        .id('r2aot:alfheim_trade_station/quartz_elven');
 
     alfheim_trade_station()
         .inputItems('2x botania:mana_powder')
         .inputMana(2000)
         .outputItems('botania:pixie_dust')
-        .duration(DURATION);
+        .duration(DURATION)
+        .id('r2aot:alfheim_trade_station/pixie_dust');
 
     alfheim_trade_station()
         .inputItems('2x botania:mana_diamond')
         .inputMana(2000)
         .outputItems('botania:dragonstone')
-        .duration(DURATION);
+        .duration(DURATION)
+        .id('r2aot:alfheim_trade_station/dragonstone');
 
     terrestrial_agglomeration_crystal()
         .outputItems('botania:terrasteel_ingot')
