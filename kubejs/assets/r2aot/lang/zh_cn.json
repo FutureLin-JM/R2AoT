@@ -98,8 +98,6 @@
     "block.r2aot.ex_machine_frame": "扩展机器框架",
 
     "block.r2aot.stress_input": "应力输入口",
-    "block.r2aot.create_input": "动力输入仓",
-    "block.r2aot.create_output": "动力输出仓",
     "block.r2aot.andesite_casing_maker_core": "安山机壳制造机",
     "block.r2aot.rainbow_furnace": "<rainb>彩虹熔炉</rainb>",
     "block.r2aot.fluid_input": "流体输入仓",
@@ -273,8 +271,6 @@
 
     "tooltip.r2aot.ae2_facade_1": "JEI隐藏了伪装板",
     "tooltip.r2aot.ae2_facade_2": "但依然可以合成",
-    "tooltip.r2aot.create_input_1": "无GUI，自动输入",
-    "tooltip.r2aot.create_output_1": "无GUI，自动输出",
     "tooltip.r2aot.fluid_input_1": "手持容器，左键取出流体，右键放入流体",
     "tooltip.r2aot.fluid_output_1": "手持容器，左键取出流体",
     "tooltip.r2aot.fluid_output_2": "支持自动输出",

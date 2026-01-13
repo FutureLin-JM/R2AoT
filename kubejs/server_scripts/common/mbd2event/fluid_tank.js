@@ -1,6 +1,6 @@
 /*
  * 源码参考FunctionalStorage
- * https://github.com/Buuz135/FunctionalStorage/blob/a80aec8f9a9fc9c8a456bfdd93a1621a955fd331/src/main/java/com/buuz135/functionalstorage/block/tile/FluidDrawerTile.java#L220
+ * https://github.com/Buuz135/FunctionalStorage/blob/main/src/main/java/com/buuz135/functionalstorage/block/tile/FluidDrawerTile.java#L220
  */
 BlockEvents.rightClicked('r2aot:fluid_input', event => {
     const { block, player, hand } = event;

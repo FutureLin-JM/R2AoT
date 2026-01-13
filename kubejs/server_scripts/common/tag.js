@@ -125,8 +125,6 @@ ServerEvents.tags('block', event => {
     // 镐子
     event.add('minecraft:mineable/pickaxe', [
         'r2aot:stress_input',
-        'r2aot:create_input',
-        'r2aot:create_output',
         'r2aot:andesite_casing_maker',
         'r2aot:rainbow_furnace',
         'r2aot:fluid_input',
@@ -146,8 +144,6 @@ ServerEvents.tags('block', event => {
     // 斧头
     event.add('minecraft:mineable/axe', [
         'r2aot:stress_input',
-        'r2aot:create_input',
-        'r2aot:create_output',
         'r2aot:andesite_casing_maker',
     ]);
 
@@ -181,8 +177,6 @@ ServerEvents.tags('block', event => {
     // create扳手
     event.add('create:wrench_pickup', [
         'r2aot:stress_input',
-        'r2aot:create_input',
-        'r2aot:create_output',
         'r2aot:stress_generator_core',
         'r2aot:creative_casing',
     ]);

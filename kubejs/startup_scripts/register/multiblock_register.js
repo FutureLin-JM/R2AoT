@@ -53,7 +53,7 @@ StartupEvents.postInit(event => {
         $PatchouliAPI.makeMultiblock(
             [
                 ['AAA', 'AAA', 'AAA'],
-                ['ABA', 'C_D', 'A0A'],
+                ['ABA', 'C_C', 'A0A'],
                 ['AAA', 'AAA', 'AAA'],
             ],
             new $Character('0'),
@@ -63,9 +63,7 @@ StartupEvents.postInit(event => {
             new $Character('B'),
             Block.getBlock('r2aot:stress_input'),
             new $Character('C'),
-            Block.getBlock('r2aot:create_output'),
-            new $Character('D'),
-            Block.getBlock('r2aot:create_input')
+            Block.getBlock('minecraft:barrel')
         )
     );
 });

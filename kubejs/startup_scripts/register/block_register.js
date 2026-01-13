@@ -35,6 +35,6 @@ StartupEvents.registry('block', event => {
             .crop(Item.of(`r2aot:${tier}_crop_seed`), 0.01);
     });
 
-    event.create('r2aot:entro_block', 'basic').hardness(3).resistance(8).material('stone');
-    event.create('r2aot:ex_machine_frame', 'basic').material('metal');
+    event.create('r2aot:entro_block', 'basic').hardness(3).resistance(8).mapColor('stone').mapColor('stone');
+    event.create('r2aot:ex_machine_frame', 'basic').soundType('metal').mapColor('metal');
 });

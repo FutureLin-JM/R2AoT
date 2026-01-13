@@ -33,8 +33,6 @@ ItemEvents.tooltip(event => {
     // addLinesTooltop
     const linesTooltip = [
         { id: 'ae2:facade', key: 'tooltip.r2aot.ae2_facade', lines: 2 },
-        { id: 'r2aot:create_input', key: 'tooltip.r2aot.create_input', lines: 1 },
-        { id: 'r2aot:create_output', key: 'tooltip.r2aot.create_output', lines: 1 },
         { id: 'createendertransmission:energy_transmitter', key: 'tooltip.cet.energy_transmitter', lines: 1 },
         { id: 'r2aot:modular_pure_daisy_core', key: 'tooltip.r2aot.modular_pure_daisy_core', lines: 1 },
         { id: 'r2aot:pedestal', key: 'tooltip.r2aot.pedestal', lines: 1 },
