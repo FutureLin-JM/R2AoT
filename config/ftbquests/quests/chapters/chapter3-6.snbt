@@ -813,7 +813,7 @@
 		}
 		{
 			id: "465896F7D9A84FC5"
-			subtitle: "{ftbq.r2aot.chapter3-6.bifrost_prism_fan.subtitle}"
+			subtitle: "{ftbq.r2aot.chapter3-6.power_essence_fan.subtitle}"
 			tasks: [
 				{
 					id: "2785DB5E3E45601E"
@@ -821,8 +821,9 @@
 					type: "item"
 				}
 				{
-					id: "27E2CF81B06F5D93"
-					item: "r2aot:bifrost_prism"
+					id: "531B05BA79512B7C"
+					item: "r2aot:power_essence_bucket"
+					optional_task: true
 					type: "item"
 				}
 			]

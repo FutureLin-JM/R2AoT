@@ -15,14 +15,6 @@ StartupEvents.registry('block', event => {
     event.create('r2aot:creative_casing', 'basic').hardness(3).soundType('netherite_block').requiresTool();
     event.create('r2aot:controller_frame', 'basic').hardness(1.5).soundType('metal');
 
-    event
-        .create('r2aot:bifrost_prism', 'basic')
-        .hardness(0.3)
-        .glassSoundType()
-        .box(4, 0, 4, 12, 16, 12)
-        .lightLevel(15)
-        .defaultTranslucent();
-
     ['prudentium', 'tertium', 'imperium'].forEach(tier => {
         event
             .create(`r2aot:${tier}_crop`, 'crop')

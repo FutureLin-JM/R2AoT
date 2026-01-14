@@ -8,6 +8,8 @@ StartupEvents.registry('fluid', event => {
         .flowingTexture('r2aot:block/source_flow')
         .color(0x9b13fb);
 
+    event.create('r2aot:power_essence');
+
     const noBlockFluids = [
         'r2aot:seed_oil',
         'r2aot:bioethanol',
@@ -19,7 +21,6 @@ StartupEvents.registry('fluid', event => {
         'r2aot:molten_lumium',
         'r2aot:molten_signalum',
         'r2aot:molten_enderium',
-        'r2aot:power_essence',
         'r2aot:fluid_cryotheum',
         'r2aot:fluid_petrotheum',
         'r2aot:fluid_pyrotheum',
