@@ -7,7 +7,7 @@ const FluidUtil = Java.loadClass('net.minecraftforge.fluids.FluidUtil');
 const $RecipeTypes = Java.loadClass('mezz.jei.api.constants.RecipeTypes');
 const $RecipeType = Java.loadClass('mezz.jei.api.recipe.RecipeType');
 const $MBDRecipeTypeCategory$RecipeWrapper = Java.loadClass(
-    'com.lowdragmc.mbd2.integration.jei.MBDRecipeTypeCategory$RecipeWrapper',
+    'com.lowdragmc.mbd2.integration.jei.MBDRecipeTypeCategory$RecipeWrapper'
 );
 const $IElementHelper = Java.loadClass('snownee.jade.api.ui.IElementHelper');
 const $CyclingDrawable = Java.loadClass('appeng.integration.modules.jei.CyclingDrawable');

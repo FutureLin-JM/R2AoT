@@ -21,4 +21,4 @@ const $ArrayList = Java.loadClass('java.util.ArrayList');
 const $Context = Java.loadClass('dev.latvian.mods.rhino.Context');
 const $KubeJS = Java.loadClass('dev.latvian.mods.kubejs.KubeJS');
 const $CoreParticles = Java.loadClass('cofh.core.init.CoreParticles');
-const $SparkleParticleData = Java.loadClass('vazkii.botania.client.fx.SparkleParticleData')
+const $SparkleParticleData = Java.loadClass('vazkii.botania.client.fx.SparkleParticleData');

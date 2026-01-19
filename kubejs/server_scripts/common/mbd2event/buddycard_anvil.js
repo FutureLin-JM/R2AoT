@@ -116,7 +116,7 @@ MBDMachineEvents.onBeforeRecipeModify('r2aot:buddycard_anvil', event => {
     for (let i = 0; i < 9 && !found; i++) {
         /**@type {Internal.ItemStack} */
         let inputStack = itemTrait.storage.getStackInSlot(i);
-        if (!inputStack || inputStack.isEmpty() && !inputStack.hasNBT()) continue;
+        if (!inputStack || (inputStack.isEmpty() && !inputStack.hasNBT())) continue;
         found = buddyCardBaseOre.some(ore => {
             if (inputStack.getNbt().contains(ore)) {
                 oreType = ore;

@@ -10,7 +10,7 @@ JEIAddedEvents.registerCategories(event => {
             .iconSupplier(() => {
                 return new $DoubleItemIcon(
                     () => Item.of('create:propeller'),
-                    () => Item.of('minecraft:diamond'),
+                    () => Item.of('minecraft:diamond')
                 );
             })
             .handleLookup((builder, recipe, focuses) => {
@@ -53,7 +53,7 @@ JEIAddedEvents.registerCategories(event => {
                 matrixStack.mulPose($Axis.YP.rotationDegrees(22.5));
 
                 $AnimatedKinetics['defaultBlockElement(dev.engine_room.flywheel.lib.model.baked.PartialModel)'](
-                    $AllPartialModels.ENCASED_FAN_INNER,
+                    $AllPartialModels.ENCASED_FAN_INNER
                 )
                     .rotateBlock(180, 0, $AnimatedKinetics.getCurrentAngle() * 16)
                     .scale(24.0)
@@ -90,7 +90,7 @@ JEIAddedEvents.registerCategories(event => {
                 if (pointInPoly({ x: mouseX, y: mouseY }, poly)) {
                     let blockName = Block.getBlock(recipe.data.category).getName();
                     tooltip.add(
-                        Text.translate('jei.desc.r2aot.fan_custom.category_block').gray().append(blockName.white()),
+                        Text.translate('jei.desc.r2aot.fan_custom.category_block').gray().append(blockName.white())
                     );
                 }
             });

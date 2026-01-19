@@ -42,8 +42,8 @@ StartupEvents.postInit(event => {
             new $Character('F'),
             Block.getBlock('botania:mana_diamond_block'),
             new $Character('G'),
-            Block.getBlock('minecraft:glowstone'),
-        ),
+            Block.getBlock('minecraft:glowstone')
+        )
     );
 });
 
@@ -63,8 +63,8 @@ StartupEvents.postInit(event => {
             new $Character('B'),
             Block.getBlock('r2aot:stress_input'),
             new $Character('C'),
-            Block.getBlock('minecraft:barrel'),
-        ),
+            Block.getBlock('minecraft:barrel')
+        )
     );
 });
 
@@ -84,8 +84,8 @@ StartupEvents.postInit(event => {
             new $Character('B'),
             Block.getBlock('botania:red_petal_block'),
             new $Character('C'),
-            Block.getBlock('minecraft:glass'),
-        ),
+            Block.getBlock('minecraft:glass')
+        )
     );
 });
 
@@ -115,7 +115,7 @@ StartupEvents.postInit(event => {
             new $Character('D'),
             Block.getBlock('r2aot:fluidedmana'),
             new $Character('E'),
-            Block.getBlock('minecraft:lapis_block'),
-        ),
+            Block.getBlock('minecraft:lapis_block')
+        )
     );
 });
