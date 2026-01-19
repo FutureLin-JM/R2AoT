@@ -320,6 +320,9 @@
     "jei.desc.r2aot.entro_growth.cluster_loot": "完全长成的恩特罗簇掉落恩特罗水晶",
     "jei.r2aot.black_lotus": "黑莲花",
     "jei.desc.r2aot.black_lotus.void_catalyst": "投入虚空",
+    "jei.r2aot.fan_custom": "自定义方块鼓风机处理",
+    "jei.desc.r2aot.fan_custom.category_block": "在鼓风机前放置",
+    "jei.desc.r2aot.fan_custom.fan": "在方块后放置鼓风机",
 
     "gui.r2aot.buddycard_anvil.mode": "模式",
     "gui.r2aot.buddycard_anvil.component": "组件",

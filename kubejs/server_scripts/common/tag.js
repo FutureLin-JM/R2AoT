@@ -142,10 +142,7 @@ ServerEvents.tags('block', event => {
     ]);
 
     // 斧头
-    event.add('minecraft:mineable/axe', [
-        'r2aot:stress_input',
-        'r2aot:andesite_casing_maker',
-    ]);
+    event.add('minecraft:mineable/axe', ['r2aot:stress_input', 'r2aot:andesite_casing_maker']);
 
     // 石质工具
     event.add('minecraft:needs_stone_tool', [
@@ -175,11 +172,7 @@ ServerEvents.tags('block', event => {
     ]);
 
     // create扳手
-    event.add('create:wrench_pickup', [
-        'r2aot:stress_input',
-        'r2aot:stress_generator_core',
-        'r2aot:creative_casing',
-    ]);
+    event.add('create:wrench_pickup', ['r2aot:stress_input', 'r2aot:stress_generator_core', 'r2aot:creative_casing']);
 
     const addPetalOre = ['minecraft:mineable/pickaxe', 'r2aot:petal_ore'];
     addPetalOre.forEach(tag => {
@@ -197,4 +190,6 @@ ServerEvents.tags('block', event => {
     event.add('r2aot:ember_blocktag', 'powah:nitro_crystal_block');
 
     event.add('ae2:growth_acceleratable', 'r2aot:entro_budding');
+
+    event.add('create:fan_transparent', ['botania:bifrost_perm']);
 });
