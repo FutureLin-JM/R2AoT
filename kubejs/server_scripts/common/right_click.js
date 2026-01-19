@@ -16,7 +16,7 @@ BlockEvents.rightClicked('minecraft:grass_block', event => {
 });
 
 // 圆石制造机
-BlockEvents.rightClicked('r2aot:double_compressed_cobblestone', event => {
+BlockEvents.rightClicked('allthecompressed:cobblestone_2x', event => {
     const { hand, block, player, level, item } = event;
 
     if (hand != 'MAIN_HAND' || item.id != 'r2aot:petal_essence_bucket') return;
@@ -127,7 +127,7 @@ buddyCardBaseOre.forEach(ore => {
             if (remainingCooldown > 0) {
                 player.statusMessage = Text.translate(
                     'message.r2aot.buddycard_ore.cooldown',
-                    Text.gold((remainingCooldown / 1000).toFixed(1))
+                    Text.gold((remainingCooldown / 1000).toFixed(1)),
                 );
                 return;
             }

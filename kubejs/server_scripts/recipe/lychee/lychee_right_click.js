@@ -78,7 +78,7 @@ ServerEvents.recipes(event => {
             item_in: {
                 tag: 'forge:dusts/obsidian',
             },
-            block_in: 'r2aot:double_compressed_cobblestone',
+            block_in: 'allthecompressed:cobblestone_2x',
             post: {
                 type: 'place',
                 block: 'minecraft:netherrack',
