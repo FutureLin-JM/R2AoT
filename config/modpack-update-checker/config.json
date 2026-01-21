@@ -3,7 +3,7 @@
   "currentVersion": "0.0.4",
   "modpackName": "Return to the Age of Technology",
   "modpackAuthor": "风和FutureLin",
-  "modpackReleaseType": "alpha",
+  "modpackReleaseType": "beta",
   "updateCheckerId": "https://raw.gitcode.com/FutureLin-JM/R2AoT-update/raw/main/",
   "advanced": {
     "expandButton": true,
