@@ -35,7 +35,14 @@ jobs:
                   fi
 
                   PURE_VERSION=$(echo "$VERSION_LINE" | grep -oP 'v\K[0-9]+(\.[0-9]+)*')
-                  VERSION_PREFIX=$(echo "$VERSION_LINE" | grep -oP '^## \K[^v]*' | sed 's/ *$//')
+
+                  if [ -z "$PURE_VERSION" ]; then
+                      echo "Error: Failed to extract pure version number from version line: $VERSION_LINE"
+                      exit 1
+                  fi
+
+                  # Remove the trailing 'v<version>' from the title to get the prefix (trim spaces)
+                  VERSION_PREFIX=$(echo "$VERSION_LINE" | sed -E "s/[[:space:]]*v${PURE_VERSION}[[:space:]]*$//" | sed 's/^[[:space:]]*//;s/[[:space:]]*$//')
 
                   if [ -n "$VERSION_PREFIX" ]; then
                       FULL_VERSION_NAME="${VERSION_PREFIX} v${PURE_VERSION}"
@@ -49,26 +56,29 @@ jobs:
                       PRERELEASE_FLAG="true"
                   fi
 
+                  ZIP_NAME="Return to the Age of Technology-${FULL_VERSION_NAME}.zip"
+
                   echo "Extracted pure version: $PURE_VERSION"
                   echo "Extracted full version: $FULL_VERSION_NAME"
                   echo "Prerelease flag: $PRERELEASE_FLAG"
                   echo "PURE_VERSION=$PURE_VERSION" >> $GITHUB_OUTPUT
                   echo "FULL_VERSION_NAME=$FULL_VERSION_NAME" >> $GITHUB_OUTPUT
                   echo "PRERELEASE_FLAG=$PRERELEASE_FLAG" >> $GITHUB_OUTPUT
-                  echo "ZIP_NAME=Return to the Age of Technology-$FULL_VERSION_NAME.zip" >> $GITHUB_OUTPUT
+                  echo "ZIP_NAME=$ZIP_NAME" >> $GITHUB_OUTPUT
 
             - name: Update manifest.json version
               run: |
                   cd main_repo
-                  sed -i '/"name": *"Return to the Age of Technology",/!b;n;s/"version": *"[^"]*"/"version": "${{ steps.setup.outputs.FULL_VERSION_NAME }}"/' manifest.json
+                  sed -i '/"name": *"Return to the Age of Technology",/!b;n;s/"version": *"[^"]*"/"version": "'"${{ steps.setup.outputs.FULL_VERSION_NAME }}"'"/' manifest.json
                   echo "Updated manifest.json with version ${{ steps.setup.outputs.FULL_VERSION_NAME }}"
 
             - name: Create and package modpack
               run: |
                   cd main_repo
-                  mkdir overrides
+                  ZIP_NAME="${{ steps.setup.outputs.ZIP_NAME }}"
+                  mkdir -p overrides
                   cp -r config defaultconfigs hotai kubejs ldlib overrides/
-                  zip -r "../${{ steps.setup.outputs.ZIP_NAME }}" overrides manifest.json modlist.html
+                  zip -r "../$ZIP_NAME" overrides manifest.json modlist.html
 
             - name: Extract CHANGELOG for current version
               run: |
@@ -83,6 +93,6 @@ jobs:
                   body_path: extracted_changelog.txt
                   draft: false
                   prerelease: ${{ steps.setup.outputs.PRERELEASE_FLAG }}
-                  files: ./${{ steps.setup.outputs.ZIP_NAME }}
+                  files: './${{ steps.setup.outputs.ZIP_NAME }}'
               env:
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
