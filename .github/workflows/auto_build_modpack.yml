@@ -79,7 +79,7 @@ jobs:
                   mkdir -p overrides
                   cp -r config defaultconfigs hotai kubejs ldlib overrides/
                   VERSION_NAME="${{ steps.setup.outputs.FULL_VERSION_NAME }}"
-                  FILE_NAME="Return to the Age of Technology-${VERSION_NAME}.zip"
+                  FILE_NAME="Return-to-the-Age-of-Technology-${VERSION_NAME}.zip"
                   zip -r "../${FILE_NAME}" overrides manifest.json modlist.html
                   ls -lh "../${FILE_NAME}"
                   echo "ZIPFILE=${FILE_NAME}" >> $GITHUB_OUTPUT
