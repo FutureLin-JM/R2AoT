@@ -44,7 +44,7 @@ jobs:
                   if [ "$VERSION_PREFIX" = "Release" ]; then
                       PRERELEASE_FLAG="false"
                   else
-                      PRERELEASE_FLAG="ture"
+                      PRERELEASE_FLAG="true"
                   fi
 
                   echo "Extracted pure version: $PURE_VERSION"
@@ -65,7 +65,7 @@ jobs:
               run: |
                   cd main_repo
                   mkdir overrides
-                  cp -r cofig defaultconfigs hotai kubejs ldlib overrides/
+                  cp -r config defaultconfigs hotai kubejs ldlib overrides/
                   zip -r "../${{ steps.setup.outputs.ZIP_NAME }}" overrides manifest.json modlist.html
 
             - name: Extract CHANGELOG for current version
