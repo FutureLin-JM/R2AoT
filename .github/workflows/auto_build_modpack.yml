@@ -1,0 +1,96 @@
+name: Create Modpack Release
+
+on: workflow_dispatch
+
+jobs:
+  create-release:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout main branch
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+          ref: main
+          path: main_repo
+
+      - name: Set up environment and determine version
+        id: setup
+        run: |
+            cd main_repo
+
+            CHANGELOG_PATH="./CHANGELOG.md"
+            if [ ! -f "$CHANGELOG_PATH" ]; then
+                echo "Error: $CHANGELOG_PATH not found in main_repo."
+                exit 1
+            fi
+
+            VERSION_LINE=$(grep -oP '^## .*v\K[0-9]+(\.[0-9]+)*' "$CHANGELOG_PATH" -B1 | grep -B1 -oP '^## \K.*' | head -n1)
+
+            if [ -z "$VERSION_LINE" ]; then
+                echo "Error: Failed to extract version line from $CHANGELOG_PATH."
+                exit 1
+            fi
+
+            PURE_VERSION=$(echo "$VERSION_LINE" | grep -oP 'v\K[0-9]+(\.[0-9]+)*')
+            VERSION_PREFIX=$(echo "$VERSION_LINE" | grep -oP '^## \K[^v]*' | sed 's/ *$//')
+
+            if [ -n "$VERSION_PREFIX" ]; then
+                FULL_VERSION_NAME="${VERSION_PREFIX} v${PURE_VERSION}"
+            else
+                FULL_VERSION_NAME="v${PURE_VERSION}"
+            fi
+
+            if [ "$VERSION_PREFIX" = "Release" ]; then
+                PRERELEASE_FLAG="false"
+            else
+                PRERELEASE_FLAG="ture"
+            fi
+
+            echo "Extracted pure version: $PURE_VERSION"
+            echo "Extracted full version: $FULL_VERSION_NAME"
+            echo "Prerelease flag: $PRERELEASE_FLAG"
+            echo "PURE_VERSION=$PURE_VERSION" >> $GITHUB_OUTPUT
+            echo "FULL_VERSION_NAME=$FULL_VERSION_NAME" >> $GITHUB_OUTPUT
+            echo "PRERELEASE_FLAG=$PRERELEASE_FLAG" >> $GITHUB_OUTPUT
+            echo "ZIP_NAME=Return to the Age of Technology-$FULL_VERSION_NAME.zip" >> $GITHUB_OUTPUT
+
+      - name: Update manifest.json version
+        run: |
+            cd main_repo
+            sed -i '/"name": *"Return to the Age of Technology",/!b;n;s/"version": *"[^"]*"/"version": "${{ steps.setup.outputs.FULL_VERSION_NAME }}"/' manifest.json
+            echo "Updated manifest.json with version ${{ steps.setup.outputs.FULL_VERSION_NAME }}"
+
+      - name: Create and package modpack
+        run: |
+            cd main_repo
+            mkdir overrides
+            cp -r cofig defaultconfigs hotai kubejs ldlib overrides/
+            zip -r "../${{ steps.setup.outputs.ZIP_NAME }}" overrides manifest.json modlist.html
+
+      - name: Extract CHANGELOG for current version
+        run: |
+            cd main_repo
+            sed -n "/^## .*v${{ steps.setup.outputs.PURE_VERSION }}/,/^## /p" CHANGELOG.md | sed '$d' > ../extracted_changelog.txt
+
+      - name: Create GitHub Release
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+            tag_name: 'v${{ steps.setup.outputs.PURE_VERSION }}'
+            release_name: 'R2AoT ${{ steps.setup.outputs.FULL_VERSION_NAME }}'
+            body_path: extracted_changelog.txt
+            draft: false
+            prerelease: ${{ steps.setup.outputs.PRERELEASE_FLAG }}
+
+      - name: Upload Modpack ZIP
+        uses: actions/upload-release-asset@v1
+        env:
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+            upload_url: ${{ steps.create_release.outputs.upload_url }}
+            asset_path: ./${{ steps.setup.outputs.ZIP_NAME }}
+            asset_name: ${{ steps.setup.outputs.ZIP_NAME }}
+            asset_content_type: application/zip
