@@ -388,4 +388,10 @@ ServerEvents.recipes(event => {
             I: 'expatternprovider:ex_molecular_assembler',
         })
         .id('expatternprovider:assembler_matrix_crafter');
+
+    kubejs
+        .shaped('r2aot:entro_crystal', ['SSS', 'S S', 'SSS'], {
+            S: 'r2aot:entro_shard',
+        })
+        .id(kjs('entro_recycle'));
 });

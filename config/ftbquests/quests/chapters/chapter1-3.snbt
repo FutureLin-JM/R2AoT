@@ -511,15 +511,16 @@
 			y: -2.0d
 		}
 		{
-			dependencies: ["0639FF08FFE66ADE"]
+			dependencies: ["155E3CD1C603D0FC"]
+			hide_until_deps_visible: true
 			id: "333797559FEB2341"
 			tasks: [{
 				id: "3357DE5DA8F7288A"
 				item: "ae2:mysterious_cube"
 				type: "item"
 			}]
-			x: 8.0d
-			y: -4.0d
+			x: 10.0d
+			y: -6.0d
 		}
 		{
 			dependencies: ["65DEEF05DFEDBE24"]
@@ -541,6 +542,31 @@
 				type: "item"
 			}]
 			x: 12.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["155E3CD1C603D0FC"]
+			hide_until_deps_visible: true
+			id: "29805B070A660643"
+			tasks: [{
+				id: "640F7E2A4EF3BA8A"
+				item: "create:creative_motor"
+				type: "item"
+			}]
+			x: 10.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["0639FF08FFE66ADE"]
+			dependency_requirement: "all_started"
+			hide_until_deps_complete: true
+			id: "155E3CD1C603D0FC"
+			tasks: [{
+				id: "7206932657A87A7A"
+				item: "r2aot:creative_casing_shard"
+				type: "item"
+			}]
+			x: 8.0d
 			y: -4.0d
 		}
 	]

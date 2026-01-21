@@ -1,6 +1,6 @@
 const CONVERSION_TIME = 40;
 
-const RECIPES = [
+const PEDESTAL_RECIPES = [
     {
         machine: 'r2aot:pedestal_botania',
         catalyst: 'botania:rainbow_rod',
@@ -46,7 +46,7 @@ BlockEvents.rightClicked(event => {
         let part = $IMultiPart.ofPart(level, block.pos).orElse(null);
         if (part.isFormed()) return;
 
-        let machineRecipe = RECIPES.find(recipe => recipe.catalyst === stack.id);
+        let machineRecipe = PEDESTAL_RECIPES.find(recipe => recipe.catalyst === stack.id);
         if (machineRecipe !== undefined) {
             let stackCopy = stack.copy();
             level.setBlockAndUpdate(block.pos, Block.getBlock(machineRecipe.machine).defaultBlockState());
@@ -76,9 +76,7 @@ const PEDESTAL_POSITIONS = [
         const itemCap = machine.getCapability(ForgeCapabilities.ITEM_HANDLER).resolve().get();
         const catalystStack = itemCap.getStackInSlot(0);
 
-        const machineRecipe = RECIPES.find(recipe => 
-            recipe.machine === pedestalMachine
-        );
+        const machineRecipe = PEDESTAL_RECIPES.find(recipe => recipe.machine === pedestalMachine);
 
         if (catalystStack.isEmpty() && machineRecipe.catalyst !== catalystStack.id) return;
 

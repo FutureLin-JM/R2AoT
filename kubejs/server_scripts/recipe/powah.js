@@ -33,12 +33,23 @@ ServerEvents.recipes(event => {
         'minecraft:amethyst_shard',
         '3x mysticalagriculture:prosperity_shard',
         1000
-    ).id(kjs('energizing', 'prosperity_shard'))
+    ).id(kjs('energizing', 'prosperity_shard'));
+
     energizing(
         'minecraft:amethyst_block',
         '15x mysticalagriculture:prosperity_shard',
-        5000)
-    .id(kjs('energizing', 'prosperity_shard_from_block'))
+        5000
+    ).id(kjs('energizing', 'prosperity_shard_from_block'));
+
+    energizing(
+        ['minecraft:iron_ingot', '#minecraft:coals'],
+        'extendedcrafting:black_iron_ingot', 600
+    ).id(kjs('energizing', 'black_iron_ingot'));
+
+    energizing(
+        ['minecraft:iron_block', 'minecraft:coal_block'],
+        'extendedcrafting:black_iron_block', 5000
+    ).id(kjs('energizing', 'black_iron_block'));
 });
 
 PowahEvents.coolants(event => {

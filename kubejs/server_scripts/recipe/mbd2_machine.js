@@ -159,4 +159,22 @@ ServerEvents.recipes(event => {
         })
         .keepIngredient({ item: 'ae2:controller' })
         .id(kjs('controller_frame'));
+
+    kubejs
+        .shaped('r2aot:mana_input', ['ABA', 'CDC', 'AAA'], {
+            A: 'botania:livingrock',
+            B: 'botania:mana_powder',
+            C: 'botania:mana_glass',
+            D: 'botania:mana_pool',
+        })
+        .id(kjs('mana_input'));
+
+    kubejs
+        .shaped('r2aot:mana_output', ['AAA', 'CDC', 'ABA'], {
+            A: 'botania:livingrock',
+            B: 'botania:mana_powder',
+            C: 'botania:mana_glass',
+            D: 'botania:mana_pool',
+        })
+        .id(kjs('mana_output'));
 });

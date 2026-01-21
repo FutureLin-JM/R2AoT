@@ -1,9 +1,45 @@
 if (Platform.isClientEnvironment()) {
+    let $TitleScreen = Java.loadClass('net.minecraft.client.gui.screens.TitleScreen');
+    let $Button = Java.loadClass('net.minecraft.client.gui.components.Button');
+    let $ButtonUtils = Java.loadClass('com.jab125.mpuc.client.util.ButtonUtils');
+
     let $MpucApi = Java.loadClass('com.jab125.mpuc.api.MpucApi');
     let $BrandingControl = Java.loadClass('net.minecraftforge.internal.BrandingControl');
     let $ArrayList = Java.loadClass('java.util.ArrayList');
     let $SoundInstance = Java.loadClass('net.minecraft.client.resources.sounds.SoundInstance');
     let $SimpleSoundInstance = Java.loadClass('net.minecraft.client.resources.sounds.SimpleSoundInstance');
+
+    ForgeEvents.onEvent('net.minecraftforge.client.event.ScreenEvent$Init$Post', event => {
+        const { screen } = event;
+
+        if (screen instanceof $TitleScreen) {
+            let buttonWidth = 50;
+            let buttonHeight = 20;
+            let margin = 10;
+
+            let buddons = [
+                { label: 'QQ交流群', url: 'https://qm.qq.com/q/FnCvsQeoQW' },
+                { label: 'Github', url: 'https://github.com/FutureLin-JM/R2AoT' },
+                { label: '爱发电', url: 'https://afdian.com/a/FeatureLin' },
+            ];
+
+            buddons.forEach((button, index) => {
+                screen.addRenderableWidget(
+                    $Button
+                        .builder(button.label, () => {
+                            $ButtonUtils.confirmLink(screen, false, button.url);
+                        })
+                        .bounds(
+                            screen.width - buttonWidth - margin,
+                            screen.height - (buttonHeight + margin) * (buddons.length - index) - margin,
+                            buttonWidth,
+                            buttonHeight
+                        )
+                        .build()
+                );
+            });
+        }
+    });
 
     let isStartup = false;
     ForgeEvents.onEvent('net.minecraftforge.event.TickEvent$ClientTickEvent', event => {

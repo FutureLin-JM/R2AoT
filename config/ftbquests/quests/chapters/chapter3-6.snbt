@@ -127,7 +127,7 @@
 			]
 			title: "{jei.r2aot.imbuement_charge}"
 			x: 8.0d
-			y: 0.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["4187233F4FA549B1"]
@@ -242,7 +242,6 @@
 				"60816B65F1CD68CD"
 				"2D910ADB5A76D799"
 				"712FAB762F86F391"
-				"526E80BF3ED9A48D"
 			]
 			id: "483D7DF6ABBE1BF5"
 			tasks: [{
@@ -305,6 +304,7 @@
 			dependencies: [
 				"483D7DF6ABBE1BF5"
 				"72B8B26B2E2FE9BE"
+				"0B49A7E958799543"
 			]
 			id: "15CADD02D17504F1"
 			tasks: [{
@@ -319,6 +319,7 @@
 			dependencies: [
 				"2AF4B2B870826941"
 				"72B8B26B2E2FE9BE"
+				"0B49A7E958799543"
 			]
 			id: "3BE19AF591CFD8C5"
 			tasks: [{
@@ -333,6 +334,7 @@
 			dependencies: [
 				"359BFAFDE1DF69C4"
 				"72B8B26B2E2FE9BE"
+				"0B49A7E958799543"
 			]
 			id: "6B0FD6826B38F8C7"
 			tasks: [{
@@ -347,6 +349,7 @@
 			dependencies: [
 				"550A66426AA72F68"
 				"72B8B26B2E2FE9BE"
+				"0B49A7E958799543"
 			]
 			id: "69E889F5655BBD41"
 			tasks: [{
@@ -574,17 +577,6 @@
 				}
 			]
 			x: -2.0d
-			y: -2.0d
-		}
-		{
-			dependencies: ["4187233F4FA549B1"]
-			id: "526E80BF3ED9A48D"
-			tasks: [{
-				id: "1230B8A3E614A5F0"
-				item: "botania:dragonstone_block"
-				type: "item"
-			}]
-			x: 2.0d
 			y: -2.0d
 		}
 		{
@@ -942,7 +934,7 @@
 					type: "item"
 				}
 			]
-			x: 8.0d
+			x: 10.0d
 			y: -2.0d
 		}
 		{
@@ -975,7 +967,10 @@
 			y: -12.0d
 		}
 		{
-			dependencies: ["6FC984254DB3A535"]
+			dependencies: [
+				"6FC984254DB3A535"
+				"51EA8281B36E2324"
+			]
 			id: "6755F20A2FDD3390"
 			shape: "diamond"
 			size: 1.5d
@@ -997,6 +992,51 @@
 			}]
 			x: 4.0d
 			y: -14.0d
+		}
+		{
+			dependencies: ["37AB6706D8634DB1"]
+			id: "51EA8281B36E2324"
+			tasks: [{
+				id: "0283E57D67559A91"
+				item: "embers:ember_bore"
+				type: "item"
+			}]
+			x: 12.0d
+			y: -14.0d
+		}
+		{
+			dependencies: ["59F23C3D5935C257"]
+			id: "37AB6706D8634DB1"
+			tasks: [{
+				id: "4CA037812CFFFE68"
+				item: "embers:caminite_brick"
+				type: "item"
+			}]
+			x: 14.0d
+			y: -14.0d
+		}
+		{
+			dependencies: ["4187233F4FA549B1"]
+			hide_dependent_lines: true
+			id: "0B49A7E958799543"
+			tasks: [{
+				id: "5F4B43A8B48DB301"
+				item: "r2aot:power_planting_station"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["6200B59147353212"]
+			id: "24D21CA677A5217A"
+			tasks: [{
+				id: "56823505A52D661D"
+				item: "mysticalagriculture:supremium_essence"
+				type: "item"
+			}]
+			x: 12.0d
+			y: -2.0d
 		}
 	]
 	title: "{ftbq.r2aot.chapter3-6.start.title}"

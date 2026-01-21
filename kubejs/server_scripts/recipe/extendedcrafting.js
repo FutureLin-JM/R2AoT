@@ -1,4 +1,58 @@
 ServerEvents.recipes(event => {
+    event
+        .custom({
+            type: 'extendedcrafting:shaped_table',
+            pattern: ['AAAAA', 'ABBBA', 'ACDCA', 'ACECA', 'AFFFA'],
+            key: {
+                A: {
+                    item: 'embers:caminite_bricks',
+                },
+                B: {
+                    item: 'advancednetherite:netherite_gold_block',
+                },
+                C: {
+                    item: 'create:crushing_wheel',
+                },
+                D: {
+                    item: 'embers:mechanical_core',
+                },
+                E: {
+                    item: 'advancednetherite:netherite_iron_block',
+                },
+                F: {
+                    item: 'powah:blazing_crystal_block',
+                },
+            },
+            result: {
+                item: 'embers:ember_bore',
+            },
+        })
+        .id(kjs('shaped_table', 'caminite_bricks'));
+
+    event
+        .custom({
+            type: 'extendedcrafting:shaped_table',
+            pattern: ['AAAAA', 'ABCBA', 'ACDCA', 'ABCBA', 'AAAAA'],
+            key: {
+                A: {
+                    tag: 'forge:glass',
+                },
+                B: {
+                    item: 'powah:steel_energized',
+                },
+                C: {
+                    item: 'mysticalagriculture:prosperity_seed_base',
+                },
+                D: {
+                    item: 'thermal:machine_insolator',
+                },
+            },
+            result: {
+                item: 'r2aot:power_planting_station',
+            },
+        })
+        .id(kjs('shaped_table', 'power_planting_station'));
+
     event.custom({
         type: 'extendedcrafting:shaped_table',
         pattern: ['ABCBA', 'DEFED', 'GHIHG', 'JEKEJ', 'ALCLA'],

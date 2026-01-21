@@ -40,9 +40,14 @@
 				"{ftbq.r2aot.utility.mbtool.desc_1}"
 				"{ftbq.r2aot.utility.mbtool.desc_2}"
 			]
+			icon: {
+				Count: 1
+				id: "mbtool:mbtool"
+				tag: { }
+			}
 			id: "1E50AD3E23F88101"
-			tasks: [{
-				id: "0E2C81E3724820EF"
+			rewards: [{
+				id: "01E093E4BFEB39BD"
 				item: {
 					Count: 1
 					id: "mbtool:mbtool"
@@ -50,9 +55,14 @@
 				}
 				type: "item"
 			}]
+			tasks: [{
+				id: "3A270368750E1F49"
+				type: "checkmark"
+			}]
+			title: "{item.mbtool.mbtool}"
 			x: 2.0d
 			y: 0.0d
 		}
 	]
-	title: "{ftbq.raot.chapter_groups.utility.title}"
+	title: "{ftbq.r2aot.chapter_groups.utility.title}"
 }

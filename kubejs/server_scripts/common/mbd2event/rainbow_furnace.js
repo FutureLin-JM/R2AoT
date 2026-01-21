@@ -1,15 +1,11 @@
 ServerEvents.recipes(event => {
-    Ingredient.all.stacks.forEach(itemStack => {
-        let burnTime = $ForgeHooks.getBurnTime(itemStack, 'minecraft:smelting');
-
-        if (burnTime > 0) {
-            let recipe = event.recipes.r2aot.rainbow_furnace();
-            recipe.isFuel(true);
-            recipe.slotName('fuel_input', builder => {
-                builder.inputItems(itemStack);
-            });
-            recipe.duration(burnTime);
-        }
+    Object.entries(JsonIO.read('kubejs/fuel_items.json')).forEach(([itemId, burnTime]) => {
+        let recipe = event.recipes.r2aot.rainbow_furnace();
+        recipe.isFuel(true);
+        recipe.slotName('fuel_input', builder => {
+            builder.inputItems(itemId);
+        });
+        recipe.duration(burnTime);
     });
 });
 
@@ -64,3 +60,18 @@ MBDMachineEvents.onBeforeRecipeModify('r2aot:rainbow_furnace', event => {
 
     mbdEvent.setRecipe(copyRecipe);
 });
+
+// ServerEvents.recipes((event) => {
+//     let fuelItems = {};
+
+//     Ingredient.all.stacks.forEach((itemStack) => {
+//         const burnTime = $ForgeHooks.getBurnTime(itemStack, 'minecraft:smelting');
+
+//         if (burnTime > 0) {
+//             fuelItems[itemStack.id] = burnTime;
+//         }
+//     });
+
+//     JsonIO.write('kubejs/fuel_items.json', fuelItems);
+//     console.log('已生成kubejs/fuel_items.json');
+// });

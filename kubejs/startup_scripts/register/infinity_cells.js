@@ -16,6 +16,15 @@ StartupEvents.registry('item', event => {
                 'minecraft:lapis_lazuli',
             ],
         },
+        {
+            id: 'island_block',
+            list: [
+                'minecraft:yellow_concrete',
+                'minecraft:white_concrete',
+                'minecraft:smooth_stone',
+                'minecraft:stone_bricks',
+            ],
+        },
     ];
 
     infinitiesCells.forEach(cell => {

@@ -49,6 +49,16 @@ ServerEvents.recipes(event => {
 
     milling('4x minecraft:pointed_dripstone', 'minecraft:dripstone_block').id(kjs('milling', 'pointed_dripstone'));
 
+    milling(
+        ['r2aot:shredded_buddycard', Item.of('r2aot:shredded_buddycard').withChance(0.2)],
+        '#buddycards:buddycards'
+    ).id(kjs('milling', 'shredded_buddycard'));
+
+    milling(
+        ['3x r2aot:shredded_buddycard', Item.of('r2aot:shredded_buddycard', 2).withChance(0.2)],
+        '#buddycards:buddycard_packs'
+    ).id(kjs('milling', 'shredded_buddycard_pack'));
+
     // 粉碎轮
     crushing('ars_nouveau:glyph_crush', 'ars_nouveau:scribes_table').id(kjs('crushing', 'glyph_crush'));
 

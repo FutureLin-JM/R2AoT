@@ -25,6 +25,7 @@
 !config/skyblockbuilder/structures.json5
 !config/skyblockbuilder/templates.json5
 !config/skyblockbuilder/world.json5
+!config/angelring-common.toml
 !config/botania-client.toml
 !config/hostilenetworks.cfg
 !config/mbtool-common.toml
