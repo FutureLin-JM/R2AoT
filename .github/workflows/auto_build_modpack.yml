@@ -5,6 +5,8 @@ on: workflow_dispatch
 jobs:
     create-release:
         runs-on: ubuntu-latest
+        permissions:
+            contents: write
 
         steps:
             - name: Checkout main branch
@@ -73,24 +75,14 @@ jobs:
                   cd main_repo
                   sed -n "/^## .*v${{ steps.setup.outputs.PURE_VERSION }}/,/^## /p" CHANGELOG.md | sed '$d' > ../extracted_changelog.txt
 
-            - name: Create GitHub Release
-              id: create_release
-              uses: actions/create-release@v1
-              env:
-                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+            - name: Create GitHub Release and Upload Asset
+              uses: softprops/action-gh-release@v1
               with:
                   tag_name: 'v${{ steps.setup.outputs.PURE_VERSION }}'
-                  release_name: 'R2AoT ${{ steps.setup.outputs.FULL_VERSION_NAME }}'
+                  name: 'R2AoT ${{ steps.setup.outputs.FULL_VERSION_NAME }}'
                   body_path: extracted_changelog.txt
                   draft: false
                   prerelease: ${{ steps.setup.outputs.PRERELEASE_FLAG }}
-
-            - name: Upload Modpack ZIP
-              uses: actions/upload-release-asset@v1
+                  files: ./${{ steps.setup.outputs.ZIP_NAME }}
               env:
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-              with:
-                  upload_url: ${{ steps.create_release.outputs.upload_url }}
-                  asset_path: ./${{ steps.setup.outputs.ZIP_NAME }}
-                  asset_name: ${{ steps.setup.outputs.ZIP_NAME }}
-                  asset_content_type: application/zip
