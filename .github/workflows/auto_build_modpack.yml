@@ -92,6 +92,7 @@ jobs:
             - name: Create GitHub Release and Upload Asset
               uses: softprops/action-gh-release@v1
               with:
+                  align-asset-name: false
                   tag_name: 'v${{ steps.setup.outputs.PURE_VERSION }}'
                   name: 'R2AoT ${{ steps.setup.outputs.FULL_VERSION_NAME }}'
                   body_path: extracted_changelog.txt
