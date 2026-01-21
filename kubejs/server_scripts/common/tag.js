@@ -80,22 +80,48 @@ ServerEvents.tags('item', event => {
     ['energized_steel', 'blazing_crystal', 'niotic_crystal', 'spirited_crystal'].forEach(material => {
         event.add(`forge:gears/${material}`, `r2aot:${material}_gear`);
     });
+
+    const cardTypes = ['base', 'nether', 'end'];
+
+    buddycardConfig.forEach(config => {
+        const { rarity, ranges } = config;
+        ranges.forEach(range => {
+            const { start, end } = range;
+            for (let i = start; i <= end; i++) {
+                cardTypes.forEach(type => {
+                    event.add(`buddycards:${rarity}_cards/${type}`, `buddycards:buddycard_${type}${i}`);
+                    event.add(`buddycards:${rarity}_cards`, `buddycards:buddycard_${type}${i}`);
+                });
+            }
+        });
+    });
+
+    const buddycardOres = [
+        'coal',
+        'copper',
+        'diamond',
+        'emerald',
+        'gold',
+        'iron',
+        'lapis',
+        'netherite',
+        'quartz',
+        'redstone',
+        'zinc',
+    ];
+
+    buddycardOres.forEach(ore => {
+        event.add('r2aot:buddycard_ore_block_3x', `allthecompressed:${ore}_block_3x`);
+        event.add('r2aot:buddycard_ore_block_4x', `allthecompressed:${ore}_block_4x`);
+        event.add('r2aot:buddycard_ore_block_5x', `allthecompressed:${ore}_block_5x`);
+        event.add('r2aot:buddycard_ore', `r2aot:buddycard_ore_${ore}`);
+    });
 });
 
 ServerEvents.tags('block', event => {
     // 镐子
     event.add('minecraft:mineable/pickaxe', [
-        'r2aot:compressed_cobblestone',
-        'r2aot:double_compressed_cobblestone',
-        'r2aot:compressed_andesite',
-        'r2aot:double_compressed_andesite',
-        'r2aot:compressed_gravel',
-        'r2aot:double_compressed_gravel',
-        'r2aot:compressed_sand',
-        'r2aot:double_compressed_sand',
         'r2aot:stress_input',
-        'r2aot:create_input',
-        'r2aot:create_output',
         'r2aot:andesite_casing_maker',
         'r2aot:rainbow_furnace',
         'r2aot:fluid_input',
@@ -106,7 +132,6 @@ ServerEvents.tags('block', event => {
         'r2aot:item_input',
         'r2aot:item_output',
         'r2aot:flower_ore_generator',
-        'r2aot:mana_motor',
         'r2aot:energy_input',
         'r2aot:energy_output',
         'r2aot:stress_generator_core',
@@ -114,29 +139,10 @@ ServerEvents.tags('block', event => {
     ]);
 
     // 斧头
-    event.add('minecraft:mineable/axe', [
-        'r2aot:stress_input',
-        'r2aot:create_input',
-        'r2aot:create_output',
-        'r2aot:andesite_casing_maker',
-    ]);
-
-    // 铲子
-    event.add('minecraft:mineable/shovel', [
-        'r2aot:compressed_gravel',
-        'r2aot:double_compressed_gravel',
-        'r2aot:compressed_sand',
-        'r2aot:double_compressed_sand',
-    ]);
+    event.add('minecraft:mineable/axe', ['r2aot:stress_input', 'r2aot:andesite_casing_maker']);
 
     // 石质工具
     event.add('minecraft:needs_stone_tool', [
-        'r2aot:compressed_cobblestone',
-        'r2aot:compressed_andesite',
-        'r2aot:double_compressed_cobblestone',
-        'r2aot:double_compressed_andesite',
-        'r2aot:double_compressed_gravel',
-        'r2aot:double_compressed_sand',
         'r2aot:petal_coal_ore',
         'r2aot:petal_iron_ore',
         'r2aot:petal_copper_ore',
@@ -160,18 +166,10 @@ ServerEvents.tags('block', event => {
         'r2aot:petal_redstone_ore',
         'r2aot:petal_diamond_ore',
         'r2aot:petal_emerald_ore',
-        'r2aot:mana_motor',
     ]);
 
     // create扳手
-    event.add('create:wrench_pickup', [
-        'r2aot:stress_input',
-        'r2aot:create_input',
-        'r2aot:create_output',
-        'r2aot:mana_motor',
-        'r2aot:stress_generator_core',
-        'r2aot:creative_casing',
-    ]);
+    event.add('create:wrench_pickup', ['r2aot:stress_input', 'r2aot:stress_generator_core', 'r2aot:creative_casing']);
 
     const addPetalOre = ['minecraft:mineable/pickaxe', 'r2aot:petal_ore'];
     addPetalOre.forEach(tag => {
@@ -186,5 +184,9 @@ ServerEvents.tags('block', event => {
         event.add('forge:farmland', id);
     });
 
-    event.add('r2aot:ember_blocktag', 'powah:nitro_crystal_block')
+    event.add('r2aot:ember_blocktag', 'powah:nitro_crystal_block');
+
+    event.add('ae2:growth_acceleratable', 'r2aot:entro_budding');
+
+    event.add('create:fan_transparent', ['botania:bifrost_perm']);
 });

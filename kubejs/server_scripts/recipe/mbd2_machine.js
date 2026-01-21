@@ -17,20 +17,6 @@ ServerEvents.recipes(event => {
         .id(kjs('stress_input'));
 
     kubejs
-        .shaped('r2aot:create_input', ['ABA', 'BCB', 'ABA'], {
-            A: 'create:andesite_alloy',
-            B: 'pipez:item_pipe',
-            C: 'botania:lime_petal_block',
-        })
-        .id(kjs('create_input'));
-    kubejs
-        .shaped('r2aot:create_output', ['ABA', 'BCB', 'ABA'], {
-            A: 'create:andesite_alloy',
-            B: 'pipez:item_pipe',
-            C: 'botania:red_petal_block',
-        })
-        .id(kjs('create_output'));
-    kubejs
         .shaped('r2aot:rainbow_furnace', ['AAA', 'ABA', 'AAA'], {
             A: 'r2aot:rainbow_petal_block',
             B: 'minecraft:furnace',
@@ -173,4 +159,22 @@ ServerEvents.recipes(event => {
         })
         .keepIngredient({ item: 'ae2:controller' })
         .id(kjs('controller_frame'));
+
+    kubejs
+        .shaped('r2aot:mana_input', ['ABA', 'CDC', 'AAA'], {
+            A: 'botania:livingrock',
+            B: 'botania:mana_powder',
+            C: 'botania:mana_glass',
+            D: 'botania:mana_pool',
+        })
+        .id(kjs('mana_input'));
+
+    kubejs
+        .shaped('r2aot:mana_output', ['AAA', 'CDC', 'ABA'], {
+            A: 'botania:livingrock',
+            B: 'botania:mana_powder',
+            C: 'botania:mana_glass',
+            D: 'botania:mana_pool',
+        })
+        .id(kjs('mana_output'));
 });

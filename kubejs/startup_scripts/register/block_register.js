@@ -1,17 +1,6 @@
 StartupEvents.registry('block', event => {
     event.create('r2aot:rainbow_petal_block', 'falling').soundType('moss');
 
-    event.create('r2aot:compressed_andesite', 'basic').hardness(3).stoneSoundType().requiresTool();
-    event.create('r2aot:double_compressed_andesite', 'basic').hardness(3).stoneSoundType().requiresTool();
-    event.create('r2aot:compressed_cobblestone', 'basic').hardness(3).stoneSoundType().requiresTool();
-    event.create('r2aot:double_compressed_cobblestone', 'basic').hardness(3).stoneSoundType().requiresTool();
-    event.create('r2aot:compressed_gravel', 'basic').hardness(1.5).gravelSoundType().requiresTool();
-    event.create('r2aot:double_compressed_gravel', 'basic').hardness(1.5).gravelSoundType().requiresTool();
-    event.create('r2aot:compressed_sand').hardness(1.5).sandSoundType().requiresTool();
-    event.create('r2aot:double_compressed_sand').hardness(1.5).sandSoundType().requiresTool();
-    event.create('r2aot:compressed_netherrack').hardness(3).soundType('netherrack').requiresTool();
-    event.create('r2aot:double_compressed_netherrack').hardness(3).soundType('netherrack').requiresTool();
-
     event.create('r2aot:petal_coal_ore', 'basic').hardness(3).stoneSoundType().requiresTool();
     event.create('r2aot:petal_iron_ore', 'basic').hardness(3).stoneSoundType().requiresTool();
     event.create('r2aot:petal_copper_ore', 'basic').hardness(3).stoneSoundType().requiresTool();
@@ -23,24 +12,8 @@ StartupEvents.registry('block', event => {
     event.create('r2aot:petal_zinc_ore', 'basic').hardness(3).stoneSoundType().requiresTool();
     event.create('r2aot:petal_quartz_ore', 'basic').hardness(3).soundType('nether_ore').requiresTool();
 
-    event.create('r2aot:spinerette', 'basic').hardness(0).defaultCutout().noCollision().grassSoundType();
     event.create('r2aot:creative_casing', 'basic').hardness(3).soundType('netherite_block').requiresTool();
-
-    event
-        .create('r2aot:data_model_base', 'basic')
-        .hardness(3)
-        .stoneSoundType()
-        .box(0, 0, 0, 16, 2, 16)
-        .fullBlock(false);
     event.create('r2aot:controller_frame', 'basic').hardness(1.5).soundType('metal');
-
-    event
-        .create('r2aot:bifrost_prism', 'basic')
-        .hardness(0.3)
-        .glassSoundType()
-        .box(4, 0, 4, 12, 16, 12)
-        .lightLevel(15)
-        .defaultTranslucent();
 
     ['prudentium', 'tertium', 'imperium'].forEach(tier => {
         event
@@ -53,4 +26,7 @@ StartupEvents.registry('block', event => {
             .crop(Item.of(`mysticalagriculture:${tier}_essence`))
             .crop(Item.of(`r2aot:${tier}_crop_seed`), 0.01);
     });
+
+    event.create('r2aot:entro_block', 'basic').hardness(3).resistance(8).mapColor('stone').mapColor('stone');
+    event.create('r2aot:ex_machine_frame', 'basic').soundType('metal').mapColor('metal');
 });

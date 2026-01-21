@@ -15,53 +15,8 @@ BlockEvents.rightClicked('minecraft:grass_block', event => {
     }
 });
 
-// 深度学习
-BlockEvents.rightClicked('r2aot:data_model_base', event => {
-    const { hand, block, player, level, item } = event;
-    const biologyTypes = [
-        'sheep',
-        'vindicator',
-        'blaze',
-        'chicken',
-        'cow',
-        'creeper',
-        'enderman',
-        'ghast',
-        'skeleton',
-        'slime',
-        'spider',
-    ];
-
-    if (hand != 'MAIN_HAND' || !item.isEmpty()) return;
-
-    const foundValidStructure = biologyTypes.some(biology => {
-        const dataModel = Item.of(
-            'hostilenetworks:data_model',
-            `{data_model:{data:1254,id:"hostilenetworks:${biology}"}}`
-        );
-        const modelMultiblock = $PatchouliAPI.getMultiblock(`r2aot:${biology}_model`);
-        const validRotation = modelMultiblock.validate(level, block.pos);
-
-        if (validRotation !== null) {
-            modelMultiblock.simulate(level, block.pos, validRotation, false).second.forEach(result => {
-                if (result.stateMatcher == $PatchouliAPI.anyMatcher()) return;
-                level.destroyBlock(result.worldPosition, false);
-            });
-            block.popItemFromFace(dataModel, 'down');
-            player.swing();
-            event.cancel();
-            return true;
-        }
-        return false;
-    });
-
-    if (!foundValidStructure) {
-        player.statusMessage = Text.translate('message.r2aot.multiblock.incorrect').red();
-    }
-});
-
 // 圆石制造机
-BlockEvents.rightClicked('r2aot:double_compressed_cobblestone', event => {
+BlockEvents.rightClicked('allthecompressed:cobblestone_2x', event => {
     const { hand, block, player, level, item } = event;
 
     if (hand != 'MAIN_HAND' || item.id != 'r2aot:petal_essence_bucket') return;
@@ -160,6 +115,47 @@ ItemEvents.rightClicked('r2aot:time_voucher', event => {
         item.count--;
         player.swing();
     }
+});
+
+buddyCardBaseOre.forEach(ore => {
+    ItemEvents.rightClicked(`r2aot:buddycard_ore_${ore}`, event => {
+        const { item, player } = event;
+
+        if (item.hasNBT() && item.getNbt().contains('last_use_time')) {
+            let lastUseTime = item.getNbt().getLong('last_use_time');
+            let remainingCooldown = Math.max(0, 600000 - (Date.now() - lastUseTime));
+            if (remainingCooldown > 0) {
+                player.statusMessage = Text.translate(
+                    'message.r2aot.buddycard_ore.cooldown',
+                    Text.gold((remainingCooldown / 1000).toFixed(1)),
+                );
+                return;
+            }
+        }
+        /**
+         * 根据权重随机选择一个索引值
+         * @returns {number} 随机选择的索引值（1-4）
+         */
+        const getWeightedRandom = () => {
+            const weights = [0.5, 0.25, 0.15, 0.1];
+            let randomValue = Math.random();
+
+            for (let i = 0; i < weights.length; i++) {
+                if (randomValue < weights[i]) {
+                    return i + 1;
+                }
+                randomValue -= weights[i];
+            }
+            return 1;
+        };
+
+        const randomIndex = getWeightedRandom();
+        const oreBlock = `allthecompressed:${ore}_block_${randomIndex}x`;
+
+        player.give(oreBlock);
+        item.setNbt({ last_use_time: Date.now() });
+        player.swing();
+    });
 });
 
 // From Mierno

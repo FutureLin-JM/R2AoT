@@ -198,6 +198,7 @@
 				"5AA3B0A7A72A15AC"
 				"235A8B4A41B4419C"
 			]
+			hide_until_deps_complete: true
 			id: "224E1D137C68B4C4"
 			tasks: [{
 				id: "03722A3C255476EB"
@@ -809,7 +810,7 @@
 			y: -2.0d
 		}
 		{
-			description: ["{ftbe.r2aot.ars_nouveau.ritual_wilden_summon.desc_1}"]
+			description: ["{ftbq.r2aot.chapter2-5.ritual_wilden_summon.desc_1}"]
 			icon: "ars_nouveau:ritual_wilden_summon"
 			id: "1DFB08BC8184C098"
 			tasks: [

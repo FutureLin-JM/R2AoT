@@ -62,7 +62,14 @@ ServerEvents.recipes(event => {
             result: [Item.of('thermalendergy:melodium_ingot', 2).toJson()],
             energy: 32000,
         })
-        .id(kjs('smelter', 'melodium_ingot'));
+        .id(kjs('thermal_smelter', 'melodium_ingot'));
+
+    smelter('embers:caminite_brick', ['embers:caminite_blend', 'create:cinder_flour']);
+
+    smelter('advancednetherite:netherite_gold_ingot', [
+        'advancednetherite:netherite_iron_ingot',
+        '4x minecraft:gold_ingot',
+    ]);
 
     crystallizer(
         'r2aot:dust_aerotheum',
@@ -87,6 +94,8 @@ ServerEvents.recipes(event => {
         ['minecraft:blaze_powder', '#forge:dusts/sulfur'],
         Fluid.of('r2aot:power_essence', 500)
     );
+
+    crystallizer('r2aot:recycled_buddycard', ['3x r2aot:shredded_buddycard'], Fluid.of('minecraft:water', 500), 120000);
 
     [
         { material: 'steel', type: 'energized' },
@@ -131,7 +140,7 @@ ServerEvents.recipes(event => {
                 ],
                 energy: recipe.energy,
             })
-            .id(kjs('bottler', `incomplete_${recipe.seeds}_step_1`));
+            .id(kjs('thermal_bottler', `incomplete_${recipe.seeds}_step_1`));
     });
 
     /**
@@ -142,7 +151,7 @@ ServerEvents.recipes(event => {
      * @param {string} [id] - 自定义ID (可选)
      */
     function crucible(outputFluid, input, energy, id) {
-        id = id ?? kjs('crucible', outputFluid.getId().split(':')[1]);
+        id = id ?? kjs('thermal_crucible', outputFluid.getId().split(':')[1]);
 
         event
             .custom({
@@ -163,7 +172,7 @@ ServerEvents.recipes(event => {
      * @param {string} [id] - 自定义ID (可选)
      */
     function chiller(output, inputFluid, inputCast, energy, id) {
-        id = id ?? kjs('chiller', output.split(':')[1]);
+        id = id ?? kjs('thermal_chiller', output.split(':')[1]);
         event
             .custom({
                 type: 'thermal:chiller',
@@ -195,7 +204,7 @@ ServerEvents.recipes(event => {
         const outputList = Array.isArray(outputs) ? outputs : [outputs];
         const inputList = Array.isArray(inputs) ? inputs : [inputs];
 
-        id = id ?? kjs('smelter', outputList[0].split(':')[1]);
+        id = id ?? kjs('thermal_smelter', outputList[0].split(':')[1]);
         const ingredients = inputList.map(parseItem);
         const result = outputList.map(parseItem);
         event
@@ -213,15 +222,15 @@ ServerEvents.recipes(event => {
      * @param {OutputItem_} output
      * @param {InputItem_ | InputItem_[]} inputs
      * @param {Internal.FluidStackJS} inputFluid
-     * @param {number} [energy = 10000]
-     * @param {string} id
+     * @param {number} [energy = 20000]
+     * @param {string} [id]
      */
     function crystallizer(output, inputs, inputFluid, energy, id) {
         const inputList = Array.isArray(inputs) ? inputs : [inputs];
         const ingredients = inputList.map(parseItem);
         ingredients.push(inputFluid.toJson());
 
-        id = id ?? kjs('crystallizer', output.split(':')[1]);
+        id = id ?? kjs('thermal_crystallizer', output.split(':')[1]);
         event
             .custom({
                 type: 'thermal:crystallizer',
@@ -237,13 +246,13 @@ ServerEvents.recipes(event => {
      * @param {OutputItem_} output
      * @param {InputItem_ | InputItem_[]} inputs
      * @param {number} [energy = 2000]
-     * @param {string} id
+     * @param {string} [id]
      */
     function press(output, inputs, energy, id) {
         const inputList = Array.isArray(inputs) ? inputs : [inputs];
         const ingredients = inputList.map(parseItem);
 
-        id = id ?? kjs('press', output.split(':')[1]);
+        id = id ?? kjs('thermal_press', output.split(':')[1]);
         event
             .custom({
                 type: 'thermal:press',
@@ -253,4 +262,30 @@ ServerEvents.recipes(event => {
             })
             .id(id);
     }
+
+    /**
+     *
+     * @param {OutputItem_} output
+     * @param {InputItem_} input
+     * @param {number} [energy = 4000]
+     * @param {string} [id]
+     */
+    function pulverizer(output, input, energy, id) {
+        id = id ?? kjs('thermal_pulverizer', output.split(':')[1]);
+        event
+            .custom({
+                type: 'thermal:pulverizer',
+                ingredient: parseItemWithoutCount(input),
+                result: parseItem(output),
+                energy: energy ? energy : 4000,
+            })
+            .id(id);
+    }
+
+    global.allCrushingItems.forEach(recipe => {
+        if (!recipe.thermal) return;
+        let id = recipe.id ? kjs('thermal_pulverizer', recipe.id) : undefined;
+
+        pulverizer(recipe.output, recipe.input, undefined, id);
+    });
 });

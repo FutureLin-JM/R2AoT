@@ -19,7 +19,6 @@ StartupEvents.registry('item', event => {
     event.create('r2aot:rune_elemental', 'basic');
     event.create('r2aot:time_voucher', 'basic');
     event.create('r2aot:luxvoid_alloy', 'basic').rarity('uncommon');
-    event.create('r2aot:mbd_builder', 'basic').maxStackSize(1);
     event.create('r2aot:bookwyrm_shards', 'basic');
     event.create('r2aot:amethyst_golem_shards', 'basic');
     event.create('r2aot:broken_mana', 'basic').rarity('uncommon');
@@ -33,6 +32,34 @@ StartupEvents.registry('item', event => {
     ['energized_steel', 'blazing_crystal', 'niotic_crystal', 'spirited_crystal', 'nitro_crystal'].forEach(material => {
         event.create(`r2aot:${material}_gear`, 'basic');
     });
+
+    event.create('r2aot:shredded_buddycard', 'basic');
+    event.create('r2aot:recycled_buddycard', 'basic');
+
+    [
+        'coal',
+        'copper',
+        'diamond',
+        'emerald',
+        'gold',
+        'iron',
+        'lapis',
+        'netherite',
+        'quartz',
+        'redstone',
+        'zinc',
+    ].forEach(ore => {
+        event.create(`r2aot:buddycard_ore_${ore}`, 'basic').rarity('legend').maxStackSize(1);
+    });
+
+    event.create('r2aot:entro_seed', 'basic');
+    event.create('r2aot:entro_crystal', 'basic');
+    event.create('r2aot:entro_dust', 'basic');
+    event.create('r2aot:entro_ingot', 'basic');
+    event.create('r2aot:entro_shard', 'basic');
+    event.create('r2aot:concurrent_processor', 'basic');
+    event.create('r2aot:concurrent_processor_press', 'basic');
+    event.create('r2aot:concurrent_processor_print', 'basic');
 
     let incompleteSeeds = [
         'mysticalagriculture:water_seeds',

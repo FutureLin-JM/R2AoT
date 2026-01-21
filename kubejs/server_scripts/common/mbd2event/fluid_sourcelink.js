@@ -41,13 +41,8 @@ MBDMachineEvents.onTick('r2aot:fluid_sourcelink', event => {
         machineCap.drain(Fluid.of(tankFluidType, transferFluidAmount), 'execute');
         closestProvider.getSource().addSource(sourceToAdd);
 
-        const projectile = new $EntityFollowProjectile(
-            level, 
-            pos, 
-            closestProvider.getCurrentPos(),
-            255, 25, 180
-        );
-        level.addFreshEntity(projectile)
+        const projectile = new $EntityFollowProjectile(level, pos, closestProvider.getCurrentPos(), 255, 25, 180);
+        level.addFreshEntity(projectile);
     }
 });
 

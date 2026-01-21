@@ -1,4 +1,5 @@
 ItemEvents.tooltip(event => {
+    // 水之种子
     event.addAdvanced('kubejs:water_seeds_folder', (item, advanced, text) => {
         text.add(
             1,
@@ -24,6 +25,7 @@ ItemEvents.tooltip(event => {
         );
     });
 
+    // 火之种子
     event.addAdvanced('kubejs:fire_seeds_folder', (item, advanced, text) => {
         text.add(
             1,
@@ -49,6 +51,7 @@ ItemEvents.tooltip(event => {
         );
     });
 
+    // 地之种子
     event.addAdvanced('kubejs:earth_seeds_folder', (item, advanced, text) => {
         text.add(
             1,
@@ -74,6 +77,7 @@ ItemEvents.tooltip(event => {
         );
     });
 
+    // 风之种子
     event.addAdvanced('kubejs:air_seeds_folder', (item, advanced, text) => {
         text.add(
             1,
@@ -99,6 +103,7 @@ ItemEvents.tooltip(event => {
         );
     });
 
+    // 充能钢种子
     event.addAdvanced('kubejs:energized_steel_seeds_folder', (item, advanced, text) => {
         text.add(
             1,
@@ -144,8 +149,15 @@ ItemEvents.tooltip(event => {
                 .append(Text.white({ text: '\u0007', font: 'r2aot:texture_font' }))
                 .append(Text.yellow('x3'))
         );
+        text.add(
+            7,
+            Text.translate('block.botania.dragonstone_block')
+                .append(Text.white({ text: '\u0011', font: 'r2aot:texture_font' }))
+                .append(Text.yellow('x2'))
+        );
     });
 
+    // 烈焰水晶种子
     event.addAdvanced('kubejs:blazing_crystal_seeds_folder', (item, advanced, text) => {
         text.add(
             1,
@@ -185,8 +197,15 @@ ItemEvents.tooltip(event => {
                 .append(Text.white({ text: '\u0008', font: 'r2aot:texture_font' }))
                 .append(Text.yellow('x6'))
         );
+        text.add(
+            6,
+            Text.translate('block.powah.energized_steel_block')
+                .append(Text.white({ text: '\u0012', font: 'r2aot:texture_font' }))
+                .append(Text.yellow('x2'))
+        );
     });
 
+    // 钻石水晶种子
     event.addAdvanced('kubejs:niotic_crystal_seeds_folder', (item, advanced, text) => {
         text.add(
             1,
@@ -226,8 +245,15 @@ ItemEvents.tooltip(event => {
                 .append(Text.white({ text: '\u0009', font: 'r2aot:texture_font' }))
                 .append(Text.yellow('x6'))
         );
+        text.add(
+            6,
+            Text.translate('block.powah.blazing_crystal_block')
+                .append(Text.white({ text: '\u0013', font: 'r2aot:texture_font' }))
+                .append(Text.yellow('x2'))
+        );
     });
 
+    // 富生水晶种子
     event.addAdvanced('kubejs:spirited_crystal_seeds_folder', (item, advanced, text) => {
         text.add(
             1,
@@ -266,6 +292,12 @@ ItemEvents.tooltip(event => {
             Text.translate('block.minecraft.emerald_block')
                 .append(Text.white({ text: '\u0010', font: 'r2aot:texture_font' }))
                 .append(Text.yellow('x6'))
+        );
+        text.add(
+            6,
+            Text.translate('block.powah.niotic_crystal_block')
+                .append(Text.white({ text: '\u0014', font: 'r2aot:texture_font' }))
+                .append(Text.yellow('x2'))
         );
     });
 });

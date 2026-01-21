@@ -151,6 +151,23 @@ ServerEvents.recipes(event => {
         'embers:boring/nether/ember_shard',
         'embers:boring/nether/ember_crystal',
         'embers:boring/nether/ember_grit',
+        'embers:caminite_blend',
+        'embers:caminite_brick',
+        'extendedcrafting:luminessence',
+        'extendedcrafting:black_iron_ingot',
+        'extendedcrafting:basic_component',
+        'extendedcrafting:advanced_component',
+        'extendedcrafting:elite_component',
+        'extendedcrafting:ultimate_component',
+        'advancednetherite:netherite_gold_ingot',
+        'embers:ember_bore',
+        'alltheores:brass_dust_from_alloy_blending',
+        'ars_nouveau:manipulation_essence_to_cascading_sapling',
+        'ars_nouveau:manipulation_essence_to_blazin_sapling',
+        'ars_nouveau:manipulation_essence_to_flourishing_sapling',
+        'ars_nouveau:manipulation_essence_to_vexing_sapling',
+        'mechanicalbotania:floating_spinerette',
+        'mechanicalbotania:manamotor',
         
     ];
     recipesToRemoveID.forEach(recipes => {
@@ -162,6 +179,7 @@ ServerEvents.recipes(event => {
         'industrialforegoing:laser_drill_ore',
         'thermal_extra:component_assembly',
         'botania:orechid_ignem',
+        'compactcrafting:miniaturization',
     ];
     recipesToRemoveType.forEach(typeId => {
         event.remove({ type: typeId });
@@ -170,5 +188,22 @@ ServerEvents.recipes(event => {
     let recipesToRemoveOutItem = [];
     recipesToRemoveOutItem.forEach(itemId => {
         event.remove({ output: itemId });
+    });
+
+    ['thermal:smelter', 'powah:energizing'].forEach(recipeType => {
+        event.forEachRecipe({ type: recipeType }, recipe => {
+            if (recipe.getId().includes('allthecompressed')) {
+                recipe.remove();
+            }
+        });
+    });
+
+    // event.remove({ mod: 'alltheores' });
+    const excludedAllTheOresById = [];
+
+    event.forEachRecipe({ mod: 'alltheores' }, recipe => {
+        if (!excludedAllTheOresById.includes(recipe.getId())) {
+            recipe.remove();
+        }
     });
 });

@@ -1,23 +1,22 @@
 **
 !.gitignore
+!CHANGELOG.md
 !README.md
 !manifest.json
 !modlist.html
 
 # Config
 !config/
+!config/almostunified/
 !config/almostunified/unify.json
-!config/botania-client.toml
 !config/defaultworldtype/
 !config/defaultworldtype/client-config.toml
 !config/ftbquests/
 !config/ftbquests/**
-!config/hostilenetworks.cfg
 !config/industrialforegoing/
 !config/industrialforegoing/machine-resources-production.toml
 !config/jade/
 !config/jade/plugins.json
-!config/mbtool-common.toml
 !config/modpack-update-checker
 !config/modpack-update-checker/**
 !config/skyblockbuilder/
@@ -26,6 +25,12 @@
 !config/skyblockbuilder/structures.json5
 !config/skyblockbuilder/templates.json5
 !config/skyblockbuilder/world.json5
+!config/angelring-common.toml
+!config/botania-client.toml
+!config/hostilenetworks.cfg
+!config/mbtool-common.toml
+!config/mechanicalbotania-common.toml
+!config/resourcepackoverrides.json
 !config/squatgrow-common.yaml
 
 # DefaultConfigs
@@ -50,8 +55,3 @@ kubejs/server_scripts/dev_tool.js
 # Ldlib
 !ldlib/
 !ldlib/**
-
-# Patchouli_Books
-!patchouli_books/
-!patchouli_books/**
-patchouli_books/r2aot_books/en_us/entries/multiblock/text.json

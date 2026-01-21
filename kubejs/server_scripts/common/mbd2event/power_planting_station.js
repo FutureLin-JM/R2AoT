@@ -1,19 +1,8 @@
-const POWER_PLANTING_POSITIONS = [
-    [-1, -1],
-    [-1, 0],
-    [-1, 1],
-    [0, -1],
-    [0, 1],
-    [1, -1],
-    [1, 0],
-    [1, 1],
-];
-
 MBDMachineEvents.onRecipeFinish('r2aot:power_planting_station', event => {
     const { machine } = event.getEvent();
     const { level, pos } = machine;
 
-    const randomOffsetXZ = POWER_PLANTING_POSITIONS[Math.floor(Math.random() * 8)];
+    const randomOffsetXZ = global.eightNeighborhoodOffsets[Math.floor(Math.random() * 8)];
     const randomOffsetY = Math.floor(Math.random() * 2);
 
     const offsetX = pos.x + randomOffsetXZ[0];
@@ -42,10 +31,9 @@ MBDMachineEvents.onBeforeRecipeModify('r2aot:power_planting_station', event => {
 
     if (blockCoefficients.hasOwnProperty(block.id)) {
         let modifiedRecipe = recipe.copy();
-        let newDuration = Math.ceil(recipe.duration / blockCoefficients[block.id])
+        let newDuration = Math.ceil(recipe.duration / blockCoefficients[block.id]);
         modifiedRecipe.duration = Math.max(newDuration, 100);
 
         mbdEvent.setRecipe(modifiedRecipe);
     }
 });
-

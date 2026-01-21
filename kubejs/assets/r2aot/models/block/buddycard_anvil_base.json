@@ -1,0 +1,6 @@
+{
+	"parent": "r2aot:block/buddycard_anvil",
+	"textures": {
+		"top": "r2aot:block/buddycard_anvil_top"
+	}
+}

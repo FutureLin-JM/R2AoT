@@ -7,7 +7,17 @@ JEIAddedEvents.registerCategories(event => {
             .background(null)
             .setWidth(80)
             .setHeight(50)
-            .icon(guiHelper.createDrawableItemStack('r2aot:cobble_gen_tier_1'))
+            .icon(
+                $CyclingDrawable.forItems(
+                    guiHelper,
+                    'r2aot:cobble_gen_tier_1',
+                    'r2aot:cobble_gen_tier_2',
+                    'r2aot:cobble_gen_tier_3',
+                    'r2aot:cobble_gen_tier_4',
+                    'r2aot:cobble_gen_tier_5',
+                    'r2aot:cobble_gen_tier_6'
+                )
+            )
             .handleLookup((builder, recipe, focuses) => {
                 builder.addSlot('OUTPUT', 45, 10).addItemStack(recipe.data.output);
                 if (recipe.data.input) {

@@ -1,4 +1,5 @@
 // priority: 99
+const $Integer = Java.loadClass('java.lang.Integer');
 const $Character = Java.loadClass('java.lang.Character');
 const $PatchouliAPI = Java.loadClass('vazkii.patchouli.api.PatchouliAPI').get();
 const $BlockEntity = Java.loadClass('net.minecraft.world.level.block.entity.BlockEntity');
@@ -6,5 +7,18 @@ const $RecipeSchema = Java.loadClass('dev.latvian.mods.kubejs.recipe.schema.Reci
 const $RecipeComponentBuilder = Java.loadClass('dev.latvian.mods.kubejs.recipe.component.RecipeComponentBuilder');
 const $EnchantmentHelper = Java.loadClass('net.minecraft.world.item.enchantment.EnchantmentHelper');
 const $JsonObject = Java.loadClass('com.google.gson.JsonObject');
-const EmbersCapabilities = Java.loadClass('com.rekindled.embers.api.capabilities.EmbersCapabilities');
 const $BlockContainer = Java.loadClass('dev.latvian.mods.kubejs.level.BlockContainerJS');
+const $Directions = Java.loadClass('net.minecraft.core.Direction');
+const $BlockItem = Java.loadClass('net.minecraft.world.item.BlockItem');
+const $Item$Properties = Java.loadClass('net.minecraft.world.item.Item$Properties');
+const $IntegerProperty = Java.loadClass('net.minecraft.world.level.block.state.properties.IntegerProperty');
+const $ParticleTypes = Java.loadClass('net.minecraft.core.particles.ParticleTypes');
+const $DustParticleOptions = Java.loadClass('net.minecraft.core.particles.DustParticleOptions');
+const $LivingEntity = Java.loadClass('net.minecraft.world.entity.LivingEntity');
+const $ItemStack = Java.loadClass('net.minecraft.world.item.ItemStack');
+const $CompoundTag = Java.loadClass('net.minecraft.nbt.CompoundTag');
+const $ArrayList = Java.loadClass('java.util.ArrayList');
+const $Context = Java.loadClass('dev.latvian.mods.rhino.Context');
+const $KubeJS = Java.loadClass('dev.latvian.mods.kubejs.KubeJS');
+const $CoreParticles = Java.loadClass('cofh.core.init.CoreParticles');
+const $SparkleParticleData = Java.loadClass('vazkii.botania.client.fx.SparkleParticleData');

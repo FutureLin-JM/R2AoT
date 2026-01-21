@@ -6,13 +6,13 @@ ServerEvents.recipes(event => {
     // 1 bonk
     materials.forEach(material => {
         extruding(Item.of(`minecraft:${material}`), Array(2).fill(Fluid.of('r2aot:petal_essence', 1000)))
-            .catalyst(`r2aot:double_compressed_${material}`)
+            .catalyst(`allthecompressed:${material}_2x`)
             .id(kjs('mechanical_extruder', `${material}_by_1_bonk`));
     });
     // 3 bonk
     materials.forEach(material => {
         extruding(Item.of(`minecraft:${material}`), Array(2).fill(Fluid.of('r2aot:petal_essence', 1000)))
-            .catalyst(`r2aot:compressed_${material}`)
+            .catalyst(`allthecompressed:${material}_1x`)
             .requiredBonks(3)
             .id(kjs('mechanical_extruder', `${material}_by_3_bonk`));
     });

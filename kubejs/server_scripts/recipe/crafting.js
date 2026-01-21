@@ -2,61 +2,11 @@ ServerEvents.recipes(event => {
     const { kubejs, minecraft } = event.recipes;
     const add3x3Recipes = {
         'minecraft:grass_block': 'minecraft:oak_leaves',
-        'r2aot:compressed_cobblestone': 'minecraft:cobblestone',
-        'r2aot:double_compressed_cobblestone': 'r2aot:compressed_cobblestone',
-        'r2aot:compressed_andesite': 'minecraft:andesite',
-        'r2aot:double_compressed_andesite': 'r2aot:compressed_andesite',
-        'r2aot:compressed_gravel': 'minecraft:gravel',
-        'r2aot:double_compressed_gravel': 'r2aot:compressed_gravel',
-        'r2aot:compressed_sand': 'minecraft:sand',
-        'r2aot:double_compressed_sand': 'r2aot:compressed_sand',
         'r2aot:creative_casing': 'r2aot:creative_casing_shard',
     };
     Object.entries(add3x3Recipes).forEach(([output, input]) => {
         const outputName = output.split(':')[1];
         kubejs.shaped(output, ['AAA', 'AAA', 'AAA'], { A: input }).id(kjs(`${outputName}_3x3`));
-    });
-
-    const reverse3x3Recipes = {
-        'minecraft:cobblestone': 'r2aot:compressed_cobblestone',
-        'r2aot:compressed_cobblestone': 'r2aot:double_compressed_cobblestone',
-        'minecraft:andesite': 'r2aot:compressed_andesite',
-        'r2aot:compressed_andesite': 'r2aot:double_compressed_andesite',
-        'minecraft:gravel': 'r2aot:compressed_gravel',
-        'r2aot:compressed_gravel': 'r2aot:double_compressed_gravel',
-        'minecraft:sand': 'r2aot:compressed_sand',
-        'r2aot:compressed_sand': 'r2aot:double_compressed_sand',
-    };
-    Object.entries(reverse3x3Recipes).forEach(([output, input]) => {
-        const outputName = output.split(':')[1];
-        kubejs.shaped(`9x ${output}`, ['   ', ' A ', '   '], { A: input }).id(kjs(`${outputName}_3x3_reverse`));
-    });
-
-    const add9Functionalstorage = {
-        'r2aot:compressed_cobblestone': 'minecraft:cobblestone',
-        'r2aot:double_compressed_cobblestone': 'r2aot:compressed_cobblestone',
-        'r2aot:compressed_andesite': 'minecraft:andesite',
-        'r2aot:double_compressed_andesite': 'r2aot:compressed_andesite',
-        'r2aot:compressed_gravel': 'minecraft:gravel',
-        'r2aot:double_compressed_gravel': 'r2aot:compressed_gravel',
-        'r2aot:compressed_sand': 'minecraft:sand',
-        'r2aot:double_compressed_sand': 'r2aot:compressed_sand',
-    };
-    Object.entries(add9Functionalstorage).forEach(([higherItem, lowerItem]) => {
-        const outputName = higherItem.split(':')[1];
-        event
-            .custom({
-                type: 'functionalstorage:custom_compacting',
-                higher_input: {
-                    count: 1,
-                    item: higherItem,
-                },
-                lower_input: {
-                    count: 9,
-                    item: lowerItem,
-                },
-            })
-            .id(kjs('custom_compacting', outputName));
     });
 
     event
@@ -184,7 +134,7 @@ ServerEvents.recipes(event => {
 
     // 物品管道
     kubejs
-        .shaped('16x pipez:item_pipe', ['AAA', 'BCB', 'AAA'], {
+        .shaped('4x pipez:item_pipe', ['AAA', 'BCB', 'AAA'], {
             A: 'botania:black_petal_block',
             B: 'botania:orange_petal_block',
             C: 'minecraft:chest',
@@ -193,7 +143,7 @@ ServerEvents.recipes(event => {
 
     // 流体管道
     kubejs
-        .shaped('16x pipez:fluid_pipe', ['AAA', 'BCB', 'AAA'], {
+        .shaped('4x pipez:fluid_pipe', ['AAA', 'BCB', 'AAA'], {
             A: 'botania:black_petal_block',
             B: 'botania:light_blue_petal_block',
             C: 'minecraft:bucket',
@@ -236,10 +186,6 @@ ServerEvents.recipes(event => {
             C: 'minecraft:gold_block',
         })
         .id(kjs('gold_furnace_component'));
-
-    kubejs
-        .shapeless('r2aot:data_model_base', ['hostilenetworks:blank_data_model'])
-        .id(kjs('hostilenetworks_data_model_base'));
 
     // 安山合金
     kubejs
@@ -439,11 +385,81 @@ ServerEvents.recipes(event => {
         .shapeless('thermalendergy:endergy_upgrade_1', 'thermal_extra:abyssal_upgrade_augment')
         .id(kjs('endergy_upgrade_1'));
 
+    // 合成组件
     kubejs
-        .shaped('r2aot:bifrost_prism', ['GPG', 'GSG', 'GPG'], {
-            G: 'botania:bifrost_perm',
-            P: '#forge:dusts/glowstone',
-            S: 'botania:pixie_dust',
+        .shapeless('extendedcrafting:basic_component', [
+            'extendedcrafting:black_iron_slate',
+            'extendedcrafting:luminessence',
+            'advancednetherite:netherite_iron_ingot',
+            'advancednetherite:netherite_iron_ingot',
+        ])
+        .id(kjs('extendedcrafting', 'basic_component'));
+
+    kubejs
+        .shapeless('extendedcrafting:advanced_component', [
+            'extendedcrafting:black_iron_slate',
+            'extendedcrafting:luminessence',
+            'advancednetherite:netherite_gold_ingot',
+            'advancednetherite:netherite_gold_ingot',
+        ])
+        .id(kjs('extendedcrafting', 'advanced_component'));
+
+    kubejs
+        .shapeless('extendedcrafting:elite_component', [
+            'extendedcrafting:black_iron_slate',
+            'extendedcrafting:luminessence',
+            'advancednetherite:netherite_diamond_ingot',
+            'advancednetherite:netherite_diamond_ingot',
+        ])
+        .id(kjs('extendedcrafting', 'elite_component'));
+
+    kubejs
+        .shapeless('extendedcrafting:ultimate_component', [
+            'extendedcrafting:black_iron_slate',
+            'extendedcrafting:luminessence',
+            'advancednetherite:netherite_emerald_ingot',
+            'advancednetherite:netherite_emerald_ingot',
+        ])
+        .id(kjs('extendedcrafting', 'ultimate_component'));
+
+    const oreCompression = [
+        { type: 'buddycard_ore_block_4x', value: 50 },
+        { type: 'buddycard_ore_block_5x', value: 100 },
+    ];
+    oreCompression.forEach(tag => {
+        kubejs
+            .shapeless('buddycards:buddycard_base27', [
+                Item.of('buddycards:buddycard_base27').strongNBT(),
+                `#r2aot:${tag.type}`,
+            ])
+            .modifyResult((inventory, itemStack) => {
+                let inputOre = inventory.find(Ingredient.of(`#r2aot:${tag.type}`));
+                let oreType = inputOre.id.split(':')[1].split('_')[0];
+                itemStack.setNbt(`{ ${oreType}: ${tag.value} }`);
+                return itemStack;
+            })
+            .id(kjs(`buddycard_base27_${tag.type}`));
+    });
+
+    kubejs
+        .shaped('r2aot:pedestal', ['AAA', ' A ', 'AAA'], {
+            A: 'thermal:cured_rubber_block',
         })
-        .id(kjs('bifrost_prism'));
+        .id(kjs('pedestal'));
+
+    kubejs
+        .shaped('2x create:creative_motor', ['AAA', 'ABA', 'AAA'], {
+            A: 'r2aot:creative_casing',
+            B: 'create:creative_motor',
+        })
+        .id(kjs('creative_motor_copy'));
+
+    kubejs
+        .shaped('mechanicalbotania:mana_motor', ['AAA', 'TXT', 'TRT'], {
+            A: 'create:andesite_alloy',
+            R: 'botania:mana_powder',
+            T: 'botania:manasteel_block',
+            X: 'create:shaft',
+        })
+        .id(kjs('mana_motor'));
 });

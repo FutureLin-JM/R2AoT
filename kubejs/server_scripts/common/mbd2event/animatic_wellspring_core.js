@@ -60,10 +60,12 @@ MBDMachineEvents.onTick('r2aot:animal_wellspring_core', event => {
     const controller = $IMultiController.ofController(level, pos).orElse(null);
     if (!controller.isFormed()) return;
 
-    if (controller.isFormed()) {
-        machine.triggerGeckolibAnim('formed', 1);
-    } else {
-        machine.triggerGeckolibAnim('idle', 1);
+    if (level.getTime() % 20 == 0) {
+        if (controller.isFormed()) {
+            machine.triggerGeckolibAnim('formed', 1);
+        } else {
+            machine.triggerGeckolibAnim('idle', 1);
+        }
     }
 
     let hasAirSpace = false;
@@ -99,7 +101,7 @@ MBDMachineEvents.onTick('r2aot:animal_wellspring_core', event => {
         for (const index of randomArray) {
             let fluidPos = FLUID_POSITIONS[index];
             let targetPos = pos.offset(fluidPos[0], fluidPos[1], fluidPos[2]);
-            
+
             if (isValidFluidPosition(level, targetPos)) {
                 airFluidPos = targetPos;
                 break;

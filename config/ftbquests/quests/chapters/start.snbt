@@ -3,6 +3,7 @@
 	default_quest_shape: ""
 	filename: "start"
 	group: ""
+	icon: "botania:orange_mystical_flower"
 	id: "41F1B91BA5FACCFF"
 	order_index: 0
 	quest_links: [ ]
@@ -10,12 +11,12 @@
 		{
 			can_repeat: true
 			dependencies: ["69EF1BF481A8FFF9"]
+			icon: "minecraft:white_concrete"
 			id: "6A36F60835BE0077"
 			rewards: [{
-				exclude_from_claim_all: true
-				id: "3D0F750104EEFABB"
-				table_id: 3183617948768449527L
-				type: "choice"
+				id: "79B57A80B2AA7F21"
+				item: "r2aot:infinity_cell_island_block"
+				type: "item"
 			}]
 			tasks: [{
 				id: "575B762CFFE19F7E"
@@ -26,6 +27,7 @@
 			y: 0.0d
 		}
 		{
+			icon: "botania:orange_mystical_flower"
 			id: "69EF1BF481A8FFF9"
 			rewards: [
 				{
@@ -101,17 +103,35 @@
 			description: [
 				"{ftbq.r2aot.start.alpha.desc_1}"
 				"{ftbq.r2aot.start.alpha.desc_2}"
+				"{ftbq.r2aot.start.alpha.desc_3}"
 			]
+			icon: "botania:white_mystical_flower"
 			id: "3F884034F97EC499"
 			tasks: [{
 				id: "0838F82D69A40007"
 				title: "{ftbq.r2aot.start.alpha.title}"
 				type: "checkmark"
 			}]
-			x: 0.0d
+			x: -1.25d
 			y: 2.5d
 		}
 		{
+			dependencies: ["69EF1BF481A8FFF9"]
+			icon: {
+				Count: 1
+				id: "ars_nouveau:starby_gift"
+				tag: {
+					an_present_data: {
+						name: "FutureLin"
+						uuid: [I;
+							1312762432
+							-1724823539
+							-1647713417
+							2070892909
+						]
+					}
+				}
+			}
 			id: "27810B0F51C21E2F"
 			rewards: [
 				{
@@ -130,13 +150,62 @@
 					item: "kylin_arm:kylin_arm"
 					type: "item"
 				}
+				{
+					id: "5BB0D276DC471CDE"
+					item: {
+						Count: 1
+						id: "powah:battery_nitro"
+						tag: {
+							powah_tile_data: {
+								energy_stored_main_energy: 2000000000L
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7FB2947D73406A14"
+					item: "angelring:angel_ring"
+					type: "item"
+				}
 			]
 			tasks: [{
 				id: "5EC462FB85B2B620"
 				type: "checkmark"
 			}]
 			title: "大礼包pro"
-			x: 2.5d
+			x: 0.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["69EF1BF481A8FFF9"]
+			description: [
+				"{ftbq.r2aot.start.thank.desc_1}"
+				"{ftbq.r2aot.start.thank.desc_2}"
+				""
+				"{ftbq.r2aot.start.thank.desc_3}"
+			]
+			icon: "mechanicalbotania:spinerette"
+			id: "36E36D94A9F5C550"
+			tasks: [{
+				id: "635E20622BF30B5A"
+				type: "checkmark"
+			}]
+			title: "{ftbq.r2aot.start.thank.title}"
+			x: -2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["69EF1BF481A8FFF9"]
+			description: ["Q群:658503117"]
+			id: "3D2A3449E9781499"
+			subtitle: "{ftbq.r2aot.start.community.subtitle}"
+			tasks: [{
+				id: "69E8A0545421FE64"
+				type: "checkmark"
+			}]
+			title: "{ftbq.r2aot.start.community.title}"
+			x: 1.25d
 			y: 2.5d
 		}
 	]

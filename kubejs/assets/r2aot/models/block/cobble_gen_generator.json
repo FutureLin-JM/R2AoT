@@ -1,91 +1,89 @@
 {
-	"format_version": "1.21.6",
-	"credit": "Made with Blockbench",
-	"parent": "minecraft:block/block",
-	"render_type": "cutout",
-	"textures": {
-		"glass": "block/glass",
-		"water": "r2aot:block/petal_essence",
-		"lava": "r2aot:block/red_petal",
-		"particle": "r2aot:block/cobble_gen_stone"
-	},
-	"elements": [
-		{
-			"from": [0, 0, 0],
-			"to": [16, 4, 16],
-			"faces": {
-				"north": {"uv": [0, 12, 16, 16], "texture": "#material", "cullface": "north"},
-				"east": {"uv": [0, 12, 16, 16], "texture": "#material", "cullface": "east"},
-				"south": {"uv": [0, 12, 16, 16], "texture": "#material", "cullface": "south"},
-				"west": {"uv": [0, 12, 16, 16], "texture": "#material", "cullface": "west"},
-				"up": {"uv": [0, 0, 16, 16], "texture": "#material"},
-				"down": {"uv": [0, 0, 16, 16], "texture": "#material", "cullface": "down"}
-			}
-		},
-		{
-			"from": [0, 12, 0],
-			"to": [16, 16, 16],
-			"faces": {
-				"north": {"uv": [0, 0, 16, 4], "texture": "#material", "cullface": "north"},
-				"east": {"uv": [0, 0, 16, 4], "texture": "#material", "cullface": "east"},
-				"south": {"uv": [0, 0, 16, 4], "texture": "#material", "cullface": "south"},
-				"west": {"uv": [0, 0, 16, 4], "texture": "#material", "cullface": "west"},
-				"up": {"uv": [0, 0, 16, 16], "texture": "#material", "cullface": "up"},
-				"down": {"uv": [0, 0, 16, 16], "texture": "#material"}
-			}
-		},
-		{
-			"from": [0, 4, 0],
-			"to": [16, 12, 16],
-			"faces": {
-				"north": {"uv": [0, 4, 16, 12], "texture": "#glass", "cullface": "north"},
-				"east": {"uv": [0, 4, 16, 12], "texture": "#glass", "cullface": "east"},
-				"south": {"uv": [0, 4, 16, 12], "texture": "#glass", "cullface": "south"},
-				"west": {"uv": [0, 4, 16, 12], "texture": "#glass", "cullface": "west"}
-			}
-		},
-		{
-			"from": [15, 4, 15],
-			"to": [1, 12, 1],
-			"faces": {
-				"north": {"uv": [15, 4, 1, 12], "texture": "#glass", "cullface": "north"},
-				"east": {"uv": [15, 4, 1, 12], "texture": "#glass", "cullface": "east"},
-				"south": {"uv": [15, 4, 1, 12], "texture": "#glass", "cullface": "south"},
-				"west": {"uv": [15, 4, 1, 12], "texture": "#glass", "cullface": "west"}
-			}
-		},
-		{
-			"from": [1, 4, 1],
-			"to": [15, 9, 5],
-			"shade": false,
-			"faces": {
-				"north": {"uv": [1, 7, 15, 12], "texture": "#water", "tintindex": 1},
-				"east": {"uv": [11, 7, 15, 12], "texture": "#water", "tintindex": 1},
-				"west": {"uv": [1, 7, 5, 12], "texture": "#water", "tintindex": 1},
-				"up": {"uv": [1, 1, 15, 5], "texture": "#water", "tintindex": 1}
-			}
-		},
-		{
-			"from": [1, 4, 11],
-			"to": [15, 9, 15],
-			"shade": false,
-			"faces": {
-				"east": {"uv": [1, 7, 5, 12], "texture": "#lava"},
-				"south": {"uv": [1, 7, 15, 12], "texture": "#lava"},
-				"west": {"uv": [11, 7, 15, 12], "texture": "#lava"},
-				"up": {"uv": [1, 11, 15, 15], "texture": "#lava"}
-			}
-		},
-		{
-			"from": [1, 4, 5],
-			"to": [15, 9, 11],
-			"faces": {
-				"north": {"uv": [1, 0, 15, 5], "texture": "#particle"},
-				"east": {"uv": [5, 11, 11, 16], "texture": "#particle"},
-				"south": {"uv": [1, 0, 15, 5], "texture": "#particle"},
-				"west": {"uv": [5, 11, 11, 16], "texture": "#particle"},
-				"up": {"uv": [1, 5, 15, 11], "texture": "#particle"}
-			}
-		}
-	]
+    "parent": "minecraft:block/block",
+    "textures": {
+        "particle": "minecraft:block/cobblestone",
+        "glass": "minecraft:block/glass",
+        "water": "minecraft:block/water_still",
+        "lava": "minecraft:block/lava_still"
+    },
+    "render_type": "cutout",
+    "elements": [
+        {
+            "from": [0, 0, 0],
+            "to": [16, 4, 16],
+            "faces": {
+                "down": { "texture": "#material", "cullface": "down" },
+                "up": { "texture": "#material" },
+                "north": { "texture": "#material", "cullface": "north" },
+                "south": { "texture": "#material", "cullface": "south" },
+                "west": { "texture": "#material", "cullface": "west" },
+                "east": { "texture": "#material", "cullface": "east" }
+            }
+        },
+        {
+            "from": [0, 12, 0],
+            "to": [16, 16, 16],
+            "faces": {
+                "down": { "texture": "#material" },
+                "up": { "texture": "#material", "cullface": "up" },
+                "north": { "texture": "#material", "cullface": "north" },
+                "south": { "texture": "#material", "cullface": "south" },
+                "west": { "texture": "#material", "cullface": "west" },
+                "east": { "texture": "#material", "cullface": "east" }
+            }
+        },
+        {
+            "from": [0, 4, 0],
+            "to": [16, 12, 16],
+            "faces": {
+                "north": { "texture": "#glass", "cullface": "north" },
+                "south": { "texture": "#glass", "cullface": "south" },
+                "west": { "texture": "#glass", "cullface": "west" },
+                "east": { "texture": "#glass", "cullface": "east" }
+            }
+        },
+        {
+            "from": [15, 4, 15],
+            "to": [1, 12, 1],
+            "faces": {
+                "north": { "texture": "#glass", "cullface": "north" },
+                "south": { "texture": "#glass", "cullface": "south" },
+                "west": { "texture": "#glass", "cullface": "west" },
+                "east": { "texture": "#glass", "cullface": "east" }
+            }
+        },
+        {
+            "from": [1, 4, 1],
+            "to": [15, 9, 5],
+            "shade": false,
+            "faces": {
+                "up": { "texture": "#water", "tintindex": 1 },
+                "north": { "texture": "#water", "tintindex": 1 },
+                "west": { "texture": "#water", "tintindex": 1 },
+                "east": { "texture": "#water", "tintindex": 1 }
+            }
+        },
+        {
+            "from": [1, 4, 11],
+            "to": [15, 9, 15],
+            "shade": false,
+            "faces": {
+                "up": { "texture": "#lava" },
+                "south": { "texture": "#lava" },
+                "west": { "texture": "#lava" },
+                "east": { "texture": "#lava" }
+            }
+        },
+        {
+            "from": [1, 4, 5],
+            "to": [15, 9, 11],
+            "faces": {
+                "up": { "texture": "#particle" },
+                "north": { "texture": "#particle" },
+                "south": { "texture": "#particle" },
+                "west": { "texture": "#particle" },
+                "east": { "texture": "#particle" }
+            }
+        }
+    ]
 }

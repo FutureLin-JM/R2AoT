@@ -30,8 +30,8 @@
 				item: "ae2:silicon_press"
 				type: "item"
 			}]
-			x: 0.0d
-			y: -1.5d
+			x: 3.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["162431C9B009FA35"]
@@ -41,7 +41,7 @@
 				item: "ae2:logic_processor_press"
 				type: "item"
 			}]
-			x: 1.5d
+			x: 1.0d
 			y: 2.0d
 		}
 		{
@@ -52,7 +52,7 @@
 				item: "ae2:calculation_processor_press"
 				type: "item"
 			}]
-			x: -1.5d
+			x: -3.0d
 			y: 2.0d
 		}
 		{
@@ -63,7 +63,7 @@
 				item: "ae2:engineering_processor_press"
 				type: "item"
 			}]
-			x: 0.0d
+			x: -1.0d
 			y: 2.0d
 		}
 		{
@@ -74,8 +74,8 @@
 				item: "ae2:printed_silicon"
 				type: "item"
 			}]
-			x: 0.0d
-			y: -3.0d
+			x: 3.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["4CE7006319D8A79E"]
@@ -85,7 +85,7 @@
 				item: "ae2:printed_calculation_processor"
 				type: "item"
 			}]
-			x: -1.5d
+			x: -3.0d
 			y: 3.5d
 		}
 		{
@@ -96,7 +96,7 @@
 				item: "ae2:printed_logic_processor"
 				type: "item"
 			}]
-			x: 1.5d
+			x: 1.0d
 			y: 3.5d
 		}
 		{
@@ -107,7 +107,7 @@
 				item: "ae2:printed_engineering_processor"
 				type: "item"
 			}]
-			x: 0.0d
+			x: -1.0d
 			y: 3.5d
 		}
 		{

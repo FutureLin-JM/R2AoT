@@ -1,5 +1,11 @@
 ItemEvents.tooltip(event => {
-    // addShitfTooltip
+    // addCtrlTooltip
+    const ctrlTooltips = [{ id: 'r2aot:chalk_black', key: 'tooltip.r2aot.chalk_black_ctrl', lines: 3 }];
+    ctrlTooltips.forEach(item => {
+        addCtrlTooltip(event, item.id, item.key, item.lines);
+    });
+
+    // addShiftTooltip
     const shiftTooltips = [
         { id: 'r2aot:fertilizer_propagator_core', key: 'tooltip.r2aot.fertilizer_propagator_core', lines: 4 },
         { id: 'r2aot:andesite_casing_maker_core', key: 'tooltip.r2aot.andesite_casing_maker_core', lines: 3 },
@@ -8,7 +14,6 @@ ItemEvents.tooltip(event => {
         { id: 'r2aot:fluid_input', key: 'tooltip.r2aot.fluid_input', lines: 1 },
         { id: 'r2aot:fluid_output', key: 'tooltip.r2aot.fluid_output', lines: 2 },
         { id: 'r2aot:flower_ore_generator', key: 'tooltip.r2aot.flower_ore_generator', lines: 5 },
-        { id: 'r2aot:mana_motor', key: 'tooltip.r2aot.mana_motor', lines: 3 },
         { id: 'r2aot:stress_generator_core', key: 'tooltip.r2aot.stress_generator_core', lines: 5 },
         { id: 'r2aot:elemental_altar_core', key: 'tooltip.r2aot.elemental_altar_core', lines: 4 },
         { id: 'r2aot:atomic_reconstructor', key: 'tooltip.r2aot.atomic_reconstructor', lines: 3 },
@@ -19,6 +24,7 @@ ItemEvents.tooltip(event => {
         { id: 'r2aot:pedestal_botania', key: 'tooltip.r2aot.pedestal_botania', lines: 2 },
         { id: 'r2aot:modular_runic_altar_core', key: 'tooltip.r2aot.modular_runic_altar_core', lines: 2 },
         { id: 'r2aot:animal_wellspring_core', key: 'tooltip.r2aot.animal_wellspring_core', lines: 3 },
+        { id: 'r2aot:chalk_black', key: 'tooltip.r2aot.chalk_black_shift', lines: 2 },
     ];
     shiftTooltips.forEach(item => {
         addShiftTooltip(event, item.id, item.key, item.lines);
@@ -27,10 +33,7 @@ ItemEvents.tooltip(event => {
     // addLinesTooltop
     const linesTooltip = [
         { id: 'ae2:facade', key: 'tooltip.r2aot.ae2_facade', lines: 2 },
-        { id: 'r2aot:create_input', key: 'tooltip.r2aot.create_input', lines: 1 },
-        { id: 'r2aot:create_output', key: 'tooltip.r2aot.create_output', lines: 1 },
-        { id: 'r2aot:stress_input', key: 'tooltip.r2aot.stress_input', lines: 1 },
-        { id: 'createendertransmission:energy_transmitter', key: 'tooltip.cet.energy_transmitter', lines: 2 },
+        { id: 'createendertransmission:energy_transmitter', key: 'tooltip.cet.energy_transmitter', lines: 1 },
         { id: 'r2aot:modular_pure_daisy_core', key: 'tooltip.r2aot.modular_pure_daisy_core', lines: 1 },
         { id: 'r2aot:pedestal', key: 'tooltip.r2aot.pedestal', lines: 1 },
         { id: 'hostilenetworks:loot_fabricator', key: 'tooltip.hostilenetworks.loot_fabricator', lines: 1 },
@@ -43,6 +46,7 @@ ItemEvents.tooltip(event => {
         { id: 'ars_nouveau:drygmy_charm', key: 'tooltip.ars_nouveau.drygmy_charm', lines: 1 },
         { id: 'ars_nouveau:amethyst_golem_charm', key: 'tooltip.ars_nouveau.amethyst_golem_charm', lines: 1 },
         { id: 'ars_nouveau:imbuement_chamber', key: 'tooltip.ars_nouveau.imbuement_chamber', lines: 1 },
+        { id: 'botania:black_lotus', key: 'tooltip.botania.black_lotus', lines: 1 },
     ];
     linesTooltip.forEach(item => {
         addLinesTooltip(event, item.id, item.key, item.lines);
@@ -135,6 +139,62 @@ ItemEvents.tooltip(event => {
         }
     });
 
+    const buddyCardBaseOre = [
+        'coal',
+        'copper',
+        'diamond',
+        'emerald',
+        'gold',
+        'iron',
+        'lapis',
+        'netherite',
+        'quartz',
+        'redstone',
+        'zinc',
+    ];
+    event.addAdvanced('buddycards:buddycard_base27', (item, advanced, text) => {
+        if (item.hasNBT()) {
+            buddyCardBaseOre.forEach(ore => {
+                if (item.getNbt().contains(ore)) {
+                    const value = item.getNbt().getInt(ore);
+                    text.add(
+                        1,
+                        Text.translate(
+                            'tooltip.r2aot.buddycard.ore_chance',
+                            Text.translate(`item.r2aot.buddycard_ore_${ore}`),
+                            Text.red(`${value.toFixed(0)}%`)
+                        ).yellow()
+                    );
+                }
+            });
+        }
+    });
+
+    event.addAdvanced('mechanicalbotania:mana_motor', (item, advanced, text) => {
+        text.add('');
+        text.add(Text.translate('create.tooltip.capacityProvided').gray());
+        text.add(Text.gold(' ██▒ 256x RPM')); // 模组目前对应rpmvalues的配置存在bug，先这样写死
+        text.add(Text.darkGray(' -> ').append(Text.translate('create.tooltip.up_to', '16,384su')));
+    });
+
+    event.addAdvanced('createendertransmission:energy_transmitter', (item, advanced, text) => {
+        text.add('');
+        text.add(Text.translate('create.tooltip.stressImpact').gray());
+        text.add(Text.red(' ███ 8x RPM'));
+    });
+
+    event.addAdvanced('r2aot:stress_input', (item, advanced, text) => {
+        text.add('');
+        text.add(Text.translate('create.tooltip.stressImpact').gray());
+        text.add(Text.gold(' █▒▒ 4x RPM'));
+    });
+
+    event.addAdvanced('r2aot:flower_ore_generator', (item, advanced, text) => {
+        text.add('');
+        text.add(Text.translate('create.tooltip.stressImpact').gray());
+        text.add(Text.yellow(' █▒▒ 2x RPM'));
+    });
+
     // function getRainbowColor(index, time) {
     //     const rainbowColors = [
     //         '#FF0000', // 红
@@ -180,9 +240,29 @@ ItemEvents.tooltip(event => {
 function addShiftTooltip(event, itemId, tooltipKey, lines) {
     event.addAdvanced(itemId, (item, advanced, text) => {
         if (!event.shift) {
-            text.add(1, Text.translate('tooltip.r2aot.hold_shift', Text.yellow('Shift')).yellow());
+            text.add(1, Text.translate('tooltip.r2aot.hold_shift', Text.yellow('Shift')).gold());
         } else {
             text.add(1, Text.translate('tooltip.r2aot.hold_shift', Text.white('Shift')).darkGray());
+
+            for (let i = 1; i <= lines; i++) {
+                text.add(i + 1, Text.translate(`${tooltipKey}_${i}`).yellow());
+            }
+        }
+    });
+}
+
+/**
+ * @param {Internal.ItemTooltipEventJS} event
+ * @param {Internal.Ingredient_} itemId
+ * @param {string} tooltipKey
+ * @param {number} lines
+ */
+function addCtrlTooltip(event, itemId, tooltipKey, lines) {
+    event.addAdvanced(itemId, (item, advanced, text) => {
+        if (!event.ctrl) {
+            text.add(1, Text.translate('tooltip.r2aot.hold_ctrl', Text.yellow('Ctrl')).gold());
+        } else {
+            text.add(1, Text.translate('tooltip.r2aot.hold_ctrl', Text.white('Ctrl')).darkGray());
 
             for (let i = 1; i <= lines; i++) {
                 text.add(i + 1, Text.translate(`${tooltipKey}_${i}`).yellow());

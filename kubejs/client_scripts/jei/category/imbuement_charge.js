@@ -80,12 +80,13 @@ function rotatePointAbout(point, center, degrees) {
  * @param {number} num - 需要格式化的数字
  * @returns {string} 添加了千位分隔符的数字字符串
  */
-function numFormat(num){
-  var res=num.toString().replace(/\d+/, function(n){ // 先提取整数部分
-       // 为整数部分添加千位分隔符
-       return n.replace(/(\d)(?=(\d{3})+$)/g,function($1){
-          return $1+",";
+function numFormat(num) {
+    var res = num.toString().replace(/\d+/, function (n) {
+        // 先提取整数部分
+        // 为整数部分添加千位分隔符
+        return n.replace(/(\d)(?=(\d{3})+$)/g, function ($1) {
+            return $1 + ',';
         });
-  })
-  return res;
+    });
+    return res;
 }
