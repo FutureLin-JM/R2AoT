@@ -90,14 +90,14 @@ jobs:
                   sed -n "/^## .*v${{ steps.setup.outputs.PURE_VERSION }}/,/^## /p" CHANGELOG.md | sed '$d' > ../extracted_changelog.txt
 
             - name: Create GitHub Release and Upload Asset
-              uses: softprops/action-gh-release@v1
+              uses: softprops/action-gh-release@v2
               with:
-                  align-asset-name: false
                   tag_name: 'v${{ steps.setup.outputs.PURE_VERSION }}'
                   name: 'R2AoT ${{ steps.setup.outputs.FULL_VERSION_NAME }}'
                   body_path: extracted_changelog.txt
                   draft: false
                   prerelease: ${{ steps.setup.outputs.PRERELEASE_FLAG }}
                   files: './${{ steps.package.outputs.ZIPFILE }}'
+                  align-asset-name: false
               env:
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
