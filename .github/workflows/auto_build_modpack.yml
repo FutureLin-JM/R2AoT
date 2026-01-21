@@ -61,10 +61,10 @@ jobs:
                   echo "Extracted pure version: $PURE_VERSION"
                   echo "Extracted full version: $FULL_VERSION_NAME"
                   echo "Prerelease flag: $PRERELEASE_FLAG"
+                  echo "ZIP filename will be: $ZIP_NAME"
                   echo "PURE_VERSION=$PURE_VERSION" >> $GITHUB_OUTPUT
                   echo "FULL_VERSION_NAME=$FULL_VERSION_NAME" >> $GITHUB_OUTPUT
                   echo "PRERELEASE_FLAG=$PRERELEASE_FLAG" >> $GITHUB_OUTPUT
-                  echo "ZIP_NAME=$ZIP_NAME" >> $GITHUB_OUTPUT
 
             - name: Update manifest.json version
               run: |
@@ -75,10 +75,10 @@ jobs:
             - name: Create and package modpack
               run: |
                   cd main_repo
-                  ZIP_NAME="${{ steps.setup.outputs.ZIP_NAME }}"
                   mkdir -p overrides
                   cp -r config defaultconfigs hotai kubejs ldlib overrides/
-                  zip -r "../${ZIP_NAME}" overrides manifest.json modlist.html
+                  zip -r "../Return to the Age of Technology-${{ steps.setup.outputs.FULL_VERSION_NAME }}.zip" overrides manifest.json modlist.html
+                  ls -lh "../Return to the Age of Technology-${{ steps.setup.outputs.FULL_VERSION_NAME }}.zip"
 
             - name: Extract CHANGELOG for current version
               run: |
@@ -93,6 +93,6 @@ jobs:
                   body_path: extracted_changelog.txt
                   draft: false
                   prerelease: ${{ steps.setup.outputs.PRERELEASE_FLAG }}
-                  files: './${{ steps.setup.outputs.ZIP_NAME }}'
+                  files: './Return to the Age of Technology-${{ steps.setup.outputs.FULL_VERSION_NAME }}.zip'
               env:
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
