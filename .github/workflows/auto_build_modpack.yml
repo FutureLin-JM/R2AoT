@@ -25,7 +25,7 @@ jobs:
                       exit 1
                   fi
 
-                  VERSION_LINE=$(grep -m 1 -oP '^## .*v[0-9]+(\.[0-9]+)*.*' "$CHANGELOG_PATH")
+                  VERSION_LINE=$(grep -oP '^## .*$' "$CHANGELOG_PATH" | head -n1 | sed 's/^## //')
 
                   if [ -z "$VERSION_LINE" ]; then
                       echo "Error: Failed to extract version line from $CHANGELOG_PATH."
