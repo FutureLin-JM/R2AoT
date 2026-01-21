@@ -1,6 +1,6 @@
 name: Create Modpack Release
 
-于: workflow_dispatch
+on: workflow_dispatch
 
 jobs:
     create-release:
