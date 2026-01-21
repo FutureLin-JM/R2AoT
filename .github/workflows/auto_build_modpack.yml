@@ -90,7 +90,7 @@ jobs:
                   sed -n "/^## .*v${{ steps.setup.outputs.PURE_VERSION }}/,/^## /p" CHANGELOG.md | sed '$d' > ../extracted_changelog.txt
 
             - name: Create GitHub Release and Upload Asset
-              uses: softprops/action-gh-release@v3
+              uses: softprops/action-gh-release@v2
               with:
                   tag_name: 'v${{ steps.setup.outputs.PURE_VERSION }}'
                   name: 'R2AoT ${{ steps.setup.outputs.FULL_VERSION_NAME }}'
