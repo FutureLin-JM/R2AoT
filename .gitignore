@@ -50,6 +50,7 @@ probe/
 probe/**
 kubejs/README.txt
 kubejs/jsconfig.json
+kubejs/mapped_accesstransformer.cfg
 kubejs/server_scripts/dev_tool.js
 
 # Ldlib

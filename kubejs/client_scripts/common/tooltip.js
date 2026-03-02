@@ -1,6 +1,6 @@
 ItemEvents.tooltip(event => {
     // addCtrlTooltip
-    const ctrlTooltips = [{ id: 'r2aot:chalk_black', key: 'tooltip.r2aot.chalk_black_ctrl', lines: 3 }];
+    const ctrlTooltips = [];
     ctrlTooltips.forEach(item => {
         addCtrlTooltip(event, item.id, item.key, item.lines);
     });
@@ -24,7 +24,6 @@ ItemEvents.tooltip(event => {
         { id: 'r2aot:pedestal_botania', key: 'tooltip.r2aot.pedestal_botania', lines: 2 },
         { id: 'r2aot:modular_runic_altar_core', key: 'tooltip.r2aot.modular_runic_altar_core', lines: 2 },
         { id: 'r2aot:animal_wellspring_core', key: 'tooltip.r2aot.animal_wellspring_core', lines: 3 },
-        { id: 'r2aot:chalk_black', key: 'tooltip.r2aot.chalk_black_shift', lines: 2 },
     ];
     shiftTooltips.forEach(item => {
         addShiftTooltip(event, item.id, item.key, item.lines);

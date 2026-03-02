@@ -46,7 +46,6 @@
     "item.r2aot.buddycard_ore_quartz": "矿物卡—石英",
     "item.r2aot.buddycard_ore_redstone": "矿物卡—红石",
     "item.r2aot.buddycard_ore_zinc": "矿物卡—锌",
-    "item.r2aot.chalk_black": "暗黑粉笔",
 
     "item.r2aot.entro_crystal": "恩特罗水晶",
     "item.r2aot.entro_seed": "恩特罗种子",
@@ -77,7 +76,6 @@
     "block.r2aot.tertium_crop": "中级种子",
     "block.r2aot.imperium_crop": "高级种子",
     "block.r2aot.controller_frame": "控制器框架",
-    "block.r2aot.rune_black": "暗黑符文",
 
     "block.r2aot.entro_cluster_small": "小型恩特罗芽",
     "block.r2aot.entro_cluster_medium": "中型恩特罗芽",
@@ -252,13 +250,6 @@
     "tooltip.r2aot.animal_wellspring_core_1": "§6多方块机器",
     "tooltip.r2aot.animal_wellspring_core_2": "从4格范围内获取魔源，将其转化为液态魔源并在下方生成其流体方块",
     "tooltip.r2aot.animal_wellspring_core_3": "结构中收容罐对应生物及其位置请查看任务界面",
-    "tooltip.r2aot.chalk_black_shift_1": "右键画出暗黑符文",
-    "tooltip.r2aot.chalk_black_shift_2": "暗黑符文可用于暗黑莲花",
-
-    "tooltip.r2aot.hold_ctrl": "按住 [%s] 查看更多信息",
-    "tooltip.r2aot.chalk_black_ctrl_1": "暗黑符文每秒充能1-5点能量",
-    "tooltip.r2aot.chalk_black_ctrl_2": "转化暗黑莲花消耗25点能量",
-    "tooltip.r2aot.chalk_black_ctrl_3": "转化时可以调用八邻域内暗黑符文的能量",
 
     "tooltip.r2aot.ae2_facade_1": "JEI隐藏了伪装板",
     "tooltip.r2aot.ae2_facade_2": "但依然可以合成",
