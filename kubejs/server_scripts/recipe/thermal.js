@@ -64,8 +64,6 @@ ServerEvents.recipes(event => {
         })
         .id(kjs('thermal_smelter', 'melodium_ingot'));
 
-    smelter('embers:caminite_brick', ['embers:caminite_blend', 'create:cinder_flour']);
-
     smelter('advancednetherite:netherite_gold_ingot', [
         'advancednetherite:netherite_iron_ingot',
         '4x minecraft:gold_ingot',

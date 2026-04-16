@@ -332,13 +332,6 @@ ServerEvents.recipes(event => {
         'botania:elementium_ingot',
     ]);
 
-    elvenTradeRecipes('8x embers:caminite_blend', [
-        'minecraft:clay_ball',
-        'minecraft:clay_ball',
-        'minecraft:clay_ball',
-        '#forge:sand',
-    ]);
-
     /**
      * 泰拉凝聚
      * @param {OutputItem_} output
