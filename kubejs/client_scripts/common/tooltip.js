@@ -44,7 +44,6 @@ ItemEvents.tooltip(event => {
         { id: 'ars_nouveau:wixie_charm', key: 'tooltip.ars_nouveau.wixie_charm', lines: 1 },
         { id: 'ars_nouveau:drygmy_charm', key: 'tooltip.ars_nouveau.drygmy_charm', lines: 1 },
         { id: 'ars_nouveau:amethyst_golem_charm', key: 'tooltip.ars_nouveau.amethyst_golem_charm', lines: 1 },
-        { id: 'ars_nouveau:imbuement_chamber', key: 'tooltip.ars_nouveau.imbuement_chamber', lines: 1 },
         { id: 'botania:black_lotus', key: 'tooltip.botania.black_lotus', lines: 1 },
     ];
     linesTooltip.forEach(item => {

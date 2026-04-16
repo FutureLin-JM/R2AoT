@@ -1,7 +1,6 @@
 JEIAddedEvents.registerRecipeCatalysts(event => {
     const catalysts = [
         ['r2aot:fluid_sourcelink', 'r2aot:fluid_sourcelink'],
-        ['ars_nouveau:imbuement_chamber', 'r2aot:imbuement_charge'],
         ['r2aot:rainbow_furnace', $RecipeTypes.SMELTING],
         ['r2aot:buddycard_anvil', 'r2aot:buddycard_anvil_fake'],
     ];
@@ -10,13 +9,6 @@ JEIAddedEvents.registerRecipeCatalysts(event => {
         event.data['addRecipeCatalyst(net.minecraft.world.item.ItemStack,mezz.jei.api.recipe.RecipeType[])'](
             input,
             recipe
-        );
-    });
-
-    Ingredient.of(/powah:thermo_generator_.*/).itemIds.forEach(input => {
-        event.data['addRecipeCatalyst(net.minecraft.world.item.ItemStack,mezz.jei.api.recipe.RecipeType[])'](
-            input,
-            'r2aot:imbuement_charge'
         );
     });
 

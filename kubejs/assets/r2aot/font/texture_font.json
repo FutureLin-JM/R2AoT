@@ -149,7 +149,7 @@
 
         {
             "type": "bitmap",
-            "file": "r2aot:font/imbuement_chamber.png",
+            "file": "r2aot:font/enchanting_apparatus.png",
             "ascent": 7,
             "chars": ["\u200c"]
         }
