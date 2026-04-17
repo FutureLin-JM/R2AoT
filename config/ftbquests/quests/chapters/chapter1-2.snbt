@@ -474,7 +474,7 @@
 			dependency_requirement: "one_completed"
 			id: "135818E055D86867"
 			shape: "square"
-			subtitle: "{\"translate\":\"ftbq.r2aot.ponder.text\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/ponder r2aot:mana_generator_core\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"ftbq.r2aot.capsule.click\"}}}"
+			subtitle: "{\"translate\":\"ftbq.r2aot.mbtool.click\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/mbtool mana_generator\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"ftbq.r2aot.jump.click\"}}}"
 			tasks: [{
 				id: "46DCD9CA63D50BCC"
 				item: "r2aot:mana_generator_core"

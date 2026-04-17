@@ -13,6 +13,7 @@ ServerEvents.recipes(event => {
             .perTick(builder => builder.inputFluids(Fluid.of('r2aot:power_essence', 1)))
             .chance(0, builder => builder.inputItems(`mysticalagriculture:${recipe.type}_seeds`))
             .outputItems(`mysticalagriculture:${recipe.type}_essence`)
+            .chance(0.001, builder => builder.outputItems(`mysticalagriculture:${recipe.type}_seeds`))
             .duration(recipe.duration)
             .id(id_prefix + `${recipe.type}`);
     });
