@@ -9,6 +9,7 @@ const $RecipeType = Java.loadClass('mezz.jei.api.recipe.RecipeType');
 const $MBDRecipeTypeCategory$RecipeWrapper = Java.loadClass(
     'com.lowdragmc.mbd2.integration.jei.MBDRecipeTypeCategory$RecipeWrapper'
 );
+const $MultiblockStructureCategory = Java.loadClass('igentuman.mbtool.integration.jei.MultiblockStructureCategory');
 const $IElementHelper = Java.loadClass('snownee.jade.api.ui.IElementHelper');
 const $CyclingDrawable = Java.loadClass('appeng.integration.modules.jei.CyclingDrawable');
 const $DoubleItemIcon = Java.loadClass('com.simibubi.create.compat.jei.DoubleItemIcon');

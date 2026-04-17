@@ -57,18 +57,4 @@ JadeEvents.onClientRegistration(event => {
             tooltip.append(Text.translate('jade.tooltip.snowman_cooler', seconds.toFixed(0)).white());
         }
     });
-
-    event.block('r2aot:ember', $Block).tooltip((tooltip, accessor) => {
-        const { serverData } = accessor;
-        if (!serverData) return;
-
-        let ember = serverData.get('ember');
-        let maxEmber = serverData.get('maxEmber');
-
-        if (ember && maxEmber > 0) {
-            let emberIcon = $IElementHelper.get().smallItem(Item.of('embers:ember_crystal'));
-            tooltip['add(snownee.jade.api.ui.IElement)'](emberIcon);
-            tooltip.append(Text.translate('jade.tooltip.ember', ember, maxEmber).white());
-        }
-    });
 });

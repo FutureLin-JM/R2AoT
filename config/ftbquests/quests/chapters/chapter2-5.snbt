@@ -9,11 +9,10 @@
 	quest_links: [ ]
 	quests: [
 		{
-			description: ["{\"translate\":\"ftbq.r2aot.ponder.text\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/ponder botania:terra_plate\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"ftbq.r2aot.capsule.click\"}}}"]
 			id: "60D28A21492EA6D6"
 			shape: "gear"
 			size: 1.5d
-			subtitle: "{tooltip.botania.terra_plate_1}"
+			subtitle: "{\"translate\":\"ftbq.r2aot.ponder.text\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/ponder botania:terra_plate\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"ftbq.r2aot.jump.click\"}}}"
 			tasks: [{
 				id: "627718F6EACA5E12"
 				item: "botania:terra_plate"
@@ -309,6 +308,7 @@
 				"{image:r2aot:textures/image/animal_wellspring_structure.png width:100 height:100 align:center fit:true}"
 			]
 			id: "75A51CE85B9A6E0B"
+			subtitle: "{\"translate\":\"ftbq.r2aot.mbtool.click\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/mbtool animal_wellspring\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"ftbq.r2aot.jump.click\"}}}"
 			tasks: [{
 				id: "512C6AC51939551B"
 				item: "r2aot:animal_wellspring_core"

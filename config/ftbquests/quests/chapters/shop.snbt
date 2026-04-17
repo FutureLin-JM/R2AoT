@@ -1,0 +1,97 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "shop"
+	group: ""
+	icon: "r2aot:gold_coin"
+	id: "49FE946CCF80223F"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			icon: "kylin_arm:kylin_arm"
+			id: "5D421BDBDB4AEAF0"
+			rewards: [{
+				id: "68DF3AF31079EF01"
+				item: "kylin_arm:kylin_arm"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 2L
+				id: "36BD90D647BA5DA3"
+				item: { Count: 2, id: "r2aot:gold_coin" }
+				type: "item"
+			}]
+			title: "{item.kylin_arm.kylin_arm}"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			icon: "angelring:angel_ring"
+			id: "0E6ACA99B2742599"
+			rewards: [{
+				id: "6854B13B52DA4874"
+				item: "angelring:angel_ring"
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 2L
+				id: "5F31A50B02488749"
+				item: { Count: 2, id: "r2aot:gold_coin" }
+				type: "item"
+			}]
+			title: "{item.angelring.angel_ring}"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			icon: {
+				Count: 1
+				id: "constructionwand:infinity_wand"
+				tag: {
+					wand_options: { }
+				}
+			}
+			id: "47C91CFD4E5E2F61"
+			rewards: [{
+				id: "7F03971036D13C3C"
+				item: {
+					Count: 1
+					id: "constructionwand:infinity_wand"
+					tag: {
+						wand_options: { }
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 2L
+				id: "5A7B928309A00ED9"
+				item: { Count: 2, id: "r2aot:gold_coin" }
+				type: "item"
+			}]
+			title: "{item.constructionwand.infinity_wand}"
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			id: "10793646D1E06A45"
+			rewards: [{
+				count: 10
+				id: "46D9BB5BF7BFF546"
+				item: "r2aot:gold_coin"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7B7081613BE30523"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -2.0d
+		}
+	]
+	title: "{ftbq.r2aot.chapter_groups.shop.title}"
+}

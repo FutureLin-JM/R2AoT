@@ -2,36 +2,6 @@ ServerEvents.recipes(event => {
     event
         .custom({
             type: 'extendedcrafting:shaped_table',
-            pattern: ['AAAAA', 'ABBBA', 'ACDCA', 'ACECA', 'AFFFA'],
-            key: {
-                A: {
-                    item: 'embers:caminite_bricks',
-                },
-                B: {
-                    item: 'advancednetherite:netherite_gold_block',
-                },
-                C: {
-                    item: 'create:crushing_wheel',
-                },
-                D: {
-                    item: 'embers:mechanical_core',
-                },
-                E: {
-                    item: 'advancednetherite:netherite_iron_block',
-                },
-                F: {
-                    item: 'powah:blazing_crystal_block',
-                },
-            },
-            result: {
-                item: 'embers:ember_bore',
-            },
-        })
-        .id(kjs('shaped_table', 'caminite_bricks'));
-
-    event
-        .custom({
-            type: 'extendedcrafting:shaped_table',
             pattern: ['AAAAA', 'ABCBA', 'ACDCA', 'ABCBA', 'AAAAA'],
             key: {
                 A: {

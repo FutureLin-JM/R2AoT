@@ -131,7 +131,7 @@ ItemEvents.tooltip(event => {
             4,
             Text.translate(
                 'tooltip.kubejs.machine_processing',
-                Text.translate('block.ars_nouveau.imbuement_chamber')
+                Text.translate('block.ars_nouveau.enchanting_apparatus')
                     .white()
                     .append(Text.white({ text: '\u200c', font: 'r2aot:texture_font' })),
                 Text.yellow('IV')
@@ -185,7 +185,7 @@ ItemEvents.tooltip(event => {
             4,
             Text.translate(
                 'tooltip.kubejs.machine_processing',
-                Text.translate('block.ars_nouveau.imbuement_chamber')
+                Text.translate('block.ars_nouveau.enchanting_apparatus')
                     .white()
                     .append(Text.white({ text: '\u200c', font: 'r2aot:texture_font' })),
                 Text.yellow('IV')
@@ -233,7 +233,7 @@ ItemEvents.tooltip(event => {
             4,
             Text.translate(
                 'tooltip.kubejs.machine_processing',
-                Text.translate('block.ars_nouveau.imbuement_chamber')
+                Text.translate('block.ars_nouveau.enchanting_apparatus')
                     .white()
                     .append(Text.white({ text: '\u200c', font: 'r2aot:texture_font' })),
                 Text.yellow('IV')
@@ -281,7 +281,7 @@ ItemEvents.tooltip(event => {
             4,
             Text.translate(
                 'tooltip.kubejs.machine_processing',
-                Text.translate('block.ars_nouveau.imbuement_chamber')
+                Text.translate('block.ars_nouveau.enchanting_apparatus')
                     .white()
                     .append(Text.white({ text: '\u200c', font: 'r2aot:texture_font' })),
                 Text.yellow('IV')

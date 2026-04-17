@@ -45,7 +45,6 @@
 	"minecraft:orange_wool": 100,
 	"minecraft:gray_banner": 300,
 	"create:cardboard": 1000,
-	"embers:ember_grit": 1600,
 	"minecraft:stripped_bamboo_block": 300,
 	"minecraft:acacia_hanging_sign": 800,
 	"mysticalagradditions:supremium_coal_block": 345600,
@@ -376,7 +375,6 @@
 	"minecraft:dark_oak_planks": 300,
 	"create:creative_blaze_cake": 2147483647,
 	"thermal:oil_sand": 2400,
-	"embers:ash": 200,
 	"minecraft:birch_trapdoor": 300,
 	"minecraft:purple_carpet": 67
 }

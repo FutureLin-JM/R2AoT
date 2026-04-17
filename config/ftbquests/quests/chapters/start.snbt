@@ -57,31 +57,6 @@
 					type: "item"
 				}
 				{
-					id: "01DC2D62ABAFA66B"
-					item: {
-						Count: 1
-						id: "ae2wtlib:wireless_universal_terminal"
-						tag: {
-							crafting: 1b
-							internalCurrentPower: 4800000.0d
-							internalMaxPower: 4800000.0d
-							pattern_access: 1b
-							pattern_encoding: 1b
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "42E757CEC82E18A4"
-					item: "ae2:wireless_access_point"
-					type: "item"
-				}
-				{
-					id: "1A38787059E43FBF"
-					item: "aeinfinitybooster:dimension_card"
-					type: "item"
-				}
-				{
 					id: "5647788AA9E6C23F"
 					item: "ae2:crafting_terminal"
 					type: "item"
@@ -135,22 +110,6 @@
 			id: "27810B0F51C21E2F"
 			rewards: [
 				{
-					id: "45556DD68D5AB9B9"
-					item: {
-						Count: 1
-						id: "constructionwand:infinity_wand"
-						tag: {
-							wand_options: { }
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "333C7B43FA136CB7"
-					item: "kylin_arm:kylin_arm"
-					type: "item"
-				}
-				{
 					id: "5BB0D276DC471CDE"
 					item: {
 						Count: 1
@@ -164,8 +123,37 @@
 					type: "item"
 				}
 				{
-					id: "7FB2947D73406A14"
-					item: "angelring:angel_ring"
+					id: "2377B81786343743"
+					item: {
+						Count: 1
+						id: "ae2wtlib:wireless_universal_terminal"
+						tag: {
+							accessPoint: {
+								dimension: "minecraft:overworld"
+								pos: [I;
+									33
+									-58
+									-34
+								]
+							}
+							crafting: 1b
+							currentTerminal: "crafting"
+							ex_pattern_access: 1b
+							internalCurrentPower: 4800000.0d
+							internalMaxPower: 4800000.0d
+							pattern_encoding: 1b
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4852939AFBB4CE1F"
+					item: "aeinfinitybooster:dimension_card"
+					type: "item"
+				}
+				{
+					id: "32E95389C3F6E39A"
+					item: "ae2:wireless_access_point"
 					type: "item"
 				}
 			]

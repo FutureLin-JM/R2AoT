@@ -14,7 +14,7 @@
 			id: "0181B226C2493004"
 			shape: "gear"
 			size: 1.5d
-			subtitle: "{\"translate\":\"ftbq.r2aot.ponder.text\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/ponder r2aot:elemental_altar_core\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"ftbq.r2aot.capsule.click\"}}}"
+			subtitle: "{\"translate\":\"ftbq.r2aot.ponder.text\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/ponder r2aot:elemental_altar_core\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"ftbq.r2aot.jump.click\"}}}"
 			tasks: [
 				{
 					id: "7C80D1C6FF0E56A7"
@@ -479,7 +479,7 @@
 				"59F23C3D5935C257"
 			]
 			id: "354C3243984E8271"
-			subtitle: "{\"translate\":\"ftbq.r2aot.capsule.text\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"3C9AFE713187FCFD\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"ftbq.r2aot.capsule.click\"}}}"
+			subtitle: "{\"translate\":\"ftbq.r2aot.mbtool.click\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/mbtool processing_mixer\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"ftbq.r2aot.jump.click\"}}}"
 			tasks: [{
 				id: "1157CAA1766D574C"
 				item: "r2aot:processing_mixer_core"
@@ -540,6 +540,7 @@
 			id: "5D1E91FC23D1D31B"
 			shape: "diamond"
 			size: 1.5d
+			subtitle: "{\"translate\":\"ftbq.r2aot.mbtool.click\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/mbtool terrestrial_agglomeration_altar\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"ftbq.r2aot.jump.click\"}}}"
 			tasks: [{
 				id: "69BB69D5B56858AF"
 				item: "botania:terra_plate"

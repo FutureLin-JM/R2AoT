@@ -121,11 +121,11 @@
 				}
 				{
 					id: "4F4C0D97BDD5B4C3"
-					item: "ars_nouveau:imbuement_chamber"
+					item: "ars_nouveau:enchanting_apparatus"
 					type: "item"
 				}
 			]
-			title: "{jei.r2aot.imbuement_charge}"
+			title: "{jei.r2aot.enchanting_charge}"
 			x: 8.0d
 			y: -2.0d
 		}
@@ -703,7 +703,7 @@
 				item: "thermal_extra:ancient_dust"
 				type: "item"
 			}]
-			x: 10.0d
+			x: 12.0d
 			y: -4.0d
 		}
 		{
@@ -967,22 +967,6 @@
 			y: -12.0d
 		}
 		{
-			dependencies: [
-				"6FC984254DB3A535"
-				"51EA8281B36E2324"
-			]
-			id: "6755F20A2FDD3390"
-			shape: "diamond"
-			size: 1.5d
-			tasks: [{
-				id: "78C1AB62A60BDAAC"
-				item: "embers:ember_crystal"
-				type: "item"
-			}]
-			x: 8.0d
-			y: -14.0d
-		}
-		{
 			dependencies: ["7A603293C8D41F1F"]
 			id: "6FC984254DB3A535"
 			tasks: [{
@@ -991,28 +975,6 @@
 				type: "item"
 			}]
 			x: 4.0d
-			y: -14.0d
-		}
-		{
-			dependencies: ["37AB6706D8634DB1"]
-			id: "51EA8281B36E2324"
-			tasks: [{
-				id: "0283E57D67559A91"
-				item: "embers:ember_bore"
-				type: "item"
-			}]
-			x: 12.0d
-			y: -14.0d
-		}
-		{
-			dependencies: ["59F23C3D5935C257"]
-			id: "37AB6706D8634DB1"
-			tasks: [{
-				id: "4CA037812CFFFE68"
-				item: "embers:caminite_brick"
-				type: "item"
-			}]
-			x: 14.0d
 			y: -14.0d
 		}
 		{

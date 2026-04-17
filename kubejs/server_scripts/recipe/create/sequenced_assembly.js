@@ -148,7 +148,7 @@ ServerEvents.recipes(event => {
             deploying(in_powah_se, [in_powah_se, processingMachine('thermal:machine_bottler')]),
             deploying(in_powah_se, [in_powah_se, `mysticalagriculture:${recipe.essence}`]),
             pressing(in_powah_se, in_powah_se),
-            deploying(in_powah_se, [in_powah_se, processingMachine('ars_nouveau:imbuement_chamber')]),
+            deploying(in_powah_se, [in_powah_se, processingMachine('ars_nouveau:enchanting_apparatus')]),
         ])
             .loops(1)
             .transitionalItem(in_powah_se)

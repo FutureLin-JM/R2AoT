@@ -1,5 +1,6 @@
 ServerEvents.recipes(event => {
     const { enchanting_apparatus, imbuement } = event.recipes.ars_nouveau;
+    const { enchanting_charge } = event.recipes.r2aot;
 
     enchanting_apparatus(
         'minecraft:dripstone_block',
@@ -142,10 +143,122 @@ ServerEvents.recipes(event => {
         'mysticalagriculture:air_essence',
     ]).id(kjs('imbuement', 'air_essence'));
 
-    global.imbuementChargeRecipes.forEach(recipe => {
-        const id = recipe.id ?? kjs('imbuement_charge', recipe.output.split(':')[1]);
-        imbuement(recipe.output, recipe.input, recipe.source, recipe.pedestalItems).id(id);
-    });
+    // global.imbuementChargeRecipes.forEach(recipe => {
+    //     const id = recipe.id ?? kjs('imbuement_charge', recipe.output.split(':')[1]);
+    //     imbuement(recipe.output, recipe.input, recipe.source, recipe.pedestalItems).id(id);
+    // });
+
+    enchanting_charge(
+        [
+            'botania:terrasteel_ingot',
+            'botania:elementium_ingot',
+            'minecraft:iron_ingot',
+            'minecraft:iron_ingot',
+            'thermal:invar_ingot',
+            'minecraft:gold_ingot',
+            'minecraft:gold_ingot',
+            'botania:manasteel_ingot',
+        ],
+        'powah:charged_snowball',
+        'powah:steel_energized',
+        10000,
+        5000
+    ).id(kjs('enchanting_charge', 'steel_energized'));
+
+    enchanting_charge(
+        [
+            'botania:dragonstone_block',
+            'minecraft:iron_block',
+            'minecraft:iron_block',
+            'minecraft:iron_block',
+            'botania:dragonstone_block',
+            'minecraft:gold_block',
+            'minecraft:gold_block',
+            'minecraft:gold_block',
+        ],
+        Item.of(
+            'kubejs:incomplete_energized_steel_seeds',
+            '{SequencedAssembly:{Progress:0.75f,Step:3,id:"kubejs:sequenced_assembly/energized_steel_seeds"}}'
+        ).strongNBT(),
+        'mysticalagriculture:energized_steel_seeds',
+        40000,
+        5000
+    ).id(kjs('enchanting_charge', 'incomplete_energized_steel_seeds_step_4'));
+
+    enchanting_charge(
+        [
+            'powah:energized_steel_block',
+            'botania:blaze_block',
+            'botania:blaze_block',
+            'botania:blaze_block',
+            'powah:energized_steel_block',
+            'botania:blaze_block',
+            'botania:blaze_block',
+            'botania:blaze_block',
+        ],
+        Item.of(
+            'kubejs:incomplete_blazing_crystal_seeds',
+            '{SequencedAssembly:{Progress:0.75f,Step:3,id:"kubejs:sequenced_assembly/blazing_crystal_seeds"}}'
+        ).strongNBT(),
+        'mysticalagriculture:blazing_crystal_seeds',
+        100000,
+        5000
+    ).id(kjs('enchanting_charge', 'incomplete_blazing_crystal_seeds_step_4'));
+
+    enchanting_charge(
+        [
+            'powah:blazing_crystal_block',
+            'minecraft:diamond_block',
+            'minecraft:diamond_block',
+            'minecraft:diamond_block',
+            'powah:blazing_crystal_block',
+            'minecraft:diamond_block',
+            'minecraft:diamond_block',
+            'minecraft:diamond_block',
+        ],
+        Item.of(
+            'kubejs:incomplete_niotic_crystal_seeds',
+            '{SequencedAssembly:{Progress:0.75f,Step:3,id:"kubejs:sequenced_assembly/niotic_crystal_seeds"}}'
+        ).strongNBT(),
+        'mysticalagriculture:niotic_crystal_seeds',
+        400000,
+        5000
+    ).id(kjs('enchanting_charge', 'incomplete_niotic_crystal_seeds_step_4'));
+
+    enchanting_charge(
+        [
+            'powah:niotic_crystal_block',
+            'minecraft:emerald_block',
+            'minecraft:emerald_block',
+            'minecraft:emerald_block',
+            'powah:niotic_crystal_block',
+            'minecraft:emerald_block',
+            'minecraft:emerald_block',
+            'minecraft:emerald_block',
+        ],
+        Item.of(
+            'kubejs:incomplete_spirited_crystal_seeds',
+            '{SequencedAssembly:{Progress:0.75f,Step:3,id:"kubejs:sequenced_assembly/spirited_crystal_seeds"}}'
+        ).strongNBT(),
+        'mysticalagriculture:spirited_crystal_seeds',
+        1000000,
+        5000
+    ).id(kjs('enchanting_charge', 'incomplete_spirited_crystal_seeds_step_4'));
+
+    enchanting_charge(
+        [
+            'r2aot:broken_mana',
+            'ars_nouveau:water_essence',
+            'ars_nouveau:fire_essence',
+            'r2aot:broken_source',
+            'ars_nouveau:earth_essence',
+            'ars_nouveau:air_essence',
+        ],
+        'r2aot:tertium_crop_seed',
+        'r2aot:imperium_crop_seed',
+        100000,
+        5000
+    ).id(kjs('enchanting_charge', 'imperium_crop_seed'));
 
     event
         .custom({

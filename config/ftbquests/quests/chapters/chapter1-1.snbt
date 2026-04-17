@@ -412,7 +412,7 @@
 				}
 			]
 			shape: "square"
-			subtitle: "{\"translate\":\"ftbq.r2aot.capsule.text\",\"clickEvent\":{\"action\":\"change_page\",\"value\":\"0561CE13B84A93FA\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"ftbq.r2aot.capsule.click\"}}}"
+			subtitle: "{\"translate\":\"ftbq.r2aot.mbtool.click\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/mbtool fertilizer_propagator\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"ftbq.r2aot.jump.click\"}}}"
 			tasks: [{
 				id: "1ABB0D1221BA0FD1"
 				item: "r2aot:fertilizer_propagator_core"
@@ -523,7 +523,7 @@
 			icon: "r2aot:andesite_casing_maker_core"
 			id: "163E9CB53D2B5C61"
 			shape: "square"
-			subtitle: "{\"translate\":\"ftbq.r2aot.ponder.text\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/ponder r2aot:andesite_casing_maker_core\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"ftbq.r2aot.capsule.click\"}}}"
+			subtitle: "{\"translate\":\"ftbq.r2aot.ponder.text\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/ponder r2aot:andesite_casing_maker_core\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"ftbq.r2aot.jump.click\"}}}"
 			tasks: [
 				{
 					id: "57CB1DF14CFA4604"
@@ -845,12 +845,18 @@
 		{
 			dependencies: ["0CF213F17B5888F8"]
 			id: "3F432FB98FB2019D"
-			subtitle: "{\"translate\":\"ftbq.r2aot.ponder.text\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/ponder r2aot:cobble_gen_tier_1\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"ftbq.r2aot.capsule.click\"}}}"
-			tasks: [{
-				id: "46D42400EF1AB5E9"
-				item: "r2aot:cobble_gen_tier_1"
-				type: "item"
-			}]
+			subtitle: "{\"translate\":\"ftbq.r2aot.ponder.text\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/ponder r2aot:cobble_gen_tier_1\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"ftbq.r2aot.jump.click\"}}}"
+			tasks: [
+				{
+					id: "46D42400EF1AB5E9"
+					item: "r2aot:cobble_gen_tier_1"
+					type: "item"
+				}
+				{
+					id: "76117FED56743D7D"
+					type: "checkmark"
+				}
+			]
 			x: 14.0d
 			y: 2.0d
 		}
