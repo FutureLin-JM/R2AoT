@@ -160,6 +160,7 @@ ServerEvents.recipes(event => {
         'mechanicalbotania:floating_spinerette',
         'mechanicalbotania:manamotor',
         'compactcrafting:projector_dish',
+        'thermal:machine_press',
         
     ];
     recipesToRemoveID.forEach(recipes => {

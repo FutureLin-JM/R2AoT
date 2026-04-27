@@ -468,4 +468,12 @@ ServerEvents.recipes(event => {
         G: '#forge:glass_panes',
         I: '#forge:ingots/iron',
     });
+
+    kubejs.shaped('thermal:machine_press', [' X ', 'YCY', 'IPI'], {
+        C: 'thermal:machine_frame',
+        I: '#forge:gears/iron',
+        P: 'thermal:rf_coil',
+        X: '#forge:storage_blocks/iron',
+        Y: '#forge:ingots/bronze',
+    });
 });

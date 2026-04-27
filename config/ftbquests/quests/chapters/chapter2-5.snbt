@@ -571,6 +571,20 @@
 			dependencies: ["6E6B9F55A49B24A1"]
 			icon: "minecraft:pointed_dripstone"
 			id: "1DA5455B1916FDE0"
+			rewards: [
+				{
+					count: 64
+					id: "1365C6A323CC255B"
+					item: "minecraft:amethyst_shard"
+					type: "item"
+				}
+				{
+					count: 64
+					id: "586230428F757BCE"
+					item: "minecraft:amethyst_shard"
+					type: "item"
+				}
+			]
 			subtitle: "{ftbq.r2aot.chapter2-5.pointed_dripstone.subtitle}"
 			tasks: [
 				{

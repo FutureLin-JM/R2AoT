@@ -310,8 +310,6 @@ ServerEvents.recipes(event => {
 
     elvenTradeRecipes('8x powah:dielectric_paste', ['#minecraft:coals', 'minecraft:clay_ball']);
 
-    elvenTradeRecipes('2x thermal:obsidian_glass', ['#forge:dusts/obsidian', '#forge:glass']);
-
     elvenTradeRecipes('thermal_extra:soul_infused_ingot', [
         'r2aot:luxvoid_alloy',
         'thermal_extra:soul_sand_dust',

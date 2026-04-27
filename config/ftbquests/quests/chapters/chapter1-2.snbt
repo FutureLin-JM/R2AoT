@@ -450,6 +450,7 @@
 			dependencies: [
 				"0A528935EB4B6641"
 				"53C834EBC9220BC9"
+				"1B1CE1B69BE35BD5"
 			]
 			dependency_requirement: "one_completed"
 			id: "0412E6F433DFC1C0"
@@ -717,6 +718,27 @@
 			}]
 			x: 18.0d
 			y: 0.0d
+		}
+		{
+			id: "2B3A630DD13DD7A1"
+			tasks: [{
+				id: "2B3565E0DB4A1848"
+				item: "botania:hydroangeas"
+				type: "item"
+			}]
+			x: 16.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2B3A630DD13DD7A1"]
+			id: "1B1CE1B69BE35BD5"
+			tasks: [{
+				id: "5DF106E311852D92"
+				item: "r2aot:mana_generator_core"
+				type: "item"
+			}]
+			x: 16.0d
+			y: -2.0d
 		}
 	]
 	title: "{ftbq.r2aot.chapter1-2.start.title}"
