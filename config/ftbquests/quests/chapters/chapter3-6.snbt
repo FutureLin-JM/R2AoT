@@ -130,25 +130,13 @@
 			y: -2.0d
 		}
 		{
-			dependencies: ["4187233F4FA549B1"]
-			id: "37D5378D8523E48B"
-			tasks: [{
-				id: "4F78920410F9B035"
-				item: "thermal:obsidian_glass"
-				type: "item"
-			}]
-			x: -3.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["37D5378D8523E48B"]
 			id: "74AC481609EFB4B3"
 			tasks: [{
 				id: "085D16593EEC5927"
 				item: "thermal:machine_crystallizer"
 				type: "item"
 			}]
-			x: -3.0d
+			x: -2.0d
 			y: -6.0d
 		}
 		{
@@ -361,10 +349,7 @@
 			y: -10.0d
 		}
 		{
-			dependencies: [
-				"37D5378D8523E48B"
-				"7E167520DB622D88"
-			]
+			dependencies: ["7E167520DB622D88"]
 			hide_dependent_lines: true
 			id: "712FAB762F86F391"
 			tasks: [{

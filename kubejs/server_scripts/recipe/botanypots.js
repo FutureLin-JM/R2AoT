@@ -74,19 +74,55 @@ ServerEvents.recipes(event => {
         1
     ).id(kjs('botanypots', 'vine'));
 
-    ['prudentium', 'tertium', 'imperium'].forEach(tier => {
-        crop(
-            `r2aot:${tier}_crop_seed`,
-            [tier],
-            { block: `r2aot:${tier}_crop` },
-            [
-                Item.of(`mysticalagriculture:${tier}_essence`).withChance(1).withCount(1),
-                Item.of(`r2aot:${tier}_crop_seed`).withChance(0.01).withCount(1),
-            ],
-            1800,
-            1
-        ).id(kjs('botanypots', tier));
-    });
+    // ['prudentium', 'tertium', 'imperium'].forEach(tier => {
+    //     crop(
+    //         `r2aot:${tier}_crop_seed`,
+    //         [tier],
+    //         { block: `r2aot:${tier}_crop` },
+    //         [
+    //             Item.of(`mysticalagriculture:${tier}_essence`).withChance(1).withCount(1),
+    //             Item.of(`r2aot:${tier}_crop_seed`).withChance(0.01).withCount(1),
+    //         ],
+    //         1800,
+    //         1
+    //     ).id(kjs('botanypots', tier));
+    // });
+
+    crop(
+        `r2aot:prudentium_crop_seed`,
+        ['prudentium'],
+        { block: `r2aot:prudentium_crop` },
+        [
+            Item.of(`mysticalagriculture:prudentium_essence`).withChance(1).withCount(1),
+            Item.of(`r2aot:prudentium_crop_seed`).withChance(0.01).withCount(1),
+        ],
+        1800,
+        1
+    ).id(kjs('botanypots', 'prudentium'));
+
+    crop(
+        `r2aot:tertium_crop_seed`,
+        ['prudentium'],
+        { block: `r2aot:tertium_crop` },
+        [
+            Item.of(`mysticalagriculture:tertium_essence`).withChance(1).withCount(1),
+            Item.of(`r2aot:tertium_crop_seed`).withChance(0.01).withCount(1),
+        ],
+        1800,
+        1
+    ).id(kjs('botanypots', 'tertium'));
+
+    crop(
+        `r2aot:imperium_crop_seed`,
+        ['tertium'],
+        { block: `r2aot:imperium_crop` },
+        [
+            Item.of(`mysticalagriculture:imperium_essence`).withChance(1).withCount(1),
+            Item.of(`r2aot:imperium_crop_seed`).withChance(0.01).withCount(1),
+        ],
+        1800,
+        1
+    ).id(kjs('botanypots', 'imperium'));
 
     ['bronze', 'electrum', 'invar', 'constantan'].forEach(metalId => {
         crop(

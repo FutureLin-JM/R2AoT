@@ -236,7 +236,7 @@
     "tooltip.r2aot.cobble_gen_3": "内部容量：%s",
     "tooltip.r2aot.cobble_gen_4": "可自动输出方块到上方容器",
     "tooltip.r2aot.processing_mixer_core_1": "§6多方块机器",
-    "tooltip.r2aot.processing_mixer_core_2": "结构中的聚能石英玻璃可替换成流体输入仓",
+    "tooltip.r2aot.processing_mixer_core_2": "结构中的石英玻璃可替换成流体输入仓",
     "tooltip.r2aot.fluid_sourcelink_1": "消耗流体以产生魔源,并传输至半径6格以内的魔源罐",
     "tooltip.r2aot.fluid_sourcelink_2": "可转化流体和转化比例查看JEI",
     "tooltip.r2aot.fluid_sourcelink_3": "底部可自动输入流体",
