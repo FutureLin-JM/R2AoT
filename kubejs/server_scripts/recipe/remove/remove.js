@@ -159,6 +159,7 @@ ServerEvents.recipes(event => {
         'ars_nouveau:manipulation_essence_to_vexing_sapling',
         'mechanicalbotania:floating_spinerette',
         'mechanicalbotania:manamotor',
+        'compactcrafting:projector_dish',
         
     ];
     recipesToRemoveID.forEach(recipes => {

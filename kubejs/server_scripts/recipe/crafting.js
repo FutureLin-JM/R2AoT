@@ -462,4 +462,10 @@ ServerEvents.recipes(event => {
             X: 'create:shaft',
         })
         .id(kjs('mana_motor'));
+
+    kubejs.shaped('4x compactcrafting:projector_dish', ['GI ', 'GEI', 'GI '], {
+        E: '#forge:dusts/mana',
+        G: '#forge:glass_panes',
+        I: '#forge:ingots/iron',
+    });
 });
