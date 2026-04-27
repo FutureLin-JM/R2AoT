@@ -50,6 +50,12 @@ ServerEvents.recipes(event => {
         ['minecraft:iron_block', 'minecraft:coal_block'],
         'extendedcrafting:black_iron_block', 5000
     ).id(kjs('energizing', 'black_iron_block'));
+
+    energizing(
+        ['r2aot:shredded_buddycard', 'r2aot:shredded_buddycard'],
+        'buddycards:buddycard_pack_base',
+        10000
+    ).id(kjs('energizing', 'buddycard_pack_base'));
 });
 
 PowahEvents.coolants(event => {

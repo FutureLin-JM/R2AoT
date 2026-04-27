@@ -10,6 +10,11 @@
 	quests: [
 		{
 			id: "60D28A21492EA6D6"
+			rewards: [{
+				id: "7D7C26A798114780"
+				item: "r2aot:terrestrial_agglomeration_crystal"
+				type: "item"
+			}]
 			shape: "gear"
 			size: 1.5d
 			subtitle: "{\"translate\":\"ftbq.r2aot.ponder.text\",\"clickEvent\":{\"action\":\"run_command\",\"value\":\"/ponder botania:terra_plate\"},\"hoverEvent\":{\"action\":\"show_text\",\"contents\":{\"translate\":\"ftbq.r2aot.jump.click\"}}}"

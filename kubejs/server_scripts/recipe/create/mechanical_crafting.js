@@ -25,11 +25,10 @@ ServerEvents.recipes(event => {
     mechanical_crafting('r2aot:crystal_furnace_component', [
         'AAA',
         'ABA',
-        'ACA'
+        'AAA'
     ], {
         A: 'ae2:quartz_glass',
         B: '#r2aot:furnace_component/level1',
-        C: 'ae2:quartz_vibrant_glass',
     }).id(kjs('mechanical_crafting', 'crystal_furnace_component'));
 
     mechanical_crafting('r2aot:obsidian_furnace_component', [

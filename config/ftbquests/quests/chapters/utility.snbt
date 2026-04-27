@@ -63,6 +63,23 @@
 			x: 2.0d
 			y: 0.0d
 		}
+		{
+			id: "70B6E26ED9A4165B"
+			rewards: [{
+				count: 64
+				id: "226C0BBDCFACD9C5"
+				item: "buddycards:buddycard_pack_base"
+				type: "item"
+			}]
+			subtitle: "测试玩法"
+			tasks: [{
+				id: "7D23DFFFBAE4D7B4"
+				item: "r2aot:buddycard_anvil"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
 	]
 	title: "{ftbq.r2aot.chapter_groups.utility.title}"
 }
