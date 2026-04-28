@@ -156,6 +156,11 @@
 					item: "ae2:wireless_access_point"
 					type: "item"
 				}
+				{
+					id: "6C1A16F891BB57A7"
+					item: "ae2_ftbquest_detector:me_quests_detector"
+					type: "item"
+				}
 			]
 			tasks: [{
 				id: "5EC462FB85B2B620"
@@ -169,9 +174,8 @@
 			dependencies: ["69EF1BF481A8FFF9"]
 			description: [
 				"{ftbq.r2aot.start.thank.desc_1}"
-				"{ftbq.r2aot.start.thank.desc_2}"
 				""
-				"{ftbq.r2aot.start.thank.desc_3}"
+				"{ftbq.r2aot.start.thank.desc_2}"
 			]
 			icon: "mechanicalbotania:spinerette"
 			id: "36E36D94A9F5C550"

@@ -125,6 +125,16 @@
     "advanced_auto_table": true,
     "compressor": true
   },
+  "extendedae_plus": {
+    "labeled_wireless_component": true,
+    "wt_locked": true,
+    "wt_frequency": true,
+    "wt_network_usable": true,
+    "wt_master_mode": true,
+    "wt_channels": true,
+    "wt_master_location": true,
+    "wt_owner": true
+  },
   "ars_nouveau": {
     "mob_jar": true
   },
@@ -150,7 +160,6 @@
   "r2aot": {
     "numerical_source": true,
     "numerical_mana": true,
-    "ember": true,
     "snowman_cooler": true
   },
   "cookingforblockheads": {

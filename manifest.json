@@ -11,7 +11,7 @@
     "manifestType": "minecraftModpack",
     "manifestVersion": 1,
     "name": "Return to the Age of Technology",
-    "version": "Release 1.0.1",
+    "version": "Release 1.0.2",
     "author": "FutureLin",
     "files": [
         {
@@ -159,8 +159,20 @@
             "isLocked": false
         },
         {
+            "projectID": 1337639,
+            "fileID": 7960387,
+            "required": true,
+            "isLocked": false
+        },
+        {
             "projectID": 892005,
             "fileID": 7472662,
+            "required": true,
+            "isLocked": false
+        },
+        {
+            "projectID": 1377642,
+            "fileID": 7180759,
             "required": true,
             "isLocked": false
         },
@@ -358,7 +370,7 @@
         },
         {
             "projectID": 827020,
-            "fileID": 7182687,
+            "fileID": 7740488,
             "required": true,
             "isLocked": false
         },
@@ -537,6 +549,12 @@
             "isLocked": false
         },
         {
+            "projectID": 1456353,
+            "fileID": 7595184,
+            "required": true,
+            "isLocked": false
+        },
+        {
             "projectID": 618298,
             "fileID": 7495027,
             "required": true,
@@ -705,6 +723,12 @@
             "isLocked": false
         },
         {
+            "projectID": 1377018,
+            "fileID": 7176654,
+            "required": true,
+            "isLocked": false
+        },
+        {
             "projectID": 583228,
             "fileID": 7451460,
             "required": true,
@@ -747,14 +771,14 @@
             "isLocked": false
         },
         {
-            "projectID": 308380,
-            "fileID": 7329736,
+            "projectID": 287342,
+            "fileID": 5468426,
             "required": true,
             "isLocked": false
         },
         {
-            "projectID": 287342,
-            "fileID": 5468426,
+            "projectID": 308380,
+            "fileID": 7329736,
             "required": true,
             "isLocked": false
         },
@@ -789,14 +813,14 @@
             "isLocked": false
         },
         {
-            "projectID": 250702,
-            "fileID": 7411324,
+            "projectID": 1104057,
+            "fileID": 7415529,
             "required": true,
             "isLocked": false
         },
         {
-            "projectID": 1104057,
-            "fileID": 7415529,
+            "projectID": 250702,
+            "fileID": 7411324,
             "required": true,
             "isLocked": false
         },
