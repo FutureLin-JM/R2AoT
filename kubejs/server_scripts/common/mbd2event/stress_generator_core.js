@@ -9,7 +9,7 @@ MBDMachineEvents.onBeforeRecipeModify('r2aot:stress_generator_core', event => {
     let itemStack = storage.getStackInSlot(0);
     if (itemStack.isEmpty()) return;
 
-    let itemCount = Math.min(itemStack.getCount(), 4);
+    let itemCount = Math.min(itemStack.getCount(), 16);
     let multiplier = itemCount + 1;
     let modifiedRecipe = mbdEvent.getRecipe().copy($ContentModifier.multiplier(multiplier), false, 'OUT');
 

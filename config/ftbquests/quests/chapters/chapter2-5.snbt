@@ -138,7 +138,7 @@
 			tasks: [
 				{
 					id: "18749ACAD8162F65"
-					observe_type: 1
+					observe_type: 0
 					timer: 0L
 					title: "{ftbq.r2aot.observe.title}&a{block.r2aot.pedestal_ars}"
 					to_observe: "r2aot:pedestal_ars"

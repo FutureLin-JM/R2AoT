@@ -126,7 +126,6 @@ ServerEvents.recipes(event => {
         'powah:energizing/spirited_crystal',
         'powah:energizing/nitro_crystal',
         'thermal:machines/smelter/smelter_glass_obsidian',
-        'thermal:fire_charge/obsidian_glass_2',
         'thermal:machine_bottler',
         'thermal:machine_crystallizer',
         'thermal:machines/pulverizer/pulverizer_blitz_rod',
@@ -161,7 +160,6 @@ ServerEvents.recipes(event => {
         'mechanicalbotania:manamotor',
         'compactcrafting:projector_dish',
         'thermal:machine_press',
-        
     ];
     recipesToRemoveID.forEach(recipes => {
         event.remove({ id: recipes });
@@ -189,14 +187,5 @@ ServerEvents.recipes(event => {
                 recipe.remove();
             }
         });
-    });
-
-    // event.remove({ mod: 'alltheores' });
-    const excludedAllTheOresById = [];
-
-    event.forEachRecipe({ mod: 'alltheores' }, recipe => {
-        if (!excludedAllTheOresById.includes(recipe.getId())) {
-            recipe.remove();
-        }
     });
 });

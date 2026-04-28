@@ -149,6 +149,17 @@ ServerEvents.recipes(event => {
             'ars_nouveau:wilden_wing',
         ])
             .superheated()
-            .id(kjs('mixing', `${potion.output}`));
+            .id(kjs('mixing', `${potion.output}_by_fluid`));
+
+        mixing(Fluid.of(`r2aot:${potion.output}`, 250), [
+            Item.of('minecraft:potion', `{Potion:"ars_nouveau:${potion.input_1}_potion"}`).strongNBT(),
+            Item.of('minecraft:potion', `{Potion:"ars_nouveau:${potion.input_2}_potion"}`).strongNBT(),
+            'ars_nouveau:source_gem',
+            'ars_nouveau:wilden_horn',
+            'ars_nouveau:wilden_spike',
+            'ars_nouveau:wilden_wing',
+        ])
+            .superheated()
+            .id(kjs('mixing', `${potion.output}_by_item`));
     });
 });

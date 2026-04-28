@@ -71,7 +71,7 @@
 				item: "buddycards:buddycard_pack_base"
 				type: "item"
 			}]
-			subtitle: "测试玩法"
+			subtitle: "{ftbq.r2aot.utility.buddycard_anvil.subtitle}"
 			tasks: [{
 				id: "7D23DFFFBAE4D7B4"
 				item: "r2aot:buddycard_anvil"

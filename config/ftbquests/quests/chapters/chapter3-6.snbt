@@ -10,6 +10,11 @@
 	quests: [
 		{
 			id: "4187233F4FA549B1"
+			rewards: [{
+				id: "537F8FD40FF00B4A"
+				item: "r2aot:alfheim_trade_station"
+				type: "item"
+			}]
 			shape: "gear"
 			size: 1.5d
 			tasks: [{

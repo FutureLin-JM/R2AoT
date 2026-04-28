@@ -121,6 +121,7 @@ ServerEvents.tags('item', event => {
 ServerEvents.tags('block', event => {
     // 镐子
     event.add('minecraft:mineable/pickaxe', [
+        'compactcrafting:field_projector',
         'r2aot:stress_input',
         'r2aot:andesite_casing_maker',
         'r2aot:rainbow_furnace',
@@ -158,6 +159,11 @@ ServerEvents.tags('block', event => {
         'r2aot:item_input_tank',
         'r2aot:item_output_tank',
         'r2aot:flower_ore_generator',
+    ]);
+
+    // 下界合金工具
+    event.add('minecraft:needs_diamond_tool', [
+        'compactcrafting:field_projector',
     ]);
 
     // 铁质工具

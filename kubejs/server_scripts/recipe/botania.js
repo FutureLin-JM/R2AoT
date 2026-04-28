@@ -200,6 +200,10 @@ ServerEvents.recipes(event => {
 
     mana_infusion('botania:mana_powder', 'minecraft:redstone', 500).id('botania:mana_infusion/mana_powder_dust');
     mana_infusion('ae2:certus_quartz_crystal', 'botania:quartz_mana', 500).id(kjs('mana_infusion', 'certus_crystal'));
+    mana_infusion('ars_nouveau:mendosteen_pod', 'ars_nouveau:green_archwood_sapling', 25000).id(kjs('mana_infusion', 'mendosteen_pod'));
+    mana_infusion('ars_nouveau:bastion_pod', 'ars_nouveau:purple_archwood_sapling', 25000).id(kjs('mana_infusion', 'bastion_pod'));
+    mana_infusion('ars_nouveau:frostaya_pod', 'ars_nouveau:blue_archwood_sapling', 25000).id(kjs('mana_infusion', 'frostaya_pod'));
+    mana_infusion('ars_nouveau:bombegranate_pod', 'ars_nouveau:red_archwood_sapling', 25000).id(kjs('mana_infusion', 'bombegranate_pod'));
 
     /**
      * 符文祭坛
